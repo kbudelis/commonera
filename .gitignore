@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.wrangler
+.vercel
+dist
+build
+
+# GSD's gsd-install-state.json / gsd-file-manifest.json are intentionally tracked.
