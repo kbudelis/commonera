@@ -34,6 +34,14 @@ Requirements:
 - End with a **"Variance & sources"** section: where orderings differ (esp. tribes),
   which recension you followed, and why.
 
+**Provided source material (start here):**
+- `.planning/research/sources/mazaroth-betemunah-org.md` — a user-provided Orthodox/
+  Midrashic source (betemunah.org). Enriches the **meaning / scriptural-root** layer
+  (the "merit of the months" midrash) and cosmology — but has **no Hebrew letters or
+  senses**, sparse tribes, and its automated capture had a month-alignment error. Read
+  its caveat box and **verify against the live URL**. For the letter/sense/full-tribe
+  system, pull from Sefer Yetzirah sources (Aryeh Kaplan; inner.org).
+
 ## Task 2 — Stack & feasibility → `.planning/research/STACK.md`
 
 Given the **locked constraints** (pre-authored static content, **NO backend**,
