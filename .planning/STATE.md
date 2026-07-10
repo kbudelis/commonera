@@ -16,14 +16,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-07-09)
 
 **Core value:** A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful, shareable season reading in under 60 seconds — and the Jewish layer lands as a discovery, not a requirement.
-**Current focus:** Pre-roadmap — decisions captured; research briefed and handed to Codex; moodboard in progress.
+**Current focus:** Pre-roadmap — Codex research done + verified. Awaiting moodboard + a licensing decision before build.
 
 ## Current Position
 
 Phase: — (no roadmap yet)
 Plan: —
-Status: Decisions captured + Codex research briefed — awaiting research + moodboard before REQUIREMENTS/ROADMAP
-Last activity: 2026-07-09 — Corrected research ownership to Codex; wrote `.planning/research/BRIEF.md`
+Status: Research complete + verified (Opus). Blockers: moodboard basics + `@hebcal/core` licensing decision.
+Last activity: 2026-07-09 — Verified Codex research (attributions / stack / pitfalls); flagged `@hebcal/core` GPL-2.0; updated decisions.
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -33,12 +33,12 @@ Progress: [░░░░░░░░░░] 0%
 
 Full ledger in `.planning/DECISIONS.md`; key decisions in PROJECT.md. Highlights:
 
-- **All research → Codex** (per user). Opus writes briefs + plans, does not research.
-- Content = pre-authored static (no runtime LLM, no backend). No CE review yet (revisable).
-- Current month authored richly + reusable schema → 11 others on a lighter template.
-- Moon phase from Hebrew day-of-month; leap-year Adar I/II → single Adar; date-only birthday input.
-- Mobile-first; no accounts now (localStorage for birth profile); share-export is design-gated.
-- Must-haves first, but architect for the full spec (Friday Pulse / moon cards / browse-12).
+- **All research → Codex** (per user). Opus writes briefs + plans + verifies, does not research.
+- **Stack resolved:** Vite + React + TS static SPA → Cloudflare Pages (`dist/`, no backend).
+- **Attribution lineage:** Gra / GalEinai (Ginsburgh); matches PRD zodiac; letters + tribes verifiable; sense column is the lower-confidence variant.
+- Content = pre-authored static; current month rich + reusable schema → 11 lighter.
+- Moon phase from Hebrew day-of-month; leap-year Adar I/II → single Adar; date-only input.
+- Mobile-first; no accounts now (localStorage); share-export design-gated.
 
 ### Pending Todos
 
@@ -46,23 +46,24 @@ None yet.
 
 ### Blockers/Concerns
 
-- Research pending (Codex, per `.planning/research/BRIEF.md`): month attributions + stack.
-- Moodboard open: final name, palette, deploy-licensable Hebrew display typeface.
-- Stack scoped to a static mobile-first SPA (no backend). Revisit `.assetsignore` once host chosen.
+- **⚠ Licensing checkpoint:** `@hebcal/core` is GPL-2.0 in a client bundle — decide before dependency install (accept for prototype / permissive alternative / roll-own).
+- Moodboard open: final name, palette, Hebrew display typeface (OFL leads captured in research).
+- Minor: Vite 8 wants Node ≥ 22.12; local Node is 22.11.0 — bump at build time.
+- Codex left `AGENTS.md` (garbled header from Claude→Codex substitution) + `.agents/` untracked — pending decision on cleanup / gitignore.
 
 ## Deferred Items
 
 | Category | Item | Status | Deferred At |
 |----------|------|--------|-------------|
-| Scope | REQUIREMENTS.md + ROADMAP.md | Deferred — pending research + moodboard | 2026-07-09 |
+| Scope | REQUIREMENTS.md + ROADMAP.md | Deferred — pending moodboard basics | 2026-07-09 |
 | Scope | "Browse all 12 months" day-1 inclusion | Open — after must-haves | 2026-07-09 |
 
 ## Session Continuity
 
 Last session: 2026-07-09
-Stopped at: PRD gaps → DECISIONS.md; PROJECT.md + CLAUDE.md updated. Wrote Codex research brief (`.planning/research/BRIEF.md`). Research (attributions + stack) handed to Codex.
+Stopped at: Verified Codex research (MONTH-ATTRIBUTIONS / STACK / PITFALLS). Recorded stack + lineage decisions; logged `@hebcal/core` GPL-2.0 licensing checkpoint.
 Resume file: None
 
 **Next artifacts (in order):**
-1. **Codex** (per BRIEF.md): `.planning/research/MONTH-ATTRIBUTIONS.md` + `STACK.md` (+ optional `PITFALLS.md`).
-2. **Opus**: content schema; then REQUIREMENTS.md + ROADMAP.md (once research + moodboard land) → `/gsd-plan-phase 1`.
+1. **User:** moodboard basics — name, palette, Hebrew typeface. Decide the `@hebcal/core` licensing path (or hand a permissive-alternative research task to Codex).
+2. **Opus:** content **schema** + current-month exemplar reading → then REQUIREMENTS.md + ROADMAP.md → `/gsd-plan-phase 1`.

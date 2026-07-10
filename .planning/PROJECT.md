@@ -86,10 +86,11 @@ delightful discovery, never a requirement.
 
 ## Constraints
 
-- **Tech stack**: No backend needed (content is pre-authored static) → target a
-  mobile-first static SPA; exact framework/host still via Codex research. `hebcal`
-  (`@hebcal/core`) for Hebrew conversion. Deploy guard in `CLAUDE.md` /
-  `.assetsignore` revisited once host is picked.
+- **Tech stack**: Vite + React + TypeScript static SPA → Cloudflare Pages (`dist/`
+  output; no backend) — per `research/STACK.md`. `@hebcal/core` for Hebrew conversion,
+  but ⚠ it is **GPL-2.0**: licensing checkpoint required before dependency install
+  (see `.planning/DECISIONS.md`). Deploy guard: keep `.assetsignore`; set Wrangler
+  `assets.directory="./dist"` (never `"."`).
 - **Content ownership**: We author all content via best-judgment research of
   Kabbalistic / Sefer Yetzirah sources — no subject-matter expert on hand. Cite
   sources, flag where traditions vary; revisable for future CE review.
@@ -120,6 +121,9 @@ delightful discovery, never a requirement.
 | Use `hebcal` (`@hebcal/core`) for date conversion | PRD-specified; handles leap years / molad | — Pending |
 | Opus plans / Codex executes (per CLAUDE.md); stack research → Codex | Dual-runtime GSD orchestration | — Pending |
 | Decisions captured; REQUIREMENTS/ROADMAP still pending moodboard (name, palette, type) | Avoid premature scope lock while visuals unresolved | — Pending |
+| Stack: Vite + React + TS static SPA → Cloudflare Pages | Smallest stack fitting static / no-backend / mobile-first (research/STACK.md) | — Pending |
+| Attribution lineage: Gra / GalEinai (R. Ginsburgh) | Coherent single lineage; matches PRD zodiac; letters + tribes verifiable (research/MONTH-ATTRIBUTIONS.md) | — Pending |
+| ⚠ `@hebcal/core` is GPL-2.0 (client bundle) | Copyleft in a distributed app — decide before dep install | — Pending checkpoint |
 
 ## Evolution
 
