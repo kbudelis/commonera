@@ -27,6 +27,9 @@ needs before building. Source: PRD + user decisions (2026-07-09).
 | — | Content tone/safety | **Wisdom, not observance; discovery, not declaration** | Per PRD §7/§8. No fate claims. No explicit Jewish symbols in primary UI. |
 | A2b | Framework + host (resolved by research) | **Vite + React + TS → Cloudflare Pages** | Static `dist/`; matches all locked constraints. See `research/STACK.md`. |
 | B4b | Attribution lineage (resolved by research) | **Gra / GalEinai (R. Ginsburgh)** | Single coherent lineage; matches PRD zodiac. Letters + tribes (Numbers-2 camp order) verifiable; **sense/faculty column is the variant, lower-confidence part** — cross-check before published copy. See `research/MONTH-ATTRIBUTIONS.md`. |
+| Lic | `@hebcal/core` GPL-2.0 licensing | **Accept for internal prototype** (not shipping) | Move fast now; licensing checkpoint (permissive alternative or clearance) deferred to **before any production / distribution**. Per user 2026-07-10. |
+| WF | Prototype workflow ownership | **Codex foundation + v0 visual directions + Codex worktree finalists** | Codex owns the curated Vite base, shared contracts, interaction implementation, visual QA, and backend architecture. v0 explores 3–4 visual directions from the same baseline. Lovable is not required. |
+| PRI | Build priorities | **Visual prototyping first; backend architecture second** | Freeze one shared data/service contract before branching. Visual variants may change presentation and interaction, not schemas or backend behavior. Implement the real backend only after selecting the visual winner unless scope is explicitly expanded. |
 
 ## Still open (mostly moodboard-dependent — user in progress)
 
@@ -34,7 +37,6 @@ needs before building. Source: PRD + user decisions (2026-07-09).
 |---|----------|--------|
 | D | Final product name (working title "Cosmic Calendar") | Open — moodboard |
 | D | Palette + Hebrew display typeface (OFL leads: Frank Ruhl Libre / Noto Serif Hebrew; UI: Heebo / Assistant) | Open — moodboard |
-| **Lic** | **`@hebcal/core` is GPL-2.0 in a client bundle** — accept for prototype / find permissive alternative / roll-own conversion | **Open — checkpoint before dependency install** |
 | C8 | Does "browse all 12 months" ship day 1? | Open — currently after must-haves |
 
 ## Ownership of next artifacts

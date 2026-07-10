@@ -87,14 +87,22 @@ delightful discovery, never a requirement.
 ## Constraints
 
 - **Tech stack**: Vite + React + TypeScript static SPA → Cloudflare Pages (`dist/`
-  output; no backend) — per `research/STACK.md`. `@hebcal/core` for Hebrew conversion,
-  but ⚠ it is **GPL-2.0**: licensing checkpoint required before dependency install
-  (see `.planning/DECISIONS.md`). Deploy guard: keep `.assetsignore`; set Wrangler
-  `assets.directory="./dist"` (never `"."`).
+  output; no backend) — per `research/STACK.md`. `@hebcal/core` for Hebrew conversion —
+  **GPL-2.0, accepted for the internal prototype**; licensing checkpoint (permissive
+  alternative or clearance) before any shipping (see `.planning/DECISIONS.md`). Deploy
+  guard: keep `.assetsignore`; set Wrangler `assets.directory="./dist"` (never `"."`).
 - **Content ownership**: We author all content via best-judgment research of
   Kabbalistic / Sefer Yetzirah sources — no subject-matter expert on hand. Cite
   sources, flag where traditions vary; revisable for future CE review.
 - **Platform**: Mobile-first (portrait); season card designed share-ready (9:16).
+- **Prototype workflow**: Codex prepares the shared Vite foundation, mock-data and
+  service contracts, then owns interactive implementation and visual QA. v0 explores
+  3–4 visual directions from that exact baseline; Codex worktrees implement the best
+  finalists for branch-preview comparison. Lovable is not required.
+- **Priority order**: Visual prototyping first; backend architecture second. Backend
+  boundaries are designed once in the shared base and remain identical across visual
+  variants. Actual auth/database/server implementation stays deferred unless the
+  prototype scope is explicitly expanded.
 - **Dependency**: `hebcal` npm for Hebrew date conversion — Why: PRD-specified, avoids
   reimplementing the calendar.
 - **Timeline**: 1-day build sprint (when build begins) — Why: CE vibe-coding sprint format.
@@ -123,7 +131,9 @@ delightful discovery, never a requirement.
 | Decisions captured; REQUIREMENTS/ROADMAP still pending moodboard (name, palette, type) | Avoid premature scope lock while visuals unresolved | — Pending |
 | Stack: Vite + React + TS static SPA → Cloudflare Pages | Smallest stack fitting static / no-backend / mobile-first (research/STACK.md) | — Pending |
 | Attribution lineage: Gra / GalEinai (R. Ginsburgh) | Coherent single lineage; matches PRD zodiac; letters + tribes verifiable (research/MONTH-ATTRIBUTIONS.md) | — Pending |
-| ⚠ `@hebcal/core` is GPL-2.0 (client bundle) | Copyleft in a distributed app — decide before dep install | — Pending checkpoint |
+| `@hebcal/core` GPL-2.0 — accepted for internal prototype | Not shipping yet; move fast now, clear license (or swap) before production | ✓ Good (prototype); revisit before ship |
+| Prototype workflow: Codex base → v0 directions → Codex worktree finalists → branch previews | Maximizes visual exploration without adding Lovable as another code owner; every variant shares one contract | ✓ Locked |
+| Priority: visual prototyping first; backend architecture second | Select the interaction and visual system before implementing real services; keep architecture replaceable through shared adapters | ✓ Locked |
 
 ## Evolution
 
