@@ -71,24 +71,34 @@ delightful discovery, never a requirement.
   point, not a locked spec — CE to review attributions; AI may expand readings.
 - **Date engine**: `hebcal` npm handles Gregorian→Hebrew conversion for the
   birthday flow and current-month detection.
-- **AI content**: readings generated in poetic, grounded language — not academic,
-  not horoscope-generic; rituals specific and small enough to do today.
+- **Content model**: PRE-AUTHORED static content (no runtime LLM, no backend). We
+  author all readings at build time (AI-assisted, best-judgment research); poetic,
+  grounded tone — not academic, not horoscope-generic; rituals specific enough to do
+  today. No CE / subject-matter review at this stage — content is flagged revisable.
 - **Visual**: dark/warm/mystical (deep indigo base, gold/amber accent), moon/stars
   motif, Hebrew letters as large typographic elements. No explicit Jewish symbols
   (no Star of David/menorah) in the primary UI — the Jewish layer is textual and
   discoverable. Reference points: Chani, The Pattern, Co-Star, Headspace.
-- **Status**: user is still in prelim research / moodboarding / content work before
-  building. This foundation is intentionally scaffold-only (no requirements/roadmap
-  yet — see Key Decisions).
+- **Status**: builder decisions now captured (see `.planning/DECISIONS.md`). User is
+  not a Judaism subject-matter expert and has delegated Kabbalistic sourcing to
+  best-judgment research (cite sources, flag variance). Still pre-roadmap: moodboard
+  (name, palette, Hebrew typeface) and content authoring in progress.
 
 ## Constraints
 
-- **Tech stack**: Frontend/deploy stack NOT yet chosen — to be decided (research
-  delegated to Codex). Deploy guard in `CLAUDE.md` / `.assetsignore` revisited then.
+- **Tech stack**: No backend needed (content is pre-authored static) → target a
+  mobile-first static SPA; exact framework/host still via Codex research. `hebcal`
+  (`@hebcal/core`) for Hebrew conversion. Deploy guard in `CLAUDE.md` /
+  `.assetsignore` revisited once host is picked.
+- **Content ownership**: We author all content via best-judgment research of
+  Kabbalistic / Sefer Yetzirah sources — no subject-matter expert on hand. Cite
+  sources, flag where traditions vary; revisable for future CE review.
+- **Platform**: Mobile-first (portrait); season card designed share-ready (9:16).
 - **Dependency**: `hebcal` npm for Hebrew date conversion — Why: PRD-specified, avoids
   reimplementing the calendar.
 - **Timeline**: 1-day build sprint (when build begins) — Why: CE vibe-coding sprint format.
-- **Auth**: No login / no accounts — Why: zero-friction is a core value.
+- **Auth**: No login / no accounts this sprint — Why: zero-friction is a core value.
+  Architect so accounts can be added later; persist the birth profile in `localStorage`.
 - **Tone**: Wisdom, not observance; discovery, not declaration — Why: reaches the
   non-observant target audience without feeling religious.
 - **UI**: No explicit Jewish symbols in the primary UI — Why: the reveal is textual
@@ -99,11 +109,17 @@ delightful discovery, never a requirement.
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | Hebrew calendar is the hidden engine; surfaced as discovery | Serves astrology/wellness audience first; Jewish layer is a delight, not a gate | — Pending |
-| Use `hebcal` npm for date conversion | PRD-specified; battle-tested | — Pending |
-| Opus plans / Codex executes (per CLAUDE.md) | Dual-runtime GSD orchestration | — Pending |
-| Domain research delegated to Codex | User's choice; user also doing own prelim research | — Pending |
-| Foundation-only init (no REQUIREMENTS/ROADMAP yet) | User still moodboarding/content; avoid premature scope lock | — Pending |
-| Frontend/deploy stack | Deferred until research done | — Pending |
+| Content is PRE-AUTHORED static (no runtime LLM, no backend) | 1-day sprint, no login, content must be consistent and reviewable | — Pending |
+| We author all content via best-judgment Kabbalistic research; no CE review yet | No subject-matter expert on hand; cite sources, flag variance, revisable later | — Pending |
+| Current month authored richly; other 11 on a shared lighter template | Birthday flow needs all 12; build reusable schema from the rich one | — Pending |
+| Must-haves first; architect with full spec (Friday Pulse/moon/browse) in mind | Sprint focus, but don't foreclose the return-mechanic features | — Pending |
+| Sharing: design card share-ready (mobile 9:16) first, build share-export after | Design quality is the gate on the distribution mechanic | — Pending |
+| Mobile-first; no accounts now (architect for later); `localStorage` for birth profile | "One tap" / IG-story usage; rapid prototype | — Pending |
+| Moon phase derived from Hebrew day-of-month (no astronomy lib) | Lunar calendar already encodes it; avoids the v2 astronomy dependency | — Pending |
+| Leap-year Adar I/II → single Adar (Pisces); date-only input, no time/timezone | §4 excludes timezones; keep birthday input frictionless | — Pending |
+| Use `hebcal` (`@hebcal/core`) for date conversion | PRD-specified; handles leap years / molad | — Pending |
+| Opus plans / Codex executes (per CLAUDE.md); stack research → Codex | Dual-runtime GSD orchestration | — Pending |
+| Decisions captured; REQUIREMENTS/ROADMAP still pending moodboard (name, palette, type) | Avoid premature scope lock while visuals unresolved | — Pending |
 
 ## Evolution
 
@@ -123,4 +139,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-07-09 after initialization*
+*Last updated: 2026-07-09 after builder-decisions capture*

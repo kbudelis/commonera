@@ -16,14 +16,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-07-09)
 
 **Core value:** A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful, shareable season reading in under 60 seconds — and the Jewish layer lands as a discovery, not a requirement.
-**Current focus:** Pre-roadmap — foundation only. User is in prelim research / moodboarding / content work before build.
+**Current focus:** Pre-roadmap — builder decisions captured; authoring foundational content (month attributions), moodboard in progress.
 
 ## Current Position
 
 Phase: — (no roadmap yet)
 Plan: —
-Status: Foundation laid — awaiting REQUIREMENTS.md + ROADMAP.md
-Last activity: 2026-07-09 — Initialized GSD, wrote PROJECT.md + config.json (foundation-only init)
+Status: Builder decisions captured — authoring content foundation; REQUIREMENTS/ROADMAP pending moodboard
+Last activity: 2026-07-09 — Resolved PRD gaps into .planning/DECISIONS.md; updated PROJECT.md
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -31,12 +31,13 @@ Progress: [░░░░░░░░░░] 0%
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table. Recent decisions affecting current work:
+Full ledger in `.planning/DECISIONS.md`; key decisions in PROJECT.md. Highlights:
 
-- Init: Foundation-only — deferred REQUIREMENTS.md + ROADMAP.md until moodboard/content ready (avoid premature scope lock).
-- Init: Domain research delegated to Codex (GSD research subagents skipped; `workflow.research: false`).
-- Init: Config = Interactive mode, Coarse granularity, Adaptive models.
-- Project: Hebrew calendar is the hidden engine, surfaced as discovery; `hebcal` npm for conversion; Opus plans / Codex executes.
+- Content = pre-authored static (no runtime LLM, no backend). We author all content via best-judgment Kabbalistic research; no CE review yet (revisable).
+- Current month authored richly + reusable schema → 11 others on a lighter template.
+- Moon phase from Hebrew day-of-month; leap-year Adar I/II → single Adar; date-only birthday input.
+- Mobile-first; no accounts now (localStorage for birth profile); share-export is design-gated.
+- Must-haves first, but architect for the full spec (Friday Pulse / moon cards / browse-12).
 
 ### Pending Todos
 
@@ -44,20 +45,23 @@ None yet.
 
 ### Blockers/Concerns
 
-- Frontend/deploy stack not yet chosen (research delegated to Codex). Revisit `.assetsignore` deploy guard once picked.
+- Moodboard open: final name, palette, deploy-licensable Hebrew display typeface.
+- Stack pick deferred to Codex research — now scoped to a static mobile-first SPA (no backend). Revisit `.assetsignore` once host chosen.
 
 ## Deferred Items
 
 | Category | Item | Status | Deferred At |
 |----------|------|--------|-------------|
-| Scope | REQUIREMENTS.md + ROADMAP.md generation | Deferred — pending user research/moodboard/content | 2026-07-09 |
+| Scope | REQUIREMENTS.md + ROADMAP.md | Deferred — pending moodboard basics | 2026-07-09 |
+| Scope | "Browse all 12 months" day-1 inclusion | Open — after must-haves | 2026-07-09 |
 
 ## Session Continuity
 
 Last session: 2026-07-09
-Stopped at: Foundation-only init complete — PROJECT.md, config.json, STATE.md written. Research passed to Codex; requirements + roadmap intentionally not generated yet.
+Stopped at: PRD gaps resolved into DECISIONS.md; PROJECT.md updated. Producing month-attribution research next, then content schema + current-month exemplar.
 Resume file: None
 
-**When ready to continue (after moodboard/content):**
-- Codex: run domain research (stack incl. frontend/deploy + hebcal, features, architecture, pitfalls) → `.planning/research/`.
-- Then define scope: `/gsd-new-milestone` or resume requirements/roadmap generation, then `/gsd-plan-phase 1`.
+**Next artifacts (in order):**
+1. `.planning/research/MONTH-ATTRIBUTIONS.md` — 12-month attribution table (sourced).
+2. Content schema + current-month exemplar reading.
+3. REQUIREMENTS.md + ROADMAP.md (once moodboard name/palette/type land) → `/gsd-plan-phase 1`.
