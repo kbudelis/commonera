@@ -35,10 +35,17 @@ needs before building. Source: PRD + user decisions (2026-07-09).
 | A2 | Exact framework + host (now scoped to a static mobile-first SPA) | Open — Codex stack research |
 | C8 | Does "browse all 12 months" ship day 1? | Open — currently after must-haves |
 
-## Immediate next artifacts (this planning pass)
+## Ownership of next artifacts
 
+**Research → Codex** (per user; Opus does not research). Opus provides the spec at
+`.planning/research/BRIEF.md`. Codex produces:
 1. `research/MONTH-ATTRIBUTIONS.md` — authoritative 12-month table (name, span,
    zodiac/mazal, tribe, Hebrew letter, sense/faculty) with sources + confidence.
-2. Content **schema** (the reusable per-month data shape) + the **current month**
-   authored as the exemplar reading.
-3. Then: REQUIREMENTS.md + ROADMAP.md once moodboard basics land.
+2. `research/STACK.md` — static mobile-first SPA stack + `hebcal` + hosting + share-export.
+3. `research/PITFALLS.md` (optional) — Hebrew date edge cases, RTL typography, share gotchas.
+
+**Planning → Opus:** the research brief above, then the content **schema**, then
+REQUIREMENTS.md + ROADMAP.md once research + moodboard basics land.
+
+**Content copy** (archetype paragraphs, grounding, tikkun) is a later authoring step,
+not part of this research pass.

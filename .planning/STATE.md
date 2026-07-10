@@ -16,14 +16,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-07-09)
 
 **Core value:** A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful, shareable season reading in under 60 seconds — and the Jewish layer lands as a discovery, not a requirement.
-**Current focus:** Pre-roadmap — builder decisions captured; authoring foundational content (month attributions), moodboard in progress.
+**Current focus:** Pre-roadmap — decisions captured; research briefed and handed to Codex; moodboard in progress.
 
 ## Current Position
 
 Phase: — (no roadmap yet)
 Plan: —
-Status: Builder decisions captured — authoring content foundation; REQUIREMENTS/ROADMAP pending moodboard
-Last activity: 2026-07-09 — Resolved PRD gaps into .planning/DECISIONS.md; updated PROJECT.md
+Status: Decisions captured + Codex research briefed — awaiting research + moodboard before REQUIREMENTS/ROADMAP
+Last activity: 2026-07-09 — Corrected research ownership to Codex; wrote `.planning/research/BRIEF.md`
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -33,7 +33,8 @@ Progress: [░░░░░░░░░░] 0%
 
 Full ledger in `.planning/DECISIONS.md`; key decisions in PROJECT.md. Highlights:
 
-- Content = pre-authored static (no runtime LLM, no backend). We author all content via best-judgment Kabbalistic research; no CE review yet (revisable).
+- **All research → Codex** (per user). Opus writes briefs + plans, does not research.
+- Content = pre-authored static (no runtime LLM, no backend). No CE review yet (revisable).
 - Current month authored richly + reusable schema → 11 others on a lighter template.
 - Moon phase from Hebrew day-of-month; leap-year Adar I/II → single Adar; date-only birthday input.
 - Mobile-first; no accounts now (localStorage for birth profile); share-export is design-gated.
@@ -45,23 +46,23 @@ None yet.
 
 ### Blockers/Concerns
 
+- Research pending (Codex, per `.planning/research/BRIEF.md`): month attributions + stack.
 - Moodboard open: final name, palette, deploy-licensable Hebrew display typeface.
-- Stack pick deferred to Codex research — now scoped to a static mobile-first SPA (no backend). Revisit `.assetsignore` once host chosen.
+- Stack scoped to a static mobile-first SPA (no backend). Revisit `.assetsignore` once host chosen.
 
 ## Deferred Items
 
 | Category | Item | Status | Deferred At |
 |----------|------|--------|-------------|
-| Scope | REQUIREMENTS.md + ROADMAP.md | Deferred — pending moodboard basics | 2026-07-09 |
+| Scope | REQUIREMENTS.md + ROADMAP.md | Deferred — pending research + moodboard | 2026-07-09 |
 | Scope | "Browse all 12 months" day-1 inclusion | Open — after must-haves | 2026-07-09 |
 
 ## Session Continuity
 
 Last session: 2026-07-09
-Stopped at: PRD gaps resolved into DECISIONS.md; PROJECT.md updated. Producing month-attribution research next, then content schema + current-month exemplar.
+Stopped at: PRD gaps → DECISIONS.md; PROJECT.md + CLAUDE.md updated. Wrote Codex research brief (`.planning/research/BRIEF.md`). Research (attributions + stack) handed to Codex.
 Resume file: None
 
 **Next artifacts (in order):**
-1. `.planning/research/MONTH-ATTRIBUTIONS.md` — 12-month attribution table (sourced).
-2. Content schema + current-month exemplar reading.
-3. REQUIREMENTS.md + ROADMAP.md (once moodboard name/palette/type land) → `/gsd-plan-phase 1`.
+1. **Codex** (per BRIEF.md): `.planning/research/MONTH-ATTRIBUTIONS.md` + `STACK.md` (+ optional `PITFALLS.md`).
+2. **Opus**: content schema; then REQUIREMENTS.md + ROADMAP.md (once research + moodboard land) → `/gsd-plan-phase 1`.

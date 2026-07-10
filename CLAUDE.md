@@ -9,10 +9,13 @@ Project: **Cosmic Calendar** — a lunar-wisdom / seasonal-reading app rooted in
 the Hebrew calendar (see `Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`).
 
 ## Roles (do not collapse)
-- **Planning / research / verification → Opus** (this Claude Code session).
-  Produces and edits `.planning/*`. Does NOT write implementation code.
-- **Execution → Codex.** Implements against the plan, atomic commit per task.
-  Does not redefine scope.
+- **Planning / verification → Opus** (this Claude Code session). Produces and edits
+  `.planning/*`, including research *briefs*. Does NOT write implementation code and
+  does NOT perform research.
+- **Execution + ALL research → Codex.** Per user directive (2026-07-09): every kind
+  of research — domain, stack, and content / Kabbalistic sourcing — goes to Codex,
+  along with implementation. Atomic commit per task. Does not redefine scope.
+  (This overrides the generic GSD "research → Opus" default.)
 
 ## Before any GSD work
 This is a **greenfield** project — skip `/gsd-map-codebase` (that's for existing
