@@ -9,11 +9,11 @@ as a discovery, not a requirement.
 
 ### Mobile Flow
 
-- [ ] **FLOW-01**: User sees universal welcome phrases one at a time over a full-screen Blue Zodiac and can advance or skip directly to the current-month reading.
-- [ ] **FLOW-02**: Advancing reveals a light-paper interface with a full-width zodiac and optional date-only `MM/DD/YYYY` input, including **Skip to this month**.
-- [ ] **FLOW-03**: Birthday submission leads through a personal reveal before the month reading; skipping bypasses the personal section entirely.
-- [ ] **FLOW-04**: The experience is one continuous mobile vertical page with soft proximity settling, no mandatory snap, and no partial-frame trap.
-- [ ] **FLOW-05**: Both paths provide value without login or account creation.
+- [x] **FLOW-01**: User sees universal welcome phrases one at a time over a full-screen Blue Zodiac and can advance or skip directly to the current-month reading.
+- [x] **FLOW-02**: Advancing reveals a light-paper interface with a full-width zodiac and optional date-only `MM/DD/YYYY` input, including **Skip to this month**.
+- [x] **FLOW-03**: Birthday submission leads through a personal reveal before the month reading; skipping bypasses the personal section entirely.
+- [x] **FLOW-04**: The experience is one continuous mobile vertical page with soft proximity settling, no mandatory snap, and no partial-frame trap.
+- [x] **FLOW-05**: Both paths provide value without login or account creation.
 
 ### Content and Static Data
 
@@ -67,11 +67,11 @@ as a discovery, not a requirement.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FLOW-01 | Phase 1 | Pending |
-| FLOW-02 | Phase 1 | Pending |
-| FLOW-03 | Phase 1 | Pending |
-| FLOW-04 | Phase 1 | Pending |
-| FLOW-05 | Phase 1 | Pending |
+| FLOW-01 | Phase 1 | Complete |
+| FLOW-02 | Phase 1 | Complete |
+| FLOW-03 | Phase 1 | Complete |
+| FLOW-04 | Phase 1 | Complete |
+| FLOW-05 | Phase 1 | Complete |
 | CAL-01 | Phase 2 | Pending |
 | READ-01 | Phase 2 | Pending |
 | READ-02 | Phase 2 | Pending |
@@ -92,6 +92,7 @@ as a discovery, not a requirement.
 | QA-02 | Phase 4 | Pending |
 
 **Coverage:**
+
 - v1.0 requirements: 23 total
 - Mapped to phases: 23
 - Unmapped: 0 ✓
