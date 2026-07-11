@@ -97,15 +97,13 @@ function HebrewGlyphArt({
 function ConstellationArt({
   monthKey,
   label,
-  peek = false,
 }: {
   monthKey: MonthKey;
   label: string;
-  peek?: boolean;
 }) {
   return (
     <div
-      className={`constellation-art ${peek ? "constellation-art--peek" : "constellation-art--month"}`}
+      className="constellation-art constellation-art--bridge"
       role="img"
       aria-label={`${label} constellation`}
     >
@@ -369,13 +367,6 @@ function PersonalPlaceholder({
           </>
         )}
       </div>
-      {month ? (
-        <ConstellationArt
-          monthKey={month.correspondence.key}
-          label={month.correspondence.mazal.zodiacLabel}
-          peek
-        />
-      ) : null}
     </section>
   );
 }
@@ -390,11 +381,11 @@ function MonthPlaceholder() {
       data-landmark="month"
       aria-labelledby="month-title"
     >
+      <ConstellationArt
+        monthKey={correspondence.key}
+        label={correspondence.mazal.zodiacLabel}
+      />
       <div className="section-copy reading-copy month-copy">
-        <ConstellationArt
-          monthKey={correspondence.key}
-          label={correspondence.mazal.zodiacLabel}
-        />
         <p className="eyebrow">This month · {season.hebrewDate.exactMonthLabel}</p>
         <h1 id="month-title">
           {correspondence.names.english}{" "}

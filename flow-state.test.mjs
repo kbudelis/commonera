@@ -146,8 +146,18 @@ test("birthday and month compositions render real visual assets", () => {
   );
 
   assert.match(birthdayMarkup, /class="hero-glyph-art"/);
-  assert.match(birthdayMarkup, /constellation-art--peek/);
-  assert.match(monthMarkup, /constellation-art--month/);
+  assert.equal(
+    (birthdayMarkup.match(/constellation-art--bridge/g) ?? []).length,
+    1,
+  );
+  assert.equal(
+    (monthMarkup.match(/constellation-art--bridge/g) ?? []).length,
+    1,
+  );
+  assert.ok(
+    birthdayMarkup.indexOf("constellation-art--bridge") >
+      birthdayMarkup.indexOf('data-landmark="month"'),
+  );
   assert.doesNotMatch(birthdayMarkup, /constellation-placeholder/);
 });
 

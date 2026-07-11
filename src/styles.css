@@ -411,9 +411,9 @@ h1 {
 .hero-glyph-art {
   display: grid;
   place-items: center;
-  width: min(52cqw, 210px);
-  height: clamp(118px, 19dvh, 170px);
-  margin: -4px auto 0;
+  width: min(40cqw, 160px);
+  height: clamp(92px, 14dvh, 128px);
+  margin: 0 auto 14px;
 }
 
 .hero-glyph-art img {
@@ -437,26 +437,25 @@ h1 {
   mix-blend-mode: multiply;
 }
 
-.constellation-art--peek {
+.constellation-art--bridge {
   position: absolute;
-  bottom: max(-270px, -31dvh);
+  top: -84px;
   left: 50%;
-  z-index: 1;
-  width: min(80cqw, 340px);
+  z-index: 3;
+  width: min(62cqw, 260px);
   aspect-ratio: 1;
   margin: 0;
   transform: translateX(-50%);
-  animation: constellation-peek-rise 2.4s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.month-section {
+  align-content: start;
+  overflow: visible;
+  padding-top: clamp(184px, 23dvh, 220px);
 }
 
 .month-section .reading-copy {
   gap: 10px;
-}
-
-.month-section .constellation-art--month {
-  width: min(58cqw, 240px);
-  height: clamp(110px, 14dvh, 132px);
-  margin-bottom: 4px;
 }
 
 .month-copy h1 {
@@ -581,17 +580,6 @@ h1 {
   to {
     top: calc(112px - min(122cqw, 540px));
     width: min(122cqw, 540px);
-  }
-}
-
-@keyframes constellation-peek-rise {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 22dvh);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
   }
 }
 
