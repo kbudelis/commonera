@@ -47,8 +47,18 @@ export class ScrollPointer extends EventTarget {
     this.byMesh = new Map(targets.map((t) => [t.mesh, t]));
     dom.addEventListener('pointermove', this.onPointer);
     dom.addEventListener('pointerdown', this.onPointer);
-    dom.addEventListener('pointerleave', () => this.clear());
+    dom.addEventListener('pointerleave', this.onLeave);
   }
+
+  /** Detach from the DOM — sessions create a fresh ScrollPointer per level. */
+  dispose() {
+    this.dom.removeEventListener('pointermove', this.onPointer);
+    this.dom.removeEventListener('pointerdown', this.onPointer);
+    this.dom.removeEventListener('pointerleave', this.onLeave);
+    if (this.holdTimer) clearTimeout(this.holdTimer);
+  }
+
+  private onLeave = () => this.clear();
 
   emit<K extends keyof PointerEvents>(type: K, detail: PointerEvents[K]) {
     this.dispatchEvent(new CustomEvent(type, { detail }));
