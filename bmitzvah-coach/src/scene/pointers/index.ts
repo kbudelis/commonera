@@ -1,4 +1,5 @@
 import { buildBallpoint } from './ballpoint';
+import { buildBlockCursor } from './blockCursor';
 import { buildTouchCursor } from './touchCursor';
 import { buildMouseArrow } from './mouseArrow';
 import { buildSilverYad } from './silverYad';
@@ -10,7 +11,7 @@ import type { PointerBuilder, PointerId } from './types';
 export const POINTERS: Record<PointerId, PointerBuilder> = {
   touchCursor: buildTouchCursor,
   mouseArrow: buildMouseArrow,
-  blockCursor: buildSilverYad,
+  blockCursor: buildBlockCursor,
   ballpoint: buildBallpoint,
   woodPointer: buildWoodPointer,
   quill: buildSilverYad,
