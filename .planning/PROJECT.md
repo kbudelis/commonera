@@ -28,6 +28,21 @@ delightful discovery, never a requirement.
   off-putting.
 - **Strategy notes**: See `Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`.
 
+## Current Milestone: v1.0 Two-Hour Mobile Prototype
+
+**Goal:** Deliver a convincing mobile-first welcome-to-reading prototype that
+covers every PRD must-have while keeping final content, assets, and astrology
+interaction replaceable.
+
+**Target features:**
+- Six-state mobile flow: welcome → zodiac transition → optional birthday →
+  conditional personal reveal → current-month reading → moon/Friday upcoming.
+- Pre-authored static readings and twelve lightweight birth-month profiles with
+  no runtime AI, server, database, login, or account.
+- Blue Zodiac visual system, soft vertical settling, `easeInOutCubic` motion,
+  screenshot-ready compositions, and reduced-motion parity.
+- A mostly-static final return-cadence panel for Friday Pulse and moon moments.
+
 ## Requirements
 
 ### Validated
@@ -66,23 +81,24 @@ delightful discovery, never a requirement.
 ## Context
 
 - **Source of truth**: the PRD (`Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`)
-  including the 12 Hebrew months content map (§5), core flow (§6), AI/content
-  direction (§7), and visual vibe (§8). The month content table is a starting
-  point, not a locked spec — CE to review attributions; AI may expand readings.
+  defines product requirements, content boundaries, and success criteria. The
+  user-approved six-state flow and Blue Zodiac/light-paper direction supersede
+  the PRD's suggested screen order and dark visual treatment. The month content
+  table remains a starting point, not a locked content spec.
 - **Date engine**: `hebcal` npm handles Gregorian→Hebrew conversion for the
   birthday flow and current-month detection.
 - **Content model**: PRE-AUTHORED static content (no runtime LLM, no backend). We
   author all readings at build time (AI-assisted, best-judgment research); poetic,
   grounded tone — not academic, not horoscope-generic; rituals specific enough to do
   today. No CE / subject-matter review at this stage — content is flagged revisable.
-- **Visual**: dark/warm/mystical (deep indigo base, gold/amber accent), moon/stars
-  motif, Hebrew letters as large typographic elements. No explicit Jewish symbols
-  (no Star of David/menorah) in the primary UI — the Jewish layer is textual and
-  discoverable. Reference points: Chani, The Pattern, Co-Star, Headspace.
-- **Status**: builder decisions now captured (see `.planning/DECISIONS.md`). User is
-  not a Judaism subject-matter expert and has delegated Kabbalistic sourcing to
-  best-judgment research (cite sources, flag variance). Still pre-roadmap: moodboard
-  (name, palette, Hebrew typeface) and content authoring in progress.
+- **Visual**: the Blue Zodiac fills the welcome, then becomes a persistent circular
+  astrology element over a light paper background sampled from the source image.
+  White modern-serif welcome copy gives way to dark editorial text, large Hebrew
+  letters, constellation line art, and a central moon. No explicit Jewish symbols
+  in the primary UI; the Jewish layer remains textual and discoverable.
+- **Status**: v1.0 requirements and four fast execution phases are approved. Final
+  product name, production typefaces, Hebrew illustration licensing, and the full
+  interactive rotary system remain revisable beyond this prototype.
 
 ## Constraints
 
@@ -95,17 +111,18 @@ delightful discovery, never a requirement.
   Kabbalistic / Sefer Yetzirah sources — no subject-matter expert on hand. Cite
   sources, flag where traditions vary; revisable for future CE review.
 - **Platform**: Mobile-first (portrait); season card designed share-ready (9:16).
-- **Prototype workflow**: Codex prepares the shared Vite foundation, mock-data and
-  service contracts, then owns interactive implementation and visual QA. v0 explores
-  3–4 visual directions from that exact baseline; Codex worktrees implement the best
-  finalists for branch-preview comparison. Lovable is not required.
-- **Priority order**: Visual prototyping first; backend architecture second. Backend
-  boundaries are designed once in the shared base and remain identical across visual
-  variants. Actual auth/database/server implementation stays deferred unless the
-  prototype scope is explicitly expanded.
+- **Prototype workflow**: implement one approved mobile direction directly. The
+  static zodiac image, placeholder copy, and generic constellation/moon shapes come
+  first; content, typed data, visual polish, and the final upcoming panel replace
+  them in short passes. Existing sketches remain reference material, not competing
+  directions. Lovable is not required.
+- **Priority order**: visible flow first; static content/data second; visual/motion
+  integration third; moon/upcoming and final QA last. The "backend" is a typed
+  client-side data/service boundary only. No auth, database, or server is added.
 - **Dependency**: `hebcal` npm for Hebrew date conversion — Why: PRD-specified, avoids
   reimplementing the calendar.
-- **Timeline**: 1-day build sprint (when build begins) — Why: CE vibe-coding sprint format.
+- **Timeline**: approximately two hours for the v1.0 prototype — Why: the user needs
+  the entire first experience represented quickly; production hardening is deferred.
 - **Auth**: No login / no accounts this sprint — Why: zero-friction is a core value.
   Architect so accounts can be added later; persist the birth profile in `localStorage`.
 - **Tone**: Wisdom, not observance; discovery, not declaration — Why: reaches the
@@ -134,6 +151,12 @@ delightful discovery, never a requirement.
 | `@hebcal/core` GPL-2.0 — accepted for internal prototype | Not shipping yet; move fast now, clear license (or swap) before production | ✓ Good (prototype); revisit before ship |
 | Prototype workflow: Codex base → v0 directions → Codex worktree finalists → branch previews | Maximizes visual exploration without adding Lovable as another code owner; every variant shares one contract | ✓ Locked |
 | Priority: visual prototyping first; backend architecture second | Select the interaction and visual system before implementing real services; keep architecture replaceable through shared adapters | ✓ Locked |
+| Six-state mobile flow with optional birthday | Preserves the personal reveal without blocking zero-friction access to the current month | ✓ Locked |
+| Continuous vertical page with soft proximity settling | Frames should resolve cleanly without mandatory snapping or scroll hijacking | ✓ Locked |
+| `easeInOutCubic` for visual/programmatic transitions | Gives the page one consistent motion language while native touch scrolling remains native | ✓ Locked |
+| Blue Zodiac plus light paper supersedes original dark PRD treatment | User supplied the visual source and explicitly overrode the original visual specification | ✓ Locked |
+| Personal month layer = current month plus birth-month reflection | Creates meaningful personalization without claiming astronomical planetary transits | ✓ Locked |
+| Two-hour scope uses screenshot-ready sharing and lightweight content | Meets the PRD core while deferring production export, full browse, and rich content for all twelve months | ✓ Locked |
 
 ## Evolution
 
@@ -153,4 +176,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-07-09 after builder-decisions capture*
+*Last updated: 2026-07-10 after v1.0 two-hour prototype approval*
