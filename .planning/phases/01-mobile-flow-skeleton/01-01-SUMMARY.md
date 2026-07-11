@@ -118,6 +118,7 @@ completed: 2026-07-11
 |------|--------|-------------|
 | 1 | `bf3e338` | Add the tested Vite/React flow foundation |
 | 2 | `69c424f` | Build the mobile welcome and reading flow |
+| Verification fix | `88a9deb` | Keep both skip routes free of programmatic motion |
 
 ## Decisions Made
 
@@ -137,7 +138,15 @@ completed: 2026-07-11
 - **Verification:** `npm run test:flow` and `npm run build` pass; mobile startup screenshot captured.
 - **Committed in:** `bf3e338`, `69c424f`
 
-**Total deviations:** 1 auto-fixed blocking execution issue. **Impact:** No scope change; only the execution route changed.
+**2. [Rule 1 - Bug] Removed eased scrolling from skip routes**
+- **Found during:** Phase-goal verification
+- **Issue:** Skip-to-month used the eased landmark helper even though motion was scoped to the birthday reveal.
+- **Fix:** Skip now changes the render model directly without scheduling a programmatic scroll.
+- **Files modified:** `src/App.tsx`
+- **Verification:** 7/7 flow tests and production build pass; source audit confirms only birthday schedules the personal landmark.
+- **Committed in:** `88a9deb`
+
+**Total deviations:** 2 auto-fixed (1 blocking execution issue, 1 behavior bug). **Impact:** No scope expansion; the final behavior now matches the verified plan.
 
 ## Issues Encountered
 
