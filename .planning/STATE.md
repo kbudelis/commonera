@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 3
-current_phase_name: Visual Assets & Typography
-status: verification_pending
-stopped_at: Phase 3 visual assets implemented at 562b624; user verification pending; rotor deferred to Phase 5
-last_updated: "2026-07-11T17:43:49Z"
+current_phase: 4
+current_phase_name: Upcoming & QA
+status: ready_to_plan
+stopped_at: Phase 3 verified complete; Phase 4 ready to plan; rotor remains deferred to Phase 5
+last_updated: "2026-07-11T18:27:19Z"
 last_activity: 2026-07-11
-last_activity_desc: Vollkorn titles, Lalou glyphs, and twelve constellation assets integrated without changing zodiac motion
+last_activity_desc: Phase 3 visual composition verified and accepted; all four VIS requirements complete
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 3
   completed_plans: 3
-  percent: 40
+  percent: 60
 ---
 
 # Project State
@@ -24,16 +24,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-07-11)
 
 **Core value:** A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful, shareable season reading in under 60 seconds — and the Jewish layer lands as a discovery, not a requirement.
-**Current focus:** Phase 3 — Visual Assets & Typography
+**Current focus:** Phase 4 — Upcoming & QA
 
 ## Current Position
 
-Phase: 3 — Visual Assets & Typography
-Plan: Inline implementation at `562b624`
-Status: Implementation complete; verification pending
-Last activity: 2026-07-11 — Real glyph, constellation, and display-font assets integrated
+Phase: 4 — Upcoming & QA
+Plan: Not started
+Status: Ready to plan
+Last activity: 2026-07-11 — Phase 3 verified complete after live mobile review
 
-Progress: [████░░░░░░] 40%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
@@ -58,7 +58,7 @@ Progress: [████░░░░░░] 40%
 
 ### Pending Todos
 
-- Verify the Phase 3 glyph, constellation, and typography composition before marking the phase complete.
+- Plan and execute the Phase 4 moon/Friday return panel and final mobile QA.
 
 ### Blockers/Concerns
 
@@ -77,6 +77,6 @@ Progress: [████░░░░░░] 40%
 
 ## Session Continuity
 
-Last session: 2026-07-11T17:43:49Z
-Stopped at: Phase 3 visual asset implementation complete; verification pending
+Last session: 2026-07-11T18:27:19Z
+Stopped at: Phase 3 verified complete; Phase 4 ready to plan
 Resume file: None

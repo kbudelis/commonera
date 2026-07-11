@@ -18,7 +18,7 @@ as a discovery, not a requirement.
 ### Content and Static Data
 
 - [x] **CAL-01**: The app auto-detects the current Hebrew month and normalizes Adar I/II to shared Adar content while retaining the exact displayed month.
-- [x] **READ-01**: The current-month reading includes English and Hebrew month names, archetype, zodiac, symbolic current moon state, short reading, and concrete ritual.
+- [x] **READ-01**: The current-month reading includes English and Hebrew month names, archetype, zodiac, short reading, and concrete ritual; live moon state belongs to the dedicated upcoming/moon section.
 - [x] **READ-02**: User can reveal two or three sentences of Jewish/Kabbalistic grounding without that framing leading the welcome.
 - [x] **PROF-01**: Valid date-only birthday input converts to and displays a Hebrew birth date.
 - [x] **PROF-02**: The personal profile includes birth month, zodiac, tribe association in the adopted lineage, symbolic birth moon, Hebrew letter, reflective personal thread, and short reading.
@@ -28,10 +28,10 @@ as a discovery, not a requirement.
 
 ### Visual System and Motion
 
-- [ ] **VIS-01**: The Blue Zodiac disk is separated from its source background; after welcome, the interface uses the matching light-paper color.
-- [ ] **VIS-02**: Welcome uses white modern-serif text; later screens maintain readable English and Hebrew typography.
-- [ ] **VIS-03**: The personal reveal shows the birth-month Hebrew letter, and the month reading shows the current-month constellation with accessible labeling.
-- [ ] **VIS-04**: Personal and month compositions remain complete and legible in a mobile 9:16 screenshot without showing the raw birthday.
+- [x] **VIS-01**: The Blue Zodiac disk is separated from its source background; after welcome, the interface uses the matching light-paper color.
+- [x] **VIS-02**: Welcome uses white modern-serif text; later screens maintain readable English and Hebrew typography.
+- [x] **VIS-03**: The personal reveal shows the birth-month Hebrew letter, and the month reading shows the current-month constellation with accessible labeling.
+- [x] **VIS-04**: Personal and month compositions remain complete and legible in a mobile 9:16 screenshot without showing the raw birthday.
 - [ ] **MOT-01**: One persistent zodiac renderer moves from full-screen, to full-width, to a top-edge arc using `easeInOutCubic` for visual/programmatic transitions.
 - [ ] **MOT-02**: Reduced-motion mode preserves all content and navigation without zoom, rotation, parallax, or auto-scroll.
 
@@ -80,10 +80,10 @@ as a discovery, not a requirement.
 | DATA-01 | Phase 2 | Complete |
 | COPY-01 | Phase 2 | Complete |
 | DATA-02 | Phase 2 | Complete |
-| VIS-01 | Phase 3 | Pending |
-| VIS-02 | Phase 3 | Pending |
-| VIS-03 | Phase 3 | Pending |
-| VIS-04 | Phase 3 | Pending |
+| VIS-01 | Phase 3 | Complete |
+| VIS-02 | Phase 3 | Complete |
+| VIS-03 | Phase 3 | Complete |
+| VIS-04 | Phase 3 | Complete |
 | MOT-01 | Phase 5 | Pending |
 | MOT-02 | Phase 5 | Pending |
 | UP-01 | Phase 4 | Pending |
@@ -99,4 +99,4 @@ as a discovery, not a requirement.
 
 ---
 *Requirements defined: 2026-07-10*
-*Last updated: 2026-07-11 after Phase 3 asset integration and rotor-phase separation*
+*Last updated: 2026-07-11 after Phase 3 verification and current-month/moon copy clarification*

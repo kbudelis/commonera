@@ -12,7 +12,7 @@ nice-to-have experiences remain explicitly deferred.
 
 - [x] **Phase 1: Mobile Flow Skeleton** - Complete the placeholder welcome, optional birthday, personal, month, and upcoming journey. (completed 2026-07-11)
 - [x] **Phase 2: Content & Static Data** - Make all twelve current-month readings and one shared birthday-derived Personal Thread deterministic and meaningful. (completed 2026-07-11)
-- [ ] **Phase 3: Visual Assets & Typography** - Apply the light-paper system, Vollkorn titles, Lalou Hebrew glyphs, and real constellation elements without changing the current zodiac motion. Implementation is complete; verification is pending.
+- [x] **Phase 3: Visual Assets & Typography** - Apply the light-paper system, Vollkorn titles, Lalou Hebrew glyphs, and real constellation elements without changing the current zodiac motion. (completed 2026-07-11)
 - [ ] **Phase 4: Upcoming & QA** - Finish the moon/Friday return panel and verify both mobile paths.
 - [ ] **Phase 5: Zodiac Rotor Integration** - Import the separately developed rotor component and complete the final motion treatment.
 
@@ -69,12 +69,13 @@ Plans:
   3. Personal and month compositions remain legible and complete in a 9:16 screenshot.
   4. This phase does not import or alter the separate zodiac rotor prototype.
 
-**Plans**: Implemented inline at `562b624`; verification pending
+**Plans**: 1/1 plans complete
 **UI hint**: yes
 
 Plans:
 
-- [x] 03-01: Integrate Vollkorn, Lalou glyphs, and all twelve constellation assets while preserving the existing zodiac treatment. (inline implementation)
+- [x] 03-01-PLAN.md
+- [x] 03-01: Integrate Vollkorn, Lalou glyphs, and all twelve constellation assets while preserving the existing zodiac treatment.
 
 ### Phase 4: Upcoming & QA
 
@@ -122,6 +123,6 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Mobile Flow Skeleton | 1/1 | Complete    | 2026-07-11 |
 | 2. Content & Static Data | 1/1 | Complete | 2026-07-11 |
-| 3. Visual Assets & Typography | 1/1 | In review | - |
+| 3. Visual Assets & Typography | 1/1 | Complete | 2026-07-11 |
 | 4. Upcoming & QA | 0/1 | Not started | - |
 | 5. Zodiac Rotor Integration | 0/1 | Not started | - |
