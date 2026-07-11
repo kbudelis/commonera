@@ -337,7 +337,7 @@ export default function App() {
       onAdvance={() => applyAction({ type: "advance" })}
       onBirthdayChange={setBirthdayValue}
       onBirthdaySubmit={submitBirthday}
-      onSkip={() => applyAction({ type: "skip-to-month" }, "month")}
+      onSkip={() => applyAction({ type: "skip-to-month" })}
     />
   );
 }
