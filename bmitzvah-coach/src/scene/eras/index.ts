@@ -1,11 +1,13 @@
 import { makeDefaultEra } from './defaultEra';
 import { eraLaptop } from './eraLaptop';
+import { eraSiddur } from './eraSiddur';
 import type { EraDef, EraId } from './types';
 
 /** Real device eras register here as they land; anything missing falls back
     to the flat parchment defaultEra so every level is always playable. */
 export const ERAS: Partial<Record<EraId, EraDef>> = {
   laptop1995: eraLaptop,
+  siddur1565: eraSiddur,
 };
 
 export function resolveEra(id: EraId): EraDef {
