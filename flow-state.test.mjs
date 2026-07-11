@@ -186,10 +186,13 @@ test("birthday path renders personal before month and upcoming", () => {
     ),
   );
   const personalThread = buildPersonalThread(profile);
-  assert.match(personalThread, /^The season of your birth /);
-  assert.equal(
-    personalThread.includes(birthMonth.correspondence.names.english),
-    false,
+  assert.match(
+    personalThread,
+    new RegExp(`^${birthMonth.correspondence.names.english} `),
+  );
+  assert.match(
+    markup,
+    new RegExp(`<em>${birthMonth.correspondence.names.english} [^<]+<\\/em>`),
   );
   assert.equal(
     personalThread.includes(birthMonth.correspondence.mazal.zodiacLabel),
@@ -198,6 +201,17 @@ test("birthday path renders personal before month and upcoming", () => {
   assert.equal(markup.includes(profile.derived.hebrewDate.displayLabel), false);
   assert.equal(markup.includes(profile.derived.hebrewDate.hebrewDisplay), false);
   assert.doesNotMatch(markup, /Personal Thread/);
+});
+
+test("Tevet opens as an invocation before moving into discernment", () => {
+  assert.match(
+    MONTH_ENTRIES.tevet.reading.reading,
+    /^Tevet asks what commitment can hold when inspiration goes quiet\./,
+  );
+  assert.match(
+    MONTH_ENTRIES.tevet.reading.reading,
+    /The deeper work is discernment:/,
+  );
 });
 
 test("birthday and month compositions render real visual assets", () => {
