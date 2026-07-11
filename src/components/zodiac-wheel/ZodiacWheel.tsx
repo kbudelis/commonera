@@ -27,11 +27,11 @@ type LayerConfig = {
 };
 
 const LAYERS: readonly LayerConfig[] = [
-  { id: "atlas", duration: 2600, turns: 3, direction: -1 },
-  { id: "labels", duration: 3200, turns: 2, direction: 1 },
-  { id: "symbols", duration: 3800, turns: 2, direction: -1 },
-  { id: "figures", duration: 4400, turns: 1, direction: 1 },
-  { id: "ticks", duration: 5200, turns: 2, direction: -1 }
+  { id: "atlas", duration: 10_000, turns: 1, direction: -1 },
+  { id: "labels", duration: 13_000, turns: 1, direction: 1 },
+  { id: "symbols", duration: 16_000, turns: 1, direction: -1 },
+  { id: "figures", duration: 19_000, turns: 1, direction: 1 },
+  { id: "ticks", duration: 24_000, turns: 1, direction: -1 }
 ];
 
 const INITIAL_ANGLES: LayerAngles = {
@@ -227,7 +227,7 @@ export default function ZodiacWheel({
     const timer = window.setTimeout(() => {
       autoStarted.current = true;
       reveal(initialSelection);
-    }, 520);
+    }, 1_200);
     return () => window.clearTimeout(timer);
   }, [autoSpinOnMount, initialSelection, reveal]);
 
