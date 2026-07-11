@@ -2,18 +2,19 @@
 
 ## Overview
 
-Milestone v1.0 compresses the PRD's core experience into four short delivery
+Milestone v1.0 compresses the PRD's core experience into five short delivery
 boundaries: first make the entire mobile journey navigable, then make its readings
-real, then apply the approved Blue Zodiac visual/motion system, and finally complete
-the moon/Friday return cadence and mobile QA. Production hardening and nice-to-have
-experiences remain explicitly deferred.
+real, apply the approved visual assets, complete the moon/Friday return cadence,
+and finally import the separately developed zodiac rotor. Production hardening and
+nice-to-have experiences remain explicitly deferred.
 
 ## Phases
 
 - [x] **Phase 1: Mobile Flow Skeleton** - Complete the placeholder welcome, optional birthday, personal, month, and upcoming journey. (completed 2026-07-11)
-- [ ] **Phase 2: Content & Static Data** - Make all twelve current-month readings and one shared birthday-derived Personal Thread deterministic and meaningful. Implementation is complete; verification is pending.
-- [ ] **Phase 3: Visual System & Motion** - Apply the Blue Zodiac, light-paper system, Hebrew/constellation elements, and approved motion language.
+- [x] **Phase 2: Content & Static Data** - Make all twelve current-month readings and one shared birthday-derived Personal Thread deterministic and meaningful. (completed 2026-07-11)
+- [ ] **Phase 3: Visual Assets & Typography** - Apply the light-paper system, Vollkorn titles, Lalou Hebrew glyphs, and real constellation elements without changing the current zodiac motion. Implementation is complete; verification is pending.
 - [ ] **Phase 4: Upcoming & QA** - Finish the moon/Friday return panel and verify both mobile paths.
+- [ ] **Phase 5: Zodiac Rotor Integration** - Import the separately developed rotor component and complete the final motion treatment.
 
 ## Phase Details
 
@@ -56,24 +57,24 @@ Plans:
 
 - [x] 02-01: Add the typed calendar/content model and replace placeholder copy. (inline implementation)
 
-### Phase 3: Visual System & Motion
+### Phase 3: Visual Assets & Typography
 
-**Goal**: Users experience the approved Blue Zodiac direction as a coherent, screenshot-ready mobile composition.
+**Goal**: Users experience the approved visual direction as a coherent, screenshot-ready mobile composition using the real type, glyph, and constellation assets.
 **Depends on**: Phase 1; may overlap Phase 2 and integrate after its content slots stabilize
-**Requirements**: VIS-01, VIS-02, VIS-03, VIS-04, MOT-01, MOT-02
+**Requirements**: VIS-01, VIS-02, VIS-03, VIS-04
 **Success Criteria** (what must be TRUE):
 
-  1. The zodiac moves from full-screen to full-width to top arc with `easeInOutCubic` visual transitions.
-  2. Paper background, typography, Hebrew glyph, and constellation read as separate intentional elements.
+  1. The existing Blue Zodiac image treatment remains intact while the surrounding interface uses the matching light-paper background.
+  2. Vollkorn titles, Lalou Hebrew glyphs, and the corresponding constellation PNGs read as separate intentional elements.
   3. Personal and month compositions remain legible and complete in a 9:16 screenshot.
-  4. Reduced-motion mode retains the full experience without large spatial motion.
+  4. This phase does not import or alter the separate zodiac rotor prototype.
 
-**Plans**: 1 plan
+**Plans**: Implemented inline at `562b624`; verification pending
 **UI hint**: yes
 
 Plans:
 
-- [ ] 03-01: Integrate the visual assets, persistent zodiac renderer, and motion system.
+- [x] 03-01: Integrate Vollkorn, Lalou glyphs, and all twelve constellation assets while preserving the existing zodiac treatment. (inline implementation)
 
 ### Phase 4: Upcoming & QA
 
@@ -94,13 +95,33 @@ Plans:
 
 - [ ] 04-01: Complete the upcoming panel and run final mobile/accessibility QA.
 
+### Phase 5: Zodiac Rotor Integration
+
+**Goal**: Users experience the separately developed zodiac rotor as the persistent astrology element without regressing the completed mobile flow.
+**Depends on**: Phases 3 and 4
+**Requirements**: MOT-01, MOT-02
+**Success Criteria** (what must be TRUE):
+
+  1. The component from `codex/rotor-prototype` is imported selectively without merging unrelated prototype code.
+  2. One persistent zodiac renderer supports the full-screen, full-width, and top-arc compositions.
+  3. Motion uses the approved easing and reduced-motion mode removes large spatial movement.
+  4. Both mobile paths are rechecked after integration.
+
+**Plans**: 1 plan
+**UI hint**: yes
+
+Plans:
+
+- [ ] 05-01: Import and adapt the isolated rotor component, then rerun motion/mobile QA.
+
 ## Progress
 
-**Execution Order:** Phase 1 → Phase 2 and Phase 3 → Phase 4
+**Execution Order:** Phase 1 → Phase 2 → Phase 3 → Phase 4 → Phase 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Mobile Flow Skeleton | 1/1 | Complete    | 2026-07-11 |
-| 2. Content & Static Data | 1/1 | In review | - |
-| 3. Visual System & Motion | 0/1 | Not started | - |
+| 2. Content & Static Data | 1/1 | Complete | 2026-07-11 |
+| 3. Visual Assets & Typography | 1/1 | In review | - |
 | 4. Upcoming & QA | 0/1 | Not started | - |
+| 5. Zodiac Rotor Integration | 0/1 | Not started | - |

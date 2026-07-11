@@ -17,14 +17,14 @@ as a discovery, not a requirement.
 
 ### Content and Static Data
 
-- [ ] **CAL-01**: The app auto-detects the current Hebrew month and normalizes Adar I/II to shared Adar content while retaining the exact displayed month.
-- [ ] **READ-01**: The current-month reading includes English and Hebrew month names, archetype, zodiac, symbolic current moon state, short reading, and concrete ritual.
-- [ ] **READ-02**: User can reveal two or three sentences of Jewish/Kabbalistic grounding without that framing leading the welcome.
-- [ ] **PROF-01**: Valid date-only birthday input converts to and displays a Hebrew birth date.
-- [ ] **PROF-02**: The personal profile includes birth month, zodiac, tribe association in the adopted lineage, symbolic birth moon, Hebrew letter, reflective personal thread, and short reading.
-- [ ] **DATA-01**: The app bundles twelve authored current-month entries. Any valid birthday maps through the corresponding normalized month facts into one shared compact Personal Thread template, not one of twelve bespoke personalized profiles.
-- [ ] **COPY-01**: Copy is poetic, specific, non-predictive, and wisdom-focused; rituals are small enough to do today.
-- [ ] **DATA-02**: Results appear instantly and deterministically from bundled typed data, with no runtime AI, database, or server.
+- [x] **CAL-01**: The app auto-detects the current Hebrew month and normalizes Adar I/II to shared Adar content while retaining the exact displayed month.
+- [x] **READ-01**: The current-month reading includes English and Hebrew month names, archetype, zodiac, symbolic current moon state, short reading, and concrete ritual.
+- [x] **READ-02**: User can reveal two or three sentences of Jewish/Kabbalistic grounding without that framing leading the welcome.
+- [x] **PROF-01**: Valid date-only birthday input converts to and displays a Hebrew birth date.
+- [x] **PROF-02**: The personal profile includes birth month, zodiac, tribe association in the adopted lineage, symbolic birth moon, Hebrew letter, reflective personal thread, and short reading.
+- [x] **DATA-01**: The app bundles twelve authored current-month entries. Any valid birthday maps through the corresponding normalized month facts into one shared compact Personal Thread template, not one of twelve bespoke personalized profiles.
+- [x] **COPY-01**: Copy is poetic, specific, non-predictive, and wisdom-focused; rituals are small enough to do today.
+- [x] **DATA-02**: Results appear instantly and deterministically from bundled typed data, with no runtime AI, database, or server.
 
 ### Visual System and Motion
 
@@ -72,20 +72,20 @@ as a discovery, not a requirement.
 | FLOW-03 | Phase 1 | Complete |
 | FLOW-04 | Phase 1 | Complete |
 | FLOW-05 | Phase 1 | Complete |
-| CAL-01 | Phase 2 | Pending |
-| READ-01 | Phase 2 | Pending |
-| READ-02 | Phase 2 | Pending |
-| PROF-01 | Phase 2 | Pending |
-| PROF-02 | Phase 2 | Pending |
-| DATA-01 | Phase 2 | Pending |
-| COPY-01 | Phase 2 | Pending |
-| DATA-02 | Phase 2 | Pending |
+| CAL-01 | Phase 2 | Complete |
+| READ-01 | Phase 2 | Complete |
+| READ-02 | Phase 2 | Complete |
+| PROF-01 | Phase 2 | Complete |
+| PROF-02 | Phase 2 | Complete |
+| DATA-01 | Phase 2 | Complete |
+| COPY-01 | Phase 2 | Complete |
+| DATA-02 | Phase 2 | Complete |
 | VIS-01 | Phase 3 | Pending |
 | VIS-02 | Phase 3 | Pending |
 | VIS-03 | Phase 3 | Pending |
 | VIS-04 | Phase 3 | Pending |
-| MOT-01 | Phase 3 | Pending |
-| MOT-02 | Phase 3 | Pending |
+| MOT-01 | Phase 5 | Pending |
+| MOT-02 | Phase 5 | Pending |
 | UP-01 | Phase 4 | Pending |
 | UP-02 | Phase 4 | Pending |
 | QA-01 | Phase 4 | Pending |
@@ -99,4 +99,4 @@ as a discovery, not a requirement.
 
 ---
 *Requirements defined: 2026-07-10*
-*Last updated: 2026-07-11 after Phase 2 inline implementation and profile-scope clarification*
+*Last updated: 2026-07-11 after Phase 3 asset integration and rotor-phase separation*
