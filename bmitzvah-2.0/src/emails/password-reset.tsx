@@ -9,11 +9,11 @@ export type PasswordResetEmailProps = {
 export function PasswordResetEmail({ resetUrl, name }: PasswordResetEmailProps) {
   const firstName = name ? name.split(' ')[0] : null
   return (
-    <EmailLayout preview="Reset your B'Mitzvah Coach password">
+    <EmailLayout preview="Reset your B'Mitzvah 2.0 password">
       <EmailHeading>Reset your password</EmailHeading>
       <EmailText>
         {firstName ? `Hi ${firstName}, ` : ''}we got a request to reset the password on your
-        B'Mitzvah Coach account. Choose a new one below. This link expires in an hour.
+        B'Mitzvah 2.0 account. Choose a new one below. This link expires in an hour.
       </EmailText>
       <Section style={{ margin: '8px 0 16px' }}>
         <BrandButton href={resetUrl}>Choose a new password</BrandButton>

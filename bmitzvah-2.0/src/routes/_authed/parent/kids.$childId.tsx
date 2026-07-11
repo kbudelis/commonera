@@ -3,6 +3,7 @@ import { ArrowLeft, Check, Circle, Heart } from 'lucide-react'
 import { motion, type Variants } from 'motion/react'
 import { useState } from 'react'
 import { z } from 'zod'
+import { ChildSettingsDialog } from '@/components/child-settings-dialog'
 import { useAppForm } from '@/components/form'
 import {
   type FavoritedGuide,
@@ -26,7 +27,7 @@ import { journeyProgress } from '@/lib/journey/progress'
 import { cn } from '@/lib/utils'
 import { resetChildPasswordFn } from '@/utils/auth.functions'
 import type { ResetChildPasswordError } from '@/utils/auth.server'
-import { fetchProvidersFn } from '@/utils/content.functions'
+import { fetchProvidersFn, fetchSetupOptionsFn } from '@/utils/content.functions'
 import { fetchFavoritesFn, fetchKidJourneyFn, fetchKidsFn } from '@/utils/journeys.functions'
 import type { CelebrationView, JourneyView } from '@/utils/journeys.server'
 
@@ -34,15 +35,16 @@ type KidRef = { readonly id: string; readonly displayName: string }
 
 export const Route = createFileRoute('/_authed/parent/kids/$childId')({
   loader: async ({ params }) => {
-    const [journey, kids, favorites, providers] = await Promise.all([
+    const [journey, kids, favorites, providers, setupOptions] = await Promise.all([
       fetchKidJourneyFn({ data: { childId: params.childId } }),
       fetchKidsFn(),
       fetchFavoritesFn(),
       fetchProvidersFn(),
+      fetchSetupOptionsFn(),
     ])
     const kid = kids.find((k) => k.id === params.childId) ?? null
     const guides = kidFavoritedGuides(params.childId, favorites, providers)
-    return { journey, kid, guides }
+    return { journey, kid, guides, setupOptions }
   },
   component: KidJourneyPage,
 })
@@ -79,6 +81,7 @@ function KidNotFound() {
 }
 
 function BackBar({ kid }: { kid: KidRef }) {
+  const { setupOptions } = Route.useLoaderData()
   const firstName = kid.displayName.split(' ')[0] || kid.displayName
   const [resetting, setResetting] = useState(false)
   return (
@@ -95,9 +98,18 @@ function BackBar({ kid }: { kid: KidRef }) {
           This is {firstName}'s design. Cheer, don't steer.
         </p>
       </div>
-      <Button variant="outline" size="sm" className="shrink-0" onClick={() => setResetting(true)}>
-        Reset password
-      </Button>
+      <div className="flex shrink-0 items-center gap-2">
+        <ChildSettingsDialog
+          childId={kid.id}
+          kidName={kid.displayName}
+          options={setupOptions}
+          trigger={<Button variant="outline" size="sm" />}
+          triggerLabel={`About ${firstName}`}
+        />
+        <Button variant="outline" size="sm" onClick={() => setResetting(true)}>
+          Reset password
+        </Button>
+      </div>
       {resetting ? (
         <ResetChildPasswordDialog kid={kid} onClose={() => setResetting(false)} />
       ) : null}

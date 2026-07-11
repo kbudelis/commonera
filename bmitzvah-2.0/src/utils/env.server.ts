@@ -7,7 +7,7 @@ const EnvSchema = z.object({
   // Email (Resend). Optional in local dev: with no key, emails are logged to the server
   // console (including any reset link) instead of being sent, so flows are testable offline.
   RESEND_API_KEY: z.string().min(1).optional(),
-  EMAIL_FROM: z.string().min(1).default("B'Mitzvah Coach <onboarding@resend.dev>"),
+  EMAIL_FROM: z.string().min(1).default("B'Mitzvah 2.0 <onboarding@resend.dev>"),
   // Absolute base URL used to build links inside emails (reset password, etc.).
   SITE_URL: z.url().default('http://localhost:3000'),
 })

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { ArrowRight, Check, Lock } from 'lucide-react'
+import { ArrowRight, Check, Handshake } from 'lucide-react'
 import { AnimatePresence, LayoutGroup, motion } from 'motion/react'
 import { useState } from 'react'
 import { TemplateChip } from '@/components/template-chip'
@@ -489,8 +489,8 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* Guides: the directory is earned, and that is the hook. Drenched
-            primary panel, asymmetric, with the vetted names waiting behind it. */}
+        {/* Guides: companions through the journey, available from day one.
+            Drenched primary panel, asymmetric, with the vetted names beside it. */}
         <section className="mx-auto w-full max-w-6xl px-4 pb-24 sm:px-6 lg:pb-32">
           <motion.div
             initial={{ y: 24 }}
@@ -502,16 +502,17 @@ function LandingPage() {
             <div className="grid gap-10 p-8 sm:p-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
               <div className="flex flex-col items-start gap-5">
                 <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-sm font-bold text-accent-foreground">
-                  <Lock className="size-3.5" aria-hidden />
-                  Unlocks at the finish line
+                  <Handshake className="size-3.5" aria-hidden />
+                  With you from day one
                 </span>
                 <h2 className="font-display text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
-                  Finish your journey, meet your guides
+                  Go it alone, or bring on a guide
                 </h2>
                 <p className="max-w-md text-lg text-primary-foreground/80">
                   Real outdoor educators, artists, mentors and tradition-keepers, each one vetted
-                  before they ever meet your kid. The directory opens the day the last milestone is
-                  done. Think of it as the reward, not the gate.
+                  before they ever meet your kid. A guide could be a rabbi — or the person who helps
+                  build the Roblox part of a Roblox-themed B'Mitzvah. They keep the journey moving;
+                  you decide if and when to bring one in.
                 </p>
                 <Button
                   size="lg"
@@ -530,7 +531,7 @@ function LandingPage() {
                     />
                   }
                 >
-                  {user ? 'Open the guide directory' : 'Begin your journey'}
+                  {user ? 'Meet the guides' : 'Begin your journey'}
                   <ArrowRight aria-hidden />
                 </Button>
               </div>

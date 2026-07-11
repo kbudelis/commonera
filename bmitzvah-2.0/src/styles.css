@@ -1,5 +1,7 @@
 @import "@fontsource-variable/nunito-sans";
-@import "@fontsource-variable/fraunces";
+/* full.css carries the opsz/SOFT/WONK axes DESIGN.md names as the display
+ * voice; the default export is wght-only. */
+@import "@fontsource-variable/fraunces/full.css";
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));

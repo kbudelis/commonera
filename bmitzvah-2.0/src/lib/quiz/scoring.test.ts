@@ -61,6 +61,12 @@ describe('scoreQuiz', () => {
     expect(traditional['roots-and-rituals']).toBe(cultural['roots-and-rituals'] + 4)
   })
 
+  it('applies no boost when the parent has not answered the observance question', () => {
+    const unanswered = scoreQuiz(questions, { q2: ['q2-hike'] }, null)
+    const cultural = scoreQuiz(questions, { q2: ['q2-hike'] }, 'cultural')
+    expect(unanswered['roots-and-rituals']).toBe(cultural['roots-and-rituals'])
+  })
+
   it('boosts my-own-path when no theme clearly wins', () => {
     const flat = scoreQuiz(questions, {}, 'cultural')
     expect(flat['my-own-path']).toBeGreaterThan(0)

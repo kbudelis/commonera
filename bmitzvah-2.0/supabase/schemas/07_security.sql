@@ -11,10 +11,10 @@
 --                                (no update/delete)
 --   milestones / activities / -> read if you can view the journey; write if you
 --   celebration_plans            own it
---   provider_interest         -> parent inserts own lead; read own (directory
---                                gate re-checked in the server function)
+--   provider_interest         -> parent inserts own lead; read own
 --   provider_favorite         -> child inserts/deletes own heart; parent reads
---                                their children's (gate re-checked server-side)
+--                                their children's
+--   child_settings            -> parent writes for own kids; kid reads own row
 
 -- ---------------------------------------------------------------------------
 -- Security-definer helper grants. Revoke the implicit PUBLIC execute, then hand
@@ -105,6 +105,7 @@ grant select, insert, update, delete on public.journey_activities to authenticat
 grant select, insert, update, delete on public.celebration_plans to authenticated;
 grant select, insert on public.provider_interest to authenticated;
 grant select, insert, delete on public.provider_favorite to authenticated;
+grant select, insert, update on public.child_settings to authenticated;
 
 grant select, insert, update, delete on public.profiles to service_role;
 grant select, insert, update, delete on public.journeys to service_role;
@@ -113,6 +114,7 @@ grant select, insert, update, delete on public.journey_activities to service_rol
 grant select, insert, update, delete on public.celebration_plans to service_role;
 grant select, insert, update, delete on public.provider_interest to service_role;
 grant select, insert, update, delete on public.provider_favorite to service_role;
+grant select, insert, update, delete on public.child_settings to service_role;
 
 -- ---------------------------------------------------------------------------
 -- User data: RLS.
@@ -124,6 +126,7 @@ alter table public.journey_activities enable row level security;
 alter table public.celebration_plans enable row level security;
 alter table public.provider_interest enable row level security;
 alter table public.provider_favorite enable row level security;
+alter table public.child_settings enable row level security;
 
 create policy profiles_select_own_or_children on public.profiles
   for select to authenticated
@@ -218,6 +221,21 @@ create policy favorite_delete_own on public.provider_favorite
   for delete to authenticated
   using (child_id = (select auth.uid()));
 
+-- Child settings: the parent answers questions about their kid (write); the
+-- kid reads their own row so quiz scoring can use the observance answer.
+create policy child_settings_select_own_or_parent on public.child_settings
+  for select to authenticated
+  using (child_id = (select auth.uid()) or public.is_parent_of(child_id));
+
+create policy child_settings_insert_parent on public.child_settings
+  for insert to authenticated
+  with check (public.is_parent_of(child_id));
+
+create policy child_settings_update_parent on public.child_settings
+  for update to authenticated
+  using (public.is_parent_of(child_id))
+  with check (public.is_parent_of(child_id));
+
 -- ---------------------------------------------------------------------------
 -- Admin (CommonEra operators). is_admin() is the boundary. Admins read all user
 -- data (account management) and read/write the whole reference catalog (CMS).
@@ -244,6 +262,8 @@ create policy celebration_admin_read on public.celebration_plans
 create policy interest_admin_read on public.provider_interest
   for select to authenticated using (public.is_admin());
 create policy favorite_admin_read on public.provider_favorite
+  for select to authenticated using (public.is_admin());
+create policy child_settings_admin_read on public.child_settings
   for select to authenticated using (public.is_admin());
 
 -- Full write on the reference catalog for admins. Public read stays open via the

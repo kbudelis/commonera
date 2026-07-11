@@ -1,6 +1,6 @@
 import type { LinkProps } from '@tanstack/react-router'
 import { Link, useRouterState } from '@tanstack/react-router'
-import { BookOpen, Handshake, Lock, Users } from 'lucide-react'
+import { BookOpen, Handshake, Users } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { NavUser } from '@/components/shell/nav-user'
 import {
@@ -13,7 +13,6 @@ import {
   SidebarHeader,
   SidebarInset,
   SidebarMenu,
-  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
@@ -21,7 +20,6 @@ import {
 } from '@/components/ui/sidebar'
 import { Wordmark } from '@/components/wordmark'
 import type { AuthUser } from '@/lib/auth/types'
-import type { DirectoryAccess } from '@/utils/journeys.server'
 
 type ParentNavItem = {
   readonly to: LinkProps['to']
@@ -31,18 +29,11 @@ type ParentNavItem = {
 
 const PARENT_NAV: readonly ParentNavItem[] = [
   { to: '/parent', label: 'Family', icon: Users },
+  { to: '/parent/guides', label: 'Guides', icon: Handshake },
   { to: '/stories', label: 'Stories', icon: BookOpen },
 ]
 
-export function ParentShell({
-  user,
-  access,
-  children,
-}: {
-  user: AuthUser
-  access: DirectoryAccess
-  children: ReactNode
-}) {
+export function ParentShell({ user, children }: { user: AuthUser; children: ReactNode }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname })
 
   return (
@@ -69,20 +60,6 @@ export function ParentShell({
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))}
-                <SidebarMenuItem>
-                  <SidebarMenuButton
-                    isActive={pathname === '/parent/guides'}
-                    render={<Link to="/parent/guides" />}
-                  >
-                    <Handshake aria-hidden />
-                    Guides
-                  </SidebarMenuButton>
-                  {access.unlocked ? null : (
-                    <SidebarMenuBadge aria-label="Locked until a journey is complete">
-                      <Lock className="size-3.5" aria-hidden />
-                    </SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>

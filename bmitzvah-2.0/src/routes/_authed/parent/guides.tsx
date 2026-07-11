@@ -1,32 +1,34 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Heart } from 'lucide-react'
 import { GuideHeartChips, kidFavoritedGuides } from '@/components/kid-status'
-import { LockedDirectory } from '@/components/locked-directory'
 import { type KidFavoriteRow, ProviderDirectory } from '@/components/provider-directory'
 import type { Provider } from '@/lib/content/types'
 import { fetchProvidersFn } from '@/utils/content.functions'
-import { fetchDirectoryAccessFn, fetchFavoritesFn, fetchKidsFn } from '@/utils/journeys.functions'
+import { fetchFavoritesFn, fetchKidsFn } from '@/utils/journeys.functions'
 import type { KidSummary } from '@/utils/journeys.server'
 
 export const Route = createFileRoute('/_authed/parent/guides')({
   loader: async () => {
-    const [access, providers, kids, favorites] = await Promise.all([
-      fetchDirectoryAccessFn(),
+    const [providers, kids, favorites] = await Promise.all([
       fetchProvidersFn(),
       fetchKidsFn(),
       fetchFavoritesFn(),
     ])
-    return { access, providers, kids, favorites }
+    return { providers, kids, favorites }
   },
   component: ParentGuidesPage,
 })
 
 function ParentGuidesPage() {
-  const { access, providers, kids, favorites } = Route.useLoaderData()
+  const { providers, kids, favorites } = Route.useLoaderData()
   const { user } = Route.useRouteContext()
-  if (!access.unlocked) return <LockedDirectory access={access} viewer="parent" />
   return (
     <div className="flex flex-col gap-10">
+      <p className="text-muted-foreground">
+        A guide is a facilitator through the journey, not a finish-line reward: someone who keeps
+        your kid on track, helps with meaning-making, or builds the wild idea with them. Bring one
+        in whenever it helps — or don't. Going it alone is a fine plan too.
+      </p>
       <KidInterestSummary kids={kids} favorites={favorites} providers={providers} />
       <ProviderDirectory
         user={user}

@@ -61,14 +61,14 @@ export function EmailLayout({ preview, children }: { preview: string; children: 
                 letterSpacing: '-0.01em',
               }}
             >
-              B'Mitzvah Coach
+              B'Mitzvah 2.0
             </Text>
           </Section>
           <Section style={{ padding: '4px 32px 28px' }}>{children}</Section>
           <Hr style={{ borderColor: brand.border, margin: 0 }} />
           <Section style={{ padding: '18px 32px' }}>
             <Text style={{ margin: 0, fontSize: 12, color: brand.muted, lineHeight: '18px' }}>
-              You're getting this because you have a B'Mitzvah Coach family account. Questions? Just
+              You're getting this because you have a B'Mitzvah 2.0 family account. Questions? Just
               reply to this email.
             </Text>
           </Section>

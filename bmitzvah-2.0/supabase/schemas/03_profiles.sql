@@ -15,3 +15,14 @@ create table public.profiles (
 
 create unique index profiles_username_key on public.profiles (username);
 create index profiles_parent_id_idx on public.profiles (parent_id);
+
+-- Parent-answered facts about a child (timeline, observance). Kept off
+-- profiles so that table's narrow column grants stay intact: parents write
+-- these rows for their own kids, the kid reads them. Nullable columns mean
+-- "not answered yet"; journeys snapshot the values at creation time.
+create table public.child_settings (
+  child_id uuid primary key references public.profiles (id) on delete cascade,
+  timeline text references public.timeline_options (key),
+  comfort_level text references public.comfort_options (key),
+  updated_at timestamptz not null default now()
+);

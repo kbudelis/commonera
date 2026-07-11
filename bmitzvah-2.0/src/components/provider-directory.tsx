@@ -328,8 +328,7 @@ function Fact({ label, value, textClass }: { label: string; value: string; textC
 
 // The kid's whole footer: a heart toggle, no contact form. Toggling invalidates
 // the route so the loader re-reads favorites (matching the milestone-toggle
-// pattern elsewhere). Un-favoriting always works; favoriting can come back
-// 'locked' if the journey is no longer complete.
+// pattern elsewhere).
 function FavoriteButton({ providerKey, favorited }: { providerKey: string; favorited: boolean }) {
   const router = useRouter()
   const mutation = useMutation({
@@ -352,9 +351,7 @@ function FavoriteButton({ providerKey, favorited }: { providerKey: string; favor
       </Button>
       {mutation.data && !mutation.data.ok ? (
         <p className="text-xs font-bold text-destructive">
-          {mutation.data.error === 'locked'
-            ? 'Guides open up once your journey is complete.'
-            : "That didn't save. Give it another try in a moment."}
+          That didn't save. Give it another try in a moment.
         </p>
       ) : null}
     </div>
@@ -476,9 +473,7 @@ function ExpressInterestDialog({ provider, user }: { provider: Provider; user: A
               </div>
               {mutation.data && !mutation.data.ok ? (
                 <p className="text-sm font-bold text-destructive">
-                  {mutation.data.error === 'locked'
-                    ? 'Guides open up once the journey is complete.'
-                    : "That didn't go through. Give it another try in a moment."}
+                  That didn't go through. Give it another try in a moment.
                 </p>
               ) : null}
               <Button type="submit" disabled={mutation.isPending}>

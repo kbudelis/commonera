@@ -36,7 +36,9 @@ const zeroScores = (): Record<TemplateKey, number> => {
 export function scoreQuiz(
   questions: readonly QuizQuestion[],
   answers: QuizAnswers,
-  comfort: ComfortKey,
+  // Null when the parent hasn't answered the observance question yet: the quiz
+  // still works, just without the tradition lean.
+  comfort: ComfortKey | null,
 ): TemplateScores {
   const scores = zeroScores()
 
@@ -51,7 +53,7 @@ export function scoreQuiz(
     }
   }
 
-  scores['roots-and-rituals'] += COMFORT_BOOST[comfort]
+  if (comfort) scores['roots-and-rituals'] += COMFORT_BOOST[comfort]
 
   const others = TEMPLATE_KEYS.filter((key) => key !== 'my-own-path').map((key) => scores[key])
   const max = Math.max(...others)
@@ -72,7 +74,7 @@ export function rankTemplates(scores: TemplateScores): readonly RankedTemplate[]
 export function recommendTemplates(
   questions: readonly QuizQuestion[],
   answers: QuizAnswers,
-  comfort: ComfortKey,
+  comfort: ComfortKey | null,
 ): readonly RankedTemplate[] {
   return rankTemplates(scoreQuiz(questions, answers, comfort)).slice(0, 3)
 }

@@ -51,3 +51,14 @@ export const fetchQuizContentFn = createServerFn({ method: 'GET' }).handler(asyn
 export const fetchTimelineOptionsFn = createServerFn({ method: 'GET' }).handler(async () =>
   getTimelineOptions(getSupabaseServerClient()),
 )
+
+// The two "about your kid" option lists (timeline + observance), for the
+// parent-facing setup questions — the quiz questions stay out of the payload.
+export const fetchSetupOptionsFn = createServerFn({ method: 'GET' }).handler(async () => {
+  const supabase = getSupabaseServerClient()
+  const [timeline, comfort] = await Promise.all([
+    getTimelineOptions(supabase),
+    getComfortOptions(supabase),
+  ])
+  return { timeline, comfort }
+})

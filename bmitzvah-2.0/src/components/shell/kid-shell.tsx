@@ -1,6 +1,6 @@
 import type { LinkProps } from '@tanstack/react-router'
 import { Link, useRouterState } from '@tanstack/react-router'
-import { Handshake, Lock, Map as MapIcon, PartyPopper, Share2 } from 'lucide-react'
+import { Handshake, Map as MapIcon, PartyPopper, Share2 } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { NavUser } from '@/components/shell/nav-user'
 import { TemplateChip } from '@/components/template-chip'
@@ -13,7 +13,6 @@ import {
   SidebarHeader,
   SidebarInset,
   SidebarMenu,
-  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
@@ -34,6 +33,7 @@ type KidNavItem = {
 
 const KID_NAV: readonly KidNavItem[] = [
   { to: '/kid', label: 'My journey', icon: MapIcon },
+  { to: '/kid/guides', label: 'Guides', icon: Handshake },
   { to: '/kid/celebration', label: 'Celebration', icon: PartyPopper },
   { to: '/kid/card', label: 'Journey card', icon: Share2 },
 ]
@@ -49,7 +49,6 @@ export function KidShell({
 }) {
   const pathname = useRouterState({ select: (state) => state.location.pathname })
   const progress = journey ? journeyProgress(journey.milestones.map((m) => m.status)) : null
-  const guidesUnlocked = progress !== null && progress.total > 0 && progress.done === progress.total
   const palette = journey ? TEMPLATE_PALETTE[journey.template] : null
 
   return (
@@ -93,20 +92,6 @@ export function KidShell({
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))}
-                <SidebarMenuItem>
-                  <SidebarMenuButton
-                    isActive={pathname === '/kid/guides'}
-                    render={<Link to="/kid/guides" />}
-                  >
-                    <Handshake aria-hidden />
-                    Guides
-                  </SidebarMenuButton>
-                  {guidesUnlocked ? null : (
-                    <SidebarMenuBadge aria-label="Locked until your journey is complete">
-                      <Lock className="size-3.5" aria-hidden />
-                    </SidebarMenuBadge>
-                  )}
-                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>

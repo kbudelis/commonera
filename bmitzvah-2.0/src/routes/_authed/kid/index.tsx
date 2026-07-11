@@ -5,7 +5,6 @@ import {
   Check,
   Circle,
   Handshake,
-  Lock,
   PartyPopper,
   Plus,
   Search,
@@ -28,7 +27,7 @@ import { Input } from '@/components/ui/input'
 import { useTemplate } from '@/hooks/use-templates'
 import { TEMPLATE_PALETTE, type TemplatePalette } from '@/lib/content/palette'
 import type { ActivityPrompt } from '@/lib/content/types'
-import { type JourneyProgress, journeyProgress } from '@/lib/journey/progress'
+import { journeyProgress } from '@/lib/journey/progress'
 import { cn } from '@/lib/utils'
 import { fetchActivityPromptsFn, fetchTimelineOptionsFn } from '@/utils/content.functions'
 import {
@@ -95,6 +94,13 @@ function EmptyDashboard() {
       <Button size="lg" render={<Link to="/kid/quiz" />}>
         Take the quiz
       </Button>
+      <p className="text-sm text-muted-foreground">
+        Curious who could help along the way?{' '}
+        <Link to="/kid/guides" className="font-bold text-foreground underline underline-offset-4">
+          Meet the guides
+        </Link>{' '}
+        whenever you want.
+      </p>
     </motion.section>
   )
 }
@@ -152,7 +158,7 @@ function JourneyDashboard({ journey }: { journey: JourneyView }) {
         <div className="flex flex-col gap-6">
           <ActivityList journey={journey} />
           <SuggestionBank journey={journey} />
-          <GuidesReward palette={palette} progress={progress} />
+          <GuidesCard />
         </div>
       </div>
     </motion.div>
@@ -278,7 +284,7 @@ function MilestoneMap({
 }
 
 // One-time celebratory burst when every milestone is done. Template dots and
-// accent-gold dots pop in, then the whole banner is the door to the guides.
+// accent-gold dots pop in, then the whole banner is the door to the party.
 const burst: Variants = {
   hidden: {},
   show: { transition: { staggerChildren: 0.06, delayChildren: 0.1 } },
@@ -298,7 +304,10 @@ function CompletionBanner({ palette }: { palette: TemplatePalette }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: EASE }}
     >
-      <Link to="/kid/guides" className="block rounded-2xl bg-accent p-5 text-accent-foreground">
+      <Link
+        to="/kid/celebration"
+        className="block rounded-2xl bg-accent p-5 text-accent-foreground"
+      >
         <motion.div
           variants={burst}
           initial="hidden"
@@ -316,7 +325,7 @@ function CompletionBanner({ palette }: { palette: TemplatePalette }) {
         </motion.div>
         <p className="mt-3 font-display text-2xl font-semibold">Every milestone, done.</p>
         <p className="mt-1 flex items-center gap-1.5 text-sm">
-          Your guides just unlocked. Go meet them.
+          You did the whole thing. Go plan the party.
           <ArrowRight className="size-4" aria-hidden />
         </p>
       </Link>
@@ -324,72 +333,28 @@ function CompletionBanner({ palette }: { palette: TemplatePalette }) {
   )
 }
 
-function GuidesReward({
-  palette,
-  progress,
-}: {
-  palette: TemplatePalette
-  progress: JourneyProgress
-}) {
-  const unlocked = progress.total > 0 && progress.done === progress.total
-
-  if (unlocked) {
-    return (
-      <motion.section variants={item}>
-        <Link to="/kid/guides" className="block">
-          <motion.div
-            initial={false}
-            whileHover={{ scale: 1.01 }}
-            transition={{ duration: 0.2, ease: EASE }}
-            className="flex items-center gap-4 rounded-2xl bg-accent p-5 text-accent-foreground"
-          >
-            <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-accent-deep/20">
-              <Handshake className="size-5 text-accent-deep" aria-hidden />
-            </span>
-            <div className="flex-1">
-              <p className="font-display text-lg font-semibold">Your guides are open</p>
-              <p className="text-sm">Real people who help journeys like yours happen.</p>
-            </div>
-            <ArrowRight className="size-5 shrink-0" aria-hidden />
-          </motion.div>
-        </Link>
-      </motion.section>
-    )
-  }
-
+// Guides are companions through the journey, not a finish-line reward, so the
+// door to them is always open.
+function GuidesCard() {
   return (
-    <motion.section variants={item} className="flex flex-col gap-4 rounded-2xl border bg-card p-5">
-      <div className="flex items-start gap-3">
-        <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-secondary">
-          <Lock className="size-5 text-muted-foreground" aria-hidden />
-        </span>
-        <div className="flex flex-col gap-1">
-          <h2 className="font-display text-lg font-semibold">Your guides</h2>
-          <p className="text-sm text-muted-foreground">
-            Real people who help journeys like yours happen. They open when every milestone is done.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <div
-          className="h-2 overflow-hidden rounded-full bg-secondary"
-          role="progressbar"
-          aria-valuenow={progress.done}
-          aria-valuemin={0}
-          aria-valuemax={progress.total}
-          aria-label="Milestones toward guides"
+    <motion.section variants={item}>
+      <Link to="/kid/guides" className="block">
+        <motion.div
+          initial={false}
+          whileHover={{ scale: 1.01 }}
+          transition={{ duration: 0.2, ease: EASE }}
+          className="flex items-center gap-4 rounded-2xl bg-accent p-5 text-accent-foreground"
         >
-          <motion.div
-            className={cn('h-full rounded-full', palette.bar)}
-            initial={{ width: 0 }}
-            animate={{ width: `${Math.max(progress.percent, 3)}%` }}
-            transition={{ duration: 0.5, ease: EASE }}
-          />
-        </div>
-        <p className="text-xs font-bold text-muted-foreground">
-          {progress.done} of {progress.total} milestones
-        </p>
-      </div>
+          <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-accent-deep/20">
+            <Handshake className="size-5 text-accent-deep" aria-hidden />
+          </span>
+          <div className="flex-1">
+            <p className="font-display text-lg font-semibold">Go it alone, or bring someone in?</p>
+            <p className="text-sm">Real people who help journeys like yours happen.</p>
+          </div>
+          <ArrowRight className="size-5 shrink-0" aria-hidden />
+        </motion.div>
+      </Link>
     </motion.section>
   )
 }

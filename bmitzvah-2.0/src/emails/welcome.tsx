@@ -9,7 +9,7 @@ export type WelcomeEmailProps = {
 export function WelcomeEmail({ name, appUrl }: WelcomeEmailProps) {
   const firstName = name.split(' ')[0] || name
   return (
-    <EmailLayout preview="Welcome to B'Mitzvah Coach">
+    <EmailLayout preview="Welcome to B'Mitzvah 2.0">
       <EmailHeading>Welcome, {firstName}!</EmailHeading>
       <EmailText>
         Thanks for setting up your family account. Here's the idea: you handle the setup, and your

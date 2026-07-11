@@ -1,11 +1,10 @@
 import { createServerFn } from '@tanstack/react-start'
 import { z } from 'zod'
-import { COMFORT_KEYS, TEMPLATE_KEYS, TIMELINE_KEYS } from '@/lib/content/types'
+import { TEMPLATE_KEYS } from '@/lib/content/types'
 import {
   addActivity,
   createJourney,
   expressInterest,
-  getDirectoryAccess,
   getJourneyView,
   listFavorites,
   listKids,
@@ -24,8 +23,6 @@ const QuizAnswersSchema = z
 const CreateJourneySchema = z.object({
   template: z.enum(TEMPLATE_KEYS),
   name: z.string().trim().min(1).max(80),
-  timeline: z.enum(TIMELINE_KEYS),
-  comfort: z.enum(COMFORT_KEYS),
   answers: QuizAnswersSchema,
 })
 
@@ -124,10 +121,6 @@ export const fetchKidsFn = createServerFn({ method: 'GET' }).handler(async () =>
 export const expressInterestFn = createServerFn({ method: 'POST' })
   .validator(ExpressInterestSchema)
   .handler(async ({ data }) => expressInterest(getSupabaseServerClient(), data))
-
-export const fetchDirectoryAccessFn = createServerFn({ method: 'GET' }).handler(async () =>
-  getDirectoryAccess(getSupabaseServerClient()),
-)
 
 export const setFavoriteFn = createServerFn({ method: 'POST' })
   .validator(SetFavoriteSchema)

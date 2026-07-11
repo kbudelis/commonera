@@ -39,7 +39,7 @@ async function deliver(args: {
 export async function sendWelcomeEmail(to: string, name: string): Promise<void> {
   await deliver({
     to,
-    subject: "Welcome to B'Mitzvah Coach",
+    subject: "Welcome to B'Mitzvah 2.0",
     element: <WelcomeEmail name={name} appUrl={env.SITE_URL} />,
   })
 }
@@ -51,7 +51,7 @@ export async function sendPasswordResetEmail(
 ): Promise<void> {
   await deliver({
     to,
-    subject: "Reset your B'Mitzvah Coach password",
+    subject: "Reset your B'Mitzvah 2.0 password",
     element: <PasswordResetEmail resetUrl={resetUrl} name={name} />,
     devLink: resetUrl,
   })

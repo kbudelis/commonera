@@ -5,6 +5,7 @@ import { type QuizAnswers, scoreQuiz } from '@/lib/quiz/scoring'
 import { err, ok, type Result } from '@/lib/result'
 import type { Database } from '@/types/database'
 import { getCurrentUser } from '@/utils/auth.server'
+import { getChildSettings } from '@/utils/child-settings.server'
 import { getQuizQuestions, getTemplateMilestones } from '@/utils/content.server'
 import { sendChildFinishedEmail, sendChildMilestoneEmail } from '@/utils/email.server'
 
@@ -127,8 +128,6 @@ export async function getJourneyView(
 export type CreateJourneyInput = {
   readonly template: TemplateKey
   readonly name: string
-  readonly timeline: TimelineKey
-  readonly comfort: ComfortKey
   readonly answers: QuizAnswers
 }
 
@@ -154,9 +153,12 @@ export async function createJourney(
 
   // Scores are recomputed here so the stored record reflects the real quiz,
   // not whatever the client claims. Questions (and their weights) come from the
-  // database, the same source the client scored against.
+  // database, the same source the client scored against. Timeline and
+  // observance are the parent's answers about this kid (child_settings),
+  // snapshotted onto the journey at creation.
+  const settings = await getChildSettings(supabase, user.id)
   const questions = await getQuizQuestions(supabase)
-  const scores = scoreQuiz(questions, input.answers, input.comfort)
+  const scores = scoreQuiz(questions, input.answers, settings.comfort)
 
   const { data: journey, error: insertError } = await supabase
     .from('journeys')
@@ -164,8 +166,8 @@ export async function createJourney(
       child_id: user.id,
       template: input.template,
       name: input.name,
-      timeline: input.timeline,
-      comfort_level: input.comfort,
+      timeline: settings.timeline ?? '',
+      comfort_level: settings.comfort ?? '',
       quiz_answers: input.answers as Record<string, string[]>,
       quiz_scores: scores,
       share_slug: makeShareSlug(),
@@ -366,6 +368,9 @@ export type KidSummary = {
   readonly id: string
   readonly displayName: string
   readonly username: string
+  // Whether the parent has saved the about-your-kid answers (timeline,
+  // observance) — drives the dashboard nudge.
+  readonly settingsAnswered: boolean
   readonly journey: {
     readonly template: TemplateKey
     readonly name: string
@@ -384,6 +389,15 @@ export async function listKids(supabase: Supabase, parentId: string): Promise<Ki
     .order('created_at')
   if (!kids || kids.length === 0) return []
 
+  const { data: settingsRows } = await supabase
+    .from('child_settings')
+    .select('child_id')
+    .in(
+      'child_id',
+      kids.map((kid) => kid.id),
+    )
+  const answered = new Set((settingsRows ?? []).map((row) => row.child_id))
+
   const summaries: KidSummary[] = []
   for (const kid of kids) {
     const view = await getJourneyView(supabase, kid.id)
@@ -391,6 +405,7 @@ export async function listKids(supabase: Supabase, parentId: string): Promise<Ki
       id: kid.id,
       displayName: kid.display_name,
       username: kid.username ?? '',
+      settingsAnswered: answered.has(kid.id),
       journey: view
         ? {
             template: view.template,
@@ -406,74 +421,6 @@ export async function listKids(supabase: Supabase, parentId: string): Promise<Ki
   return summaries
 }
 
-// The guide directory is the reward at the end of the loop: it unlocks for a
-// kid when every milestone of their journey is done, and for a parent when at
-// least one of their kids has finished.
-export type DirectoryAccess = {
-  readonly unlocked: boolean
-  readonly done: number
-  readonly total: number
-  readonly journeyName: string | null
-  readonly kidName: string | null
-}
-
-const LOCKED_ACCESS: DirectoryAccess = {
-  unlocked: false,
-  done: 0,
-  total: 0,
-  journeyName: null,
-  kidName: null,
-}
-
-const isComplete = (done: number, total: number) => total > 0 && done === total
-
-export async function getDirectoryAccess(supabase: Supabase): Promise<DirectoryAccess> {
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-  if (!user) return LOCKED_ACCESS
-
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('role')
-    .eq('id', user.id)
-    .maybeSingle()
-  if (!profile) return LOCKED_ACCESS
-
-  if (profile.role === 'child') {
-    const view = await getJourneyView(supabase, user.id)
-    if (!view) return LOCKED_ACCESS
-    const done = view.milestones.filter((m) => m.status === 'done').length
-    const total = view.milestones.length
-    return {
-      unlocked: isComplete(done, total),
-      done,
-      total,
-      journeyName: view.name,
-      kidName: null,
-    }
-  }
-
-  // Parent: unlocked by the furthest-along kid; progress shown is theirs.
-  const kids = await listKids(supabase, user.id)
-  let best: DirectoryAccess = LOCKED_ACCESS
-  for (const kid of kids) {
-    if (!kid.journey) continue
-    const { milestonesDone: done, milestonesTotal: total } = kid.journey
-    const candidate: DirectoryAccess = {
-      unlocked: isComplete(done, total),
-      done,
-      total,
-      journeyName: kid.journey.name,
-      kidName: kid.displayName,
-    }
-    if (candidate.unlocked) return candidate
-    const bestRatio = best.total === 0 ? -1 : best.done / best.total
-    if (total > 0 && done / total > bestRatio) best = candidate
-  }
-  return best
-}
-
 export type ExpressInterestInput = {
   readonly providerKey: string
   readonly name: string
@@ -481,7 +428,7 @@ export type ExpressInterestInput = {
   readonly note: string
 }
 
-export type ExpressInterestError = 'not-signed-in' | 'not-parent' | 'locked' | 'write-failed'
+export type ExpressInterestError = 'not-signed-in' | 'not-parent' | 'write-failed'
 
 export async function expressInterest(
   supabase: Supabase,
@@ -493,11 +440,6 @@ export async function expressInterest(
   // enforces this too (interest_insert_own requires is_parent()); checking here
   // turns that into a clean typed error instead of a write failure.
   if (me.role !== 'parent') return err('not-parent')
-
-  // The directory gate is authorization, not decoration: re-check it here so a
-  // locked user cannot submit interest by calling the function directly.
-  const access = await getDirectoryAccess(supabase)
-  if (!access.unlocked) return err('locked')
 
   const { error } = await supabase.from('provider_interest').insert({
     provider_key: input.providerKey,
@@ -518,12 +460,11 @@ export type SetFavoriteInput = {
   readonly favorited: boolean
 }
 
-export type SetFavoriteError = 'not-signed-in' | 'not-child' | 'locked' | 'write-failed'
+export type SetFavoriteError = 'not-signed-in' | 'not-child' | 'write-failed'
 
-// A kid's lightweight "I'm interested" on a guide. Favoriting is gated on a
-// completed journey (the same reward gate as the lead), but UN-favoriting is
-// always allowed: milestones can regress, and a kid must always be able to
-// withdraw a signal they set. RLS scopes both writes to the kid's own rows.
+// A kid's lightweight "I'm interested" on a guide, available from day one —
+// guides are companions through the journey, not a finish-line reward. RLS
+// scopes both writes to the kid's own rows.
 export async function setFavorite(
   supabase: Supabase,
   input: SetFavoriteInput,
@@ -544,9 +485,6 @@ export async function setFavorite(
     }
     return ok(null)
   }
-
-  const access = await getDirectoryAccess(supabase)
-  if (!access.unlocked) return err('locked')
 
   // Idempotent: re-tapping an already-favorited guide is a no-op, not an error.
   const { error } = await supabase

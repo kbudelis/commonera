@@ -101,6 +101,49 @@ export type Database = {
           },
         ]
       }
+      child_settings: {
+        Row: {
+          child_id: string
+          comfort_level: string | null
+          timeline: string | null
+          updated_at: string
+        }
+        Insert: {
+          child_id: string
+          comfort_level?: string | null
+          timeline?: string | null
+          updated_at?: string
+        }
+        Update: {
+          child_id?: string
+          comfort_level?: string | null
+          timeline?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "child_settings_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "child_settings_comfort_level_fkey"
+            columns: ["comfort_level"]
+            isOneToOne: false
+            referencedRelation: "comfort_options"
+            referencedColumns: ["key"]
+          },
+          {
+            foreignKeyName: "child_settings_timeline_fkey"
+            columns: ["timeline"]
+            isOneToOne: false
+            referencedRelation: "timeline_options"
+            referencedColumns: ["key"]
+          },
+        ]
+      }
       comfort_options: {
         Row: {
           helper: string
