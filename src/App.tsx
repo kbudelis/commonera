@@ -184,7 +184,6 @@ export function FlowSections({
                 key={landmark}
                 line={welcomeLine}
                 onAdvance={onAdvanceWelcome}
-                onSkip={onSkip}
               />
             );
           case "zodiac-transition":
@@ -219,11 +218,9 @@ export function FlowSections({
 function WelcomeScreen({
   line,
   onAdvance,
-  onSkip,
 }: {
   line: number;
   onAdvance: () => void;
-  onSkip: () => void;
 }) {
   return (
     <section
@@ -236,11 +233,8 @@ function WelcomeScreen({
         <p id="welcome-line" className="welcome-line" aria-live="polite">
           {welcomeLines[line] ?? welcomeLines[welcomeLines.length - 1]}
         </p>
-        <button className="primary-action primary-action--light" onClick={onAdvance}>
-          Continue
-        </button>
-        <button className="text-action text-action--light" onClick={onSkip}>
-          Skip to this month
+        <button className="welcome-tap" onClick={onAdvance}>
+          tap to continue
         </button>
       </div>
     </section>

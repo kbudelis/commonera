@@ -159,7 +159,11 @@ input:focus-visible {
   position: absolute;
   z-index: 1;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 10%, rgba(4, 14, 54, 0.2) 86%);
+  background: radial-gradient(
+    circle at center,
+    rgba(4, 14, 54, 0.26) 0%,
+    rgba(4, 14, 54, 0.46) 92%
+  );
   content: "";
   pointer-events: none;
 }
@@ -208,17 +212,18 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.welcome-content .primary-action {
+.welcome-tap {
   position: absolute;
   right: 50%;
-  bottom: max(76px, calc(env(safe-area-inset-bottom) + 60px));
-  transform: translateX(50%);
-}
-
-.welcome-content .text-action {
-  position: absolute;
-  right: 50%;
-  bottom: max(18px, env(safe-area-inset-bottom));
+  bottom: max(26px, calc(env(safe-area-inset-bottom) + 16px));
+  min-width: 164px;
+  padding: 12px 18px;
+  border: 0;
+  color: var(--cream);
+  background: transparent;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
   transform: translateX(50%);
 }
 
@@ -290,21 +295,12 @@ h1 {
   font-weight: 700;
 }
 
-.primary-action--light {
-  color: var(--ink);
-  background: var(--cream);
-}
-
 .text-action {
   padding: 10px 6px;
   color: var(--ink);
   background: transparent;
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-
-.text-action--light {
-  color: var(--cream);
 }
 
 .birthday-section {

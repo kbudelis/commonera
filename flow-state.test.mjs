@@ -94,6 +94,15 @@ const renderFlow = (state) =>
     }),
   );
 
+test("welcome uses one tap action and birthday owns the month skip", () => {
+  const welcomeMarkup = renderFlow(createInitialFlow());
+  const birthdayMarkup = renderFlow(advanceToBirthday());
+
+  assert.match(welcomeMarkup, />tap to continue</);
+  assert.doesNotMatch(welcomeMarkup, /Skip to this month/);
+  assert.match(birthdayMarkup, /Skip to this month/);
+});
+
 test("both skip origins render month and upcoming without personal", () => {
   const welcomeSkip = transitionFlow(createInitialFlow(), {
     type: "skip-to-month",
