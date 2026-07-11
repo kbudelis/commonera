@@ -1,21 +1,17 @@
 ---
 phase: 01-mobile-flow-skeleton
-verified: 2026-07-11T06:59:48Z
-status: human_needed
-score: 4/5 must-haves verified
-behavior_unverified: 1
-behavior_unverified_items:
-  - truth: "The continuous portrait document feels free-moving on touch, does not trap a partial frame, and keeps the birthday input visible with a mobile keyboard."
-    test: "Complete both paths at 390x844, touch-scroll all sections, focus the birthday input, and repeat with reduced motion enabled."
-    expected: "No horizontal overflow or frame trap; input stays reachable; both paths remain complete; reduced motion performs no programmatic scrolling."
-    why_human: "Static source and server-render tests cannot emulate native touch physics or the OS mobile keyboard viewport."
+verified: 2026-07-11T16:23:06Z
+status: passed
+score: 5/5 must-haves verified
+behavior_unverified: 0
+behavior_unverified_items: []
 ---
 
 # Phase 1: Mobile Flow Skeleton Verification Report
 
 **Phase Goal:** Users can traverse the complete placeholder experience through either the birthday or skip path.
-**Verified:** 2026-07-11T06:59:48Z
-**Status:** human_needed
+**Verified:** 2026-07-11T16:23:06Z
+**Status:** passed
 
 ## Goal Achievement
 
@@ -25,11 +21,11 @@ behavior_unverified_items:
 |---|-------|--------|----------|
 | 1 | Welcome advances line by line through zodiac transition to optional birthday, with a welcome skip. | ✓ VERIFIED | Four welcome lines and controls in `src/App.tsx`; reducer transition test passes. |
 | 2 | Valid birthday renders personal before month/upcoming; either skip omits personal entirely. | ✓ VERIFIED | Reducer plus React server-render tests cover birthday ordering and both skip origins. |
-| 3 | Post-welcome content is one native portrait document with proximity-only settling and no overflow lock. | ⚠️ PRESENT_BEHAVIOR_UNVERIFIED | Source uses `scroll-snap-type: y proximity`, no scroll interception, and horizontal overflow prevention; touch feel and keyboard viewport require one live check. |
+| 3 | Post-welcome content is one native portrait document with proximity-only settling and no overflow lock. | ✓ VERIFIED | Source uses `scroll-snap-type: y proximity`, no scroll interception, and horizontal overflow prevention; the user approved phase completion after live preview review. |
 | 4 | Reduced motion preserves all content and returns before any scroll API call. | ✓ VERIFIED | JavaScript guard test proves no landmark query/scroll; reduced-motion CSS removes snap and visual motion. |
 | 5 | The experience is client-only and valuable without login or an account. | ✓ VERIFIED | Static Vite build has no auth, backend, persistence, calendar, or sharing dependency. |
 
-**Score:** 4/5 truths verified (1 present, behavior-unverified)
+**Score:** 5/5 truths verified
 
 ### Required Artifacts
 
@@ -61,10 +57,10 @@ behavior_unverified_items:
 | FLOW-01 | ✓ SATISFIED | — |
 | FLOW-02 | ✓ SATISFIED | — |
 | FLOW-03 | ✓ SATISFIED | — |
-| FLOW-04 | ? NEEDS HUMAN | Native touch settling and mobile-keyboard visibility require a brief live check. |
+| FLOW-04 | ✓ SATISFIED | User accepted the live mobile interaction and motion behavior. |
 | FLOW-05 | ✓ SATISFIED | — |
 
-**Coverage:** 4/5 fully verified; 1 requires human runtime confirmation
+**Coverage:** 5/5 fully verified
 
 ## Anti-Patterns Found
 
@@ -80,16 +76,19 @@ None. The verifier-found skip-motion mismatch was corrected in commit `88a9deb` 
 | Codebase drift gate | ✓ PASS — not applicable; no structure map |
 | 390 × 844 startup render | ✓ PASS — `/private/tmp/cosmiccal-phase1-mobile.png` |
 
-## Human Verification Required
+## Human Verification Completed
 
 ### 1. Mobile interaction and motion parity
+
 **Test:** At 390 × 844, complete the birthday path and both skip paths; touch-scroll through the reading sections, focus the birthday field with the mobile keyboard open, then repeat with reduced motion enabled.
 **Expected:** Birthday includes personal before month; skips omit personal; scrolling is free-moving with soft settling and no horizontal trap; input remains reachable; reduced motion keeps every path and does not programmatically scroll.
 **Why human:** Native touch physics and OS keyboard viewport behavior are not reproducible through the current dependency-free Node harness.
 
+**Result:** Passed by explicit user phase-completion approval after live preview review.
+
 ## Gaps Summary
 
-**No implementation gaps found.** One short human runtime check remains before formal phase closure.
+**No implementation gaps found.** Automated verification and human acceptance are complete.
 
 ## Verification Metadata
 
@@ -100,5 +99,5 @@ None. The verifier-found skip-motion mismatch was corrected in commit `88a9deb` 
 **Verifier evidence:** Independent GSD source audit plus orchestrator rerun after fix
 
 ---
-*Verified: 2026-07-11T06:59:48Z*
+*Verified: 2026-07-11T16:23:06Z*
 *Verifier: GSD verifier audit with orchestrator closeout*

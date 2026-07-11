@@ -47,7 +47,7 @@ interaction replaceable.
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Zero-login welcome-to-upcoming navigation through either the birthday or skip path — Phase 1
 
 ### Active
 
@@ -64,7 +64,6 @@ interaction replaceable.
       tribe, moon phase at birth, Hebrew letter, tikkun framing, personalized reading.
 - [ ] "What's coming up" panel — Friday Pulse teaser/countdown (rooted in Shabbat,
       named universally) + next full/new moon date when within ~7 days.
-- [ ] No login required to get value.
 
 ### Out of Scope
 
@@ -96,9 +95,9 @@ interaction replaceable.
   White modern-serif welcome copy gives way to dark editorial text, large Hebrew
   letters, constellation line art, and a central moon. No explicit Jewish symbols
   in the primary UI; the Jewish layer remains textual and discoverable.
-- **Status**: v1.0 requirements and four fast execution phases are approved. Final
-  product name, production typefaces, Hebrew illustration licensing, and the full
-  interactive rotary system remain revisable beyond this prototype.
+- **Status**: Phase 1's mobile flow is verified and Phase 2 is ready for content
+  and static-data planning. Final product name, production typefaces, Hebrew
+  illustration licensing, and the full interactive rotary system remain revisable.
 
 ## Constraints
 
@@ -154,6 +153,7 @@ interaction replaceable.
 | Six-state mobile flow with optional birthday | Preserves the personal reveal without blocking zero-friction access to the current month | ✓ Locked |
 | Continuous vertical page with soft proximity settling | Frames should resolve cleanly without mandatory snapping or scroll hijacking | ✓ Locked |
 | `easeInOutCubic` for visual/programmatic transitions | Gives the page one consistent motion language while native touch scrolling remains native | ✓ Locked |
+| Motion pacing: 6-second zodiac contraction, 0.5-second settled hold, then an automatic DOB handoff and shared upward reveal | User requested continuity and a slower, meditative rhythm instead of cuts | ✓ Validated in Phase 1 |
 | Blue Zodiac plus light paper supersedes original dark PRD treatment | User supplied the visual source and explicitly overrode the original visual specification | ✓ Locked |
 | Personal month layer = current month plus birth-month reflection | Creates meaningful personalization without claiming astronomical planetary transits | ✓ Locked |
 | Two-hour scope uses screenshot-ready sharing and lightweight content | Meets the PRD core while deferring production export, full browse, and rich content for all twelve months | ✓ Locked |
@@ -176,4 +176,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-07-10 after v1.0 two-hour prototype approval*
+*Last updated: 2026-07-11 after Phase 1 completion*
