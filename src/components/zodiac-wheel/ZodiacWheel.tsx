@@ -11,7 +11,7 @@ import {
 } from "./zodiacWheel.geometry";
 import styles from "./ZodiacWheel.module.css";
 
-type LayerId = "atlas" | "labels" | "symbols" | "figures";
+type LayerId = "atlas" | "labels" | "symbols" | "figures" | "ticks";
 type LayerAngles = Record<LayerId, number>;
 export type ZodiacWheelProps = {
   initialIndex?: number;
@@ -30,19 +30,21 @@ const LAYERS: readonly LayerConfig[] = [
   { id: "atlas", duration: 2600, turns: 3, direction: -1 },
   { id: "labels", duration: 3200, turns: 2, direction: 1 },
   { id: "symbols", duration: 3800, turns: 2, direction: -1 },
-  { id: "figures", duration: 4400, turns: 1, direction: 1 }
+  { id: "figures", duration: 4400, turns: 1, direction: 1 },
+  { id: "ticks", duration: 5200, turns: 2, direction: -1 }
 ];
 
 const INITIAL_ANGLES: LayerAngles = {
   atlas: 0,
   labels: 0,
   symbols: 0,
-  figures: 0
+  figures: 0,
+  ticks: 0
 };
 
 function settledAngles(index: number): LayerAngles {
   const angle = 180 - sectorAngle(index);
-  return { atlas: angle, labels: angle, symbols: angle, figures: angle };
+  return { atlas: angle, labels: angle, symbols: angle, figures: angle, ticks: angle };
 }
 
 const astronomyPlate = new URL(
@@ -183,7 +185,8 @@ export default function ZodiacWheel({
           atlas: settledAngle,
           labels: settledAngle,
           symbols: settledAngle,
-          figures: settledAngle
+          figures: settledAngle,
+          ticks: settledAngle
         });
         setSelectedIndex(targetIndex);
         return;
@@ -207,7 +210,7 @@ export default function ZodiacWheel({
 
       LAYERS.forEach((layer) => {
         const timer = window.setTimeout(() => {
-          if (layer.id === "figures") {
+          if (layer.id === "ticks") {
             setSelectedIndex(targetIndex);
             setIsSpinning(false);
           }
@@ -286,7 +289,9 @@ export default function ZodiacWheel({
             <MeridianTicks />
           </g>
 
-          <OuterTicks />
+          <g className={styles.rotorGroup} style={layerStyle("ticks")}>
+            <OuterTicks />
+          </g>
           <DegreeScale />
 
           <g className={styles.rotorGroup} style={layerStyle("labels")}>
