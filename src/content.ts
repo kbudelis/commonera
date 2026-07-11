@@ -444,7 +444,11 @@ export function getBirthMonthEntry(profile: StoredBirthProfileV1): MonthEntry {
 export function buildPersonalThread(profile: StoredBirthProfileV1): string {
   const entry = getBirthMonthEntry(profile);
   const { correspondence, reading } = entry;
-  return `You arrived through ${correspondence.names.english}, ${reading.dramaTitle.toLowerCase()}. Its faculty of ${correspondence.faculty.displayLabel.toLowerCase()} offers a lens—not a fixed identity—and your symbolic ${profile.derived.moon.label.toLowerCase()} gives this thread a tempo of ${profile.derived.moon.narrativeMode}.`;
+  const monthPrefix = `${correspondence.names.english} `;
+
+  return reading.reading.startsWith(monthPrefix)
+    ? `The season of your birth ${reading.reading.slice(monthPrefix.length)}`
+    : reading.reading;
 }
 
 export function formatBirthdayInput(civilDateISO: string): string {

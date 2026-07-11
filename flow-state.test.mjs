@@ -14,6 +14,7 @@ import {
   scrollToLandmarkUnlessReducedMotion,
 } from "./build/flow-test/App.js";
 import {
+  buildPersonalThread,
   createStoredBirthProfile,
   getCurrentSeason,
   MONTH_ENTRIES,
@@ -164,7 +165,10 @@ test("birthday path renders personal before month and upcoming", () => {
     type: "submit-birthday",
     value: "07/10/1998",
   });
+  const profile = createStoredBirthProfile("07/10/1998", "Mara");
   const markup = renderFlow(state);
+
+  assert.ok(profile);
 
   const personal = markup.indexOf('data-landmark="personal"');
   const month = markup.indexOf('data-landmark="month"');
@@ -174,6 +178,25 @@ test("birthday path renders personal before month and upcoming", () => {
   assert.ok(personal < month);
   assert.ok(month < upcoming);
   assert.match(markup, /id="personal-title" class="personal-name">Mara<\/h1>/);
+  const birthMonth = MONTH_ENTRIES[profile.derived.hebrewDate.monthKey];
+  assert.match(
+    markup,
+    new RegExp(
+      `${birthMonth.correspondence.mazal.zodiacLabel} · ${birthMonth.correspondence.names.english}`,
+    ),
+  );
+  const personalThread = buildPersonalThread(profile);
+  assert.match(personalThread, /^The season of your birth /);
+  assert.equal(
+    personalThread.includes(birthMonth.correspondence.names.english),
+    false,
+  );
+  assert.equal(
+    personalThread.includes(birthMonth.correspondence.mazal.zodiacLabel),
+    false,
+  );
+  assert.equal(markup.includes(profile.derived.hebrewDate.displayLabel), false);
+  assert.equal(markup.includes(profile.derived.hebrewDate.hebrewDisplay), false);
   assert.doesNotMatch(markup, /Personal Thread/);
 });
 

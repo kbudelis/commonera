@@ -411,13 +411,10 @@ function PersonalPlaceholder({
         )}
         {profile && month ? (
           <>
-            <p className="eyebrow">{profile.derived.hebrewDate.displayLabel}</p>
             <h1 id="personal-title" className="personal-name">{displayName}</h1>
             <p className="profile-facts">
-              <span lang="he" dir="rtl">{profile.derived.hebrewDate.hebrewDisplay}</span>
               <span>
-                {month.correspondence.mazal.zodiacLabel} · {month.correspondence.tribe} ·{" "}
-                {profile.derived.moon.label} · {month.correspondence.letter.name}
+                {month.correspondence.mazal.zodiacLabel} · {month.correspondence.names.english}
               </span>
             </p>
             <p>{buildPersonalThread(profile)}</p>
