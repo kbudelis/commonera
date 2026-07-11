@@ -1,3 +1,4 @@
+import { buildMouseArrow } from './mouseArrow';
 import { buildSilverYad } from './silverYad';
 import type { PointerBuilder, PointerId } from './types';
 
@@ -5,7 +6,7 @@ import type { PointerBuilder, PointerId } from './types';
     era's real pointer lands (commits alongside the era). */
 export const POINTERS: Record<PointerId, PointerBuilder> = {
   finger: buildSilverYad,
-  mouseArrow: buildSilverYad,
+  mouseArrow: buildMouseArrow,
   blockCursor: buildSilverYad,
   ballpoint: buildSilverYad,
   woodPointer: buildSilverYad,
