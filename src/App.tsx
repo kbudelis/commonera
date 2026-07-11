@@ -351,8 +351,7 @@ function PersonalPlaceholder({
             <p className="profile-facts">
               <span lang="he" dir="rtl">{profile.derived.hebrewDate.hebrewDisplay}</span>
               <span>
-                {month.correspondence.mazal.zodiacLabel}{" "}
-                {month.correspondence.mazal.symbol} · {month.correspondence.tribe} ·{" "}
+                {month.correspondence.mazal.zodiacLabel} · {month.correspondence.tribe} ·{" "}
                 {profile.derived.moon.label} · {month.correspondence.letter.name}
               </span>
             </p>
@@ -394,8 +393,7 @@ function MonthPlaceholder() {
         </h1>
         <p className="month-archetype">{reading.archetype}</p>
         <p className="profile-facts">
-          {correspondence.mazal.zodiacLabel} {correspondence.mazal.symbol} ·{" "}
-          {season.moon.label}
+          {correspondence.mazal.zodiacLabel} · {season.moon.label}
         </p>
         <p>{reading.reading}</p>
         <aside className="ritual-card">

@@ -158,6 +158,8 @@ test("birthday and month compositions render real visual assets", () => {
     birthdayMarkup.indexOf("constellation-art--month") >
       birthdayMarkup.indexOf('data-landmark="month"'),
   );
+  assert.doesNotMatch(birthdayMarkup, /[♈♉♊♋♌♍♎♏♐♑♒♓]/u);
+  assert.doesNotMatch(monthMarkup, /[♈♉♊♋♌♍♎♏♐♑♒♓]/u);
   assert.doesNotMatch(birthdayMarkup, /constellation-placeholder/);
 });
 
