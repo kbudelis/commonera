@@ -1,0 +1,344 @@
+:root {
+  color: #17224b;
+  background: #f3f0e8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #f3f0e8;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  min-height: 48px;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #e5a744;
+  outline-offset: 3px;
+}
+
+.flow-page {
+  min-height: 100svh;
+  overflow-x: clip;
+  background: #f3f0e8;
+}
+
+.flow-section {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  width: 100%;
+  align-content: center;
+  padding: max(24px, env(safe-area-inset-top)) 24px
+    max(32px, env(safe-area-inset-bottom));
+  scroll-margin-top: 20px;
+  scroll-snap-align: start;
+  isolation: isolate;
+}
+
+.welcome-section {
+  place-items: center;
+  padding-inline: 20px;
+  color: #fffdf6;
+  background: #101e54;
+  text-align: center;
+  overflow: hidden;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  width: min(100%, 420px);
+  gap: 18px;
+}
+
+.welcome-line,
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.welcome-line {
+  min-height: 2.4em;
+  margin: 0;
+  font-size: clamp(2.25rem, 10vw, 4rem);
+  line-height: 1.04;
+}
+
+.zodiac-placeholder {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, transparent 0 8%, #fff9 8.5% 9%, transparent 9.5% 24%, #fff7 24.5% 25%, transparent 25.5% 42%, #fff6 42.5% 43%, transparent 43.5%),
+    repeating-conic-gradient(from 2deg, #fff0 0deg 7deg, #fff8 7.3deg 7.7deg),
+    #172a70;
+  border: 1px solid #fff8;
+  box-shadow: 0 28px 90px #03092180;
+}
+
+.zodiac-placeholder--immersive {
+  position: absolute;
+  z-index: 1;
+  width: min(154vw, 780px);
+  aspect-ratio: 1;
+  opacity: 0.95;
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.zodiac-placeholder--compact {
+  width: min(100vw, 520px);
+  aspect-ratio: 1;
+  margin: -36% auto 32px;
+  border-color: #17224b4d;
+  box-shadow: 0 20px 60px #17224b26;
+}
+
+.transition-section,
+.birthday-section {
+  align-content: start;
+  padding-top: 0;
+}
+
+.section-copy {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 440px);
+  margin-inline: auto;
+}
+
+.section-copy--centered {
+  text-align: center;
+}
+
+.section-copy h1 {
+  margin: 8px 0 18px;
+  font-size: clamp(2.4rem, 12vw, 4.5rem);
+  line-height: 0.98;
+}
+
+.section-copy p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #786a4d;
+  font-size: 0.76rem !important;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.primary-action,
+.text-action {
+  border: 0;
+  cursor: pointer;
+}
+
+.primary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  color: #fff;
+  background: #17224b;
+  font-weight: 700;
+}
+
+.primary-action--light {
+  color: #17224b;
+  background: #fffdf6;
+}
+
+.text-action {
+  padding: 10px 6px;
+  color: #26345f;
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.text-action--light {
+  color: #fffdf6;
+}
+
+.birthday-copy {
+  padding-bottom: 48px;
+}
+
+.birthday-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.birthday-form label {
+  font-weight: 700;
+}
+
+.birthday-form input {
+  width: 100%;
+  min-height: 58px;
+  padding: 12px 16px;
+  border: 1px solid #17224b66;
+  border-radius: 12px;
+  color: #17224b;
+  background: #fffdf8;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  scroll-margin-block: 30svh;
+}
+
+.field-hint,
+.field-error {
+  font-size: 0.85rem;
+}
+
+.field-hint {
+  color: #655f51;
+}
+
+.field-error {
+  color: #a12b2b;
+  font-weight: 700;
+}
+
+.birthday-copy > .text-action {
+  display: block;
+  margin: 14px auto 0;
+}
+
+.reading-section {
+  align-content: center;
+  padding-block: 72px;
+}
+
+.personal-section {
+  padding-top: 150px;
+}
+
+.zodiac-arc {
+  position: absolute;
+  top: -46vw;
+  left: 50%;
+  width: min(120vw, 620px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #1a2b67;
+  background: #172a70;
+  transform: translateX(-50%);
+}
+
+.reading-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-glyph {
+  margin: 0;
+  color: #17224b;
+  font-family: Georgia, serif;
+  font-size: clamp(7rem, 38vw, 13rem) !important;
+  line-height: 0.7 !important;
+  text-align: center;
+}
+
+.constellation-placeholder {
+  width: min(82vw, 340px);
+  aspect-ratio: 1.7;
+  margin: 18px auto;
+  background:
+    radial-gradient(circle at 18% 58%, #17224b 0 2px, transparent 3px),
+    radial-gradient(circle at 38% 31%, #17224b 0 2px, transparent 3px),
+    radial-gradient(circle at 61% 46%, #17224b 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 24%, #17224b 0 2px, transparent 3px),
+    linear-gradient(24deg, transparent 48%, #17224b80 49% 50%, transparent 51%);
+  border: 1px solid #17224b33;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.month-section {
+  background: #e9e3d4;
+}
+
+.upcoming-section {
+  color: #fffdf6;
+  background: #15214a;
+}
+
+.upcoming-section .eyebrow {
+  color: #d9c7a3;
+}
+
+.moon-placeholder {
+  width: min(54vw, 220px);
+  aspect-ratio: 1;
+  margin: 18px auto;
+  border-radius: 50%;
+  background: #fff8df;
+  box-shadow: 0 0 80px #fff4c94d;
+}
+
+@media (min-width: 600px) {
+  .flow-section {
+    padding-inline: 48px;
+  }
+
+  .zodiac-placeholder--compact {
+    margin-top: -210px;
+  }
+
+  .zodiac-arc {
+    top: -300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .zodiac-placeholder--immersive {
+    transform: none;
+  }
+
+  .zodiac-arc {
+    transform: translateX(-50%);
+  }
+}

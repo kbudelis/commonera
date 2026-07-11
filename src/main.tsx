@@ -1,14 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-
-function FoundationShell() {
-  return (
-    <main>
-      <h1>Cosmic Calendar</h1>
-      <p>The mobile flow is being assembled.</p>
-    </main>
-  );
-}
+import App from "./App.js";
+import "./styles.css";
 
 const rootElement = document.getElementById("root");
 
@@ -18,6 +11,6 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <FoundationShell />
+    <App />
   </StrictMode>,
 );
