@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 4
-current_phase_name: Upcoming & QA
+current_phase: 03.1
+current_phase_name: Client feedback — copy, glyph, and month-page visual magic
 status: ready_to_plan
-stopped_at: Phase 3 verified complete; Phase 4 ready to plan; rotor remains deferred to Phase 5
-last_updated: "2026-07-11T18:27:19Z"
+stopped_at: Phase 03.1 inserted after Phase 3; ready to plan with $gsd-plan-phase 03.1
+last_updated: "2026-07-11T19:33:03.831Z"
 last_activity: 2026-07-11
-last_activity_desc: Phase 3 visual composition verified and accepted; all four VIS requirements complete
+last_activity_desc: Phase 03.1 inserted from client feedback; ready to plan
 progress:
-  total_phases: 5
-  completed_phases: 3
-  total_plans: 3
-  completed_plans: 3
-  percent: 60
+  total_phases: 6
+  completed_phases: 2
+  total_plans: 2
+  completed_plans: 2
+  percent: 33
 ---
 
 # Project State
@@ -24,14 +24,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-07-11)
 
 **Core value:** A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful, shareable season reading in under 60 seconds — and the Jewish layer lands as a discovery, not a requirement.
-**Current focus:** Phase 4 — Upcoming & QA
+**Current focus:** Phase 03.1 — Client feedback — copy, glyph, and month-page visual magic
 
 ## Current Position
 
-Phase: 4 — Upcoming & QA
+Phase: 03.1 — Client feedback — copy, glyph, and month-page visual magic
 Plan: Not started
 Status: Ready to plan
-Last activity: 2026-07-11 — Phase 3 verified complete after live mobile review
+Last activity: 2026-07-11 — Phase 03.1 inserted from client feedback; ready to plan
 
 Progress: [██████░░░░] 60%
 
@@ -66,6 +66,10 @@ Progress: [██████░░░░] 60%
 - Lalou/Moshik Hebrew art lacks provenance; Jerusalem requires a commercial-use donation. Use replaceable prototype treatment until resolved.
 - Moon phase remains a symbolic Hebrew-calendar approximation, not an astronomical claim.
 
+### Roadmap Evolution
+
+- Phase 03.1 inserted after Phase 3: Client feedback — copy, glyph, and month-page visual magic (URGENT)
+
 ## Deferred Items
 
 | Category | Item | Status | Deferred At |
@@ -78,5 +82,5 @@ Progress: [██████░░░░] 60%
 ## Session Continuity
 
 Last session: 2026-07-11T18:27:19Z
-Stopped at: Phase 3 verified complete; Phase 4 ready to plan
+Stopped at: Phase 03.1 inserted after Phase 3; ready to plan with $gsd-plan-phase 03.1
 Resume file: None

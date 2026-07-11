@@ -77,6 +77,17 @@ Plans:
 - [x] 03-01-PLAN.md
 - [x] 03-01: Integrate Vollkorn, Lalou glyphs, and all twelve constellation assets while preserving the existing zodiac treatment.
 
+### Phase 03.1: Client feedback — copy, glyph, and month-page visual magic (INSERTED)
+
+**Goal:** [Urgent work - to be planned]
+**Requirements**: TBD
+**Depends on:** Phase 3
+**Plans:** 0 plans
+
+Plans:
+
+- [ ] TBD (run /gsd-plan-phase 03.1 to break down)
+
 ### Phase 4: Upcoming & QA
 
 **Goal**: Users finish on a credible return-cadence panel and can complete either path reliably.
