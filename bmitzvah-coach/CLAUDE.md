@@ -1,0 +1,206 @@
+# CLAUDE.md
+
+Guidance for coding agents working in this repo. Read it before writing code. Match the patterns here over your defaults.
+
+## Stack
+
+- **Framework:** TanStack Start (React, Vite, Nitro). File-based routing via TanStack Router, server functions via `createServerFn`.
+- **Data + auth:** Supabase (Postgres, Auth, Storage). Row Level Security is the real authorization boundary, not app code.
+- **Client data:** TanStack Query for fetching/caching/mutations on the client.
+- **Validation:** Zod at every trust boundary (server function inputs, env, external payloads).
+- **Lint/format:** Biome. It is the source of truth for style. Do not hand-format against it.
+- **Package manager:** pnpm. Never generate `package-lock.json` or `yarn.lock`.
+- **Tests:** Vitest, colocated.
+- **Types:** Supabase-generated types are the source of truth for DB shapes (`supabase gen types typescript`). Regenerate them after any schema change; never hand-edit generated types.
+
+If any of the above is wrong for this project, that is a bug in this file. Fix this file first, then follow it.
+
+## Commands
+
+Assumed scripts. Adjust to the actual `package.json` on first read, and update this section if they differ.
+
+```
+pnpm dev            # local dev server
+pnpm build          # production build
+pnpm start          # serve the build
+pnpm check          # biome check (lint + format), the gate
+pnpm typecheck      # tsc --noEmit
+pnpm test           # vitest run
+pnpm test:watch     # vitest
+pnpm db:types       # supabase gen types typescript --local > src/types/database.ts
+pnpm db:migrate     # supabase migration up (apply pending migrations)
+pnpm db:reset       # supabase db reset: rebuild local db from migrations + seed.sql
+pnpm db:seed:gen    # regenerate supabase/seed.sql from src/lib/content/* (run after editing content)
+pnpm db:sync        # generate a migration from supabase/schemas/* (declarative schema workflow)
+```
+
+**Before you say a task is done:** `pnpm check && pnpm typecheck && pnpm test` must all pass. Green tests and a clean typecheck are the definition of done, not "it looks right."
+
+## Directory layout
+
+```
+src/
+  routes/                 # file-based routes (TanStack Router). __root.tsx holds the auth context.
+  utils/
+    supabase.ts           # server + browser Supabase clients
+    *.functions.ts        # createServerFn wrappers (the network boundary)
+    *.server.ts           # server-only helpers: DB queries, internal logic. Never imported client-side.
+  lib/
+    content/              # reference content authored as typed constants: the AUTHORING source of truth.
+                          # Projected into the DB by supabase/seed.gen.ts; read at runtime from the DB, not imported.
+                          # Types, TEMPLATE_PALETTE (Tailwind literals), and the *_KEYS enums stay here and are imported.
+  components/             # presentational + composed UI
+  types/
+    database.ts           # supabase-generated. Do not edit by hand.
+supabase/
+  schemas/                # declarative desired-state SQL (pg-delta): structure + RLS + policies + grants.
+  migrations/             # generated from schemas/ via `pnpm db:sync`. The applied history; do not hand-edit.
+  seed.gen.ts             # generator: projects src/lib/content/* into seed.sql (zero deps, runs on Node).
+  seed.sql                # GENERATED reference data. Do not edit by hand; run `pnpm db:seed:gen`.
+```
+
+Rule of thumb: pure domain logic in `lib/` (trivially testable), I/O and DB in `*.server.ts`, the RPC surface in `*.functions.ts`, React in `routes/` and `components/`.
+
+## Schema & reference content
+
+- **Schema is declarative.** Edit desired state in `supabase/schemas/*.sql` (pg-delta manages structure, RLS, policies, and grants — all of it). Then `pnpm db:sync` generates a migration, `pnpm db:reset` applies it plus the seed, `pnpm db:types` regenerates `database.ts`. Do not hand-write migrations; do not edit generated migrations. Confirm a clean round-trip with `pnpm db:sync` (it must report "No schema changes found").
+- **Reference content is code, the DB is its projection.** The six templates, their milestones, the activity-prompt bank, providers, the quiz, and stories are authored as typed constants in `src/lib/content/*`. `pnpm db:seed:gen` regenerates `supabase/seed.sql` from them; `db reset` loads it. `content.test.ts` keeps the constants honest. After editing content: regenerate the seed and reset.
+- **The app reads content from the DB at runtime**, never from the `src/lib/content/*` data constants. `content.server.ts` maps rows back to the content types; `content.functions.ts` exposes them; the template catalog is delivered app-wide via the root loader and the `useTemplates()` hook; page-specific catalogs come from route loaders.
+
+## Auth (the part to get right)
+
+The production pattern, not the quickstart pattern.
+
+- Use `@supabase/ssr` with a **cookie-based** server client. Session lives in cookies, not localStorage.
+- On the server, always read the user with **`supabase.auth.getUser()`**, never `getSession()`. `getUser()` revalidates the JWT against the auth server; `getSession()` only reads the cookie and is spoofable. Authorization decisions use `getUser()`.
+- Gate routes in `beforeLoad`, not in components. A protected layout route calls a `fetchUser` server function and redirects if there is no user.
+- RLS enforces per-row access at the database. App-level checks are a convenience and a second layer, never the only layer. Assume any query can be called by any authenticated user and let RLS be correct on its own.
+
+`src/utils/supabase.ts` sketch:
+
+```ts
+import { createServerClient, createBrowserClient } from '@supabase/ssr'
+import { getCookie, setCookie } from '@tanstack/react-start/server' // path can shift by Start version; read cookies off the request
+
+// Server: cookie-bound, RLS-scoped to the signed-in user.
+export const getSupabaseServerClient = () =>
+  createServerClient(
+    process.env.SUPABASE_URL!,
+    process.env.SUPABASE_PUBLISHABLE_KEY!,
+    {
+      cookies: {
+        getAll: () => Object.entries(/* parsed request cookies */ {}).map(([name, value]) => ({ name, value: String(value) })),
+        setAll: (cookies) => cookies.forEach(({ name, value, options }) => setCookie(name, value, options)),
+      },
+    },
+  )
+
+// Browser: anon key only, RLS still applies.
+export const getSupabaseBrowserClient = () =>
+  createBrowserClient(import.meta.env.VITE_SUPABASE_URL!, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY!)
+```
+
+`__root.tsx` context + a guarded route:
+
+```ts
+const fetchUser = createServerFn({ method: 'GET' }).handler(async () => {
+  const supabase = getSupabaseServerClient()
+  const { data } = await supabase.auth.getUser()
+  return data.user ? { id: data.user.id, email: data.user.email } : null
+})
+
+export const Route = createRootRoute({
+  beforeLoad: async () => ({ user: await fetchUser() }),
+})
+
+// _authed.tsx (layout route): redirect unauthenticated users
+export const Route = createFileRoute('/_authed')({
+  beforeLoad: ({ context }) => {
+    if (!context.user) throw redirect({ to: '/login' })
+  },
+})
+```
+
+## Data access
+
+- Reads/writes go through the RLS-scoped server client so the database enforces access. Prefer supabase-js with generated types (`Database` from `src/types/database.ts`) so query results are typed end to end.
+- Mutations live in `createServerFn({ method: 'POST' })`, validated with Zod, called from the client via `useServerFn` inside a TanStack Query `useMutation`. Loads call server functions directly from route loaders.
+- The **service-role key bypasses RLS**. Use it only in explicitly server-only admin paths, never in a code path reachable from the client, and never behind a `VITE_` env var. If a task seems to need the service-role key, stop and flag it rather than reaching for it.
+
+## Server function rules
+
+- **Call `createServerFn(...)` literally at the definition site.** Do not wrap it in a factory that returns the builder. If you do, the compiler can no longer strip the handler and its DB/auth import graph from the client bundle, and you ship server code (and secrets) to the browser. This is the sharpest footgun in the stack.
+- Server functions take a single `data` argument. Validate it with `.validator(Schema)` using Zod. Untrusted input is untyped until Zod has seen it.
+- Split by responsibility: thin `createServerFn` wrapper in `*.functions.ts`, real logic and DB access in `*.server.ts`. The wrapper validates, authorizes, and delegates.
+- Return typed error unions for expected failures (see below). Do not leak raw Postgres errors or stack traces across the boundary.
+
+## TypeScript conventions
+
+These are the house style. Follow them even when your instinct is more OO or more imperative.
+
+- **`type` over `interface`** for data. Interfaces only when declaration merging is actually needed.
+- **Discriminated unions** for state and results. This is the core idiom. Model states as a union tagged on a `type`/`status` field and let the compiler narrow in switches. No boolean soup, no "valid but impossible" states.
+- **`readonly` by default.** `readonly` fields, `readonly T[]` for arrays. Update by spreading a new object, never by mutating.
+- **Branded types for identifiers and units.** `type UserId = string & { readonly __brand: 'UserId' }`. Do not pass bare `string` where a `UserId` is meant.
+- **Money is integer cents as `bigint`, branded** (`type Cents = bigint & { readonly __brand: 'Cents' }`). Never floats for money. Never `number` for money.
+- **Result types over throwing for expected failures:**
+
+  ```ts
+  type Result<T, E> = { ok: true; value: T } | { ok: false; error: E }
+  const ok  = <T>(value: T): Result<T, never> => ({ ok: true, value })
+  const err = <E>(error: E): Result<never, E> => ({ ok: false, error })
+  ```
+
+  Throwing is reserved for unexpected failures: programmer bugs and infrastructure faults. Expected outcomes (validation failed, not found, forbidden, insufficient funds) are values, not exceptions. `neverthrow` is fine if a file wants the combinators, but a hand-rolled `Result` is the default.
+- **Pure functions over methods.** `applyEvent(state, event)` returning a new state, not `state.applyEvent(event)`. Keeps composition and testing trivial.
+- **Inject dependencies you want to control in tests.** Time especially: pass `now` in rather than calling `Date.now()` inside the function. No hidden clocks, no hidden randomness.
+- Prefer named exports. Reserve default exports for where the framework requires them (route modules).
+
+## Error handling
+
+- Expected failure at the server boundary: return `Result` / a tagged error union that the client can pattern-match. The union is part of the function's type.
+- Unexpected failure: let it throw, log it server-side with enough context to reproduce, and surface a generic message to the client. Never return a raw DB error object to the browser.
+- Log inputs and versions for anything that drives a real decision, so a result can be reproduced later. Reproducibility over convenience.
+
+## Testing
+
+- Vitest, colocated as `*.test.ts` next to the unit under test.
+- `lib/` domain logic should be the bulk of the tests: pure in, pure out, no mocks needed. If something is hard to test, that usually means I/O leaked into logic that should be pure. Fix the seam, do not mock around it.
+- Test the discriminated-union transitions and the `Result` branches, including the failure arms. The unhappy paths are the point.
+- For anything time- or randomness-dependent, inject the dependency and assert deterministically.
+
+## Security and secrets
+
+- `.env` is never committed. `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` (the publishable key is safe to expose, so a `VITE_SUPABASE_PUBLISHABLE_KEY` copy is fine). The secret key (`SUPABASE_SECRET_KEY`, the service-role equivalent) is server-only, never `VITE_`, never in a client-reachable path.
+- No secrets in the client bundle. If a value must not reach the browser, it lives only inside a server function handler or a `*.server.ts` module, never imported (even transitively) into client code.
+- RLS on for every table with user data. New tables ship with policies in the same migration, not "added later."
+- Validate all external input with Zod before it touches the database.
+
+## Working style for agents in this repo
+
+- Direct and concise. Answer or act first, explain after if needed. No preamble, no filler, no performative enthusiasm.
+- **No em dashes** in code comments, docs, or prose. Use commas, colons, or periods.
+- One polished output over several half-options. Make the call, state the one assumption you made, move on. Do not hand back a menu of variants unless asked.
+- Match existing patterns in the file you are editing before importing new ones. Read the surrounding code first.
+- No stubs, no `// TODO: implement`, no placeholder logic left behind. Finish the path or say explicitly what is unfinished and why.
+- Do not add dependencies casually. Prefer the standard library and what is already installed. If a package is genuinely warranted, name it and why in one line.
+- When something is ambiguous and the choice is cheap, pick the sensible default and note it. When it is ambiguous and the choice is expensive or irreversible, ask.
+
+## Picking the right models for workflows and subagents
+
+Rankings, higher = better. Cost reflects what I actually pay, not list price. Intelligence is how hard a problem you can hand the model unsupervised. Taste covers UI/UX, code quality, API design, and copy.
+
+| model    | cost | intelligence | taste |
+|----------|------|--------------|-------|
+| sonnet-5 | 5    | 5            | 7     |
+| opus-4.8 | 4    | 7            | 8     |
+| fable-5  | 2    | 9            | 9     |
+
+How to apply:
+- These are defaults, not limits. You have standing permission to override them: if a cheaper model's output does not meet the bar, rerun or redo the work with a smarter model without asking. Judge the output, not the price tag. Escalating costs less than shipping mediocre work.
+- Cost is a tie-breaker only; when axes conflict for anything that ships, intelligence > taste > cost.
+- Bulk/mechanical work (clear-spec implementation, data analysis, migrations): use the cheapest model that clears the bar, sonnet-5.
+- Anything user-facing (UI, copy, API design) needs taste >= 7.
+- Reviews of plans/implementations: fable-5 or opus-4.8.
+- Never use Haiku.
+- All of these run via the Agent/Workflow model parameter.
