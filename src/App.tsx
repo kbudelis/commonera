@@ -21,7 +21,7 @@ import {
   visibleLandmarksForFlow,
 } from "./flow.js";
 
-const blueZodiacUrl = "/blue-zodiac.jpg";
+const blueZodiacUrl = `${import.meta.env?.BASE_URL ?? "/"}blue-zodiac.jpg`;
 const zodiacTransitionDuration = 3_000;
 const zodiacTransitionHold = 500;
 const welcomeFadeOutDuration = 900;
