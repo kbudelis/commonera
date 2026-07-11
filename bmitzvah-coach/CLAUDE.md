@@ -9,8 +9,16 @@ and dragging it across the parchment plays a real cantorial recording word-by-
 word under your hand, with transliteration + plain-English meaning following.
 Full three-paragraph Shema (Deut 6:4–9, Deut 11:13–21, Num 15:37–41).
 
-- **Live**: https://percentcer.github.io/shema-scroll/
-- **Repo**: `percentcer/shema-scroll` (GitHub Pages deploys via Actions on every push to `main`)
+- **Canonical home**: `kbudelis/commonera` (shared sprint repo), this folder
+  (`bmitzvah-coach/`). Work on a branch, PR into `main` (shared-repo rule).
+  Site deploys to `/commonera/bmitzvah-coach/` via the ROOT workflow
+  (`.github/workflows/deploy-pages.yml`), which builds every project folder
+  into one Pages site with a gallery at `/commonera/` — enabled once by the
+  repo admin (Settings → Pages → Source: GitHub Actions).
+- **Mirror**: `percentcer/shema-scroll` — the original standalone repo with the
+  full 13-commit sprint chronology and its own live demo
+  (https://percentcer.github.io/shema-scroll/). Frozen as of the move; treat
+  commonera as source of truth.
 - **Stack**: Vanilla TypeScript + Vite, three.js `0.185.1` (pinned) `WebGPURenderer`
   with automatic WebGL2 fallback, TSL node materials, Web Audio API. No framework,
   no backend, static deploy.
