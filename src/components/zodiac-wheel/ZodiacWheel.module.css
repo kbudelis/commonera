@@ -1,23 +1,18 @@
 .instrument {
-  --indigo: #0f2459;
-  --indigo-deep: #08163f;
-  --paper: #eee5cf;
-  --paper-light: #faf4e4;
-  --gold: #b68a3b;
-  --gold-bright: #d8b765;
+  --ink: #10265f;
+  --ink-deep: #071b54;
+  --paper: #f2ead8;
+  --paper-line: #fff8e8;
+  --gold: #bd9345;
   position: relative;
-  width: min(100%, 980px);
+  width: min(100%, 820px);
   margin: 0 auto;
-  padding: clamp(18px, 3.5vw, 38px);
-  border: 1px solid rgba(24, 34, 67, 0.2);
-  border-radius: clamp(18px, 3vw, 34px);
+  padding: clamp(3px, 1vw, 9px);
+  overflow: hidden;
+  color: var(--ink);
   background:
-    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.58), transparent 43%),
-    linear-gradient(145deg, rgba(250, 245, 231, 0.96), rgba(226, 215, 192, 0.94));
-  box-shadow:
-    0 28px 90px rgba(35, 27, 15, 0.18),
-    inset 0 0 90px rgba(83, 65, 31, 0.07);
-  color: #17213f;
+    repeating-linear-gradient(94deg, rgba(24, 42, 84, 0.025) 0 1px, transparent 1px 7px),
+    var(--paper);
   font-family: Georgia, "Times New Roman", serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,91 +24,45 @@
   box-sizing: border-box;
 }
 
-.instrument::before {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  content: "";
-  opacity: 0.25;
-  background:
-    radial-gradient(circle at 18% 12%, rgba(36, 44, 67, 0.15) 0 1px, transparent 1.5px),
-    radial-gradient(circle at 78% 84%, rgba(36, 44, 67, 0.12) 0 1px, transparent 1.5px),
-    repeating-linear-gradient(94deg, rgba(44, 47, 62, 0.055) 0 1px, transparent 1px 7px);
-  background-size: 29px 31px, 37px 43px, auto;
-  mix-blend-mode: multiply;
-}
-
-.instrumentHeader,
-.readout,
-.controls,
-.layerLegend {
-  position: relative;
-  z-index: 2;
-}
-
-.instrumentHeader {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 24px;
-  padding-inline: clamp(0px, 2vw, 22px);
-}
-
-.eyebrow,
-.readoutLabel {
-  margin: 0 0 8px;
-  color: #96743a;
-  font-family: "Courier New", monospace;
-  font-size: 0.64rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.instrumentHeader h2 {
-  margin: 0;
-  color: var(--indigo-deep);
-  font-size: clamp(1.8rem, 4vw, 3.25rem);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-}
-
-.counter {
-  margin: 0 0 4px;
-  color: rgba(15, 36, 89, 0.55);
-  font-family: "Courier New", monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-}
-
 .wheelFrame {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 760px, 72svh);
+  display: block;
+  width: 100%;
   aspect-ratio: 1;
-  margin: clamp(8px, 2vw, 22px) auto 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.wheelFrame:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -5px;
+}
+
+.wheelFrame:disabled {
+  cursor: wait;
 }
 
 .wheel {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: visible;
-  filter: drop-shadow(0 22px 28px rgba(29, 29, 40, 0.18));
 }
 
 .outerPlate {
-  fill: rgba(244, 236, 216, 0.88);
-  stroke: rgba(15, 36, 89, 0.75);
-  stroke-width: 2;
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1.5;
 }
 
 .outerPlateInset {
   fill: none;
-  stroke: rgba(15, 36, 89, 0.24);
-  stroke-width: 1;
-  stroke-dasharray: 2 6;
+  stroke: rgba(16, 38, 95, 0.6);
+  stroke-width: 0.8;
 }
 
 .rotorGroup,
@@ -134,344 +83,107 @@
 }
 
 .atlasBase {
-  fill: var(--indigo-deep);
-  stroke: var(--gold);
-  stroke-width: 2;
+  fill: var(--ink-deep);
+  stroke: var(--ink);
+  stroke-width: 1.5;
 }
 
 .atlasImage {
-  opacity: 0.86;
-  mix-blend-mode: screen;
+  opacity: 0.98;
 }
 
 .atlasEdge,
 .atlasOrbit {
   fill: none;
-  stroke: rgba(244, 231, 193, 0.68);
+  stroke: rgba(255, 248, 232, 0.74);
 }
 
 .atlasEdge {
-  stroke-width: 2;
+  stroke-width: 1.2;
 }
 
 .atlasOrbit {
-  stroke-width: 1;
-  stroke-dasharray: 3 7;
-  opacity: 0.65;
+  stroke-width: 0.7;
+  opacity: 0.7;
 }
 
 .tick,
 .majorTick {
-  stroke: rgba(248, 237, 204, 0.76);
-  stroke-linecap: round;
+  stroke: rgba(255, 248, 232, 0.9);
+  stroke-linecap: square;
 }
 
 .tick {
-  stroke-width: 1;
+  stroke-width: 0.8;
 }
 
 .majorTick {
-  stroke-width: 2.2;
+  stroke-width: 1.6;
 }
 
 .labelOrbit,
 .labelOrbitInner,
-.symbolOrbit,
-.figureOrbit {
+.symbolOrbit {
   fill: none;
-  stroke: rgba(15, 36, 89, 0.52);
+  stroke: rgba(255, 248, 232, 0.64);
 }
 
 .labelOrbit {
-  stroke-width: 2;
+  stroke-width: 0.9;
 }
 
 .labelOrbitInner,
-.symbolOrbit,
-.figureOrbit {
-  stroke-width: 1;
+.symbolOrbit {
+  stroke-width: 0.65;
 }
 
 .figureOrbit {
-  stroke-dasharray: 2 7;
+  fill: none;
+  stroke: rgba(16, 38, 95, 0.5);
+  stroke-width: 0.75;
 }
 
 .sectorDivider {
-  stroke: rgba(15, 36, 89, 0.25);
-  stroke-width: 1;
-}
-
-.monthLabel {
-  fill: var(--indigo-deep);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.signLabel {
-  fill: rgba(15, 36, 89, 0.62);
-  font-family: "Courier New", monospace;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  stroke: rgba(255, 248, 232, 0.58);
+  stroke-width: 0.7;
 }
 
 .symbolMedallion {
-  fill: rgba(247, 238, 216, 0.94);
-  stroke: var(--gold);
-  stroke-width: 1.5;
+  fill: rgba(7, 27, 84, 0.58);
+  stroke: rgba(255, 248, 232, 0.78);
+  stroke-width: 0.8;
 }
 
-.letterGlyph {
-  fill: var(--indigo-deep);
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.facultyLabel {
-  fill: rgba(246, 232, 193, 0.88);
-  font-family: "Courier New", monospace;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  paint-order: stroke;
-  stroke: var(--indigo-deep);
-  stroke-width: 3px;
-  text-transform: uppercase;
-}
-
-.figureHalo {
-  fill: rgba(245, 237, 217, 0.93);
-  stroke: rgba(15, 36, 89, 0.8);
-  stroke-width: 1.4;
-}
-
-.figureHead {
-  fill: none;
-  stroke: var(--indigo-deep);
-  stroke-width: 1.5;
-}
-
-.figureLine {
-  fill: none;
-  stroke: var(--indigo-deep);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-}
-
-.figureGlyph {
-  fill: var(--gold);
+.symbolGlyph {
+  fill: var(--paper-line);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.centerHub circle:first-child {
-  fill: rgba(8, 22, 63, 0.97);
-  stroke: var(--gold-bright);
-  stroke-width: 2;
-}
-
-.centerHubInset {
-  fill: none;
-  stroke: rgba(240, 220, 167, 0.35);
-  stroke-width: 1;
-}
-
-.centerGlyph,
-.centerMonth,
-.centerHebrew {
-  fill: var(--paper-light);
-}
-
-.centerGlyph {
-  font-size: 43px;
+  font-size: 23px;
   font-weight: 400;
 }
 
-.centerMonth {
-  font-family: "Courier New", monospace;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.centerHebrew {
-  font-size: 14px;
-  opacity: 0.76;
+.outerHebrewGlyph {
+  fill: var(--ink);
+  font-size: 27px;
+  font-weight: 400;
 }
 
 .northIndex path,
 .northIndex line {
-  fill: var(--paper-light);
-  stroke: var(--gold-bright);
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
 }
 
 .lockPulse {
   fill: none;
-  stroke: var(--gold-bright);
-  stroke-width: 3;
-  stroke-dasharray: 3 5;
+  stroke: var(--gold);
+  stroke-width: 2;
+  stroke-dasharray: 2 4;
   transform-box: fill-box;
   transform-origin: center;
   animation: lockPulse 720ms ease-out both;
-}
-
-.statusPill {
-  position: absolute;
-  bottom: 3.2%;
-  left: 50%;
-  min-width: 142px;
-  padding: 8px 14px;
-  border: 1px solid rgba(15, 36, 89, 0.22);
-  border-radius: 999px;
-  color: var(--indigo-deep);
-  background: rgba(245, 237, 218, 0.9);
-  box-shadow: 0 8px 24px rgba(18, 23, 44, 0.12);
-  transform: translateX(-50%);
-  font-family: "Courier New", monospace;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.readout {
-  display: grid;
-  width: min(100%, 760px);
-  margin: 0 auto;
-  padding: 20px 22px;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
-  border-top: 1px solid rgba(15, 36, 89, 0.18);
-  border-bottom: 1px solid rgba(15, 36, 89, 0.18);
-}
-
-.readoutValue {
-  display: flex;
-  margin: 0;
-  flex-wrap: wrap;
-  gap: 7px 12px;
-  align-items: baseline;
-  color: var(--indigo-deep);
-  font-size: clamp(1.15rem, 2.8vw, 1.65rem);
-}
-
-.readoutValue bdi {
-  color: var(--gold);
-  font-size: 1.1em;
-}
-
-.metadata {
-  display: grid;
-  margin: 0;
-  grid-template-columns: repeat(3, auto);
-  gap: 20px;
-}
-
-.metadata div {
-  min-width: 70px;
-}
-
-.metadata dt {
-  color: rgba(15, 36, 89, 0.48);
-  font-family: "Courier New", monospace;
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.metadata dd {
-  margin: 5px 0 0;
-  color: var(--indigo-deep);
-  font-size: 0.94rem;
-}
-
-.controls {
-  display: grid;
-  width: min(100%, 660px);
-  margin: 22px auto 0;
-  grid-template-columns: 1fr 1.4fr 1fr;
-  gap: 10px;
-}
-
-.controls button {
-  min-height: 48px;
-  padding: 10px 14px;
-  border: 1px solid rgba(15, 36, 89, 0.28);
-  border-radius: 999px;
-  color: var(--indigo-deep);
-  background: rgba(248, 241, 224, 0.74);
-  cursor: pointer;
-  font-family: "Courier New", monospace;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
-}
-
-.controls button:hover:not(:disabled) {
-  background: #fff9e9;
-  transform: translateY(-1px);
-}
-
-.controls button:focus-visible {
-  outline: 3px solid rgba(182, 138, 59, 0.48);
-  outline-offset: 3px;
-}
-
-.controls button:disabled {
-  cursor: wait;
-  opacity: 0.48;
-}
-
-.controls .primaryControl {
-  color: var(--paper-light);
-  border-color: var(--indigo-deep);
-  background: var(--indigo-deep);
-}
-
-.controls .primaryControl:hover:not(:disabled) {
-  background: #172d68;
-}
-
-.layerLegend {
-  display: flex;
-  margin: 16px auto 0;
-  justify-content: center;
-  gap: 16px;
-  color: rgba(15, 36, 89, 0.28);
-  font-family: "Courier New", monospace;
-  font-size: 0.55rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.layerLegend span::before {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 5px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  content: "";
-}
-
-.layerLegend .isLocked {
-  color: var(--gold);
-}
-
-.layerLegend .isLocked::before {
-  background: currentColor;
 }
 
 .liveRegion {
@@ -490,64 +202,9 @@
   100% { opacity: 0; transform: scale(1.42); }
 }
 
-@media (max-width: 680px) {
-  .instrument {
-    padding: 22px 8px 26px;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 0;
-  }
-
-  .instrumentHeader {
-    padding-inline: 16px;
-  }
-
-  .wheelFrame {
-    width: min(100%, 650px);
-  }
-
-  .readout {
-    padding-inline: 16px;
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .metadata {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
-  }
-
-  .controls {
-    padding-inline: 8px;
-    grid-template-columns: 1fr 1.25fr 1fr;
-  }
-
-  .controls button {
-    min-height: 44px;
-    padding-inline: 8px;
-    font-size: 0.58rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .figureHalo {
-    r: 28px;
-  }
-
-  .controls {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .controls .primaryControl {
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .instrument .rotorGroup,
-  .instrument .uprightNode,
-  .instrument .controls button {
+  .instrument .uprightNode {
     transition-duration: 0.01ms !important;
   }
 
