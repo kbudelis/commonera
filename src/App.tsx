@@ -14,6 +14,7 @@ import {
 } from "./content.js";
 import {
   createInitialFlow,
+  formatBirthdayFieldValue,
   FlowAction,
   FlowLandmark,
   FlowState,
@@ -355,6 +356,7 @@ function BirthdayStep({
                 type="text"
                 inputMode="numeric"
                 autoComplete="bday"
+                maxLength={10}
                 placeholder="MM/DD/YYYY"
                 value={birthdayValue}
                 aria-describedby={birthdayError ? "birthday-error" : "birthday-hint"}
@@ -668,7 +670,9 @@ export default function App() {
         setNameValue(value);
         setNameError(null);
       }}
-      onBirthdayChange={setBirthdayValue}
+      onBirthdayChange={(value) => {
+        setBirthdayValue((current) => formatBirthdayFieldValue(value, current));
+      }}
       onBirthdaySubmit={submitBirthday}
       onSkip={() => applyAction({ type: "skip-to-month" })}
     />

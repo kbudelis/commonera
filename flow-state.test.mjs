@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 import {
   createInitialFlow,
+  formatBirthdayFieldValue,
   transitionFlow,
   visibleLandmarksForFlow,
 } from "./build/flow-test/flow.js";
@@ -23,6 +24,19 @@ function advanceToBirthday() {
   const zodiacTransition = transitionFlow(welcome, { type: "advance" });
   return transitionFlow(zodiacTransition, { type: "advance" });
 }
+
+test("birthday entry inserts date slashes while typing and pasting", () => {
+  assert.equal(formatBirthdayFieldValue(""), "");
+  assert.equal(formatBirthdayFieldValue("1"), "1");
+  assert.equal(formatBirthdayFieldValue("12", "1"), "12/");
+  assert.equal(formatBirthdayFieldValue("123"), "12/3");
+  assert.equal(formatBirthdayFieldValue("1234", "12/3"), "12/34/");
+  assert.equal(formatBirthdayFieldValue("12345"), "12/34/5");
+  assert.equal(formatBirthdayFieldValue("12-34-1998"), "12/34/1998");
+  assert.equal(formatBirthdayFieldValue("123456789"), "12/34/5678");
+  assert.equal(formatBirthdayFieldValue("12", "12/"), "12");
+  assert.equal(formatBirthdayFieldValue("12/34", "12/34/"), "12/34");
+});
 
 test("initial flow advances through the zodiac transition to birthday entry", () => {
   const welcome = createInitialFlow();
