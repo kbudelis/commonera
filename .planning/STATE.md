@@ -1,6 +1,6 @@
 ---
 gsd_state_version: '1.0'
-status: paused
+status: planning
 progress:
   total_phases: 4
   completed_phases: 0
@@ -22,8 +22,8 @@ See: .planning/PROJECT.md (updated 2026-07-10)
 
 Phase: 1 of 4 (Mobile Flow Skeleton)
 Plan: 0 of 1 in current phase
-Status: Paused before Phase 1 planning
-Last activity: 2026-07-10 — Approved the v1.0 roadmap and created a structured pause handoff before implementation.
+Status: Ready to plan Phase 1
+Last activity: 2026-07-10 — Resumed from the approved v1.0 roadmap; Phase 1 remains unplanned and unimplemented.
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -65,5 +65,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-07-10
-Stopped at: v1.0 roadmap approved; Phase 1 unplanned and unimplemented.
+Stopped at: Session resumed; ready to create the Phase 1 plan.
 Resume file: .planning/.continue-here.md
