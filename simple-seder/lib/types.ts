@@ -55,6 +55,7 @@ export interface SederPlateGuideEntry {
 
 export interface DocumentSourceMetrics {
   primarySourceId: "shir-geulah" | "velveteen-rabbi";
+  /** Reviewed non-house wording, including inherited traditional liturgy. */
   borrowedWords: number;
   houseWords: number;
   traditionalWords: number;

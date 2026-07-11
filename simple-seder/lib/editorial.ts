@@ -18,6 +18,63 @@ export const EDITORIAL_SECTION_ORDER = [
   "nirtzah",
 ] as const;
 
+/** Quotes approved not just by topic, but for the exact narrative seam. */
+export const CONTEXTUAL_QUOTE_IDS: Record<string, ReadonlySet<string>> = {
+  maggid: new Set([
+    "q-amos-waters",
+    "q-avot-freedom",
+    "q-avot-free",
+    "q-avot-precious",
+    "q-deuteronomy-justice",
+    "q-deuteronomy-open-hand",
+    "q-deuteronomy-remember",
+    "q-douglass-power",
+    "q-douglass-struggle",
+    "q-exodus-cry",
+    "q-exodus-let-go",
+    "q-exodus-midwives",
+    "q-exodus-moses-turned",
+    "q-exodus-stranger",
+    "q-genesis-image",
+    "q-genesis-keeper",
+    "q-isaiah-learn-good",
+    "q-leviticus-stranger",
+    "q-proverbs-voiceless",
+    "q-psalm-justice",
+    "q-wells",
+    "q-wilde-disobedience",
+    "q-wollstonecraft",
+  ]),
+  nirtzah: new Set([
+    "q-amos-waters",
+    "q-avot-action",
+    "q-avot-community",
+    "q-avot-free",
+    "q-hillel-self",
+    "q-deuteronomy-justice",
+    "q-deuteronomy-life",
+    "q-ecclesiastes-season",
+    "q-ecclesiastes-two",
+    "q-eliot",
+    "q-exodus-strength",
+    "q-isaiah-peace",
+    "q-isaiah-repairer",
+    "q-jeremiah-welfare",
+    "q-leviticus-neighbor",
+    "q-malachi-parent",
+    "q-micah",
+    "q-proverbs-tree",
+    "q-psalm-goodness",
+    "q-psalm-peace",
+    "q-psalm-tears",
+    "q-psalm-together",
+    "q-ruth-go",
+    "q-song-love",
+    "q-truth",
+    "q-wollstonecraft",
+  ]),
+};
+
 export const MIN_BRIDGE_WORDS = 6;
 export const MAX_BRIDGE_WORDS = 45;
 
@@ -130,6 +187,10 @@ export function validateEditorial(document: HaggadahDocument): string[] {
       } else if (!section.quote.sectionIds.includes(section.id)) {
         errors.push(
           `Quote ${section.quote.id} is not approved for placement in ${section.id}.`,
+        );
+      } else if (!CONTEXTUAL_QUOTE_IDS[section.id]?.has(section.quote.id)) {
+        errors.push(
+          `Quote ${section.quote.id} has not passed seam-specific review for ${section.id}.`,
         );
       } else if (
         !section.quote.themes.some((theme) =>

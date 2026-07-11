@@ -162,14 +162,9 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     sourcePresentedAttribution: "Psalm 118", provenanceHash: "6da9f4f96cec4f1d25a2eb98d822c1daefab7bcbc7e75a55df5326e89d98bdb4",
   },
   {
-    ...source, id: "shir-nirtzah-omer", sectionId: "nirtzah", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 64, Counting the omer commentary",
-    text: "The Torah instructs us to count seven weeks from Passover, counting up the time from the exodus to the revelation at Mount Sinai, which is commemorated at the holiday of Shavuot. An omer is a measure of grain; in ancient times one was brought to the Temple every day for seven weeks as a physical representation of the counting. The counting represents spiritual preparation: freedom from physical slavery and freedom from spiritual slavery are two inextricable things.",
-    sourcePresentedAttribution: "Leviticus 23:15–16", provenanceHash: "3e963d149f4f91a96a76445d65d5ae5aebc5e64f509eb4fa8cfa9ba3444f7469",
-  },
-  {
-    ...source, id: "shir-nirtzah-diversity-of-life", sectionId: "nirtzah", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 65, blessing after a non-wine beverage",
-    text: "Praised are You, our God, Guide of the universe, who creates the diversity of life, each kind with its uniqueness, so that all life might be sustained and enriched thereby. Blessed is the Life of Worlds.",
-    sourcePresentedAttribution: "Traditional borei nefashot blessing; English translation as printed in Haggadah Shir Ge’ulah", provenanceHash: "7f4542656fc71b3aee0857c403ea22bb6c2c50c2b59fa3c99beaa78b03c3168e",
+    ...source, id: "shir-nirtzah-seder-concluded", sectionId: "nirtzah", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 74, The seder is concluded",
+    text: "The seder has concluded as it should, according to its various laws and customs. As we have merited to celebrate it now, may we do so again in future years.",
+    sourcePresentedAttribution: "Traditional Ḥasal siddur pesaḥ; English translation as printed in Haggadah Shir Ge’ulah", provenanceHash: "991efc5371a950885c7c96beefd154606a51c6b1fe13a2555eb064b2317f45fc",
   },
   {
     ...source, id: "shir-nirtzah-bendigamos", sectionId: "nirtzah", role: "ritual-source", tiers: ["full"], locator: "PDF p. 66, Bendigamos — Let us bless",

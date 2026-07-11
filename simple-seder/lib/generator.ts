@@ -19,6 +19,7 @@ import {
 } from "../content/source-spines";
 import {
   assertEditorial,
+  CONTEXTUAL_QUOTE_IDS,
   EDITORIAL_SECTION_ORDER,
   validateEditorial,
 } from "./editorial";
@@ -46,8 +47,8 @@ function quoteSectionsForLength(length: GenerationProfile["length"]): string[] {
 
 const quoteContexts: Record<string, string> = {
   kadesh: "A line to help us enter the evening with intention:",
-  maggid: "A voice on liberation and the work it asks of us:",
-  nirtzah: "A closing line to carry beyond the table:",
+  maggid: "A voice that deepens this telling of oppression, resistance, and freedom:",
+  nirtzah: "A closing line about the life we want to build after tonight:",
 };
 
 function stableHash(value: string): number {
@@ -86,6 +87,10 @@ type RuntimeSpineId = "shir-geulah-primary" | "velveteen-rabbi-primary";
  * between source styles.
  */
 function selectSourceSpine(profile: GenerationProfile): RuntimeSpineId {
+  // The concise Shir tier carries a complete beginner-facing ritual and story
+  // spine. Velveteen's shortest tier is intentionally more poetic and needs
+  // more connective explanation than a genuinely brief seder can support.
+  if (profile.length === 20) return "shir-geulah-primary";
   if (profile.audience !== "adults") return "shir-geulah-primary";
 
   const reflectiveThemes = new Set<ThemeId>([
@@ -132,6 +137,7 @@ function selectQuotes(
           (quote) =>
             quote.approved &&
             quote.sectionIds.includes(sectionId) &&
+            CONTEXTUAL_QUOTE_IDS[sectionId]?.has(quote.id) &&
             quote.themes.some((theme) => themes.includes(theme)),
         )
         .sort(
@@ -187,7 +193,7 @@ const kidParticipation: Record<string, string> = {
   karpas: "Let children dip their own parsley or celery in the salt water and describe how it tastes.",
   yachatz: "Show children which piece of matzah becomes the afikoman. They will search for it after dinner, and the finder often receives a small prize.",
   maggid: "Invite children to ask the Four Questions, remove one drop of grape juice for each plague, and sing Dayenu. For a hands-on option, make ten plague picture cards with paper and crayons; children can hold up each card as its plague is named.",
-  rachtzah: "Children may wash their own hands before the matzah, or work in pairs over the basin: one pours gently from the pitcher while the other washes, then they switch.",
+  rachtzah: "Children may wash their own hands before the matzah, or work in pairs over the basin: one pours gently from the pitcher while the other washes, then they switch. After washing, stay quiet until everyone has blessed and eaten the matzah.",
   "motzi-matzah": "Pass a small piece of matzah to each child and taste it together after the blessing.",
   maror: "Offer each child a tiny taste of romaine lettuce or mild horseradish; they may taste, smell, or pass.",
   korech: "Let children build a small matzah sandwich with a little charoset and, if they want, a mild bitter green.",
@@ -204,7 +210,7 @@ const tableParticipation: Record<string, string> = {
   karpas: "Pass the greens and salt water together before anyone begins eating.",
   yachatz: "Show both pieces of matzah clearly before wrapping and hiding the larger one.",
   maggid: "Share the reading among willing voices; anyone may ask a question or pass.",
-  rachtzah: "Make the bowl, pitcher, and towel easy to find. Guests may wash their own hands or pour water for a partner over the basin.",
+  rachtzah: "Make the bowl, pitcher, and towel easy to find. Guests may wash their own hands or pour water for a partner over the basin. After washing, remain quiet until everyone has blessed and eaten the matzah.",
   "motzi-matzah": "Wait until everyone has a piece of matzah before eating together.",
   maror: "Offer a mild option and make clear that tasting, smelling, or passing are all welcome.",
   korech: "Set out the ingredients so each person can make a small sandwich or pass.",
@@ -233,7 +239,7 @@ const kidQuestions: Record<string, string> = {
   karpas: "What is something new you have seen growing this spring?",
   yachatz: "When something breaks, who can help put it back together?",
   maggid: "If you were leaving Egypt in a hurry, what would you bring?",
-  rachtzah: "What helps you feel ready to begin something?",
+  rachtzah: "After you eat the matzah: What helps you feel ready to begin something?",
   "motzi-matzah": "What does the matzah taste and feel like?",
   maror: "What is something difficult that a friend might need help with?",
   korech: "What two different feelings can you have at the same time?",
@@ -251,6 +257,9 @@ function promptForAudience(sectionId: string, prompt: string, profile: Generatio
   if (profile.audience === "mixed") {
     return `Everyone can answer or pass: ${kidQuestions[sectionId]}`;
   }
+  if (sectionId === "rachtzah") {
+    return `After everyone has eaten the matzah: ${prompt}`;
+  }
   return prompt;
 }
 
@@ -262,11 +271,11 @@ interface HouseParagraph {
 const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   kadesh: [{
     role: "ritual-direction",
-    text: "Pour a small first cup of wine or grape juice for each person. Lift the cups together, read the blessing aloud if you wish, and take a sip. Kadesh marks the formal beginning of the seder.",
+    text: "Pour a small first cup of wine or grape juice for each person. Each person lifts their own cup. Read the English blessing printed on this page—and the transliteration too, if you selected it—then everyone takes a sip. Kadesh marks the formal beginning of the seder.",
   }],
   urchatz: [{
     role: "ritual-direction",
-    text: "Wash without a blessing. Each person may pour water over their own hands at a sink or above a basin, or partners may take turns pouring for one another over the basin. Dry your hands afterward. Optional: fill a separate cup with water for Miriam’s cup; the reading below explains this modern custom.",
+    text: "Wash without a blessing. At a sink, each person may run water over their own hands. At the table, use the pitcher to pour water over your own hands above the basin, or work with a partner: one person holds their hands over the basin while the other pours, and then they switch. Dry your hands with the towel. Optional: fill a separate cup with water for Miriam’s cup; the reading below explains this modern custom.",
   }],
   karpas: [{
     role: "ritual-direction",
@@ -279,7 +288,7 @@ const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   maggid: [
     {
       role: "ritual-direction",
-      text: "Uncover the matzah. Invite the youngest willing guest—or anyone who wishes—to ask the Four Questions. When the ten plagues are named, remove one drop of wine or grape juice for each: blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn. Read or sing Dayenu after the story.",
+      text: "Uncover the three matzot and pour the second cup of wine or grape juice for each person; do not drink it yet. Invite the youngest willing guest—or anyone who wishes—to read the Four Questions printed below. When the ten plagues are named, each person uses a finger or spoon to remove one drop from their own cup for each plague: blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn. Set the drops on a napkin or small plate rather than licking your finger.",
     },
     {
       role: "beginner-orientation",
@@ -288,15 +297,15 @@ const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   ],
   rachtzah: [{
     role: "ritual-direction",
-    text: "Wash a second time, now before eating matzah. Guests may wash their own hands or take turns pouring for a partner over the basin. Say the handwashing blessing if you wish, dry your hands, and return to the table.",
+    text: "Wash a second time, now before eating matzah. Guests may wash their own hands or take turns pouring for a partner over the basin. Read the English handwashing blessing printed on this page—and the transliteration too, if selected—dry your hands, and return to the table. After washing, remain quiet until everyone has blessed and eaten the matzah in the next section.",
   }],
   "motzi-matzah": [{
     role: "ritual-direction",
-    text: "Hold up the matzah. Read the two blessings below in English, use the transliteration if it is printed, or listen. Give everyone a piece and eat together.",
+    text: "The host lifts the matzah so everyone can see it. Read the two English blessings printed on this page, add the transliteration if selected, or listen while someone else reads. Pass the matzah until every person has a piece, then eat together.",
   }],
   maror: [{
     role: "ritual-direction",
-    text: "Give each person a small amount of prepared horseradish or romaine lettuce. Dip it in charoset, say the blessing if desired, and taste it. Offer a mild portion, and make clear that anyone may smell it or pass instead.",
+    text: "Give each person a small amount of prepared horseradish or romaine lettuce. Each person dips their own bitter herb in the sweet fruit-and-nut mixture called charoset. Read the English blessing printed on this page, add the transliteration if selected, and taste it. Offer a mild portion, and make clear that anyone may smell it or pass instead.",
   }],
   korech: [{
     role: "ritual-direction",
@@ -312,15 +321,40 @@ const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   }],
   barech: [{
     role: "ritual-direction",
-    text: "Settle back at the table. Fill the third cup with wine or grape juice. Read the brief words of gratitude below, add personal thanks if you wish, then lift and drink the cup together.",
+    text: "Settle back at the table. Fill the third cup with wine or grape juice. Read the words of gratitude below and add personal thanks if you wish. Then each person lifts their own cup, reads or listens to the English wine blessing printed on this page, and drinks.",
   }],
   hallel: [{
     role: "ritual-direction",
-    text: "Fill the fourth cup with wine or grape juice. Hallel is a time for praise and song. Choose a familiar melody or read the words responsively; guests may sing, hum, clap, listen, or pass. Drink the fourth cup at the end.",
+    text: "Fill the fourth cup with wine or grape juice. Hallel is a time for praise and song. No one needs to know a tune: one person can read ‘Give thanks for the good in our lives,’ and everyone can answer, ‘May love and freedom grow.’ Repeat the response after each reading, or choose another song. Guests may sing, hum, clap, listen, or pass. At the end, each person lifts their own cup, reads or listens to the English wine blessing printed on this page, and drinks.",
   }],
   nirtzah: [{
     role: "ritual-direction",
     text: "The ordered part of the seder is ending. Invite each person to name one thought or action they want to carry beyond the table, or simply listen. Then read the closing hope together.",
+  }],
+};
+
+const englishBlessings: Partial<Record<SederSectionId, string[]>> = {
+  kadesh: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
+  karpas: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the earth."],
+  maggid: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
+  rachtzah: ["Blessed are You, Eternal our God, Guide of the universe, who makes us holy through sacred practice and instructs us concerning the washing of hands."],
+  "motzi-matzah": [
+    "Blessed are You, Eternal our God, Guide of the universe, who brings bread from the earth.",
+    "Blessed are You, Eternal our God, Guide of the universe, who makes us holy through sacred practice and instructs us to eat matzah.",
+  ],
+  maror: ["Blessed are You, Eternal our God, Guide of the universe, who makes us holy through sacred practice and instructs us to eat bitter herbs."],
+  barech: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
+  hallel: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
+};
+
+const maggidFourQuestions = "Why is this night different from all other nights? On other nights we eat leavened bread or matzah; tonight we eat matzah. On other nights we eat any vegetables; tonight we eat bitter herbs. On other nights we do not have to dip our food even once; tonight we dip twice. On other nights we may sit upright or recline; tonight we make a point of reclining as a sign of freedom.";
+
+const maggidDayenu = "Dayenu means ‘It would have been enough.’ One person reads each line and everyone answers, ‘Dayenu!’ For bringing us out of slavery—Dayenu! For leading us through the sea—Dayenu! For sustaining us in the wilderness—Dayenu! For bringing us together to remember and act—Dayenu!";
+
+const concludingSectionCopy: Partial<Record<SederSectionId, HouseParagraph[]>> = {
+  maggid: [{
+    role: "ritual-direction",
+    text: "After the Exodus story and Dayenu, each person lifts their own second cup. Read or listen to the English wine blessing printed below, add the transliteration if selected, and drink together.",
   }],
 };
 
@@ -391,8 +425,35 @@ function bodyForLength(
     })),
   ];
 
-  if (profile.language === "transliteration" && blueprint.blessing) {
-    blocks.push({ kind: "traditional-liturgy", text: blueprint.blessing });
+  if (sectionId === "maggid") {
+    blocks.splice(1, 0, {
+      kind: "traditional-liturgy",
+      text: maggidFourQuestions,
+    });
+    blocks.push({ kind: "traditional-liturgy", text: maggidDayenu });
+  }
+
+  for (const paragraph of concludingSectionCopy[sectionId] ?? []) {
+    blocks.push({ kind: "house-copy", role: paragraph.role, text: paragraph.text });
+  }
+
+  const sourceAlreadyPrintsEnglishMotzi =
+    sectionId === "motzi-matzah" &&
+    sourcePassages.some((passage) => passage.id === "shir-motzi-two-blessings");
+  if (!sourceAlreadyPrintsEnglishMotzi) {
+    for (const blessing of englishBlessings[sectionId] ?? []) {
+      blocks.push({ kind: "traditional-liturgy", text: blessing });
+    }
+  }
+
+  if (profile.language === "transliteration") {
+    const transliteratedBlessing = blueprint.blessing ??
+      (["maggid", "barech", "hallel"].includes(sectionId)
+        ? "Barukh atah Adonai, Eloheinu melekh ha’olam, borei p’ri hagafen."
+        : "");
+    if (transliteratedBlessing) {
+      blocks.push({ kind: "traditional-liturgy", text: transliteratedBlessing });
+    }
   }
   if (sectionId === "nirtzah") {
     const closing = closingHouseCopy(profile);
@@ -446,14 +507,15 @@ function invitation(profile: GenerationProfile): string {
 
 function hostGuide(profile: GenerationProfile): string[] {
   const guide = [
-    `Timing: the generated ritual is paced for about ${profile.length} minutes, including a simple meal pause. Read through it once, then add 15 minutes of arrival time and allow extra time if your meal is elaborate or your table enjoys discussion.`,
+    `Timing: the readings, rituals, and selected prompts are paced for about ${profile.length} minutes; the festive dinner is additional. Read through the Haggadah once, choose which optional prompts to keep, then allow separate time for arrival, the meal, and unhurried conversation.`,
     "Set each place with a Haggadah, napkin, water glass, and a small wine glass or juice cup. Put the seder plate, three covered matzah pieces, salt water, extra matzah, wine or grape juice, and a washing bowl with pitcher and towel within easy reach.",
-    "The four cups pace the seder from beginning to end. Pour small amounts, and offer grape juice or another celebratory drink without explanation or pressure. Guests may sip rather than finish each cup.",
+    "The four cups pace the seder from beginning to end: the first opens Kadesh, the second is poured before the Four Questions and drunk after Maggid, the third follows gratitude after dinner, and the fourth closes Hallel. Pour small amounts, and offer grape juice or another celebratory drink without explanation or pressure. Guests may sip rather than finish each cup; at two ounces per cup, allow about eight ounces per guest.",
     "Matzah is unleavened bread that recalls the Israelites leaving Egypt before dough could rise. Place three pieces together under a cloth or in a matzah cover, plus enough extra for everyone to taste during the meal.",
     "There are two handwashings. Urchatz comes before karpas and has no blessing; Rachtzah comes before eating matzah and includes a blessing. At either washing, guests may wash their own hands at a sink or over the basin, or work in pairs while one person gently pours water over the other’s hands above the basin and then they switch. Explain the choices and the difference between the two washings before each one.",
+    "Miriam’s cup is optional. If you use it, choose any cup, fill it with water before guests arrive, and place it near the seder plate. The Urchatz reading connects the water with Miriam and the well that sustained the Israelites in the wilderness.",
     "At Yachatz, break the middle matzah and hide or set aside the larger half, called the afikoman. Near the end, children or adults find it; everyone eats a small piece as the final taste of the meal. Decide beforehand whether the finder receives a small prize, chooses a song, or earns a shared treat.",
     "The festive meal occurs at Shulchan Orech. Serve food that works for your guests and your own Passover practice. Tell guests when the meal begins, keep the afikoman separate, and resume the Haggadah after plates are cleared.",
-    "Invite readers before the seder when possible and make passing an ordinary option. Read every stage direction aloud; no prior knowledge, Hebrew, singing ability, or religious belief is assumed.",
+    "Invite readers before the seder when possible and make passing an ordinary option. Read every stage direction aloud; no prior knowledge, Hebrew, singing ability, or religious belief is assumed. The Four Questions, all ten plagues, a short Dayenu, and an easy Hallel response are printed in the Haggadah, so the host does not need to supply missing words or melodies.",
     "Share cooking, pouring, serving, explaining, and cleanup. Assign one person to refill drinks, one to manage ritual objects, and one to help everyone find the current page.",
     "Ten minutes before guests arrive, fill the salt-water bowl, arrange the seder plate, cover the matzah, chill or open drinks, place the washing supplies, and choose the afikoman hiding place.",
   ];
@@ -582,7 +644,7 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
   const measuredSources = sourceShareMetrics(sourceAssembly);
   if (measuredSources.borrowedWordShare < 0.5) {
     throw new Error(
-      `Source-first assembly fell below the 50% reviewed-source floor (${Math.round(measuredSources.borrowedWordShare * 100)}%).`,
+      `Source-first assembly fell below the 50% reviewed-source floor (${Math.round(measuredSources.borrowedWordShare * 100)}%; ${measuredSources.borrowedWords} reviewed-source, ${measuredSources.houseWords} house, ${measuredSources.traditionalWords} traditional words).`,
     );
   }
 
@@ -719,6 +781,11 @@ export function mergeModelEnhancement(
           `Model suggested quote ${quoteId} outside its approved context (${sectionId}).`,
         );
       }
+      if (!CONTEXTUAL_QUOTE_IDS[sectionId]?.has(quoteId)) {
+        throw new Error(
+          `Model suggested quote ${quoteId} outside the seam-specific review for ${sectionId}.`,
+        );
+      }
       if (!quote.themes.some((theme) => selectedThemes(document.profile).includes(theme))) {
         throw new Error(
           `Model suggested quote ${quoteId} outside the selected themes.`,
@@ -740,6 +807,7 @@ export function mergeModelEnhancement(
           (quote) =>
             quote.approved &&
             quote.sectionIds.includes(sectionId) &&
+            CONTEXTUAL_QUOTE_IDS[sectionId]?.has(quote.id) &&
             quote.themes.some((theme) => selectedThemes(document.profile).includes(theme)) &&
             !usedQuoteIds.has(quote.id),
         );

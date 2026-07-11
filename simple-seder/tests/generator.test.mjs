@@ -44,6 +44,9 @@ const generator = await import(
 const editorial = await import(
   new URL(`file://${path.join(compiledRoot, "lib/editorial.js")}`).href
 );
+const pack = await import(
+  new URL(`file://${path.join(compiledRoot, "content/pack.js")}`).href
+);
 
 after(async () => {
   await rm(compiledRoot, { recursive: true, force: true });
@@ -186,6 +189,99 @@ test("mixed-age prompts use plain questions that children and adults can answer"
   assert.doesNotMatch(Object.values(prompts).join(" "), /renewal|repair.not perfection|set down/i);
 });
 
+test("20-minute kids, mixed, and adults versions supply every missing ritual essential", () => {
+  for (const audience of ["kids", "mixed", "adults"]) {
+    const document = generator.generateHaggadah({
+      ...baseProfile,
+      length: 20,
+      audience,
+      language: "english",
+      themes: ["environment", "family-storytelling"],
+    });
+    const section = (id) => document.sections.find((candidate) => candidate.id === id);
+    const kadesh = section("kadesh").body.join(" ");
+    const maggid = section("maggid").body.join(" ");
+    const rachtzah = [
+      ...section("rachtzah").body,
+      section("rachtzah").bridge,
+      section("rachtzah").prompt,
+    ].join(" ");
+    const hallel = section("hallel").body.join(" ");
+    const nirtzah = section("nirtzah").body.join(" ");
+
+    assert.match(kadesh, /first cup of wine or grape juice/i, audience);
+    assert.match(kadesh, /each person lifts their own cup/i, audience);
+    assert.match(kadesh, /creates the fruit of the vine/i, audience);
+    assert.match(maggid, /pour the second cup of wine or grape juice/i, audience);
+    assert.match(maggid, /Why is this night different from all other nights/i, audience);
+    assert.match(maggid, /blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn/i, audience);
+    assert.match(maggid, /Dayenu means.+everyone answers/s, audience);
+    assert.match(maggid, /lifts their own second cup.+drink together/s, audience);
+    assert.match(rachtzah, /remain quiet|stay quiet/i, audience);
+    assert.match(rachtzah, /after washing.+until everyone has blessed and eaten the matzah|after you eat the matzah/is, audience);
+    assert.match(hallel, /No one needs to know a tune/i, audience);
+    assert.match(hallel, /May love and freedom grow/i, audience);
+    assert.match(hallel, /fourth cup with wine or grape juice/i, audience);
+    assert.match(nirtzah, /The seder has concluded as it should/i, audience);
+    assert.doesNotMatch(nirtzah, /count seven weeks|omer is a measure|diversity of life/i, audience);
+
+    const guide = document.hostGuide.join(" ");
+    assert.match(guide, /festive dinner is additional/i, audience);
+    assert.match(guide, /first opens Kadesh.+second.+Maggid.+third.+fourth.+Hallel/is, audience);
+    assert.match(guide, /Miriam’s cup is optional/i, audience);
+  }
+});
+
+test("every runtime section names enough of the actor, object, and action for a first-time host", () => {
+  const document = generator.generateHaggadah({
+    ...baseProfile,
+    length: 20,
+    audience: "mixed",
+    language: "english",
+  });
+  const required = {
+    kadesh: [/each person/i, /cup of wine or grape juice/i, /lifts?.+sip/i],
+    urchatz: [/each person|partner/i, /pitcher.+basin.+towel/is, /pour.+hands/i],
+    karpas: [/each person/i, /parsley|celery|green vegetable/i, /dip.+salt water.+eat/is],
+    yachatz: [/middle of the three matzot/i, /wrap and hide.+afikoman/is, /finder.+prize/i],
+    maggid: [/youngest willing guest|anyone who wishes/i, /second cup of wine or grape juice/i, /remove one drop.+each plague/is],
+    rachtzah: [/guests|partner/i, /hands.+basin/is, /wash.+dry.+return/is],
+    "motzi-matzah": [/host/i, /matzah/i, /pass.+every person.+eat/is],
+    maror: [/each person/i, /bitter herb.+charoset/is, /dip.+taste/is],
+    korech: [/each person|anyone/i, /maror.+charoset.+matzah/is, /make.+sandwich|place.+between/is],
+    "shulchan-orech": [/guests|people/i, /dishes.+allergens/is, /begin the meal|serve.+meal/is],
+    tzafun: [/children|guests/i, /afikoman/i, /find.+prize.+divide.+eat/is],
+    barech: [/each person/i, /third cup.+wine or grape juice/is, /lifts?.+drinks?/is],
+    hallel: [/one person.+everyone/is, /fourth cup.+wine or grape juice/is, /read.+answer|sing.+hum.+listen/is],
+    nirtzah: [/each person/i, /closing hope|seder/i, /name.+carry/is],
+  };
+
+  for (const section of document.sections) {
+    const copy = [...section.body, section.bridge, section.prompt].join(" ");
+    for (const pattern of required[section.id]) {
+      assert.match(copy, pattern, `${section.id}: ${pattern}`);
+    }
+  }
+});
+
+test("English-only mode never points to an absent blessing", () => {
+  const document = generator.generateHaggadah({
+    ...baseProfile,
+    length: 20,
+    audience: "adults",
+    language: "english",
+    tone: "reverent",
+    themes: ["environment", "family-storytelling"],
+  });
+  const expectedBlessingSections = [
+    "kadesh", "karpas", "maggid", "rachtzah", "motzi-matzah", "maror", "barech", "hallel",
+  ];
+  for (const sectionId of expectedBlessingSections) {
+    const copy = document.sections.find((section) => section.id === sectionId).body.join(" ");
+    assert.match(copy, /Blessed are You|Praised are You/i, sectionId);
+  }
+});
+
 test("uses a restrained number of unique, context-approved quotes", () => {
   for (const [length, expected] of [[20, 2], [45, 2], [90, 2]]) {
     const document = generator.generateHaggadah({ ...baseProfile, length });
@@ -197,7 +293,24 @@ test("uses a restrained number of unique, context-approved quotes", () => {
     assert.ok(
       placements.every(({ section, quote }) => quote.sectionIds.includes(section.id)),
     );
+    assert.ok(
+      placements.every(({ section, quote }) => editorial.CONTEXTUAL_QUOTE_IDS[section.id].has(quote.id)),
+    );
   }
+});
+
+test("environment and family quotes pass exact-seam review rather than theme matching alone", () => {
+  const document = generator.generateHaggadah({
+    ...baseProfile,
+    length: 20,
+    audience: "adults",
+    tone: "reverent",
+    themes: ["environment", "family-storytelling"],
+  });
+  const placements = document.sections.filter((section) => section.quote);
+  assert.deepEqual(placements.map((section) => section.id), ["maggid", "nirtzah"]);
+  assert.ok(placements.every((section) => editorial.CONTEXTUAL_QUOTE_IDS[section.id].has(section.quote.id)));
+  assert.doesNotMatch(placements.map((section) => section.quote.text).join(" "), /Be yourself|hitched to everything else/i);
 });
 
 test("every single-theme profile receives quotes approved for that theme", () => {
@@ -329,6 +442,15 @@ test("editorial validation rejects structural, quote, bridge, framing, and blame
   assert.ok(
     editorial.validateEditorial(unframed).some((error) =>
       error.includes("requires explicit inclusive"),
+    ),
+  );
+
+  const broadThemeOnly = structuredClone(document);
+  const maggid = broadThemeOnly.sections.find((section) => section.id === "maggid");
+  maggid.quote = pack.quoteCatalog.find((quote) => quote.id === "q-muir");
+  assert.ok(
+    editorial.validateEditorial(broadThemeOnly).some((error) =>
+      error.includes("seam-specific review"),
     ),
   );
 });

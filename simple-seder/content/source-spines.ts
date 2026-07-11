@@ -226,6 +226,7 @@ export interface HaggadahAssembly {
 
 export interface SourceShareMetrics {
   totalWords: number;
+  /** Reviewed non-house wording: primary/secondary excerpts plus inherited liturgy. */
   borrowedWords: number;
   borrowedWordShare: number;
   houseWords: number;
@@ -249,7 +250,10 @@ export function sourceShareMetrics(assembly: HaggadahAssembly): SourceShareMetri
     const words = wordCount(block.text);
     totalWords += words;
     if (block.kind === "house-copy") houseWords += words;
-    else if (block.kind === "traditional-liturgy") traditionalWords += words;
+    else if (block.kind === "traditional-liturgy") {
+      traditionalWords += words;
+      borrowedWords += words;
+    }
     else {
       borrowedWords += words;
       const passage = reviewedPassage(block.passageId);

@@ -36,7 +36,7 @@ function hash(text) {
 
 test("Shir source corpus has honest all-section tier coverage", async () => {
   const { shirSourcePassages, shirCoverage } = await loadCorpus();
-  assert.equal(shirSourcePassages.length, 29);
+  assert.equal(shirSourcePassages.length, 28);
   assert.deepEqual([...shirCoverage.sectionIds].sort(), [...expectedSections].sort());
   for (const tier of ["short", "medium", "full"]) {
     assert.deepEqual([...shirCoverage.byTier[tier]].sort(), [...expectedSections].sort(), `${tier} tier has a source gap`);
@@ -85,7 +85,7 @@ test("each tier contains enough reviewed source wording for a source-primary spi
   assert.ok(totals.medium >= 1_700, `medium source spine has only ${totals.medium} words`);
   assert.ok(totals.full >= 1_850, `full source spine has only ${totals.full} words`);
   assert.ok(totals.short < totals.medium && totals.medium < totals.full);
-  assert.deepEqual(totals, { short: 1361, medium: 1981, full: 2066 });
+  assert.deepEqual(totals, { short: 1278, medium: 1898, full: 1983 });
   assert.deepEqual(shirCoverage.sourceWordTotals, totals);
   assert.deepEqual(
     [...shirCoverage.expansionSections.medium].sort(),
