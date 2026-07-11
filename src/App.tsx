@@ -413,9 +413,7 @@ function PersonalPlaceholder({
           <>
             <h1 id="personal-title" className="personal-name">{displayName}</h1>
             <p className="profile-facts">
-              <span>
-                {month.correspondence.mazal.zodiacLabel} · {month.correspondence.names.english}
-              </span>
+              <span>{month.correspondence.mazal.zodiacLabel}</span>
             </p>
             <p>{buildPersonalThread(profile)}</p>
             <p className="return-question">

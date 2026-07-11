@@ -179,11 +179,10 @@ test("birthday path renders personal before month and upcoming", () => {
   assert.ok(month < upcoming);
   assert.match(markup, /id="personal-title" class="personal-name">Mara<\/h1>/);
   const birthMonth = MONTH_ENTRIES[profile.derived.hebrewDate.monthKey];
+  const personalMarkup = markup.slice(personal, month);
   assert.match(
-    markup,
-    new RegExp(
-      `${birthMonth.correspondence.mazal.zodiacLabel} · ${birthMonth.correspondence.names.english}`,
-    ),
+    personalMarkup,
+    new RegExp(`<span>${birthMonth.correspondence.mazal.zodiacLabel}<\\/span>`),
   );
   const personalThread = buildPersonalThread(profile);
   assert.match(personalThread, /^The season of your birth /);
@@ -192,10 +191,16 @@ test("birthday path renders personal before month and upcoming", () => {
     false,
   );
   assert.match(
-    markup,
+    personalMarkup,
     new RegExp(
       `${birthMonth.correspondence.names.english} asks: ${birthMonth.reading.witnessingQuestion}`,
     ),
+  );
+  assert.equal(
+    (personalMarkup.match(
+      new RegExp(birthMonth.correspondence.names.english, "g"),
+    ) ?? []).length,
+    1,
   );
   assert.equal(markup.includes(profile.derived.hebrewDate.displayLabel), false);
   assert.equal(markup.includes(profile.derived.hebrewDate.hebrewDisplay), false);
