@@ -101,9 +101,28 @@ describe('rankTemplates', () => {
 })
 
 describe('recommendTemplates', () => {
-  it('returns the top three', () => {
+  it('returns the top four with match percentages', () => {
     const top = recommendTemplates(questions, { q1: ['q1-wild', 'q1-curious'] }, 'curious')
-    expect(top).toHaveLength(3)
+    expect(top).toHaveLength(4)
     expect(top[0]?.key).toBe('into-the-wild')
+    // 3 points of a possible 5 (q1 word worth 3, q2 hike worth 2).
+    expect(top[0]?.percent).toBe(60)
+  })
+
+  it('scores a perfect run at 100%', () => {
+    const top = recommendTemplates(
+      questions,
+      { q1: ['q1-wild', 'q1-maker'], q2: ['q2-hike'] },
+      'cultural',
+    )
+    expect(top[0]?.key).toBe('into-the-wild')
+    expect(top[0]?.percent).toBe(100)
+  })
+
+  it('keeps every percent between 0 and 100', () => {
+    for (const match of recommendTemplates(questions, {}, 'traditional')) {
+      expect(match.percent).toBeGreaterThanOrEqual(0)
+      expect(match.percent).toBeLessThanOrEqual(100)
+    }
   })
 })

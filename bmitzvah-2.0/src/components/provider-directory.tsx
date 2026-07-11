@@ -2,6 +2,7 @@ import { useMutation } from '@tanstack/react-query'
 import { useRouter } from '@tanstack/react-router'
 import { Heart, Sparkles } from 'lucide-react'
 import { type ReactNode, useId, useState } from 'react'
+import { TEMPLATE_SCENES } from '@/components/quiz/scenes'
 import { TemplateChip } from '@/components/template-chip'
 import { Button } from '@/components/ui/button'
 import {
@@ -182,6 +183,7 @@ export function ProviderDirectory({
                 key={provider.key}
                 provider={provider}
                 recommended
+                showArt={viewer.kind === 'kid'}
                 footer={footerFor(provider)}
               />
             ))}
@@ -192,6 +194,7 @@ export function ProviderDirectory({
                 <ProviderPanel
                   key={provider.key}
                   provider={provider}
+                  showArt={viewer.kind === 'kid'}
                   footer={footerFor(provider)}
                 />
               ))}
@@ -201,7 +204,12 @@ export function ProviderDirectory({
       ) : (
         <div className="flex flex-col gap-6">
           {rest.map((provider) => (
-            <ProviderPanel key={provider.key} provider={provider} footer={footerFor(provider)} />
+            <ProviderPanel
+              key={provider.key}
+              provider={provider}
+              showArt={viewer.kind === 'kid'}
+              footer={footerFor(provider)}
+            />
           ))}
         </div>
       )}
@@ -240,15 +248,20 @@ function ProviderPanel({
   provider,
   recommended,
   footer,
+  showArt,
 }: {
   provider: Provider
   recommended?: boolean
   footer: ReactNode
+  // Kid mode only: the primary-path scene as a patch/badge above the name
+  // (the tested "Wilderness Torah" capsule look). Parent rendering stays as-is.
+  showArt?: boolean
 }) {
   const primary = provider.templates[0]
   const palette = primary ? TEMPLATE_PALETTE[primary] : null
   const tint = palette?.soft ?? 'bg-secondary'
   const textClass = palette?.softText ?? 'text-secondary-foreground'
+  const PatchArt = showArt && primary ? TEMPLATE_SCENES[primary] : null
 
   return (
     <article className="overflow-hidden rounded-3xl border">
@@ -260,6 +273,7 @@ function ProviderPanel({
               Recommended
             </span>
           ) : null}
+          {PatchArt ? <PatchArt className="size-20" /> : null}
           <div className="flex flex-col gap-2">
             <h2 className={cn('font-display text-2xl font-semibold sm:text-3xl', textClass)}>
               {provider.name}

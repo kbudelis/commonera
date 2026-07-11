@@ -217,6 +217,17 @@
   }
 }
 
+/* The playful display voice for kid-facing headline moments (quiz): Fraunces
+ * at large optical size with the soft and wonk axes engaged. Weight still
+ * comes from font-weight utilities. */
+@utility font-display-wonk {
+  font-family: var(--font-display);
+  font-variation-settings:
+    "opsz" 144,
+    "SOFT" 60,
+    "WONK" 1;
+}
+
 /* Safety net for any residual CSS-driven motion; primary motion runs through
  * motion.dev with MotionConfig reducedMotion="user". */
 @media (prefers-reduced-motion: reduce) {

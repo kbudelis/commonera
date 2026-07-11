@@ -5,13 +5,26 @@ import {
   Check,
   Circle,
   Handshake,
+  Heart,
   PartyPopper,
-  Plus,
   Search,
+  Share2,
   Trash2,
 } from 'lucide-react'
 import { AnimatePresence, motion, type Variants } from 'motion/react'
 import { useId, useState } from 'react'
+import {
+  type ActivityKind,
+  KindArt,
+  kindLabel,
+  ProgressRing,
+  StatusPill,
+  StickerNote,
+  ThemeTicker,
+} from '@/components/journey/pathway-bits'
+import { PhotoSnap } from '@/components/photo-snap'
+import { HUE_CLASSES, type Hue, TEMPLATE_HUE } from '@/components/quiz/scene-kit'
+import { templateScene } from '@/components/quiz/scenes'
 import { TemplateChip } from '@/components/template-chip'
 import { Button } from '@/components/ui/button'
 import {
@@ -26,12 +39,17 @@ import {
 import { Input } from '@/components/ui/input'
 import { useTemplate } from '@/hooks/use-templates'
 import { TEMPLATE_PALETTE, type TemplatePalette } from '@/lib/content/palette'
-import type { ActivityPrompt } from '@/lib/content/types'
+import type { ActivityPrompt, Provider } from '@/lib/content/types'
 import { journeyProgress } from '@/lib/journey/progress'
 import { cn } from '@/lib/utils'
-import { fetchActivityPromptsFn, fetchTimelineOptionsFn } from '@/utils/content.functions'
+import {
+  fetchActivityPromptsFn,
+  fetchProvidersFn,
+  fetchTimelineOptionsFn,
+} from '@/utils/content.functions'
 import {
   addActivityFn,
+  fetchFavoritesFn,
   fetchOwnJourneyFn,
   removeActivityFn,
   setActivityStatusFn,
@@ -41,12 +59,14 @@ import type { JourneyView, MilestoneStatus } from '@/utils/journeys.server'
 
 export const Route = createFileRoute('/_authed/kid/')({
   loader: async () => {
-    const [journey, prompts, timeline] = await Promise.all([
+    const [journey, prompts, timeline, providers, favorites] = await Promise.all([
       fetchOwnJourneyFn(),
       fetchActivityPromptsFn(),
       fetchTimelineOptionsFn(),
+      fetchProvidersFn(),
+      fetchFavoritesFn(),
     ])
-    return { journey, prompts, timeline }
+    return { journey, prompts, timeline, providers, favorites }
   },
   component: KidDashboard,
 })
@@ -83,9 +103,21 @@ function EmptyDashboard() {
       transition={{ duration: 0.35, ease: EASE }}
       className="mx-auto flex max-w-xl flex-col items-center gap-6 py-20 text-center"
     >
-      <span className="text-5xl" aria-hidden>
-        🧭
-      </span>
+      <div className="flex items-end justify-center gap-3">
+        <PhotoSnap
+          src="/photos/party-lift.jpg"
+          alt="A kid lifted on a chair, arms up, mid-celebration"
+          tilt={-4}
+          className="h-32 w-24"
+        />
+        <PhotoSnap
+          src="/photos/kids-gardening.jpg"
+          alt="Two kids planting together on a service project"
+          tilt={4}
+          delay={0.08}
+          className="h-28 w-24"
+        />
+      </div>
       <h1 className="font-display text-4xl font-semibold">{firstName}, your journey starts here</h1>
       <p className="text-muted-foreground">
         Take a 3-minute quiz and it figures out what kind of B'Mitzvah journey actually fits you. No
@@ -109,6 +141,8 @@ function JourneyDashboard({ journey }: { journey: JourneyView }) {
   const { timeline } = Route.useLoaderData()
   const template = useTemplate(journey.template)
   const palette = TEMPLATE_PALETTE[journey.template]
+  const hue = TEMPLATE_HUE[journey.template]
+  const { scene: PathArt } = templateScene(journey.template)
   const progress = journeyProgress(journey.milestones.map((m) => m.status))
   const timelineLabel = timeline.find((t) => t.key === journey.timeline)?.label
   const allDone = progress.total > 0 && progress.done === progress.total
@@ -120,45 +154,86 @@ function JourneyDashboard({ journey }: { journey: JourneyView }) {
       animate="show"
       className="flex flex-col gap-8"
     >
-      <motion.header variants={item} className="flex flex-col gap-4 border-b pb-6">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <h1 className="font-display text-3xl font-semibold sm:text-4xl">{journey.name}</h1>
-          <TemplateChip template={journey.template} />
-          {timelineLabel ? (
-            <span className="text-sm font-bold text-muted-foreground">{timelineLabel}</span>
+      <motion.header variants={item} className="flex flex-col gap-3">
+        {/* The tested "Nature Pathway" arch card: journey identity drenched in
+            its own hue, patch art on the left, progress ring on the right. */}
+        <div
+          className={cn(
+            'grid gap-5 rounded-t-[3.5rem] rounded-b-3xl p-6 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-6 sm:p-8',
+            palette.soft,
+          )}
+        >
+          <PathArt className="mx-auto size-28 sm:mx-0" />
+          <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+            <h1
+              className={cn(
+                'font-display-wonk text-3xl font-semibold sm:text-4xl',
+                palette.softText,
+              )}
+            >
+              {journey.name}
+            </h1>
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
+              <TemplateChip template={journey.template} variant="solid" />
+              {timelineLabel ? (
+                <span
+                  className={cn(
+                    'rounded-full border-2 border-current px-3 py-1 font-bold text-xs uppercase tracking-wide',
+                    palette.softText,
+                  )}
+                >
+                  {timelineLabel}
+                </span>
+              ) : null}
+            </div>
+            {template ? (
+              <p className={cn('max-w-md text-sm opacity-90', palette.softText)}>
+                {template.tagline}
+              </p>
+            ) : null}
+          </div>
+          <div className="relative mx-auto sm:mx-0">
+            <ProgressRing
+              done={progress.done}
+              total={progress.total}
+              hue={hue}
+              className="size-28"
+            />
+            {progress.done < progress.total ? (
+              <StickerNote className="-right-6 -bottom-2 absolute">
+                {progress.done === 0
+                  ? "Let's go!"
+                  : progress.done === progress.total - 1
+                    ? 'So close!'
+                    : 'Keep it up!'}
+              </StickerNote>
+            ) : null}
+          </div>
+          <StageStepper milestones={journey.milestones} palette={palette} />
+          {template && template.themes.length > 0 ? (
+            <ThemeTicker
+              items={[...template.themes, `trending on ${template.name}`]}
+              className={cn(
+                'font-bold text-[10px] uppercase tracking-[0.25em] opacity-60 sm:col-span-3',
+                palette.softText,
+              )}
+            />
           ) : null}
         </div>
-        {template ? (
-          <p className="max-w-2xl text-sm text-muted-foreground">{template.tagline}</p>
-        ) : null}
-        <div className="flex items-center gap-4">
-          <div
-            className="h-2.5 flex-1 overflow-hidden rounded-full bg-secondary"
-            role="progressbar"
-            aria-valuenow={progress.done}
-            aria-valuemin={0}
-            aria-valuemax={progress.total}
-            aria-label="Milestones done"
-          >
-            <motion.div
-              className={cn('h-full rounded-full', palette.bar)}
-              initial={{ width: 0 }}
-              animate={{ width: `${Math.max(progress.percent, 3)}%` }}
-              transition={{ duration: 0.5, ease: EASE }}
-            />
-          </div>
-          <span className="shrink-0 text-sm font-bold text-muted-foreground">
-            {progress.done} of {progress.total} done
-          </span>
-        </div>
+        {/* The mockups' big share moment: journeys are for showing people. */}
+        <Button variant="outline" size="lg" className="w-full" render={<Link to="/kid/card" />}>
+          <Share2 aria-hidden />
+          Share with a grown up
+        </Button>
       </motion.header>
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-8">
-        <MilestoneMap journey={journey} palette={palette} allDone={allDone} />
+        <MilestoneMap journey={journey} palette={palette} hue={hue} allDone={allDone} />
         <div className="flex flex-col gap-6">
-          <ActivityList journey={journey} />
-          <SuggestionBank journey={journey} />
-          <GuidesCard />
+          <ActivityList journey={journey} hue={hue} palette={palette} />
+          <SuggestionBank journey={journey} palette={palette} />
+          <YourGuidesCard />
+          <InspirationCard />
         </div>
       </div>
     </motion.div>
@@ -171,13 +246,66 @@ const NEXT_STATUS: Record<MilestoneStatus, { label: string; next: MilestoneStatu
   done: { label: 'Undo', next: 'in_progress' },
 }
 
+// Stage vocabulary from the tested tracker's DISCOVER / PLAN / GROW / REFLECT
+// stepper, mapped onto milestone order: the first is discovery, the last is
+// the celebration, and the middle splits into planning and growing.
+function stageFor(index: number, total: number): string {
+  if (index === total - 1) return 'Celebrate'
+  if (index === 0) return 'Discover'
+  return index < Math.ceil((total - 1) / 2) ? 'Plan' : 'Grow'
+}
+
+const STAGE_SEQUENCE = ['Discover', 'Plan', 'Grow', 'Celebrate'] as const
+
+// The tested tracker's DISCOVER / PLAN / GROW chip row, sitting in the arch
+// card so the kid always knows which chapter they're in. The current stage is
+// the one holding the first unfinished milestone.
+function StageStepper({
+  milestones,
+  palette,
+}: {
+  milestones: JourneyView['milestones']
+  palette: TemplatePalette
+}) {
+  const firstOpen = milestones.findIndex((m) => m.status !== 'done')
+  const current = firstOpen === -1 ? 'Celebrate' : stageFor(firstOpen, milestones.length)
+  return (
+    <ol
+      className="flex flex-wrap items-center justify-center gap-2 sm:col-span-3 sm:justify-start"
+      aria-label={`Journey stage: ${current}`}
+    >
+      {STAGE_SEQUENCE.map((stage, index) => (
+        <li key={stage} className="flex items-center gap-2">
+          {index > 0 ? (
+            <span
+              className={cn('size-1 rounded-full bg-current opacity-40', palette.softText)}
+              aria-hidden
+            />
+          ) : null}
+          <span
+            className={cn(
+              'rounded-full px-3 py-1 font-bold text-[10px] uppercase tracking-wide',
+              stage === current ? palette.solid : cn('opacity-50', palette.softText),
+            )}
+            aria-current={stage === current ? 'step' : undefined}
+          >
+            {stage}
+          </span>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
 function MilestoneMap({
   journey,
   palette,
+  hue,
   allDone,
 }: {
   journey: JourneyView
   palette: TemplatePalette
+  hue: Hue
   allDone: boolean
 }) {
   const router = useRouter()
@@ -247,7 +375,15 @@ function MilestoneMap({
               </div>
               <div className={cn('flex flex-1 flex-col gap-1 pb-8', isLast && 'pb-0')}>
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-col gap-0.5">
+                    <span
+                      className={cn(
+                        'font-bold text-[10px] uppercase tracking-wide',
+                        isFinal ? 'text-accent-deep' : palette.softText,
+                      )}
+                    >
+                      {stageFor(index, journey.milestones.length)}
+                    </span>
                     <h3
                       className={cn(
                         'font-bold',
@@ -256,22 +392,18 @@ function MilestoneMap({
                     >
                       {milestone.title}
                     </h3>
-                    {isFinal ? (
-                      <span className="rounded-full bg-accent px-2 py-0.5 text-xs font-bold text-accent-foreground">
-                        Celebration
-                      </span>
-                    ) : null}
                   </div>
-                  <Button
-                    variant={milestone.status === 'in_progress' ? 'default' : 'outline'}
-                    size="sm"
+                  <StatusPill
+                    tone={done ? 'done' : milestone.status === 'in_progress' ? 'active' : 'todo'}
+                    hue={hue}
                     disabled={mutation.isPending}
+                    ariaLabel={`${action.label}: ${milestone.title}`}
                     onClick={() =>
                       mutation.mutate({ milestoneId: milestone.id, status: action.next })
                     }
                   >
-                    {action.label}
-                  </Button>
+                    {done ? 'Done' : action.label}
+                  </StatusPill>
                 </div>
                 <p className="text-sm text-muted-foreground">{milestone.description}</p>
               </div>
@@ -334,32 +466,143 @@ function CompletionBanner({ palette }: { palette: TemplatePalette }) {
 }
 
 // Guides are companions through the journey, not a finish-line reward, so the
-// door to them is always open.
-function GuidesCard() {
+// door to them is always open. With hearts, this becomes the tested
+// "DISCOVERY / Wilderness Torah / BOOKED" pattern: each favorited guide as a
+// patch row with a status pill.
+function YourGuidesCard() {
+  const { providers, favorites } = Route.useLoaderData()
+  const hearted = favorites
+    .map((favorite) => providers.find((p) => p.key === favorite.providerKey))
+    .filter((p): p is Provider => p !== undefined)
+
+  if (hearted.length === 0) {
+    return (
+      <motion.section variants={item}>
+        <Link to="/kid/guides" className="block">
+          <motion.div
+            initial={false}
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 0.2, ease: EASE }}
+            className="flex items-center gap-4 rounded-2xl bg-accent p-5 text-accent-foreground"
+          >
+            <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-accent-deep/20">
+              <Handshake className="size-5 text-accent-deep" aria-hidden />
+            </span>
+            <div className="flex-1">
+              <p className="font-display text-lg font-semibold">
+                Go it alone, or bring someone in?
+              </p>
+              <p className="text-sm">Real people who help journeys like yours happen.</p>
+            </div>
+            <StatusPill tone="link">Meet them</StatusPill>
+          </motion.div>
+        </Link>
+      </motion.section>
+    )
+  }
+
+  return (
+    <motion.section variants={item} className="flex flex-col gap-4">
+      <h2 className="font-display text-2xl font-semibold">Your guides</h2>
+      <div className="flex flex-col gap-2.5">
+        {hearted.map((provider) => {
+          const primary = provider.templates[0]
+          const { scene: GuideArt, hue: guideHue } = templateScene(primary ?? 'my-own-path')
+          const c = HUE_CLASSES[guideHue]
+          return (
+            <div
+              key={provider.key}
+              className={cn('flex items-center gap-3 rounded-2xl px-4 py-3', c.tile)}
+            >
+              <GuideArt className="size-14 shrink-0" />
+              <div className="min-w-0 flex-1">
+                <p
+                  className={cn('font-bold text-[10px] uppercase tracking-wide opacity-70', c.text)}
+                >
+                  Guide
+                </p>
+                <p className={cn('truncate font-display font-semibold', c.text)}>{provider.name}</p>
+              </div>
+              <StatusPill tone="done" hue={guideHue}>
+                <Heart className="size-3 fill-current" aria-hidden />
+                Interested
+              </StatusPill>
+            </div>
+          )
+        })}
+      </div>
+      <p className="text-muted-foreground text-sm">
+        Your parent can reach out from their side.{' '}
+        <Link
+          to="/kid/guides"
+          className="font-bold text-primary underline-offset-4 hover:underline"
+        >
+          See all guides
+        </Link>
+      </p>
+    </motion.section>
+  )
+}
+
+// Slide 10's "Be Inspired" feed, dashboard-sized: real kids' stories one tap
+// away, with photo prints doing the selling.
+function InspirationCard() {
   return (
     <motion.section variants={item}>
-      <Link to="/kid/guides" className="block">
+      <Link to="/stories" className="block">
         <motion.div
           initial={false}
           whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.2, ease: EASE }}
-          className="flex items-center gap-4 rounded-2xl bg-accent p-5 text-accent-foreground"
+          className="flex flex-col gap-4 rounded-2xl bg-secondary/60 p-5"
         >
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-accent-deep/20">
-            <Handshake className="size-5 text-accent-deep" aria-hidden />
-          </span>
-          <div className="flex-1">
-            <p className="font-display text-lg font-semibold">Go it alone, or bring someone in?</p>
-            <p className="text-sm">Real people who help journeys like yours happen.</p>
+          <div className="flex items-end gap-2">
+            <PhotoSnap
+              src="/photos/family-golden-hour.jpg"
+              alt="A family celebrating outside at golden hour"
+              tilt={-4}
+              className="h-24 w-20"
+            />
+            <PhotoSnap
+              src="/photos/kid-tablet-top.jpg"
+              alt="A kid planning their journey on a tablet"
+              tilt={3}
+              delay={0.08}
+              className="h-20 w-16"
+            />
+            <PhotoSnap
+              src="/photos/workshop.jpg"
+              alt="A kid teaching an older adult how to use a phone"
+              tilt={-2}
+              delay={0.16}
+              className="h-16 w-14"
+            />
           </div>
-          <ArrowRight className="size-5 shrink-0" aria-hidden />
+          <div className="flex-1">
+            <p className="font-display text-lg font-semibold">Kids who did it their way</p>
+            <p className="text-sm text-muted-foreground">Real stories from journeys like yours.</p>
+          </div>
+          <StatusPill tone="link" className="self-start">
+            Get inspired
+          </StatusPill>
         </motion.div>
       </Link>
     </motion.section>
   )
 }
 
-function ActivityList({ journey }: { journey: JourneyView }) {
+function ActivityList({
+  journey,
+  hue,
+  palette,
+}: {
+  journey: JourneyView
+  hue: Hue
+  palette: TemplatePalette
+}) {
+  const { prompts } = Route.useLoaderData()
+  const kindFor = (promptId: string | null): ActivityKind =>
+    (promptId ? prompts.find((p) => p.id === promptId)?.kind : undefined) ?? 'custom'
   const router = useRouter()
   const toggleMutation = useMutation({
     mutationFn: (input: { activityId: string; status: 'planned' | 'done' }) =>
@@ -390,62 +633,71 @@ function ActivityList({ journey }: { journey: JourneyView }) {
       }
       <motion.ul layout className="flex flex-col gap-2.5">
         <AnimatePresence initial={false}>
-          {journey.activities.map((activity) => (
-            <motion.li
-              key={activity.id}
-              layout
-              initial={{ opacity: 0, y: -6 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, x: -8 }}
-              transition={{ duration: 0.25, ease: EASE }}
-              className="flex items-start gap-3 rounded-2xl border px-4 py-3"
-            >
-              {/* biome-ignore lint/a11y/useSemanticElements: styled toggle keeps focus and hit target consistent with the design system */}
-              <button
-                type="button"
-                role="checkbox"
-                aria-checked={activity.status === 'done'}
-                aria-label={`Mark ${activity.title} ${activity.status === 'done' ? 'not done' : 'done'}`}
-                disabled={toggleMutation.isPending}
-                onClick={() =>
-                  toggleMutation.mutate({
-                    activityId: activity.id,
-                    status: activity.status === 'done' ? 'planned' : 'done',
-                  })
-                }
-                className={cn(
-                  'mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-md border-2',
-                  activity.status === 'done'
-                    ? 'border-primary bg-primary text-primary-foreground'
-                    : 'border-input hover:border-primary',
-                )}
+          {journey.activities.map((activity) => {
+            const kind = kindFor(activity.promptId)
+            const done = activity.status === 'done'
+            return (
+              <motion.li
+                key={activity.id}
+                layout
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, x: -8 }}
+                transition={{ duration: 0.25, ease: EASE }}
+                className={cn('flex items-center gap-3 rounded-2xl px-4 py-3', palette.soft)}
               >
-                {activity.status === 'done' ? <Check className="size-3.5" aria-hidden /> : null}
-              </button>
-              <div className="flex-1">
-                <p
-                  className={cn(
-                    'text-sm font-bold',
-                    activity.status === 'done' && 'text-muted-foreground line-through',
-                  )}
-                >
-                  {activity.title}
-                </p>
-                {activity.description ? (
-                  <p className="text-xs text-muted-foreground">{activity.description}</p>
-                ) : null}
-              </div>
-              <Button
-                variant="ghost"
-                size="icon-sm"
-                aria-label={`Remove ${activity.title}`}
-                disabled={removeMutation.isPending}
-                onClick={() => removeMutation.mutate(activity.id)}
-              >
-                <Trash2 aria-hidden />
-              </Button>
-            </motion.li>
-          ))}
+                <KindArt kind={kind} className="size-14" />
+                <div className="min-w-0 flex-1">
+                  <p
+                    className={cn(
+                      'font-bold text-[10px] uppercase tracking-wide opacity-70',
+                      palette.softText,
+                    )}
+                  >
+                    {kindLabel(kind)}
+                  </p>
+                  <p
+                    className={cn(
+                      'text-sm font-bold',
+                      done ? 'text-muted-foreground line-through' : palette.softText,
+                    )}
+                  >
+                    {activity.title}
+                  </p>
+                  {activity.description ? (
+                    <p className={cn('text-xs opacity-80', palette.softText)}>
+                      {activity.description}
+                    </p>
+                  ) : null}
+                </div>
+                <div className="flex shrink-0 items-center gap-1">
+                  <StatusPill
+                    tone={done ? 'done' : 'todo'}
+                    hue={hue}
+                    disabled={toggleMutation.isPending}
+                    ariaLabel={`Mark ${activity.title} ${done ? 'not done' : 'done'}`}
+                    onClick={() =>
+                      toggleMutation.mutate({
+                        activityId: activity.id,
+                        status: done ? 'planned' : 'done',
+                      })
+                    }
+                  >
+                    {done ? 'Done' : 'Mark done'}
+                  </StatusPill>
+                  <Button
+                    variant="ghost"
+                    size="icon-sm"
+                    aria-label={`Remove ${activity.title}`}
+                    disabled={removeMutation.isPending}
+                    onClick={() => removeMutation.mutate(activity.id)}
+                  >
+                    <Trash2 aria-hidden />
+                  </Button>
+                </div>
+              </motion.li>
+            )
+          })}
         </AnimatePresence>
       </motion.ul>
     </motion.section>
@@ -455,7 +707,7 @@ function ActivityList({ journey }: { journey: JourneyView }) {
 // The activity prompt bank: the ~8 ideas matched to the kid's template render
 // right on the dashboard so they are impossible to miss. Ideas from other paths
 // and a write-your-own box live behind "More ideas".
-function SuggestionBank({ journey }: { journey: JourneyView }) {
+function SuggestionBank({ journey, palette }: { journey: JourneyView; palette: TemplatePalette }) {
   const { prompts } = Route.useLoaderData()
   const router = useRouter()
   const addMutation = useMutation({
@@ -500,20 +752,31 @@ function SuggestionBank({ journey }: { journey: JourneyView }) {
       ) : (
         <div className="flex flex-col gap-2.5">
           {matched.map((prompt) => (
-            <div key={prompt.id} className="flex items-start gap-3 rounded-2xl border px-4 py-3">
+            <div
+              key={prompt.id}
+              className={cn(
+                'flex items-center gap-3 rounded-2xl border-2 px-4 py-3',
+                palette.borderSoft,
+              )}
+            >
+              <KindArt kind={prompt.kind} className="size-12" />
               <div className="flex-1">
+                <p
+                  className={cn('font-bold text-[10px] uppercase tracking-wide', palette.softText)}
+                >
+                  {kindLabel(prompt.kind)}
+                </p>
                 <p className="text-sm font-bold">{prompt.title}</p>
                 <p className="text-xs text-muted-foreground">{prompt.description}</p>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
+              <StatusPill
+                tone="link"
                 disabled={addMutation.isPending}
+                ariaLabel={`Add ${prompt.title} to your list`}
                 onClick={() => add(prompt.id, prompt.title, prompt.description)}
               >
-                <Plus aria-hidden />
                 Add
-              </Button>
+              </StatusPill>
             </div>
           ))}
         </div>

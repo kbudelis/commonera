@@ -12,6 +12,12 @@ export type RankedTemplate = {
   readonly score: number
 }
 
+// A ranked template plus how close the kid's answers came to a perfect run
+// for it — the number the results screen shows next to each match bar.
+export type TemplateMatch = RankedTemplate & {
+  readonly percent: number
+}
+
 // A stated preference for tradition outweighs any single quiz answer, and mild
 // curiosity nudges without deciding.
 const COMFORT_BOOST: Readonly<Record<ComfortKey, number>> = {
@@ -71,10 +77,44 @@ export function rankTemplates(scores: TemplateScores): readonly RankedTemplate[]
   return TEMPLATE_KEYS.map((key) => ({ key, score: scores[key] })).sort((a, b) => b.score - a.score)
 }
 
+// The best score each template could possibly reach given this quiz's
+// content: single questions contribute their strongest option, words
+// questions their strongest pickExactly options. The comfort boost and the
+// flatness bonus count too, since real scores can include them.
+function maxPossibleScores(
+  questions: readonly QuizQuestion[],
+  comfort: ComfortKey | null,
+): Record<TemplateKey, number> {
+  const max = zeroScores()
+  for (const question of questions) {
+    for (const key of TEMPLATE_KEYS) {
+      const weights = question.options
+        .map((option) => option.weights[key] ?? 0)
+        .filter((weight) => weight > 0)
+        .sort((a, b) => b - a)
+      max[key] +=
+        question.kind === 'words'
+          ? weights.slice(0, question.pickExactly).reduce((sum, weight) => sum + weight, 0)
+          : (weights[0] ?? 0)
+    }
+  }
+  if (comfort) max['roots-and-rituals'] += COMFORT_BOOST[comfort]
+  max['my-own-path'] += FLATNESS_BONUS
+  return max
+}
+
+const toPercent = (score: number, max: number): number =>
+  max > 0 ? Math.min(100, Math.max(0, Math.round((score / max) * 100))) : 0
+
 export function recommendTemplates(
   questions: readonly QuizQuestion[],
   answers: QuizAnswers,
   comfort: ComfortKey | null,
-): readonly RankedTemplate[] {
-  return rankTemplates(scoreQuiz(questions, answers, comfort)).slice(0, 3)
+): readonly TemplateMatch[] {
+  const scores = scoreQuiz(questions, answers, comfort)
+  const max = maxPossibleScores(questions, comfort)
+  // Four matches, mirroring the tested tracker's four category rows.
+  return rankTemplates(scores)
+    .slice(0, 4)
+    .map(({ key, score }) => ({ key, score, percent: toPercent(score, max[key]) }))
 }

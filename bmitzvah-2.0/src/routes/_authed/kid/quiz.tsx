@@ -1,8 +1,19 @@
 import { useMutation } from '@tanstack/react-query'
 import { createFileRoute, redirect, useRouter } from '@tanstack/react-router'
-import { ArrowLeft, ArrowRight, Check, Heart, Sparkles } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Heart, Sparkles } from 'lucide-react'
 import { AnimatePresence, motion, type Transition, type Variants } from 'motion/react'
 import { useEffect, useReducer, useRef, useState } from 'react'
+import { FaceCluster, PhotoSnap } from '@/components/photo-snap'
+import {
+  HUE_CLASSES,
+  type Hue,
+  SceneTile,
+  TEMPLATE_HUE,
+  tileEntrance,
+  WordToken,
+} from '@/components/quiz/scene-kit'
+import { sceneEntryFor, TEMPLATE_SCENES, templateScene } from '@/components/quiz/scenes'
+import { DrumrollScene, MyOwnPathTemplateScene } from '@/components/quiz/scenes/templates'
 import { TemplateChip } from '@/components/template-chip'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -13,6 +24,7 @@ import type { QuizQuestion, TemplateKey } from '@/lib/content/types'
 import { suggestJourneyNames } from '@/lib/journey/naming'
 import { splitByRecommendation } from '@/lib/providers/recommend'
 import { type QuizAnswers, recommendTemplates } from '@/lib/quiz/scoring'
+import { PATH_VERDICTS } from '@/lib/quiz/verdicts'
 import { cn } from '@/lib/utils'
 import { fetchOwnSettingsFn } from '@/utils/child-settings.functions'
 import { fetchProvidersFn, fetchQuizContentFn } from '@/utils/content.functions'
@@ -80,27 +92,6 @@ const listItemVariants: Variants = {
 const badgeVariants: Variants = {
   hidden: { opacity: 0, scale: 0 },
   show: { opacity: 1, scale: 1, transition: { duration: 0.2, ease: EASE_OUT_QUART, delay: 0.25 } },
-}
-
-// A single-choice option's check mark scales in when the option is picked.
-const checkVariants: Variants = {
-  hidden: { opacity: 0, scale: 0 },
-  show: { opacity: 1, scale: 1 },
-}
-
-// A word chip does a small spring-free pop the moment it becomes selected. The
-// label form (not an inline keyframe array) means a sibling re-render never
-// re-fires the pop: motion only re-runs when the label itself changes.
-const chipVariants: Variants = {
-  idle: { scale: 1 },
-  selected: { scale: [1, 1.05, 1] },
-}
-
-// A single-choice option's emoji does a bigger pop on select — the 240ms
-// auto-advance delay gives it just enough room to land.
-const emojiPopVariants: Variants = {
-  idle: { scale: 1 },
-  selected: { scale: [1, 1.35, 1] },
 }
 
 // One playful beat between questions, keyed by index (deterministic — no
@@ -265,7 +256,8 @@ function QuizPage() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-2xl">
+    <div className="relative mx-auto w-full max-w-2xl">
+      <QuizBackdrop hue={backdropHueFor(state)} />
       {/* initial={false}: the first paint renders in place (visible by default,
           per DESIGN), only navigation between steps animates. */}
       <AnimatePresence mode="wait" custom={direction} initial={false}>
@@ -289,6 +281,47 @@ function QuizPage() {
   )
 }
 
+// The step-level backdrop: two soft color washes that crossfade to the
+// current step's hue. Clipped to the column so the page never scrolls
+// sideways; purely decorative, so it's hidden from assistive tech.
+const HUE_ROTATION: readonly Hue[] = ['wild', 'real', 'diff', 'mind', 'roots', 'path']
+
+function backdropHueFor(state: QuizState): Hue {
+  if (state.step === 'question') return HUE_ROTATION[state.index % HUE_ROTATION.length] ?? 'path'
+  if (state.step === 'name' || state.step === 'guides') return TEMPLATE_HUE[state.template]
+  return 'path'
+}
+
+function QuizBackdrop({ hue }: { hue: Hue }) {
+  return (
+    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <AnimatePresence initial={false}>
+        <motion.div
+          key={hue}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.6, ease: EASE_OUT_QUART }}
+          className="absolute inset-0"
+        >
+          <div
+            className={cn(
+              '-top-20 -left-24 absolute size-72 rounded-full opacity-70 blur-3xl',
+              HUE_CLASSES[hue].tile,
+            )}
+          />
+          <div
+            className={cn(
+              '-right-28 absolute top-72 size-80 rounded-full opacity-60 blur-3xl',
+              HUE_CLASSES[hue].tile,
+            )}
+          />
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  )
+}
+
 function IntroStep({ dispatch, direction }: StepProps<'intro'>) {
   const { quiz } = Route.useLoaderData()
   const { user } = Route.useRouteContext()
@@ -303,14 +336,38 @@ function IntroStep({ dispatch, direction }: StepProps<'intro'>) {
       exit="exit"
       transition={STEP_TRANSITION}
     >
-      <div className="flex flex-col gap-3">
-        <span className="text-5xl" aria-hidden>
-          🎯
-        </span>
-        <h1 className="font-display text-4xl font-semibold">{firstName}, which journey are you?</h1>
-        <p className="text-muted-foreground">
-          {quiz.questions.length} questions. Zero wrong answers, no grades, nobody watching over
-          your shoulder. Go with your gut — it knows.
+      <div className="flex flex-col items-center gap-4 text-center">
+        {/* Real kids mid-journey, dropped like prints on a table, with the
+            My Own Path scene tucked in as a sticker. */}
+        <div className="relative flex items-end justify-center gap-3 py-2 pr-8">
+          <PhotoSnap
+            src="/photos/kids-gardening.jpg"
+            alt="Two kids planting together on a service project"
+            tilt={-5}
+            className="h-28 w-24 sm:h-32 sm:w-28"
+          />
+          <PhotoSnap
+            src="/photos/party-lift.jpg"
+            alt="A kid lifted on a chair, arms up, mid-celebration"
+            tilt={2}
+            delay={0.08}
+            className="z-10 h-36 w-28 sm:h-40 sm:w-32"
+          />
+          <PhotoSnap
+            src="/photos/workshop.jpg"
+            alt="A kid teaching an older adult how to use a phone"
+            tilt={6}
+            delay={0.16}
+            className="h-28 w-24 sm:h-32 sm:w-28"
+          />
+          <MyOwnPathTemplateScene className="-right-2 -bottom-2 absolute z-20 size-20 sm:size-24" />
+        </div>
+        <h1 className="font-display-wonk text-5xl font-semibold">
+          {firstName}, which journey are you?
+        </h1>
+        <p className="max-w-md text-muted-foreground">
+          Real kids are out there building days like these. {quiz.questions.length} questions figure
+          out yours. Zero wrong answers, no grades — go with your gut, it knows.
         </p>
       </div>
       <Button size="lg" onClick={() => dispatch({ type: 'start' })}>
@@ -420,7 +477,9 @@ function QuestionStep({ state, dispatch, direction }: StepProps<'question'>) {
                 {encouragementFor(state.index, quiz.questions.length)}
               </p>
             ) : null}
-            <h1 className="font-display text-3xl font-semibold">{question.prompt}</h1>
+            <h1 className="font-display-wonk text-3xl font-semibold sm:text-4xl">
+              {question.prompt}
+            </h1>
             {question.helper ? <p className="text-muted-foreground">{question.helper}</p> : null}
             {question.kind === 'words' ? (
               <p className="text-sm font-bold text-primary">
@@ -430,88 +489,61 @@ function QuestionStep({ state, dispatch, direction }: StepProps<'question'>) {
           </div>
 
           {question.kind === 'words' ? (
-            <div className="flex flex-wrap gap-2.5">
-              {question.options.map((option) => {
+            <motion.div
+              className="grid grid-cols-3 gap-2.5 sm:grid-cols-4"
+              variants={listVariants}
+              initial="hidden"
+              animate="show"
+            >
+              {question.options.map((option, index) => {
                 const selected = picked.includes(option.id)
+                const { scene, hue } = sceneEntryFor(option.id, option.emoji, index)
                 return (
-                  <motion.button
-                    key={option.id}
-                    type="button"
-                    aria-pressed={selected}
-                    onClick={() => dispatch({ type: 'toggle-word', optionId: option.id })}
-                    initial={false}
-                    variants={chipVariants}
-                    animate={selected ? 'selected' : 'idle'}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ duration: 0.2, ease: EASE_OUT_QUART }}
-                    className={cn(
-                      'inline-flex items-center gap-1.5 rounded-full border-2 px-4 py-2 text-sm font-bold',
-                      selected
-                        ? 'border-primary bg-primary text-primary-foreground'
-                        : 'border-input bg-background hover:border-primary/50',
-                    )}
-                  >
-                    <span aria-hidden>{option.emoji}</span>
-                    {option.label}
-                  </motion.button>
+                  <motion.div key={option.id} variants={tileEntrance}>
+                    <WordToken
+                      scene={scene}
+                      hue={hue}
+                      label={option.label}
+                      selected={selected}
+                      onClick={() => dispatch({ type: 'toggle-word', optionId: option.id })}
+                    />
+                  </motion.div>
                 )
               })}
-            </div>
+            </motion.div>
           ) : (
-            <div className="flex flex-col gap-3">
-              {question.options.map((option) => {
+            <motion.div
+              className="grid grid-cols-2 gap-3 sm:grid-cols-3"
+              variants={listVariants}
+              initial="hidden"
+              animate="show"
+            >
+              {question.options.map((option, index) => {
                 const selected = pendingOption === option.id || picked.includes(option.id)
+                const { scene, hue } = sceneEntryFor(option.id, option.emoji, index)
                 return (
-                  <motion.button
+                  <SceneTile
                     key={option.id}
-                    type="button"
-                    aria-pressed={selected}
-                    initial={false}
-                    whileTap={{ scale: 0.98 }}
+                    scene={scene}
+                    hue={hue}
+                    label={option.label}
+                    selected={selected}
+                    index={index}
+                    disabled={pendingOption !== null && !selected}
                     onClick={() => {
                       if (pendingOption) return
                       setPendingOption(option.id)
+                      // A beat longer than the old list rows: the tile pop and
+                      // check badge need room to land before the slide.
                       advanceTimer.current = setTimeout(
                         () => dispatch({ type: 'answer-single', optionId: option.id }),
-                        240,
+                        340,
                       )
                     }}
-                    className={cn(
-                      'flex items-center gap-3 rounded-2xl border-2 px-5 py-4 text-left font-bold',
-                      selected
-                        ? 'border-primary bg-primary/10'
-                        : 'border-input bg-background hover:border-primary/50',
-                    )}
-                  >
-                    <motion.span
-                      className="text-2xl"
-                      aria-hidden
-                      initial={false}
-                      variants={emojiPopVariants}
-                      animate={selected ? 'selected' : 'idle'}
-                      transition={{ duration: 0.3, ease: EASE_OUT_QUART }}
-                    >
-                      {option.emoji}
-                    </motion.span>
-                    {option.label}
-                    <AnimatePresence>
-                      {selected ? (
-                        <motion.span
-                          className="ml-auto flex"
-                          variants={checkVariants}
-                          initial="hidden"
-                          animate="show"
-                          exit="hidden"
-                          transition={{ duration: 0.2, ease: EASE_OUT_QUART }}
-                        >
-                          <Check className="size-5 text-primary" aria-hidden />
-                        </motion.span>
-                      ) : null}
-                    </AnimatePresence>
-                  </motion.button>
+                  />
                 )
               })}
-            </div>
+            </motion.div>
           )}
 
           {question.kind === 'words' ? (
@@ -530,12 +562,23 @@ function QuestionStep({ state, dispatch, direction }: StepProps<'question'>) {
 }
 
 function ResultsStep({ state, dispatch, direction }: StepProps<'results'>) {
-  const { quiz, settings } = Route.useLoaderData()
+  const { quiz, settings, providers } = Route.useLoaderData()
+  const { user } = Route.useRouteContext()
+  const firstName = user.displayName.split(' ')[0] ?? user.displayName
   const templates = useTemplates()
   const ranked = recommendTemplates(quiz.questions, state.answers, settings.comfort)
   const recommendedKeys = ranked.map((r) => r.key)
   const rest = templates.filter((t) => !recommendedKeys.includes(t.key))
-  const bestPalette = ranked[0] ? TEMPLATE_PALETTE[ranked[0].key] : null
+  // One matched path, personality-quiz style (the tested concept): the top
+  // score is THE verdict; the runners-up are close seconds, not co-equals.
+  const best = ranked[0]
+  const runnersUp = ranked.slice(1)
+  const bestPalette = best ? TEMPLATE_PALETTE[best.key] : null
+  const bestTemplate = best ? templates.find((t) => t.key === best.key) : null
+  const words = pickedWords(quiz.questions, state.answers)
+  const matchedGuides = best
+    ? splitByRecommendation(providers, [best.key]).recommended.slice(0, 2)
+    : []
 
   // A beat of suspense before the reveal: long enough to feel like the quiz is
   // thinking, short enough that nobody reaches for the reload button.
@@ -557,10 +600,8 @@ function ResultsStep({ state, dispatch, direction }: StepProps<'results'>) {
         exit="exit"
         transition={STEP_TRANSITION}
       >
-        <span className="text-5xl" aria-hidden>
-          🥁
-        </span>
-        <p className="font-display text-2xl font-semibold">Reading your answers</p>
+        <DrumrollScene className="size-36" />
+        <p className="font-display-wonk text-3xl font-semibold">Reading your answers</p>
         <div className="flex items-center gap-1.5" aria-hidden>
           {['d1', 'd2', 'd3'].map((key, i) => (
             <motion.span
@@ -611,85 +652,260 @@ function ResultsStep({ state, dispatch, direction }: StepProps<'results'>) {
           <Sparkles className="size-4" aria-hidden />
           Quiz done
         </p>
-        <h1 className="font-display text-4xl font-semibold">Your results are in</h1>
-        <p className="text-muted-foreground">
-          Your answers point at these three. Pick the one that makes you want to start today, or
-          browse the rest. Nothing is locked in; the journey bends to you.
-        </p>
+        <h1 className="font-display-wonk text-4xl font-semibold sm:text-5xl">
+          Your results are in
+        </h1>
       </div>
 
+      {/* The verdict: one matched path (the tested "Nature Pathway" card) —
+          kid's name up top, patch badge, a "you care about..." line, and the
+          three words they picked as receipts. */}
+      {best && bestTemplate && bestPalette ? (
+        <motion.div
+          variants={listVariants}
+          initial="hidden"
+          animate="show"
+          className={cn(
+            'flex flex-col items-center gap-4 rounded-t-[3.5rem] rounded-b-3xl p-8 text-center',
+            bestPalette.soft,
+          )}
+        >
+          <motion.span
+            variants={listItemVariants}
+            className={cn(
+              'font-bold text-xs uppercase tracking-wide opacity-80',
+              bestPalette.softText,
+            )}
+          >
+            {firstName}'s path
+          </motion.span>
+          <motion.div variants={listItemVariants}>
+            <BestArt template={best.key} className="size-32" />
+          </motion.div>
+          <motion.div variants={listItemVariants} className="flex flex-col items-center gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <h2
+                className={cn(
+                  'font-display-wonk text-3xl font-semibold sm:text-4xl',
+                  bestPalette.softText,
+                )}
+              >
+                {bestTemplate.name}
+              </h2>
+              <motion.span
+                variants={badgeVariants}
+                className={cn('rounded-full px-3 py-1 font-bold text-xs', bestPalette.solid)}
+              >
+                {best.percent}% match
+              </motion.span>
+            </div>
+            <p className={cn('max-w-md text-sm sm:text-base', bestPalette.softText)}>
+              {PATH_VERDICTS[best.key]}
+            </p>
+          </motion.div>
+          {words.length > 0 ? (
+            <motion.div variants={listItemVariants} className="flex flex-col items-center gap-1.5">
+              <div className="flex flex-wrap justify-center gap-1.5">
+                {words.map((word) => (
+                  <span
+                    key={word}
+                    className={cn('rounded-full px-3 py-1 font-bold text-xs', bestPalette.solid)}
+                  >
+                    {word}
+                  </span>
+                ))}
+              </div>
+              <p className={cn('text-xs opacity-80', bestPalette.softText)}>
+                Your words. This path runs on all three.
+              </p>
+            </motion.div>
+          ) : null}
+          <motion.div variants={listItemVariants} className="w-full sm:w-auto">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto"
+              onClick={() => dispatch({ type: 'choose-template', template: best.key })}
+            >
+              Choose this path
+              <ArrowRight aria-hidden />
+            </Button>
+          </motion.div>
+        </motion.div>
+      ) : null}
+
+      {/* The tested tracker's four category rows, reframed to our paths: the
+          top four matches, each with its hue-tinted bar, so the percentages
+          behind the verdict are right there to argue with. */}
       <motion.div
-        className="flex flex-col gap-4"
         variants={listVariants}
         initial="hidden"
         animate="show"
+        className="flex flex-col gap-3"
       >
-        {ranked.map(({ key }, index) => {
-          const template = templates.find((t) => t.key === key)
-          const palette = TEMPLATE_PALETTE[key]
-          if (!template) return null
-          return (
-            <motion.button
-              key={key}
-              type="button"
-              variants={listItemVariants}
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
-              onClick={() => dispatch({ type: 'choose-template', template: key })}
-              className={cn('flex flex-col gap-2 rounded-3xl p-6 text-left', palette.soft)}
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-3xl" aria-hidden>
-                  {template.emoji}
-                </span>
-                <span className={cn('font-display text-2xl font-semibold', palette.softText)}>
-                  {template.name}
-                </span>
+        <h2 className="font-display text-2xl font-semibold">Your match meter</h2>
+        <div className="flex flex-col gap-2.5">
+          {ranked.map(({ key, percent }, index) => {
+            const template = templates.find((t) => t.key === key)
+            const palette = TEMPLATE_PALETTE[key]
+            const Art = TEMPLATE_SCENES[key]
+            if (!template) return null
+            return (
+              <motion.div
+                key={key}
+                variants={listItemVariants}
+                className={cn('flex items-center gap-3 rounded-2xl px-4 py-3', palette.soft)}
+              >
+                <Art className="size-12 shrink-0" />
+                <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <p className={cn('truncate text-sm font-bold', palette.softText)}>
+                      {template.name}
+                    </p>
+                    <p
+                      className={cn(
+                        'font-display-wonk font-semibold leading-none',
+                        palette.softText,
+                      )}
+                    >
+                      {percent}%
+                    </p>
+                  </div>
+                  <div
+                    className="h-2.5 overflow-hidden rounded-full bg-background/70"
+                    role="progressbar"
+                    aria-valuenow={percent}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`${template.name}: ${percent}% match`}
+                  >
+                    <motion.div
+                      className={cn('h-full rounded-full', palette.bar)}
+                      initial={{ width: 0 }}
+                      animate={{ width: `${Math.max(percent, 4)}%` }}
+                      transition={{
+                        duration: 0.6,
+                        ease: EASE_OUT_QUART,
+                        delay: 0.2 + index * 0.1,
+                      }}
+                    />
+                  </div>
+                </div>
                 {index === 0 ? (
-                  <motion.span
-                    variants={badgeVariants}
+                  <span
                     className={cn(
-                      'ml-auto rounded-full px-3 py-1 text-xs font-bold',
+                      'rounded-full px-2.5 py-1 font-bold text-[10px] uppercase tracking-wide',
                       palette.solid,
                     )}
                   >
-                    Best match
-                  </motion.span>
+                    Best
+                  </span>
                 ) : null}
-              </div>
-              <p className={cn('font-semibold', palette.softText)}>{template.tagline}</p>
-              <p className={cn('text-sm opacity-90', palette.softText)}>{template.description}</p>
-              <p className={cn('text-sm font-bold underline-offset-4', palette.softText)}>
-                Choose this path
-              </p>
-            </motion.button>
-          )
-        })}
+              </motion.div>
+            )
+          })}
+        </div>
       </motion.div>
 
+      {/* Recommended providers directly under the matched path, as tested. */}
+      {matchedGuides.length > 0 ? (
+        <div className="flex flex-col gap-3">
+          <h2 className="font-display text-2xl font-semibold">Guides who fit this path</h2>
+          <div className="flex flex-col gap-2.5">
+            {matchedGuides.map((provider) => {
+              const primary = provider.templates[0]
+              const { scene: GuideArt, hue: guideHue } = templateScene(primary ?? 'my-own-path')
+              const c = HUE_CLASSES[guideHue]
+              return (
+                <div
+                  key={provider.key}
+                  className={cn('flex items-center gap-3 rounded-2xl px-4 py-3', c.tile)}
+                >
+                  <GuideArt className="size-14 shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <p className={cn('truncate font-display font-semibold', c.text)}>
+                      {provider.name}
+                    </p>
+                    <p className={cn('truncate text-sm opacity-90', c.text)}>{provider.tagline}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <p className="text-muted-foreground text-sm">
+            Pick your path and you can tap the ones you like right after.
+          </p>
+        </div>
+      ) : null}
+
+      {/* Close seconds and the rest: still one tap away, clearly secondary. */}
       <div className="flex flex-col gap-4">
-        <h2 className="font-display text-2xl font-semibold">Or browse the other three</h2>
+        <h2 className="font-display text-2xl font-semibold">Not feeling it? Close seconds</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {runnersUp.map(({ key, percent }) => {
+            const template = templates.find((t) => t.key === key)
+            const palette = TEMPLATE_PALETTE[key]
+            const Art = TEMPLATE_SCENES[key]
+            if (!template) return null
+            return (
+              <motion.button
+                key={key}
+                type="button"
+                whileHover={{ scale: 1.01, y: -3 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => dispatch({ type: 'choose-template', template: key })}
+                className={cn('flex items-center gap-3 rounded-3xl p-4 text-left', palette.soft)}
+              >
+                <Art className="size-20 shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <span className="flex flex-wrap items-center gap-2">
+                    <span className={cn('font-display font-semibold text-lg', palette.softText)}>
+                      {template.name}
+                    </span>
+                    <span
+                      className={cn(
+                        'rounded-full px-2 py-0.5 font-bold text-[10px]',
+                        palette.solid,
+                      )}
+                    >
+                      {percent}%
+                    </span>
+                  </span>
+                  <span className={cn('text-sm opacity-90', palette.softText)}>
+                    {template.tagline}
+                  </span>
+                </div>
+              </motion.button>
+            )
+          })}
+        </div>
         <div className="grid gap-4 sm:grid-cols-3">
-          {rest.map((template) => (
-            <motion.button
-              key={template.key}
-              type="button"
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => dispatch({ type: 'choose-template', template: template.key })}
-              className="flex flex-col gap-2 rounded-2xl border-2 border-input p-4 text-left hover:border-primary/50"
-            >
-              <span className="text-2xl" aria-hidden>
-                {template.emoji}
-              </span>
-              <span className="font-bold">{template.name}</span>
-              <span className="text-sm text-muted-foreground">{template.tagline}</span>
-            </motion.button>
-          ))}
+          {rest.map((template) => {
+            const Art = TEMPLATE_SCENES[template.key]
+            return (
+              <motion.button
+                key={template.key}
+                type="button"
+                whileHover={{ scale: 1.01, y: -3 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => dispatch({ type: 'choose-template', template: template.key })}
+                className="flex flex-col items-start gap-2 rounded-2xl border-2 border-input p-4 text-left hover:border-primary/50"
+              >
+                <Art className="size-16" />
+                <span className="font-bold">{template.name}</span>
+                <span className="text-sm text-muted-foreground">{template.tagline}</span>
+              </motion.button>
+            )
+          })}
         </div>
       </div>
     </motion.section>
   )
+}
+
+// Best-match patch art, resolved by template key so the hero card stays tidy.
+function BestArt({ template, className }: { template: TemplateKey; className?: string }) {
+  const Art = TEMPLATE_SCENES[template]
+  return <Art className={className} />
 }
 
 function NameStep({ state, dispatch, direction }: StepProps<'name'>) {
@@ -698,6 +914,7 @@ function NameStep({ state, dispatch, direction }: StepProps<'name'>) {
   const { quiz } = Route.useLoaderData()
   const template = useTemplate(state.template)
   const palette = TEMPLATE_PALETTE[state.template]
+  const ChosenArt = TEMPLATE_SCENES[state.template]
   const firstName = user.displayName.split(' ')[0] ?? user.displayName
   const suggestions = suggestJourneyNames({
     template: state.template,
@@ -747,12 +964,20 @@ function NameStep({ state, dispatch, direction }: StepProps<'name'>) {
         <ArrowLeft aria-hidden />
         Back to matches
       </Button>
-      <div className={cn('flex flex-col gap-3 rounded-3xl p-6', palette.soft)}>
-        <TemplateChip template={state.template} variant="solid" className="self-start" />
-        <p className={cn('text-sm', palette.softText)}>{template.description}</p>
+      <div
+        className={cn(
+          'flex flex-col gap-4 rounded-3xl p-6 sm:flex-row sm:items-center',
+          palette.soft,
+        )}
+      >
+        <ChosenArt className="size-24 shrink-0 self-center" />
+        <div className="flex flex-col gap-3">
+          <TemplateChip template={state.template} variant="solid" className="self-start" />
+          <p className={cn('text-sm', palette.softText)}>{template.description}</p>
+        </div>
       </div>
       <div className="flex flex-col gap-3">
-        <h1 className="font-display text-4xl font-semibold">Name your journey</h1>
+        <h1 className="font-display-wonk text-4xl font-semibold">Name your journey</h1>
         <p className="text-muted-foreground">
           This is the name you'll see every day, so make it feel like yours. Steal one of these or
           write your own.
@@ -858,13 +1083,27 @@ function GuidesStep({ state, direction }: StepProps<'guides'>) {
           <Sparkles className="size-4" aria-hidden />
           Journey saved
         </p>
-        <h1 className="font-display text-4xl font-semibold">Go it alone, or bring someone in?</h1>
+        <h1 className="font-display-wonk text-4xl font-semibold">
+          Go it alone, or bring someone in?
+        </h1>
         <p className="text-muted-foreground">
           These guides know journeys like yours. They help you stay on track, make the big idea
           real, and find the meaning in it — a rabbi, a mentor, or the person who helps you build
           the wild part. Tap the heart on anyone interesting and your parent can reach out. Or skip
           it: doing this your own way is a great plan too.
         </p>
+        <div className="flex items-center gap-3">
+          <FaceCluster
+            photos={[
+              { src: '/photos/workshop.jpg', alt: '' },
+              { src: '/photos/kid-grandpa-top.jpg', alt: '' },
+              { src: '/photos/family-tablet.jpg', alt: '' },
+            ]}
+          />
+          <p className="text-sm font-bold text-muted-foreground">
+            Real people, on real journeys like yours
+          </p>
+        </div>
       </div>
 
       <motion.div
@@ -875,20 +1114,27 @@ function GuidesStep({ state, direction }: StepProps<'guides'>) {
       >
         {picks.map((provider) => {
           const favorited = hearted.includes(provider.key)
+          const primaryTemplate = provider.templates[0]
+          const { scene: GuideArt } = primaryTemplate
+            ? templateScene(primaryTemplate)
+            : templateScene(state.template)
           return (
             <motion.div
               key={provider.key}
               variants={listItemVariants}
               className={cn(
-                'flex flex-wrap items-center justify-between gap-3 rounded-2xl p-5',
+                'flex flex-wrap items-center justify-between gap-3 rounded-2xl p-4 pr-5',
                 palette.soft,
               )}
             >
-              <div className="flex min-w-0 flex-col gap-0.5">
-                <p className={cn('font-display text-lg font-semibold', palette.softText)}>
-                  {provider.name}
-                </p>
-                <p className={cn('text-sm opacity-90', palette.softText)}>{provider.tagline}</p>
+              <div className="flex min-w-0 items-center gap-3">
+                <GuideArt className="size-16 shrink-0" />
+                <div className="flex min-w-0 flex-col gap-0.5">
+                  <p className={cn('font-display text-lg font-semibold', palette.softText)}>
+                    {provider.name}
+                  </p>
+                  <p className={cn('text-sm opacity-90', palette.softText)}>{provider.tagline}</p>
+                </div>
               </div>
               <Button
                 variant={favorited ? 'default' : 'outline'}
