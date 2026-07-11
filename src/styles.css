@@ -517,7 +517,7 @@ h1 {
   z-index: 3;
   width: min(calc(100cqw - 32px), 34dvh, 300px);
   aspect-ratio: 1;
-  margin: -84px auto 132px;
+  margin: -84px auto 72px;
 }
 
 .month-section {
