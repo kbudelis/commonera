@@ -84,10 +84,13 @@ const renderFlow = (state) =>
   renderToStaticMarkup(
     createElement(FlowSections, {
       state,
+      nameValue: "Mara",
+      nameError: null,
       birthdayValue: "",
       welcomeLine: 0,
       onAdvanceWelcome() {},
       onAdvance() {},
+      onNameChange() {},
       onBirthdayChange() {},
       onBirthdaySubmit() {},
       onSkip() {},
@@ -101,6 +104,11 @@ test("welcome uses one tap action and birthday owns the month skip", () => {
   assert.match(welcomeMarkup, />tap to continue</);
   assert.doesNotMatch(welcomeMarkup, /Skip to this month/);
   assert.match(birthdayMarkup, /Skip to this month/);
+  assert.match(birthdayMarkup, /placeholder="Name"/);
+  assert.ok(
+    birthdayMarkup.indexOf('placeholder="Name"') <
+      birthdayMarkup.indexOf('placeholder="MM\/DD\/YYYY"'),
+  );
 });
 
 test("both skip origins render month and upcoming without personal", () => {
@@ -133,6 +141,8 @@ test("birthday path renders personal before month and upcoming", () => {
   assert.ok(personal >= 0);
   assert.ok(personal < month);
   assert.ok(month < upcoming);
+  assert.match(markup, /id="personal-title" class="personal-name">Mara<\/h1>/);
+  assert.doesNotMatch(markup, /Personal Thread/);
 });
 
 test("birthday and month compositions render real visual assets", () => {
@@ -202,9 +212,10 @@ test("the content model contains 12 current-month readings with rituals", () => 
 });
 
 test("a birthday produces stable facts without storing authored prose", () => {
-  const profile = createStoredBirthProfile("07/10/1998");
+  const profile = createStoredBirthProfile("07/10/1998", "  Mara  ");
 
   assert.ok(profile);
+  assert.equal(profile.input.displayName, "Mara");
   assert.equal(profile.derived.hebrewDate.monthKey, "tammuz");
   assert.equal(MONTH_ENTRIES.tammuz.correspondence.letter.glyph, "ח");
   assert.doesNotMatch(JSON.stringify(profile), /reading|ritual/i);

@@ -149,10 +149,13 @@ export function scrollToLandmarkUnlessReducedMotion(
 
 interface FlowSectionsProps {
   state: FlowState;
+  nameValue: string;
+  nameError: string | null;
   birthdayValue: string;
   welcomeLine: number;
   onAdvanceWelcome: () => void;
   onAdvance: () => void;
+  onNameChange: (value: string) => void;
   onBirthdayChange: (value: string) => void;
   onBirthdaySubmit: (event: FormEvent<HTMLFormElement>) => void;
   onSkip: () => void;
@@ -160,17 +163,20 @@ interface FlowSectionsProps {
 
 export function FlowSections({
   state,
+  nameValue,
+  nameError,
   birthdayValue,
   welcomeLine,
   onAdvanceWelcome,
   onAdvance,
+  onNameChange,
   onBirthdayChange,
   onBirthdaySubmit,
   onSkip,
 }: FlowSectionsProps) {
   const landmarks = visibleLandmarksForFlow(state);
   const birthProfile = state.birthday
-    ? createStoredBirthProfile(state.birthday)
+    ? createStoredBirthProfile(state.birthday, nameValue)
     : null;
 
   return (
@@ -193,9 +199,12 @@ export function FlowSections({
             return (
               <BirthdayStep
                 key={landmark}
-                value={birthdayValue}
-                error={state.validationError}
-                onChange={onBirthdayChange}
+                nameValue={nameValue}
+                nameError={nameError}
+                birthdayValue={birthdayValue}
+                birthdayError={state.validationError}
+                onNameChange={onNameChange}
+                onBirthdayChange={onBirthdayChange}
                 onSubmit={onBirthdaySubmit}
                 onSkip={onSkip}
               />
@@ -265,15 +274,21 @@ function ZodiacTransition({ onAdvance }: { onAdvance: () => void }) {
 }
 
 function BirthdayStep({
-  value,
-  error,
-  onChange,
+  nameValue,
+  nameError,
+  birthdayValue,
+  birthdayError,
+  onNameChange,
+  onBirthdayChange,
   onSubmit,
   onSkip,
 }: {
-  value: string;
-  error: string | null;
-  onChange: (value: string) => void;
+  nameValue: string;
+  nameError: string | null;
+  birthdayValue: string;
+  birthdayError: string | null;
+  onNameChange: (value: string) => void;
+  onBirthdayChange: (value: string) => void;
   onSubmit: (event: FormEvent<HTMLFormElement>) => void;
   onSkip: () => void;
 }) {
@@ -286,30 +301,56 @@ function BirthdayStep({
       <ZodiacVisual variant="compact" />
       <div className="section-copy birthday-copy">
         <h1 id="birthday-title" className="visually-hidden">
-          Enter your birthday
+          Enter your name and birthday
         </h1>
         <form className="birthday-form" onSubmit={onSubmit} noValidate>
-          <label className="visually-hidden" htmlFor="birthday">
-            Birthday
-          </label>
-          <input
-            id="birthday"
-            name="birthday"
-            type="text"
-            inputMode="numeric"
-            autoComplete="bday"
-            placeholder="MM/DD/YYYY"
-            value={value}
-            aria-describedby={error ? "birthday-error" : "birthday-hint"}
-            aria-invalid={Boolean(error)}
-            onChange={(event) => onChange(event.target.value)}
-          />
+          <div className="birthday-fields">
+            <div className="birthday-field">
+              <label className="visually-hidden" htmlFor="display-name">
+                Name
+              </label>
+              <input
+                id="display-name"
+                name="display-name"
+                type="text"
+                autoComplete="name"
+                maxLength={40}
+                placeholder="Name"
+                value={nameValue}
+                aria-describedby={nameError ? "name-error" : undefined}
+                aria-invalid={Boolean(nameError)}
+                onChange={(event) => onNameChange(event.target.value)}
+              />
+            </div>
+            <div className="birthday-field">
+              <label className="visually-hidden" htmlFor="birthday">
+                Birthday
+              </label>
+              <input
+                id="birthday"
+                name="birthday"
+                type="text"
+                inputMode="numeric"
+                autoComplete="bday"
+                placeholder="MM/DD/YYYY"
+                value={birthdayValue}
+                aria-describedby={birthdayError ? "birthday-error" : "birthday-hint"}
+                aria-invalid={Boolean(birthdayError)}
+                onChange={(event) => onBirthdayChange(event.target.value)}
+              />
+            </div>
+          </div>
           <span id="birthday-hint" className="visually-hidden">
             Enter the date as month, day, and four-digit year.
           </span>
-          {error ? (
+          {nameError ? (
+            <span id="name-error" className="field-error" role="alert">
+              {nameError}
+            </span>
+          ) : null}
+          {birthdayError ? (
             <span id="birthday-error" className="field-error" role="alert">
-              {error}
+              {birthdayError}
             </span>
           ) : null}
           <button className="primary-action" type="submit">
@@ -330,6 +371,7 @@ function PersonalPlaceholder({
   profile: StoredBirthProfileV1 | null;
 }) {
   const month = profile ? getBirthMonthEntry(profile) : null;
+  const displayName = profile?.input.displayName?.trim() || "Your Reading";
 
   return (
     <section
@@ -347,7 +389,7 @@ function PersonalPlaceholder({
         {profile && month ? (
           <>
             <p className="eyebrow">{profile.derived.hebrewDate.displayLabel}</p>
-            <h1 id="personal-title">Personal Thread</h1>
+            <h1 id="personal-title" className="personal-name">{displayName}</h1>
             <p className="profile-facts">
               <span lang="he" dir="rtl">{profile.derived.hebrewDate.hebrewDisplay}</span>
               <span>
@@ -362,7 +404,7 @@ function PersonalPlaceholder({
           </>
         ) : (
           <>
-            <h1 id="personal-title">Personal Thread</h1>
+            <h1 id="personal-title" className="personal-name">{displayName}</h1>
             <p>Your Hebrew birth profile will appear here.</p>
           </>
         )}
@@ -428,6 +470,8 @@ function UpcomingPlaceholder() {
 export default function App() {
   const [flow, setFlow] = useState<FlowState>(createInitialFlow);
   const [welcomeLine, setWelcomeLine] = useState(0);
+  const [nameValue, setNameValue] = useState("");
+  const [nameError, setNameError] = useState<string | null>(null);
   const [birthdayValue, setBirthdayValue] = useState("");
   const [pendingLandmark, setPendingLandmark] =
     useState<FlowLandmark | null>(null);
@@ -436,6 +480,7 @@ export default function App() {
     if (typeof window !== "undefined") {
       const storedProfile = loadBirthProfile(window.localStorage);
       if (storedProfile) {
+        setNameValue(storedProfile.input.displayName ?? "");
         setBirthdayValue(
           formatBirthdayInput(storedProfile.input.civilDateISO),
         );
@@ -486,16 +531,25 @@ export default function App() {
 
   const submitBirthday = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const normalizedName = nameValue.trim();
     const next = transitionFlow(flow, {
       type: "submit-birthday",
       value: birthdayValue,
     });
+    if (!normalizedName) {
+      setNameError("Enter your name.");
+      if (next.step !== "personal") {
+        setFlow(next);
+      }
+      return;
+    }
+    setNameError(null);
     if (next.step !== "personal") {
       setFlow(next);
       return;
     }
 
-    const profile = createStoredBirthProfile(birthdayValue);
+    const profile = createStoredBirthProfile(birthdayValue, normalizedName);
     if (profile && typeof window !== "undefined") {
       saveBirthProfile(profile, window.localStorage);
     }
@@ -518,10 +572,16 @@ export default function App() {
   return (
     <FlowSections
       state={flow}
+      nameValue={nameValue}
+      nameError={nameError}
       birthdayValue={birthdayValue}
       welcomeLine={welcomeLine}
       onAdvanceWelcome={advanceWelcome}
       onAdvance={advanceFromZodiac}
+      onNameChange={(value) => {
+        setNameValue(value);
+        setNameError(null);
+      }}
       onBirthdayChange={setBirthdayValue}
       onBirthdaySubmit={submitBirthday}
       onSkip={() => applyAction({ type: "skip-to-month" })}

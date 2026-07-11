@@ -81,7 +81,7 @@ export interface StoredBirthProfileV1 {
   schemaVersion: 1;
   profileId: string;
   dataSource: "calculated";
-  input: { civilDateISO: string };
+  input: { civilDateISO: string; displayName?: string };
   derived: { hebrewDate: HebrewDateFacts; moon: MoonFacts };
   contentVersion: "2026.07-prototype";
 }
@@ -417,15 +417,21 @@ export function getCurrentSeason(date: Date = new Date()): CurrentSeason {
   return { ...facts, entry: MONTH_ENTRIES[facts.hebrewDate.monthKey] };
 }
 
-export function createStoredBirthProfile(value: string): StoredBirthProfileV1 | null {
+export function createStoredBirthProfile(
+  value: string,
+  displayName?: string,
+): StoredBirthProfileV1 | null {
   const parsed = parseBirthday(value);
   if (!parsed) return null;
   const derived = hebrewFacts(parsed.date);
+  const normalizedName = displayName?.trim();
   return {
     schemaVersion: 1,
     profileId: `birth-${parsed.civilDateISO}`,
     dataSource: "calculated",
-    input: { civilDateISO: parsed.civilDateISO },
+    input: normalizedName
+      ? { civilDateISO: parsed.civilDateISO, displayName: normalizedName }
+      : { civilDateISO: parsed.civilDateISO },
     derived,
     contentVersion: CONTENT_VERSION,
   };
@@ -456,7 +462,10 @@ export function loadBirthProfile(storage: Storage): StoredBirthProfileV1 | null 
     if (!value) return null;
     const parsed = JSON.parse(value) as Partial<StoredBirthProfileV1>;
     if (parsed.schemaVersion !== 1 || !parsed.input?.civilDateISO) return null;
-    return createStoredBirthProfile(formatBirthdayInput(parsed.input.civilDateISO));
+    return createStoredBirthProfile(
+      formatBirthdayInput(parsed.input.civilDateISO),
+      parsed.input.displayName,
+    );
   } catch {
     return null;
   }

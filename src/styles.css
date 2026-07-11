@@ -310,7 +310,7 @@ h1 {
 }
 
 .birthday-copy {
-  width: min(100%, 320px);
+  width: min(100%, 360px);
   view-transition-name: birth-copy;
 }
 
@@ -327,6 +327,17 @@ h1 {
   gap: 14px;
 }
 
+.birthday-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.birthday-field {
+  min-width: 0;
+}
+
 .birthday-form input {
   width: 100%;
   min-height: 58px;
@@ -337,9 +348,18 @@ h1 {
   color: var(--ink);
   background: transparent;
   font-family: "Vollkorn Local", Georgia, "Times New Roman", serif;
-  font-size: 1.55rem;
-  letter-spacing: 0.08em;
+  font-size: clamp(1.05rem, 5cqw, 1.3rem);
+  letter-spacing: 0.02em;
   text-align: center;
+}
+
+#display-name {
+  letter-spacing: 0;
+}
+
+#birthday {
+  font-size: clamp(0.95rem, 4.4cqw, 1.15rem);
+  letter-spacing: 0.04em;
 }
 
 .birthday-form input::placeholder {
@@ -382,6 +402,11 @@ h1 {
   color: #5f5a4e;
   font-size: 0.82rem !important;
   line-height: 1.35 !important;
+}
+
+.personal-name {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .return-question {
