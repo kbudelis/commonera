@@ -512,20 +512,19 @@ h1 {
 }
 
 .constellation-art--month {
-  position: absolute;
-  top: clamp(24px, 4dvh, 40px);
-  left: 50%;
+  position: sticky;
+  top: 24px;
   z-index: 3;
-  width: min(52cqw, 210px);
+  width: min(calc(100cqw - 32px), 34dvh, 300px);
   aspect-ratio: 1;
-  margin: 0;
-  transform: translateX(-50%);
+  margin: -84px auto 132px;
 }
 
 .month-section {
   align-content: start;
-  overflow: hidden;
-  padding-top: clamp(210px, 27dvh, 246px);
+  z-index: 2;
+  overflow: visible;
+  padding: 0 28px 56px;
 }
 
 .month-section .reading-copy {
@@ -725,7 +724,7 @@ h1 {
 }
 
 @supports (animation-timeline: view()) {
-  .month-section,
+  .month-copy,
   .upcoming-section {
     backface-visibility: hidden;
     transform-origin: 50% 0;
@@ -755,7 +754,7 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 
-  .month-section,
+  .month-copy,
   .upcoming-section {
     animation: none !important;
     transform: none !important;
