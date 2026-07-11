@@ -186,31 +186,31 @@ test("birthday path renders personal before month and upcoming", () => {
     ),
   );
   const personalThread = buildPersonalThread(profile);
-  assert.match(
-    personalThread,
-    new RegExp(`^${birthMonth.correspondence.names.english} `),
-  );
-  assert.match(
-    markup,
-    new RegExp(`<em>${birthMonth.correspondence.names.english} [^<]+<\\/em>`),
-  );
+  assert.match(personalThread, /^The season of your birth /);
   assert.equal(
     personalThread.includes(birthMonth.correspondence.mazal.zodiacLabel),
     false,
+  );
+  assert.match(
+    markup,
+    new RegExp(
+      `${birthMonth.correspondence.names.english} asks: ${birthMonth.reading.witnessingQuestion}`,
+    ),
   );
   assert.equal(markup.includes(profile.derived.hebrewDate.displayLabel), false);
   assert.equal(markup.includes(profile.derived.hebrewDate.hebrewDisplay), false);
   assert.doesNotMatch(markup, /Personal Thread/);
 });
 
-test("Tevet opens as an invocation before moving into discernment", () => {
+test("Tevet saves its voice for the closing question", () => {
   assert.match(
     MONTH_ENTRIES.tevet.reading.reading,
-    /^Tevet asks what commitment can hold when inspiration goes quiet\./,
+    /^Endurance can carry us through the dark/,
   );
-  assert.match(
-    MONTH_ENTRIES.tevet.reading.reading,
-    /The deeper work is discernment:/,
+  assert.equal(MONTH_ENTRIES.tevet.reading.reading.includes("Tevet asks"), false);
+  assert.equal(
+    MONTH_ENTRIES.tevet.reading.witnessingQuestion,
+    "What deserves your discipline rather than your force?",
   );
 });
 

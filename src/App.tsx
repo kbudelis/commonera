@@ -395,9 +395,6 @@ function PersonalPlaceholder({
 }) {
   const month = profile ? getBirthMonthEntry(profile) : null;
   const displayName = profile?.input.displayName?.trim() || "Your Reading";
-  const personalThread = profile
-    ? splitOpeningSentence(buildPersonalThread(profile))
-    : null;
 
   return (
     <section
@@ -420,10 +417,9 @@ function PersonalPlaceholder({
                 {month.correspondence.mazal.zodiacLabel} · {month.correspondence.names.english}
               </span>
             </p>
-            <p><em>{personalThread?.lead}</em></p>
-            {personalThread?.body ? <p>{personalThread.body}</p> : null}
+            <p>{buildPersonalThread(profile)}</p>
             <p className="return-question">
-              {month.reading.witnessingQuestion}
+              {month.correspondence.names.english} asks: {month.reading.witnessingQuestion}
             </p>
           </>
         ) : (
@@ -435,17 +431,6 @@ function PersonalPlaceholder({
       </div>
     </section>
   );
-}
-
-function splitOpeningSentence(copy: string): { lead: string; body: string } {
-  const boundary = copy.indexOf(". ");
-
-  return boundary === -1
-    ? { lead: copy, body: "" }
-    : {
-        lead: copy.slice(0, boundary + 1),
-        body: copy.slice(boundary + 2),
-      };
 }
 
 function MonthPlaceholder() {
