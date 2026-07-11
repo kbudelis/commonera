@@ -517,7 +517,11 @@ h1 {
   z-index: 3;
   width: min(calc(100cqw - 32px), 34dvh, 300px);
   aspect-ratio: 1;
-  margin: -84px auto 72px;
+  margin: -28px auto 16px;
+}
+
+.flow-page--personal .constellation-art--month {
+  animation: constellation-after-birth 3.2s ease-in-out both;
 }
 
 .month-section {
@@ -662,6 +666,16 @@ h1 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes constellation-after-birth {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
