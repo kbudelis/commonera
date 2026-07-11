@@ -209,6 +209,7 @@ h1 {
   line-height: 1.05;
   text-align: center;
   text-wrap: balance;
+  white-space: pre-line;
   transform: translate(-50%, -50%);
 }
 

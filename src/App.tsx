@@ -56,10 +56,10 @@ const lalouGlyphUrls: Record<MonthKey, string> = {
 };
 
 const welcomeLines = [
-  "Welcome.",
-  "Look up for a moment.",
-  "Every month carries a different shape.",
-  "Let’s find the one you’re moving through.",
+  "Where were you\nwhen the universe began?",
+  "Some part of you\nwas already on its way.",
+  "Through stars.\nThrough seasons.\nThrough those who came before you.",
+  "And even then,\nthe heavens knew your name.\n\nWelcome.",
 ] as const;
 
 export function easeInOutCubic(progress: number): number {

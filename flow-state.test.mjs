@@ -80,14 +80,14 @@ test("invalid birthday stays active and exposes validation feedback", () => {
   assert.deepEqual(visibleLandmarksForFlow(invalid), ["birthday"]);
 });
 
-const renderFlow = (state) =>
+const renderFlow = (state, welcomeLine = 0) =>
   renderToStaticMarkup(
     createElement(FlowSections, {
       state,
       nameValue: "Mara",
       nameError: null,
       birthdayValue: "",
-      welcomeLine: 0,
+      welcomeLine,
       onAdvanceWelcome() {},
       onAdvance() {},
       onNameChange() {},
@@ -96,6 +96,19 @@ const renderFlow = (state) =>
       onSkip() {},
     }),
   );
+
+test("welcome renders the approved four-page sequence", () => {
+  const pages = [
+    "Where were you\nwhen the universe began?",
+    "Some part of you\nwas already on its way.",
+    "Through stars.\nThrough seasons.\nThrough those who came before you.",
+    "And even then,\nthe heavens knew your name.\n\nWelcome.",
+  ];
+
+  pages.forEach((page, index) => {
+    assert.ok(renderFlow(createInitialFlow(), index).includes(page));
+  });
+});
 
 test("welcome uses one tap action and birthday owns the month skip", () => {
   const welcomeMarkup = renderFlow(createInitialFlow());
