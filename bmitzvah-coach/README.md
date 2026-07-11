@@ -3,6 +3,8 @@
 A proof-of-concept for the Common Era vibe-coding sprint: learn the Shema by
 **touching an actual Torah scroll**.
 
+**Live**: https://kbudelis.github.io/commonera/bmitzvah-coach/
+
 A weathered parchment scroll renders in 3D (three.js WebGPU, WebGL2 fallback).
 Your cursor becomes a **yad** — the silver pointer used to read Torah — and as
 you drag it across the calligraphy, a real cantorial recording chants the words
