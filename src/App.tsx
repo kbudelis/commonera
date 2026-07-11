@@ -451,15 +451,16 @@ function MonthPlaceholder() {
         label={correspondence.mazal.zodiacLabel}
       />
       <div className="section-copy reading-copy month-copy">
-        <p className="eyebrow">This month · {season.hebrewDate.exactMonthLabel}</p>
+        <p className="eyebrow">
+          This month · {" "}
+          <span lang="he" dir="rtl">{correspondence.names.hebrew}</span>
+        </p>
         <h1 id="month-title">
           {correspondence.names.english}{" "}
           <span lang="he" dir="rtl">{correspondence.names.hebrew}</span>
         </h1>
         <p className="month-archetype">{reading.archetype}</p>
-        <p className="profile-facts">
-          {correspondence.mazal.zodiacLabel} · {season.moon.label}
-        </p>
+        <p className="profile-facts">{correspondence.mazal.zodiacLabel}</p>
         <p>{reading.reading}</p>
         <aside className="ritual-card">
           <span>Small ritual</span>

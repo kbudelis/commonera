@@ -188,6 +188,18 @@ test("birthday and month compositions render real visual assets", () => {
     birthdayMarkup.indexOf("constellation-art--month") >
       birthdayMarkup.indexOf('data-landmark="month"'),
   );
+  assert.match(
+    monthMarkup,
+    /This month ·\s*<span lang="he" dir="rtl">[^<]+<\/span>/u,
+  );
+  assert.doesNotMatch(
+    monthMarkup,
+    new RegExp(`This month · ${getCurrentSeason().hebrewDate.exactMonthLabel}`),
+  );
+  assert.doesNotMatch(
+    monthMarkup,
+    new RegExp(`profile-facts">[^<]+ · ${getCurrentSeason().moon.label}`),
+  );
   assert.doesNotMatch(birthdayMarkup, /[♈♉♊♋♌♍♎♏♐♑♒♓]/u);
   assert.doesNotMatch(monthMarkup, /[♈♉♊♋♌♍♎♏♐♑♒♓]/u);
   assert.doesNotMatch(birthdayMarkup, /constellation-placeholder/);
