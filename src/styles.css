@@ -477,6 +477,7 @@ h1 {
   height: min(41.5cqw, 166px);
   margin: 0 auto 18px;
   overflow: hidden;
+  transform: translateY(22px);
 }
 
 .hero-glyph-art img {
@@ -488,7 +489,6 @@ h1 {
   object-position: center;
   filter: contrast(1.08);
   mix-blend-mode: multiply;
-  transform: translateX(-2%);
 }
 
 .hero-glyph-art + .eyebrow {
