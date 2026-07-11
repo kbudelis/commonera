@@ -16,10 +16,16 @@ The nine themes are perspectives rather than claims that any community speaks wi
 
 ## Sources and adaptation
 
-Use the inclusive standard in [`quotation-policy.md`](quotation-policy.md): standardized open licenses **or explicit reuse/borrowing permission** with required attribution and constraints are acceptable for this free demo. Do not categorically exclude Shir Ge’ulah or The Velveteen Rabbi’s Haggadah. Do distinguish a source author's material from embedded third-party works, which require their own permission review.
+Use the inclusive standard in [`quotation-policy.md`](quotation-policy.md): standardized open licenses **or explicit reuse/borrowing permission** with required attribution and constraints are acceptable for this free demo. Do not categorically exclude Shir Ge’ulah, The Velveteen Rabbi’s Haggadah, or material embedded in an approved Haggadah. For embedded material, preserve the attribution exactly as printed, also credit the containing Haggadah, and record the locator, treatment, and source-excerpt hash.
 
-Generated prose should synthesize and explain rather than silently imitate a source. Quotes remain exact allowlisted records. Model-assisted matching may select approved IDs and short bridges only; every result is revalidated and deterministic local generation remains available without an API key.
+Runtime prose follows one reviewed primary source spine: `shir-geulah-primary` or `velveteen-rabbi-primary`. Each spine covers all 14 sections at 20, 45, and 90 minutes. Select one spine before assembly and preserve its passage blocks exactly; do not silently imitate, paraphrase, splice, or alternate between source voices. Secondary-source mixing is currently disabled.
+
+Original house copy remains separate and concise. It may provide beginner orientation, concrete ritual directions, bridges, table prompts, and accessibility clarifications. Traditional liturgy is tracked separately. Every completed assembly must contain primary-source prose in each section and at least 50% reviewed-source words overall. Quotes remain exact allowlisted records. Model-assisted matching may select approved IDs and short bridges only; every result is revalidated and deterministic local generation remains available without an API key.
+
+Do not use a section-level source ID to mean “influenced by” or “researched alongside.” A source credit claims that approved source wording is actually compiled and therefore requires passage-level provenance. Current spine coverage and honest tier-reuse limitations are documented in [`content-provenance-audit.md`](content-provenance-audit.md) and [`cohesion-architecture.md`](cohesion-architecture.md).
+
+Keep exact passage locators, treatment notes, source-presented attributions, and hashes in internal QA records. In the reader-facing Haggadah or PDF, consolidate them into one compact source-level credit per Haggadah used, on the final credits page only.
 
 ## Review checklist
 
-Before adding or publishing content, confirm structural completeness, source-ID resolution, attribution, permission scope, embedded-work status, factual accuracy, accessible wording, inclusive peace framing, and faithful screen/print/PDF rendering. Warnings about custom permissions or embedded material require human review; they do not by themselves make the source unusable.
+Before adding or publishing content, confirm structural completeness, source-ID resolution, exact source-presented and containing-Haggadah attribution, permission scope, locator/hash integrity, factual accuracy, accessible wording, inclusive peace framing, and faithful screen/print/PDF rendering. Warnings about custom permissions or embedded material require provenance review; they do not by themselves make the material unusable.

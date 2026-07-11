@@ -85,9 +85,9 @@ test("section copy and tone openers avoid canned contrast formulas", () => {
 
 test("beginner instructions name the actor, object, and next step", () => {
   const urchatz = pack.sectionBlueprints.find((section) => section.id === "urchatz").short.join(" ");
-  assert.match(urchatz, /Each person washes their own hands/i);
-  assert.match(urchatz, /pitcher, bowl, and towel/i);
-  assert.match(urchatz, /every guest holds out their hands in turn/i);
+  assert.match(urchatz, /their own hands/i);
+  assert.match(urchatz, /partners may take turns/i);
+  assert.match(urchatz, /basin/i);
 
   const yachatz = pack.sectionBlueprints.find((section) => section.id === "yachatz").short.join(" ");
   assert.match(yachatz, /children to find after dinner/i);

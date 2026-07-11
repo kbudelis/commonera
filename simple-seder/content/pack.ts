@@ -35,7 +35,22 @@ export interface SectionBlueprint {
   full: string[];
   prompt: string;
   blessing?: string;
+  /** Direct sources for compiled words only; research influences do not belong here. */
   sourceIds: string[];
+}
+
+export interface SectionCopyProvenance {
+  sectionId: string;
+  foundationalPassageId: string;
+  directLicensedSourceId: "shir-geulah" | "velveteen-rabbi";
+  runtimePlacement: Record<"short" | "medium" | "full", number | "prepended">;
+  blueprintFields: {
+    title: "original";
+    ritual: "original";
+    prompt: "original";
+    blessing: "traditional-liturgical" | "none";
+    remainingBodyParagraphs: "original";
+  };
 }
 
 export interface FoundationalPassage {
@@ -45,6 +60,13 @@ export interface FoundationalPassage {
   sourceId: "shir-geulah" | "velveteen-rabbi";
   treatment: "verbatim" | "lightly-adapted";
   locator: string;
+  sourceExcerpt: string;
+  modificationNote: string;
+  provenanceHash: string;
+  /** Omitted on current author-written anchors; required when adding an embedded work. */
+  materialKind?: "containing-author" | "embedded-third-party";
+  /** Preserve this exactly as printed when materialKind is embedded-third-party. */
+  sourcePresentedAttribution?: string;
   attribution: string;
 }
 
@@ -53,20 +75,20 @@ export interface FoundationalPassage {
  * kept separate from original beginner explanations so provenance is auditable.
  */
 export const foundationalPassages: FoundationalPassage[] = [
-  { id: "fp-kadesh-shir", sectionId: "kadesh", text: "During the seder, we drink four cups of wine.", sourceId: "shir-geulah", treatment: "verbatim", locator: "p. 12, Kadeish", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-urchatz-shir", sectionId: "urchatz", text: "Wash the hands without a blessing.", sourceId: "shir-geulah", treatment: "verbatim", locator: "p. 14, U-r’hatz", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-karpas-shir", sectionId: "karpas", text: "Take a vegetable other than the maror and dip it.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 15, Karpas", attribution: "Adapted for punctuation from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-yachatz-shir", sectionId: "yachatz", text: "The middle matzah is broken in half. The smaller half is returned to the seder plate, and the larger half is wrapped up to become the afikoman.", sourceId: "shir-geulah", treatment: "verbatim", locator: "p. 16, Yahatz", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-maggid-vr", sectionId: "maggid", text: "Maggid, the Hebrew word for ‘story,’ is at the root of the word haggadah.", sourceId: "velveteen-rabbi", treatment: "verbatim", locator: "p. 18, Maggid", attribution: "From The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
-  { id: "fp-rachtzah-shir", sectionId: "rachtzah", text: "Wash the hands ceremonially, and afterwards recite the handwashing blessing.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 33, Roh’tzah", attribution: "Adapted for clarity from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-motzi-shir", sectionId: "motzi-matzah", text: "Take a piece of matzah, and recite the following two blessings.", sourceId: "shir-geulah", treatment: "verbatim", locator: "p. 33, Motzi and Matzah", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-maror-shir", sectionId: "maror", text: "Take a piece of maror and dip it in charoset. Then recite the blessing.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 34, Maror", attribution: "Adapted for spelling and brevity from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-korech-shir", sectionId: "korech", text: "Take two pieces of matzah, and sandwich some maror and charoset between the pieces.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 35, Koreich", attribution: "Adapted for spelling from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-meal-shir", sectionId: "shulchan-orech", text: "One of the traditional things we do to celebrate is partake of a festive meal.", sourceId: "shir-geulah", treatment: "verbatim", locator: "p. 35, Shul’han Oreich commentary", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-tzafun-shir", sectionId: "tzafun", text: "A piece of the afikoman is distributed to each participant.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 36, Tzafun", attribution: "Adapted for spacing from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-barech-shir", sectionId: "barech", text: "Fill the third cup with wine or grape juice.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "p. 36, Bareich", attribution: "Adapted to name the drink from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
-  { id: "fp-hallel-vr", sectionId: "hallel", text: "The traditional Hallel consists of the recitation of several psalms.", sourceId: "velveteen-rabbi", treatment: "lightly-adapted", locator: "p. 56, Hallel part 2", attribution: "Adapted for grammar from The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
-  { id: "fp-nirtzah-vr", sectionId: "nirtzah", text: "Tonight we have acknowledged our ancestors.", sourceId: "velveteen-rabbi", treatment: "verbatim", locator: "p. 69, Nirtzah", attribution: "From The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
+  { id: "fp-kadesh-shir", sectionId: "kadesh", text: "During the seder, we drink four cups of wine.", sourceId: "shir-geulah", treatment: "verbatim", locator: "PDF p. 12, Kadeish", sourceExcerpt: "During the seder, we drink four cups of wine.", modificationNote: "No wording changes.", provenanceHash: "bc138f713c3d58b4eb133e9a7883de7cdd5efd8a6ee6ccf0978860aaea96c94a", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-urchatz-shir", sectionId: "urchatz", text: "Wash the hands without a blessing.", sourceId: "shir-geulah", treatment: "verbatim", locator: "PDF p. 15, U-r’hatz", sourceExcerpt: "Wash the hands without a blessing.", modificationNote: "No wording changes.", provenanceHash: "8cdb4f3e5c8db8161ad44bf5d5651565162ec0d657be07e56260c265a3db5de9", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-karpas-shir", sectionId: "karpas", text: "Take a vegetable other than the maror and dip it.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 15, Karpas", sourceExcerpt: "Take a vegetable (other than the maror) and dip it.", modificationNote: "Removed parentheses; wording is otherwise unchanged.", provenanceHash: "060471a15e7cc535358013198e5e61932d97d3fe1ed1cfdf0a0a05718370f90f", attribution: "Adapted from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0; parentheses removed." },
+  { id: "fp-yachatz-shir", sectionId: "yachatz", text: "The middle matzah is broken in half. The smaller half is returned to the seder plate, and the larger half is wrapped up to become the afikoman.", sourceId: "shir-geulah", treatment: "verbatim", locator: "PDF p. 16, Yahatz", sourceExcerpt: "The middle matzah is broken in half. The smaller half is returned to the seder plate, and the larger half is wrapped up to become the afikoman.", modificationNote: "No wording changes.", provenanceHash: "025adae270ecedfae64154ba20c8586c383e70f334ce989a061d67f176227d90", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-maggid-vr", sectionId: "maggid", text: "Maggid, the Hebrew word for “story,” is at the root of the word haggadah.", sourceId: "velveteen-rabbi", treatment: "verbatim", locator: "PDF p. 18, Maggid", sourceExcerpt: "Maggid, the Hebrew word for “story,” is at the root of the word haggadah.", modificationNote: "No wording changes.", provenanceHash: "47ed6672bb8a62a6be23de128b11d9924646a96e7143482f9214b074e4207a0b", attribution: "From The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
+  { id: "fp-rachtzah-shir", sectionId: "rachtzah", text: "Wash the hands ceremonially, and afterwards recite the handwashing blessing.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 33, Roh’tzah", sourceExcerpt: "Wash the hands ceremonially, and afterwards recite the following blessing:", modificationNote: "Replaced “the following blessing” with “the handwashing blessing” and changed the colon to a period.", provenanceHash: "ad35a5ee830bfff5bb0dd65ab48c29b6b30578810c74d31b54fec78969ee685b", attribution: "Adapted for clarity from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-motzi-shir", sectionId: "motzi-matzah", text: "Take a piece of matzah, and recite the following two blessings.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 34, Motzi and Matzah", sourceExcerpt: "Take a piece of matzah, and recite the following two blessings:", modificationNote: "Changed the source colon to a period because the blessings are rendered separately.", provenanceHash: "652d9e392af404e72de3945d0914f1148a3d498d0321b3177f86a6fa3853efff", attribution: "Adapted for punctuation from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-maror-shir", sectionId: "maror", text: "Take a piece of maror and dip it in charoset. Then recite the blessing.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 34, Maror", sourceExcerpt: "Take a piece of maror and dip it in ḥaroset. Then recite the following blessing:", modificationNote: "Changed ḥaroset to charoset, shortened “the following blessing” to “the blessing,” and changed the colon to a period.", provenanceHash: "a902b9a8a1c7ff128047f406cce4a8b08b678933c83b033e9df351488e67e427", attribution: "Adapted for spelling and brevity from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-korech-shir", sectionId: "korech", text: "Take two pieces of matzah, and sandwich some maror and charoset between the pieces.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 35, Koreich", sourceExcerpt: "Take two pieces of matzah, and sandwich some maror and ḥaroset between the pieces.", modificationNote: "Changed ḥaroset to charoset; wording is otherwise unchanged.", provenanceHash: "1d75cdb0db3489113b006a277ef6aa34595fc57d3b214aa2ba1ffeae5213daf9", attribution: "Adapted for spelling from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-meal-shir", sectionId: "shulchan-orech", text: "One of the traditional things we do to celebrate is partake of a festive meal.", sourceId: "shir-geulah", treatment: "verbatim", locator: "PDF p. 36, Shul’han Oreich commentary", sourceExcerpt: "One of the traditional things we do to celebrate is partake of a festive meal.", modificationNote: "No wording changes; excerpted from the middle of an author-written paragraph.", provenanceHash: "8637ce00f78de40b67f8c7b6e91bb54476e0847318a476a3dc2ceb2671f190e6", attribution: "From Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-tzafun-shir", sectionId: "tzafun", text: "A piece of the afikoman is distributed to each participant.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 36, Tzafun", sourceExcerpt: "A piece of the afikoman is distributed to each participant, which is eaten while reclining.", modificationNote: "Omitted the dependent clause about reclining and changed the comma to a period.", provenanceHash: "e4514b4881f967f773be8ff35be5d4d854f5cc883c5b64a46837894d2a827ef0", attribution: "Adapted for brevity from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-barech-shir", sectionId: "barech", text: "Fill the third cup with wine or grape juice.", sourceId: "shir-geulah", treatment: "lightly-adapted", locator: "PDF p. 37, Bareich", sourceExcerpt: "Fill the third cup.", modificationNote: "Added “with wine or grape juice” as an accessibility clarification; the added words are original connective copy, not quoted source wording.", provenanceHash: "61ec0fac74fead4210605ce8fa1419e8f51b4fc3830939892aac7f9e48042a91", attribution: "Adapted with an accessibility clarification from Haggadah Shir Ge’ulah by Emily Aviva Kapor-Mater, CC BY 4.0." },
+  { id: "fp-hallel-vr", sectionId: "hallel", text: "The traditional Hallel consists of the recitation of several psalms.", sourceId: "velveteen-rabbi", treatment: "lightly-adapted", locator: "PDF p. 56, Hallel part 2", sourceExcerpt: "The traditional Hallel consists of recitation of several psalms.", modificationNote: "Added “the” before “recitation”; wording is otherwise unchanged.", provenanceHash: "1f50644844e1f73688c14d5e9e57bd53a0512cc0cf48fba22e3396c71861fd66", attribution: "Adapted for grammar from The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
+  { id: "fp-nirtzah-vr", sectionId: "nirtzah", text: "Tonight we have acknowledged our ancestors.", sourceId: "velveteen-rabbi", treatment: "verbatim", locator: "PDF p. 69, Nirtzah", sourceExcerpt: "Tonight we have acknowledged our ancestors.", modificationNote: "No wording changes.", provenanceHash: "2d5a2f6dc996b72b633fd6c66e7eb61ccaa67d7696d27c644669e46dfa4851db", attribution: "From The Velveteen Rabbi’s Haggadah for Pesach by Rabbi Rachel Barenblat; reused with credit under the author’s explicit permission." },
 ];
 
 export const sectionBlueprints: SectionBlueprint[] = [
@@ -76,14 +98,14 @@ export const sectionBlueprints: SectionBlueprint[] = [
     medium: ["Pour the first of four small cups of wine or grape juice for each person. Kadesh means making something special. Lift the cup, read the blessing aloud if you wish, and name what you hope this table can hold: curiosity, honesty, joy, and room for everyone.", "Passover begins with attention. We notice who is here, who is missing, and what freedom asks of us now, even when certainty eludes us."],
     full: ["Pour the first of four small cups of wine or grape juice. Lift it together and read the blessing aloud if you wish. This cup marks a threshold: an ordinary moment becomes sacred when we pause and give it our attention.", "Tonight we inherit an old story that has traveled through many kinds of Jewish families and communities. We enter it together, bringing belief, doubt, memory, and questions.", "May this table make room for safety, dignity, and peace for every people."],
     prompt: "Name one word you hope describes tonight’s seder.",
-    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, borei p’ri hagafen.", sourceIds: ["traditional-core", "feinstein-haggadah", "nusach-eretz-yisrael", "mayer-ashkenaz", "barros-basto"]
+    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, borei p’ri hagafen.", sourceIds: ["traditional-core"]
   },
   {
     id: "urchatz", transliteration: "Urchatz", title: "Wash without a blessing", ritual: "First handwashing",
-    short: ["Each person washes their own hands. At the table, one person can carry a pitcher, bowl, and towel while every guest holds out their hands in turn; using a sink is also fine. Pour water over both hands and do not say a blessing this time.", "This first washing is a quiet preparation. It helps us leave the rush of arrival behind and become present for the seder."],
-    medium: ["This washing has no spoken blessing. Its silence lets the physical action speak for itself.", "Let the water mark a shift from arriving to being present."],
-    full: ["Water appears throughout the Exodus story: dangerous, life-giving, and capable of change.", "We wash without a blessing, leaving a little room for uncertainty. Freedom begins before we have the perfect words for it."],
-    prompt: "As the water runs, notice one worry you are ready to let go of.", sourceIds: ["traditional-core", "inner-seder", "velveteen-rabbi"]
+    short: ["Choose how to wash: each person may pour water over their own hands above a basin or at a sink, or partners may take turns, with one person gently pouring water over the other’s hands above the basin before switching roles. Use the towel afterward. Do not say a blessing at this first washing.", "This first washing is a quiet preparation. It helps us leave the rush of arrival behind and become present for the seder."],
+    medium: ["Choose self-washing or partner-washing over the basin, then dry your hands. This washing has no spoken blessing; its silence lets the physical action speak for itself.", "Let the water mark a shift from arriving to being present."],
+    full: ["Choose self-washing or take turns with a partner, gently pouring water over one another’s hands above the basin. Water appears throughout the Exodus story: dangerous, life-giving, and capable of change.", "We wash without a blessing, leaving a little room for uncertainty. Freedom begins before we have the perfect words for it."],
+    prompt: "As the water runs, notice one worry you are ready to let go of.", sourceIds: ["traditional-core"]
   },
   {
     id: "karpas", transliteration: "Karpas", title: "Taste spring—and tears", ritual: "Greens dipped in salt water",
@@ -91,29 +113,29 @@ export const sectionBlueprints: SectionBlueprint[] = [
     medium: ["The green vegetable tastes like spring; the salt water tastes like tears. Passover refuses to separate hope from grief.", "We bless what grows, then taste the cost of a world where freedom is not yet shared."],
     full: ["Karpas places contradiction on the tongue: tenderness and bitterness, beginnings and loss.", "The seder does not ask us to rush past grief. It asks us to carry grief without surrendering the possibility of spring."],
     prompt: "What new growth have you noticed this spring?",
-    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, borei p’ri ha’adamah.", sourceIds: ["traditional-core", "second-seder-plate", "battlestar-seder"]
+    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, borei p’ri ha’adamah.", sourceIds: ["traditional-core"]
   },
   {
     id: "yachatz", transliteration: "Yachatz", title: "Break the middle matzah", ritual: "Brokenness & afikoman",
     short: ["The middle matzah is broken in half. The smaller half is returned to the seder plate, and the larger half is wrapped up to become the afikoman. Hide the afikoman for children to find after dinner. When they bring it back, the finder traditionally receives a small prize; decide on the prize before the seder begins.", "The broken matzah opens the story with hunger and incompleteness. The seder cannot end until the hidden piece returns, turning repair into part of the evening’s structure."],
     medium: ["We begin the telling with something broken. The larger piece becomes the afikoman, hidden now and sought later.", "Wholeness at a seder includes the break and the pieces that remain. What has fractured still belongs at the table."],
     full: ["The crack of matzah is the seder’s first plot twist. What was whole becomes divided, and the evening cannot end until what is hidden returns.", "This is a ritual of honest incompleteness. We name what is fractured without deciding that fracture is the end of the story."],
-    prompt: "What is one broken thing that people could help make better?", sourceIds: ["traditional-core", "wandering-is-over", "velveteen-rabbi"]
+    prompt: "What is one broken thing that people could help make better?", sourceIds: ["traditional-core"]
   },
   {
     id: "maggid", transliteration: "Maggid", title: "Tell the story", ritual: "Questions, Exodus & Dayenu",
     short: ["Uncover the matzah and invite the youngest willing guest to ask the Four Questions. Questions begin Maggid, the telling, because the seder is built for newcomers and for people who keep finding new meanings in an old story.", "Here is the story’s path. Pharaoh enslaved the Israelites in Egypt and ordered Hebrew baby boys killed. The midwives Shifra and Puah resisted him; Moses survived, grew up, fled Egypt, and returned to demand freedom. After Pharaoh repeatedly refused, ten plagues struck Egypt. The Israelites left in haste, reached the sea with Pharaoh’s army behind them, crossed through the parted water, and began the difficult journey from slavery toward freedom.", "Spill a drop of wine or juice for each plague to temper celebration with grief for lives harmed. Then sing or read Dayenu, giving thanks for each step toward freedom while remembering that freedom remains unfinished wherever people live without safety or dignity."],
     medium: ["Uncover the matzah and begin with the Four Questions. Their details lead to the evening’s larger question: why do we tell this story every year? The Hebrew name for Egypt, Mitzrayim, is often associated with a narrow place, a fitting image for a society organized around forced labor and fear.", "Pharaoh enslaved the Israelites and ordered Hebrew baby boys killed. Resistance began before Moses confronted the king: the midwives Shifra and Puah defied Pharaoh, and Yocheved, Miriam, and Pharaoh’s daughter saved Moses. As an adult, Moses fled after striking an Egyptian overseer. He later returned to demand that Pharaoh release the enslaved people.", "Pharaoh refused again and again. Ten plagues devastated Egypt; as we name them, we remove drops from our cups because another person’s suffering diminishes our joy. The Israelites left in haste, crossed the sea while Pharaoh’s forces pursued them, and set out through the wilderness. Escape opened the way to freedom, but did not complete the journey.", "Dayenu means ‘it would have been enough.’ The song pauses over each gift along the way. Gratitude helps us recognize how freedom is built, step by step, through courage, help, sustenance, and shared responsibility."],
     full: ["Uncover the matzah and let the Four Questions draw everyone into Maggid. At a seder, a sincere question is a form of participation. We tell the Exodus so that inherited memory can meet the moral choices of the present.", "The Israelites lived in Egypt under a Pharaoh who feared their growing community. He enslaved them, exploited their labor, and ordered Hebrew baby boys killed. Shifra and Puah, two midwives, refused his command. Yocheved hid her infant son Moses; Miriam watched over him; and Pharaoh’s daughter rescued and raised him.", "As an adult, Moses saw an Egyptian overseer beating an enslaved Hebrew and struck the overseer dead. Moses fled. At the burning bush, he received the charge to return, join his brother Aaron, and demand that Pharaoh let the people go. Liberation began through many acts of courage before it became a public confrontation with power.", "Pharaoh repeatedly refused, and ten plagues struck Egypt. The story does not let us treat suffering as spectacle. We remove wine or juice from our cups for every plague, acknowledging Egyptian lives caught in the catastrophe of Pharaoh’s hardened rule.", "The Israelites baked unleavened bread and left quickly. Pharaoh’s forces pursued them to the sea; the waters opened, the Israelites crossed, and the pursuing army drowned. Reaching the far shore ended immediate pursuit, though years of wilderness, uncertainty, conflict, and learning still lay ahead. A people shaped by slavery had begun the long work of living in freedom.", "Dayenu names stages in that journey and answers each with gratitude. We can value every rescue, provision, and moment of courage while continuing to seek freedom grounded in equal dignity, safety, and peace for all peoples."],
-    prompt: "Where do you see a ‘narrow place’ today, and what helps people move through it?", sourceIds: ["traditional-core", "wandering-is-over", "shir-geulah", "velveteen-rabbi", "other-side-of-sea", "seder-in-the-streets", "socialist-hagode", "mlk-freedom-seder", "english-jews-seder", "levy-home-service"]
+    prompt: "Where do you see a ‘narrow place’ today, and what helps people move through it?", sourceIds: ["traditional-core"]
   },
   {
     id: "rachtzah", transliteration: "Rachtzah", title: "Wash with intention", ritual: "Second handwashing",
-    short: ["Pour water over your hands again and say the handwashing blessing if you wish. Then return to the table without lingering so everyone can eat matzah together.", "The first washing prepared us to begin; this one prepares us to eat. Repeating the gesture shows how intention and place in the ritual can give a familiar action new meaning."],
-    medium: ["The same action can change when intention changes. This time washing carries a blessing and prepares us to eat."],
-    full: ["We return to water, now with words. Ritual lets us meet the same act again and discover how our attention has changed."],
+    short: ["Wash again, either by pouring water over your own hands or by taking turns with a partner over the basin. Say the handwashing blessing if you wish, dry your hands, and return to the table so everyone can eat matzah together.", "The first washing prepared us to begin; this one prepares us to eat. Repeating the gesture shows how intention and place in the ritual can give a familiar action new meaning."],
+    medium: ["Wash your own hands or take turns pouring water for a partner over the basin. The same action can change when intention changes: this time washing carries a blessing and prepares us to eat."],
+    full: ["We return to water, now with words. Wash your own hands or take turns gently pouring for one another over the basin. Ritual lets us meet the same act again and discover how our attention has changed."],
     prompt: "What ordinary action becomes meaningful when you do it with care?",
-    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, asher kid’shanu b’mitzvotav v’tzivanu al n’tilat yadayim.", sourceIds: ["traditional-core", "feinstein-haggadah", "mayer-ashkenaz"]
+    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, asher kid’shanu b’mitzvotav v’tzivanu al n’tilat yadayim.", sourceIds: ["traditional-core"]
   },
   {
     id: "motzi-matzah", transliteration: "Motzi–Matzah", title: "Eat the bread of urgency", ritual: "Blessing over matzah",
@@ -121,7 +143,7 @@ export const sectionBlueprints: SectionBlueprint[] = [
     medium: ["Matzah carries two memories: the bread of affliction and the bread of a hurried departure. The same food can hold suffering and liberation.", "We eat it before the future is settled—a reminder that people often begin moving toward freedom with incomplete plans."],
     full: ["Matzah is bread made before dough has time to rise. At the seder it carries memories of poverty, haste, and the first food of a dangerous journey.", "For people fleeing danger, urgency brings risk and loss. Tonight this food asks us to honor the courage of those who move because staying has become impossible."],
     prompt: "What do you need enough of before you can begin—not before you can be certain?",
-    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, hamotzi lechem min ha’aretz. … al achilat matzah.", sourceIds: ["traditional-core", "feinstein-haggadah", "nusach-eretz-yisrael"]
+    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, hamotzi lechem min ha’aretz. … al achilat matzah.", sourceIds: ["traditional-core"]
   },
   {
     id: "maror", transliteration: "Maror", title: "Taste bitterness", ritual: "Bitter herbs",
@@ -129,51 +151,84 @@ export const sectionBlueprints: SectionBlueprint[] = [
     medium: ["Maror keeps the seder honest. Some experiences should not be made palatable for the comfort of people who did not endure them.", "We taste bitterness briefly and by choice; many people cannot set theirs down so easily."],
     full: ["The blessing does not call bitterness good. It makes remembering bitterness a responsibility.", "Memory without action can become performance. Let this taste sharpen our attention to suffering we might otherwise overlook."],
     prompt: "What truth becomes easier to ignore when it is made too comfortable?",
-    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, asher kid’shanu b’mitzvotav v’tzivanu al achilat maror.", sourceIds: ["traditional-core", "other-side-of-sea", "seder-in-the-streets", "mlk-freedom-seder"]
+    blessing: "Barukh atah Adonai, Eloheinu melekh ha’olam, asher kid’shanu b’mitzvotav v’tzivanu al achilat maror.", sourceIds: ["traditional-core"]
   },
   {
     id: "korech", transliteration: "Korech", title: "Make the Hillel sandwich", ritual: "Matzah, maror & charoset",
     short: ["Take two pieces of matzah, and sandwich some maror and charoset between the pieces. Eat the sandwich; this is called korech, following the practice associated with the ancient sage Hillel.", "The bitter herb, sweet charoset, and plain matzah meet in one bite. Together they recall oppression, mortar and labor, and the sustaining sweetness people find even in hard times."],
     medium: ["Hillel combined matzah and maror; many tables add charoset’s sweetness. The sandwich refuses a simple story.", "Freedom does not erase what hurt, and grief does not cancel delight."],
     full: ["Korech makes memory edible: bitter herbs, sweet charoset, and matzah arrive together in one bite.", "Freedom leaves room for grief and delight. Each can be honestly present without silencing the other."],
-    prompt: "What bittersweet experience has taught you something worth carrying?", sourceIds: ["traditional-core", "feinstein-haggadah"]
+    prompt: "What bittersweet experience has taught you something worth carrying?", sourceIds: ["traditional-core"]
   },
   {
     id: "shulchan-orech", transliteration: "Shulchan Orech", title: "Share the meal", ritual: "Festive dinner",
     short: ["Serve the festive meal and invite everyone to eat, talk, and ask for what they need. Check that guests with dietary or access needs have food they can enjoy.", "Dinner is one of the seder’s ritual steps. Feeding people and sharing conversation let freedom take a practical form: welcome, nourishment, rest, and enough to go around."],
     medium: ["The set table is a Jewish answer to scarcity: we practice a world in which people are fed, welcomed, and invited to linger.", "Let conversation wander. The story also lives in recipes, interruptions, and second helpings."],
     full: ["A festive meal turns ideas into hospitality. Liberation has to reach the body: enough food, enough rest, enough time to be together.", "Notice who cooked, who serves, and who clears. Freedom at the table includes sharing the invisible work."],
-    prompt: "Ask someone for the story behind a dish on the table.", sourceIds: ["traditional-core", "wandering-is-over", "levy-home-service"]
+    prompt: "Ask someone for the story behind a dish on the table.", sourceIds: ["traditional-core"]
   },
   {
     id: "tzafun", transliteration: "Tzafun", title: "Find what was hidden", ritual: "Afikoman",
     short: ["Invite guests to search for the hidden afikoman. When it is found, negotiate its return playfully if that is your custom, divide it among everyone, and eat it as the final food of the evening.", "The piece broken near the beginning now comes back. Its return ties the seder together and reminds us that what is hidden or fractured still asks for attention and repair."],
     medium: ["The broken piece returns, but it does not pretend never to have been broken. We make it the final taste of the meal.", "Children often lead this search—a playful reversal in which adults must negotiate with the youngest people present."],
     full: ["Tzafun means hidden. What societies hide—labor, grief, history, responsibility—still shapes the whole.", "The afikoman returns through searching, cooperation, and sometimes joyful bargaining. Repair can be serious without being joyless."],
-    prompt: "What overlooked voice or story deserves to be brought back into view?", sourceIds: ["traditional-core", "velveteen-rabbi"]
+    prompt: "What overlooked voice or story deserves to be brought back into view?", sourceIds: ["traditional-core"]
   },
   {
     id: "barech", transliteration: "Barech", title: "Give thanks", ritual: "Grace & third cup of wine or grape juice",
     short: ["Fill the third cup with wine or grape juice. Clear enough space to gather again, say or read a brief grace after the meal, then lift the cup, say the wine blessing if you wish, and drink.", "Barech turns a full stomach into gratitude. We remember the land, labor, skill, and care behind the meal and renew the hope that everyone may have enough."],
     medium: ["We thank the labor, land, rain, knowledge, and care that brought food here. Gratitude widens when it includes the full chain of hands behind the meal.", "Lift the third cup to sustenance—and to a future where everyone has enough."],
     full: ["Jewish practice places gratitude after eating as well as before. Satisfaction can make us forgetful; this blessing asks us to remember the sources of our abundance.", "Honest gratitude can become the ground from which generosity, responsibility, and a response to injustice grow."],
-    prompt: "Thank someone whose work is easy to overlook.", sourceIds: ["traditional-core", "freedom-seder-earth", "mlk-freedom-seder"]
+    prompt: "Thank someone whose work is easy to overlook.", sourceIds: ["traditional-core"]
   },
   {
     id: "hallel", transliteration: "Hallel", title: "Make room for praise", ritual: "Songs & fourth cup of wine or grape juice",
     short: ["Choose one or more songs or poems of praise and let the table join in however they can: singing, reading, humming, or listening. Then pour the fourth small cup of wine or grape juice, say the blessing if you wish, and drink.", "Hallel gives joy a deliberate place after the story’s fear and grief. We celebrate spring, survival, friendship, and every freedom that increases the safety and dignity of others."],
     medium: ["Hallel gathers songs of gratitude and wonder. You do not need certainty to praise what is beautiful, brave, or alive.", "Lift the fourth cup to a shared freedom that protects every people from fear and dispossession."],
     full: ["Praise can feel complicated in a wounded world. Hallel makes room to honor beauty and courage while suffering remains visible.", "We sing for resilience, friendship, spring, and every act that enlarges another person’s freedom."],
-    prompt: "What is worth celebrating even before the work is finished?", sourceIds: ["traditional-core", "inner-seder", "velveteen-rabbi", "tropified-haggadah", "rittangel-latin"]
+    prompt: "What is worth celebrating even before the work is finished?", sourceIds: ["traditional-core"]
   },
   {
     id: "nirtzah", transliteration: "Nirtzah", title: "Carry it forward", ritual: "Closing",
     short: ["Close with the traditional words: Next year in Jerusalem. This old expression carries longing for home, wholeness, and a repaired world. We offer it as a hope that all who call Jerusalem home, and all peoples, may live with safety, dignity, equality, and peace.", "The ritual order is complete. Before leaving the table, name one question, memory, or action you want to carry into the year ahead."],
     medium: ["Nirtzah means completion or acceptance. The ritual order is ending, while the responsibilities awakened by the story continue beyond this table.", "Next year in Jerusalem.", "This old expression carries hope for wholeness, justice, and home. We offer it as a prayer for a shared future in which all who call Jerusalem home, and all peoples, live with safety, dignity, equality, and peace."],
     full: ["We have moved from sanctification to story, bitterness to feast, brokenness to return. The order ends, but liberation is never a one-night assignment.", "May Palestinians and Israelis, Jews and Muslims and Christians, and all who call the land home live with safety, dignity, equality, and peace.", "Next year in Jerusalem. Next year may every people move closer to freedom."],
-    prompt: "Name one small action you want to carry beyond this table.", sourceIds: ["traditional-core", "shir-geulah", "seder-in-the-streets", "mlk-freedom-seder", "socialist-hagode"]
+    prompt: "Name one small action you want to carry beyond this table.", sourceIds: ["traditional-core"]
   },
 ];
+
+/**
+ * Auditable authorship map for compiled section copy. Every runtime section gets
+ * exactly one licensed foundational passage. All other body paragraphs, titles,
+ * ritual labels, and prompts in the current pack are original project copy;
+ * blessings are traditional liturgy. A passage is prepended by the assembler
+ * unless that exact compiled wording already appears in the selected length.
+ */
+export const sectionCopyProvenance: SectionCopyProvenance[] = sectionBlueprints.map((section) => {
+  const passage = foundationalPassages.find((candidate) => candidate.sectionId === section.id);
+  if (!passage) throw new Error(`Missing foundational passage for ${section.id}`);
+  const placement = (paragraphs: string[]): number | "prepended" => {
+    const index = paragraphs.findIndex((paragraph) => paragraph.includes(passage.text));
+    return index === -1 ? "prepended" : index;
+  };
+  return {
+    sectionId: section.id,
+    foundationalPassageId: passage.id,
+    directLicensedSourceId: passage.sourceId,
+    runtimePlacement: {
+      short: placement(section.short),
+      medium: placement(section.medium),
+      full: placement(section.full),
+    },
+    blueprintFields: {
+      title: "original",
+      ritual: "original",
+      prompt: "original",
+      blessing: section.blessing ? "traditional-liturgical" : "none",
+      remainingBodyParagraphs: "original",
+    },
+  };
+});
 
 const themeSeeds: Record<ThemeId, string[]> = {
   feminist: [
@@ -270,25 +325,26 @@ export const coverOptions: CoverOption[] = coverMasters.map((master) =>
 export const sourceCatalog = [
   // These are context and inspiration references for the app's original commentary, not
   // claims that the section prose was copied. Reuse is allowed when the source grants it;
-  // separately credited embedded works remain excluded unless independently permitted.
+  // an embedded work is eligible only with its exact printed credit, containing-Haggadah
+  // credit, locator, treatment record, and source-excerpt hash.
   { id: "traditional-core", title: "Seder Haggadah Shel Pesaḥ", creator: "Paltiel Birnbaum", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/seder-haggadah-shel-pesah-translated-and-annotated-by-paltiel-birnbaum-1953/", rights: "CC0 / public-domain scan; jurisdiction review required outside the U.S." },
-  { id: "wandering-is-over", title: "The Wandering Is Over Haggadah", creator: "JewishBoston & Jewish Women’s Archive", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-wandering-is-over-haggadah-including-womens-voices-by-jewish-boston-and-jewish-womens-archive-2011/", rights: "CC BY-SA 3.0 except where noted; separately credited material requires item-level review" },
+  { id: "wandering-is-over", title: "The Wandering Is Over Haggadah", creator: "JewishBoston & Jewish Women’s Archive", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-wandering-is-over-haggadah-including-womens-voices-by-jewish-boston-and-jewish-womens-archive-2011/", rights: "CC BY-SA 3.0 except where noted; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash" },
   { id: "inner-seder", title: "Haggadah of the Inner Seder", creator: "David Seidenberg", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/haggadah-of-the-inner-seder-by-david-seidenberg-neohasid-org/", rights: "CC BY-SA 4.0" },
-  { id: "other-side-of-sea", title: "The Other Side of the Sea", creator: "T’ruah", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-other-side-of-the-sea-a-haggadah-for-fighting-modern-day-slavery-by-truah-the-rabbinic-call-for-human-rights/", rights: "CC BY-SA 4.0; embedded materials require item review" },
-  { id: "freedom-seder-earth", title: "The Freedom Seder for the Earth", creator: "Arthur Waskow & The Shalom Center", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-freedom-seder-haggadah-for-passover-by-the-shalom-center-and-rabbi-arthur-waskow/", rights: "CC BY-SA 4.0; embedded quotations and artwork excluded" },
+  { id: "other-side-of-sea", title: "The Other Side of the Sea", creator: "T’ruah", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-other-side-of-the-sea-a-haggadah-for-fighting-modern-day-slavery-by-truah-the-rabbinic-call-for-human-rights/", rights: "CC BY-SA 4.0; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash" },
+  { id: "freedom-seder-earth", title: "The Freedom Seder for the Earth", creator: "Arthur Waskow & The Shalom Center", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-freedom-seder-haggadah-for-passover-by-the-shalom-center-and-rabbi-arthur-waskow/", rights: "CC BY-SA 4.0; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash" },
   { id: "shir-geulah", title: "Haggadah Shir Ge’ulah / Song of Liberation", creator: "Emily Aviva Kapor-Mater", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/haggadah-shir-geulah-song-of-liberation-by-emily-aviva-kapor/", rights: "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); reuse and adaptation permitted with attribution and modification notice" },
-  { id: "velveteen-rabbi", title: "The Velveteen Rabbi’s Haggadah for Pesach", creator: "Rachel Barenblat", url: "https://velveteenrabbi.blogs.com/files/vrhaggadah-3.pdf", rights: "Explicit permission to use, modify, and borrow with appropriate credit; noncommercial demo only under the author’s ‘please don’t sell this’ condition; separately credited third-party works remain excluded unless independently permitted" },
+  { id: "velveteen-rabbi", title: "The Velveteen Rabbi’s Haggadah for Pesach", creator: "Rachel Barenblat", url: "https://velveteenrabbi.blogs.com/files/vrhaggadah-3.pdf", rights: "Explicit permission to use, modify, and borrow with appropriate credit; noncommercial demo only under the author’s ‘please don’t sell this’ condition; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash" },
   { id: "nusach-eretz-yisrael", title: "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)", creator: "Isaac Gantwerk Mayer", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/pesah-haggadah-nusah-erets-yisrael-based-on-multiple-cairo-geniza-manuscripts-compiled-and-translated-by-isaac-gantwerk-mayer/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required" },
   { id: "seder-in-the-streets", title: "Seder in the Streets Passover Haggadah", creator: "Danielle Gershkoff, Rachel Lerman, Rachel Beck & Margot Seigle", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/seder-in-the-streets-haggadah-compiled-by-danielle-gershkoff-rachel-lerman-rachel-beck-and-margot-seigle/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required" },
   { id: "tropified-haggadah", title: "The Passover Seder Haggadah, Tropified", creator: "Isaac Gantwerk Mayer", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-passover-seder-haggadah-tropified-by-isaac-gantwerk-mayer/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required" },
   { id: "feinstein-haggadah", title: "Haggadah for the Passover Seder", creator: "Eve Levavi Feinstein & Efraim Feinstein", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/haggadah-for-pesah-an-english-translation/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required" },
   { id: "socialist-hagode", title: "Hagode shel Peysekh: in a Socialist Mode", creator: "Benjamin Feigenbaum, Leon Zolotkof & Shlomo Enkin Lewis", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/hagode-shel-peysekh-in-a-socialist-mode-1887-1919-trans-shlomo-enkin-lewis-2025/", rights: "CC BY-SA 4.0 for the 2025 bilingual edition; attribution, license link, change notice, and ShareAlike required" },
-  { id: "mlk-freedom-seder", title: "MLK +50 Labor-Justice Interfaith Freedom Seder", creator: "Arthur Waskow & The Shalom Center", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/mlk-plus-50-labor-justice-interfaith-freedom-seder-by-arthur-waskow-and-the-shalom-center/", rights: "Unattributed passages are CC BY 4.0; separately credited quotations and Avi Katz illustrations are excluded unless independently permitted; the publisher asks users to notify and support The Shalom Center" },
+  { id: "mlk-freedom-seder", title: "MLK +50 Labor-Justice Interfaith Freedom Seder", creator: "Arthur Waskow & The Shalom Center", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/mlk-plus-50-labor-justice-interfaith-freedom-seder-by-arthur-waskow-and-the-shalom-center/", rights: "Unattributed passages are CC BY 4.0; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash; the publisher asks users to notify and support The Shalom Center" },
   { id: "second-seder-plate", title: "A Second Passover Seder Plate with Seven Additions", creator: "Isaac Gantwerk Mayer", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/second-passover-seder-plate-with-seven-additions-by-isaac-gantwerk-mayer/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required" },
   { id: "mayer-ashkenaz", title: "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions", creator: "Isaac Gantwerk Mayer", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/haggadah-for-pesah-nusah-ashkenaz-with-unique-additions-from-across-the-jewish-world-by-isaac-gantwerk-mayer-2025/", rights: "CC BY-SA 4.0; attribution, license link, change notice, and ShareAlike required; separately sourced additions require item-level review" },
   { id: "english-jews-seder", title: "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion", creator: "Dávid Kaufmann; transcription by Aharon N. Varady", url: "https://opensiddur.org/miscellanea/traditions/ritual-of-the-seder-and-the-agada-of-the-english-jews-before-the-expulsion/", rights: "Public-domain 1892 study and medieval source; Open Siddur transcription/page shared under CC BY-SA 4.0" },
   { id: "rittangel-latin", title: "Liber Rituum Paschalium", creator: "Johann Stephan Rittangel; transcription by Aharon N. Varady", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/liber-rituum-paschalium-by-johann-stephan-rittangel-1644/", rights: "Public-domain 1644 work; attribute the Open Siddur transcription and follow its CC BY-SA 4.0 terms" },
   { id: "levy-home-service", title: "Haggadah or Home Service for the Festival of Passover", creator: "J. Leonard Levy", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/haggadah-or-home-service-for-the-festival-of-passover-by-j-leonard-levy/", rights: "Public-domain editions (1896–1922); Open Siddur page shared under CC BY-SA 4.0" },
   { id: "barros-basto", title: "Hagadah shel Pessah", creator: "Artur Carlos de Barros Basto", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/hagadah-shel-pessah-compiled-by-artur-carlos-de-barros-basto-1928/", rights: "CC0 / public domain; published in 1928; credit the creator and digitization where practical" },
-  { id: "battlestar-seder", title: "The First Battlestar Galactica Seder Haggadah", creator: "David Lieberman, Alison Ogden, Mary Bruch & Aharon N. Varady", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-first-battlestar-galactica-passover-seder-haggadah-2008/", rights: "CC BY-SA 4.0 Open Siddur edition derived from a GNU Free Documentation License work; separately credited franchise quotations, prayers, and other embedded material are excluded unless independently reusable" },
+  { id: "battlestar-seder", title: "The First Battlestar Galactica Seder Haggadah", creator: "David Lieberman, Alison Ogden, Mary Bruch & Aharon N. Varady", url: "https://opensiddur.org/compilations/table-guides-and-haggadot/passover-seder/the-first-battlestar-galactica-passover-seder-haggadah-2008/", rights: "CC BY-SA 4.0 Open Siddur edition derived from a GNU Free Documentation License work; embedded material is eligible with exact source-presented attribution, containing-Haggadah credit, locator, and hash" },
 ];

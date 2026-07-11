@@ -30,6 +30,9 @@ async function compile(relativePath) {
 await Promise.all([
   compile("content/pack.ts"),
   compile("content/quotes-expanded.ts"),
+  compile("content/source-passages-shir.ts"),
+  compile("content/source-passages-velveteen.ts"),
+  compile("content/source-spines.ts"),
   compile("lib/types.ts"),
   compile("lib/editorial.ts"),
   compile("lib/generator.ts"),
@@ -54,16 +57,16 @@ const baseProfile = {
   typography: "classic",
   language: "transliteration",
   themes: ["family-storytelling", "social-justice"],
+  sederPlateAdditions: [],
   customTheme: "intergenerational courage",
-  antiZionist: false,
   hostName: "Leah",
   sederDate: "2027-04-21",
   coverQuote: "",
 };
 
-test("peace-focused non-Zionist language is checked by default", async () => {
+test("peace-focused framing is universal and no political checkbox remains in the profile", async () => {
   const typesSource = await readFile(new URL("lib/types.ts", projectRoot), "utf8");
-  assert.match(typesSource, /antiZionist:\s*true/);
+  assert.doesNotMatch(typesSource, /antiZionist/);
   assert.match(typesSource, /themes:\s*\[\]/);
 });
 
@@ -87,6 +90,34 @@ test("generates a deterministic, complete 14-section Haggadah", () => {
   assert.equal(first.editorialWarnings.length, 0);
   assert.match(first.id, /^haggadah-[a-z0-9]+$/);
   assert.equal(first.createdAt, "2027-04-21T00:00:00.000Z");
+});
+
+test("uses one complete primary source voice and keeps reviewed wording in the majority", () => {
+  const shir = generator.generateHaggadah({ ...baseProfile, length: 20 });
+  const velveteen = generator.generateHaggadah({
+    ...baseProfile,
+    length: 45,
+    audience: "adults",
+    tone: "reverent",
+    themes: ["family-storytelling", "environment"],
+  });
+
+  assert.equal(shir.sourceSpineId, "shir-geulah-primary");
+  assert.equal(shir.sourceMetrics.primarySourceId, "shir-geulah");
+  assert.equal(velveteen.sourceSpineId, "velveteen-rabbi-primary");
+  assert.equal(velveteen.sourceMetrics.primarySourceId, "velveteen-rabbi");
+
+  for (const document of [shir, velveteen]) {
+    assert.ok(document.sourceMetrics.borrowedWordShare >= 0.5);
+    assert.ok(document.sourceMetrics.borrowedWords > document.sourceMetrics.houseWords);
+    assert.ok(document.sections.every((section) => section.sourceIds.length === 1));
+    assert.ok(document.sections.every((section) => section.sourceIds[0] === document.sourceMetrics.primarySourceId));
+    assert.ok(document.sections.every((section) => section.passageIds.length >= 1));
+  }
+
+  assert.match(shir.sections.find((section) => section.id === "yachatz").body.join(" "), /The bread of oppression is literally broken/);
+  assert.match(velveteen.sections.find((section) => section.id === "maggid").body.join(" "), /In re-telling the story of the Exodus/);
+  assert.doesNotMatch(velveteen.sections.flatMap((section) => section.body).join(" "), /The bread of oppression is literally broken/);
 });
 
 test("honors length, audience, tone, and language settings", () => {
@@ -124,7 +155,7 @@ test("honors length, audience, tone, and language settings", () => {
     .flatMap((section) => [...section.body, section.bridge, section.prompt])
     .join(" ");
   assert.doesNotMatch(kidCopy, /sea is not a prop|set down|renewal|repair.not perfection/i);
-  assert.match(shortKids.sections.find((section) => section.id === "urchatz").bridge, /adult.+each child/i);
+  assert.match(shortKids.sections.find((section) => section.id === "urchatz").bridge, /own hands.+partner.+basin/i);
   assert.match(shortKids.sections.find((section) => section.id === "yachatz").bridge, /children.+afikoman.+prize/i);
   assert.ok(
     fullAdults.sections.some((section) =>
@@ -136,7 +167,7 @@ test("honors length, audience, tone, and language settings", () => {
       "We enter this evening with attention and care.",
       "Across generations, this order has carried memory into action.",
       "May the telling open a path toward freedom, dignity, and peace.",
-    ].includes(fullAdults.sections[0].body[0]),
+    ].some((opener) => fullAdults.sections[0].body.slice(0, 3).includes(opener)),
   );
 });
 
@@ -156,7 +187,7 @@ test("mixed-age prompts use plain questions that children and adults can answer"
 });
 
 test("uses a restrained number of unique, context-approved quotes", () => {
-  for (const [length, expected] of [[20, 2], [45, 3], [90, 3]]) {
+  for (const [length, expected] of [[20, 2], [45, 2], [90, 2]]) {
     const document = generator.generateHaggadah({ ...baseProfile, length });
     const placements = document.sections.flatMap((section) =>
       section.quote ? [{ section, quote: section.quote }] : [],
@@ -188,18 +219,65 @@ test("beginner host guide explains setup and every seder plate element", () => {
   assert.ok(document.sederPlateGuide.every((entry) => entry.element && entry.meaning && entry.ingredients && entry.preparation));
 });
 
-test("anti-Zionist mode uses the approved peace refrain", () => {
-  const document = generator.generateHaggadah({
-    ...baseProfile,
-    antiZionist: true,
-  });
-  const closing = document.sections.find((section) => section.id === "nirtzah");
-  const text = closing.body.join(" ");
+test("closing uses Jerusalem only for Traditional, with Social Justice taking precedence", () => {
+  const cases = [
+    { themes: ["traditional"], jerusalem: true },
+    { themes: ["traditional", "family-storytelling"], jerusalem: true },
+    { themes: ["social-justice"], jerusalem: false },
+    { themes: ["traditional", "social-justice"], jerusalem: false },
+    { themes: [], jerusalem: false },
+  ];
 
-  assert.doesNotMatch(text, /next year in jerusalem/i);
-  assert.match(text, /next year in peace/i);
-  assert.match(text, /every people|safety, dignity, and equality/i);
-  assert.deepEqual(editorial.validateEditorial(document), []);
+  for (const { themes, jerusalem } of cases) {
+    const document = generator.generateHaggadah({ ...baseProfile, themes });
+    const text = document.sections.find((section) => section.id === "nirtzah").body.join(" ");
+    assert.equal(/next year in jerusalem/i.test(text), jerusalem, themes.join(", "));
+    assert.equal(/next year in peace/i.test(text), !jerusalem, themes.join(", "));
+    assert.match(text, /every people|safety, dignity, equality, and peace|shared freedom/i);
+    assert.deepEqual(editorial.validateEditorial(document), []);
+  }
+});
+
+test("every Haggadah opens with newcomer orientation and turn-taking guidance", () => {
+  for (const length of [20, 45, 90]) {
+    const document = generator.generateHaggadah({ ...baseProfile, length });
+    const opening = document.sections[0].body.slice(0, 3).join(" ");
+    assert.match(opening, /fourteen steps|symbolic foods|Exodus story|festive meal/i);
+    assert.match(opening, /take turns reading a paragraph or a whole section/i);
+    assert.match(opening, /No prior knowledge|No Passover.*experience/i);
+    assert.match(opening, /listen.*or pass|ask a question/i);
+  }
+});
+
+test("both handwashings offer self-washing and partner-pouring in every length", () => {
+  for (const length of [20, 45, 90]) {
+    const document = generator.generateHaggadah({ ...baseProfile, length });
+    for (const sectionId of ["urchatz", "rachtzah"]) {
+      const section = document.sections.find((candidate) => candidate.id === sectionId);
+      const copy = [...section.body, section.bridge].join(" ");
+      assert.match(copy, /own hands|self-washing/i, `${sectionId} ${length}`);
+      assert.match(copy, /partner|one another/i, `${sectionId} ${length}`);
+      assert.match(copy, /basin/i, `${sectionId} ${length}`);
+    }
+  }
+});
+
+test("invitation explains that a seder is participatory and passing is welcome", () => {
+  const document = generator.generateHaggadah(baseProfile);
+  assert.match(document.invitation, /participatory Passover meal/i);
+  assert.match(document.invitation, /take turns reading/i);
+  assert.match(document.invitation, /No Passover or Hebrew experience is needed/i);
+  assert.match(document.invitation, /listen, or pass/i);
+});
+
+test("kids receive section-specific roles and safe plague craft guidance", () => {
+  const document = generator.generateHaggadah({ ...baseProfile, audience: "kids" });
+  const maggid = document.sections.find((section) => section.id === "maggid");
+  assert.match(maggid.bridge, /ten plague picture cards/i);
+  assert.match(maggid.bridge, /paper and crayons/i);
+  const guide = document.hostGuide.join(" ");
+  assert.match(guide, /avoid small loose pieces/i);
+  assert.match(guide, /rather than acting out anyone’s suffering/i);
 });
 
 test("editorial validation rejects structural, quote, bridge, framing, and blame violations", () => {
@@ -241,6 +319,7 @@ test("editorial validation rejects structural, quote, bridge, framing, and blame
   );
 
   const unframed = structuredClone(document);
+  unframed.profile.themes = ["traditional"];
   unframed.sections.forEach((section) => {
     section.body = section.body.filter(
       (paragraph) => !/shared freedom|every people|all who call the land home/i.test(paragraph),
@@ -258,7 +337,7 @@ test("model enhancements are allowlisted and revalidated", () => {
   const document = generator.generateHaggadah(baseProfile);
   const enhanced = generator.mergeModelEnhancement(document, {
     coverId: "moonlit-1",
-    quoteIds: ["q-exodus-stranger", "q-austen", "q-avot-free"],
+    quoteIds: ["q-exodus-stranger", "q-avot-free"],
     bridges: {
       kadesh: "We enter this inherited story together, making room for honest questions and shared freedom.",
     },

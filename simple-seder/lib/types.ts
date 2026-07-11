@@ -4,6 +4,7 @@ export type Interaction = "reflective" | "balanced" | "participatory";
 export type Tone = "playful" | "balanced" | "reverent";
 export type Typography = "classic" | "modern" | "readable";
 export type LanguageMode = "english" | "transliteration";
+export type PlateAddition = "orange" | "pomegranate";
 
 export type ThemeId =
   | "feminist"
@@ -24,8 +25,8 @@ export interface GenerationProfile {
   typography: Typography;
   language: LanguageMode;
   themes: ThemeId[];
+  sederPlateAdditions: PlateAddition[];
   customTheme: string;
-  antiZionist: boolean;
   hostName: string;
   sederDate: string;
   coverQuote: string;
@@ -50,6 +51,14 @@ export interface SederPlateGuideEntry {
   meaning: string;
   ingredients: string;
   preparation: string;
+}
+
+export interface DocumentSourceMetrics {
+  primarySourceId: "shir-geulah" | "velveteen-rabbi";
+  borrowedWords: number;
+  houseWords: number;
+  traditionalWords: number;
+  borrowedWordShare: number;
 }
 
 export interface HaggadahSection {
@@ -88,6 +97,8 @@ export interface HaggadahDocument {
   hostGuide: string[];
   shoppingList: string[];
   sederPlateGuide: SederPlateGuideEntry[];
+  sourceSpineId: "shir-geulah-primary" | "velveteen-rabbi-primary";
+  sourceMetrics: DocumentSourceMetrics;
   createdAt: string;
   editorialWarnings: string[];
 }
@@ -100,8 +111,8 @@ export const defaultProfile: GenerationProfile = {
   typography: "classic",
   language: "transliteration",
   themes: [],
+  sederPlateAdditions: [],
   customTheme: "",
-  antiZionist: true,
   hostName: "",
   sederDate: "",
   coverQuote: "",

@@ -22,7 +22,8 @@ export const MIN_BRIDGE_WORDS = 6;
 export const MAX_BRIDGE_WORDS = 45;
 
 function expectedQuoteCount(length: HaggadahDocument["profile"]["length"]): number {
-  return length === 20 ? 2 : 3;
+  void length;
+  return 2;
 }
 
 const prohibitedLanguage: Array<{ label: string; pattern: RegExp }> = [
@@ -170,16 +171,20 @@ export function validateEditorial(document: HaggadahDocument): string[] {
       allText,
     );
 
-  if (document.profile.antiZionist && hasJerusalemRefrain) {
+  const allowsJerusalemRefrain =
+    document.profile.themes.includes("traditional") &&
+    !document.profile.themes.includes("social-justice");
+
+  if (!allowsJerusalemRefrain && hasJerusalemRefrain) {
     errors.push(
-      "Anti-Zionist framing must replace, rather than qualify, the “Next year in Jerusalem” refrain.",
+      "The “Next year in Jerusalem” refrain is allowed only when Traditional is selected without Social Justice.",
     );
   } else if (
-    document.profile.antiZionist &&
+    !allowsJerusalemRefrain &&
     !/\bnext year in peace\b/i.test(allText)
   ) {
     errors.push(
-      "Anti-Zionist framing must include the approved “Next year in peace” refrain.",
+      "The closing must include the approved “Next year in peace” refrain unless Traditional is selected without Social Justice.",
     );
   } else if (hasJerusalemRefrain && !hasInclusiveFrame) {
     errors.push(

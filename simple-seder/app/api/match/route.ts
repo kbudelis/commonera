@@ -54,8 +54,8 @@ function compactProfile(profile: GenerationProfile) {
     typography: profile.typography,
     language: profile.language,
     themes: profile.themes,
+    sederPlateAdditions: profile.sederPlateAdditions,
     customTheme: profile.customTheme?.slice(0, 120) ?? "",
-    antiZionist: Boolean(profile.antiZionist),
   };
 }
 

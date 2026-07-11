@@ -2,6 +2,7 @@
 
 import { existsSync } from "node:fs";
 import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -30,6 +31,12 @@ function isHttps(value) {
 
 function nonempty(value) {
   return typeof value === "string" && value.trim().length > 0;
+}
+
+function provenanceHash(value) {
+  return createHash("sha256")
+    .update(value.normalize("NFC").replace(/\s+/g, " ").trim())
+    .digest("hex");
 }
 
 export function validateContent(pack, options = {}) {
@@ -86,10 +93,39 @@ export function validateContent(pack, options = {}) {
   for (const id of duplicateValues(passages.map((passage) => passage.id))) errors.push(`Duplicate foundational passage ID: ${id}.`);
   for (const passage of passages) {
     addError(
-      [passage.id, passage.sectionId, passage.text, passage.sourceId, passage.treatment, passage.locator, passage.attribution].every(nonempty),
+      [passage.id, passage.sectionId, passage.text, passage.sourceId, passage.treatment, passage.locator, passage.sourceExcerpt, passage.modificationNote, passage.provenanceHash, passage.attribution].every(nonempty),
       `Foundational passage ${passage.id ?? "(missing ID)"} has incomplete provenance.`,
     );
     addError(sections.some((section) => section.id === passage.sectionId), `Foundational passage ${passage.id} references unknown section ${passage.sectionId}.`);
+    addError(
+      passage.provenanceHash === provenanceHash(passage.sourceExcerpt ?? ""),
+      `Foundational passage ${passage.id} has a stale or invalid source-excerpt hash.`,
+    );
+    if (passage.treatment === "verbatim") {
+      addError(passage.text === passage.sourceExcerpt, `Verbatim passage ${passage.id} differs from its recorded source excerpt.`);
+    }
+    if (passage.materialKind === "embedded-third-party") {
+      addError(
+        nonempty(passage.sourcePresentedAttribution),
+        `Embedded passage ${passage.id} must preserve the containing Haggadah’s source-presented attribution exactly.`,
+      );
+      addError(
+        /haggadah/i.test(passage.attribution ?? ""),
+        `Embedded passage ${passage.id} must also credit its containing Haggadah.`,
+      );
+    }
+  }
+
+
+  const copyProvenance = pack.sectionCopyProvenance ?? [];
+  addError(copyProvenance.length === sections.length, `Expected one copy-provenance record per section; found ${copyProvenance.length}.`);
+  for (const record of copyProvenance) {
+    const passage = passages.find((candidate) => candidate.id === record.foundationalPassageId);
+    addError(sections.some((section) => section.id === record.sectionId), `Copy-provenance record references unknown section ${record.sectionId}.`);
+    addError(passage?.sectionId === record.sectionId, `Copy-provenance record for ${record.sectionId} does not resolve to that section’s passage.`);
+    addError(passage?.sourceId === record.directLicensedSourceId, `Copy-provenance record for ${record.sectionId} has the wrong licensed source.`);
+    addError(["short", "medium", "full"].every((length) => Number.isInteger(record.runtimePlacement?.[length]) || record.runtimePlacement?.[length] === "prepended"), `Copy-provenance record for ${record.sectionId} has an invalid runtime placement.`);
+    addError(record.blueprintFields?.remainingBodyParagraphs === "original", `Copy-provenance record for ${record.sectionId} must classify remaining body prose.`);
   }
 
   const toneIds = Object.keys(pack.toneOpeners ?? {});
@@ -143,12 +179,16 @@ export function validateContent(pack, options = {}) {
       warnings.push(`Source ${source.id}: custom or permission-specific terms; print and follow its attribution and use constraints.`);
     }
     if (/embedded|third-party|separately credited/i.test(source.rights ?? "")) {
-      warnings.push(`Source ${source.id}: embedded third-party works require independent item-level clearance.`);
+      warnings.push(`Source ${source.id}: embedded material is eligible only with exact source-presented attribution, containing-Haggadah credit, locator, treatment, and source-excerpt hash.`);
     }
   }
   for (const section of sections) {
     for (const sourceId of section.sourceIds ?? []) {
       addError(sourceIds.has(sourceId), `Section ${section.id} references unknown source ID ${sourceId}.`);
+      addError(
+        sourceId === "traditional-core" || passages.some((passage) => passage.sectionId === section.id && passage.sourceId === sourceId),
+        `Section ${section.id} credits ${sourceId} without a passage-level provenance record. Research influence is not compiled-word attribution.`,
+      );
     }
   }
   for (const passage of passages) {
@@ -193,7 +233,7 @@ export function validateContent(pack, options = {}) {
   };
 }
 
-async function loadPack() {
+async function loadRuntimeContent() {
   const source = await readFile(path.join(projectRoot, "content/pack.ts"), "utf8");
   const output = ts.transpileModule(source, {
     compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022 },
@@ -206,17 +246,49 @@ async function loadPack() {
   }).outputText;
   const directory = await mkdtemp(path.join(tmpdir(), "pesach-content-"));
   const modulePath = path.join(directory, "pack.mjs");
+  const compileModule = async (filename) => {
+    const moduleSource = await readFile(path.join(projectRoot, "content", filename), "utf8");
+    return ts.transpileModule(moduleSource, {
+      compilerOptions: { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022 },
+      fileName: filename,
+    }).outputText.replace(
+      /(from\s+["'])(\.\.?\/[^"']+)(["'])/g,
+      (_match, prefix, specifier, suffix) => `${prefix}${specifier.endsWith(".mjs") ? specifier : `${specifier}.mjs`}${suffix}`,
+    );
+  };
   await writeFile(modulePath, output);
   await writeFile(path.join(directory, "quotes-expanded.mjs"), expandedOutput);
+  await writeFile(path.join(directory, "source-passages-shir.mjs"), await compileModule("source-passages-shir.ts"));
+  await writeFile(path.join(directory, "source-passages-velveteen.mjs"), await compileModule("source-passages-velveteen.ts"));
+  await writeFile(path.join(directory, "source-spines.mjs"), await compileModule("source-spines.ts"));
   try {
-    return await import(`${pathToFileURL(modulePath).href}?validation=${Date.now()}`);
+    const [pack, architecture] = await Promise.all([
+      import(`${pathToFileURL(modulePath).href}?validation=${Date.now()}`),
+      import(`${pathToFileURL(path.join(directory, "source-spines.mjs")).href}?validation=${Date.now()}`),
+    ]);
+    return { pack, architecture };
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
 }
 
 export async function runValidation() {
-  return validateContent(await loadPack());
+  const { pack, architecture } = await loadRuntimeContent();
+  const result = validateContent(pack);
+  result.errors.push(...architecture.validateSourceSpines());
+  for (const passage of architecture.reviewedSourcePassages) {
+    if (passage.provenanceHash !== provenanceHash(passage.text)) {
+      result.errors.push(`Reviewed source passage ${passage.id} has a stale or invalid source hash.`);
+    }
+  }
+  const readySpines = architecture.sourceSpines.filter(
+    (spine) => spine.status === "generation-ready-with-house-copy",
+  );
+  if (readySpines.length < 2) {
+    result.errors.push(`Expected at least two complete primary source spines; found ${readySpines.length}.`);
+  }
+  result.errors = [...new Set(result.errors)];
+  return result;
 }
 
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
