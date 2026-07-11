@@ -9,6 +9,7 @@ import {
   GROUNDING_COPY,
   loadBirthProfile,
   saveBirthProfile,
+  type MonthKey,
   type StoredBirthProfileV1,
 } from "./content.js";
 import {
@@ -22,6 +23,36 @@ import {
 
 const blueZodiacUrl = "/blue-zodiac.jpg";
 const zodiacTransitionDuration = 6_500;
+
+const constellationUrls: Record<MonthKey, string> = {
+  nisan: new URL("./assets/constellations/aries.png", import.meta.url).href,
+  iyar: new URL("./assets/constellations/taurus.png", import.meta.url).href,
+  sivan: new URL("./assets/constellations/gemini.png", import.meta.url).href,
+  tammuz: new URL("./assets/constellations/cancer.png", import.meta.url).href,
+  av: new URL("./assets/constellations/leo.png", import.meta.url).href,
+  elul: new URL("./assets/constellations/virgo.png", import.meta.url).href,
+  tishrei: new URL("./assets/constellations/libra.png", import.meta.url).href,
+  cheshvan: new URL("./assets/constellations/scorpio.png", import.meta.url).href,
+  kislev: new URL("./assets/constellations/sagittarius.png", import.meta.url).href,
+  tevet: new URL("./assets/constellations/capricorn.png", import.meta.url).href,
+  shevat: new URL("./assets/constellations/aquarius.png", import.meta.url).href,
+  adar: new URL("./assets/constellations/pisces.png", import.meta.url).href,
+};
+
+const lalouGlyphUrls: Record<MonthKey, string> = {
+  tishrei: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/01-tishrei-lamed.png", import.meta.url).href,
+  cheshvan: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/02-cheshvan-nun.png", import.meta.url).href,
+  kislev: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/03-kislev-samekh.png", import.meta.url).href,
+  tevet: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/04-tevet-ayin.png", import.meta.url).href,
+  shevat: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/05-shevat-tsade.png", import.meta.url).href,
+  adar: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/06-adar-qof.png", import.meta.url).href,
+  nisan: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/07-nisan-he.png", import.meta.url).href,
+  iyar: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/08-iyar-vav.png", import.meta.url).href,
+  sivan: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/09-sivan-zayin.png", import.meta.url).href,
+  tammuz: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/10-tammuz-het.png", import.meta.url).href,
+  av: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/11-av-tet.png", import.meta.url).href,
+  elul: new URL("./assets/hebrew-letter-illustrations/lalou/02-transparent/12-elul-yod.png", import.meta.url).href,
+};
 
 const welcomeLines = [
   "Welcome.",
@@ -47,6 +78,38 @@ function ZodiacVisual({
       aria-hidden="true"
     >
       <img src={blueZodiacUrl} alt="" />
+    </div>
+  );
+}
+
+function HebrewGlyphArt({
+  monthKey,
+}: {
+  monthKey: MonthKey;
+}) {
+  return (
+    <div className="hero-glyph-art" aria-hidden="true">
+      <img src={lalouGlyphUrls[monthKey]} alt="" />
+    </div>
+  );
+}
+
+function ConstellationArt({
+  monthKey,
+  label,
+  peek = false,
+}: {
+  monthKey: MonthKey;
+  label: string;
+  peek?: boolean;
+}) {
+  return (
+    <div
+      className={`constellation-art ${peek ? "constellation-art--peek" : "constellation-art--month"}`}
+      role="img"
+      aria-label={`${label} constellation`}
+    >
+      <img src={constellationUrls[monthKey]} alt="" />
     </div>
   );
 }
@@ -283,9 +346,11 @@ function PersonalPlaceholder({
     >
       <ZodiacVisual variant="arc" />
       <div className="section-copy reading-copy">
-        <p className="hero-glyph" aria-hidden="true">
-          {month?.correspondence.letter.glyph ?? "א"}
-        </p>
+        {month ? (
+          <HebrewGlyphArt monthKey={month.correspondence.key} />
+        ) : (
+          <p className="hero-glyph" aria-hidden="true">א</p>
+        )}
         {profile && month ? (
           <>
             <p className="eyebrow">{profile.derived.hebrewDate.displayLabel}</p>
@@ -295,7 +360,7 @@ function PersonalPlaceholder({
               <span>
                 {month.correspondence.mazal.zodiacLabel}{" "}
                 {month.correspondence.mazal.symbol} · {month.correspondence.tribe} ·{" "}
-                {profile.derived.moon.label}
+                {profile.derived.moon.label} · {month.correspondence.letter.name}
               </span>
             </p>
             <p>{buildPersonalThread(profile)}</p>
@@ -310,10 +375,13 @@ function PersonalPlaceholder({
           </>
         )}
       </div>
-      <div
-        className="constellation-placeholder constellation-peek"
-        aria-hidden="true"
-      />
+      {month ? (
+        <ConstellationArt
+          monthKey={month.correspondence.key}
+          label={month.correspondence.mazal.zodiacLabel}
+          peek
+        />
+      ) : null}
     </section>
   );
 }
@@ -329,9 +397,9 @@ function MonthPlaceholder() {
       aria-labelledby="month-title"
     >
       <div className="section-copy reading-copy month-copy">
-        <div
-          className="constellation-placeholder"
-          aria-label={`${correspondence.mazal.zodiacLabel} constellation placeholder`}
+        <ConstellationArt
+          monthKey={correspondence.key}
+          label={correspondence.mazal.zodiacLabel}
         />
         <p className="eyebrow">This month · {season.hebrewDate.exactMonthLabel}</p>
         <h1 id="month-title">

@@ -126,6 +126,22 @@ test("birthday path renders personal before month and upcoming", () => {
   assert.ok(month < upcoming);
 });
 
+test("birthday and month compositions render real visual assets", () => {
+  const birthdayState = transitionFlow(advanceToBirthday(), {
+    type: "submit-birthday",
+    value: "07/10/1998",
+  });
+  const birthdayMarkup = renderFlow(birthdayState);
+  const monthMarkup = renderFlow(
+    transitionFlow(createInitialFlow(), { type: "skip-to-month" }),
+  );
+
+  assert.match(birthdayMarkup, /class="hero-glyph-art"/);
+  assert.match(birthdayMarkup, /constellation-art--peek/);
+  assert.match(monthMarkup, /constellation-art--month/);
+  assert.doesNotMatch(birthdayMarkup, /constellation-placeholder/);
+});
+
 test("reduced motion returns before querying a landmark or scrolling", () => {
   let landmarkQueries = 0;
   let scrollCalls = 0;
