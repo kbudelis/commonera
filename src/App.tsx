@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 import {
   createInitialFlow,
   FlowAction,
@@ -9,6 +10,7 @@ import {
 } from "./flow.js";
 
 const blueZodiacUrl = "/blue-zodiac.jpg";
+const zodiacTransitionDuration = 6_500;
 
 const welcomeLines = [
   "Welcome.",
@@ -167,6 +169,15 @@ function WelcomeScreen({
 }
 
 function ZodiacTransition({ onAdvance }: { onAdvance: () => void }) {
+  useEffect(() => {
+    const delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? 500
+      : zodiacTransitionDuration;
+    const timeout = window.setTimeout(onAdvance, delay);
+
+    return () => window.clearTimeout(timeout);
+  }, [onAdvance]);
+
   return (
     <section
       className="flow-section transition-section"
@@ -177,12 +188,6 @@ function ZodiacTransition({ onAdvance }: { onAdvance: () => void }) {
         The zodiac moves into place
       </h1>
       <ZodiacVisual variant="compact" />
-      <button
-        className="transition-tap-target"
-        type="button"
-        aria-label="Continue to birthday entry"
-        onClick={onAdvance}
-      />
     </section>
   );
 }
@@ -264,8 +269,11 @@ function PersonalPlaceholder() {
           Your birth month carries a particular character. A short personal
           reflection will live here.
         </p>
-        <div className="constellation-placeholder" aria-label="Constellation placeholder" />
       </div>
+      <div
+        className="constellation-placeholder constellation-peek"
+        aria-hidden="true"
+      />
     </section>
   );
 }
@@ -344,10 +352,24 @@ export default function App() {
       type: "submit-birthday",
       value: birthdayValue,
     });
-    setFlow(next);
-    if (next.step === "personal") {
-      setPendingLandmark("personal");
+    if (next.step !== "personal") {
+      setFlow(next);
+      return;
     }
+
+    const showPersonalReading = () => {
+      flushSync(() => setFlow(next));
+    };
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (typeof document.startViewTransition === "function" && !prefersReducedMotion) {
+      document.startViewTransition(showPersonalReading);
+      return;
+    }
+
+    showPersonalReading();
   };
 
   return (

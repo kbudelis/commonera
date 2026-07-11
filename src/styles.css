@@ -68,8 +68,10 @@ input:focus-visible {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
+  perspective: 1200px;
   background: var(--paper);
   box-shadow: 0 18px 70px rgba(26, 31, 47, 0.2);
+  scroll-behavior: smooth;
   scroll-snap-type: y proximity;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -205,7 +207,7 @@ h1 {
 }
 
 .transition-section {
-  cursor: pointer;
+  animation: paper-reveal 6s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .zodiac-visual--compact {
@@ -214,19 +216,7 @@ h1 {
 }
 
 .transition-section .zodiac-visual--compact {
-  animation: zodiac-settle 760ms cubic-bezier(0.65, 0, 0.35, 1) both;
-}
-
-.transition-tap-target {
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
+  animation: zodiac-settle 6s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .section-copy {
@@ -309,6 +299,12 @@ h1 {
 
 .birthday-copy {
   width: min(100%, 320px);
+  view-transition-name: birth-copy;
+}
+
+.birthday-section .zodiac-visual--compact,
+.personal-section .zodiac-visual--arc {
+  view-transition-name: zodiac;
 }
 
 .birthday-form {
@@ -362,6 +358,10 @@ h1 {
   padding-top: clamp(132px, 18dvh, 176px);
 }
 
+.personal-section .reading-copy {
+  view-transition-name: birth-copy;
+}
+
 .zodiac-visual--arc {
   position: absolute;
   z-index: 0;
@@ -394,6 +394,16 @@ h1 {
     rgba(23, 41, 95, 0.045);
   border: 1px solid rgba(23, 41, 95, 0.28);
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.constellation-peek {
+  position: absolute;
+  bottom: max(-112px, -26cqw);
+  left: 50%;
+  z-index: 2;
+  margin: 0;
+  transform: translateX(-50%);
+  animation: constellation-peek-rise 2.4s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .month-section .reading-copy {
@@ -434,6 +444,118 @@ h1 {
   }
 }
 
+@keyframes paper-reveal {
+  0%,
+  12% {
+    background: var(--blue);
+  }
+  100% {
+    background: var(--paper);
+  }
+}
+
+@keyframes birth-copy-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-32dvh);
+  }
+}
+
+@keyframes birth-copy-in {
+  from {
+    opacity: 0;
+    transform: translateY(42dvh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zodiac-rise-fallback {
+  from {
+    top: clamp(42px, 8dvh, 72px);
+    width: min(84cqw, 370px);
+  }
+  to {
+    top: calc(112px - min(122cqw, 540px));
+    width: min(122cqw, 540px);
+  }
+}
+
+@keyframes constellation-peek-rise {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 22dvh);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes section-swing-up {
+  from {
+    opacity: 0.82;
+    transform: translateY(14%) rotateX(-7deg) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0) scale(1);
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-group(zodiac) {
+  z-index: 4;
+  animation-duration: 2.4s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+::view-transition-group(birth-copy) {
+  z-index: 3;
+  animation-duration: 2.4s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+::view-transition-old(birth-copy) {
+  animation: birth-copy-out 1.6s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+::view-transition-new(birth-copy) {
+  animation: birth-copy-in 2.4s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@supports not (view-transition-name: none) {
+  .personal-section .zodiac-visual--arc {
+    animation: zodiac-rise-fallback 2.4s cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+
+  .personal-section .reading-copy {
+    animation: birth-copy-in 2.4s cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .month-section,
+  .upcoming-section {
+    backface-visibility: hidden;
+    transform-origin: 50% 0;
+    animation: section-swing-up linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% entry 100%;
+  }
+}
+
 @media (max-width: 430px), (max-height: 932px) {
   .flow-page {
     box-shadow: none;
@@ -452,5 +574,11 @@ h1 {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .month-section,
+  .upcoming-section {
+    animation: none !important;
+    transform: none !important;
   }
 }
