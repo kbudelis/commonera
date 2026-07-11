@@ -42,7 +42,7 @@ const INITIAL_ANGLES: LayerAngles = {
 };
 
 function settledAngles(index: number): LayerAngles {
-  const angle = -sectorAngle(index);
+  const angle = 180 - sectorAngle(index);
   return { atlas: angle, labels: angle, symbols: angle, figures: angle };
 }
 
@@ -89,6 +89,22 @@ function MeridianTicks() {
             x2={end.x}
             y2={end.y}
           />
+        );
+      })}
+    </g>
+  );
+}
+
+function DegreeScale() {
+  return (
+    <g className={styles.degreeScale} aria-hidden="true">
+      {Array.from({ length: 12 }, (_, index) => {
+        const angle = index * 30 + 180;
+        const point = polar(292, angle);
+        return (
+          <text key={index} x={point.x} y={point.y + 3} textAnchor="middle">
+            {index * 30}°
+          </text>
         );
       })}
     </g>
@@ -237,7 +253,6 @@ export default function ZodiacWheel({
           </defs>
 
           <circle className={styles.outerPlate} cx={CENTER} cy={CENTER} r="356" />
-          <circle className={styles.outerPlateInset} cx={CENTER} cy={CENTER} r="326" />
 
           <g className={styles.rotorGroup} style={layerStyle("atlas")}>
             <circle className={styles.atlasBase} cx={CENTER} cy={CENTER} r="318" />
@@ -256,6 +271,8 @@ export default function ZodiacWheel({
             <circle className={styles.atlasOrbit} cx={CENTER} cy={CENTER} r="170" />
             <MeridianTicks />
           </g>
+
+          <DegreeScale />
 
           <g className={styles.rotorGroup} style={layerStyle("labels")}>
             <circle className={styles.labelOrbit} cx={CENTER} cy={CENTER} r="286" />
@@ -301,7 +318,6 @@ export default function ZodiacWheel({
           </g>
 
           <g className={styles.rotorGroup} style={layerStyle("figures")}>
-            <circle className={styles.figureOrbit} cx={CENTER} cy={CENTER} r="334" />
             {ZODIAC_SECTORS.map((sector, index) => {
               const angle = sectorAngle(index);
               const point = polar(334, angle);
@@ -313,11 +329,6 @@ export default function ZodiacWheel({
                 </g>
               );
             })}
-          </g>
-
-          <g className={styles.northIndex}>
-            <path d={`M ${CENTER - 8} 7 L ${CENTER} 23 L ${CENTER + 8} 7`} />
-            <line x1={CENTER} y1="21" x2={CENTER} y2="37" />
           </g>
 
           {lastLocked && (

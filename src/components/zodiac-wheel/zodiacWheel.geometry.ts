@@ -30,7 +30,7 @@ export function planSettledAngle(
   turns: number,
   direction: Direction
 ) {
-  const target = normalizeAngle(-sectorAngle(targetIndex));
+  const target = normalizeAngle(180 - sectorAngle(targetIndex));
   const currentNormalized = normalizeAngle(current);
 
   if (direction === 1) {

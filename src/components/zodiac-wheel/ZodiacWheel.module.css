@@ -55,14 +55,6 @@
 
 .outerPlate {
   fill: var(--paper);
-  stroke: var(--ink);
-  stroke-width: 1.5;
-}
-
-.outerPlateInset {
-  fill: none;
-  stroke: rgba(16, 38, 95, 0.6);
-  stroke-width: 0.8;
 }
 
 .rotorGroup,
@@ -137,12 +129,6 @@
   stroke-width: 0.65;
 }
 
-.figureOrbit {
-  fill: none;
-  stroke: rgba(16, 38, 95, 0.5);
-  stroke-width: 0.75;
-}
-
 .sectorDivider {
   stroke: rgba(255, 248, 232, 0.58);
   stroke-width: 0.7;
@@ -167,13 +153,14 @@
   font-weight: 400;
 }
 
-.northIndex path,
-.northIndex line {
-  fill: none;
-  stroke: var(--ink);
-  stroke-width: 1.5;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
+.degreeScale text {
+  fill: var(--paper-line);
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 0.02em;
+  paint-order: stroke;
+  stroke: rgba(7, 27, 84, 0.82);
+  stroke-width: 2px;
 }
 
 .lockPulse {
