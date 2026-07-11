@@ -46,12 +46,33 @@ export class LevelController {
       if (level.kind === 'scroll') {
         this.arc ??= this.startScroll();
         this.arc.begin();
+        this.addTimelineReturn();
       } else {
         this.session = new MiniLevelSession(this.shared, level, resolveEra(level.eraId), () =>
           this.complete(level),
         );
         this.session.start();
       }
+    });
+  }
+
+  /** Way back from the scroll to the map — a clean page reload; tearing the
+      full arc down in-page isn't worth the risk. Shown in restful states only. */
+  private addTimelineReturn() {
+    if (document.getElementById('tl-return')) return;
+    const { ui, machine } = this.shared;
+    ui.insertAdjacentHTML(
+      'beforeend',
+      `<button id="tl-return" style="position:fixed;top:16px;left:18px;z-index:5;
+        pointer-events:auto;background:none;border:0;color:var(--dim);cursor:pointer;
+        font:500 13px Rubik,system-ui;text-decoration:underline;display:none">⟵ Timeline</button>`,
+    );
+    const btn = ui.querySelector<HTMLButtonElement>('#tl-return')!;
+    btn.addEventListener('click', () => {
+      location.href = location.pathname;
+    });
+    machine.onChange((s) => {
+      btn.style.display = ['explore', 'celebration'].includes(s.name) ? '' : 'none';
     });
   }
 

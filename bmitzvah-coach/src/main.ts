@@ -23,6 +23,7 @@ import { WordIndex } from './text/wordIndex';
 import { Screens } from './ui/screens';
 import { LearnerStrip } from './ui/strip';
 import { LevelController } from './levels/controller';
+import { LEVELS } from './levels/levels';
 import type { AppShared, DevHooks } from './appShared';
 
 const base = import.meta.env.BASE_URL;
@@ -686,6 +687,12 @@ async function boot() {
   const controller = new LevelController(shared, () => startScrollArc(shared));
   if (import.meta.env.DEV) shared.dev.gotoLevel = (n: number) => controller.startLevel(n);
 
+  // Legacy saves: whoever finished the original arc has earned the ladder.
+  if (shared.progress.celebrated && !shared.progress.levelsCompleted.length) {
+    shared.progress.levelsCompleted = LEVELS.map((l) => l.id);
+    shared.persist();
+  }
+
   // ?level=1..6 jumps straight into a mini level (dev/tests).
   const levelParam = Number(shared.params.get('level') || 0);
   if (levelParam >= 1 && levelParam <= 6) {
@@ -693,14 +700,24 @@ async function boot() {
     return;
   }
 
-  // Default route (and ?level=7, the stable alias tests use): landing → the
-  // full scroll arc. The timeline map takes over as default in the next step.
-  const arc = startScrollArc(shared);
+  // ?level=7: the stable alias tests use — landing straight into the full arc.
+  if (levelParam === 7) {
+    const arc = startScrollArc(shared);
+    shared.screens.landing((date) => {
+      if (date) shared.progress.bmitzvahDate = date;
+      shared.persist();
+      shared.engine.unlock();
+      arc.begin();
+    });
+    return;
+  }
+
+  // Default: landing → the era timeline.
   shared.screens.landing((date) => {
     if (date) shared.progress.bmitzvahDate = date;
     shared.persist();
     shared.engine.unlock();
-    arc.begin();
+    controller.showMap();
   });
 }
 
