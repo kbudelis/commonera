@@ -422,11 +422,11 @@ h1 {
 }
 
 .personal-section {
-  padding-top: clamp(132px, 18dvh, 176px);
+  padding-top: clamp(118px, 16dvh, 150px);
 }
 
 .personal-section .reading-copy {
-  gap: 12px;
+  gap: 9px;
   view-transition-name: birth-copy;
 }
 
@@ -469,11 +469,14 @@ h1 {
 }
 
 .hero-glyph-art {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  width: min(30cqw, 120px);
-  height: clamp(78px, 11dvh, 96px);
-  margin: 0 auto 28px;
+  width: min(40cqw, 160px);
+  height: min(47.5cqw, 190px);
+  margin: 0 auto 18px;
+  overflow: hidden;
 }
 
 .hero-glyph-art img {
@@ -482,7 +485,14 @@ h1 {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: contrast(1.08);
   mix-blend-mode: multiply;
+}
+
+.hero-glyph-art + .eyebrow {
+  position: relative;
+  z-index: 2;
+  margin-top: 14px;
 }
 
 .constellation-art {
