@@ -128,7 +128,9 @@ export function layoutColumn(words: LayoutWord[], opts: LayoutOptions): ColumnLa
     const y = baseline - ascent * maxScale;
     const h = ascent * maxScale + descent;
     const padX = lineHeight * hitPadFactor;
-    const padY = lineHeight * hitPadFactor;
+    // Vertical pad may never reach into the neighboring line — overlapping
+    // line bands break the WordIndex binary search.
+    const padY = Math.max(0, Math.min(padX, (lineHeight - h) / 2));
     boxes.push({
       id: word.id,
       line,

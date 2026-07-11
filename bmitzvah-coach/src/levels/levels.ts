@@ -66,7 +66,7 @@ export const LEVELS: readonly LevelDef[] = [
       labels: true,
       strip: { he: false, translit: false, gloss: true },
     },
-    interaction: { hitPadFactor: 0.4 },
+    interaction: { hitPadFactor: 0.12 },
     audioTrack: 'p1',
   },
   {
@@ -94,7 +94,7 @@ export const LEVELS: readonly LevelDef[] = [
       labels: true,
       strip: STRIP_ALL,
     },
-    interaction: { hitPadFactor: 0.35 },
+    interaction: { hitPadFactor: 0.18 },
     audioTrack: 'p1',
   },
   {
@@ -117,7 +117,7 @@ export const LEVELS: readonly LevelDef[] = [
       labels: false,
       strip: STRIP_ALL,
     },
-    interaction: { hitPadFactor: 0.25, chunkPlayback: true },
+    interaction: { hitPadFactor: 0.2, chunkPlayback: true },
     audioTrack: 'p1',
   },
   {
@@ -132,7 +132,7 @@ export const LEVELS: readonly LevelDef[] = [
       labels: false,
       strip: { he: true, translit: false, gloss: true },
     },
-    interaction: { hitPadFactor: 0.2 },
+    interaction: { hitPadFactor: 0.16 },
     audioTrack: 'p1',
   },
   {
@@ -148,7 +148,7 @@ export const LEVELS: readonly LevelDef[] = [
       labels: false,
       strip: STRIP_ALL, // he: pointed Hebrew — vowels appear on hover
     },
-    interaction: { hitPadFactor: 0.18 },
+    interaction: { hitPadFactor: 0.14 },
     audioTrack: 'p1',
   },
   {

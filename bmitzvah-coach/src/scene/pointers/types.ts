@@ -1,7 +1,7 @@
 import type { Euler, Group, Vector3 } from 'three/webgpu';
 
 export type PointerId =
-  | 'finger'
+  | 'touchCursor'
   | 'mouseArrow'
   | 'blockCursor'
   | 'ballpoint'
