@@ -88,6 +88,7 @@ const renderFlow = (state, welcomeLine = 0) =>
       nameError: null,
       birthdayValue: "",
       welcomeLine,
+      welcomeExiting: false,
       onAdvanceWelcome() {},
       onAdvance() {},
       onNameChange() {},
@@ -99,14 +100,20 @@ const renderFlow = (state, welcomeLine = 0) =>
 
 test("welcome renders the approved four-page sequence", () => {
   const pages = [
-    "Where were you\nwhen the universe began?",
-    "Some part of you\nwas already on its way.",
-    "Through stars.\nThrough seasons.\nThrough those who came before you.",
-    "And even then,\nthe heavens knew your name.\n\nWelcome.",
+    ["Where were you", "when the universe began?"],
+    ["Some part of you", "was already on its way."],
+    ["Through stars.", "Through seasons.", "Through those who came before you."],
+    ["And even then,", "the heavens knew your name.", "Welcome."],
   ];
 
   pages.forEach((page, index) => {
-    assert.ok(renderFlow(createInitialFlow(), index).includes(page));
+    const markup = renderFlow(createInitialFlow(), index);
+    let previousLine = -1;
+    page.forEach((line) => {
+      const currentLine = markup.indexOf(`>${line}</span>`);
+      assert.ok(currentLine > previousLine);
+      previousLine = currentLine;
+    });
   });
 });
 

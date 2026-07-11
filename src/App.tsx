@@ -24,6 +24,9 @@ import {
 const blueZodiacUrl = "/blue-zodiac.jpg";
 const zodiacTransitionDuration = 3_000;
 const zodiacTransitionHold = 500;
+const welcomeFadeOutDuration = 900;
+const welcomeLineRevealDuration = 1_100;
+const welcomeLineStagger = 720;
 
 const constellationUrls: Record<MonthKey, string> = {
   nisan: new URL("./assets/constellations/aries.png", import.meta.url).href,
@@ -56,10 +59,10 @@ const lalouGlyphUrls: Record<MonthKey, string> = {
 };
 
 const welcomeLines = [
-  "Where were you\nwhen the universe began?",
-  "Some part of you\nwas already on its way.",
-  "Through stars.\nThrough seasons.\nThrough those who came before you.",
-  "And even then,\nthe heavens knew your name.\n\nWelcome.",
+  ["Where were you", "when the universe began?"],
+  ["Some part of you", "was already on its way."],
+  ["Through stars.", "Through seasons.", "Through those who came before you."],
+  ["And even then,", "the heavens knew your name.", "Welcome."],
 ] as const;
 
 export function easeInOutCubic(progress: number): number {
@@ -153,6 +156,7 @@ interface FlowSectionsProps {
   nameError: string | null;
   birthdayValue: string;
   welcomeLine: number;
+  welcomeExiting: boolean;
   onAdvanceWelcome: () => void;
   onAdvance: () => void;
   onNameChange: (value: string) => void;
@@ -167,6 +171,7 @@ export function FlowSections({
   nameError,
   birthdayValue,
   welcomeLine,
+  welcomeExiting,
   onAdvanceWelcome,
   onAdvance,
   onNameChange,
@@ -188,6 +193,7 @@ export function FlowSections({
               <WelcomeScreen
                 key={landmark}
                 line={welcomeLine}
+                exiting={welcomeExiting}
                 onAdvance={onAdvanceWelcome}
               />
             );
@@ -225,11 +231,15 @@ export function FlowSections({
 
 function WelcomeScreen({
   line,
+  exiting,
   onAdvance,
 }: {
   line: number;
+  exiting: boolean;
   onAdvance: () => void;
 }) {
+  const lines = welcomeLines[line] ?? welcomeLines[3];
+
   return (
     <section
       className="flow-section welcome-section"
@@ -237,9 +247,22 @@ function WelcomeScreen({
       aria-labelledby="welcome-line"
     >
       <ZodiacVisual variant="immersive" />
-      <div className="welcome-content">
-        <p id="welcome-line" className="welcome-line" aria-live="polite">
-          {welcomeLines[line] ?? welcomeLines[welcomeLines.length - 1]}
+      <div className={`welcome-content${exiting ? " welcome-content--exiting" : ""}`}>
+        <p
+          key={line}
+          id="welcome-line"
+          className={`welcome-line${exiting ? " welcome-line--exiting" : ""}`}
+          aria-live="polite"
+        >
+          {lines.map((text, index) => (
+            <span
+              key={text}
+              className={`welcome-line-part${text === "Welcome." ? " welcome-line-part--stanza" : ""}`}
+              style={{ animationDelay: `${index * welcomeLineStagger}ms` }}
+            >
+              {text}
+            </span>
+          ))}
         </p>
         <button className="welcome-tap" onClick={onAdvance}>
           tap to continue
@@ -470,6 +493,8 @@ function UpcomingPlaceholder() {
 export default function App() {
   const [flow, setFlow] = useState<FlowState>(createInitialFlow);
   const [welcomeLine, setWelcomeLine] = useState(0);
+  const [isWelcomeTransitioning, setIsWelcomeTransitioning] = useState(false);
+  const [isWelcomeExiting, setIsWelcomeExiting] = useState(false);
   const [nameValue, setNameValue] = useState("");
   const [nameError, setNameError] = useState<string | null>(null);
   const [birthdayValue, setBirthdayValue] = useState("");
@@ -505,10 +530,57 @@ export default function App() {
 
   const advanceWelcome = () => {
     if (welcomeLine < welcomeLines.length - 1) {
-      setWelcomeLine((current) => current + 1);
+      if (isWelcomeTransitioning) {
+        return;
+      }
+
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (prefersReducedMotion) {
+        setWelcomeLine((current) => current + 1);
+        return;
+      }
+
+      const nextPage = welcomeLine + 1;
+      const nextPageLines = welcomeLines[nextPage] ?? welcomeLines[3];
+      const revealDuration =
+        welcomeLineRevealDuration +
+        (nextPageLines.length - 1) * welcomeLineStagger;
+
+      setIsWelcomeTransitioning(true);
+      setIsWelcomeExiting(true);
+      window.setTimeout(() => {
+        setWelcomeLine(nextPage);
+        setIsWelcomeExiting(false);
+        window.setTimeout(
+          () => setIsWelcomeTransitioning(false),
+          revealDuration,
+        );
+      }, welcomeFadeOutDuration);
       return;
     }
-    applyAction({ type: "advance" });
+
+    if (isWelcomeTransitioning) {
+      return;
+    }
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    if (prefersReducedMotion) {
+      applyAction({ type: "advance" });
+      return;
+    }
+
+    setIsWelcomeTransitioning(true);
+    setIsWelcomeExiting(true);
+    window.setTimeout(() => {
+      applyAction({ type: "advance" });
+      setIsWelcomeExiting(false);
+      setIsWelcomeTransitioning(false);
+    }, welcomeFadeOutDuration);
   };
 
   const advanceFromZodiac = () => {
@@ -576,6 +648,7 @@ export default function App() {
       nameError={nameError}
       birthdayValue={birthdayValue}
       welcomeLine={welcomeLine}
+      welcomeExiting={isWelcomeExiting}
       onAdvanceWelcome={advanceWelcome}
       onAdvance={advanceFromZodiac}
       onNameChange={(value) => {
