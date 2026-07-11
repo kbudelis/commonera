@@ -81,4 +81,30 @@ describe('layoutColumn', () => {
     expect(b.hit.w).toBeGreaterThan(b.w);
     expect(b.hit.h).toBeGreaterThan(b.h);
   });
+
+  it('starts a new line at breakBefore even when the word would fit', () => {
+    const { boxes, lineCount } = layoutColumn(
+      [
+        { id: 'w1', text: 'אב' },
+        { id: 'w2', text: 'גד', breakBefore: true },
+      ],
+      opts,
+    );
+    expect(lineCount).toBe(2);
+    expect(boxes[1].line).toBe(1);
+    expect(boxes[1].x + boxes[1].w).toBe(190); // restarts at the right margin
+  });
+
+  it('ignores breakBefore on the first word of a line', () => {
+    const { lineCount } = layoutColumn([{ id: 'w1', text: 'אב', breakBefore: true }], opts);
+    expect(lineCount).toBe(1);
+  });
+
+  it('grows the ink rect downward with descentFactor', () => {
+    const tight = layoutColumn([{ id: 'w1', text: 'אב' }], opts).boxes[0];
+    const roomy = layoutColumn([{ id: 'w1', text: 'אב' }], { ...opts, descentFactor: 0.5 }).boxes[0];
+    expect(roomy.h).toBeGreaterThan(tight.h);
+    expect(roomy.y).toBe(tight.y); // extra room is below the baseline only
+    expect(roomy.baseline).toBe(tight.baseline);
+  });
 });
