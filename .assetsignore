@@ -3,8 +3,10 @@
 # Worker with assets.directory "."). Harmless otherwise.
 .claude/
 .codex/
+.agents/
 .planning/
 CLAUDE.md
+AGENTS.md
 STATE.md
 VERSION
 gsd-file-manifest.json
