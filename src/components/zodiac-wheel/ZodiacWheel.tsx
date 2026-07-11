@@ -30,8 +30,8 @@ const LAYERS: readonly LayerConfig[] = [
   { id: "atlas", duration: 5_000, turns: 1, direction: -1 },
   { id: "labels", duration: 6_500, turns: 1, direction: 1 },
   { id: "symbols", duration: 8_000, turns: 1, direction: -1 },
-  { id: "figures", duration: 9_500, turns: 1, direction: 1 },
-  { id: "ticks", duration: 12_000, turns: 1, direction: -1 }
+  { id: "figures", duration: 7_000, turns: 1, direction: 1 },
+  { id: "ticks", duration: 10_000, turns: 1, direction: -1 }
 ];
 
 const INITIAL_ANGLES: LayerAngles = {
