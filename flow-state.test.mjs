@@ -147,15 +147,15 @@ test("birthday and month compositions render real visual assets", () => {
 
   assert.match(birthdayMarkup, /class="hero-glyph-art"/);
   assert.equal(
-    (birthdayMarkup.match(/constellation-art--bridge/g) ?? []).length,
+    (birthdayMarkup.match(/constellation-art--month/g) ?? []).length,
     1,
   );
   assert.equal(
-    (monthMarkup.match(/constellation-art--bridge/g) ?? []).length,
+    (monthMarkup.match(/constellation-art--month/g) ?? []).length,
     1,
   );
   assert.ok(
-    birthdayMarkup.indexOf("constellation-art--bridge") >
+    birthdayMarkup.indexOf("constellation-art--month") >
       birthdayMarkup.indexOf('data-landmark="month"'),
   );
   assert.doesNotMatch(birthdayMarkup, /constellation-placeholder/);

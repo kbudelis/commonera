@@ -22,7 +22,8 @@ import {
 } from "./flow.js";
 
 const blueZodiacUrl = "/blue-zodiac.jpg";
-const zodiacTransitionDuration = 6_500;
+const zodiacTransitionDuration = 3_000;
+const zodiacTransitionHold = 500;
 
 const constellationUrls: Record<MonthKey, string> = {
   nisan: new URL("./assets/constellations/aries.png", import.meta.url).href,
@@ -103,7 +104,7 @@ function ConstellationArt({
 }) {
   return (
     <div
-      className="constellation-art constellation-art--bridge"
+      className="constellation-art constellation-art--month"
       role="img"
       aria-label={`${label} constellation`}
     >
@@ -243,7 +244,7 @@ function ZodiacTransition({ onAdvance }: { onAdvance: () => void }) {
   useEffect(() => {
     const delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches
       ? 500
-      : zodiacTransitionDuration;
+      : zodiacTransitionDuration + zodiacTransitionHold;
     const timeout = window.setTimeout(onAdvance, delay);
 
     return () => window.clearTimeout(timeout);
@@ -467,6 +468,24 @@ export default function App() {
     applyAction({ type: "advance" });
   };
 
+  const advanceFromZodiac = () => {
+    const showBirthday = () => {
+      flushSync(() => {
+        setFlow((current) => transitionFlow(current, { type: "advance" }));
+      });
+    };
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (typeof document.startViewTransition === "function" && !prefersReducedMotion) {
+      document.startViewTransition(showBirthday);
+      return;
+    }
+
+    showBirthday();
+  };
+
   const submitBirthday = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const next = transitionFlow(flow, {
@@ -504,7 +523,7 @@ export default function App() {
       birthdayValue={birthdayValue}
       welcomeLine={welcomeLine}
       onAdvanceWelcome={advanceWelcome}
-      onAdvance={() => applyAction({ type: "advance" })}
+      onAdvance={advanceFromZodiac}
       onBirthdayChange={setBirthdayValue}
       onBirthdaySubmit={submitBirthday}
       onSkip={() => applyAction({ type: "skip-to-month" })}
