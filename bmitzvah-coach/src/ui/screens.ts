@@ -67,6 +67,23 @@ export class Screens {
         input[type=date] { background: rgba(212,160,23,0.1); border: 1px solid rgba(212,160,23,0.35);
           color: #e8d8b0; border-radius: 10px; padding: 9px 12px; font: 500 14px Rubik;
           margin-top: 8px; color-scheme: dark; }
+        .tl-rail { display: flex; flex-direction: column; gap: 8px; margin-top: 18px;
+          max-height: 56vh; overflow-y: auto; }
+        .tl-node { display: grid; grid-template-columns: 86px 1fr auto; align-items: center;
+          gap: 12px; text-align: left; padding: 11px 16px; border-radius: 12px;
+          background: rgba(212,160,23,0.08); border: 1.5px solid var(--card-border);
+          color: var(--paper); font: 500 15px Rubik, system-ui; cursor: pointer;
+          transition: background 0.15s ease, border-color 0.15s ease; }
+        .tl-node:hover:not([disabled]) { background: rgba(212,160,23,0.2); }
+        .tl-node .tl-year { color: var(--accent); font-weight: 700; font-size: 13px;
+          letter-spacing: 0.03em; }
+        .tl-node .tl-state { color: var(--dim); font-size: 12.5px; white-space: nowrap; }
+        .tl-node.current { border-color: var(--accent);
+          animation: tl-pulse 2.2s ease-in-out infinite; }
+        .tl-node.locked { opacity: 0.45; cursor: default; }
+        .tl-node.done .tl-state { color: var(--muted); }
+        @keyframes tl-pulse { 0%, 100% { box-shadow: 0 0 0 rgba(212,160,23,0); }
+          50% { box-shadow: 0 0 18px rgba(212,160,23,0.35); } }
         @media (max-width: 600px) { .card { padding: 26px 22px; } .card h1 { font-size: 24px; } }
       </style>
       <div id="hint"></div>
@@ -187,6 +204,65 @@ export class Screens {
       this.dismiss('meaning');
       onNext();
     });
+  }
+
+  levelIntro(kicker: string, title: string, body: string, cta: string, onStart: () => void) {
+    const el = this.layer(
+      'level-intro',
+      `<div class="card"><div class="kicker">${kicker}</div>
+       <h2>${title}</h2><p>${body}</p>
+       <button class="btn" id="go">${cta}</button></div>`,
+    );
+    el.querySelector('#go')!.addEventListener('click', () => {
+      this.dismiss('level-intro');
+      onStart();
+    });
+  }
+
+  levelComplete(kicker: string, title: string, body: string, cta: string, onNext: () => void) {
+    const el = this.layer(
+      'level-complete',
+      `<div class="card"><div class="kicker">${kicker} ✓</div>
+       <h2>${title}</h2><p>${body}</p>
+       <button class="btn" id="on">${cta}</button></div>`,
+    );
+    el.querySelector('#on')!.addEventListener('click', () => {
+      this.dismiss('level-complete');
+      onNext();
+    });
+  }
+
+  timelineMap(
+    nodes: { index: number; era: string; year: string; status: 'done' | 'current' | 'locked' }[],
+    onPick: (index: number) => void,
+  ) {
+    const rows = nodes
+      .map(
+        (n) => `<button class="tl-node ${n.status}" data-level="${n.index}"
+          ${n.status === 'locked' ? 'disabled' : ''}>
+          <span class="tl-year">${n.year}</span>
+          <span class="tl-era">${n.era}</span>
+          <span class="tl-state">${
+            n.status === 'done' ? `✓ ${copy.timeline.replay}` : n.status === 'locked' ? `🔒 ${copy.timeline.locked}` : '→'
+          }</span>
+        </button>`,
+      )
+      .join('');
+    const el = this.layer(
+      'timeline',
+      `<div class="card" style="max-width:440px">
+        <div class="kicker">${copy.timeline.kicker}</div>
+        <h2>${copy.timeline.title}</h2>
+        <p class="small" style="margin-top:2px">${copy.timeline.hint}</p>
+        <div class="tl-rail">${rows}</div>
+      </div>`,
+    );
+    el.querySelectorAll<HTMLButtonElement>('.tl-node:not([disabled])').forEach((b) =>
+      b.addEventListener('click', () => {
+        this.dismiss('timeline');
+        onPick(Number(b.dataset.level));
+      }),
+    );
   }
 
   baruchShem(he: string, tl: string, en: string, onDone: () => void) {

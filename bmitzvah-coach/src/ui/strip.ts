@@ -40,11 +40,38 @@ export class LearnerStrip {
     root.appendChild(this.el);
   }
 
+  private cfg = { he: true, translit: true, gloss: true };
+
+  /** Per-level display mode: which lines the strip shows (the difficulty strata). */
+  configure(cfg: { he: boolean; translit: boolean; gloss: boolean }) {
+    this.cfg = cfg;
+  }
+
   show(word: ShemaWord, anchor: { x: number; y: number; z: number }) {
     this.heEl.textContent = word.hePointed;
+    this.heEl.style.display = this.cfg.he ? '' : 'none';
     this.translitEl.textContent = word.translit;
+    this.translitEl.style.display = this.cfg.translit && word.translit ? '' : 'none';
     this.glossEl.textContent = word.gloss ?? '';
-    this.glossEl.style.display = word.gloss ? '' : 'none';
+    this.glossEl.style.display = this.cfg.gloss && word.gloss ? '' : 'none';
+    this.place(anchor);
+  }
+
+  /** Whole-line display for asides (Baruch Shem) — always all three lines. */
+  showLine(
+    line: { he: string; translit: string; english: string },
+    anchor: { x: number; y: number; z: number },
+  ) {
+    this.heEl.textContent = line.he;
+    this.heEl.style.display = '';
+    this.translitEl.textContent = line.translit;
+    this.translitEl.style.display = '';
+    this.glossEl.textContent = line.english;
+    this.glossEl.style.display = '';
+    this.place(anchor);
+  }
+
+  private place(anchor: { x: number; y: number; z: number }) {
     this.worldPos.set(anchor.x, anchor.y, anchor.z);
     this.visible = true;
     this.el.style.opacity = '1';

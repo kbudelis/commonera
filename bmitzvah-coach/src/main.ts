@@ -1,4 +1,4 @@
-import { TextureLoader, SRGBColorSpace, Vector3, type Mesh, type Texture } from 'three/webgpu';
+import { TextureLoader, SRGBColorSpace, Vector3, type Mesh } from 'three/webgpu';
 import { AudioEngine } from './audio/engine';
 import { KaraokePlayer } from './audio/karaoke';
 import { ScrubPlayer } from './audio/scrub';
@@ -11,17 +11,19 @@ import {
   createParchmentMaterial,
   type ParchmentMaterialResult,
 } from './scene/parchmentMaterial';
-import { createSceneContext, type SceneContext } from './scene/renderer';
+import { createSceneContext } from './scene/renderer';
 import { createRollers } from './scene/rollers';
 import { createScrollColumn, surfacePoint, type ScrollColumnOptions } from './scene/scroll';
 import { Yad } from './scene/yad';
-import { Machine, type AppState } from './state/machine';
-import { daysUntil, loadProgress, saveProgress, type Progress } from './state/progress';
+import { Machine } from './state/machine';
+import { daysUntil, loadProgress, saveProgress } from './state/progress';
 import { bakeColumn, type BakedWord } from './text/bake';
 import { loadFonts } from './text/fonts';
 import { WordIndex } from './text/wordIndex';
 import { Screens } from './ui/screens';
 import { LearnerStrip } from './ui/strip';
+import { LevelController } from './levels/controller';
+import type { AppShared, DevHooks } from './appShared';
 
 const base = import.meta.env.BASE_URL;
 type Pid = 'p1' | 'p2' | 'p3';
@@ -44,42 +46,6 @@ async function loadTexture(loader: TextureLoader, url: string, srgb = false) {
   const t = await loader.loadAsync(base + url);
   if (srgb) t.colorSpace = SRGBColorSpace;
   return t;
-}
-
-/** Test/dev hooks behind window.__shema — sessions overwrite the content-shaped ones. */
-interface DevHooks {
-  wordScreenPos: (id: string) => { x: number; y: number } | null;
-  wordIds: () => string[];
-  state: () => AppState;
-  touched: () => string[];
-  camSettled: () => boolean;
-}
-
-/**
- * Everything built once per page life, shared by every session type
- * (the full scroll arc today; mini levels join in later commits).
- */
-interface AppShared {
-  params: URLSearchParams;
-  canvas: HTMLCanvasElement;
-  ctx: SceneContext;
-  engine: AudioEngine;
-  trackLoads: Map<Pid, Promise<void>>;
-  textures: { albedo: Texture; normal: Texture; rough: Texture };
-  ui: HTMLDivElement;
-  strip: LearnerStrip;
-  screens: Screens;
-  machine: Machine;
-  progress: Progress;
-  persist: () => void;
-  camTarget: Vector3;
-  /** Camera distance that fits a w×h surface (portrait phones are width-bound). */
-  fitDist: (w: number, h: number) => number;
-  /** Per-session render-loop work; the shared loop owns camera lerp + strip reproject. */
-  frameHooks: Set<(t: number, dt: number) => void>;
-  dev: DevHooks;
-  /** Bake ladder: smaller canvases on coarse-pointer/small/low-memory devices. */
-  bakeSize: number;
 }
 
 async function bootShared(): Promise<AppShared> {
@@ -717,9 +683,18 @@ async function boot() {
   }
 
   const shared = await bootShared();
+  const controller = new LevelController(shared, () => startScrollArc(shared));
+  if (import.meta.env.DEV) shared.dev.gotoLevel = (n: number) => controller.startLevel(n);
 
-  // Routing: until the timeline map lands, every route leads to the full
-  // scroll arc. ?level=7 is the stable alias tests use for that experience.
+  // ?level=1..6 jumps straight into a mini level (dev/tests).
+  const levelParam = Number(shared.params.get('level') || 0);
+  if (levelParam >= 1 && levelParam <= 6) {
+    controller.startLevel(levelParam);
+    return;
+  }
+
+  // Default route (and ?level=7, the stable alias tests use): landing → the
+  // full scroll arc. The timeline map takes over as default in the next step.
   const arc = startScrollArc(shared);
   shared.screens.landing((date) => {
     if (date) shared.progress.bmitzvahDate = date;

@@ -27,7 +27,7 @@ export interface LightingOptions {
 }
 
 /** Small hand-painted equirect environment: warm glow above-left, dark room below. */
-function makeEnvTexture(): CanvasTexture {
+export function makeEnvTexture(): CanvasTexture {
   const c = document.createElement('canvas');
   c.width = 128;
   c.height = 64;
