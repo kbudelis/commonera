@@ -359,7 +359,23 @@ h1 {
 }
 
 .personal-section .reading-copy {
+  gap: 12px;
   view-transition-name: birth-copy;
+}
+
+.profile-facts {
+  display: grid;
+  gap: 4px;
+  color: #5f5a4e;
+  font-size: 0.82rem !important;
+  line-height: 1.35 !important;
+}
+
+.return-question {
+  color: #5f5a4e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.92rem !important;
+  font-style: italic;
 }
 
 .zodiac-visual--arc {
@@ -407,11 +423,64 @@ h1 {
 }
 
 .month-section .reading-copy {
-  gap: 20px;
+  gap: 10px;
 }
 
 .month-section .constellation-placeholder {
-  margin-bottom: 16px;
+  width: min(54cqw, 220px);
+  margin-bottom: 4px;
+}
+
+.month-copy h1 {
+  font-size: clamp(2rem, 9cqw, 2.8rem);
+}
+
+.month-archetype {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem !important;
+  line-height: 1.2 !important;
+}
+
+.ritual-card {
+  width: 100%;
+  padding: 11px 14px;
+  border-top: 1px solid rgba(23, 41, 95, 0.22);
+  border-bottom: 1px solid rgba(23, 41, 95, 0.22);
+}
+
+.ritual-card > span {
+  display: block;
+  margin-bottom: 5px;
+  color: #75684f;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ritual-card p {
+  max-width: none;
+  font-size: 0.88rem;
+  line-height: 1.42;
+}
+
+.grounding-note {
+  width: 100%;
+  color: #5f5a4e;
+  font-size: 0.76rem;
+}
+
+.grounding-note summary {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.grounding-note p {
+  max-width: none;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  line-height: 1.38;
 }
 
 .upcoming-section {

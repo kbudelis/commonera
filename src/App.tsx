@@ -1,6 +1,17 @@
 import { FormEvent, useEffect, useState } from "react";
 import { flushSync } from "react-dom";
 import {
+  buildPersonalThread,
+  createStoredBirthProfile,
+  formatBirthdayInput,
+  getBirthMonthEntry,
+  getCurrentSeason,
+  GROUNDING_COPY,
+  loadBirthProfile,
+  saveBirthProfile,
+  type StoredBirthProfileV1,
+} from "./content.js";
+import {
   createInitialFlow,
   FlowAction,
   FlowLandmark,
@@ -96,6 +107,9 @@ export function FlowSections({
   onSkip,
 }: FlowSectionsProps) {
   const landmarks = visibleLandmarksForFlow(state);
+  const birthProfile = state.birthday
+    ? createStoredBirthProfile(state.birthday)
+    : null;
 
   return (
     <main className={`flow-page flow-page--${state.step}`}>
@@ -126,7 +140,9 @@ export function FlowSections({
               />
             );
           case "personal":
-            return <PersonalPlaceholder key={landmark} />;
+            return (
+              <PersonalPlaceholder key={landmark} profile={birthProfile} />
+            );
           case "month":
             return <MonthPlaceholder key={landmark} />;
           case "upcoming":
@@ -252,7 +268,13 @@ function BirthdayStep({
   );
 }
 
-function PersonalPlaceholder() {
+function PersonalPlaceholder({
+  profile,
+}: {
+  profile: StoredBirthProfileV1 | null;
+}) {
+  const month = profile ? getBirthMonthEntry(profile) : null;
+
   return (
     <section
       className="flow-section reading-section personal-section"
@@ -262,13 +284,31 @@ function PersonalPlaceholder() {
       <ZodiacVisual variant="arc" />
       <div className="section-copy reading-copy">
         <p className="hero-glyph" aria-hidden="true">
-          א
+          {month?.correspondence.letter.glyph ?? "א"}
         </p>
-        <h1 id="personal-title">Birth Chart</h1>
-        <p>
-          Your birth month carries a particular character. A short personal
-          reflection will live here.
-        </p>
+        {profile && month ? (
+          <>
+            <p className="eyebrow">{profile.derived.hebrewDate.displayLabel}</p>
+            <h1 id="personal-title">Personal Thread</h1>
+            <p className="profile-facts">
+              <span lang="he" dir="rtl">{profile.derived.hebrewDate.hebrewDisplay}</span>
+              <span>
+                {month.correspondence.mazal.zodiacLabel}{" "}
+                {month.correspondence.mazal.symbol} · {month.correspondence.tribe} ·{" "}
+                {profile.derived.moon.label}
+              </span>
+            </p>
+            <p>{buildPersonalThread(profile)}</p>
+            <p className="return-question">
+              {month.reading.witnessingQuestion}
+            </p>
+          </>
+        ) : (
+          <>
+            <h1 id="personal-title">Personal Thread</h1>
+            <p>Your Hebrew birth profile will appear here.</p>
+          </>
+        )}
       </div>
       <div
         className="constellation-placeholder constellation-peek"
@@ -279,22 +319,39 @@ function PersonalPlaceholder() {
 }
 
 function MonthPlaceholder() {
+  const season = getCurrentSeason();
+  const { correspondence, reading } = season.entry;
+
   return (
     <section
       className="flow-section reading-section month-section"
       data-landmark="month"
       aria-labelledby="month-title"
     >
-      <div className="section-copy reading-copy">
-        <div className="constellation-placeholder" aria-label="Constellation placeholder" />
-        <p className="eyebrow">This month</p>
-        <h1 id="month-title">Month Chart</h1>
-        <p>
-          A short seasonal reading for the month will appear in this space.
+      <div className="section-copy reading-copy month-copy">
+        <div
+          className="constellation-placeholder"
+          aria-label={`${correspondence.mazal.zodiacLabel} constellation placeholder`}
+        />
+        <p className="eyebrow">This month · {season.hebrewDate.exactMonthLabel}</p>
+        <h1 id="month-title">
+          {correspondence.names.english}{" "}
+          <span lang="he" dir="rtl">{correspondence.names.hebrew}</span>
+        </h1>
+        <p className="month-archetype">{reading.archetype}</p>
+        <p className="profile-facts">
+          {correspondence.mazal.zodiacLabel} {correspondence.mazal.symbol} ·{" "}
+          {season.moon.label}
         </p>
-        <p>
-          A small ritual will offer one way to meet what is arriving.
-        </p>
+        <p>{reading.reading}</p>
+        <aside className="ritual-card">
+          <span>Small ritual</span>
+          <p>{reading.ritual}</p>
+        </aside>
+        <details className="grounding-note">
+          <summary>Where this comes from</summary>
+          <p>{GROUNDING_COPY}</p>
+        </details>
       </div>
     </section>
   );
@@ -322,6 +379,17 @@ export default function App() {
   const [birthdayValue, setBirthdayValue] = useState("");
   const [pendingLandmark, setPendingLandmark] =
     useState<FlowLandmark | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedProfile = loadBirthProfile(window.localStorage);
+      if (storedProfile) {
+        setBirthdayValue(
+          formatBirthdayInput(storedProfile.input.civilDateISO),
+        );
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (!pendingLandmark) {
@@ -355,6 +423,11 @@ export default function App() {
     if (next.step !== "personal") {
       setFlow(next);
       return;
+    }
+
+    const profile = createStoredBirthProfile(birthdayValue);
+    if (profile && typeof window !== "undefined") {
+      saveBirthProfile(profile, window.localStorage);
     }
 
     const showPersonalReading = () => {

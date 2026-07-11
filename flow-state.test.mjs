@@ -12,6 +12,11 @@ import {
   FlowSections,
   scrollToLandmarkUnlessReducedMotion,
 } from "./build/flow-test/App.js";
+import {
+  createStoredBirthProfile,
+  getCurrentSeason,
+  MONTH_ENTRIES,
+} from "./build/flow-test/content.js";
 
 function advanceToBirthday() {
   const welcome = createInitialFlow();
@@ -146,4 +151,43 @@ test("reduced motion returns before querying a landmark or scrolling", () => {
   assert.equal(didScroll, false);
   assert.equal(landmarkQueries, 0);
   assert.equal(scrollCalls, 0);
+});
+
+test("the content model contains 12 current-month readings with rituals", () => {
+  const entries = Object.values(MONTH_ENTRIES);
+
+  assert.equal(entries.length, 12);
+  for (const entry of entries) {
+    assert.ok(entry.reading.reading.length > 0);
+    assert.ok(entry.reading.ritual.length > 0);
+    assert.equal(entry.reading.monthKey, entry.correspondence.key);
+  }
+});
+
+test("a birthday produces stable facts without storing authored prose", () => {
+  const profile = createStoredBirthProfile("07/10/1998");
+
+  assert.ok(profile);
+  assert.equal(profile.derived.hebrewDate.monthKey, "tammuz");
+  assert.equal(MONTH_ENTRIES.tammuz.correspondence.letter.glyph, "ח");
+  assert.doesNotMatch(JSON.stringify(profile), /reading|ritual/i);
+});
+
+test("Adar I and Adar II retain their exact labels but share one month entry", () => {
+  const adarI = createStoredBirthProfile("02/15/2024");
+  const adarII = createStoredBirthProfile("03/15/2024");
+
+  assert.ok(adarI);
+  assert.ok(adarII);
+  assert.equal(adarI.derived.hebrewDate.exactMonthLabel, "Adar I");
+  assert.equal(adarII.derived.hebrewDate.exactMonthLabel, "Adar II");
+  assert.equal(adarI.derived.hebrewDate.monthKey, "adar");
+  assert.equal(adarII.derived.hebrewDate.monthKey, "adar");
+});
+
+test("current season derives Tishrei from a fixed civil date", () => {
+  const season = getCurrentSeason(new Date(2024, 9, 3, 12));
+
+  assert.equal(season.hebrewDate.monthKey, "tishrei");
+  assert.equal(season.entry.correspondence.names.english, "Tishrei");
 });

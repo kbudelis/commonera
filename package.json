@@ -10,6 +10,7 @@
     "test:flow": "tsc -p tsconfig.flow-test.json && node --test flow-state.test.mjs"
   },
   "dependencies": {
+    "@hebcal/core": "^6.6.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
