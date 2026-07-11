@@ -112,12 +112,10 @@ const renderFlow = (state, welcomeLine = 0) =>
     }),
   );
 
-test("welcome renders the approved four-page sequence", () => {
+test("welcome renders the approved two-page sequence", () => {
   const pages = [
-    ["Where were you", "when the universe began?"],
-    ["Some part of you", "was already on its way."],
-    ["Through stars.", "Through seasons.", "Through those who came before you."],
-    ["And even then,", "the heavens knew your name.", "Welcome."],
+    ["When the universe began,", "some part of you", "was already on its way."],
+    ["Long before you were born,", "the heavens knew your name."],
   ];
 
   pages.forEach((page, index) => {

@@ -60,10 +60,8 @@ const lalouGlyphUrls: Record<MonthKey, string> = {
 };
 
 const welcomeLines = [
-  ["Where were you", "when the universe began?"],
-  ["Some part of you", "was already on its way."],
-  ["Through stars.", "Through seasons.", "Through those who came before you."],
-  ["And even then,", "the heavens knew your name.", "Welcome."],
+  ["When the universe began,", "some part of you", "was already on its way."],
+  ["Long before you were born,", "the heavens knew your name."],
 ] as const;
 
 export function easeInOutCubic(progress: number): number {
@@ -239,7 +237,7 @@ function WelcomeScreen({
   exiting: boolean;
   onAdvance: () => void;
 }) {
-  const lines = welcomeLines[line] ?? welcomeLines[3];
+  const lines = welcomeLines[line] ?? welcomeLines[1];
 
   return (
     <section
@@ -258,7 +256,7 @@ function WelcomeScreen({
           {lines.map((text, index) => (
             <span
               key={text}
-              className={`welcome-line-part${text === "Welcome." ? " welcome-line-part--stanza" : ""}`}
+              className="welcome-line-part"
               style={{ animationDelay: `${index * welcomeLineStagger}ms` }}
             >
               {text}
@@ -565,7 +563,7 @@ export default function App() {
       }
 
       const nextPage = welcomeLine + 1;
-      const nextPageLines = welcomeLines[nextPage] ?? welcomeLines[3];
+      const nextPageLines = welcomeLines[nextPage] ?? welcomeLines[1];
       const revealDuration =
         welcomeLineRevealDuration +
         (nextPageLines.length - 1) * welcomeLineStagger;
