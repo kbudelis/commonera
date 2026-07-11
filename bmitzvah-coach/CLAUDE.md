@@ -24,7 +24,35 @@ Full three-paragraph Shema (Deut 6:4–9, Deut 11:13–21, Num 15:37–41).
   no backend, static deploy.
 - **Plan**: `~/.claude/plans/hi-claude-i-m-doing-jiggly-pebble.md` (full design doc)
 
-## Experience arc (all implemented)
+## The era ladder (sponsor round, 2026-07-11)
+
+After the sprint demo, Common Era asked for a **stratified experience**:
+difficulty easy→hard, presentation modern→ancient. The app now opens onto a
+**timeline map** ("A journey back through time") of seven levels, each a 3D
+device era carrying progressively more text:
+
+| # | Level (levels.ts) | Era | Content | Typography | Pointer |
+|---|---|---|---|---|---|
+| 1 | l1-tablet | 2026 tablet (light theme) | 12 unique letters of Deut 6:4 | STaM, letter-name labels | pulsing touch cursor |
+| 2 | l2-laptop | 1995 clamshell LCD | 8 key words | pointed, translit labels | mouse arrow |
+| 3 | l3-crt | 1984 green phosphor CRT | Deut 6:4 in 3 phrase chunks (+chunk playback) | pointed, translit on hover | blinking block cursor |
+| 4 | l4-dotmatrix | 1978 tractor-feed printout (raster dot bake pass) | Deut 6:4–5 + Baruch Shem rows | pointed, no translit | ballpoint |
+| 5 | l5-siddur | 1565 printed siddur (MVP goal) | Deut 6:4 + Baruch Shem | consonantal STaM, vowels on hover | wood pointer |
+| 6 | l6-manuscript | ~1200 vellum manuscript | whole first paragraph | consonantal STaM | quill |
+| 7 | l7-scroll | ~100 BCE the scroll | **the original full arc, untouched** | consonantal | silver yad |
+
+Key rules: mini-level Hebrew is **synthesized at runtime** from the corpus
+(`src/levels/synth.ts` — letters by codepoint with an English name table,
+asides split on spaces; NEVER hand-typed); real word ids are reused so p1
+timing slices/glosses just work; letters play their parent word ("ש as in
+Shema"); Baruch Shem rows are silent, `counts:false`, line-level strip —
+liturgy may appear on paper/screens but never on the scroll. Completion =
+touch every counting token. Per-level intros in `copy.ts` `levelCopy` carry
+the modern→literal translation gradient. Progress adds `levelsCompleted` to
+`bmc.progress.v1` (legacy celebrated saves unlock the whole ladder).
+Deferred by agreement: particle/delighter effects, young-voice audio.
+
+## Original experience arc (now level 7, reachable via the map or ?level=7)
 
 Landing ("Let's open the scroll", optional B'Mitzvah date → countdown; parent modal) →
 camera dollies to column 1 → tutorial (pulsing שמע, "touch it", RTL hint, 8s-idle
@@ -59,7 +87,21 @@ Then: repo created, pushed, Pages enabled, live URL smoke-tested.
 ## Architecture map
 
 ```
-src/main.ts                 # orchestration: columns, state flow, quiz, celebration (the big file)
+src/main.ts                 # bootShared() (renderer/audio/screens/render-loop with frameHooks) +
+                            # startScrollArc() (the original arc, moved verbatim) + routing
+src/appShared.ts            # AppShared/DevHooks contracts shared by all session types
+src/levels/levels.ts        # the 7-level ladder table (content/typography/interaction specs)
+src/levels/synth.ts         # runtime token synthesis (letters/words/phrases/verses) + LETTER_NAMES
+src/levels/session.ts       # MiniLevelSession: bake → era → pointer wiring → touch-all → teardown
+src/levels/controller.ts    # timeline map → level intro → session → back to map; level 7 handoff
+src/scene/eras/types.ts     # EraDef/EraScene/TextSurface contract (surfaces face +z; CPU verts)
+src/scene/eras/*.ts         # one file per device era; index.ts registry (fallback: defaultEra)
+src/scene/pointers/*.ts     # PointerVisual builders (look only — the feel stays in yad.ts)
+src/scene/highlightRig.ts   # the three UV-rect glow handles, shared by every era material
+src/scene/screenMaterial.ts # unlit self-lit screens (darkOnLight LCD / lightOnDark phosphor)
+src/scene/paperMaterial.ts  # green-bar tractor paper
+src/ui/theme.ts             # per-era CSS token overrides (:root vars in index.html) + data-era
+src/ui/labels.ts            # persistent DOM token labels (letter names / translit)
 src/content/types.ts        # word-ID contract (p1v4w3 = paragraph.verse.word) — NEVER renumber
 src/content/shema.ts        # p1 corpus inline + imports p2/p3; meaningCardZero; Baruch Shem aside
 src/content/p2.ts, p3.ts    # GENERATED — do not hand-edit Hebrew (see Content pipeline)
@@ -124,11 +166,20 @@ src/dev/timingTool.ts       # ?timing=p1|p2|p3 boundary-tapping tool
 ```bash
 npm run dev            # dev server (tests assume port 5199: npm run dev -- --port 5199)
 npm run build          # tsc + vite build
-npm run test           # vitest (layout unit tests)
+npm run test           # vitest (layout + synth unit tests)
 node tools/screenshot.mjs <url> <out.png> [waitMs]   # headless shot + console dump (HOVER="x,y;x,y" env for pointer sweeps)
-node tools/playthrough.mjs <shot-prefix>             # FULL e2e arc (~3.5 min — p2's 102s recording dominates)
+node tools/playthrough.mjs <shot-prefix>             # FULL level-7 arc via ?level=7 (~3.5 min — p2's 102s recording dominates)
+node tools/level-smoke.mjs <1-6> [shot-prefix]       # mini level: intro → trace all tokens → completion card
 node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport against preview build (port 5200)
 ```
+
+- Debug/routing params: `?level=1..6` jumps into a mini level, `?level=7` is
+  the stable test route into the full arc, `?unlockAll=1` opens every era on
+  the map, `?debugRects=1` draws ink+hit boxes (mini levels too).
+- **Restart the dev server before any test gate.** Vite's file watcher has
+  silently gone stale here at least once (served pre-edit modules while
+  playthrough "passed") — verify with
+  `curl -s localhost:5199/src/main.ts | grep -c levelParam` if in doubt.
 
 - **Headless Chromium cannot do WebGPU here** — all automated checks use
   `?forceWebGL=1` (which is also the required fallback test). WebGPU path needs
@@ -159,10 +210,16 @@ node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport ag
 
 ## Open items / next steps
 
+0. **Sponsor-deferred stretch goals**: particle/delighter effects on highlights
+   + period-specific celebrations; young/child voice audio for early eras
+   (current recording = the "talmudic" endpoint). Also nice: per-era aux-pulse
+   colors (completion pulse is warm gold even on the blue tablet), and covering
+   the era-swap bake hitch with a fade.
 1. **Human listen-through**: verify recording pronunciation matches the Israeli-style
    transliteration; refine rough timing maps via `?timing=` (word boundaries are
    silence/syllable estimates, not ear-verified).
-2. **WebGPU visual check** in a real browser (all automated checks ran WebGL2).
+2. **WebGPU visual check** in a real browser (all automated checks ran WebGL2,
+   including every era material).
 3. PRD nice-to-haves not built: parasha lookup by date, Kiddush/Motzi blessings,
    scroll-closing celebration animation, CC0 modeled yad to replace primitives.
 4. Baruch Shem beat is text-only (no audio in the recording — verified by loudness
