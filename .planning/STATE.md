@@ -67,9 +67,9 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-07-09
-Stopped at: Verified Codex research (MONTH-ATTRIBUTIONS / STACK / PITFALLS). Recorded stack + lineage decisions; logged `@hebcal/core` GPL-2.0 licensing checkpoint.
-Resume file: None
+Last session: 2026-07-10
+Stopped at: Session resumed on `codex/zodiac-wheel-rotors-clean`; the planned zodiac-wheel rotor is ready for its thin React/SVG host and static layer implementation.
+Resume file: .planning/.continue-here.md
 
 **Next artifacts (in order):**
 1. **User + visual exploration:** resolve name, palette, Hebrew typeface, and the primary visual/interaction direction through shared-baseline concepts.
