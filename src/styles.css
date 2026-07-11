@@ -473,8 +473,8 @@ h1 {
   z-index: 1;
   display: grid;
   place-items: center;
-  width: min(40cqw, 160px);
-  height: min(47.5cqw, 190px);
+  width: min(35cqw, 140px);
+  height: min(41.5cqw, 166px);
   margin: 0 auto 18px;
   overflow: hidden;
 }
@@ -485,8 +485,10 @@ h1 {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
   filter: contrast(1.08);
   mix-blend-mode: multiply;
+  transform: translateX(-2%);
 }
 
 .hero-glyph-art + .eyebrow {
