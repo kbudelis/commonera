@@ -8,6 +8,8 @@ import {
   visibleLandmarksForFlow,
 } from "./flow.js";
 
+const blueZodiacUrl = "/blue-zodiac.jpg";
+
 const welcomeLines = [
   "Welcome.",
   "Look up for a moment.",
@@ -19,6 +21,21 @@ export function easeInOutCubic(progress: number): number {
   return progress < 0.5
     ? 4 * progress * progress * progress
     : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+}
+
+function ZodiacVisual({
+  variant,
+}: {
+  variant: "immersive" | "compact" | "arc";
+}) {
+  return (
+    <div
+      className={`zodiac-visual zodiac-visual--${variant}`}
+      aria-hidden="true"
+    >
+      <img src={blueZodiacUrl} alt="" />
+    </div>
+  );
 }
 
 export function scrollToLandmarkUnlessReducedMotion(
@@ -133,7 +150,7 @@ function WelcomeScreen({
       data-landmark="welcome"
       aria-labelledby="welcome-line"
     >
-      <div className="zodiac-placeholder zodiac-placeholder--immersive" />
+      <ZodiacVisual variant="immersive" />
       <div className="welcome-content">
         <p id="welcome-line" className="welcome-line" aria-live="polite">
           {welcomeLines[line] ?? welcomeLines[welcomeLines.length - 1]}
@@ -156,14 +173,16 @@ function ZodiacTransition({ onAdvance }: { onAdvance: () => void }) {
       data-landmark="zodiac-transition"
       aria-labelledby="transition-title"
     >
-      <div className="zodiac-placeholder zodiac-placeholder--compact" />
-      <div className="section-copy section-copy--centered">
-        <p className="eyebrow">A view of the whole sky</p>
-        <h1 id="transition-title">Now, a place for you.</h1>
-        <button className="primary-action" onClick={onAdvance}>
-          Continue
-        </button>
-      </div>
+      <h1 id="transition-title" className="visually-hidden">
+        The zodiac moves into place
+      </h1>
+      <ZodiacVisual variant="compact" />
+      <button
+        className="transition-tap-target"
+        type="button"
+        aria-label="Continue to birthday entry"
+        onClick={onAdvance}
+      />
     </section>
   );
 }
@@ -187,13 +206,15 @@ function BirthdayStep({
       data-landmark="birthday"
       aria-labelledby="birthday-title"
     >
-      <div className="zodiac-placeholder zodiac-placeholder--compact" />
+      <ZodiacVisual variant="compact" />
       <div className="section-copy birthday-copy">
-        <p className="eyebrow">Optional</p>
-        <h1 id="birthday-title">When did you arrive?</h1>
-        <p>We’ll use the date only for this placeholder reading.</p>
+        <h1 id="birthday-title" className="visually-hidden">
+          Enter your birthday
+        </h1>
         <form className="birthday-form" onSubmit={onSubmit} noValidate>
-          <label htmlFor="birthday">Birthday</label>
+          <label className="visually-hidden" htmlFor="birthday">
+            Birthday
+          </label>
           <input
             id="birthday"
             name="birthday"
@@ -206,8 +227,8 @@ function BirthdayStep({
             aria-invalid={Boolean(error)}
             onChange={(event) => onChange(event.target.value)}
           />
-          <span id="birthday-hint" className="field-hint">
-            MM/DD/YYYY
+          <span id="birthday-hint" className="visually-hidden">
+            Enter the date as month, day, and four-digit year.
           </span>
           {error ? (
             <span id="birthday-error" className="field-error" role="alert">
@@ -215,7 +236,7 @@ function BirthdayStep({
             </span>
           ) : null}
           <button className="primary-action" type="submit">
-            Show my reading
+            Continue
           </button>
         </form>
         <button className="text-action" onClick={onSkip}>
@@ -233,16 +254,15 @@ function PersonalPlaceholder() {
       data-landmark="personal"
       aria-labelledby="personal-title"
     >
-      <div className="zodiac-arc" aria-hidden="true" />
+      <ZodiacVisual variant="arc" />
       <div className="section-copy reading-copy">
         <p className="hero-glyph" aria-hidden="true">
           א
         </p>
-        <p className="eyebrow">Your birth-month reflection</p>
-        <h1 id="personal-title">A personal reading lives here.</h1>
+        <h1 id="personal-title">Birth Chart</h1>
         <p>
-          This placeholder holds the letter, mood, and short reflection that will
-          be generated from your birth month.
+          Your birth month carries a particular character. A short personal
+          reflection will live here.
         </p>
         <div className="constellation-placeholder" aria-label="Constellation placeholder" />
       </div>
@@ -260,9 +280,12 @@ function MonthPlaceholder() {
       <div className="section-copy reading-copy">
         <div className="constellation-placeholder" aria-label="Constellation placeholder" />
         <p className="eyebrow">This month</p>
-        <h1 id="month-title">The month has a message.</h1>
+        <h1 id="month-title">Month Chart</h1>
         <p>
-          A short seasonal reading and one small ritual will appear in this space.
+          A short seasonal reading for the month will appear in this space.
+        </p>
+        <p>
+          A small ritual will offer one way to meet what is arriving.
         </p>
       </div>
     </section>
@@ -277,10 +300,9 @@ function UpcomingPlaceholder() {
       aria-labelledby="upcoming-title"
     >
       <div className="section-copy reading-copy">
-        <p className="eyebrow">Moon / upcoming</p>
+        <h1 id="upcoming-title">Moon / Upcoming</h1>
         <div className="moon-placeholder" aria-label="Moon phase placeholder" />
-        <h1 id="upcoming-title">Something is gathering.</h1>
-        <p>The next Friday and symbolic moon moment will land here.</p>
+        <p>What is gathering this Friday and in the next moon phase will land here.</p>
       </div>
     </section>
   );
