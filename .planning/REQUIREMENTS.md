@@ -22,7 +22,7 @@ as a discovery, not a requirement.
 - [ ] **READ-02**: User can reveal two or three sentences of Jewish/Kabbalistic grounding without that framing leading the welcome.
 - [ ] **PROF-01**: Valid date-only birthday input converts to and displays a Hebrew birth date.
 - [ ] **PROF-02**: The personal profile includes birth month, zodiac, tribe association in the adopted lineage, symbolic birth moon, Hebrew letter, reflective personal thread, and short reading.
-- [ ] **DATA-01**: Any valid birthday maps across twelve normalized month profiles; the current month is rich while the other eleven may use a lighter template.
+- [ ] **DATA-01**: The app bundles twelve authored current-month entries. Any valid birthday maps through the corresponding normalized month facts into one shared compact Personal Thread template, not one of twelve bespoke personalized profiles.
 - [ ] **COPY-01**: Copy is poetic, specific, non-predictive, and wisdom-focused; rituals are small enough to do today.
 - [ ] **DATA-02**: Results appear instantly and deterministically from bundled typed data, with no runtime AI, database, or server.
 
@@ -99,4 +99,4 @@ as a discovery, not a requirement.
 
 ---
 *Requirements defined: 2026-07-10*
-*Last updated: 2026-07-11 after Phase 1 completion*
+*Last updated: 2026-07-11 after Phase 2 inline implementation and profile-scope clarification*

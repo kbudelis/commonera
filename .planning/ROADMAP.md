@@ -11,7 +11,7 @@ experiences remain explicitly deferred.
 ## Phases
 
 - [x] **Phase 1: Mobile Flow Skeleton** - Complete the placeholder welcome, optional birthday, personal, month, and upcoming journey. (completed 2026-07-11)
-- [ ] **Phase 2: Content & Static Data** - Make the current month and all twelve lightweight birth profiles deterministic and meaningful.
+- [ ] **Phase 2: Content & Static Data** - Make all twelve current-month readings and one shared birthday-derived Personal Thread deterministic and meaningful. Implementation is complete; verification is pending.
 - [ ] **Phase 3: Visual System & Motion** - Apply the Blue Zodiac, light-paper system, Hebrew/constellation elements, and approved motion language.
 - [ ] **Phase 4: Upcoming & QA** - Finish the moon/Friday return panel and verify both mobile paths.
 
@@ -39,22 +39,22 @@ Plans:
 
 ### Phase 2: Content & Static Data
 
-**Goal**: Users receive a complete current-month reading and a coherent profile for any valid birthday.
+**Goal**: Users receive a complete reading for the current Hebrew month and a coherent Personal Thread for any valid birthday.
 **Depends on**: Phase 1
 **Requirements**: CAL-01, READ-01, READ-02, PROF-01, PROF-02, DATA-01, COPY-01, DATA-02
 **Success Criteria** (what must be TRUE):
 
   1. The current Hebrew month is detected and displays every required reading field plus a concrete ritual.
-  2. Any valid birthday returns its Hebrew date and complete compact profile, including Adar normalization.
+  2. Any valid birthday returns its Hebrew date and one compact template-derived Personal Thread, including Adar normalization.
   3. The Jewish/Kabbalistic grounding is discoverable while the primary hook remains universal.
   4. Identical dates produce identical immediate, non-predictive results without a server.
 
-**Plans**: 1 plan
+**Plans**: Implemented inline at `e9d9677`; verification pending
 **UI hint**: yes
 
 Plans:
 
-- [ ] 02-01: Add the typed calendar/content model and replace placeholder copy.
+- [x] 02-01: Add the typed calendar/content model and replace placeholder copy. (inline implementation)
 
 ### Phase 3: Visual System & Motion
 
@@ -101,6 +101,6 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Mobile Flow Skeleton | 1/1 | Complete    | 2026-07-11 |
-| 2. Content & Static Data | 0/1 | Not started | - |
+| 2. Content & Static Data | 1/1 | In review | - |
 | 3. Visual System & Motion | 0/1 | Not started | - |
 | 4. Upcoming & QA | 0/1 | Not started | - |
