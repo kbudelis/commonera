@@ -11,25 +11,25 @@ export class Screens {
       `<style>
         .layer { position: fixed; inset: 0; display: flex; align-items: center;
           justify-content: center; pointer-events: auto; z-index: 10;
-          font-family: Rubik, system-ui; color: #f3e5c0;
+          font-family: Rubik, system-ui; color: var(--paper);
           opacity: 0; transition: opacity 0.5s ease; }
         .layer.on { opacity: 1; }
         .layer.off { pointer-events: none !important; }
-        .scrim { background: rgba(14, 9, 4, 0.72); backdrop-filter: blur(7px); }
+        .scrim { background: var(--scrim); backdrop-filter: blur(7px); }
         .card { max-width: 520px; margin: 16px; padding: 34px 38px; border-radius: 20px;
-          background: rgba(26, 18, 11, 0.96); border: 1px solid rgba(212, 160, 23, 0.35);
+          background: var(--card); border: 1px solid var(--card-border);
           box-shadow: 0 12px 60px rgba(0,0,0,0.6); text-align: center; }
-        .card h1 { font-size: 30px; font-weight: 700; margin-bottom: 12px; color: #f7ecd0; }
+        .card h1 { font-size: 30px; font-weight: 700; margin-bottom: 12px; color: var(--heading); }
         .card h2 { font-size: 22px; font-weight: 600; margin-bottom: 12px; }
-        .card p { font-size: 16px; line-height: 1.55; color: #d9c9a3; }
-        .card .kicker { color: #d4a017; font-weight: 600; letter-spacing: 0.04em;
+        .card p { font-size: 16px; line-height: 1.55; color: var(--muted); }
+        .card .kicker { color: var(--accent); font-weight: 600; letter-spacing: 0.04em;
           text-transform: uppercase; font-size: 13px; margin-bottom: 8px; }
-        .btn { background: #d4a017; color: #221608; border: 0; border-radius: 26px;
+        .btn { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 26px;
           padding: 14px 34px; font: 700 17px Rubik, system-ui; cursor: pointer;
           margin-top: 22px; transition: transform 0.12s ease, box-shadow 0.12s ease; }
         .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(212,160,23,0.35); }
-        .btn.ghost { background: transparent; color: #d4a017; border: 1.5px solid #d4a017; }
-        .small { font-size: 13px; color: #9a8a6a; margin-top: 14px; }
+        .btn.ghost { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+        .small { font-size: 13px; color: var(--dim); margin-top: 14px; }
         .linkish { background: none; border: 0; color: #b8a888; text-decoration: underline;
           cursor: pointer; font: 400 13px Rubik, system-ui; margin-top: 10px; }
         #hint { position: fixed; left: 50%; bottom: 88px; transform: translateX(-50%);
@@ -40,7 +40,7 @@ export class Screens {
         #hint.on { opacity: 1; }
         #lamp { position: fixed; top: 18px; right: 20px; z-index: 5; display: flex;
           align-items: center; gap: 10px; pointer-events: none;
-          font: 600 13px Rubik, system-ui; color: #d9c9a3; }
+          font: 600 13px Rubik, system-ui; color: var(--muted); }
         #lamp .flame { width: 26px; height: 26px; border-radius: 50%;
           background: radial-gradient(circle at 50% 60%, #ffd76a, #d4a017 55%, transparent 72%);
           filter: saturate(var(--lampSat, 0.2)) brightness(var(--lampBright, 0.45));
@@ -50,7 +50,7 @@ export class Screens {
           border-radius: 14px; font: 400 13.5px/1.5 Rubik, system-ui; color: #d9c9a3;
           pointer-events: none; opacity: 0; transition: opacity 0.4s ease; }
         #chip.on { opacity: 1; }
-        #chip .chip-kicker { color: #d4a017; font-weight: 700; font-size: 11px;
+        #chip .chip-kicker { color: var(--accent); font-weight: 700; font-size: 11px;
           letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 5px; }
         #bshem { text-align: center; }
         #bshem .he { font: 500 42px TaameyFrankCLM, serif; color: #ffe9b0;

@@ -29,8 +29,8 @@ export class LearnerStrip {
           box-shadow: 0 4px 24px rgba(0,0,0,0.5);
           white-space: nowrap;
         }
-        #learner-strip .he { font: 500 26px TaameyFrankCLM, serif; color: #f3e5c0; }
-        #learner-strip .tl { font: 600 15px Rubik, system-ui; color: #d4a017; letter-spacing: 0.02em; }
+        #learner-strip .he { font: 500 26px TaameyFrankCLM, serif; color: var(--paper); }
+        #learner-strip .tl { font: 600 15px Rubik, system-ui; color: var(--accent); letter-spacing: 0.02em; }
         #learner-strip .gl { font: 400 13px Rubik, system-ui; color: #b8a888; }
       </style>
       <span class="he"></span><span class="tl"></span><span class="gl"></span>`;

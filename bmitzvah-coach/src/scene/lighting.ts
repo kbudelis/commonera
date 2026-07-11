@@ -10,6 +10,20 @@ import {
 export interface LightingRig {
   /** Call each frame with seconds for the candle flicker. */
   update(t: number): void;
+  /** Remove the rig's lights and environment — era swaps need a clean scene. */
+  dispose(): void;
+}
+
+/** Era knobs — every default reproduces the candlelit scroll rig exactly. */
+export interface LightingOptions {
+  candleColor?: string;
+  candleIntensity?: number;
+  fillSky?: string;
+  fillGround?: string;
+  fillIntensity?: number;
+  envIntensity?: number;
+  /** Flicker amplitude multiplier (0 = steady). */
+  flicker?: number;
 }
 
 /** Small hand-painted equirect environment: warm glow above-left, dark room below. */
@@ -32,23 +46,44 @@ function makeEnvTexture(): CanvasTexture {
   return t;
 }
 
-export function createLighting(scene: Scene): LightingRig {
+export function createLighting(scene: Scene, opts: LightingOptions = {}): LightingRig {
+  const {
+    candleColor = '#ffb066',
+    candleIntensity = 7,
+    fillSky = '#8899bb',
+    fillGround = '#221408',
+    fillIntensity = 0.4,
+    envIntensity = 0.3,
+    flicker = 1,
+  } = opts;
+
   // Reading-candle key light: warm, above-left, slightly frontal.
-  const candle = new PointLight('#ffb066', 7, 0, 2);
+  const candle = new PointLight(candleColor, candleIntensity, 0, 2);
   candle.position.set(-0.55, 0.65, 1.25);
   scene.add(candle);
 
   // Cool moonlight fill so shadows aren't dead black.
-  scene.add(new HemisphereLight('#8899bb', '#221408', 0.4));
+  const fill = new HemisphereLight(fillSky, fillGround, fillIntensity);
+  scene.add(fill);
 
   // Environment for the yad's metal + subtle parchment sheen.
-  scene.environment = makeEnvTexture();
-  scene.environmentIntensity = 0.3;
+  const env = makeEnvTexture();
+  scene.environment = env;
+  scene.environmentIntensity = envIntensity;
 
   const base = candle.intensity;
   return {
     update(t: number) {
-      candle.intensity = base * (1 + 0.06 * Math.sin(t * 7.3) + 0.04 * Math.sin(t * 13.1));
+      candle.intensity =
+        base * (1 + flicker * (0.06 * Math.sin(t * 7.3) + 0.04 * Math.sin(t * 13.1)));
+    },
+    dispose() {
+      scene.remove(candle, fill);
+      if (scene.environment === env) {
+        scene.environment = null;
+        scene.environmentIntensity = 1;
+      }
+      env.dispose();
     },
   };
 }
