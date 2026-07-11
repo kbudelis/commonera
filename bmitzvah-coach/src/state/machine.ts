@@ -8,7 +8,10 @@ export type AppState =
   | { name: 'lead'; paragraph: 'p3' } // the kid drives the final paragraph
   | { name: 'quiz'; index: number }
   | { name: 'celebration' }
-  | { name: 'explore' }; // free scroll after completion
+  | { name: 'explore' } // free scroll after completion
+  | { name: 'map' } // the era timeline
+  | { name: 'levelIntro'; level: number }
+  | { name: 'mini'; level: number }; // a mini level session (levels 1–6)
 
 type Listener = (state: AppState, prev: AppState) => void;
 

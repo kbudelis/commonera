@@ -67,6 +67,13 @@ export const copy = {
     ],
   },
   lamp: ['Just arrived', 'Getting the sound', 'Following along', 'Almost there', 'You know it!'],
+  timeline: {
+    kicker: 'A journey back through time',
+    title: 'Every era read these same words',
+    hint: 'Start today. End up two thousand years ago.',
+    replay: 'Read again',
+    locked: 'Locked',
+  },
   credits: {
     title: 'Credits & sources',
     items: [
@@ -90,3 +97,136 @@ export const copy = {
     comeBack: 'The scroll stays open for you. Come back anytime.',
   },
 } as const;
+
+export interface LevelCopy {
+  name: string;
+  year: string;
+  introKicker: string;
+  introTitle: string;
+  introBody: string;
+  introCta: string;
+  doneKicker: string;
+  doneTitle: string;
+  doneBody: string;
+  doneCta: string;
+}
+
+/** Per-level era copy. Translation register travels modern → literal down
+    the ladder; level 7's cards live in the original arc, untouched. */
+export const levelCopy: Record<string, LevelCopy> = {
+  'l1-tablet': {
+    name: 'The Tablet',
+    year: '2026 CE',
+    introKicker: '2026 · Today',
+    introTitle: 'It starts with twelve letters.',
+    introBody:
+      'The most famous sentence in the Torah — “we’re all here, we’re in this ' +
+      'together” — is built from the letters on this screen. Tap one and hear ' +
+      'the word it opens. Letters make words. Words make the Shema.',
+    introCta: 'Let’s explore',
+    doneKicker: 'Twelve for twelve',
+    doneTitle: 'You can read the raw ingredients.',
+    doneBody:
+      'Those letters have looked exactly like this for a very, very long time. ' +
+      'Time to put them together — one machine older.',
+    doneCta: 'Back to the timeline',
+  },
+  'l2-laptop': {
+    name: 'The Laptop',
+    year: '1995',
+    introKicker: '1995 · The family laptop',
+    introTitle: 'Now: whole words.',
+    introBody:
+      'Eight words — the spine of the Shema and the V’ahavta. Listen. Israel. One. ' +
+      'Love. Heart. Soul. Doorposts. Touch each one and a real cantor sings it. ' +
+      '(In 1995, downloading one of these sounds took all afternoon.)',
+    introCta: 'Boot it up',
+    doneKicker: 'Eight words down',
+    doneTitle: 'You just read actual Torah words.',
+    doneBody:
+      'Every one of them appears in the real scroll — and you’ll meet them all ' +
+      'again on the way back. Next stop: phrases, in glowing green.',
+    doneCta: 'Back to the timeline',
+  },
+  'l3-crt': {
+    name: 'The Green Screen',
+    year: '1984',
+    introKicker: '1984 · The green screen',
+    introTitle: 'The sentence takes shape.',
+    introBody:
+      'Three phrases, six words: Listen, Israel — the Eternal our God — the ' +
+      'Eternal is One. Trace a whole phrase and the machine sings it back to you.',
+    introCta: 'Power on',
+    doneKicker: 'Phrase perfect',
+    doneTitle: 'That was the whole Shema line — in pieces.',
+    doneBody:
+      'You’ve now heard how the phrases chain together. One era back, they join ' +
+      'into full sentences — on paper this time.',
+    doneCta: 'Back to the timeline',
+  },
+  'l4-dotmatrix': {
+    name: 'The Printout',
+    year: '1978',
+    introKicker: '1978 · Tractor-feed paper',
+    introTitle: 'Two whole sentences.',
+    introBody:
+      'Here’s the Shema as a wake-up call: we’re all here, we’re present, we’re in ' +
+      'this together — let’s act like it. Trace the whole line, then the whispered ' +
+      'reply underneath. A Torah scroll never shows that whisper. Paper doesn’t mind.',
+    introCta: 'Feed the paper',
+    doneKicker: 'Printed and read',
+    doneTitle: 'You read the line AND the whisper.',
+    doneBody:
+      'From here back, machines disappear. The next stop is the printing press — ' +
+      'and the letters start looking like the real thing.',
+    doneCta: 'Back to the timeline',
+  },
+  'l5-siddur': {
+    name: 'The Printed Siddur',
+    year: '1565',
+    introKicker: '1565 · The printing press',
+    introTitle: 'The real letters appear.',
+    introBody:
+      'This is the Shema the way the first printed prayer books set it: sofer-style ' +
+      'letters, no vowels on the page. “Hear, O Israel: the Eternal is our God, the ' +
+      'Eternal is One.” Hover a word when you want its sounds back.',
+    introCta: 'Open the book',
+    doneKicker: 'Read like 1565',
+    doneTitle: 'No vowels. You read it anyway.',
+    doneBody:
+      'That’s the exact skill Torah readers train. Everything from here back is ' +
+      'made by hand — next, a scribe’s manuscript.',
+    doneCta: 'Back to the timeline',
+  },
+  'l6-manuscript': {
+    name: 'The Manuscript',
+    year: '~1200',
+    introKicker: 'Around 1200 · A scribe’s hand',
+    introTitle: 'The whole first paragraph.',
+    introBody:
+      'Someone wrote this page with a feather and iron-gall ink, ruling every line ' +
+      'by hand. All six verses: love with all your heart, teach your kids, tie the ' +
+      'sign, write the doorposts. Trace it end to end.',
+    introCta: 'Take the quill',
+    doneKicker: 'The V’ahavta, complete',
+    doneTitle: 'You just read a whole Torah paragraph.',
+    doneBody:
+      'Eight hundred years ago this took a scribe a day to write. One era left — ' +
+      'the scroll itself, and it’s the full three paragraphs.',
+    doneCta: 'Back to the timeline',
+  },
+  'l7-scroll': {
+    name: 'The Scroll',
+    year: '~100 BCE',
+    introKicker: 'Around 100 BCE · The scroll itself',
+    introTitle: 'The true scroll.',
+    introBody:
+      'No vowels, no labels, no shortcuts — three full paragraphs under a real ' +
+      'cantor’s voice, the way the words have always lived. Take the yad.',
+    introCta: 'Unroll it',
+    doneKicker: '',
+    doneTitle: '',
+    doneBody: '',
+    doneCta: '', // level 7 celebrates through its own arc
+  },
+};

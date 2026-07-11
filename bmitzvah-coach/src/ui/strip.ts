@@ -29,8 +29,8 @@ export class LearnerStrip {
           box-shadow: 0 4px 24px rgba(0,0,0,0.5);
           white-space: nowrap;
         }
-        #learner-strip .he { font: 500 26px TaameyFrankCLM, serif; color: #f3e5c0; }
-        #learner-strip .tl { font: 600 15px Rubik, system-ui; color: #d4a017; letter-spacing: 0.02em; }
+        #learner-strip .he { font: 500 26px TaameyFrankCLM, serif; color: var(--paper); }
+        #learner-strip .tl { font: 600 15px Rubik, system-ui; color: var(--accent); letter-spacing: 0.02em; }
         #learner-strip .gl { font: 400 13px Rubik, system-ui; color: #b8a888; }
       </style>
       <span class="he"></span><span class="tl"></span><span class="gl"></span>`;
@@ -40,11 +40,38 @@ export class LearnerStrip {
     root.appendChild(this.el);
   }
 
+  private cfg = { he: true, translit: true, gloss: true };
+
+  /** Per-level display mode: which lines the strip shows (the difficulty strata). */
+  configure(cfg: { he: boolean; translit: boolean; gloss: boolean }) {
+    this.cfg = cfg;
+  }
+
   show(word: ShemaWord, anchor: { x: number; y: number; z: number }) {
     this.heEl.textContent = word.hePointed;
+    this.heEl.style.display = this.cfg.he ? '' : 'none';
     this.translitEl.textContent = word.translit;
+    this.translitEl.style.display = this.cfg.translit && word.translit ? '' : 'none';
     this.glossEl.textContent = word.gloss ?? '';
-    this.glossEl.style.display = word.gloss ? '' : 'none';
+    this.glossEl.style.display = this.cfg.gloss && word.gloss ? '' : 'none';
+    this.place(anchor);
+  }
+
+  /** Whole-line display for asides (Baruch Shem) — always all three lines. */
+  showLine(
+    line: { he: string; translit: string; english: string },
+    anchor: { x: number; y: number; z: number },
+  ) {
+    this.heEl.textContent = line.he;
+    this.heEl.style.display = '';
+    this.translitEl.textContent = line.translit;
+    this.translitEl.style.display = '';
+    this.glossEl.textContent = line.english;
+    this.glossEl.style.display = '';
+    this.place(anchor);
+  }
+
+  private place(anchor: { x: number; y: number; z: number }) {
     this.worldPos.set(anchor.x, anchor.y, anchor.z);
     this.visible = true;
     this.el.style.opacity = '1';

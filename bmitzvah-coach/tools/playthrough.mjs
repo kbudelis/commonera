@@ -13,7 +13,7 @@ const state = async () => await page.evaluate(() => window.__shema?.state()?.nam
 const settle = () => page.waitForFunction(() => window.__shema?.camSettled(), null, { timeout: 15000 });
 const shot = (name) => page.screenshot({ path: `${shots}-${name}.png` });
 
-await page.goto('http://localhost:5199/?forceWebGL=1', { waitUntil: 'networkidle' });
+await page.goto('http://localhost:5199/?forceWebGL=1&level=7', { waitUntil: 'networkidle' });
 await page.waitForTimeout(2500);
 
 // Beat 0: landing → start

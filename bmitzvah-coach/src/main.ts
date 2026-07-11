@@ -22,6 +22,9 @@ import { loadFonts } from './text/fonts';
 import { WordIndex } from './text/wordIndex';
 import { Screens } from './ui/screens';
 import { LearnerStrip } from './ui/strip';
+import { LevelController } from './levels/controller';
+import { LEVELS } from './levels/levels';
+import type { AppShared, DevHooks } from './appShared';
 
 const base = import.meta.env.BASE_URL;
 type Pid = 'p1' | 'p2' | 'p3';
@@ -46,20 +49,8 @@ async function loadTexture(loader: TextureLoader, url: string, srgb = false) {
   return t;
 }
 
-async function boot() {
+async function bootShared(): Promise<AppShared> {
   const params = new URLSearchParams(location.search);
-  if (params.has('timing')) {
-    await loadFonts();
-    const pid = (params.get('timing') === '1' ? 'p1' : params.get('timing')) as Pid;
-    const track = shema.paragraphs.find((p) => p.id === pid)!.audioTrack;
-    const { runTimingTool } = await import('./dev/timingTool');
-    const seed = await fetch(`${base}timing/${pid}.json`)
-      .then((r) => (r.ok ? r.json() : undefined))
-      .catch(() => undefined);
-    runTimingTool(paragraphWords(pid), base + track, `timing-${pid}`, seed);
-    return;
-  }
-
   const canvas = document.querySelector<HTMLCanvasElement>('#app-canvas')!;
   const loader = new TextureLoader();
   const [ctx, , albedo, normal, rough] = await Promise.all([
@@ -84,11 +75,83 @@ async function boot() {
   await trackLoads.get('p1');
   canvas.addEventListener('pointerdown', () => engine.unlock(), { once: true });
 
-  // --- Three columns, laid out right-to-left (Torah order): p1 right, p3 left.
-  // Bake ladder: smaller canvases on coarse-pointer/small/low-memory devices.
   const isCoarse = matchMedia('(pointer: coarse)').matches;
   const lowMem = (navigator as { deviceMemory?: number }).deviceMemory ?? 8;
   const bakeSize = isCoarse || lowMem <= 4 || Math.min(innerWidth, innerHeight) < 500 ? 1600 : 2048;
+
+  const ui = document.querySelector<HTMLDivElement>('#ui-root')!;
+  const strip = new LearnerStrip(ui);
+  const screens = new Screens(ui);
+  const machine = new Machine();
+  const progress = loadProgress();
+
+  const camTarget = new Vector3();
+  const tanHalfFov = () => Math.tan((camera.fov * Math.PI) / 360);
+  const fitDist = (w: number, h: number) =>
+    Math.max(h / 2 / tanHalfFov(), w / 2 / (tanHalfFov() * camera.aspect)) * 1.08 + 0.06;
+
+  const frameHooks = new Set<(t: number, dt: number) => void>();
+
+  const dev: DevHooks = {
+    wordScreenPos: () => null,
+    wordIds: () => [],
+    state: () => machine.state,
+    touched: () => [],
+    camSettled: () => camera.position.distanceTo(camTarget) < 0.01,
+  };
+  if (import.meta.env.DEV) Object.assign(window as object, { __shema: dev });
+
+  // --- Render loop (shared): camera lerp + strip reproject here; sessions add hooks.
+  let last = 0;
+  let last0 = 0;
+  renderer.setAnimationLoop((time: number) => {
+    const t = time / 1000;
+    const dt = Math.min(0.05, t - last || 0.016);
+    last = t;
+    // Real elapsed time (not the physics-capped dt) so low headless frame
+    // rates still converge on schedule.
+    camera.position.lerp(camTarget, 1 - Math.exp(-(t - last0) * 2.8));
+    last0 = t;
+    for (const hook of frameHooks) hook(t, dt);
+    strip.update(camera);
+    renderer.render(scene, camera);
+  });
+
+  return {
+    params,
+    canvas,
+    ctx,
+    engine,
+    trackLoads,
+    textures: { albedo, normal, rough },
+    ui,
+    strip,
+    screens,
+    machine,
+    progress,
+    persist: () => saveProgress(progress),
+    camTarget,
+    fitDist,
+    frameHooks,
+    dev,
+    bakeSize,
+  };
+}
+
+/**
+ * The full three-column scroll experience (tutorial → trace → follow → lead →
+ * quiz → celebration). Built once; begin() runs the old post-landing entry.
+ */
+function startScrollArc(shared: AppShared) {
+  const { params, canvas, ctx, engine, trackLoads, strip, screens, machine, progress } = shared;
+  const { scene, camera } = ctx;
+  const { albedo, normal, rough } = shared.textures;
+  const ui = shared.ui;
+  const bakeSize = shared.bakeSize;
+  const camTarget = shared.camTarget;
+  const fitDist = shared.fitDist;
+
+  // --- Three columns, laid out right-to-left (Torah order): p1 right, p3 left.
   const columnH = 1.4;
   const columnW = columnH; // square canvases
   const gap = 0.06;
@@ -137,11 +200,6 @@ async function boot() {
   const lighting = createLighting(scene);
 
   // --- Camera: overview at landing, per-column poses afterwards.
-  // Distance must fit BOTH height and width (portrait phones are width-bound).
-  const tanHalfFov = () => Math.tan((camera.fov * Math.PI) / 360);
-  const fitDist = (w: number, h: number) =>
-    Math.max(h / 2 / tanHalfFov(), w / 2 / (tanHalfFov() * camera.aspect)) * 1.08 + 0.06;
-  const camTarget = new Vector3();
   let focused: Pid | 'overview' = 'overview';
   const applyFocus = () => {
     if (focused === 'overview') camTarget.set(0, 0, fitDist(spreadW, columnH) * 0.92);
@@ -155,16 +213,11 @@ async function boot() {
   camera.position.copy(camTarget);
   addEventListener('resize', applyFocus);
 
-  // --- Yad, strip, screens.
+  // --- Yad.
   const yad = new Yad();
   scene.add(yad.group);
-  const ui = document.querySelector<HTMLDivElement>('#ui-root')!;
-  const strip = new LearnerStrip(ui);
-  const screens = new Screens(ui);
 
   // --- State.
-  const machine = new Machine();
-  const progress = loadProgress();
   const touched = new Set(progress.touchedWords);
   const versesDone = new Set(progress.versesCompleted);
   const paragraphsDone = new Set(progress.paragraphsCompleted);
@@ -576,61 +629,95 @@ async function boot() {
     playBtn.style.display = ['trace', 'lead', 'explore'].includes(s.name) ? '' : 'none';
   });
 
-  // --- Landing → tutorial.
   screens.lamp(lampLevel());
-  screens.landing((date) => {
-    if (date) progress.bmitzvahDate = date;
-    persist();
-    engine.unlock();
-    if (progress.celebrated) {
-      machine.go({ name: 'explore' });
-      focusColumn('p1');
-      return;
-    }
-    machine.go({ name: 'tutorial' });
-    focusColumn('p1');
-    const first = byPid.get('p1')!.wordById.get('p1v4w1');
-    if (first) byPid.get('p1')!.parchment.aux.show(first.uvRect);
-    setTimeout(() => screens.hint(copy.tutorial.hint1), 1600);
-  });
 
-  if (import.meta.env.DEV) {
-    Object.assign(window as object, {
-      __shema: {
-        wordScreenPos: (id: string) => {
-          const col = columns.find((c) => c.wordById.has(id));
-          const w = col?.wordById.get(id);
-          return col && w ? wordScreenPos(col, w) : null;
-        },
-        wordIds: () => columns.flatMap((c) => c.words.map((w) => w.id)),
-        state: () => machine.state,
-        touched: () => [...touched],
-        camSettled: () => camera.position.distanceTo(camTarget) < 0.01,
-      },
-    });
-  }
+  Object.assign(shared.dev, {
+    wordScreenPos: (id: string) => {
+      const col = columns.find((c) => c.wordById.has(id));
+      const w = col?.wordById.get(id);
+      return col && w ? wordScreenPos(col, w) : null;
+    },
+    wordIds: () => columns.flatMap((c) => c.words.map((w) => w.id)),
+    touched: () => [...touched],
+  } satisfies Partial<DevHooks>);
 
-  // --- Render loop.
-  let last = 0;
-  let last0 = 0;
-  renderer.setAnimationLoop((time: number) => {
-    const t = time / 1000;
-    const dt = Math.min(0.05, t - last || 0.016);
-    last = t;
+  shared.frameHooks.add((t, dt) => {
     lighting.update(t);
-    // Real elapsed time (not the physics-capped dt) so low headless frame
-    // rates still converge on schedule.
-    camera.position.lerp(camTarget, 1 - Math.exp(-(t - last0) * 2.8));
-    last0 = t;
     yad.update(dt);
     for (const c of columns) {
       c.parchment.highlight.update(dt);
       c.parchment.trail.update(dt);
       c.parchment.aux.update(dt);
     }
-    strip.update(camera);
     if (machine.is('tutorial') && performance.now() - lastTouchAt > 8000) void ghostDemo();
-    renderer.render(scene, camera);
+  });
+
+  return {
+    /** The old post-landing entry: tutorial for new learners, explore after celebration. */
+    begin() {
+      if (progress.celebrated) {
+        machine.go({ name: 'explore' });
+        focusColumn('p1');
+        return;
+      }
+      machine.go({ name: 'tutorial' });
+      focusColumn('p1');
+      const first = byPid.get('p1')!.wordById.get('p1v4w1');
+      if (first) byPid.get('p1')!.parchment.aux.show(first.uvRect);
+      setTimeout(() => screens.hint(copy.tutorial.hint1), 1600);
+    },
+  };
+}
+
+async function boot() {
+  const params = new URLSearchParams(location.search);
+  if (params.has('timing')) {
+    await loadFonts();
+    const pid = (params.get('timing') === '1' ? 'p1' : params.get('timing')) as Pid;
+    const track = shema.paragraphs.find((p) => p.id === pid)!.audioTrack;
+    const { runTimingTool } = await import('./dev/timingTool');
+    const seed = await fetch(`${base}timing/${pid}.json`)
+      .then((r) => (r.ok ? r.json() : undefined))
+      .catch(() => undefined);
+    runTimingTool(paragraphWords(pid), base + track, `timing-${pid}`, seed);
+    return;
+  }
+
+  const shared = await bootShared();
+  const controller = new LevelController(shared, () => startScrollArc(shared));
+  if (import.meta.env.DEV) shared.dev.gotoLevel = (n: number) => controller.startLevel(n);
+
+  // Legacy saves: whoever finished the original arc has earned the ladder.
+  if (shared.progress.celebrated && !shared.progress.levelsCompleted.length) {
+    shared.progress.levelsCompleted = LEVELS.map((l) => l.id);
+    shared.persist();
+  }
+
+  // ?level=1..6 jumps straight into a mini level (dev/tests).
+  const levelParam = Number(shared.params.get('level') || 0);
+  if (levelParam >= 1 && levelParam <= 6) {
+    controller.startLevel(levelParam);
+    return;
+  }
+
+  // ?level=7: the stable alias tests use — landing straight into the full arc.
+  if (levelParam === 7) {
+    const arc = startScrollArc(shared);
+    shared.screens.landing((date) => {
+      if (date) shared.progress.bmitzvahDate = date;
+      shared.persist();
+      shared.engine.unlock();
+      arc.begin();
+    });
+    return;
+  }
+
+  // Default: landing → the era timeline.
+  shared.screens.landing((date) => {
+    if (date) shared.progress.bmitzvahDate = date;
+    shared.persist();
+    shared.engine.unlock();
+    controller.showMap();
   });
 }
 

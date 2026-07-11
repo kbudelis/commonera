@@ -6,8 +6,23 @@
     <meta name="theme-color" content="#1a120b" />
     <title>Shema — Feel Ready for Your B'Mitzvah</title>
     <style>
+      /* Era theme tokens — defaults are the Torah-scroll look; applyEraTheme
+         (src/ui/theme.ts) overrides them per era. */
+      :root {
+        --accent: #d4a017;
+        --accent-text: #221608;
+        --paper: #f3e5c0;
+        --heading: #f7ecd0;
+        --bg: #1a120b;
+        --card: rgba(26, 18, 11, 0.96);
+        --card-border: rgba(212, 160, 23, 0.35);
+        --muted: #d9c9a3;
+        --dim: #9a8a6a;
+        --scrim: rgba(14, 9, 4, 0.72);
+        --vignette: 1;
+      }
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      html, body { height: 100%; overflow: hidden; background: #1a120b; }
+      html, body { height: 100%; overflow: hidden; background: var(--bg); }
       #app-canvas {
         position: fixed;
         inset: 0;
@@ -27,6 +42,8 @@
         inset: 0;
         pointer-events: none;
         background: radial-gradient(ellipse 75% 70% at 50% 46%, transparent 55%, rgba(8, 5, 2, 0.55) 100%);
+        opacity: var(--vignette);
+        transition: opacity 0.8s ease;
       }
     </style>
   </head>
