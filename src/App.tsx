@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import {
   buildPersonalThread,
@@ -26,7 +26,7 @@ const zodiacTransitionDuration = 3_000;
 const zodiacTransitionHold = 500;
 const welcomeFadeOutDuration = 900;
 const welcomeLineRevealDuration = 1_100;
-const welcomeLineStagger = 720;
+const welcomeLineStagger = 1_350;
 
 const constellationUrls: Record<MonthKey, string> = {
   nisan: new URL("./assets/constellations/aries.png", import.meta.url).href,
@@ -247,7 +247,7 @@ function WelcomeScreen({
       aria-labelledby="welcome-line"
     >
       <ZodiacVisual variant="immersive" />
-      <div className={`welcome-content${exiting ? " welcome-content--exiting" : ""}`}>
+      <div className="welcome-content">
         <p
           key={line}
           id="welcome-line"
@@ -493,8 +493,9 @@ function UpcomingPlaceholder() {
 export default function App() {
   const [flow, setFlow] = useState<FlowState>(createInitialFlow);
   const [welcomeLine, setWelcomeLine] = useState(0);
-  const [isWelcomeTransitioning, setIsWelcomeTransitioning] = useState(false);
   const [isWelcomeExiting, setIsWelcomeExiting] = useState(false);
+  const welcomePageTimer = useRef<number | null>(null);
+  const welcomeUnlockTimer = useRef<number | null>(null);
   const [nameValue, setNameValue] = useState("");
   const [nameError, setNameError] = useState<string | null>(null);
   const [birthdayValue, setBirthdayValue] = useState("");
@@ -521,6 +522,18 @@ export default function App() {
     setPendingLandmark(null);
   }, [flow.step, pendingLandmark]);
 
+  useEffect(
+    () => () => {
+      if (welcomePageTimer.current !== null) {
+        window.clearTimeout(welcomePageTimer.current);
+      }
+      if (welcomeUnlockTimer.current !== null) {
+        window.clearTimeout(welcomeUnlockTimer.current);
+      }
+    },
+    [],
+  );
+
   const applyAction = (action: FlowAction, destination?: FlowLandmark) => {
     setFlow((current) => transitionFlow(current, action));
     if (destination) {
@@ -529,11 +542,16 @@ export default function App() {
   };
 
   const advanceWelcome = () => {
-    if (welcomeLine < welcomeLines.length - 1) {
-      if (isWelcomeTransitioning) {
-        return;
-      }
+    if (isWelcomeExiting) {
+      return;
+    }
 
+    if (welcomeUnlockTimer.current !== null) {
+      window.clearTimeout(welcomeUnlockTimer.current);
+      welcomeUnlockTimer.current = null;
+    }
+
+    if (welcomeLine < welcomeLines.length - 1) {
       const prefersReducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)",
       ).matches;
@@ -549,20 +567,15 @@ export default function App() {
         welcomeLineRevealDuration +
         (nextPageLines.length - 1) * welcomeLineStagger;
 
-      setIsWelcomeTransitioning(true);
       setIsWelcomeExiting(true);
-      window.setTimeout(() => {
+      welcomePageTimer.current = window.setTimeout(() => {
+        welcomePageTimer.current = null;
         setWelcomeLine(nextPage);
         setIsWelcomeExiting(false);
-        window.setTimeout(
-          () => setIsWelcomeTransitioning(false),
-          revealDuration,
-        );
+        welcomeUnlockTimer.current = window.setTimeout(() => {
+          welcomeUnlockTimer.current = null;
+        }, revealDuration);
       }, welcomeFadeOutDuration);
-      return;
-    }
-
-    if (isWelcomeTransitioning) {
       return;
     }
 
@@ -574,12 +587,11 @@ export default function App() {
       return;
     }
 
-    setIsWelcomeTransitioning(true);
     setIsWelcomeExiting(true);
-    window.setTimeout(() => {
+    welcomePageTimer.current = window.setTimeout(() => {
+      welcomePageTimer.current = null;
       applyAction({ type: "advance" });
       setIsWelcomeExiting(false);
-      setIsWelcomeTransitioning(false);
     }, welcomeFadeOutDuration);
   };
 

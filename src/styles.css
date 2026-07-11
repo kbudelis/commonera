@@ -241,15 +241,10 @@ h1 {
   color: var(--cream);
   background: transparent;
   font-size: 0.88rem;
+  font-style: italic;
   letter-spacing: 0.04em;
-  opacity: 1;
   cursor: pointer;
-  transition: opacity 900ms ease-in-out;
   transform: translateX(50%);
-}
-
-.welcome-content--exiting .welcome-tap {
-  opacity: 0;
 }
 
 .transition-section {
