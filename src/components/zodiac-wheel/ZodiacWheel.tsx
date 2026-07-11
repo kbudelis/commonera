@@ -24,14 +24,13 @@ type LayerConfig = {
   duration: number;
   turns: number;
   direction: Direction;
-  lockRadius: number;
 };
 
 const LAYERS: readonly LayerConfig[] = [
-  { id: "atlas", duration: 2600, turns: 3, direction: -1, lockRadius: 316 },
-  { id: "labels", duration: 3200, turns: 2, direction: 1, lockRadius: 286 },
-  { id: "symbols", duration: 3800, turns: 2, direction: -1, lockRadius: 198 },
-  { id: "figures", duration: 4400, turns: 1, direction: 1, lockRadius: 334 }
+  { id: "atlas", duration: 2600, turns: 3, direction: -1 },
+  { id: "labels", duration: 3200, turns: 2, direction: 1 },
+  { id: "symbols", duration: 3800, turns: 2, direction: -1 },
+  { id: "figures", duration: 4400, turns: 1, direction: 1 }
 ];
 
 const INITIAL_ANGLES: LayerAngles = {
@@ -111,6 +110,30 @@ function DegreeScale() {
   );
 }
 
+function OuterTicks() {
+  const tickPath = (angles: number[], startRadius: number) =>
+    angles
+      .map((angle) => {
+        const start = polar(startRadius, angle);
+        const end = polar(340, angle);
+        return `M ${start.x} ${start.y} L ${end.x} ${end.y}`;
+      })
+      .join(" ");
+
+  const allAngles = Array.from({ length: 360 }, (_, angle) => angle);
+  const majorAngles = allAngles.filter((angle) => angle % 10 === 0);
+  const mediumAngles = allAngles.filter((angle) => angle % 5 === 0 && angle % 10 !== 0);
+  const minorAngles = allAngles.filter((angle) => angle % 5 !== 0);
+
+  return (
+    <g className={styles.outerTicks} aria-hidden="true">
+      <path className={styles.outerMinorTicks} d={tickPath(minorAngles, 329)} />
+      <path className={styles.outerMediumTicks} d={tickPath(mediumAngles, 323)} />
+      <path className={styles.outerMajorTicks} d={tickPath(majorAngles, 316)} />
+    </g>
+  );
+}
+
 function HebrewCrownGlyph({ letter }: { letter: string }) {
   return (
     <text className={styles.outerHebrewGlyph} x="0" y="9" textAnchor="middle" aria-hidden="true">
@@ -134,8 +157,6 @@ export default function ZodiacWheel({
   const [angles, setAngles] = useState<LayerAngles>(() =>
     autoSpinOnMount ? INITIAL_ANGLES : settledAngles(initialSelection)
   );
-  const [lastLocked, setLastLocked] = useState<LayerId | null>(null);
-  const [sequence, setSequence] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
   const timers = useRef<number[]>([]);
   const autoStarted = useRef(false);
@@ -155,8 +176,6 @@ export default function ZodiacWheel({
 
       const targetIndex = wrapIndex(requestedIndex);
       clearTimers();
-      setLastLocked(null);
-      setSequence((value) => value + 1);
 
       if (reducedMotion) {
         const settledAngle = -sectorAngle(targetIndex);
@@ -188,8 +207,6 @@ export default function ZodiacWheel({
 
       LAYERS.forEach((layer) => {
         const timer = window.setTimeout(() => {
-          setLastLocked(layer.id);
-
           if (layer.id === "figures") {
             setSelectedIndex(targetIndex);
             setIsSpinning(false);
@@ -225,9 +242,6 @@ export default function ZodiacWheel({
     transform: `rotate(${-angles[id]}deg)`,
     transitionDuration: reducedMotion ? "0ms" : `${layerById[id].duration}ms`
   });
-
-  const lockRadius = lastLocked ? layerById[lastLocked].lockRadius : 0;
-  const lockPoint = polar(lockRadius, 0);
 
   return (
     <section
@@ -272,6 +286,7 @@ export default function ZodiacWheel({
             <MeridianTicks />
           </g>
 
+          <OuterTicks />
           <DegreeScale />
 
           <g className={styles.rotorGroup} style={layerStyle("labels")}>
@@ -320,7 +335,7 @@ export default function ZodiacWheel({
           <g className={styles.rotorGroup} style={layerStyle("figures")}>
             {ZODIAC_SECTORS.map((sector, index) => {
               const angle = sectorAngle(index);
-              const point = polar(334, angle);
+              const point = polar(350, angle);
               return (
                 <g key={sector.id} transform={`translate(${point.x} ${point.y})`}>
                   <g className={styles.uprightNode} style={uprightStyle("figures")}>
@@ -331,15 +346,6 @@ export default function ZodiacWheel({
             })}
           </g>
 
-          {lastLocked && (
-            <circle
-              key={`${lastLocked}-${sequence}`}
-              className={styles.lockPulse}
-              cx={lockPoint.x}
-              cy={lockPoint.y}
-              r="17"
-            />
-          )}
         </svg>
 
       </button>
