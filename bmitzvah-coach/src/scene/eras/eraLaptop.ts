@@ -1,57 +1,23 @@
 import {
-  BoxGeometry,
-  CanvasTexture,
+  CylinderGeometry,
   DirectionalLight,
   Group,
   HemisphereLight,
   Mesh,
   MeshStandardNodeMaterial,
   PlaneGeometry,
-  SRGBColorSpace,
 } from 'three/webgpu';
+import { makeEnvTexture } from '../lighting';
 import { createScreenMaterial } from '../screenMaterial';
+import { deviceMaterial, keyboardTexture, roundedBox } from './deviceKit';
 import type { EraDef, EraScene } from './types';
 
 const SCREEN_W = 1.42;
 const SCREEN_H = 0.92;
 const SCREEN_Y = 0.12;
-const SCREEN_Z = 0.03;
+const SCREEN_Z = 0.032;
 
-/** Rounded-rect key grid drawn in 2D — one texture instead of seventy meshes. */
-function keyboardTexture(): CanvasTexture {
-  const c = document.createElement('canvas');
-  c.width = 1024;
-  c.height = 384;
-  const g = c.getContext('2d')!;
-  g.fillStyle = '#a8a294';
-  g.fillRect(0, 0, c.width, c.height);
-  const rows = 5;
-  const pad = 10;
-  const keyH = (c.height - pad * 2) / rows - 8;
-  for (let r = 0; r < rows; r++) {
-    const y = pad + r * (keyH + 8);
-    const keys = r === rows - 1 ? 8 : 14 + (r % 2);
-    const keyW = (c.width - pad * 2) / keys - 7;
-    for (let k = 0; k < keys; k++) {
-      const x = pad + k * (keyW + 7);
-      const w = r === rows - 1 && k === 3 ? keyW * 3.2 : keyW; // space bar
-      g.fillStyle = '#8d887b';
-      g.beginPath();
-      g.roundRect(x + 2, y + 3, w, keyH, 5);
-      g.fill();
-      g.fillStyle = '#c2bcae';
-      g.beginPath();
-      g.roundRect(x, y, w, keyH, 5);
-      g.fill();
-      if (r === rows - 1 && k === 3) k += 2;
-    }
-  }
-  const t = new CanvasTexture(c);
-  t.colorSpace = SRGBColorSpace;
-  return t;
-}
-
-/** A 1995 clamshell: beige lid + passive-matrix LCD + keyboard slab. */
+/** A 1995 clamshell: beige shell + passive-matrix LCD + keyboard slab. */
 export const eraLaptop: EraDef = {
   id: 'laptop1995',
   pointer: 'mouseArrow',
@@ -71,31 +37,38 @@ export const eraLaptop: EraDef = {
     vignette: false,
   },
   bake: { aspect: SCREEN_W / SCREEN_H, background: null, inkColor: '#ffffff' },
-  create({ inkTexture }) {
+  create({ inkTexture, visited }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
-    const solid = (color: string, rough = 0.75) =>
-      track(new MeshStandardNodeMaterial({ color, roughness: rough, metalness: 0.05 }));
 
-    // Lid (screen half): beige shell, dark bezel, self-lit LCD.
-    const beige = solid('#b6b0a2');
-    const lid = new Mesh(track(new BoxGeometry(1.72, 1.2, 0.055)), beige);
+    // Beige injection-molded plastic — fine grain from the normal map,
+    // rounded shells instead of sharp slabs.
+    const beige = track(
+      deviceMaterial({ tex: 'plastic', albedo: false, color: '#c9bfa9', repeat: 2, normalScale: 0.8 }),
+    );
+    const darkPlastic = track(
+      deviceMaterial({ tex: 'plastic', albedo: false, color: '#46423a', repeat: 2, normalScale: 0.6 }),
+    );
+
+    // Lid (screen half): shell, inset bezel slab, self-lit LCD.
+    const lid = new Mesh(track(roundedBox(1.72, 1.2, 0.06, 0.035)), beige);
     lid.position.set(0, SCREEN_Y, -0.01);
-    const bezel = new Mesh(track(new PlaneGeometry(1.58, 1.06)), solid('#46423a', 0.6));
-    bezel.position.set(0, SCREEN_Y, 0.021);
+    const bezel = new Mesh(track(roundedBox(1.58, 1.06, 0.014, 0.025)), darkPlastic);
+    bezel.position.set(0, SCREEN_Y, 0.022);
     const screenMat = createScreenMaterial(inkTexture, {
       mode: 'darkOnLight',
       bgColor: [0.77, 0.8, 0.75], // gray-green passive matrix
       textColor: [0.13, 0.16, 0.24],
       bgGradient: 0.12,
+      visited: { map: visited, tint: [0.2, 0.34, 0.62] }, // visited-link blue
     });
     track(screenMat.material);
     const screen = new Mesh(track(new PlaneGeometry(SCREEN_W, SCREEN_H)), screenMat.material);
     screen.position.set(0, SCREEN_Y, SCREEN_Z);
 
     // Base (keyboard half), pitched gently toward the viewer.
-    const base = new Mesh(track(new BoxGeometry(1.72, 0.05, 0.78)), beige);
+    const base = new Mesh(track(roundedBox(1.72, 0.055, 0.78, 0.028)), beige);
     base.position.set(0, -0.56, 0.32);
     base.rotation.x = 0.42; // pitched up so the keys read from the front
     const kbTex = track(keyboardTexture());
@@ -104,13 +77,21 @@ export const eraLaptop: EraDef = {
       track(new MeshStandardNodeMaterial({ map: kbTex, roughness: 0.85 })),
     );
     // Parented to the base in ITS local space so they ride the pitch exactly.
-    keys.position.set(0, 0.027, -0.1);
+    keys.position.set(0, 0.0295, -0.1);
     keys.rotation.x = -Math.PI / 2;
     base.add(keys);
-    const trackpad = new Mesh(track(new PlaneGeometry(0.3, 0.15)), solid('#8d887b', 0.5));
-    trackpad.position.set(0, 0.027, 0.24);
-    trackpad.rotation.x = -Math.PI / 2;
+    const trackpad = new Mesh(track(roundedBox(0.3, 0.008, 0.15, 0.004)), darkPlastic);
+    trackpad.position.set(0, 0.0295, 0.24);
     base.add(trackpad);
+
+    // Hinge barrels where the lid meets the base.
+    const hingeGeo = track(new CylinderGeometry(0.034, 0.034, 0.24, 16));
+    for (const side of [-1, 1]) {
+      const hinge = new Mesh(hingeGeo, darkPlastic);
+      hinge.rotation.z = Math.PI / 2;
+      hinge.position.set(side * 0.55, -0.455, 0.02);
+      group.add(hinge);
+    }
 
     group.add(lid, bezel, screen, base);
 
@@ -119,6 +100,16 @@ export const eraLaptop: EraDef = {
     const key = new DirectionalLight('#cfd8e8', 0.5);
     key.position.set(0.6, 1.2, 1.4);
     group.add(hemi, key, key.target);
+    const env = track(
+      makeEnvTexture({
+        sky: '#aeb8c6',
+        floor: '#4a453e',
+        glowColor: '225, 235, 250',
+        glowPos: [64, 8],
+        glowRadius: 52,
+        glowAlpha: 0.85,
+      }),
+    );
 
     const scene: EraScene = {
       id: 'laptop1995',
@@ -137,7 +128,7 @@ export const eraLaptop: EraDef = {
           aux: screenMat.aux,
         },
       },
-      environment: { texture: null, intensity: 1 },
+      environment: { texture: env, intensity: 0.45 },
       lighting: { update() {} },
       fitSize: { width: 1.95, height: 1.85 },
       dispose() {

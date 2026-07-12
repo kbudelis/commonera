@@ -26,18 +26,41 @@ export interface LightingOptions {
   flicker?: number;
 }
 
+/** Era knobs for the hand-painted environment — defaults are the candlelit room. */
+export interface EnvTextureOptions {
+  /** Upper-half fill (ceiling/walls). */
+  sky?: string;
+  /** Lower-half fill (desk/floor bounce) — defaults to `sky`. */
+  floor?: string;
+  /** Light-source glow as an "r, g, b" triplet. */
+  glowColor?: string;
+  glowPos?: [number, number];
+  glowRadius?: number;
+  glowAlpha?: number;
+}
+
 /** Small hand-painted equirect environment: warm glow above-left, dark room below. */
-export function makeEnvTexture(): CanvasTexture {
+export function makeEnvTexture(opts: EnvTextureOptions = {}): CanvasTexture {
+  const {
+    sky = '#171009',
+    floor = sky,
+    glowColor = '255, 176, 102',
+    glowPos = [40, 14],
+    glowRadius = 46,
+    glowAlpha = 0.9,
+  } = opts;
   const c = document.createElement('canvas');
   c.width = 128;
   c.height = 64;
   const g = c.getContext('2d')!;
-  g.fillStyle = '#171009';
+  g.fillStyle = sky;
   g.fillRect(0, 0, 128, 64);
-  // dim warm ceiling glow
-  const glow = g.createRadialGradient(40, 14, 2, 40, 14, 46);
-  glow.addColorStop(0, 'rgba(255, 176, 102, 0.9)');
-  glow.addColorStop(1, 'rgba(255, 176, 102, 0)');
+  g.fillStyle = floor;
+  g.fillRect(0, 32, 128, 32);
+  // the room's light source
+  const glow = g.createRadialGradient(glowPos[0], glowPos[1], 2, glowPos[0], glowPos[1], glowRadius);
+  glow.addColorStop(0, `rgba(${glowColor}, ${glowAlpha})`);
+  glow.addColorStop(1, `rgba(${glowColor}, 0)`);
   g.fillStyle = glow;
   g.fillRect(0, 0, 128, 64);
   const t = new CanvasTexture(c);

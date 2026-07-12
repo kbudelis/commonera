@@ -41,12 +41,17 @@ export class ScrollPointer extends EventTarget {
     private dom: HTMLElement,
     private camera: Camera,
     targets: PointerTarget[],
+    /** requirePress: word events fire only while a button/finger is down —
+        the visual still follows on hover via surfacemove. */
+    private opts: { requirePress?: boolean } = {},
   ) {
     super();
     this.meshes = targets.map((t) => t.mesh);
     this.byMesh = new Map(targets.map((t) => [t.mesh, t]));
     dom.addEventListener('pointermove', this.onPointer);
     dom.addEventListener('pointerdown', this.onPointer);
+    dom.addEventListener('pointerup', this.onRelease);
+    dom.addEventListener('pointercancel', this.onRelease);
     dom.addEventListener('pointerleave', this.onLeave);
   }
 
@@ -54,11 +59,18 @@ export class ScrollPointer extends EventTarget {
   dispose() {
     this.dom.removeEventListener('pointermove', this.onPointer);
     this.dom.removeEventListener('pointerdown', this.onPointer);
+    this.dom.removeEventListener('pointerup', this.onRelease);
+    this.dom.removeEventListener('pointercancel', this.onRelease);
     this.dom.removeEventListener('pointerleave', this.onLeave);
     if (this.holdTimer) clearTimeout(this.holdTimer);
   }
 
   private onLeave = () => this.clear();
+
+  /** In press mode, releasing lets go of the word (the surface stays live). */
+  private onRelease = () => {
+    if (this.opts.requirePress) this.clearWord();
+  };
 
   emit<K extends keyof PointerEvents>(type: K, detail: PointerEvents[K]) {
     this.dispatchEvent(new CustomEvent(type, { detail }));
@@ -91,6 +103,12 @@ export class ScrollPointer extends EventTarget {
       pid: target.pid,
     });
 
+    const pressed = e.type === 'pointerdown' || (e.buttons ?? 0) > 0;
+    if (this.opts.requirePress && !pressed) {
+      this.clearWord();
+      return;
+    }
+
     const word = target.index.lookup(uv.u, uv.v);
     if (word?.id !== this.current?.word.id) {
       if (this.current) this.emit('wordleave', this.current);
@@ -106,10 +124,14 @@ export class ScrollPointer extends EventTarget {
     }
   };
 
-  private clear() {
+  private clearWord() {
     if (this.current) this.emit('wordleave', this.current);
     if (this.holdTimer) clearTimeout(this.holdTimer);
     this.current = null;
+  }
+
+  private clear() {
+    this.clearWord();
     if (this.onSurface) {
       this.onSurface = false;
       this.emit('surfaceleave', {});

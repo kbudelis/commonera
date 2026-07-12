@@ -1,11 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { paragraphWords, shema } from '../content/shema';
 import { synthesize } from './synth';
+import lettersTiming from '../../public/timing/letters.json';
 
 const CORPUS_ID = /^p\d+v\d+w\d+$/;
-const corpusIds = new Set(
-  shema.paragraphs.flatMap((p) => p.verses.flatMap((v) => v.words.map((w) => w.id))),
-);
 
 describe('synthesize letters', () => {
   const spec = {
@@ -23,8 +21,8 @@ describe('synthesize letters', () => {
   it('skips divine-name words as letter sources', () => {
     const tokens = synthesize(spec);
     for (const t of tokens) {
-      const parent = t.audioRef!.wordId;
-      expect(['p1v4w3', 'p1v4w5']).not.toContain(parent);
+      // parent identity shows in the gloss — the Name never appears there
+      expect(t.gloss).not.toContain('a-do-NAI');
     }
   });
 
@@ -34,9 +32,11 @@ describe('synthesize letters', () => {
     }
   });
 
-  it('points every letter at a real parent word slice and names it', () => {
+  it('points every letter at its own name on the letters track', () => {
+    const slices = new Set(lettersTiming.words.map((w) => w.id));
     for (const t of synthesize(spec)) {
-      expect(corpusIds.has(t.audioRef!.wordId)).toBe(true);
+      expect(t.audioRef!.track).toBe('letters');
+      expect(slices.has(t.audioRef!.wordId)).toBe(true); // slug exists in the built track
       expect(t.translit.length).toBeGreaterThan(0); // letter name from the codepoint table
       expect(t.gloss).toMatch(/^as in /);
       expect(t.counts).toBe(true);

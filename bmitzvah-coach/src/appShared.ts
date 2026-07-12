@@ -25,7 +25,7 @@ export interface AppShared {
   canvas: HTMLCanvasElement;
   ctx: SceneContext;
   engine: AudioEngine;
-  trackLoads: Map<'p1' | 'p2' | 'p3', Promise<void>>;
+  trackLoads: Map<string, Promise<void>>;
   textures: { albedo: Texture; normal: Texture; rough: Texture };
   ui: HTMLDivElement;
   strip: LearnerStrip;

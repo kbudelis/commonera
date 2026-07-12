@@ -7,8 +7,7 @@ import type { BakeOptions } from '../../text/bake';
 export type EraId =
   | 'tablet2026'
   | 'laptop1995'
-  | 'crt1984'
-  | 'dotmatrix1978'
+  | 'typewriter1958'
   | 'siddur1565'
   | 'manuscript1200'
   | 'scroll100bce';
@@ -43,6 +42,9 @@ export interface EraScene {
 
 export interface EraDeps {
   inkTexture: CanvasTexture;
+  /** Session-owned mask that fills in as words are first touched — materials
+      tint visited ink with it so learners can spot what they've missed. */
+  visited: CanvasTexture;
   /** Shared parchment PBR maps — never dispose these. */
   pbr: { albedo: Texture; normal: Texture; rough: Texture };
   quality: { bakeSize: number };

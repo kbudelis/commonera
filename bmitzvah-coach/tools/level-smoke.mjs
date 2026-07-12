@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Mini-level smoke test: jump to ?level=N, click through the intro, hover
 // every counting token, and assert the completion card appears.
-//   node tools/level-smoke.mjs <level 1-6> [shot-prefix]
+//   node tools/level-smoke.mjs <level 1-5> [shot-prefix]
 import { chromium } from 'playwright';
 
 const level = Number(process.argv[2] ?? 2);
@@ -24,6 +24,9 @@ await shot('level');
 
 const ids = await page.evaluate(() => window.__shema.wordIds());
 console.log(`${ids.length} counting tokens`);
+// Words only register while pressed — trace with the button held down.
+await page.mouse.move(640, 400, { steps: 3 });
+await page.mouse.down();
 for (const id of ids) {
   const p = await page.evaluate((i) => window.__shema.wordScreenPos(i), id);
   if (!p) { console.log('no pos for', id); continue; }
@@ -43,6 +46,7 @@ if (missing.length) {
     await page.waitForTimeout(420);
   }
 }
+await page.mouse.up();
 await shot('traced');
 await page.waitForSelector('#level-complete', { timeout: 8000 });
 console.log('completion card shown ✓');

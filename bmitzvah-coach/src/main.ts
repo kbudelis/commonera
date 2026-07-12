@@ -23,7 +23,7 @@ import { WordIndex } from './text/wordIndex';
 import { Screens } from './ui/screens';
 import { LearnerStrip } from './ui/strip';
 import { LevelController } from './levels/controller';
-import { LEVELS } from './levels/levels';
+import { LEVELS, levelByIndex } from './levels/levels';
 import type { AppShared, DevHooks } from './appShared';
 
 const base = import.meta.env.BASE_URL;
@@ -66,12 +66,13 @@ async function bootShared(): Promise<AppShared> {
   // --- Audio: start all loads now, but only p1 gates the start button —
   // p2/p3 finish downloading behind the landing screen and first session.
   const engine = new AudioEngine();
-  const trackLoads = new Map(
+  const trackLoads = new Map<string, Promise<void>>(
     shema.paragraphs.map((p) => [
       p.id,
       engine.loadTrack(p.id, p.audioTrack, `timing/${p.id}.json`),
     ]),
   );
+  trackLoads.set('letters', engine.loadTrack('letters', 'audio/letters.mp3', 'timing/letters.json'));
   await trackLoads.get('p1');
   canvas.addEventListener('pointerdown', () => engine.unlock(), { once: true });
 
@@ -693,15 +694,16 @@ async function boot() {
     shared.persist();
   }
 
-  // ?level=1..6 jumps straight into a mini level (dev/tests).
+  // ?level=N jumps straight into a mini level (dev/tests).
   const levelParam = Number(shared.params.get('level') || 0);
-  if (levelParam >= 1 && levelParam <= 6) {
+  const routedLevel = levelByIndex(levelParam);
+  if (routedLevel?.kind === 'mini') {
     controller.startLevel(levelParam);
     return;
   }
 
-  // ?level=7: the stable alias tests use — landing straight into the full arc.
-  if (levelParam === 7) {
+  // ?level=<last>: the stable alias tests use — landing straight into the full arc.
+  if (routedLevel?.kind === 'scroll') {
     const arc = startScrollArc(shared);
     shared.screens.landing((date) => {
       if (date) shared.progress.bmitzvahDate = date;

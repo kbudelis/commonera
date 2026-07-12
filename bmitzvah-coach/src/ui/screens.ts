@@ -24,6 +24,13 @@ export class Screens {
         .card p { font-size: 16px; line-height: 1.55; color: var(--muted); }
         .card .kicker { color: var(--accent); font-weight: 600; letter-spacing: 0.04em;
           text-transform: uppercase; font-size: 13px; margin-bottom: 8px; }
+        .card .challenge { margin-top: 16px; padding: 12px 16px; border-radius: 12px;
+          text-align: left; font-size: 14.5px; line-height: 1.5; color: var(--paper);
+          background: color-mix(in srgb, var(--accent) 12%, transparent);
+          border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+        .card .challenge b { display: block; color: var(--accent); font-size: 12px;
+          font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+          margin-bottom: 4px; }
         .btn { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 26px;
           padding: 14px 34px; font: 700 17px Rubik, system-ui; cursor: pointer;
           margin-top: 22px; transition: transform 0.12s ease, box-shadow 0.12s ease; }
@@ -91,8 +98,16 @@ export class Screens {
       <div id="chip"></div>
       <button id="credits-link" style="position:fixed;bottom:10px;right:14px;z-index:5;
         pointer-events:auto;background:none;border:0;color:#6a5c44;cursor:pointer;
-        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.credits.title}</button>`,
+        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.credits.title}</button>
+      <button id="help-link" style="position:fixed;bottom:10px;left:14px;z-index:5;
+        pointer-events:auto;background:none;border:0;color:#6a5c44;cursor:pointer;
+        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.help.link}</button>`,
     );
+    document.getElementById('help-link')!.addEventListener('click', () => this.toggleHelp());
+    addEventListener('keydown', (e) => {
+      if (e.key !== '?' || (e.target as HTMLElement)?.tagName === 'INPUT') return;
+      this.toggleHelp();
+    });
     document.getElementById('credits-link')!.addEventListener('click', () => {
       const m = this.layer(
         'credits-modal',
@@ -106,6 +121,32 @@ export class Screens {
       m.querySelectorAll('a').forEach((a) => (a.style.color = '#d4a017'));
       m.querySelector('#cclose')!.addEventListener('click', () => this.dismiss('credits-modal'));
     });
+  }
+
+  /** The ?-key panel: audio timing controls + level/debug URL params. */
+  toggleHelp() {
+    if (document.getElementById('help-modal')) {
+      this.dismiss('help-modal');
+      return;
+    }
+    const section = (sec: { heading: string; rows: readonly (readonly string[])[] }) => `
+      <h3 style="font:600 14px Rubik;color:var(--accent);margin:16px 0 6px">${sec.heading}</h3>
+      ${sec.rows
+        .map(
+          ([k, v]) => `<div style="display:flex;gap:12px;font:400 13.5px/1.6 Rubik">
+            <code style="flex:0 0 150px;color:var(--paper)">${k}</code>
+            <span style="color:var(--muted)">${v}</span></div>`,
+        )
+        .join('')}`;
+    const m = this.layer(
+      'help-modal',
+      `<div class="card" style="text-align:left;max-width:620px">
+        <h2>${copy.help.title}</h2>
+        <p class="small" style="margin-top:0">${copy.help.intro}</p>
+        ${copy.help.sections.map(section).join('')}
+        <button class="btn" id="hclose">${copy.help.close}</button></div>`,
+    );
+    m.querySelector('#hclose')!.addEventListener('click', () => this.dismiss('help-modal'));
   }
 
   private layer(id: string, inner: string, scrim = true): HTMLElement {
@@ -206,11 +247,19 @@ export class Screens {
     });
   }
 
-  levelIntro(kicker: string, title: string, body: string, cta: string, onStart: () => void) {
+  levelIntro(
+    kicker: string,
+    title: string,
+    body: string,
+    challenge: string,
+    cta: string,
+    onStart: () => void,
+  ) {
     const el = this.layer(
       'level-intro',
       `<div class="card"><div class="kicker">${kicker}</div>
        <h2>${title}</h2><p>${body}</p>
+       ${challenge ? `<div class="challenge"><b>${copy.timeline.challengeKicker}</b>${challenge}</div>` : ''}
        <button class="btn" id="go">${cta}</button></div>`,
     );
     el.querySelector('#go')!.addEventListener('click', () => {

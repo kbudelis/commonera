@@ -1,5 +1,5 @@
 import { MeshBasicNodeMaterial, type Texture } from 'three/webgpu';
-import { clamp, float, time, texture, uv, vec3 } from 'three/tsl';
+import { clamp, float, mix, time, texture, uv, vec3 } from 'three/tsl';
 import { createHighlightRig, type HighlightHandle } from './highlightRig';
 
 export interface ScreenMaterialOptions {
@@ -13,6 +13,8 @@ export interface ScreenMaterialOptions {
   flicker?: number;
   /** Vertical shading toward the bottom (cheap passive-matrix LCD look). */
   bgGradient?: number;
+  /** Tint already-visited text (mask fills in as words are touched). */
+  visited?: { map: Texture; tint: [number, number, number]; strength?: number };
 }
 
 export interface ScreenMaterialResult {
@@ -38,7 +40,14 @@ export function createScreenMaterial(
 
   const inkMask = ink.a;
   const bg = vec3(...opts.bgColor);
-  const text = vec3(...opts.textColor);
+  const baseText = vec3(...opts.textColor);
+  const text = opts.visited
+    ? mix(
+        baseText,
+        vec3(...opts.visited.tint),
+        texture(opts.visited.map).r.mul(opts.visited.strength ?? 0.8),
+      )
+    : baseText;
 
   let lit =
     opts.mode === 'darkOnLight'

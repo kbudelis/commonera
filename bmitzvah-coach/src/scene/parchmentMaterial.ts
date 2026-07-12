@@ -35,6 +35,8 @@ export interface ParchmentStyle {
   edgeVignette?: number;
   /** Faint horizontal ruling (sirtut) for the manuscript era. */
   ruledLines?: { count: number; strength: number };
+  /** Tint already-visited ink (mask fills in as words are touched). */
+  visited?: { map: Texture; tint: [number, number, number]; strength?: number };
 }
 
 /**
@@ -87,7 +89,12 @@ export function createParchmentMaterial(
   const { glow, glowTint, handles } = createHighlightRig();
   const inkMask = ink.a;
 
-  const inked = mix(paper, ink.rgb, inkMask);
+  let inkColor = ink.rgb;
+  if (style.visited) {
+    const seen = texture(style.visited.map).r.mul(style.visited.strength ?? 0.75);
+    inkColor = mix(inkColor, vec3(...style.visited.tint), seen);
+  }
+  const inked = mix(paper, inkColor, inkMask);
   // Ink glows bright under highlight; parchment tints faintly.
   const lit = inked.add(glowTint.mul(inkMask.mul(1.4).add(0.25)));
   material.colorNode = clamp(lit, 0, 2);

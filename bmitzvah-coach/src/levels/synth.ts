@@ -12,7 +12,7 @@ import type { ContentSpec } from './levels';
 
 export interface LevelToken extends ShemaWord {
   /** Slice to play on touch; null = silent (Baruch Shem rows). Letters point at their parent word. */
-  audioRef: { track: 'p1'; wordId: string } | null;
+  audioRef: { track: 'p1' | 'letters'; wordId: string } | null;
   /** Counts toward touch-all completion. */
   counts: boolean;
   /** Start a new baked line before this token. */
@@ -54,6 +54,11 @@ const LETTER_NAMES: Record<number, string> = {
   0x05ea: 'Tav',
 };
 
+/** Timing-map word id on the letters track — "Final Kaf" plays "Kaf". */
+function letterSlug(name: string): string {
+  return (name.startsWith('Final ') ? name.slice(6) : name).toLowerCase();
+}
+
 let wordByIdCache: Map<string, ShemaWord> | null = null;
 function wordById(id: string): ShemaWord {
   if (!wordByIdCache) {
@@ -91,7 +96,9 @@ function synthesizeLetters(sourceWordIds: string[]): LevelToken[] {
         heScroll: ch,
         translit: name,
         gloss: `as in ${parent.translit}${parent.gloss ? ` — ${parent.gloss}` : ''}`,
-        audioRef: { track: 'p1', wordId: parent.id },
+        // Letters speak their own NAME (letters track, ids = name slugs;
+        // final forms share the base letter's clip).
+        audioRef: { track: 'letters', wordId: letterSlug(name) },
         counts: true,
       });
     }
