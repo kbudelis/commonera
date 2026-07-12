@@ -111,7 +111,7 @@ export const copy = {
       'Scroll lettering: Stam Ashkenaz CLM by Yoram Gnat, the Culmus Project (GPL with font-embedding exception).',
       'Pointed Hebrew: Taamey Frank CLM, Culmus Project (GPL+FE). UI type: Rubik (SIL OFL).',
       'Parchment textures: <a href="https://ambientcg.com/view?id=Paper005" target="_blank" rel="noopener">ambientCG Paper005</a> (CC0). Era-device textures: <a href="https://ambientcg.com" target="_blank" rel="noopener">ambientCG</a> Wood027, Plastic004, Leather037, Metal009 (CC0).',
-      'Letter-tile sounds (level 1): synthesized chimes, original to this project; letter-name voice recordings are planned.',
+      'Letter-name voice (level 1): neural TTS (Microsoft edge-tts, he-IL) — demo placeholder pending a recorded human voice.',
       'Plain-English translations and all app copy are original to this project.',
       'Built with three.js (WebGPU renderer). This app supplements a real teacher — it doesn’t replace one.',
     ],
