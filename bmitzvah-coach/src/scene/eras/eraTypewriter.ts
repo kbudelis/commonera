@@ -38,7 +38,7 @@ export const eraTypewriter: EraDef = {
     vignette: true,
   },
   bake: { aspect: SHEET_W / SHEET_H, inkColor: '#26221f' },
-  create({ inkTexture, pbr }) {
+  create({ inkTexture, visited, pbr }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -51,6 +51,7 @@ export const eraTypewriter: EraDef = {
       ],
       normal: pbr.normal,
       normalScale: 0.25,
+      visited: { map: visited, tint: [0.6, 0.15, 0.11] }, // red ribbon
     });
     track(paperMat.material);
     const sheetGeo = track(new PlaneGeometry(SHEET_W, SHEET_H, 24, 48));

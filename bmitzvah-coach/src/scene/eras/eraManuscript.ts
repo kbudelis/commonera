@@ -37,7 +37,7 @@ export const eraManuscript: EraDef = {
     vignette: true,
   },
   bake: { aspect: VELLUM_W / VELLUM_H, inkColor: '#3a2410' },
-  create({ inkTexture, pbr }) {
+  create({ inkTexture, visited, pbr }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -48,6 +48,7 @@ export const eraManuscript: EraDef = {
       blotch: 0.16,
       edgeVignette: 0.6,
       ruledLines: { count: 15, strength: 0.05 },
+      visited: { map: visited, tint: [0.52, 0.14, 0.1] }, // rubrication red
     });
     track(parchment.material);
     const vellumGeo = track(new PlaneGeometry(VELLUM_W, VELLUM_H, 48, 48));

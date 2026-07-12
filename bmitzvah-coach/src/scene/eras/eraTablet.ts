@@ -39,7 +39,7 @@ export const eraTablet: EraDef = {
     vignette: false,
   },
   bake: { aspect: SCREEN_W / SCREEN_H, background: null, inkColor: '#ffffff' },
-  create({ inkTexture }) {
+  create({ inkTexture, visited }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -62,6 +62,7 @@ export const eraTablet: EraDef = {
       mode: 'darkOnLight',
       bgColor: [0.968, 0.953, 0.918], // warm reading-app paper
       textColor: [0.11, 0.11, 0.13],
+      visited: { map: visited, tint: [0.16, 0.4, 0.85] }, // visited-link blue
     });
     track(screenMat.material);
     const screen = new Mesh(track(new PlaneGeometry(SCREEN_W, SCREEN_H)), screenMat.material);

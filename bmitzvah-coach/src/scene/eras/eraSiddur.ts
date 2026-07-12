@@ -93,7 +93,7 @@ export const eraSiddur: EraDef = {
     vignette: true,
   },
   bake: { aspect: PAGE_W / PAGE_H },
-  create({ inkTexture, pbr }) {
+  create({ inkTexture, visited, pbr }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -104,6 +104,7 @@ export const eraSiddur: EraDef = {
       ageTintEdge: [0.98, 0.92, 0.8],
       blotch: 0.04,
       edgeVignette: 0.85,
+      visited: { map: visited, tint: [0.55, 0.15, 0.1] }, // rubrication red
     });
     track(parchment.material);
     const pageGeo = track(new PlaneGeometry(PAGE_W, PAGE_H, 48, 12));

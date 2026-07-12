@@ -22,6 +22,8 @@ export function createPaperMaterial(
     colors?: [[number, number, number], [number, number, number]];
     normal?: Texture;
     normalScale?: number;
+    /** Tint already-visited ink (mask fills in as words are touched). */
+    visited?: { map: Texture; tint: [number, number, number]; strength?: number };
   } = {},
 ): PaperMaterialResult {
   const {
@@ -44,7 +46,12 @@ export function createPaperMaterial(
   const band = step(0.5, fract(uv().y.mul(barCount)));
   const bg = mix(vec3(...colors[0]), vec3(...colors[1]), band);
   const inkMask = ink.a;
-  const lit = mix(bg, ink.rgb, inkMask).add(glowTint.mul(inkMask.mul(1.4).add(0.25)));
+  let inkColor = ink.rgb;
+  if (opts.visited) {
+    const seen = texture(opts.visited.map).r.mul(opts.visited.strength ?? 0.8);
+    inkColor = mix(inkColor, vec3(...opts.visited.tint), seen);
+  }
+  const lit = mix(bg, inkColor, inkMask).add(glowTint.mul(inkMask.mul(1.4).add(0.25)));
   material.colorNode = clamp(lit, 0, 2);
   material.roughnessNode = float(0.9);
 

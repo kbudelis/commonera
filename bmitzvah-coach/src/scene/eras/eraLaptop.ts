@@ -37,7 +37,7 @@ export const eraLaptop: EraDef = {
     vignette: false,
   },
   bake: { aspect: SCREEN_W / SCREEN_H, background: null, inkColor: '#ffffff' },
-  create({ inkTexture }) {
+  create({ inkTexture, visited }) {
     const group = new Group();
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -61,6 +61,7 @@ export const eraLaptop: EraDef = {
       bgColor: [0.77, 0.8, 0.75], // gray-green passive matrix
       textColor: [0.13, 0.16, 0.24],
       bgGradient: 0.12,
+      visited: { map: visited, tint: [0.2, 0.34, 0.62] }, // visited-link blue
     });
     track(screenMat.material);
     const screen = new Mesh(track(new PlaneGeometry(SCREEN_W, SCREEN_H)), screenMat.material);

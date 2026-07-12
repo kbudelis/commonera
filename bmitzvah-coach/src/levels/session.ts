@@ -1,4 +1,4 @@
-import { Vector3 } from 'three/webgpu';
+import { CanvasTexture, Vector3 } from 'three/webgpu';
 import { ScrubPlayer } from '../audio/scrub';
 import { levelCopy } from '../content/copy';
 import { toScrollText } from '../content/types';
@@ -6,7 +6,7 @@ import { ScrollPointer } from '../interaction/pointer';
 import type { EraDef, EraScene } from '../scene/eras/types';
 import { POINTERS } from '../scene/pointers';
 import { Yad } from '../scene/yad';
-import { bakeColumn, type BakedColumn } from '../text/bake';
+import { bakeColumn, type BakedColumn, type BakedWord } from '../text/bake';
 import { WordIndex } from '../text/wordIndex';
 import { TokenLabels } from '../ui/labels';
 import { applyEraTheme, resetEraTheme } from '../ui/theme';
@@ -46,6 +46,24 @@ export class MiniLevelSession {
     this.parallax.x = 0;
     this.parallax.y = 0;
   };
+  /** Fills in as words are first touched; era materials tint visited ink. */
+  private visitedCanvas = document.createElement('canvas');
+  private visitedTexture!: CanvasTexture;
+
+  private markVisited(word: BakedWord) {
+    const g = this.visitedCanvas.getContext('2d')!;
+    const { width: w, height: h } = this.visitedCanvas;
+    const { u0, v0, u1, v1 } = word.uvRect;
+    const pad = 0.004;
+    g.fillStyle = '#fff';
+    g.fillRect(
+      (u0 - pad) * w,
+      (1 - v1 - pad) * h,
+      (u1 - u0 + pad * 2) * w,
+      (v1 - v0 + pad * 2) * h,
+    );
+    this.visitedTexture.needsUpdate = true;
+  }
 
   constructor(
     private shared: AppShared,
@@ -78,8 +96,13 @@ export class MiniLevelSession {
       debugRects: shared.params.has('debugRects'),
     });
 
+    this.visitedCanvas.width = 512;
+    this.visitedCanvas.height = Math.round(512 / eraDef.bake.aspect);
+    this.visitedTexture = new CanvasTexture(this.visitedCanvas);
+
     this.era = eraDef.create({
       inkTexture: this.baked.texture,
+      visited: this.visitedTexture,
       pbr: shared.textures,
       quality: { bakeSize: shared.bakeSize },
     });
@@ -197,6 +220,7 @@ export class MiniLevelSession {
         const first = token.counts && !this.touched.has(token.id);
         if (first) {
           this.touched.add(token.id);
+          this.markVisited(word);
           this.labels?.markTouched(token.id);
           if (token.group) this.maybePlayChunk(token.group);
           if (this.tokens.every((t) => !t.counts || this.touched.has(t.id))) this.complete();
@@ -258,6 +282,7 @@ export class MiniLevelSession {
     scene.remove(this.era.group, this.yad.group);
     this.era.dispose();
     this.baked.texture.dispose();
+    this.visitedTexture.dispose();
     this.yad.dispose();
     this.labels?.dispose();
     this.shared.strip.hide();

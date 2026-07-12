@@ -42,6 +42,9 @@ export interface EraScene {
 
 export interface EraDeps {
   inkTexture: CanvasTexture;
+  /** Session-owned mask that fills in as words are first touched — materials
+      tint visited ink with it so learners can spot what they've missed. */
+  visited: CanvasTexture;
   /** Shared parchment PBR maps — never dispose these. */
   pbr: { albedo: Texture; normal: Texture; rough: Texture };
   quality: { bakeSize: number };
