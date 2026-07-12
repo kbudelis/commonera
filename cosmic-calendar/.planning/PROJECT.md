@@ -2,178 +2,163 @@
 
 ## What This Is
 
-A lunar-wisdom / seasonal-reading web app that tells you what this season holds —
-through reflection cards, seasonal archetypes, and tiny rituals. The lead
-experience is universal ("what does this season hold?"); the system underneath is
-the Hebrew calendar (12 months, each with a zodiac sign, tribe, Hebrew letter,
-sense, and energy, rooted in Kabbalistic tradition / Sefer Yetzirah). Built for
-culturally Jewish millennials and Gen Z who are into astrology, wellness, or lunar
-practices but have never met the Jewish calendar as a living wisdom tradition.
+A mobile-first seasonal-reflection experience rooted in the Jewish mystical
+astrology tradition of *Sefer Yetzirah*. A visitor can enter a name and birthday
+for a personal Hebrew birth-month portrait or skip directly to the current
+month, then explore authored month readings, a small ritual, and lightweight
+Friday/moon return cues.
+
+The product begins with familiar Western zodiac recognition, then reveals the
+Hebrew month as a deeper rhythm of reflection, repair, and seasonal practice.
+It is reflective rather than predictive and does not require religious
+knowledge or observance.
 
 ## Core Value
 
-A user with zero knowledge of the Hebrew calendar gets a meaningful, beautiful,
-shareable season reading in under 60 seconds — and the Jewish layer lands as a
-delightful discovery, never a requirement.
+A user with zero knowledge of the Hebrew calendar receives a meaningful,
+beautiful season reading and personal portrait in under 60 seconds, while the
+Jewish mystical layer lands as discovery rather than prerequisite.
 
 ## Business Context
 
-<!-- Sprint prototype for Common Era (CE). Not monetized in this sprint. -->
+- **Customer:** Culturally Jewish millennials and Gen Z who already understand
+  astrology, wellness, or lunar ritual; secondarily, spiritually curious
+  non-Jews.
+- **Prototype purpose:** Validate the Common Era concept and emotional/visual
+  direction; no sprint revenue model.
+- **Success signal:** Users recognize themselves in the portrait, understand
+  the monthly/weekly return cadence, and find the Hebrew-calendar reveal
+  interesting rather than alienating.
+- **Strategy source:** `Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`,
+  superseded where later client feedback and accepted planning decisions are
+  explicit.
 
-- **Customer**: Culturally Jewish millennials / Gen Z (astrology/wellness/lunar
-  audience); secondary: spiritually curious non-Jews. Persona: "Noa, 22."
-- **Revenue model**: N/A this sprint — prototype to validate the concept for CE.
-- **Success metric**: Season Card is shared unprompted (≥1 in 5 test users would
-  send it to a friend); Jewish layer described as "interesting/surprising," not
-  off-putting.
-- **Strategy notes**: See `Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`.
+## Current Milestone: v1.0 Prototype Handoff
 
-## Current Milestone: v1.0 Two-Hour Mobile Prototype
+**Status:** Handoff-ready feature branch; not a production release.
+**Completed boundaries:** Phases 1, 2, 3, inserted 03.1, and 4.
+**Deferred boundary:** Phase 5 zodiac rotor integration.
+**Deployment caveat:** The public GitHub Pages build follows `main`; the latest
+feature-branch implementation is not public until the handoff PR is merged and
+Pages redeploys.
 
-**Goal:** Deliver a convincing mobile-first welcome-to-reading prototype that
-covers every PRD must-have while keeping final content, assets, and astrology
-interaction replaceable.
+### Implemented
 
-**Target features:**
-- Six-state mobile flow: welcome → zodiac transition → optional birthday →
-  conditional personal reveal → current-month reading → moon/Friday upcoming.
-- Pre-authored static readings and twelve lightweight birth-month profiles with
-  no runtime AI, server, database, login, or account.
-- Blue Zodiac visual system, soft vertical settling, `easeInOutCubic` motion,
-  screenshot-ready compositions, and reduced-motion parity.
-- A mostly-static final return-cadence panel for Friday Pulse and moon moments.
+- Two-page cinematic welcome and automatic zodiac transition
+- Name/date personal path plus birthday-level skip to the current month
+- Deterministic Hebrew-date/month derivation and versioned local persistence
+- Twelve authored month readings and twelve authored birth portraits
+- Western sign + Hebrew month/letter personal composition
+- Touch/click/keyboard twelve-month constellation gallery
+- Ritual and discoverable Gra / Arizal-Gra grounding
+- Derived Friday/Shabbat state and symbolic upcoming moon windows
+- Locked portrait shell, full-screen reading settlement, focus, keyboard, and
+  reduced-motion contracts
+
+### Validation
+
+- `npm run test:flow` — 24/24 passing
+- `npm run build` — passing
+- 390 × 844 no-screenshot Chrome smoke — both paths, twelve gallery options,
+  keyboard selection, full-screen section geometry, no horizontal overflow,
+  and reduced-motion preference all passed
 
 ## Requirements
 
-### Validated
+### Validated for the prototype handoff
 
-- ✓ Zero-login welcome-to-upcoming navigation through either the birthday or skip path — Phase 1
+- Mobile welcome-to-upcoming journey through personal and skip paths
+- Deterministic Hebrew calendar, month, storage, and symbolic moon data
+- Twelve season readings, twelve birth portraits, and concrete rituals
+- Approved local type, letter art, constellation art, and blue/paper composition
+- Browse-all-twelve constellation gallery
+- Friday/moon teaser and prototype accessibility/viewport QA
 
-### Active
+### Active / next developer
 
-<!-- Hypotheses until shipped. Sourced from PRD §4 "Must Have" + §6 core flow. -->
+- [x] Capture the current application source and GSD closeout records in one
+  intentional feature-branch handoff commit.
+- [ ] Run the paused final screenshot and physical-device visual review.
+- [ ] Decide Phase 5: selectively integrate `codex/rotor-prototype` or formally
+  move it to a later milestone.
+- [ ] Rerun all flow, portrait, keyboard, overflow, and reduced-motion checks if
+  rotor behavior is introduced.
+- [ ] Merge the accepted feature commit to `main` and verify GitHub Pages.
+- [ ] Resolve production library, asset, content, and calendar-accuracy gates.
 
-- [ ] Season Reading for the auto-detected current Hebrew month — energy/archetype,
-      zodiac sign + current moon phase, one tiny ritual, Hebrew month name
-      (English primary, Hebrew secondary). Beautiful, readable, screenshot-shareable.
-- [ ] Works for someone who has never heard of the Hebrew calendar (no Hebrew in
-      the primary hook).
-- [ ] Discoverable Kabbalistic grounding — a tappable/info layer explaining what
-      the system is and where it comes from (2-3 sentences, surprising not academic).
-- [ ] Birthday reading / birth profile — enter birthday → Hebrew birth date, sign,
-      tribe, moon phase at birth, Hebrew letter, tikkun framing, personalized reading.
-- [ ] "What's coming up" panel — Friday Pulse teaser/countdown (rooted in Shabbat,
-      named universally) + next full/new moon date when within ~7 days.
+### Out of Scope for v1.0
 
-### Out of Scope
+- Full planetary Mazal/Sefirot chart
+- Full Jewish holiday calendar
+- Runtime AI, CMS, database, server, login, accounts, social, or community
+- Prediction or fate claims
+- Astronomically exact moon data, birth time, sunset, location, or timezone
+- Full standalone Friday Pulse/moon experiences, notifications, or share export
+- Production distribution without explicit legal/editorial review
 
-<!-- From PRD §4 "Not This Sprint." Reasons prevent re-adding. -->
+## Current Architecture
 
-- Full planetary Mazal chart mapped to Sefirot — requires an astronomy API; strong v2.
-- Full Jewish holiday calendar — beyond the season/birth-profile core.
-- Time zones — too complex for the sprint.
-- Torah / religious / observance content — stay wisdom, not synagogue tone.
-- Social / community features — not core to the return mechanic this sprint.
-- Prediction / fate-telling — tone is invitation ("this season invites…"), not fortune.
-- Login / user accounts — zero-friction is a core value.
+- **Runtime:** Vite + React + TypeScript static SPA
+- **Date engine:** `@hebcal/core`; accepted for prototype use only pending a
+  production licensing decision
+- **State:** Pure reducer for flow plus local React state; no routing library
+- **Content:** Authored typed records in `src/content.ts`; no runtime model
+- **Persistence:** `localStorage` key `cosmic-calendar.birth-profile.v1`
+- **Backend:** None
+- **Deployment:** Shared monorepo GitHub Pages workflow; `BASE_PATH` is injected
+  as `/commonera/cosmic-calendar/`
+- **Testing:** TypeScript test build plus Node's built-in test runner and a
+  temporary Chrome portrait smoke check
 
-## Context
-
-- **Source of truth**: the PRD (`Cosmic Calendar PRD __ COMMON ERA × VIBE CODING.md`)
-  defines product requirements, content boundaries, and success criteria. The
-  user-approved six-state flow and Blue Zodiac/light-paper direction supersede
-  the PRD's suggested screen order and dark visual treatment. The month content
-  table remains a starting point, not a locked content spec.
-- **Date engine**: `hebcal` npm handles Gregorian→Hebrew conversion for the
-  birthday flow and current-month detection.
-- **Content model**: PRE-AUTHORED static content (no runtime LLM, no backend). We
-  author all readings at build time (AI-assisted, best-judgment research); poetic,
-  grounded tone — not academic, not horoscope-generic; rituals specific enough to do
-  today. No CE / subject-matter review at this stage — content is flagged revisable.
-- **Visual**: the Blue Zodiac fills the welcome, then becomes a persistent circular
-  astrology element over a light paper background sampled from the source image.
-  White modern-serif welcome copy gives way to dark editorial text, large Hebrew
-  letters, constellation line art, and a central moon. No explicit Jewish symbols
-  in the primary UI; the Jewish layer remains textual and discoverable.
-- **Status**: Phase 1's mobile flow is verified and Phase 2 is ready for content
-  and static-data planning. Final product name, production typefaces, Hebrew
-  illustration licensing, and the full interactive rotary system remain revisable.
+The main implementation is concentrated in `src/flow.ts`, `src/content.ts`,
+`src/App.tsx`, and `src/styles.css`. The code is intentionally prototype-sized;
+modularize only after preserving the accepted visual behavior.
 
 ## Constraints
 
-- **Tech stack**: Vite + React + TypeScript static SPA → Cloudflare Pages (`dist/`
-  output; no backend) — per `research/STACK.md`. `@hebcal/core` for Hebrew conversion —
-  **GPL-2.0, accepted for the internal prototype**; licensing checkpoint (permissive
-  alternative or clearance) before any shipping (see `.planning/DECISIONS.md`). Deploy
-  guard: keep `.assetsignore`; set Wrangler `assets.directory="./dist"` (never `"."`).
-- **Content ownership**: We author all content via best-judgment research of
-  Kabbalistic / Sefer Yetzirah sources — no subject-matter expert on hand. Cite
-  sources, flag where traditions vary; revisable for future CE review.
-- **Platform**: Mobile-first (portrait); season card designed share-ready (9:16).
-- **Prototype workflow**: implement one approved mobile direction directly. The
-  static zodiac image, placeholder copy, and generic constellation/moon shapes come
-  first; content, typed data, visual polish, and the final upcoming panel replace
-  them in short passes. Existing sketches remain reference material, not competing
-  directions. Lovable is not required.
-- **Priority order**: visible flow first; static content/data second; visual/motion
-  integration third; moon/upcoming and final QA last. The "backend" is a typed
-  client-side data/service boundary only. No auth, database, or server is added.
-- **Dependency**: `hebcal` npm for Hebrew date conversion — Why: PRD-specified, avoids
-  reimplementing the calendar.
-- **Timeline**: approximately two hours for the v1.0 prototype — Why: the user needs
-  the entire first experience represented quickly; production hardening is deferred.
-- **Auth**: No login / no accounts this sprint — Why: zero-friction is a core value.
-  Architect so accounts can be added later; persist the birth profile in `localStorage`.
-- **Tone**: Wisdom, not observance; discovery, not declaration — Why: reaches the
-  non-observant target audience without feeling religious.
-- **UI**: No explicit Jewish symbols in the primary UI — Why: the reveal is textual
-  and earned, per PRD visual guidelines.
+- Mobile-first portrait composition; desktop is a centered shell, not a separate
+  product experience.
+- No backend or runtime network dependency may be added casually.
+- Moon language must remain symbolic until an astronomy layer exists.
+- Civil date conversion is not sunset-accurate; after-sunset births may shift
+  the Hebrew day.
+- Correspondences follow the documented Gra / Arizal-Gra lineage and must not be
+  represented as universal across traditions.
+- Wisdom, not observance; discovery, not declaration; no fate claims.
+- The Hebrew glyph and reading remain the focal point; visual effects support
+  rather than replace the content.
+- The public site deploys only through the parent repo's `main` workflow.
+- Before production, resolve Hebcal licensing, Hebrew-art provenance, font
+  terms, constellation sources, and expert review of authored spiritual copy.
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
-|----------|-----------|---------|
-| Hebrew calendar is the hidden engine; surfaced as discovery | Serves astrology/wellness audience first; Jewish layer is a delight, not a gate | — Pending |
-| Content is PRE-AUTHORED static (no runtime LLM, no backend) | 1-day sprint, no login, content must be consistent and reviewable | — Pending |
-| We author all content via best-judgment Kabbalistic research; no CE review yet | No subject-matter expert on hand; cite sources, flag variance, revisable later | — Pending |
-| Current month authored richly; other 11 on a shared lighter template | Birthday flow needs all 12; build reusable schema from the rich one | — Pending |
-| Must-haves first; architect with full spec (Friday Pulse/moon/browse) in mind | Sprint focus, but don't foreclose the return-mechanic features | — Pending |
-| Sharing: design card share-ready (mobile 9:16) first, build share-export after | Design quality is the gate on the distribution mechanic | — Pending |
-| Mobile-first; no accounts now (architect for later); `localStorage` for birth profile | "One tap" / IG-story usage; rapid prototype | — Pending |
-| Moon phase derived from Hebrew day-of-month (no astronomy lib) | Lunar calendar already encodes it; avoids the v2 astronomy dependency | — Pending |
-| Leap-year Adar I/II → single Adar (Pisces); date-only input, no time/timezone | §4 excludes timezones; keep birthday input frictionless | — Pending |
-| Use `hebcal` (`@hebcal/core`) for date conversion | PRD-specified; handles leap years / molad | — Pending |
-| Opus plans / Codex executes (per CLAUDE.md); stack research → Codex | Dual-runtime GSD orchestration | — Pending |
-| Decisions captured; REQUIREMENTS/ROADMAP still pending moodboard (name, palette, type) | Avoid premature scope lock while visuals unresolved | — Pending |
-| Stack: Vite + React + TS static SPA → Cloudflare Pages | Smallest stack fitting static / no-backend / mobile-first (research/STACK.md) | — Pending |
-| Attribution lineage: Gra / GalEinai (R. Ginsburgh) | Coherent single lineage; matches PRD zodiac; letters + tribes verifiable (research/MONTH-ATTRIBUTIONS.md) | — Pending |
-| `@hebcal/core` GPL-2.0 — accepted for internal prototype | Not shipping yet; move fast now, clear license (or swap) before production | ✓ Good (prototype); revisit before ship |
-| Prototype workflow: Codex base → v0 directions → Codex worktree finalists → branch previews | Maximizes visual exploration without adding Lovable as another code owner; every variant shares one contract | ✓ Locked |
-| Priority: visual prototyping first; backend architecture second | Select the interaction and visual system before implementing real services; keep architecture replaceable through shared adapters | ✓ Locked |
-| Six-state mobile flow with optional birthday | Preserves the personal reveal without blocking zero-friction access to the current month | ✓ Locked |
-| Continuous vertical page with soft proximity settling | Frames should resolve cleanly without mandatory snapping or scroll hijacking | ✓ Locked |
-| `easeInOutCubic` for visual/programmatic transitions | Gives the page one consistent motion language while native touch scrolling remains native | ✓ Locked |
-| Motion pacing: 6-second zodiac contraction, 0.5-second settled hold, then an automatic DOB handoff and shared upward reveal | User requested continuity and a slower, meditative rhythm instead of cuts | ✓ Validated in Phase 1 |
-| Blue Zodiac plus light paper supersedes original dark PRD treatment | User supplied the visual source and explicitly overrode the original visual specification | ✓ Locked |
-| Personal month layer = current month plus birth-month reflection | Creates meaningful personalization without claiming astronomical planetary transits | ✓ Locked |
-| Two-hour scope uses screenshot-ready sharing and lightweight content | Meets the PRD core while deferring production export, full browse, and rich content for all twelve months | ✓ Locked |
+|---|---|---|
+| Use the Hebrew calendar as the hidden engine and Western zodiac as the familiar entry | Recognition builds trust before the distinctive Hebrew-month discovery | Validated by client feedback |
+| Keep content authored and deterministic | Sprint speed, instant results, reviewability, and no backend requirement | Good for prototype |
+| Persist stable input/facts rather than authored prose | Copy can evolve without corrupting saved profiles | Good |
+| Use local-noon civil dates | Avoid JavaScript UTC date-only shifts | Good; sunset accuracy still deferred |
+| Treat moon phases as symbolic Hebrew-month rhythm | Avoid unsupported astronomy claims in sprint scope | Good for prototype |
+| Normalize Adar I/II to one content key while retaining exact facts | Maintain a twelve-entry content model without losing calendar identity | Good |
+| Use twelve authored personal portraits | Client feedback favored specific recognition/depth over one generic template | Accepted in Phase 03.1 |
+| Put skip on the birthday frame | Preserve the poetic two-page welcome while keeping personalization optional | Accepted in Phase 03.1 |
+| Use full-screen post-birth settlement | Protect each screenshot-oriented composition and prevent partial frames | Accepted in Phase 03.1 |
+| Promote browse-all-twelve into the prototype | The constellation gallery became the chosen static exploration mechanism | Accepted in Phase 03.1 |
+| Keep Friday/moon concise | Communicate return cadence without expanding into full weekly/monthly products | Good for v1.0 |
+| Keep the rotor isolated | Avoid destabilizing the finished static flow before a deliberate integration pass | Correct; Phase 5 remains open |
+| Deploy through shared GitHub Pages | Matches the actual monorepo workflow and public URL | Current source of truth |
 
-## Evolution
+## GSD Operating Boundary
 
-This document evolves at phase transitions and milestone boundaries.
+The local GSD installation is shared between `.claude/` and `.codex/`.
+`.planning/STATE.md`, `ROADMAP.md`, and `REQUIREMENTS.md` are the current contract;
+phase plans/summaries/verifications are historical execution evidence. Planning
+and verification belong to Opus/Claude; implementation and all research belong
+to Codex unless the user explicitly changes that split.
 
-**After each phase transition** (via `/gsd-transition`):
-1. Requirements invalidated? → Move to Out of Scope with reason
-2. Requirements validated? → Move to Validated with phase reference
-3. New requirements emerged? → Add to Active
-4. Decisions to log? → Add to Key Decisions
-5. "What This Is" still accurate? → Update if drifted
-
-**After each milestone** (via `/gsd-complete-milestone`):
-1. Full review of all sections
-2. Core Value check — still the right priority?
-3. Audit Out of Scope — reasons still valid?
-4. Update Context with current state
+On resume, read `README.md`, then `STATE.md`, `ROADMAP.md`, `REQUIREMENTS.md`,
+`HANDOFF.json`, and `.continue-here.md` before acting.
 
 ---
-*Last updated: 2026-07-11 after Phase 1 completion*
+*Last updated: 2026-07-11 after GSD prototype-handoff reconciliation*

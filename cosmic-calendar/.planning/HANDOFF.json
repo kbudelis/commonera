@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-07-11T23:51:51.000Z",
+  "phase": "05",
+  "phase_name": "Zodiac Rotor Integration",
+  "phase_dir": ".planning/phases/05-zodiac-rotor-integration",
+  "plan": 1,
+  "task": 0,
+  "total_tasks": 3,
+  "status": "paused",
+  "completed_tasks": [
+    {
+      "id": "phase-01",
+      "name": "Mobile Flow Skeleton",
+      "status": "done",
+      "verification": ".planning/phases/01-mobile-flow-skeleton/01-VERIFICATION.md"
+    },
+    {
+      "id": "phase-02",
+      "name": "Content and Static Data",
+      "status": "done",
+      "commit": "e9d9677",
+      "verification": ".planning/phases/02-content-static-data/02-VERIFICATION.md"
+    },
+    {
+      "id": "phase-03",
+      "name": "Visual Assets and Typography",
+      "status": "done",
+      "verification": ".planning/phases/03-visual-assets-typography/03-VERIFICATION.md"
+    },
+    {
+      "id": "phase-03.1",
+      "name": "Client Feedback Copy Glyph and Month Page",
+      "status": "implementation_complete_committed",
+      "verification": ".planning/phases/03.1-client-feedback-copy-glyph-and-month-page-visual-magic/03.1-VERIFICATION.md"
+    },
+    {
+      "id": "phase-04",
+      "name": "Upcoming and QA",
+      "status": "implementation_complete_committed",
+      "verification": ".planning/phases/04-upcoming-qa/04-VERIFICATION.md"
+    }
+  ],
+  "remaining_tasks": [
+    {
+      "id": "review-handoff-pr",
+      "name": "Review the handoff PR and confirm a clean checkout",
+      "status": "not_started"
+    },
+    {
+      "id": "visual-device-review",
+      "name": "Run paused screenshot and physical-device review",
+      "status": "not_started"
+    },
+    {
+      "id": "phase-05",
+      "name": "Decide and execute or defer selective zodiac rotor integration",
+      "status": "not_started"
+    },
+    {
+      "id": "publish",
+      "name": "Merge the feature branch to main and verify GitHub Pages",
+      "status": "not_started"
+    }
+  ],
+  "blockers": [
+    {
+      "description": "The newest application implementation is on the feature branch but not deployed from main.",
+      "type": "technical",
+      "workaround": "Review the draft PR and confirm a clean checkout before branch or worktree changes."
+    },
+    {
+      "description": "The isolated rotor is not integrated and may conflict with the completed month gallery.",
+      "type": "technical",
+      "workaround": "Port selectively behind the existing zodiac boundary and rerun all flow and reduced-motion checks."
+    },
+    {
+      "description": "Production distribution requires library asset and content review.",
+      "type": "human_action",
+      "workaround": "Keep the build labeled as an internal prototype until reviews are complete."
+    }
+  ],
+  "async_jobs": [],
+  "human_actions_pending": [
+    {
+      "action": "Review final mobile screenshots and physical-device keyboard behavior",
+      "context": "Screenshot work was explicitly paused during closeout.",
+      "blocking": false
+    },
+    {
+      "action": "Approve Phase 5 integration or deferral",
+      "context": "Rotor remains isolated from the current app.",
+      "blocking": true
+    },
+    {
+      "action": "Resolve production licensing provenance and subject-matter review",
+      "context": "Prototype dependencies assets and spiritual content are not production-cleared.",
+      "blocking": true
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Treat the published client-feedback feature branch as the handoff source of truth.",
+      "rationale": "It implements accepted feedback and passes automated and portrait-browser checks.",
+      "phase": "03.1"
+    },
+    {
+      "decision": "Keep the zodiac rotor isolated at handoff.",
+      "rationale": "A deliberate integration decision is safer than merging a competing prototype wholesale.",
+      "phase": "05"
+    },
+    {
+      "decision": "Use the shared GitHub Pages workflow as deployment truth.",
+      "rationale": "Only parent-repo main deploys the public monorepo site.",
+      "phase": "handoff"
+    }
+  ],
+  "uncommitted_files": [],
+  "next_action": "Read README.md and .planning/.continue-here.md; confirm a clean checkout; run npm run test:flow and npm run build; review the draft PR before inspecting the rotor worktree.",
+  "context_notes": "The app through Phase 4 is captured on the handoff feature branch. Phase 5, final screenshots, merge to main, public deployment verification, and production legal/editorial review remain explicit."
+}

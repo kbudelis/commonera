@@ -43,12 +43,12 @@ The `.planning/` artifacts ARE the contract between runtimes — never re-derive
 from chat. If chat and `.planning/` disagree, trust `.planning/` and `/gsd-help`.
 
 ## On resume (fresh session)
-Read `STATE.md` → `ROADMAP.md` → current `PLAN.md`. Don't re-derive from chat.
+Read `README.md` → `.planning/STATE.md` → `.planning/HANDOFF.json` →
+`.planning/ROADMAP.md` → the current phase plan. Don't re-derive from chat.
 
-## Deploy guard (revisit once the stack is chosen)
-The frontend/deploy stack is not yet chosen. If the platform serves the repo
-root as static assets (e.g. a Cloudflare Worker with `assets.directory: "."`),
-`.assetsignore` is the ONLY thing keeping GSD/planning files private — verify it
-excludes `.claude/ .codex/ .planning/ CLAUDE.md` and the PRD. If the platform
-builds to a `dist/`/`build/` output dir instead, this is N/A. A starter
-`.assetsignore` already exists in the repo root.
+## Deploy guard
+The active host is the parent `commonera` repository's GitHub Pages workflow.
+It builds this app to `dist/` with `BASE_PATH=/commonera/cosmic-calendar/` through
+`.site/build-all.sh`; it does not serve this project root. Deployment runs only
+from parent-repo `main`. Keep `.assetsignore` as defense in depth, and never add
+`.planning/`, `.claude/`, `.codex/`, the PRD, or handoff files to a public build.
