@@ -137,8 +137,8 @@ export const levelCopy: Record<string, LevelCopy> = {
     introKicker: '1995 · The family laptop',
     introTitle: 'Now: whole words.',
     introBody:
-      'Eight words — the spine of the Shema and the V’ahavta. Listen. Israel. One. ' +
-      'Love. Heart. Soul. Doorposts. Touch each one and a real cantor sings it. ' +
+      'Eight words — the spine of the Shema and the V’ahavta. Listen. One. Love. ' +
+      'Heart. Soul. Touch each one and a real cantor sings it. ' +
       '(In 1995, downloading one of these sounds took all afternoon.)',
     introCta: 'Boot it up',
     doneKicker: 'Eight words down',
