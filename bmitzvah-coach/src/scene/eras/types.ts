@@ -7,8 +7,7 @@ import type { BakeOptions } from '../../text/bake';
 export type EraId =
   | 'tablet2026'
   | 'laptop1995'
-  | 'crt1984'
-  | 'dotmatrix1978'
+  | 'typewriter1958'
   | 'siddur1565'
   | 'manuscript1200'
   | 'scroll100bce';

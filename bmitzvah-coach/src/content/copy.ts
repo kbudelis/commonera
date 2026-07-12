@@ -81,7 +81,7 @@ export const copy = {
       'Chanted audio: “Shema 1/2/3” by SuperJew via <a href="https://commons.wikimedia.org/wiki/File:Shema_1_SuperJew.ogg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> (transcoded to MP3, sliced for word-level playback).',
       'Scroll lettering: Stam Ashkenaz CLM by Yoram Gnat, the Culmus Project (GPL with font-embedding exception).',
       'Pointed Hebrew: Taamey Frank CLM, Culmus Project (GPL+FE). UI type: Rubik (SIL OFL).',
-      'Parchment textures: <a href="https://ambientcg.com/view?id=Paper005" target="_blank" rel="noopener">ambientCG Paper005</a> (CC0).',
+      'Parchment textures: <a href="https://ambientcg.com/view?id=Paper005" target="_blank" rel="noopener">ambientCG Paper005</a> (CC0). Era-device textures: <a href="https://ambientcg.com" target="_blank" rel="noopener">ambientCG</a> Wood027, Plastic004, Leather037, Metal009 (CC0).',
       'Plain-English translations and all app copy are original to this project.',
       'Built with three.js (WebGPU renderer). This app supplements a real teacher — it doesn’t replace one.',
     ],
@@ -145,40 +145,26 @@ export const levelCopy: Record<string, LevelCopy> = {
     doneTitle: 'You just read actual Torah words.',
     doneBody:
       'Every one of them appears in the real scroll — and you’ll meet them all ' +
-      'again on the way back. Next stop: phrases, in glowing green.',
+      'again on the way back. Next stop: whole sentences, one hammered letter ' +
+      'at a time.',
     doneCta: 'Back to the timeline',
   },
-  'l3-crt': {
-    name: 'The Green Screen',
-    year: '1984',
-    introKicker: '1984 · The green screen',
-    introTitle: 'The sentence takes shape.',
-    introBody:
-      'Three phrases, six words: Listen, Israel — the Eternal our God — the ' +
-      'Eternal is One. Trace a whole phrase and the machine sings it back to you.',
-    introCta: 'Power on',
-    doneKicker: 'Phrase perfect',
-    doneTitle: 'That was the whole Shema line — in pieces.',
-    doneBody:
-      'You’ve now heard how the phrases chain together. One era back, they join ' +
-      'into full sentences — on paper this time.',
-    doneCta: 'Back to the timeline',
-  },
-  'l4-dotmatrix': {
-    name: 'The Printout',
-    year: '1978',
-    introKicker: '1978 · Tractor-feed paper',
+  'l3-typewriter': {
+    name: 'The Typewriter',
+    year: '1958',
+    introKicker: '1958 · The typewriter',
     introTitle: 'Two whole sentences.',
     introBody:
-      'Here’s the Shema as a wake-up call: we’re all here, we’re present, we’re in ' +
-      'this together — let’s act like it. Trace the whole line, then the whispered ' +
-      'reply underneath. A Torah scroll never shows that whisper. Paper doesn’t mind.',
-    introCta: 'Feed the paper',
-    doneKicker: 'Printed and read',
+      'Someone rolled a sheet in and hammered out the Shema one letter at a ' +
+      'time — the whole wake-up call: we’re all here, we’re present, we’re in ' +
+      'this together. Trace the line, then the whispered reply underneath. A ' +
+      'Torah scroll never shows that whisper. Paper doesn’t mind.',
+    introCta: 'Roll the sheet in',
+    doneKicker: 'Typed and read',
     doneTitle: 'You read the line AND the whisper.',
     doneBody:
-      'From here back, machines disappear. The next stop is the printing press — ' +
-      'and the letters start looking like the real thing.',
+      'That’s the last machine on the way back. Next stop is the printing ' +
+      'press — and the letters start looking like the real thing.',
     doneCta: 'Back to the timeline',
   },
   'l5-siddur': {

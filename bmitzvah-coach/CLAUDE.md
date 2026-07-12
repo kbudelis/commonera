@@ -28,18 +28,27 @@ Full three-paragraph Shema (Deut 6:4–9, Deut 11:13–21, Num 15:37–41).
 
 After the sprint demo, Common Era asked for a **stratified experience**:
 difficulty easy→hard, presentation modern→ancient. The app now opens onto a
-**timeline map** ("A journey back through time") of seven levels, each a 3D
-device era carrying progressively more text:
+**timeline map** ("A journey back through time") of six levels, each a 3D
+device era carrying progressively more text (Spencer's second-round note
+merged the too-computery 1984 CRT + 1978 dot-matrix rungs into one analog
+typewriter step — date it neutrally, no founding-of-Israel references):
 
 | # | Level (levels.ts) | Era | Content | Typography | Pointer |
 |---|---|---|---|---|---|
 | 1 | l1-tablet | 2026 tablet (light theme) | 12 unique letters of Deut 6:4 | STaM, letter-name labels | pulsing touch cursor |
 | 2 | l2-laptop | 1995 clamshell LCD | 8 key words | pointed, translit labels | mouse arrow |
-| 3 | l3-crt | 1984 green phosphor CRT | Deut 6:4 in 3 phrase chunks (+chunk playback) | pointed, translit on hover | blinking block cursor |
-| 4 | l4-dotmatrix | 1978 tractor-feed printout (raster dot bake pass) | Deut 6:4–5 + Baruch Shem rows | pointed, no translit | ballpoint |
-| 5 | l5-siddur | 1565 printed siddur (MVP goal) | Deut 6:4 + Baruch Shem | consonantal STaM, vowels on hover | wood pointer |
-| 6 | l6-manuscript | ~1200 vellum manuscript | whole first paragraph | consonantal STaM | quill |
-| 7 | l7-scroll | ~100 BCE the scroll | **the original full arc, untouched** | consonantal | silver yad |
+| 3 | l3-typewriter | 1958 Hebrew typewriter | Deut 6:4–5 + Baruch Shem rows | pointed, translit on hover | ballpoint |
+| 4 | l5-siddur | 1565 printed siddur (MVP goal) | Deut 6:4 + Baruch Shem | consonantal STaM, vowels on hover | wood pointer |
+| 5 | l6-manuscript | ~1200 vellum manuscript | whole first paragraph | consonantal STaM | quill |
+| 6 | l7-scroll | ~100 BCE the scroll | **the original full arc, untouched** | consonantal | silver yad |
+
+(Level **ids** are localStorage save keys, so l5-siddur/l6-manuscript/l7-scroll
+kept their ids when they became indexes 4/5/6 — never re-key them.) All era
+devices are dressed by `src/scene/eras/deviceKit.ts`: cached CC0 PBR maps
+(wood/plastic/leather/metal, see assets-src/licenses), RoundedBoxGeometry
+silhouettes, per-era `makeEnvTexture` palettes. Mini levels add a subtle
+pointer-steered camera **orbit** (session frame hook; teardown resets the
+camera quaternion — the arc assumes -z).
 
 Key rules: mini-level Hebrew is **synthesized at runtime** from the corpus
 (`src/levels/synth.ts` — letters by codepoint with an English name table,
@@ -52,7 +61,7 @@ the modern→literal translation gradient. Progress adds `levelsCompleted` to
 `bmc.progress.v1` (legacy celebrated saves unlock the whole ladder).
 Deferred by agreement: particle/delighter effects, young-voice audio.
 
-## Original experience arc (now level 7, reachable via the map or ?level=7)
+## Original experience arc (now level 6, reachable via the map or ?level=6)
 
 Landing ("Let's open the scroll", optional B'Mitzvah date → countdown; parent modal) →
 camera dollies to column 1 → tutorial (pulsing שמע, "touch it", RTL hint, 8s-idle
@@ -90,16 +99,16 @@ Then: repo created, pushed, Pages enabled, live URL smoke-tested.
 src/main.ts                 # bootShared() (renderer/audio/screens/render-loop with frameHooks) +
                             # startScrollArc() (the original arc, moved verbatim) + routing
 src/appShared.ts            # AppShared/DevHooks contracts shared by all session types
-src/levels/levels.ts        # the 7-level ladder table (content/typography/interaction specs)
+src/levels/levels.ts        # the 6-level ladder table (content/typography/interaction specs)
 src/levels/synth.ts         # runtime token synthesis (letters/words/phrases/verses) + LETTER_NAMES
 src/levels/session.ts       # MiniLevelSession: bake → era → pointer wiring → touch-all → teardown
-src/levels/controller.ts    # timeline map → level intro → session → back to map; level 7 handoff
+src/levels/controller.ts    # timeline map → level intro → session → back to map; scroll handoff
 src/scene/eras/types.ts     # EraDef/EraScene/TextSurface contract (surfaces face +z; CPU verts)
 src/scene/eras/*.ts         # one file per device era; index.ts registry (fallback: defaultEra)
 src/scene/pointers/*.ts     # PointerVisual builders (look only — the feel stays in yad.ts)
 src/scene/highlightRig.ts   # the three UV-rect glow handles, shared by every era material
 src/scene/screenMaterial.ts # unlit self-lit screens (darkOnLight LCD / lightOnDark phosphor)
-src/scene/paperMaterial.ts  # green-bar tractor paper
+src/scene/paperMaterial.ts  # machine paper (green-bar default, plain stock via colors opt)
 src/ui/theme.ts             # per-era CSS token overrides (:root vars in index.html) + data-era
 src/ui/labels.ts            # persistent DOM token labels (letter names / translit)
 src/content/types.ts        # word-ID contract (p1v4w3 = paragraph.verse.word) — NEVER renumber
@@ -168,14 +177,16 @@ npm run dev            # dev server (tests assume port 5199: npm run dev -- --po
 npm run build          # tsc + vite build
 npm run test           # vitest (layout + synth unit tests)
 node tools/screenshot.mjs <url> <out.png> [waitMs]   # headless shot + console dump (HOVER="x,y;x,y" env for pointer sweeps)
-node tools/playthrough.mjs <shot-prefix>             # FULL level-7 arc via ?level=7 (~3.5 min — p2's 102s recording dominates)
-node tools/level-smoke.mjs <1-6> [shot-prefix]       # mini level: intro → trace all tokens → completion card
+node tools/playthrough.mjs <shot-prefix>             # FULL scroll arc via ?level=6 (~3.5 min — p2's 102s recording dominates)
+node tools/level-smoke.mjs <1-5> [shot-prefix]       # mini level: intro → trace all tokens → completion card
+node tools/era-shot.mjs <level> <out.png>            # one live-scene shot (clicks through the intro)
 node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport against preview build (port 5200)
 ```
 
-- Debug/routing params: `?level=1..6` jumps into a mini level, `?level=7` is
-  the stable test route into the full arc, `?unlockAll=1` opens every era on
-  the map, `?debugRects=1` draws ink+hit boxes (mini levels too).
+- Debug/routing params: `?level=1..5` jumps into a mini level, `?level=6` is
+  the stable test route into the full arc (routing is kind-driven off the
+  LEVELS table), `?unlockAll=1` opens every era on the map, `?debugRects=1`
+  draws ink+hit boxes (mini levels too).
 - **Restart the dev server before any test gate.** Vite's file watcher has
   silently gone stale here at least once (served pre-edit modules while
   playthrough "passed") — verify with
@@ -205,7 +216,8 @@ node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport ag
 - Audio: SuperJew Shema 1–3, Wikimedia Commons, **CC BY-SA 3.0** (share edits alike);
   Tilsen p1 backup is **CC0**. License texts in `assets-src/licenses/`.
 - Fonts: Stam Ashkenaz + Taamey Frank CLM (GPL+font-embedding-exception), Rubik (OFL).
-- Hebrew text: Sefaria CC BY-SA. Parchment: ambientCG CC0.
+- Hebrew text: Sefaria CC BY-SA. Parchment + device PBR sets
+  (Wood027/Plastic004/Leather037/Metal009): ambientCG CC0.
 - English translations + all copy: original to this project.
 
 ## Open items / next steps

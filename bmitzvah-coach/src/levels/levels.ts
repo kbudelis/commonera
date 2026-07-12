@@ -2,9 +2,9 @@ import type { EraId } from '../scene/eras/types';
 import { POINTED_FONT, SCROLL_FONT } from '../text/fonts';
 
 /**
- * The difficulty ladder: seven levels, each an era of the same words.
- * Content grows letters → words → phrases → sentences → paragraphs while
- * the presentation travels 2026 CE back to the scroll itself. Level 7 is
+ * The difficulty ladder: six levels, each an era of the same words.
+ * Content grows letters → words → sentences → paragraphs while the
+ * presentation travels 2026 CE back to the scroll itself. Level 6 is
  * the original full three-column experience, untouched.
  */
 
@@ -36,7 +36,7 @@ export interface InteractionSpec {
 
 export interface LevelDef {
   id: string;
-  /** 1..7 — map order and unlock order. */
+  /** 1..6 — map order and unlock order. */
   index: number;
   kind: 'mini' | 'scroll';
   eraId: EraId;
@@ -98,46 +98,23 @@ export const LEVELS: readonly LevelDef[] = [
     audioTrack: 'p1',
   },
   {
-    id: 'l3-crt',
+    id: 'l3-typewriter',
     index: 3,
     kind: 'mini',
-    eraId: 'crt1984',
-    content: {
-      kind: 'phrases',
-      chunks: [
-        ['p1v4w1', 'p1v4w2'],
-        ['p1v4w3', 'p1v4w4'],
-        ['p1v4w5', 'p1v4w6'],
-      ],
-    },
-    typography: {
-      script: 'pointed',
-      font: POINTED_FONT,
-      fontScale: 1.2,
-      labels: false,
-      strip: STRIP_ALL,
-    },
-    interaction: { hitPadFactor: 0.2, chunkPlayback: true },
-    audioTrack: 'p1',
-  },
-  {
-    id: 'l4-dotmatrix',
-    index: 4,
-    kind: 'mini',
-    eraId: 'dotmatrix1978',
+    eraId: 'typewriter1958',
     content: { kind: 'verses', verseIds: ['p1v4', 'p1v5'], asideIds: ['baruch-shem'] },
     typography: {
       script: 'pointed',
       font: POINTED_FONT,
       labels: false,
-      strip: { he: true, translit: false, gloss: true },
+      strip: STRIP_ALL,
     },
-    interaction: { hitPadFactor: 0.16 },
+    interaction: { hitPadFactor: 0.17 },
     audioTrack: 'p1',
   },
   {
     id: 'l5-siddur',
-    index: 5,
+    index: 4,
     kind: 'mini',
     eraId: 'siddur1565',
     content: { kind: 'verses', verseIds: ['p1v4'], asideIds: ['baruch-shem'] },
@@ -153,7 +130,7 @@ export const LEVELS: readonly LevelDef[] = [
   },
   {
     id: 'l6-manuscript',
-    index: 6,
+    index: 5,
     kind: 'mini',
     eraId: 'manuscript1200',
     content: { kind: 'paragraph', pid: 'p1' },
@@ -168,7 +145,7 @@ export const LEVELS: readonly LevelDef[] = [
   },
   {
     id: 'l7-scroll',
-    index: 7,
+    index: 6,
     kind: 'scroll',
     eraId: 'scroll100bce',
     content: { kind: 'paragraph', pid: 'p1' }, // unused — the full arc owns its content

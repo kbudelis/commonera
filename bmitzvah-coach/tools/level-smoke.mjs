@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Mini-level smoke test: jump to ?level=N, click through the intro, hover
 // every counting token, and assert the completion card appears.
-//   node tools/level-smoke.mjs <level 1-6> [shot-prefix]
+//   node tools/level-smoke.mjs <level 1-5> [shot-prefix]
 import { chromium } from 'playwright';
 
 const level = Number(process.argv[2] ?? 2);

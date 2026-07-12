@@ -23,7 +23,7 @@ import { WordIndex } from './text/wordIndex';
 import { Screens } from './ui/screens';
 import { LearnerStrip } from './ui/strip';
 import { LevelController } from './levels/controller';
-import { LEVELS } from './levels/levels';
+import { LEVELS, levelByIndex } from './levels/levels';
 import type { AppShared, DevHooks } from './appShared';
 
 const base = import.meta.env.BASE_URL;
@@ -693,15 +693,16 @@ async function boot() {
     shared.persist();
   }
 
-  // ?level=1..6 jumps straight into a mini level (dev/tests).
+  // ?level=N jumps straight into a mini level (dev/tests).
   const levelParam = Number(shared.params.get('level') || 0);
-  if (levelParam >= 1 && levelParam <= 6) {
+  const routedLevel = levelByIndex(levelParam);
+  if (routedLevel?.kind === 'mini') {
     controller.startLevel(levelParam);
     return;
   }
 
-  // ?level=7: the stable alias tests use — landing straight into the full arc.
-  if (levelParam === 7) {
+  // ?level=<last>: the stable alias tests use — landing straight into the full arc.
+  if (routedLevel?.kind === 'scroll') {
     const arc = startScrollArc(shared);
     shared.screens.landing((date) => {
       if (date) shared.progress.bmitzvahDate = date;
