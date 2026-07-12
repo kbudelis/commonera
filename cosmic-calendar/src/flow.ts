@@ -17,6 +17,7 @@ export interface FlowState {
 export type FlowAction =
   | { type: "advance" }
   | { type: "skip-to-month" }
+  | { type: "edit-birthday" }
   | { type: "submit-birthday"; value: string };
 
 export function createInitialFlow(): FlowState {
@@ -57,6 +58,18 @@ export function transitionFlow(
   state: FlowState,
   action: FlowAction,
 ): FlowState {
+  if (action.type === "edit-birthday") {
+    if (state.step !== "personal") {
+      return state;
+    }
+
+    return {
+      ...state,
+      step: "birthday",
+      validationError: null,
+    };
+  }
+
   if (action.type === "skip-to-month") {
     return {
       step: "month",
