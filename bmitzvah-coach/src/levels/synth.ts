@@ -96,8 +96,9 @@ function synthesizeLetters(sourceWordIds: string[]): LevelToken[] {
         heScroll: ch,
         translit: name,
         gloss: `as in ${parent.translit}${parent.gloss ? ` — ${parent.gloss}` : ''}`,
-        // Letters speak their own NAME (letters track, ids = name slugs;
-        // final forms share the base letter's clip).
+        // Letters play their own slice on the letters track (ids = name
+        // slugs; final forms share the base clip). Currently pitched chimes —
+        // name recordings drop in via tools/build-letters-track.mjs.
         audioRef: { track: 'letters', wordId: letterSlug(name) },
         counts: true,
       });

@@ -44,12 +44,17 @@ typewriter step — date it neutrally, no founding-of-Israel references):
 
 (Level **ids** are localStorage save keys, so l5-siddur/l6-manuscript/l7-scroll
 kept their ids when they became indexes 4/5/6 — never re-key them.) Level 1
-letters speak their own NAMES on a dedicated `letters` audio track
-(`public/audio/letters.mp3` + exact timing map, ids = name slugs like `shin`;
-final forms reuse the base clip). The current voice is an espeak-ng
-PLACEHOLDER — drop human recordings named `<slug>.wav|mp3` into
+letters play a dedicated `letters` audio track (`public/audio/letters.mp3` +
+exact timing map, ids = name slugs like `shin`; final forms reuse the base
+clip). Current sound: pentatonic CHIMES (Spencer rejected robotic TTS; no
+usable human letter-name set exists on Wikimedia/Lingua Libre). To go to a
+real voice: drop recordings named `<slug>.wav|mp3` into
 `assets-src/audio/letters/` and re-run `node tools/build-letters-track.mjs`
-to replace it (the map regenerates exactly; no ear-timing needed). All era
+(auto-trims silence; the map regenerates exactly). A natural-sounding
+neural-TTS candidate set (edge-tts he-IL-HilaNeural, names built from
+codepoints, nikud-corrected so דלת says "dalet" not "delet") sits in
+`assets-src/audio/letters-tts-preview/` awaiting a listen +
+license call — regenerate via `tools/preview-letters-tts.mjs`. All era
 devices are dressed by `src/scene/eras/deviceKit.ts`: cached CC0 PBR maps
 (wood/plastic/leather/metal, see assets-src/licenses), RoundedBoxGeometry
 silhouettes, per-era `makeEnvTexture` palettes. Mini levels add a subtle
@@ -229,9 +234,11 @@ node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport ag
 
 ## Open items / next steps
 
-0. **Replace the placeholder letter audio** (level 1): espeak-ng speaks the
-   letter names today; record a human (Spencer or the eventual young voice) and
-   re-run tools/build-letters-track.mjs.
+0. **Letter voice** (level 1): chimes ship today. Either record a human
+   (drop into assets-src/audio/letters/, re-run tools/build-letters-track.mjs)
+   or promote the edge-tts preview set after a listen (cp from
+   assets-src/audio/letters-tts-preview/ — Microsoft service, demo-OK,
+   review before commercial use).
 1. **Sponsor-deferred stretch goals**: particle/delighter effects on highlights
    + period-specific celebrations; young/child voice audio for early eras
    (current recording = the "talmudic" endpoint). Also nice: per-era aux-pulse

@@ -2,7 +2,9 @@
 // Builds the letter-name audio track (level 1) + an EXACT timing map — the
 // script does the concatenation, so boundaries are known, not detected.
 //
-// Voice: PLACEHOLDER espeak-ng by default. To use a human recording, drop
+// Default sound: a soft synthesized pluck per letter, pitched up a pentatonic
+// scale in alphabet order (no usable human letter-name recordings exist under
+// an open license — see CLAUDE.md open items). To use human recordings, drop
 // files named <slug>.wav or <slug>.mp3 (alef.wav, shin.mp3, …) into
 // assets-src/audio/letters/ and re-run — those take precedence per letter.
 //
@@ -18,34 +20,28 @@ const tmp = path.join(root, '.letters-tmp');
 rmSync(tmp, { recursive: true, force: true });
 mkdirSync(tmp, { recursive: true });
 
-// slug (timing-map word id, matches synth.ts letterSlug) → espeak-friendly text
+// slugs = timing-map word ids, matches synth.ts letterSlug; alphabet order
 const LETTERS = [
-  ['alef', 'ahlef'],
-  ['bet', 'bet'],
-  ['gimel', 'geemel'],
-  ['dalet', 'dahlet'],
-  ['hei', 'hey'],
-  ['vav', 'vahv'],
-  ['zayin', 'zahyin'],
-  ['chet', 'khet'],
-  ['tet', 'tet'],
-  ['yod', 'yohd'],
-  ['kaf', 'kahf'],
-  ['lamed', 'lahmed'],
-  ['mem', 'mem'],
-  ['nun', 'noon'],
-  ['samech', 'sahmekh'],
-  ['ayin', 'ahyin'],
-  ['pe', 'pay'],
-  ['tsadi', 'tsahdee'],
-  ['kuf', 'koof'],
-  ['resh', 'resh'],
-  ['shin', 'sheen'],
-  ['tav', 'tahv'],
+  'alef', 'bet', 'gimel', 'dalet', 'hei', 'vav', 'zayin', 'chet', 'tet',
+  'yod', 'kaf', 'lamed', 'mem', 'nun', 'samech', 'ayin', 'pe', 'tsadi',
+  'kuf', 'resh', 'shin', 'tav',
 ];
 
-const GAP = 0.35; // seconds of silence between names
+const GAP = 0.25; // seconds of silence between clips
 const RATE = 22050;
+
+// Warm two-partial pluck with an exponential decay — reads as a marimba
+// blip. Pitch climbs a major-pentatonic scale so the alef-bet is a melody.
+const PENTATONIC = [0, 2, 4, 7, 9];
+function chimeFilter(i) {
+  const semis = PENTATONIC[i % 5] + 12 * Math.floor(i / 5);
+  const f = 330 * 2 ** (semis / 12); // E4 upward, ~2.5 octaves over 22 letters
+  return (
+    `aevalsrc=0.55*sin(2*PI*${f.toFixed(2)}*t)*exp(-7*t)` +
+    `+0.22*sin(4*PI*${f.toFixed(2)}*t)*exp(-10*t)` +
+    `+0.08*sin(6*PI*${f.toFixed(2)}*t)*exp(-14*t):d=0.55:s=${RATE}`
+  );
+}
 
 const duration = (file) =>
   Number(
@@ -54,15 +50,22 @@ const duration = (file) =>
     ]).toString(),
   );
 
-let placeholders = 0;
-const clips = LETTERS.map(([slug, espeakText]) => {
+let chimes = 0;
+const clips = LETTERS.map((slug, i) => {
   const wav = path.join(tmp, `${slug}.wav`);
   const human = ['wav', 'mp3'].map((e) => path.join(humanDir, `${slug}.${e}`)).find(existsSync);
   if (human) {
-    execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', human, '-ar', `${RATE}`, '-ac', '1', wav]);
+    // Normalize + trim leading/trailing silence so slices stay tight.
+    execFileSync('ffmpeg', [
+      '-y', '-v', 'error', '-i', human, '-ar', `${RATE}`, '-ac', '1',
+      '-af',
+      'silenceremove=start_periods=1:start_threshold=-45dB,areverse,' +
+        'silenceremove=start_periods=1:start_threshold=-45dB,areverse',
+      wav,
+    ]);
   } else {
-    placeholders++;
-    execFileSync('espeak-ng', ['-v', 'en-us', '-s', '130', '-a', '120', '-w', wav, espeakText]);
+    chimes++;
+    execFileSync('ffmpeg', ['-y', '-v', 'error', '-f', 'lavfi', '-i', chimeFilter(i), '-ac', '1', wav]);
   }
   return { slug, wav, dur: duration(wav) };
 });
@@ -96,6 +99,6 @@ writeFileSync(
 );
 rmSync(tmp, { recursive: true, force: true });
 console.log(
-  `letters.mp3 (${t.toFixed(1)}s, ${words.length} names, ` +
-    `${placeholders ? `${placeholders} espeak PLACEHOLDERS` : 'all human recordings'}) + timing map written`,
+  `letters.mp3 (${t.toFixed(1)}s, ${words.length} letters, ` +
+    `${chimes ? `${chimes} chimes` : 'all human recordings'}) + timing map written`,
 );
