@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+.DS_Store
+*.local
+digital-shabbat-kernel.zip
+*.materialize.tmp
+.wrangler/
+kernel/research/transcripts/
+
+# Texture source pack (604MB, print-res) — ship compressed derivatives from public/ instead
+design/textures/printed-vol4/

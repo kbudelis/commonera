@@ -1,0 +1,13 @@
+# The promo page is the site root (index.html). The React app is served from
+# /app/; each of its client-side routes rewrites to that shell (URL preserved,
+# React Router takes over). Real files — the promo, /app/, static assets —
+# serve directly. Enumerated (not /*) so nothing can shadow the root or assets.
+/landing.html  /       301
+/landing       /       301
+/welcome       /app/   200
+/design        /app/   200
+/pledge        /app/   200
+/candle        /app/   200
+/havdalah      /app/   200
+/field         /app/   200
+/deeper        /app/   200

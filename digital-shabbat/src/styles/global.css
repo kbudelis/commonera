@@ -1,0 +1,246 @@
+html {
+  min-height: 100%;
+  background: #E4DECF;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+a {
+  color: var(--lapis);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid color-mix(in srgb, currentColor 60%, transparent);
+  outline-offset: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ---- the stage: a warm room that holds one screen ---- */
+.stage {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(120% 90% at 50% 20%, #ECE7DA 0%, #E4DECF 60%, #D8D1BF 100%);
+}
+
+/* ---- the screen: full-bleed on a phone, framed like a device otherwise ---- */
+.screen {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  overflow: hidden;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.screen--night {
+  background: var(--surface-night);
+  color: var(--parchment);
+}
+
+@media (min-width: 640px) {
+  .screen {
+    width: min(26.5rem, calc((100dvh - 4rem) * 0.462));
+    height: min(52rem, 100dvh - 4rem);
+    border-radius: 46px;
+    box-shadow:
+      0 2px 6px rgba(30, 26, 18, 0.08),
+      0 40px 90px rgba(30, 26, 18, 0.28);
+  }
+}
+
+/* faint paper grain over any screen */
+.screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--grain-url) repeat;
+  background-size: 300px;
+  opacity: var(--screen-grain-opacity, 0.1);
+  mix-blend-mode: var(--screen-grain-blend, multiply);
+  pointer-events: none;
+}
+
+.screen--night::after {
+  --screen-grain-blend: screen;
+  --screen-grain-opacity: 0.08;
+}
+
+/* ---- shared atmosphere + ring placement ---- */
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.word-ring {
+  position: absolute;
+  overflow: visible;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.word-ring__outer {
+  animation: ringTurn 200s linear infinite;
+  transform-origin: 160px 160px;
+}
+
+.word-ring__inner {
+  animation: ringTurnRev 150s linear infinite;
+  transform-origin: 160px 160px;
+}
+
+@keyframes ringTurn {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ringTurnRev {
+  to { transform: rotate(-360deg); }
+}
+
+.word-ring__outer text {
+  font-family: var(--font-display);
+  font-size: 8.5px;
+  letter-spacing: 0.28em;
+}
+
+.word-ring__inner text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 7.5px;
+  letter-spacing: 0.3em;
+}
+
+.word-ring--ink .word-ring__outer text { fill: color-mix(in srgb, var(--ink) 26%, transparent); }
+.word-ring--ink .word-ring__inner text { fill: color-mix(in srgb, var(--ink) 20%, transparent); }
+.word-ring--parchment .word-ring__outer text { fill: color-mix(in srgb, var(--parchment) 30%, transparent); }
+.word-ring--parchment .word-ring__inner text { fill: color-mix(in srgb, var(--gold) 26%, transparent); }
+
+/* ---- the forward stone: one round control, shared across screens ---- */
+.stone {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 94%, #000);
+  color: var(--surface);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 240ms var(--motion-ease),
+    box-shadow 240ms var(--motion-ease),
+    opacity 240ms var(--motion-ease);
+}
+
+.screen--night .stone {
+  background: var(--parchment);
+  color: var(--surface-night);
+}
+
+.stone svg {
+  width: 22px;
+  height: 22px;
+}
+
+.stone:hover:not(:disabled):not([aria-disabled='true']) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(20, 16, 10, 0.28);
+}
+
+.stone:disabled {
+  cursor: not-allowed;
+  background: transparent;
+  border-color: color-mix(in srgb, currentColor 26%, transparent);
+  color: color-mix(in srgb, currentColor 40%, transparent);
+}
+
+/* unicase stamp labels — No Cigar only ever speaks in short labels */
+.label {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: var(--label-tracking);
+  line-height: 1.4;
+}
+
+.route-fallback {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* ---- 404 ---- */
+.not-found {
+  display: grid;
+  flex: 1;
+  place-content: center;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8cqi, 3rem);
+  font-weight: 400;
+  line-height: var(--line-display);
+}
+
+.not-found a {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  text-underline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-ring__outer,
+  .word-ring__inner {
+    animation: none;
+  }
+}

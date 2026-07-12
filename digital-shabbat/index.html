@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Keep — a weekly screen-free day of rest</title>
+    <meta
+      name="description"
+      content="Keep is a quiet ritual tool for designing, beginning, and closing a weekly screen-free day of rest. No accounts. No tracking. One day, set apart."
+    />
+    <meta name="theme-color" content="#F4ECDC" />
+
+    <meta property="og:title" content="Keep — a weekly screen-free day of rest" />
+    <meta
+      property="og:description"
+      content="One day, set apart. The oldest answer to a very new kind of tired."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-italic-400-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="/fonts/OTRNoCigarRegular.woff" crossorigin />
+
+    <style>
+      @font-face {
+        font-family: 'OTR No Cigar';
+        src: url('/fonts/OTRNoCigarRegular.woff') format('woff');
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Newsreader';
+        src: url('/fonts/newsreader-latin.woff2') format('woff2');
+        font-weight: 200 800;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Newsreader';
+        src: url('/fonts/newsreader-italic-400-latin.woff2') format('woff2');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      :root {
+        --parchment: #f4ecdc;
+        --parchment-deep: #e6d9bf;
+        --ink: #2b2118;
+        --ink-quiet: #6a5c48;
+        --gold: #e8b84b;
+        --gold-ember: #c98a2b;
+        --lapis: #2b4c8c;
+        --hairline: color-mix(in srgb, var(--ink) 14%, transparent);
+        --font-display: 'Newsreader', 'EB Garamond', Georgia, 'Times New Roman', serif;
+        --font-label: 'OTR No Cigar', 'Avenir Next Condensed', sans-serif;
+        --label-tracking: 0.32em;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+      }
+
+      body {
+        position: relative;
+        min-height: 100vh;
+        overflow-x: hidden;
+        color: var(--ink);
+        font-family: var(--font-display);
+        line-height: 1.6;
+        background-color: var(--parchment);
+        background-image:
+          radial-gradient(120% 80% at 50% -10%, color-mix(in srgb, var(--gold) 15%, transparent), transparent 58%),
+          url('/textures/grain-512.png');
+        background-repeat: no-repeat, repeat;
+        background-size: cover, 512px 512px;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* The signature Keep atmosphere: ink-wash mountains rising from the
+         foot of the page, dissolving up into the parchment. */
+      .mist {
+        position: absolute;
+        inset-inline: 0;
+        bottom: 0;
+        height: clamp(460px, 66vh, 880px);
+        background: url('/plates/landing-dawn.webp') center bottom / cover no-repeat;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 42%);
+        mask-image: linear-gradient(to bottom, transparent 0%, #000 42%);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .label {
+        font-family: var(--font-label);
+        letter-spacing: var(--label-tracking);
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        color: color-mix(in srgb, var(--ink) 58%, transparent);
+      }
+
+      .wrap {
+        position: relative;
+        z-index: 1;
+        max-width: 68rem;
+        margin: 0 auto;
+        padding: clamp(28px, 5vw, 48px) clamp(22px, 6vw, 56px);
+      }
+
+      /* ---- top bar ---- */
+      header.top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand .stars {
+        width: 40px;
+        height: auto;
+        color: var(--ink);
+      }
+
+      /* ---- hero ---- */
+      .hero {
+        padding: clamp(36px, 8vh, 88px) 0 clamp(40px, 8vh, 80px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: clamp(28px, 6vw, 72px);
+      }
+
+      .hero__copy {
+        display: grid;
+        gap: clamp(20px, 3.4vh, 30px);
+        max-width: 42rem;
+      }
+
+      /* phone mockup — the real candle screen */
+      .phone {
+        position: relative;
+        width: clamp(210px, 24vw, 280px);
+        aspect-ratio: 408 / 768;
+        padding: 9px;
+        border-radius: 40px;
+        background: linear-gradient(155deg, #3a3f4d 0%, #12172a 55%, #090d18 100%);
+        box-shadow:
+          0 40px 90px -20px color-mix(in srgb, var(--indigo, #141b2e) 70%, transparent),
+          0 10px 26px rgba(0, 0, 0, 0.28),
+          inset 0 1px 1px rgba(255, 255, 255, 0.14);
+      }
+
+      .phone::after {
+        content: '';
+        position: absolute;
+        inset: -18% -22%;
+        border-radius: 50%;
+        background: radial-gradient(circle, color-mix(in srgb, var(--gold) 40%, transparent), transparent 62%);
+        z-index: -1;
+        filter: blur(14px);
+      }
+
+      .phone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 31px;
+        display: block;
+      }
+
+      .hero .wordmark {
+        margin: 0;
+        font-family: var(--font-display);
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        line-height: 0.9;
+        font-size: clamp(6rem, 26vw, 15rem);
+        color: color-mix(in srgb, var(--ink) 97%, #000);
+      }
+
+      .hero .tagline {
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        line-height: 1.12;
+        font-size: clamp(1.7rem, 5vw, 2.6rem);
+        color: color-mix(in srgb, var(--ink) 90%, #000);
+        max-width: 24rem;
+      }
+
+      .hero .tagline em {
+        font-style: italic;
+      }
+
+      .hero .sub {
+        margin: 0;
+        font-style: italic;
+        font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+        line-height: 1.5;
+        color: var(--ink-quiet);
+        max-width: 30rem;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 18px 24px;
+        margin-top: 6px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 26px;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--parchment);
+        text-decoration: none;
+        font-family: var(--font-label);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+        transition: transform 180ms ease, background 180ms ease;
+      }
+
+      .cta:hover {
+        transform: translateY(-1px);
+        background: color-mix(in srgb, var(--ink) 88%, var(--lapis));
+      }
+
+      .cta svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .cta-note {
+        font-style: italic;
+        font-size: 0.98rem;
+        color: color-mix(in srgb, var(--ink) 55%, transparent);
+      }
+
+      /* ---- rule ---- */
+      .rule {
+        border: 0;
+        border-top: 1px solid var(--hairline);
+        margin: clamp(32px, 6vh, 56px) 0;
+      }
+
+      /* ---- three beats ---- */
+      .beats {
+        display: grid;
+        gap: clamp(28px, 5vw, 48px);
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 680px) {
+        .beats {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .hero {
+          grid-template-columns: 1fr;
+          justify-items: start;
+        }
+        .hero__copy {
+          order: 1;
+        }
+        .phone {
+          order: 2;
+          width: clamp(190px, 52vw, 240px);
+        }
+      }
+
+      .beat h3 {
+        margin: 0 0 8px;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: -0.01em;
+      }
+
+      .beat .idx {
+        display: block;
+        margin-bottom: 14px;
+        font-family: var(--font-label);
+        letter-spacing: 0.2em;
+        font-size: 0.72rem;
+        color: var(--gold-ember);
+      }
+
+      .beat p {
+        margin: 0;
+        font-size: 1.02rem;
+        color: var(--ink-quiet);
+        max-width: 22rem;
+      }
+
+      /* ---- promise strip ---- */
+      .promise {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 28px;
+        margin-top: clamp(32px, 6vh, 56px);
+      }
+
+      .promise span {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        font-style: italic;
+        color: var(--ink-quiet);
+        font-size: 1rem;
+      }
+
+      .promise span::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--gold-ember);
+        flex: none;
+      }
+
+      /* ---- footer ---- */
+      footer.foot {
+        margin-top: clamp(48px, 9vh, 96px);
+        padding-top: 24px;
+        border-top: 1px solid var(--hairline);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      footer.foot a {
+        color: color-mix(in srgb, var(--ink) 72%, transparent);
+        text-decoration: none;
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      footer.foot a:hover {
+        color: var(--ink);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .cta {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mist" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <header class="top">
+        <div class="brand"></div>
+      </header>
+
+      <section class="hero">
+        <div class="hero__copy">
+          <h1 class="wordmark">Keep</h1>
+          <p class="tagline">Give your week its <em>shape</em> back.</p>
+          <p class="sub">
+            One day, set apart. The oldest answer to a very new kind of tired.
+          </p>
+
+          <div class="cta-row">
+            <a class="cta" href="/design" aria-label="Open Keep">
+              Enter Keep
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M5 12h13M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <span class="cta-note">Design your first day of rest in about a minute.</span>
+          </div>
+        </div>
+
+        <div class="phone">
+          <img src="/screens/landing.png" alt="The opening screen of Keep: the wordmark ringed by fine print over a warm dawn mist, above the line ‘Give your week its shape back.’" />
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <section class="beats" aria-label="How Keep works">
+        <div class="beat">
+          <span class="idx">Ⅰ · Design</span>
+          <h3>Set the day down.</h3>
+          <p>Choose when your day begins and ends, and what you're setting aside. Keep it as a pledge — just for you.</p>
+        </div>
+        <div class="beat">
+          <span class="idx">Ⅱ · Keep</span>
+          <h3>Light the candle.</h3>
+          <p>When the window opens, the screen stills. A quiet marker that this time is different, and yours.</p>
+        </div>
+        <div class="beat">
+          <span class="idx">Ⅲ · Close</span>
+          <h3>Close the day.</h3>
+          <p>When the first stars appear, mark the day kept, and carry a little of the quiet back into the week.</p>
+        </div>
+      </section>
+
+      <div class="promise" aria-label="What Keep does not do">
+        <span>No accounts</span>
+        <span>No analytics</span>
+        <span>Nothing here measures you</span>
+      </div>
+
+      <footer class="foot">
+        <p class="label">For anyone who wants the week to have a shape.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep — lock-screen keepsake (prototype)</title>
+<!--
+  PROTOTYPE — the private keepsake / lock-screen artifact for "Keep".
+  A crafted candle rendered with real depth: a turbulence-driven flame, layered
+  chromatic bloom, a pool of light on the sill, dithered gradients (no banding),
+  film grain and a composed vignette. Near-monochrome warm-white on night.
+  Hierarchy from size, weight and space — no italics, no accent hues, no tracked
+  footer. Amber appears ONLY as candlelight. The simulated iOS clock sits on top
+  to prove the composition keeps its top third clear.
+-->
+<style>
+  @font-face { font-family:'OTR No Cigar'; src:url('assets/OTRNoCigarRegular.woff') format('woff'); font-display:swap; }
+  @font-face { font-family:'Newsreader'; src:url('assets/newsreader-latin.woff2') format('woff2'); font-weight:200 800; font-display:swap; }
+
+  :root{
+    --paper:#F4ECDC;
+    --ink:#F3EAD7;
+  }
+  * { box-sizing:border-box; margin:0; }
+  html,body { height:100%; }
+  body {
+    display:grid; place-items:center; min-height:100%;
+    background:#05060a;
+    font-family:'Newsreader', Georgia, serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .phone {
+    position:relative;
+    width:min(390px, 100vw); height:min(844px, 100dvh);
+    overflow:hidden; isolation:isolate;
+    color:var(--ink);
+    background:#080a11;
+  }
+  @media (min-width:640px){
+    .phone { border-radius:54px; box-shadow:0 50px 120px rgba(0,0,0,.7), 0 0 0 11px #04060b, 0 0 0 12px #171d2b; }
+  }
+
+  /* the crafted scene fills the frame */
+  .scene { position:absolute; inset:0; z-index:1; display:block; }
+
+  /* film grain — kills the "digital gradient" tell */
+  .grain{
+    position:absolute; inset:0; z-index:5; pointer-events:none;
+    background:url('assets/grain-512.png') repeat; background-size:290px;
+    opacity:.1; mix-blend-mode:overlay;
+  }
+  /* second, finer grain pass in the shadows */
+  .grain.soft{ opacity:.06; background-size:135px; mix-blend-mode:soft-light; }
+
+  /* a composed vignette to seat the light and protect the clock */
+  .vignette{
+    position:absolute; inset:0; z-index:4; pointer-events:none;
+    background:
+      radial-gradient(135% 66% at 50% 44%, transparent 44%, rgba(4,5,10,.5) 100%),
+      linear-gradient(to bottom, rgba(6,8,15,.55) 0%, transparent 22%, transparent 72%, rgba(3,4,9,.55) 100%);
+  }
+
+  /* ---- the words ---- */
+  .plate{
+    position:absolute; left:0; right:0; bottom:0; z-index:6;
+    padding:0 36px calc(env(safe-area-inset-bottom,0px) + 52px);
+  }
+  .intention{
+    font-weight:380; font-size:41px; line-height:1.04; letter-spacing:-.021em;
+    color:var(--paper);
+    text-shadow:0 1px 30px rgba(0,0,0,.35);
+  }
+  .sub{
+    margin-top:26px;
+    font-size:15.5px; line-height:1.5; font-weight:400;
+    letter-spacing:.002em;
+    color:rgba(244,236,220,.5);
+    max-width:23ch;
+  }
+  .when{
+    margin-top:15px;
+    font-size:12.5px; line-height:1.4; font-weight:400;
+    color:rgba(244,236,220,.3);
+  }
+
+  /* the maker's mark — a small quiet stamp in the corner, not a footer band */
+  .mark{
+    position:absolute; z-index:6; right:34px; bottom:56px;
+    font-family:'OTR No Cigar', sans-serif;
+    font-size:11px; letter-spacing:.3em;
+    color:rgba(244,236,220,.26);
+  }
+
+  /* ---- simulated iOS overlay ---- */
+  .os { position:absolute; inset:0; z-index:7; pointer-events:none; }
+  .os-status { position:absolute; top:16px; left:0; right:0; display:flex; justify-content:space-between; padding:0 32px;
+    font:600 15px/1 -apple-system,"SF Pro Text",system-ui,sans-serif; color:#fff; opacity:.9; }
+  .os-status .r{ display:flex; gap:7px; align-items:center; }
+  .os-clock { position:absolute; top:58px; left:0; right:0; text-align:center; color:#fff; }
+  .os-date { font:590 15px/1 -apple-system,system-ui,sans-serif; opacity:.8; letter-spacing:.01em;}
+  .os-time { font:270 80px/1 -apple-system,system-ui,sans-serif; letter-spacing:.005em; margin-top:5px; opacity:.96; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <svg class="scene" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <!-- night field: neutral cool charcoal, no purple cast; warmth comes only from the flame -->
+        <radialGradient id="field" cx="50%" cy="45%" r="72%">
+          <stop offset="0%"   stop-color="#161b28"/>
+          <stop offset="46%"  stop-color="#0e1220"/>
+          <stop offset="100%" stop-color="#060811"/>
+        </radialGradient>
+
+        <!-- ambient candlelight thrown into the room — full-frame, no visible edge -->
+        <radialGradient id="ambient" gradientUnits="userSpaceOnUse" cx="195" cy="372" r="440">
+          <stop offset="0%"   stop-color="#f9cc74" stop-opacity=".50"/>
+          <stop offset="16%"  stop-color="#eba649" stop-opacity=".30"/>
+          <stop offset="36%"  stop-color="#c67230" stop-opacity=".13"/>
+          <stop offset="58%"  stop-color="#9a5030" stop-opacity=".055"/>
+          <stop offset="80%"  stop-color="#6a3d46" stop-opacity=".02"/>
+          <stop offset="100%" stop-color="#6a3d46" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- inner glow, tighter and hotter -->
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#fff3d2" stop-opacity=".95"/>
+          <stop offset="34%"  stop-color="#ffd884" stop-opacity=".62"/>
+          <stop offset="68%"  stop-color="#f4a94e" stop-opacity=".2"/>
+          <stop offset="100%" stop-color="#f4a94e" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- flame body gradient (hot core low, cooler tip) -->
+        <radialGradient id="flame" cx="50%" cy="68%" r="60%">
+          <stop offset="0%"   stop-color="#fffdf6"/>
+          <stop offset="26%"  stop-color="#ffefc0"/>
+          <stop offset="54%"  stop-color="#ffd074"/>
+          <stop offset="80%"  stop-color="#f39a34" stop-opacity=".85"/>
+          <stop offset="100%" stop-color="#e07d1f" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- cool blue base of the flame -->
+        <radialGradient id="base" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#aec6ff" stop-opacity=".8"/>
+          <stop offset="60%"  stop-color="#6f8fd6" stop-opacity=".3"/>
+          <stop offset="100%" stop-color="#6f8fd6" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- pool of light on the sill -->
+        <radialGradient id="pool" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#eaa956" stop-opacity=".3"/>
+          <stop offset="48%"  stop-color="#bf7334" stop-opacity=".1"/>
+          <stop offset="100%" stop-color="#bf7334" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- candle wax, lit from its own flame at the top: ivory -> honey -> shadow -->
+        <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#f8eed8"/>
+          <stop offset="16%"  stop-color="#eed7ab"/>
+          <stop offset="44%"  stop-color="#dcba82"/>
+          <stop offset="68%"  stop-color="#b58c56"/>
+          <stop offset="86%"  stop-color="#6b512f" stop-opacity=".3"/>
+          <stop offset="100%" stop-color="#3a2c1a" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="waxShade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%"   stop-color="#000" stop-opacity=".42"/>
+          <stop offset="16%"  stop-color="#000" stop-opacity="0"/>
+          <stop offset="46%"  stop-color="#fff9ec" stop-opacity=".14"/>
+          <stop offset="80%"  stop-color="#000" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#000" stop-opacity=".46"/>
+        </linearGradient>
+
+        <!-- organic flicker on the flame edge -->
+        <filter id="flicker" x="-70%" y="-70%" width="240%" height="240%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.02 0.06" numOctaves="2" seed="11" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+        <filter id="soft2"  x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.6"/></filter>
+        <filter id="soft8"  x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8"/></filter>
+
+        <!-- fine dither laid over the field to break gradient banding -->
+        <filter id="dither"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .5 0"/>
+        </filter>
+      </defs>
+
+      <!-- night -->
+      <rect width="390" height="844" fill="url(#field)"/>
+      <!-- ambient candlelight, full-frame so it melts into the dark with no seam -->
+      <rect width="390" height="844" fill="url(#ambient)"/>
+
+      <!-- pool of light where the candle stands -->
+      <ellipse cx="195" cy="532" rx="120" ry="20" fill="url(#pool)" filter="url(#soft8)"/>
+
+      <!-- slender tapered dinner candle, base dissolving into shadow -->
+      <g>
+        <path d="M184 430 L206 430 C 207.5 476 209 512 210.5 548 L 179.5 548 C 181 512 182.5 476 184 430 Z" fill="url(#wax)"/>
+        <path d="M184 430 L206 430 C 207.5 476 209 512 210.5 548 L 179.5 548 C 181 512 182.5 476 184 430 Z" fill="url(#waxShade)"/>
+        <!-- lit rim ellipse at the top of the wax -->
+        <ellipse cx="195" cy="430" rx="11" ry="3.2" fill="#f9efdb"/>
+        <ellipse cx="195" cy="430" rx="11" ry="3.2" fill="url(#glow)" opacity=".7"/>
+        <!-- molten dip around the wick -->
+        <ellipse cx="195" cy="431" rx="6" ry="1.8" fill="#7d5f38" opacity=".5"/>
+        <!-- wick -->
+        <rect x="194.1" y="414" width="1.8" height="18" rx=".9" fill="#241b12"/>
+      </g>
+
+      <!-- flame: glow, soft aura hugging the flame, body, hot core, cool base, spark -->
+      <ellipse cx="195" cy="374" rx="46" ry="86" fill="url(#glow)" filter="url(#soft8)"/>
+      <path d="M195 322
+               C 210 350 216 380 206 402
+               C 200 414 190 414 184 402
+               C 174 380 180 350 195 322 Z"
+            fill="#f6ae4c" opacity=".5" filter="url(#soft8)"/>
+
+      <g filter="url(#flicker)">
+        <path d="M195 326
+                 C 208 352 213 378 205 398
+                 C 200 409 190 409 185 398
+                 C 177 378 182 352 195 326 Z"
+              fill="url(#flame)" filter="url(#soft2)"/>
+        <!-- hot inner core -->
+        <path d="M195 356
+                 C 201 368 202 382 197 392
+                 C 195 397 190 397 188 391
+                 C 184 382 189 368 195 356 Z"
+              fill="#fffef8" opacity=".92"/>
+      </g>
+      <!-- cool blue base, subtle, hugging the wick -->
+      <ellipse cx="195" cy="406" rx="7.5" ry="10" fill="url(#base)" opacity=".7"/>
+      <!-- the single brightest spark -->
+      <circle cx="195" cy="390" r="3.4" fill="#fffef9"/>
+      <circle cx="195" cy="390" r="10" fill="url(#glow)"/>
+
+      <!-- dither veil to kill banding -->
+      <rect width="390" height="844" filter="url(#dither)" opacity=".05"/>
+    </svg>
+
+    <div class="grain"></div>
+    <div class="grain soft"></div>
+    <div class="vignette"></div>
+
+    <div class="mark">KEEP</div>
+
+    <div class="plate">
+      <p class="intention">long dinners<br>with people<br>I love</p>
+      <p class="sub">There&apos;s nothing left to do here. That&apos;s the point.</p>
+      <p class="when">Until Saturday night.</p>
+    </div>
+
+    <div class="os">
+      <div class="os-status"><span>9:41</span>
+        <span class="r">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="#fff" aria-hidden="true">
+            <rect x="0"  y="8"  width="3" height="4"  rx=".7"/>
+            <rect x="5"  y="5.5" width="3" height="6.5" rx=".7"/>
+            <rect x="10" y="3"  width="3" height="9"  rx=".7"/>
+            <rect x="15" y="0.5" width="3" height="11.5" rx=".7"/>
+          </svg>
+          <svg width="17" height="12" viewBox="0 0 17 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M1.4 4.3C4 2 6.1 1 8.5 1s4.5 1 7.1 3.3"/>
+            <path d="M4 7C5.4 5.9 6.9 5.3 8.5 5.3S11.6 5.9 13 7"/>
+            <circle cx="8.5" cy="10" r="1.1" fill="#fff" stroke="none"/>
+          </svg>
+          <svg width="26" height="13" viewBox="0 0 26 13" aria-hidden="true">
+            <rect x="1" y="1" width="21" height="11" rx="3" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.2"/>
+            <rect x="2.6" y="2.6" width="14" height="7.8" rx="1.6" fill="#fff"/>
+            <rect x="23.4" y="4.2" width="1.7" height="4.6" rx=".8" fill="#fff" fill-opacity=".55"/>
+          </svg>
+        </span>
+      </div>
+      <div class="os-clock"><div class="os-date">Saturday, July 18</div><div class="os-time">9:41</div></div>
+    </div>
+  </div>
+</body>
+</html>

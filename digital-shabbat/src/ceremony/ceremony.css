@@ -1,0 +1,605 @@
+/*
+  Ceremony — full-bleed, on the shared screen shell (2026-07-11 pass).
+  No frame, no gold hairline. Night is a deep indigo field; the return brightens
+  into a misty morning. Gold behaves like light, and only at the flame, the
+  stars, and the one illuminated intention.
+*/
+
+/* ---- shared ceremony scaffolding ---- */
+.ceremony-screen {
+  position: relative;
+  font-family: var(--font-display);
+}
+
+/* an inner scroll layer so long ceremonies scroll while the field stays put */
+.ceremony-scroll {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + clamp(40px, 8vh, 72px))
+    clamp(24px, 7cqi, 40px)
+    calc(env(safe-area-inset-bottom, 0px) + clamp(28px, 5vh, 44px));
+}
+
+.ceremony-copy {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 30rem);
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: clamp(1.2rem, 4.6cqi, 1.5rem);
+}
+
+.ceremony-line {
+  margin: 0 0 24px;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: ceremonyLineReveal 1600ms var(--motion-ease) forwards;
+}
+
+.ceremony-line:nth-child(1) { animation-delay: 400ms; }
+.ceremony-line:nth-child(2) { animation-delay: 2100ms; }
+.ceremony-line:nth-child(3) { animation-delay: 3800ms; }
+.ceremony-line:nth-child(4) { animation-delay: 5500ms; }
+.ceremony-line:nth-child(5) { animation-delay: 7200ms; }
+.ceremony-line:nth-child(6) { animation-delay: 8900ms; }
+.ceremony-line:nth-child(7) { animation-delay: 11600ms; }
+.ceremony-line:nth-child(8) { animation-delay: 13300ms; }
+
+.ceremony-small-line {
+  color: color-mix(in srgb, currentColor 70%, transparent);
+  font-size: clamp(1rem, 3.4cqi, 1.15rem);
+}
+
+/* ---- the veil ---- */
+.ceremony-veil {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(40px, 8vh, 72px) clamp(24px, 8cqi, 40px);
+  isolation: isolate;
+}
+
+.ceremony-carpet {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.16;
+  background:
+    linear-gradient(30deg, transparent 46%, rgba(232, 184, 75, 0.08) 47%, rgba(232, 184, 75, 0.08) 53%, transparent 54%),
+    linear-gradient(150deg, transparent 46%, rgba(120, 140, 190, 0.12) 47%, rgba(120, 140, 190, 0.12) 53%, transparent 54%),
+    repeating-linear-gradient(90deg, transparent 0 28px, rgba(201, 138, 43, 0.06) 28px 29px),
+    repeating-linear-gradient(0deg, transparent 0 28px, rgba(201, 138, 43, 0.06) 28px 29px);
+  background-size: 96px 96px, 96px 96px, 56px 56px, 56px 56px;
+  mask-image: radial-gradient(circle, black 0%, transparent 72%);
+}
+
+.ceremony-veil-copy {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 26rem);
+  color: var(--parchment);
+  font-size: clamp(1.5rem, 6.4cqi, 2.4rem);
+  line-height: 1.3;
+}
+
+.ceremony-veil-copy p {
+  margin: 0 0 24px;
+  opacity: 0;
+  animation: ceremonyLineReveal 1600ms var(--motion-ease) forwards;
+}
+
+.ceremony-veil-copy p:nth-child(1) { animation-delay: 600ms; }
+.ceremony-veil-copy p:nth-child(2) { animation-delay: 2500ms; }
+
+/* the second line lands (~4100ms), holds a couple seconds, then the veil
+   sinks to full black — the seam the candle rises out of */
+.ceremony-veil-blackout {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  animation: ceremonyBlackout 1400ms var(--motion-ease) 6000ms forwards;
+}
+
+/* ---- candle: the produced hero plate (two flames on the night field) ---- */
+.candle-plate {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  /* the composite at natural cover keeps the two flames crisp and consistent
+     across aspect ratios; the copy bottom-anchors on the darkened mist below */
+  background: #0b0f1a url('/plates/candle.jpg') center / cover no-repeat;
+}
+
+/* a soft gold bloom over the flames — the plate's flames are fixed, this is
+   the living breath: a light that swells and settles, never a flicker gimmick */
+.candle-bloom {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  width: min(54cqi, 18rem);
+  aspect-ratio: 3 / 4;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(245, 214, 142, 0.32) 0%,
+    rgba(232, 184, 75, 0.16) 34%,
+    rgba(232, 184, 75, 0) 66%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: candleBloom 5600ms var(--motion-ease) infinite alternate;
+}
+
+/* darken the lower field so the ceremony copy stays legible over the mist,
+   while the flames above keep their open sky */
+.candle-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(11, 15, 26, 0.42) 54%,
+    rgba(9, 12, 21, 0.82) 74%,
+    rgba(7, 10, 18, 0.95) 100%
+  );
+}
+
+/* the candle field mounts already black (continuing the veil's blackout) and
+   fades up into view — no hard cut */
+.ceremony-candle-riseup {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background: #000;
+  pointer-events: none;
+  animation: ceremonyRiseUp 1800ms var(--motion-ease) forwards;
+}
+
+/* demo affordance — step past the resting state without waiting out the window */
+.candle-skip {
+  position: absolute;
+  z-index: 4;
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+  padding: 7px 14px 6px;
+  border: 1px solid color-mix(in srgb, var(--parchment) 24%, transparent);
+  border-radius: 999px;
+  background: rgba(11, 15, 26, 0.42);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: color-mix(in srgb, var(--parchment) 62%, transparent);
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: var(--label-tracking, 0.18em);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 240ms var(--motion-ease), border-color 240ms var(--motion-ease);
+}
+
+.candle-skip::after {
+  content: ' \2192';
+}
+
+.candle-skip:hover {
+  color: var(--parchment);
+  border-color: color-mix(in srgb, var(--gold) 52%, transparent);
+}
+
+.ceremony-scroll--candle {
+  justify-content: flex-end;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + clamp(24px, 6vh, 56px));
+}
+
+/* the candle copy is a quiet block low on the field — the flames own the sky */
+.ceremony-candle-copy {
+  margin-top: 0;
+  padding-bottom: clamp(2px, 1vh, 12px);
+  text-align: center;
+  font-size: clamp(0.98rem, 3.5cqi, 1.12rem);
+  line-height: 1.46;
+  text-shadow: 0 0 10px rgba(7, 10, 18, 0.85), 0 1px 22px rgba(7, 10, 18, 0.7);
+}
+
+.ceremony-candle-copy .ceremony-line {
+  margin-bottom: 9px;
+}
+
+.ceremony-candle-copy .ceremony-initial-panel {
+  margin: 10px auto 8px;
+  padding: 11px 20px;
+}
+
+.ceremony-candle-copy .ceremony-initial-word {
+  font-size: clamp(1.5rem, 6.6cqi, 2.1rem);
+}
+
+.ceremony-candle-copy .ceremony-small-line {
+  font-size: clamp(0.88rem, 2.9cqi, 0.98rem);
+  margin-bottom: 7px;
+}
+
+.ceremony-initial-panel {
+  display: block;
+  margin: 18px auto 10px;
+  padding: 20px 22px;
+  max-width: 24rem;
+  border: 1px solid color-mix(in srgb, var(--gold-ember) 34%, transparent);
+  border-radius: 16px;
+}
+
+.ceremony-initial-word {
+  display: block;
+  color: var(--gold);
+  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--gold-ember) 28%, transparent));
+  font-size: clamp(1.7rem, 8cqi, 2.6rem);
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* ---- flame (unchanged behaviour; carried onto the new shell) ---- */
+.ceremony-flame-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: start center;
+  pointer-events: none;
+}
+
+.ceremony-flame-canvas,
+.ceremony-flame-css {
+  grid-area: 1 / 1;
+  justify-self: center;
+  width: min(58cqi, 15rem);
+  height: min(58cqi, 15rem);
+  margin-top: clamp(2.5rem, 12vh, 6rem);
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--gold-ember) 32%, transparent));
+}
+
+.ceremony-flame-css {
+  position: relative;
+}
+
+.ceremony-flame-css::before,
+.ceremony-flame-css::after {
+  content: '';
+  position: absolute;
+  top: 12%;
+  width: 42%;
+  height: 76%;
+  border-radius: 52% 48% 48% 52% / 72% 72% 28% 28%;
+  background:
+    radial-gradient(circle at 50% 57%, var(--parchment) 0 6%, transparent 7%),
+    radial-gradient(ellipse at 50% 53%, var(--gold) 0 24%, transparent 25%),
+    radial-gradient(ellipse at 50% 56%, var(--gold-ember) 0 46%, transparent 47%);
+  opacity: 0.86;
+  animation: flameBreath 5200ms var(--motion-ease) infinite alternate;
+}
+
+.ceremony-flame-css::before { left: 3%; }
+.ceremony-flame-css::after { right: 3%; animation-delay: 1700ms; }
+
+.ceremony-flame-canvas-hidden { opacity: 0; }
+
+.ceremony-motion-permission {
+  pointer-events: auto;
+  position: absolute;
+  top: max(40px, env(safe-area-inset-top));
+  right: max(24px, env(safe-area-inset-right));
+  z-index: 3;
+  display: grid;
+  gap: 8px;
+  width: min(19rem, calc(100cqi - 48px));
+  color: var(--parchment);
+  font: 400 0.82rem/1.45 var(--font-ui);
+}
+
+.ceremony-motion-permission p {
+  margin: 0;
+  color: color-mix(in srgb, var(--parchment) 78%, transparent);
+}
+
+.ceremony-motion-permission button {
+  border: 1px solid color-mix(in srgb, var(--gold-ember) 44%, transparent);
+  border-radius: 999px;
+  background: rgba(11, 15, 26, 0.72);
+  color: var(--parchment);
+  font: 500 0.82rem/1.2 var(--font-ui);
+  padding: 8px 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* ---- havdalah: the return, a misty morning ---- */
+.ceremony-screen-havdalah {
+  color: var(--ink);
+  animation: havdalahBrighten 9s var(--motion-ease) both;
+}
+
+.ceremony-havdalah-copy {
+  text-align: center;
+}
+
+.ceremony-stars {
+  position: relative;
+  width: 5rem;
+  height: 3.8rem;
+  margin: 0 auto 40px;
+  opacity: 0;
+  animation: ceremonyLineReveal 1800ms var(--motion-ease) 600ms forwards;
+}
+
+.ceremony-stars span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--gold-ember) 66%, transparent);
+}
+
+.ceremony-stars span:nth-child(1) { top: 5px; left: 12px; }
+.ceremony-stars span:nth-child(2) { top: 28px; left: 45px; }
+.ceremony-stars span:nth-child(3) { top: 2px; left: 68px; }
+
+.ceremony-reflection {
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.ceremony-reflection label,
+.ceremony-attestation p,
+.ceremony-kept p,
+.ceremony-return p {
+  margin: 0;
+}
+
+.ceremony-reflection label {
+  font-style: italic;
+  color: var(--ink-quiet);
+  font-size: 1.05rem;
+}
+
+.ceremony-reflection textarea {
+  min-height: 5.5rem;
+  resize: vertical;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-lift) 70%, transparent);
+  color: var(--ink);
+  font: 400 1.05rem/1.6 var(--font-ui);
+  padding: 13px 15px;
+  transition: border-color 240ms var(--motion-ease), box-shadow 240ms var(--motion-ease);
+}
+
+.ceremony-reflection textarea:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--ink) 44%, transparent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ink) 6%, transparent);
+}
+
+.ceremony-attestation {
+  display: grid;
+  gap: 16px;
+}
+
+.ceremony-attestation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.ceremony-attestation button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 3px 24px 0;
+  border: 1px solid color-mix(in srgb, var(--ink) 34%, transparent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: var(--label-tracking);
+  line-height: 1;
+  transition: border-color 240ms var(--motion-ease), background-color 240ms var(--motion-ease);
+}
+
+.ceremony-attestation button:hover:not(:disabled) {
+  border-color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+
+.ceremony-attestation button:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+
+/* the closing screen: reflection gives way to a centered final view */
+.ceremony-scroll--closing {
+  justify-content: center;
+}
+
+.ceremony-closing {
+  display: grid;
+  gap: 32px;
+  justify-items: center;
+  text-align: center;
+}
+
+.ceremony-closing .ceremony-return {
+  justify-items: center;
+  text-align: center;
+}
+
+.ceremony-rehearsal {
+  max-width: 22rem;
+}
+
+.ceremony-kept {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.ceremony-kept .ceremony-stars {
+  margin-bottom: 20px;
+}
+
+.ceremony-mosaic-wrap {
+  margin-top: 12px;
+}
+
+.ceremony-return {
+  display: grid;
+  gap: 14px;
+}
+
+.ceremony-return a {
+  color: var(--ink);
+  font-style: italic;
+  font-size: 1.05rem;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.ceremony-return a.ceremony-deeper-door {
+  font-size: 0.92rem;
+  opacity: 0.62;
+}
+
+/* ---- mosaic ---- */
+.ceremony-mosaic {
+  display: block;
+  width: min(100%, 18rem);
+  height: auto;
+  margin: 8px auto 0;
+}
+
+.ceremony-mosaic-field { fill: color-mix(in srgb, var(--surface-lift) 60%, transparent); stroke: color-mix(in srgb, var(--ink) 16%, transparent); }
+.ceremony-mosaic-gridline { stroke: color-mix(in srgb, var(--ink) 10%, transparent); stroke-width: 1; }
+.ceremony-mosaic-tile { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--gold-ember) 16%, transparent)); }
+.ceremony-mosaic-gold { fill: var(--gold); }
+.ceremony-mosaic-ember { fill: var(--gold-ember); }
+.ceremony-mosaic-lapis { fill: var(--lapis); }
+.ceremony-mosaic-vermilion { fill: var(--vermilion); }
+
+/* ---- no-pledge ---- */
+.ceremony-no-pledge {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(40px, 8vh, 72px) clamp(24px, 8cqi, 40px);
+}
+
+.ceremony-no-pledge-copy {
+  display: grid;
+  gap: 18px;
+  place-items: center;
+  color: var(--parchment);
+}
+
+.ceremony-no-pledge-copy p { margin: 0; font-size: 1.4rem; }
+
+.ceremony-no-pledge-copy a {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  text-underline-offset: 5px;
+}
+
+/* ---- deeper: a single day page behind the door ---- */
+.ceremony-deeper {
+  color: var(--ink);
+}
+
+.ceremony-deeper-copy {
+  font-size: clamp(1.1rem, 4.2cqi, 1.3rem);
+  text-align: left;
+}
+
+.ceremony-deeper-heading {
+  font-size: clamp(1.7rem, 6.4cqi, 2.3rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.ceremony-deeper-copy .ceremony-line:nth-child(1) { animation-delay: 300ms; }
+.ceremony-deeper-copy .ceremony-line:nth-child(2) { animation-delay: 900ms; }
+.ceremony-deeper-copy .ceremony-line:nth-child(3) { animation-delay: 1700ms; }
+.ceremony-deeper-copy .ceremony-line:nth-child(4) { animation-delay: 2300ms; }
+.ceremony-deeper-copy .ceremony-line:nth-child(5) { animation-delay: 2900ms; }
+
+.ceremony-deeper-return {
+  color: var(--ink);
+  font-style: italic;
+  font-size: 1.02rem;
+  text-underline-offset: 5px;
+}
+
+/* ---- keyframes ---- */
+@keyframes ceremonyLineReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ceremonyBlackout {
+  to { opacity: 1; }
+}
+
+@keyframes ceremonyRiseUp {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes havdalahBrighten {
+  0% { filter: brightness(0.62); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes flameBreath {
+  from { opacity: 0.76; transform: scale(0.985); }
+  to { opacity: 0.92; transform: scale(1.015); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ceremony-line,
+  .ceremony-veil-copy p,
+  .ceremony-stars,
+  .ceremony-flame-css {
+    animation-duration: 700ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    transform: none;
+  }
+
+  .ceremony-screen-havdalah {
+    animation-name: none;
+  }
+
+  /* keep the fade beats but compress them to match the shortened timer */
+  .ceremony-veil-blackout {
+    animation-duration: 400ms;
+    animation-delay: 900ms;
+  }
+
+  .ceremony-candle-riseup {
+    animation-duration: 400ms;
+  }
+}
