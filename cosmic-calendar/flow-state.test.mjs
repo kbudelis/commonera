@@ -334,6 +334,10 @@ test("birthday and month compositions render real visual assets", () => {
 
 test("post-birth pages snap one screen at a time without ritual dividers", () => {
   const styles = readFileSync(new URL("./src/styles.css", import.meta.url), "utf8");
+  const documentShell = readFileSync(
+    new URL("./index.html", import.meta.url),
+    "utf8",
+  );
   const personalFlowRule = styles.match(
     /\.flow-page--personal\s*\{([^}]*)\}/s,
   )?.[1] ?? "";
@@ -358,6 +362,11 @@ test("post-birth pages snap one screen at a time without ritual dividers", () =>
   assert.match(curveRule, /touch-action:\s*pan-y/);
   assert.match(moonStateRule, /width:\s*64px/);
   assert.match(moonStateRule, /--moon-shadow-shift:\s*0%/);
+  assert.match(documentShell, /http-equiv="Content-Security-Policy"/);
+  assert.match(documentShell, /connect-src 'none'/);
+  assert.match(documentShell, /frame-ancestors 'none'/);
+  assert.match(documentShell, /form-action 'self'/);
+  assert.match(documentShell, /name="referrer" content="no-referrer"/);
 });
 
 test("reduced motion returns before querying a landmark or scrolling", () => {
@@ -428,14 +437,26 @@ test("every birth month has one compact portrait without deferred profile materi
   }
 });
 
-test("a birthday produces stable facts without storing authored prose", () => {
+test("a birthday stays local-only without storing authored prose", () => {
   const profile = createStoredBirthProfile("07/10/1998", "  Mara  ");
+  const appSource = readFileSync(new URL("./src/App.tsx", import.meta.url), "utf8");
+  const contentSource = readFileSync(
+    new URL("./src/content.ts", import.meta.url),
+    "utf8",
+  );
 
   assert.ok(profile);
   assert.equal(profile.input.displayName, "Mara");
   assert.equal(profile.derived.hebrewDate.monthKey, "tammuz");
   assert.equal(MONTH_ENTRIES.tammuz.correspondence.letter.glyph, "ח");
   assert.doesNotMatch(JSON.stringify(profile), /reading|ritual/i);
+  assert.match(contentSource, /storage\.setItem\(BIRTH_PROFILE_STORAGE_KEY,/);
+  assert.match(contentSource, /storage\.getItem\(BIRTH_PROFILE_STORAGE_KEY\)/);
+  assert.doesNotMatch(contentSource, /removeItem|storage\.clear\(/);
+  assert.doesNotMatch(
+    `${appSource}\n${contentSource}`,
+    /fetch\(|XMLHttpRequest|sendBeacon|WebSocket|EventSource/,
+  );
 });
 
 test("the date library's Sh'vat spelling normalizes to the Shevat portrait", () => {

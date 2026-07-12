@@ -2,149 +2,110 @@
 
 ## Overview
 
-Milestone v1.0 produced a handoff-ready mobile prototype in five completed
-delivery boundaries: flow, typed calendar/content data, approved visual assets,
-an inserted client-feedback pass, and a computed Friday/moon return frame with
-prototype QA. The sixth boundary—the isolated zodiac rotor—is intentionally
-deferred to the next developer rather than falsely marked complete.
-
-This roadmap describes the handoff feature branch. The latest Phase 03.1 and
-Phase 4 implementation is captured there but still needs PR review and merge
-before it is part of the public GitHub Pages build.
+The v1.0 prototype is implemented through its welcome, birthday/skip paths,
+Hebrew-calendar content, personal portraits, twelve-month gallery, and
+Friday/moon return frame. Public developer-handoff hygiene is complete. The
+isolated zodiac rotor remains the only open implementation decision.
 
 ## Phases
 
-- [x] **Phase 1: Mobile Flow Skeleton** — Establish the birthday and skip paths,
-  ordered reading landmarks, accessibility foundation, and reduced-motion guard.
-  (completed 2026-07-11)
-- [x] **Phase 2: Content & Static Data** — Add deterministic Hebrew-date logic,
-  twelve authored month readings, profile persistence, and grounding content.
-  (implemented at `e9d9677`; GSD artifacts backfilled 2026-07-11)
-- [x] **Phase 3: Visual Assets & Typography** — Apply the blue/paper system,
-  Vollkorn titles, Lalou Hebrew glyphs, and constellation artwork while keeping
-  the rotor isolated. (completed 2026-07-11)
-- [x] **Phase 03.1: Client Feedback — Copy, Glyph, and Month-Page Visual Magic**
-  — Shorten the welcome, author month-specific portraits, and add the
-  twelve-month constellation gallery. (implementation complete 2026-07-11)
-- [x] **Phase 4: Upcoming & QA** — Replace the placeholder with computed
-  Friday/moon cards and run automated plus portrait-browser smoke checks.
-  (implementation complete 2026-07-11)
-- [ ] **Phase 5: Zodiac Rotor Integration** — Deferred to the next developer;
-  the isolated prototype remains on `codex/rotor-prototype`.
+- [x] **Phase 1: Mobile Flow Skeleton** — Birthday and skip paths,
+  accessibility foundation, and reduced-motion guard. (2026-07-11)
+- [x] **Phase 2: Content & Static Data** — Hebrew-date logic, authored readings,
+  and local profile persistence. (2026-07-11)
+- [x] **Phase 3: Visual Assets & Typography** — Approved visual system and local
+  assets with the rotor kept isolated. (2026-07-11)
+- [x] **Phase 03.1: Client Feedback** — Shorter welcome, authored portraits, and
+  twelve-month constellation gallery. (2026-07-11)
+- [x] **Phase 4: Upcoming & QA** — Friday/moon return frame and prototype QA.
+  (2026-07-11)
+- [x] **Phase 04.1: Public Handoff Hygiene** — Keep generated runtime output and
+  raw working notes local, retain core GSD documents, disclose prototype-only
+  assets, and verify the app still works. (2026-07-12)
+- [ ] **Phase 5: Zodiac Rotor Integration** — Selectively integrate the isolated
+  rotor or formally defer it.
 
 ## Phase Details
 
 ### Phase 1: Mobile Flow Skeleton
 
-**Goal:** Establish a deterministic, accessible mobile journey through welcome,
-birthday or skip, personal reading, month reading, and upcoming.
-**Depends on:** Nothing
-**Requirements:** FLOW-01, FLOW-02, FLOW-03, FLOW-04, FLOW-05
-**Plans:** 1/1 complete
-**Verification:** Passed
+**Status:** Complete and verified
 
-Plans:
+**Requirements:** FLOW-01 through FLOW-05
 
-- [x] `01-01-PLAN.md` — Build and validate the mobile flow foundation.
-
-Phase 03.1 intentionally evolved the placeholder-era welcome/scroll presentation
-while retaining Phase 1's reducer, landmark, validation, accessibility, and
-reduced-motion foundations. Current accepted behavior lives in
-`REQUIREMENTS.md`, not in the historical Phase 1 plan wording.
+**Plan:** `01-mobile-flow-skeleton/01-01-PLAN.md`
 
 ### Phase 2: Content & Static Data
 
-**Goal:** Power current-month and birthday-derived readings with deterministic
-typed data and versioned local persistence.
-**Depends on:** Phase 1
-**Requirements:** CAL-01, READ-01, READ-02, PROF-01, PROF-02, DATA-01, COPY-01,
-DATA-02
-**Plans:** 1/1 complete
-**Verification:** Passed; historical artifacts backfilled from `e9d9677`, current
-source, and tests
+**Status:** Complete and verified
 
-Plans:
+**Requirements:** CAL-01, READ-01, READ-02, PROF-01, PROF-02, DATA-01, COPY-01, DATA-02
 
-- [x] `02-01-PLAN.md` — Implement the static calendar/content foundation.
+**Plan:** `02-content-static-data/02-01-PLAN.md`
 
 ### Phase 3: Visual Assets & Typography
 
-**Goal:** Apply the approved visual system using the real local type, Hebrew
-letter, and constellation assets without importing the separate rotor.
-**Depends on:** Phases 1 and 2
-**Requirements:** VIS-01, VIS-02, VIS-03, VIS-04
-**Plans:** 1/1 complete
-**Verification:** Passed
+**Status:** Complete and verified
 
-Plans:
+**Requirements:** VIS-01 through VIS-04
 
-- [x] `03-01-PLAN.md` — Integrate and refine the Phase 3 visual composition.
+**Plan:** `03-visual-assets-typography/03-01-PLAN.md`
 
-### Phase 03.1: Client Feedback — Copy, Glyph, and Month-Page Visual Magic
+### Phase 03.1: Client Feedback
 
-**Goal:** Tighten onboarding, deepen the personal/month copy, and make all
-twelve readings explorable through a celestial constellation gallery.
-**Depends on:** Phase 3
-**Requirements:** FLOW-01, FLOW-02, FLOW-04, PROF-01, PROF-02, DATA-01,
-VIS-03, VIS-04, BROWSE-01
-**Plans:** 1/1 complete
-**Verification:** Passed for functional handoff; screenshots remain paused
+**Status:** Implementation complete and verified for handoff
 
-Plans:
+**Requirements:** FLOW-01, FLOW-02, FLOW-04, PROF-01, PROF-02, DATA-01, VIS-03, VIS-04, BROWSE-01
 
-- [x] `03.1-01-PLAN.md` — Apply the accepted client-feedback direction.
+**Plan:** `03.1-client-feedback-copy-glyph-and-month-page-visual-magic/03.1-01-PLAN.md`
 
 ### Phase 4: Upcoming & QA
 
-**Goal:** End both app paths on a credible computed Friday/moon return frame and
-verify the locked portrait shell.
-**Depends on:** Phases 2 and 03.1
+**Status:** Complete and verified for prototype handoff
+
 **Requirements:** UP-01, UP-02, QA-01, QA-02
-**Plans:** 1/1 complete
-**Verification:** Passed for prototype handoff
 
-Plans:
+**Plan:** `04-upcoming-qa/04-01-PLAN.md`
 
-- [x] `04-01-PLAN.md` — Implement return-cadence data/UI and run QA.
+### Phase 04.1: Public Handoff Hygiene
 
-### Phase 5: Zodiac Rotor Integration — Deferred Handoff Boundary
+**Status:** Complete
 
-**Goal:** Decide whether and how the isolated rotor becomes the persistent zodiac
-renderer without competing with the completed month gallery or regressing either
-mobile path.
-**Depends on:** Phase 4
+**Requirements:** PUB-01, PUB-02, DISC-01, SEC-01
+
+The application behavior is unchanged, core GSD documents remain, visual assets
+are labeled prototype-only, and the best-effort local preflight passes.
+
+### Phase 5: Zodiac Rotor Integration
+
+**Status:** Not implemented; next-developer decision
+
 **Requirements:** MOT-01, MOT-02
-**Plans:** 0/1 complete; pending plan exists
-**Status:** Not implemented; next developer decision
 
-Planned work:
+**Plan:** `05-zodiac-rotor-integration/05-01-PLAN.md`
 
-- [ ] `05-01-PLAN.md` — Decide selective integration versus formal deferral,
-  execute the approved boundary, and reverify the milestone.
-- [ ] Inspect `codex/rotor-prototype` at `84a8963` and the retained worktree.
-- [ ] Choose either selective rotor integration or formal deferral to a later
-  milestone; do not merge the entire worktree blindly.
-- [ ] If integrated, adapt it behind the existing zodiac visual boundary and
-  rerun every flow, portrait, keyboard, and reduced-motion check.
-- [ ] Update MOT-01/MOT-02 verification and deploy only after both paths pass.
+Next steps:
+
+1. Inspect the isolated rotor without merging its worktree wholesale.
+2. Choose selective integration or formal deferral.
+3. If integrated, preserve the current gallery, both routes, keyboard support,
+   focus, overflow behavior, and reduced-motion parity.
+4. Re-run tests/build and complete visual/device review.
 
 ## Progress
 
-**Execution order:** 1 → 2 → 3 → 03.1 → 4 → 5
-**Prototype handoff:** 5 of 6 phase boundaries resolved; Phase 5 intentionally
-deferred.
+| Phase | Status | Date |
+|---|---|---|
+| 1. Mobile Flow Skeleton | Complete | 2026-07-11 |
+| 2. Content & Static Data | Complete | 2026-07-11 |
+| 3. Visual Assets & Typography | Complete | 2026-07-11 |
+| 03.1 Client Feedback | Complete for handoff | 2026-07-11 |
+| 4. Upcoming & QA | Complete for handoff | 2026-07-11 |
+| 04.1 Public Handoff Hygiene | Complete | 2026-07-12 |
+| 5. Zodiac Rotor Integration | Decision pending | — |
 
-| Phase | Plans Complete | Status | Date |
-|---|---:|---|---|
-| 1. Mobile Flow Skeleton | 1/1 | Complete, verified | 2026-07-11 |
-| 2. Content & Static Data | 1/1 | Complete, verified; artifacts backfilled | 2026-07-11 |
-| 3. Visual Assets & Typography | 1/1 | Complete, verified | 2026-07-11 |
-| 03.1 Client Feedback | 1/1 | Implementation complete, verified for handoff | 2026-07-11 |
-| 4. Upcoming & QA | 1/1 | Implementation complete, verified for handoff | 2026-07-11 |
-| 5. Zodiac Rotor Integration | 0/1 | Pending plan; deferred to next developer | — |
+## Handoff Boundary
 
-## Closeout boundary
-
-The v1.0 sprint prototype is usable without Phase 5, but the milestone is not a
-production release. Legal/content review, final screenshot selection, merge to
-`main`, and public Pages verification remain explicit handoff tasks.
+The prototype is usable without Phase 5. It remains a prototype: final
+screenshots, physical-device review, asset/library clearance, expert content
+review, and astronomical accuracy are still required before production.

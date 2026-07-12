@@ -5,21 +5,26 @@ mystical astrology tradition of *Sefer Yetzirah*. It turns the current Hebrew
 month and an optional birthday into a poetic season reading, a personal
 birth-month portrait, a small ritual, and lightweight Friday/moon return cues.
 
-**Prototype:** <https://kbudelis.github.io/commonera/cosmic-calendar/>
+**Prototype preview:** shared GitHub Pages build from the monorepo `main`
+branch; local handoff work may be ahead of the public build.
 
-> Developer handoff, 2026-07-11: the public GitHub Pages URL is an earlier
-> `main` build. The most recent two-screen welcome, twelve-month gallery,
-> authored birth portraits, and computed Friday/moon panel are present in the
-> `codex/cosmic-calendar` handoff commit and are not deployed until that branch
-> is merged to `main`.
+> Prototype-only visual asset notice: the bundled glyphs, illustrations,
+> backgrounds, constellations, and fonts are included for prototype evaluation only.
+> They have not been fully verified or cleared for production or
+> commercial use. This prototype does not claim asset, library, Hebcal, or
+> project-license clearance.
+
+> Developer handoff, 2026-07-11: the public GitHub Pages build may lag the
+> latest local handoff commit. The most recent two-screen welcome,
+> twelve-month gallery, authored birth portraits, and computed Friday/moon
+> panel are not public until the reviewed handoff branch is merged to `main`.
 
 ## Handoff status
 
-- Current branch: `codex/cosmic-calendar`
 - Source handoff: the application implementation and GSD closeout records are
   captured together in the commit containing this README.
-- Publication state: the feature branch is pushed for draft-PR review; the
-  public site still follows monorepo `main`.
+- Publication state: the reviewed handoff branch is ahead of the public site;
+  the deployed preview still follows monorepo `main`.
 - Automated status: `npm run test:flow` passes 24/24 tests and
   `npm run build` succeeds.
 - Screenshots and final visual acceptance were deliberately paused. Do not
@@ -135,13 +140,33 @@ be a new architecture decision.
 
 ## GSD architecture
 
-This project carries a local open-gsd 1.6.1 installation for both Claude Code
+This project uses open-gsd 1.6.1 with local runtime installs for Claude Code
 and Codex:
 
-- `.claude/` contains Claude commands, agents, hooks, and the GSD runtime.
-- `.codex/` contains Codex skills, agents, hooks, and the same GSD runtime.
+- `.claude/` and `.codex/` are generated local runtime directories.
+- Existing local copies remain usable even though those runtime directories are
+  no longer tracked in Git.
 - `AGENTS.md` and `CLAUDE.md` define the project-specific role split.
 - `.planning/` is the cross-runtime contract and outranks chat history.
+
+### Local GSD runtime continuity
+
+- If `.claude/` and `.codex/` are already present locally, keep them in place.
+- If a clean checkout does not have those runtime folders, reinstall the pinned
+  local runtime from this project root with:
+
+  ```bash
+  npx -y @opengsd/gsd-core@1.6.1 --claude --codex --local
+  ```
+
+- After reinstall, confirm local phase context resolves with:
+
+  ```bash
+  node .codex/gsd-core/bin/gsd-tools.cjs query init.plan-phase 05 --raw
+  ```
+
+- `.agents/` is optional generated mirror output and is not required for GSD
+  planning or execution in this repo.
 
 The intended ownership split is:
 
@@ -168,8 +193,8 @@ For a fresh session, use this reading order:
 8. `.planning/research/` only when a source, date, licensing, or implementation
    decision needs deeper evidence
 
-Do not use the old PRD, an old chat, or a historical phase plan to silently
-override the latest `STATE`, `ROADMAP`, and `REQUIREMENTS` contract.
+Do not use the local-only raw PRD, an old chat, or a historical phase plan to
+silently override the latest `STATE`, `ROADMAP`, and `REQUIREMENTS` contract.
 
 ### Phase closeout snapshot
 
@@ -190,12 +215,10 @@ after the current working tree is preserved and reviewed.
 The parent repository is a shared sprint monorepo. Do not alter sibling project
 folders when working on Cosmic Calendar.
 
-The isolated rotor prototype is preserved at:
+The isolated rotor prototype is preserved locally at:
 
 ```text
-branch: codex/rotor-prototype
 worktree: cosmic-calendar/.worktrees/cosmiccal-rotor-prototype
-tip at handoff: 84a8963
 ```
 
 Inspect and cherry-pick or port only the component behavior needed by the main
@@ -209,15 +232,15 @@ recommendation:
 - Cosmic Calendar receives `BASE_PATH=/commonera/cosmic-calendar/`
 - `vite.config.ts` already consumes `BASE_PATH`
 
-Therefore, pushing `codex/cosmic-calendar` alone does not update the public
-prototype. Merge the intended final commit to `main`, wait for the Pages action,
-then verify the public URL without authentication.
+Therefore, pushing a handoff branch alone does not update the public prototype.
+Merge the intended final commit to `main`, wait for the Pages action, then
+verify the public URL without authentication.
 
 ## Where to pick up
 
-1. **Confirm the published source of truth.** Check out
-   `codex/cosmic-calendar`, confirm `git status --short` is clean, then run
-   `npm run test:flow` and `npm run build` before touching the rotor worktree.
+1. **Confirm the published source of truth.** Check out the current handoff
+   branch, confirm `git status --short` is clean, then run `npm run test:flow`
+   and `npm run build` before touching the rotor worktree.
 2. **Run the paused visual/device review.** Exercise both the birthday and skip
    paths at portrait-mobile sizes, with keyboard navigation and reduced motion.
    Confirm the personal, month, and upcoming frames do not clip or trap scroll.
