@@ -15,10 +15,14 @@ export interface PaperMaterialResult {
  */
 export function createPaperMaterial(
   inkTexture: Texture,
-  opts: { barCount?: number } = {},
+  opts: { barCount?: number; normal?: Texture; normalScale?: number } = {},
 ): PaperMaterialResult {
-  const { barCount = 14 } = opts;
+  const { barCount = 14, normal, normalScale = 0.3 } = opts;
   const material = new MeshStandardNodeMaterial();
+  if (normal) {
+    material.normalMap = normal;
+    material.normalScale.set(normalScale, normalScale);
+  }
   const ink = texture(inkTexture);
   const { glowTint, handles } = createHighlightRig();
 
