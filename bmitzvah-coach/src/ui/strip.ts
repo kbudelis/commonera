@@ -19,10 +19,11 @@ export class LearnerStrip {
     this.el.innerHTML = `
       <style>
         #learner-strip {
-          position: fixed; left: 0; top: 0; pointer-events: none;
+          position: fixed; left: 0; top: 0; pointer-events: none; z-index: 5;
           transform: translate(-50%, 24px);
-          background: rgba(26, 18, 11, 0.92);
-          border: 1px solid rgba(212, 160, 23, 0.35);
+          background: var(--card);
+          backdrop-filter: blur(8px);
+          border: 1px solid var(--card-border);
           border-radius: 12px; padding: 8px 16px 9px;
           display: flex; flex-direction: column; align-items: center; gap: 1px;
           opacity: 0; transition: opacity 0.15s ease;
@@ -31,7 +32,7 @@ export class LearnerStrip {
         }
         #learner-strip .he { font: 500 26px TaameyFrankCLM, serif; color: var(--paper); }
         #learner-strip .tl { font: 600 15px Rubik, system-ui; color: var(--accent); letter-spacing: 0.02em; }
-        #learner-strip .gl { font: 400 13px Rubik, system-ui; color: #b8a888; }
+        #learner-strip .gl { font: 400 13px Rubik, system-ui; color: var(--muted); }
       </style>
       <span class="he"></span><span class="tl"></span><span class="gl"></span>`;
     this.heEl = this.el.querySelector('.he')!;
