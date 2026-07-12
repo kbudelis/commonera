@@ -1,0 +1,80 @@
+/*
+  Arrival — the first screen. The screen shell (device frame, atmosphere, ring)
+  is shared; this file only places arrival's own furniture: the top mark, the
+  copy at the foot, the forward stone.
+*/
+
+.arrival {
+  color: var(--ink);
+}
+
+/* ---- the emblem: the word-ring with the name held at its centre ---- */
+.arrival__emblem {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: min(82%, 21rem);
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+}
+
+.arrival__ring {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arrival__mark {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: clamp(2.3rem, 13cqi, 3rem);
+  letter-spacing: var(--label-tracking-wide);
+  line-height: 1;
+  color: color-mix(in srgb, var(--ink) 92%, #000);
+}
+
+/* ---- foot: copy + the forward stone ---- */
+.arrival__foot {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding:
+    0 clamp(24px, 7cqi, 34px)
+    calc(env(safe-area-inset-bottom, 0px) + clamp(30px, 5vh, 44px));
+}
+
+.arrival__copy {
+  display: grid;
+  gap: clamp(12px, 2vh, 18px);
+  max-width: 20rem;
+}
+
+.arrival__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 10.5cqi, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.04;
+  color: color-mix(in srgb, var(--ink) 94%, #000);
+}
+
+.arrival__title em {
+  font-style: italic;
+}
+
+.arrival__sub {
+  margin: 0;
+  max-width: 17rem;
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-wrap: balance;
+  color: color-mix(in srgb, var(--ink) 82%, var(--surface));
+}

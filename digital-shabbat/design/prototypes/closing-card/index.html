@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Shabbat — closing card (design system prototype)</title>
+<!--
+  DESIGN SYSTEM PROTOTYPE — not a product route.
+  Establishes: hand-held frame · texture-the-room · OTR No Cigar + Newsreader
+  pairing · micrographic dot-ring (user's own words on a predesigned path).
+  All product lines are canonical (contracts/copy.md); pledge text is sample
+  user data. Newsreader is loaded from Google Fonts here; production self-hosts.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'OTR No Cigar';
+    src: url('assets/OTRNoCigarRegular.woff') format('woff');
+    font-display: swap;
+  }
+
+  :root {
+    --night: #0B0F1A;
+    --indigo: #141B2E;
+    --parchment: #F4ECDC;
+    --gold: #E8B84B;
+    --gold-ember: #C98A2B;
+    --frame-r: 44px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 28px;
+    background:
+      radial-gradient(120% 90% at 50% 8%, #131a2c 0%, var(--night) 58%, #070a12 100%);
+    font-family: 'Newsreader', Georgia, serif;
+    color: var(--parchment);
+  }
+
+  /* the room, textured */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('assets/grain-512.png') repeat;
+    background-size: 380px;
+    opacity: 0.13;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  /* ---- the hand-held frame ---- */
+  .frame {
+    position: relative;
+    width: min(392px, 100%);
+    min-height: min(800px, calc(100vh - 56px));
+    border-radius: var(--frame-r);
+    padding: 44px 30px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+      radial-gradient(110% 70% at 50% 0%, #1b2440 0%, var(--indigo) 46%, #0d1322 100%);
+    box-shadow:
+      0 0 0 1px rgba(232, 184, 75, 0.16),
+      0 30px 80px rgba(0, 0, 0, 0.55),
+      0 4px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  /* paper grain inside the frame */
+  .frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('assets/grain-512.png') repeat;
+    background-size: 300px;
+    opacity: 0.10;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  /* gold hairline inset — the printed border */
+  .frame::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(232, 184, 75, 0.22);
+    border-radius: calc(var(--frame-r) - 10px);
+    pointer-events: none;
+  }
+
+  .wordmark {
+    font-family: 'OTR No Cigar', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    color: rgba(232, 184, 75, 0.55);
+    margin: 0 0 6px;
+  }
+
+  /* ---- micrography ring ---- */
+  .ring-stage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 26px 0 10px;
+    flex-shrink: 0;
+  }
+
+  .ring-stage svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .ring-outer { animation: turn 160s linear infinite; transform-origin: 150px 150px; }
+  .ring-inner { animation: turn-rev 110s linear infinite; transform-origin: 150px 150px; }
+
+  @keyframes turn { to { transform: rotate(360deg); } }
+  @keyframes turn-rev { to { transform: rotate(-360deg); } }
+
+  .ring-outer text {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    fill: rgba(244, 236, 220, 0.34);
+  }
+
+  .ring-inner text {
+    font-family: 'Newsreader', Georgia, serif;
+    font-style: italic;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    fill: rgba(232, 184, 75, 0.30);
+  }
+
+  /* the ember — residue of the flame */
+  .ember {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow:
+      0 0 14px rgba(232, 184, 75, 0.9),
+      0 0 46px rgba(201, 138, 43, 0.55),
+      0 0 110px rgba(201, 138, 43, 0.28);
+    animation: breathe 7s ease-in-out infinite alternate;
+  }
+
+  @keyframes breathe {
+    from { opacity: 0.72; transform: scale(0.92); }
+    to   { opacity: 1;    transform: scale(1.06); }
+  }
+
+  /* three stars, canonical motif */
+  .stars {
+    position: relative;
+    width: 64px;
+    height: 26px;
+    margin: 4px auto 14px;
+  }
+  .stars i {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 10px rgba(201, 138, 43, 0.8);
+  }
+  .stars i:nth-child(1) { top: 14px; left: 4px; }
+  .stars i:nth-child(2) { top: 2px;  left: 30px; }
+  .stars i:nth-child(3) { top: 16px; left: 56px; }
+
+  .line {
+    margin: 0 0 26px;
+    max-width: 19.5em;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(244, 236, 220, 0.9);
+  }
+
+  .line em {
+    font-style: italic;
+    color: var(--parchment);
+  }
+
+  .when {
+    font-family: 'OTR No Cigar', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    margin: 0 0 30px;
+    text-shadow: 0 0 26px rgba(201, 138, 43, 0.35);
+  }
+
+  .when span { display: block; }
+
+  .when small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: rgba(244, 236, 220, 0.5);
+    margin-bottom: 8px;
+  }
+
+  .cta {
+    margin-top: auto;
+    display: inline-block;
+    padding: 17px 26px 15px;
+    border: 1px solid rgba(232, 184, 75, 0.5);
+    border-radius: 999px;
+    font-family: 'OTR No Cigar', sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-decoration: none;
+    transition: background-color 240ms ease, box-shadow 240ms ease;
+  }
+
+  .cta:hover {
+    background: rgba(232, 184, 75, 0.08);
+    box-shadow: 0 0 24px rgba(201, 138, 43, 0.25);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ring-outer, .ring-inner, .ember { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <main class="frame">
+    <p class="wordmark">Digital Shabbat</p>
+
+    <div class="ring-stage" aria-hidden="true">
+      <svg viewBox="0 0 300 300">
+        <defs>
+          <path id="orbit-outer" d="M 150,150 m -128,0 a 128,128 0 1,1 256,0 a 128,128 0 1,1 -256,0" />
+          <path id="orbit-inner" d="M 150,150 m -92,0 a 92,92 0 1,1 184,0 a 92,92 0 1,1 -184,0" />
+        </defs>
+        <g class="ring-outer">
+          <text>
+            <textPath href="#orbit-outer" textLength="804" lengthAdjust="spacingAndGlyphs">long dinners with people I love · long dinners with people I love · long dinners with people I love ·</textPath>
+          </text>
+        </g>
+        <g class="ring-inner">
+          <text>
+            <textPath href="#orbit-inner" textLength="578" lengthAdjust="spacingAndGlyphs">one day, set apart · one day, set apart · one day, set apart · one day, set apart ·</textPath>
+          </text>
+        </g>
+      </svg>
+      <div class="ember"></div>
+    </div>
+
+    <div class="stars" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <p class="line">The flame will be here at havdalah — <em>Saturday, when three stars are out.</em></p>
+
+    <p class="when"><small>Havdalah</small><span>Saturday</span><span>7:50 PM</span></p>
+
+    <a class="cta" href="#">Add the candle-lighting to your calendar</a>
+  </main>
+</body>
+</html>

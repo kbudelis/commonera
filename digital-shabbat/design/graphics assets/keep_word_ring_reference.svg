@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="word-ring-title word-ring-desc">
+  <title id="word-ring-title">Keep procedural word-ring reference</title>
+  <desc id="word-ring-desc">Reference geometry for the code-native WordRing. Production should replace these sample phrases with the user's own words.</desc>
+  <defs>
+    <radialGradient id="ring-paper" cx="50%" cy="50%" r="56%">
+      <stop offset="0" stop-color="#F4F0E7" stop-opacity="0.18" />
+      <stop offset="0.66" stop-color="#F1EADC" stop-opacity="0.66" />
+      <stop offset="1" stop-color="#C99A43" stop-opacity="0.12" />
+    </radialGradient>
+    <g id="outer-word"><text x="360" y="82" text-anchor="middle">set apart</text></g>
+    <g id="mid-a-word"><text x="360" y="132" text-anchor="middle">set down</text></g>
+    <g id="mid-b-word"><text x="360" y="188" text-anchor="middle">gather</text></g>
+    <g id="inner-word"><text x="360" y="246" text-anchor="middle">return</text></g>
+  </defs>
+  <style>
+    svg { color: #2B2118; background: transparent; }
+    text { fill: currentColor; font-family: Newsreader, Georgia, serif; letter-spacing: 1.8px; dominant-baseline: middle; }
+    .outer text { font-size: 11px; opacity: 0.34; }
+    .mid-a text { font-size: 10px; opacity: 0.28; letter-spacing: 2.6px; }
+    .mid-b text { font-size: 9px; opacity: 0.23; letter-spacing: 2.2px; }
+    .inner text { font-size: 8px; opacity: 0.18; letter-spacing: 1.8px; }
+    .orbit { fill: none; stroke: currentColor; stroke-width: 0.7; opacity: 0.08; }
+  </style>
+  <circle cx="360" cy="360" r="318" fill="url(#ring-paper)" />
+  <circle class="orbit" cx="360" cy="360" r="278" />
+  <circle class="orbit" cx="360" cy="360" r="230" />
+  <circle class="orbit" cx="360" cy="360" r="178" />
+  <circle class="orbit" cx="360" cy="360" r="122" />
+  <g class="outer">
+    <use href="#outer-word" transform="rotate(0 360 360)" />
+    <use href="#outer-word" transform="rotate(24 360 360)" />
+    <use href="#outer-word" transform="rotate(49 360 360)" />
+    <use href="#outer-word" transform="rotate(73 360 360)" />
+    <use href="#outer-word" transform="rotate(98 360 360)" />
+    <use href="#outer-word" transform="rotate(121 360 360)" />
+    <use href="#outer-word" transform="rotate(145 360 360)" />
+    <use href="#outer-word" transform="rotate(169 360 360)" />
+    <use href="#outer-word" transform="rotate(193 360 360)" />
+    <use href="#outer-word" transform="rotate(218 360 360)" />
+    <use href="#outer-word" transform="rotate(242 360 360)" />
+    <use href="#outer-word" transform="rotate(267 360 360)" />
+    <use href="#outer-word" transform="rotate(291 360 360)" />
+    <use href="#outer-word" transform="rotate(316 360 360)" />
+    <use href="#outer-word" transform="rotate(340 360 360)" />
+  </g>
+  <g class="mid-a">
+    <use href="#mid-a-word" transform="rotate(12 360 360)" />
+    <use href="#mid-a-word" transform="rotate(45 360 360)" />
+    <use href="#mid-a-word" transform="rotate(79 360 360)" />
+    <use href="#mid-a-word" transform="rotate(113 360 360)" />
+    <use href="#mid-a-word" transform="rotate(147 360 360)" />
+    <use href="#mid-a-word" transform="rotate(182 360 360)" />
+    <use href="#mid-a-word" transform="rotate(216 360 360)" />
+    <use href="#mid-a-word" transform="rotate(251 360 360)" />
+    <use href="#mid-a-word" transform="rotate(285 360 360)" />
+    <use href="#mid-a-word" transform="rotate(319 360 360)" />
+  </g>
+  <g class="mid-b">
+    <use href="#mid-b-word" transform="rotate(3 360 360)" />
+    <use href="#mid-b-word" transform="rotate(43 360 360)" />
+    <use href="#mid-b-word" transform="rotate(84 360 360)" />
+    <use href="#mid-b-word" transform="rotate(126 360 360)" />
+    <use href="#mid-b-word" transform="rotate(167 360 360)" />
+    <use href="#mid-b-word" transform="rotate(209 360 360)" />
+    <use href="#mid-b-word" transform="rotate(250 360 360)" />
+    <use href="#mid-b-word" transform="rotate(292 360 360)" />
+    <use href="#mid-b-word" transform="rotate(333 360 360)" />
+  </g>
+  <g class="inner">
+    <use href="#inner-word" transform="rotate(19 360 360)" />
+    <use href="#inner-word" transform="rotate(73 360 360)" />
+    <use href="#inner-word" transform="rotate(128 360 360)" />
+    <use href="#inner-word" transform="rotate(184 360 360)" />
+    <use href="#inner-word" transform="rotate(239 360 360)" />
+    <use href="#inner-word" transform="rotate(296 360 360)" />
+  </g>
+</svg>

@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Shabbat — Design System</title>
+<!--
+  LIVING SPECIMEN PAGE — companion to SYSTEM.md (the reasoning) and
+  kernel/contracts/tokens.md (the law). Set in the system itself.
+  Sample user data is marked; all canonical lines are from contracts/copy.md.
+-->
+<style>
+  @font-face {
+    font-family: 'OTR No Cigar';
+    src: url('assets/OTRNoCigarRegular.woff') format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('assets/newsreader-latin.woff2') format('woff2');
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('assets/newsreader-italic-400-latin.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  :root {
+    --parchment: #F4ECDC;
+    --parchment-deep: #E6D9BF;
+    --ink: #2B2118;
+    --indigo: #141B2E;
+    --night: #0B0F1A;
+    --gold: #E8B84B;
+    --gold-ember: #C98A2B;
+    --lapis: #2B4C8C;
+    --vermilion: #C8502E;
+
+    --wash-lapis: color-mix(in srgb, var(--lapis) 14%, var(--parchment));
+    --wash-vermilion: color-mix(in srgb, var(--vermilion) 12%, var(--parchment));
+    --wash-gold: color-mix(in srgb, var(--gold-ember) 16%, var(--parchment));
+
+    --font-label: 'OTR No Cigar', 'Avenir Next Condensed', sans-serif;
+    --font-book: 'Newsreader', Georgia, serif;
+
+    --hairline-gold: color-mix(in srgb, var(--gold) 24%, transparent);
+    --hairline-ink: color-mix(in srgb, var(--ink) 22%, transparent);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    position: relative;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: var(--font-book);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* grain — day register, heaviest, multiply.
+     absolute (not fixed): scrolls with the page, so the compositor
+     never re-blends the full viewport per frame. */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('assets/grain-512.png') repeat;
+    background-size: 380px;
+    opacity: 0.10;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .label {
+    font-family: var(--font-label);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .label-quiet {
+    font-family: var(--font-label);
+    font-size: 10.5px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--ink) 55%, transparent);
+  }
+
+  header.masthead {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 72px 32px 24px;
+  }
+  .masthead p.kicker { margin: 0 0 10px; color: var(--gold-ember); }
+  .masthead h1 {
+    font-family: var(--font-label);
+    font-weight: 400;
+    font-size: clamp(30px, 4.6vw, 46px);
+    letter-spacing: 0.14em;
+    margin: 0 0 18px;
+  }
+  .masthead .dial {
+    font-style: italic;
+    font-size: 19px;
+    margin: 0;
+    max-width: 34em;
+  }
+
+  nav.toc {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: var(--parchment);
+    border-top: 1px solid var(--hairline-ink);
+    border-bottom: 1px solid var(--hairline-ink);
+    margin-top: 26px;
+  }
+  nav.toc ul {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 26px;
+  }
+  nav.toc a {
+    font-family: var(--font-label);
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  nav.toc a:hover { color: var(--gold-ember); }
+
+  main {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 12px 32px 120px;
+  }
+
+  section { padding-top: 72px; }
+  section > .eyebrow {
+    color: var(--gold-ember);
+    margin: 0 0 8px;
+  }
+  section > h2 {
+    font-family: var(--font-label);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    margin: 0 0 14px;
+  }
+  section > .note {
+    max-width: 40em;
+    margin: 0 0 34px;
+    color: color-mix(in srgb, var(--ink) 82%, transparent);
+  }
+  section > .note em { color: var(--ink); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26px;
+  }
+
+  .spec {
+    border: 1px solid var(--hairline-ink);
+    border-radius: 20px;
+    padding: 26px;
+    background: color-mix(in srgb, var(--parchment) 60%, white 8%);
+    position: relative;
+  }
+  .spec > .spec-tag {
+    display: block;
+    margin-bottom: 18px;
+    color: color-mix(in srgb, var(--ink) 55%, transparent);
+  }
+
+  .spec-night {
+    background:
+      radial-gradient(110% 70% at 50% 0%, #1b2440 0%, var(--indigo) 46%, #0d1322 100%);
+    border: 0;
+    box-shadow: 0 0 0 1px var(--hairline-gold), 0 18px 50px rgba(0,0,0,0.35);
+    color: var(--parchment);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .spec-night::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('assets/grain-512.png') repeat;
+    background-size: 300px;
+    opacity: 0.08;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+  .spec-night > .spec-tag { color: color-mix(in srgb, var(--parchment) 50%, transparent); }
+
+  .spec-dusk {
+    background:
+      radial-gradient(130% 100% at 50% -10%, var(--parchment) 0%, var(--parchment-deep) 38%, #7b7590 72%, var(--indigo) 100%);
+    border: 0;
+    box-shadow: 0 0 0 1px var(--hairline-ink);
+    overflow: hidden;
+  }
+
+  /* ---------- color ---------- */
+  .swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  .swatch {
+    border-radius: 12px;
+    border: 1px solid var(--hairline-ink);
+    overflow: hidden;
+  }
+  .swatch .chip { height: 74px; }
+  .swatch .meta {
+    padding: 10px 12px 12px;
+    background: color-mix(in srgb, var(--parchment) 60%, white 8%);
+  }
+  .swatch .meta .label { display: block; font-size: 10px; letter-spacing: 0.2em; }
+  .swatch .meta span.hex {
+    font-size: 13px;
+    font-style: italic;
+    color: color-mix(in srgb, var(--ink) 60%, transparent);
+  }
+  .glow-note { margin-top: 22px; }
+
+  /* ---------- type ---------- */
+  .type-specimen > div {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hairline-ink);
+  }
+  .type-specimen > div:last-child { border-bottom: 0; }
+  .t-label-quiet { composes: none; }
+  .t-question {
+    font-size: clamp(26px, 3.4vw, 36px);
+    line-height: 1.25;
+    margin: 0;
+  }
+  .t-question em { font-style: italic; }
+  .t-canonical { font-size: 21px; margin: 0; max-width: 22em; }
+  .t-canonical em { font-style: italic; }
+  .t-numeral {
+    font-family: var(--font-label);
+    font-size: 32px;
+    letter-spacing: 0.14em;
+    margin: 0;
+  }
+  .t-stat {
+    font-family: var(--font-label);
+    font-size: clamp(40px, 6vw, 64px);
+    letter-spacing: 0.14em;
+    margin: 0;
+  }
+  .t-micro {
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    opacity: 0.45;
+    margin: 0;
+  }
+  .type-specimen .spec-tag { margin: 0 0 6px; }
+
+  /* ---------- space / radius ---------- */
+  .scale-row { display: flex; align-items: flex-end; gap: 14px; flex-wrap: wrap; }
+  .scale-row .bar {
+    background: var(--wash-gold);
+    border: 1px solid var(--hairline-ink);
+    border-radius: 4px;
+    width: 34px;
+    display: grid;
+    place-items: end center;
+    padding-bottom: 4px;
+  }
+  .radius-row { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 30px; }
+  .radius-row .r {
+    width: 92px; height: 92px;
+    background: var(--wash-lapis);
+    border: 1px solid var(--hairline-ink);
+    display: grid; place-items: center;
+  }
+
+  /* ---------- components ---------- */
+
+  .beads { display: flex; gap: 12px; align-items: center; }
+  .beads i {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: color-mix(in srgb, var(--gold) 30%, transparent);
+  }
+  .beads i.on {
+    background: var(--gold);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--gold-ember) 80%, transparent);
+  }
+
+  .pill {
+    display: inline-block;
+    padding: 15px 26px 13px;
+    border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
+    border-radius: 999px;
+    font-family: var(--font-label);
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 240ms cubic-bezier(0.4,0,0.2,1), box-shadow 240ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .pill:hover {
+    background: color-mix(in srgb, var(--gold) 8%, transparent);
+    box-shadow: 0 0 24px color-mix(in srgb, var(--gold-ember) 25%, transparent);
+  }
+  .pill.quiet { border-color: color-mix(in srgb, var(--gold) 25%, transparent); color: color-mix(in srgb, var(--gold) 75%, transparent); }
+  .pill.on-day { color: var(--gold-ember); border-color: color-mix(in srgb, var(--gold-ember) 55%, transparent); }
+  .pill.on-day:hover { background: color-mix(in srgb, var(--gold-ember) 8%, transparent); }
+
+  .intention {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--hairline-ink);
+    background: transparent;
+    font-family: var(--font-book);
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--ink);
+    padding: 6px 2px 10px;
+    outline: none;
+  }
+  .intention::placeholder {
+    font-style: italic;
+    color: color-mix(in srgb, var(--ink) 45%, transparent);
+  }
+  .intention:focus { border-bottom-color: var(--gold-ember); }
+
+  /* radial word field */
+  .word-field {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 8px auto;
+  }
+  .word-field .wash {
+    position: absolute;
+    inset: 70px;
+    border-radius: 50%;
+    background:
+      radial-gradient(60% 60% at 38% 40%, var(--wash-vermilion) 0%, transparent 70%),
+      radial-gradient(60% 60% at 66% 62%, var(--wash-lapis) 0%, transparent 72%),
+      radial-gradient(80% 80% at 50% 50%, var(--wash-gold) 0%, transparent 75%);
+    filter: blur(2px);
+  }
+  .word-field .plus {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--hairline-ink);
+    background: color-mix(in srgb, var(--parchment) 80%, white 10%);
+    display: grid; place-items: center;
+    font-size: 20px;
+    color: color-mix(in srgb, var(--ink) 70%, transparent);
+  }
+  .word-field b {
+    position: absolute;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    color: color-mix(in srgb, var(--ink) 78%, transparent);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .word-field b:hover { color: var(--gold-ember); }
+
+  /* micrography ring + spiral */
+  .ring-stage { position: relative; width: 260px; height: 260px; margin: 0 auto; }
+  .ring-stage svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .turn-slow { animation: turn 160s linear infinite; transform-origin: 150px 150px; }
+  .turn-rev { animation: turn-rev 110s linear infinite; transform-origin: 150px 150px; }
+  @keyframes turn { to { transform: rotate(360deg); } }
+  @keyframes turn-rev { to { transform: rotate(-360deg); } }
+  .ring-stage text {
+    font-family: var(--font-book);
+    letter-spacing: 0.22em;
+  }
+
+  .ember {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 10px; height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow:
+      0 0 14px rgba(232,184,75,0.9),
+      0 0 46px rgba(201,138,43,0.55),
+      0 0 110px rgba(201,138,43,0.28);
+    animation: breathe 7s ease-in-out infinite alternate;
+  }
+  @keyframes breathe {
+    from { opacity: 0.72; transform: scale(0.92); }
+    to   { opacity: 1;    transform: scale(1.06); }
+  }
+  .ember.static { position: relative; top: auto; left: auto; margin: 14px auto; display: block; }
+
+  .stars {
+    position: relative;
+    width: 64px; height: 26px;
+    margin: 10px auto;
+  }
+  .stars i {
+    position: absolute;
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 10px rgba(201,138,43,0.8);
+  }
+  .stars i:nth-child(1) { top: 14px; left: 4px; }
+  .stars i:nth-child(2) { top: 2px;  left: 30px; }
+  .stars i:nth-child(3) { top: 16px; left: 56px; }
+
+  .time-object { text-align: center; }
+  .time-object small {
+    display: block;
+    font-family: var(--font-label);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--parchment) 50%, transparent);
+    margin-bottom: 8px;
+  }
+  .time-object .t-numeral {
+    color: var(--gold);
+    text-shadow: 0 0 26px rgba(201,138,43,0.35);
+  }
+
+  .stat-object { text-align: center; }
+  .stat-object .t-stat {
+    color: var(--gold);
+    text-shadow: 0 0 40px rgba(201,138,43,0.4);
+  }
+  .stat-object .sub {
+    font-style: italic;
+    font-size: 18px;
+    color: color-mix(in srgb, var(--gold) 85%, var(--parchment));
+    margin: 8px 0 0;
+  }
+
+  /* mosaic */
+  .mosaic {
+    display: grid;
+    grid-template-columns: repeat(8, 26px);
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .mosaic i {
+    width: 26px; height: 26px;
+    border: 1px solid color-mix(in srgb, var(--parchment) 14%, transparent);
+    border-radius: 3px;
+  }
+  .mosaic i.t1 { background: color-mix(in srgb, var(--gold) 55%, transparent); border: 0; transform: rotate(-3deg); }
+  .mosaic i.t2 { background: color-mix(in srgb, var(--lapis) 60%, transparent); border: 0; transform: rotate(2deg); }
+  .mosaic i.t3 { background: color-mix(in srgb, var(--vermilion) 50%, transparent); border: 0; transform: rotate(-2deg); }
+  .mosaic i.t4 { background: color-mix(in srgb, var(--gold-ember) 50%, transparent); border: 0; transform: rotate(3deg); }
+
+  /* the field */
+  .field-demo {
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    isolation: isolate;
+    background: radial-gradient(120% 100% at 50% 0%, #131a2c 0%, var(--night) 70%);
+    display: grid;
+    place-items: center;
+  }
+  .field-demo .halftone {
+    position: absolute;
+    inset: -60px;
+    background: url('assets/halftone-512.png') repeat;
+    background-size: 340px;
+    opacity: 0.14;
+    mix-blend-mode: screen;
+    -webkit-mask-image: radial-gradient(60% 60% at 50% 50%, black 30%, transparent 100%);
+    mask-image: radial-gradient(60% 60% at 50% 50%, black 30%, transparent 100%);
+    animation: drift 80s linear infinite alternate;
+  }
+  @keyframes drift { from { transform: translate(0,0); } to { transform: translate(40px, 24px); } }
+  .field-demo p {
+    position: relative;
+    font-size: 19px;
+    color: color-mix(in srgb, var(--parchment) 85%, transparent);
+    max-width: 20em;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* action tray */
+  .tray {
+    border-radius: 20px 20px 0 0;
+    background: color-mix(in srgb, var(--indigo) 88%, black);
+    box-shadow: 0 0 0 1px var(--hairline-gold);
+    padding: 18px 22px 22px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .tray .grab {
+    width: 34px; height: 3px;
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--parchment) 25%, transparent);
+    margin: 0 auto 16px;
+  }
+  .tray .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+  /* ledger */
+  table.ledger {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15.5px;
+  }
+  table.ledger th {
+    font-family: var(--font-label);
+    font-weight: 400;
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--gold-ember);
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--hairline-ink);
+  }
+  table.ledger td {
+    padding: 12px 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+    vertical-align: top;
+  }
+  table.ledger td:first-child { white-space: nowrap; font-style: italic; }
+
+  footer {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 40px 32px 64px;
+    border-top: 1px solid var(--hairline-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .turn-slow, .turn-rev, .ember, .field-demo .halftone { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <p class="kicker label-quiet" style="color: var(--gold-ember)">Digital Shabbat &middot; Signalform &middot; July 11, 2026</p>
+  <h1>Design System</h1>
+  <p class="dial">1/10 Jewish &middot; 3/10 meditation app &middot; 5/10 texture and custom type. Nothing at full volume; the identity is the combination. Reasoning lives in SYSTEM.md; law lives in kernel/contracts/tokens.md.</p>
+</header>
+
+<nav class="toc">
+  <ul>
+    <li><a href="#registers">Registers</a></li>
+    <li><a href="#color">Color</a></li>
+    <li><a href="#type">Type</a></li>
+    <li><a href="#space">Space</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#ledger">Ref ledger</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="registers">
+  <p class="eyebrow label-quiet">01</p>
+  <h2>Registers</h2>
+  <p class="note">Three registers, not themes — <em>day, dusk, night</em> — and every screen declares one. The descent moves through them in order; havdalah runs them in reverse with a gold bias. Grain descends with the palette: heaviest and multiplied on parchment, faint and screen-blended by night. The crossing is layered gradients, never a flat color-mix.</p>
+  <div class="grid">
+    <div class="spec">
+      <span class="spec-tag label-quiet">Day &middot; intake &middot; grain 10% multiply</span>
+      <p class="t-question" style="font-size: 26px">What is your <em>intention</em> for this rest?</p>
+      <p style="color: color-mix(in srgb, var(--ink) 60%, transparent); font-style: italic; margin: 10px 0 0">ink on parchment, notebook register</p>
+    </div>
+    <div class="spec spec-dusk">
+      <span class="spec-tag label-quiet">Dusk &middot; the crossing &middot; layered, never mixed</span>
+      <div style="height: 130px"></div>
+      <p style="color: var(--parchment); margin: 0; text-align: center; font-size: 19px">The interface descends.</p>
+    </div>
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Night &middot; ceremony &middot; grain 8% screen</span>
+      <div class="stars" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p style="text-align: center; font-size: 19px; margin: 12px 0 0; color: color-mix(in srgb, var(--parchment) 90%, transparent)">The candles are lit.</p>
+      <div style="height: 34px"></div>
+    </div>
+  </div>
+</section>
+
+<section id="color">
+  <p class="eyebrow label-quiet">02</p>
+  <h2>Color</h2>
+  <p class="note">The contract palette, unchanged. Below it, the <em>ink washes</em> — printed tints derived from contract colors by recipe (proposed amendment A1), for day-register accents only. They behave like a letterpress second color, never a glowing gradient. And gold behaves like light, not color: every gold element carries an ember glow.</p>
+  <div class="swatches">
+    <div class="swatch"><div class="chip" style="background:#F4ECDC; border-bottom: 1px solid var(--hairline-ink)"></div><div class="meta"><span class="label">Parchment</span><span class="hex">#F4ECDC</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#E6D9BF"></div><div class="meta"><span class="label">Parchment deep</span><span class="hex">#E6D9BF</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#2B2118"></div><div class="meta"><span class="label">Ink</span><span class="hex">#2B2118</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#141B2E"></div><div class="meta"><span class="label">Indigo</span><span class="hex">#141B2E</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#0B0F1A"></div><div class="meta"><span class="label">Night</span><span class="hex">#0B0F1A</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#E8B84B; box-shadow: inset 0 0 30px rgba(201,138,43,0.5)"></div><div class="meta"><span class="label">Gold</span><span class="hex">#E8B84B</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#C98A2B"></div><div class="meta"><span class="label">Gold ember</span><span class="hex">#C98A2B</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#2B4C8C"></div><div class="meta"><span class="label">Lapis</span><span class="hex">#2B4C8C</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#C8502E"></div><div class="meta"><span class="label">Vermilion</span><span class="hex">#C8502E</span></div></div>
+    <div class="swatch"><div class="chip" style="background: var(--wash-lapis)"></div><div class="meta"><span class="label">Wash lapis</span><span class="hex">lapis 14% on parchment</span></div></div>
+    <div class="swatch"><div class="chip" style="background: var(--wash-vermilion)"></div><div class="meta"><span class="label">Wash vermilion</span><span class="hex">vermilion 12% on parchment</span></div></div>
+    <div class="swatch"><div class="chip" style="background: var(--wash-gold)"></div><div class="meta"><span class="label">Wash gold</span><span class="hex">ember 16% on parchment</span></div></div>
+  </div>
+</section>
+
+<section id="type">
+  <p class="eyebrow label-quiet">03</p>
+  <h2>Type</h2>
+  <p class="note"><em>Stamp plus book.</em> OTR No Cigar — unicase, wide-tracked, letterpress — is display and label only; it never sets a sentence. Newsreader carries every sentence; it never sets a timestamp. Within a serif line, the load-bearing word takes italic — never bold, never gold, never underline. One italic phrase per line, at most.</p>
+  <div class="spec type-specimen">
+    <div>
+      <p class="spec-tag label-quiet">Label-quiet &middot; No Cigar 10&ndash;11px &middot; 0.32em</p>
+      <p class="label-quiet" style="margin:0">Digital Shabbat &middot; Havdalah &middot; Saturday</p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Label &middot; No Cigar 12&ndash;13px &middot; 0.18em</p>
+      <p class="label" style="margin:0; color: var(--gold-ember)">Add the candle-lighting to your calendar</p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Question display &middot; Newsreader 28&ndash;40px &middot; italic emphasis</p>
+      <p class="t-question">How are you <em>arriving</em>?</p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Canonical line &middot; Newsreader 19&ndash;22px &middot; max 20em measure</p>
+      <p class="t-canonical">The flame will be here at havdalah — <em>Saturday, when three stars are out.</em></p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Numeral / time &middot; No Cigar 28&ndash;34px</p>
+      <p class="t-numeral">7:50 PM</p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Stat display &middot; No Cigar 40&ndash;80px &middot; share surfaces only</p>
+      <p class="t-stat">14 WEEKS</p>
+    </div>
+    <div>
+      <p class="spec-tag label-quiet">Micrography &middot; Newsreader 9&ndash;11px &middot; 30&ndash;40% &middot; sample user data</p>
+      <p class="t-micro">long dinners with people I love &middot; one day, set apart &middot; long dinners with people I love</p>
+    </div>
+  </div>
+</section>
+
+<section id="space">
+  <p class="eyebrow label-quiet">04</p>
+  <h2>Space &amp; radius</h2>
+  <p class="note">Spacing scale 4 / 8 / 16 / 24 / 40 / 64 / 104. Content measure &le; 34rem; on ceremony screens the text block stays under half the viewport — <em>emptiness is the luxury signal.</em> Radii: 12 chips &middot; 20 cards &middot; 30&ndash;44 the frame &middot; 999 pills.</p>
+  <div class="spec">
+    <div class="scale-row">
+      <div class="bar" style="height:4px"></div>
+      <div class="bar" style="height:8px"></div>
+      <div class="bar" style="height:16px"></div>
+      <div class="bar" style="height:24px"></div>
+      <div class="bar" style="height:40px"></div>
+      <div class="bar" style="height:64px"></div>
+      <div class="bar" style="height:104px"></div>
+    </div>
+    <div class="radius-row">
+      <div class="r" style="border-radius:12px"><span class="label-quiet">12</span></div>
+      <div class="r" style="border-radius:20px"><span class="label-quiet">20</span></div>
+      <div class="r" style="border-radius:40px"><span class="label-quiet">40</span></div>
+      <div class="r" style="border-radius:999px"><span class="label-quiet">999</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="components">
+  <p class="eyebrow label-quiet">05</p>
+  <h2>Components</h2>
+  <p class="note">Live specimens. Each carries its register and the law it answers to. Sample user data throughout is marked; canonical lines are verbatim from contracts/copy.md.</p>
+
+  <div class="grid">
+
+    <div class="spec">
+      <span class="spec-tag label-quiet">Progress beads &middot; day &middot; Law 5</span>
+      <div class="beads" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+      <p style="font-size:15px; margin:16px 0 0; color: color-mix(in srgb, var(--ink) 65%, transparent)">Intake wayfinding only. Ceremony screens carry no step markers — the descent is the wayfinding.</p>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Pill button &middot; night &middot; one primary per screen</span>
+      <p style="margin: 4px 0 14px"><button class="pill">Add to your calendar</button></p>
+      <p style="margin: 0"><button class="pill quiet">Not this week</button></p>
+    </div>
+
+    <div class="spec">
+      <span class="spec-tag label-quiet">Intention field &middot; day &middot; Law 2 &middot; required</span>
+      <input class="intention" type="text" placeholder="To be present with the people I love" aria-label="Your intention">
+      <p style="font-size:15px; margin:16px 0 0; color: color-mix(in srgb, var(--ink) 65%, transparent)">A notebook line, not a form control. Blank intentions save nothing (Ruling 5).</p>
+    </div>
+
+    <div class="spec">
+      <span class="spec-tag label-quiet">Radial word field &middot; day &middot; adapted from ref</span>
+      <div class="word-field" aria-hidden="true">
+        <div class="wash"></div>
+        <b style="top:8%; left:50%">rest</b>
+        <b style="top:26%; left:86%">a long dinner</b>
+        <b style="top:62%; left:92%">quiet</b>
+        <b style="top:90%; left:64%">a walk</b>
+        <b style="top:88%; left:26%">bread</b>
+        <b style="top:56%; left:7%">presence</b>
+        <b style="top:22%; left:16%">morning light</b>
+        <div class="plus">+</div>
+      </div>
+      <p style="font-size:15px; margin:10px 0 0; color: color-mix(in srgb, var(--ink) 65%, transparent)">Words someone might mean, tappable into the intention field. Suggestion, not mood-tracking — we never ask how they feel.</p>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Micrography ring &middot; night &middot; Law 2 &middot; sample data</span>
+      <div class="ring-stage" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <defs>
+            <path id="o1" d="M 150,150 m -118,0 a 118,118 0 1,1 236,0 a 118,118 0 1,1 -236,0" />
+            <path id="o2" d="M 150,150 m -86,0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
+          </defs>
+          <g class="turn-slow"><text style="font-size:10.5px; fill: rgba(244,236,220,0.34)"><textPath href="#o1" textLength="741" lengthAdjust="spacingAndGlyphs">long dinners with people I love &#183; long dinners with people I love &#183; long dinners &#183;</textPath></text></g>
+          <g class="turn-rev"><text style="font-size:9px; font-style:italic; fill: rgba(232,184,75,0.30)"><textPath href="#o2" textLength="540" lengthAdjust="spacingAndGlyphs">one day, set apart &#183; one day, set apart &#183; one day, set apart &#183;</textPath></text></g>
+        </svg>
+        <div class="ember"></div>
+      </div>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Accretion spiral &middot; night &middot; adopted from ref &middot; sample data</span>
+      <div class="ring-stage" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <defs>
+            <path id="s1" d="M 150,150 m -120,0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
+            <path id="s2" d="M 150,150 m -96,0 a 96,96 0 1,1 192,0 a 96,96 0 1,1 -192,0" />
+            <path id="s3" d="M 150,150 m -72,0 a 72,72 0 1,1 144,0 a 144,144 0 1,1 -144,0" />
+            <path id="s4" d="M 150,150 m -48,0 a 48,48 0 1,1 96,0 a 96,96 0 1,1 -96,0" />
+          </defs>
+          <g class="turn-slow">
+            <text style="font-size:9.5px; fill: rgba(244,236,220,0.18)"><textPath href="#s1" textLength="754" lengthAdjust="spacingAndGlyphs">to be present with the people I love &#183; a walk with no destination &#183; bread from scratch &#183;</textPath></text>
+            <text style="font-size:9.5px; fill: rgba(244,236,220,0.28)"><textPath href="#s2" textLength="603" lengthAdjust="spacingAndGlyphs">calling my grandmother &#183; morning light before screens &#183; a slow meal &#183;</textPath></text>
+            <text style="font-size:9.5px; fill: rgba(244,236,220,0.40)"><textPath href="#s3" textLength="452" lengthAdjust="spacingAndGlyphs">one honest conversation &#183; rest without earning it &#183;</textPath></text>
+            <text style="font-size:9.5px; fill: rgba(244,236,220,0.55)"><textPath href="#s4" textLength="301" lengthAdjust="spacingAndGlyphs">to be present &#183; to be present &#183;</textPath></text>
+          </g>
+          <circle cx="150" cy="150" r="3" fill="#E8B84B" />
+        </svg>
+      </div>
+      <p style="font-size:15px; margin:10px 0 0; color: color-mix(in srgb, var(--parchment) 55%, transparent)">Each kept week adds a winding of that week's intention; the innermost is brightest. The annual ring is this object at year scale.</p>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Time object &middot; night &middot; the interface states time, it does not tick</span>
+      <div class="time-object">
+        <small>Havdalah</small>
+        <p class="t-numeral">SATURDAY<br>7:50 PM</p>
+      </div>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Stat object &middot; share surfaces &middot; weeks lead, hours follow</span>
+      <div class="stat-object">
+        <p class="t-stat" style="font-size: clamp(34px, 4.5vw, 48px)">14 WEEKS KEPT</p>
+        <p class="sub">about 350 hours, set apart</p>
+      </div>
+      <p style="font-size:15px; margin:14px 0 0; color: color-mix(in srgb, var(--parchment) 55%, transparent)">Every number derives from attestation times the designed window. Testimony, not surveillance (Law 3).</p>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Three stars &middot; ember &middot; night</span>
+      <div class="stars" aria-hidden="true"><i></i><i></i><i></i></div>
+      <span class="ember static" aria-hidden="true"></span>
+      <p style="font-size:15px; text-align:center; margin:10px 0 0; color: color-mix(in srgb, var(--parchment) 55%, transparent)">Asymmetric cluster, never a row. The ember breathes at 7s; nothing else pulses.</p>
+    </div>
+
+    <div class="spec spec-night">
+      <span class="spec-tag label-quiet">Mosaic &middot; night &middot; a lapsed week is an empty slot, not a mark</span>
+      <div class="mosaic" aria-hidden="true">
+        <i class="t1"></i><i class="t2"></i><i class="t4"></i><i class="t1"></i><i class="t3"></i><i class="t1"></i><i class="t2"></i><i></i>
+        <i class="t4"></i><i class="t1"></i><i></i><i class="t2"></i><i class="t1"></i><i class="t4"></i><i class="t3"></i><i class="t1"></i>
+        <i class="t2"></i><i class="t1"></i><i class="t4"></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <div class="spec" style="padding: 0; overflow: hidden; border: 0;">
+      <div class="field-demo">
+        <div class="halftone" aria-hidden="true"></div>
+        <p>The field, holding the resting state — halftone drift, not particle sim. No timer, no guilt.</p>
+      </div>
+    </div>
+
+    <div class="spec spec-night" style="display: flex; flex-direction: column; justify-content: flex-end; min-height: 240px;">
+      <span class="spec-tag label-quiet">Action tray &middot; appears on explicit tap only</span>
+      <div class="tray">
+        <div class="grab"></div>
+        <div class="row">
+          <button class="pill quiet" style="font-size:10px; padding: 12px 18px 10px">Share the card</button>
+          <button class="pill quiet" style="font-size:10px; padding: 12px 18px 10px">Download .ics</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="ledger">
+  <p class="eyebrow label-quiet">06</p>
+  <h2>Ref ledger</h2>
+  <p class="note">The second GPT grid ("Rest Ritual," July 11), split like the first: <em>skin adopted, skeleton rejected.</em> Full reasoning in SYSTEM.md &sect;9.</p>
+  <table class="ledger">
+    <tr><th>Verdict</th><th>Element</th><th>Ruling</th></tr>
+    <tr><td>adopted</td><td>Word-spiral ritual object</td><td>Their best idea — it was already our law (the word is the ornament), executed generatively. Becomes the accretion spiral.</td></tr>
+    <tr><td>adopted</td><td>Day/night registers, warm return</td><td>Confirms the descent; return adds gold bias, not a new register.</td></tr>
+    <tr><td>adopted</td><td>Italic emphasis in serif questions</td><td>Formalized: italic is the voice's emphasis. Never bold, never gold.</td></tr>
+    <tr><td>adopted</td><td>Holding-state particle field</td><td>Re-made under Law 4 as halftone drift — print texture, not particle sim.</td></tr>
+    <tr><td>adapted</td><td>Emotion wheel</td><td>Form kept as the radial word field; mood-tracking semantics rejected. We offer words, we do not ask for feelings.</td></tr>
+    <tr><td>adapted</td><td>Watercolor gradient blobs</td><td>Become ink washes — printed tints from contract colors, day register only.</td></tr>
+    <tr><td>adapted</td><td>&ldquo;25 hours of real rest&rdquo;</td><td>Stat object with the unit law: weeks lead, hours are the serif subline.</td></tr>
+    <tr><td>rejected</td><td>Tab bar &middot; Journal &middot; mood history</td><td>Persistent chrome and midweek surfaces contradict Law 5 and the covenant; logs contradict Law 3.</td></tr>
+    <tr><td>rejected</td><td>Photoreal landscapes, pearl, stone</td><td>Law 4. Our objects are made things: shader flame, ember, halftone field, words on paths.</td></tr>
+    <tr><td>rejected</td><td>Countdown timer &middot; lock icon</td><td>The interface states the threshold; it does not tick, and it is not a bouncer.</td></tr>
+  </table>
+</section>
+
+</main>
+
+<footer>
+  <p class="label-quiet">Digital Shabbat &middot; design system v1 &middot; specimens use sample user data &middot; canonical copy from contracts/copy.md</p>
+</footer>
+
+</body>
+</html>
