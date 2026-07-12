@@ -43,7 +43,13 @@ typewriter step — date it neutrally, no founding-of-Israel references):
 | 6 | l7-scroll | ~100 BCE the scroll | **the original full arc, untouched** | consonantal | silver yad |
 
 (Level **ids** are localStorage save keys, so l5-siddur/l6-manuscript/l7-scroll
-kept their ids when they became indexes 4/5/6 — never re-key them.) All era
+kept their ids when they became indexes 4/5/6 — never re-key them.) Level 1
+letters speak their own NAMES on a dedicated `letters` audio track
+(`public/audio/letters.mp3` + exact timing map, ids = name slugs like `shin`;
+final forms reuse the base clip). The current voice is an espeak-ng
+PLACEHOLDER — drop human recordings named `<slug>.wav|mp3` into
+`assets-src/audio/letters/` and re-run `node tools/build-letters-track.mjs`
+to replace it (the map regenerates exactly; no ear-timing needed). All era
 devices are dressed by `src/scene/eras/deviceKit.ts`: cached CC0 PBR maps
 (wood/plastic/leather/metal, see assets-src/licenses), RoundedBoxGeometry
 silhouettes, per-era `makeEnvTexture` palettes. Mini levels add a subtle
@@ -53,8 +59,9 @@ camera quaternion — the arc assumes -z).
 Key rules: mini-level Hebrew is **synthesized at runtime** from the corpus
 (`src/levels/synth.ts` — letters by codepoint with an English name table,
 asides split on spaces; NEVER hand-typed); real word ids are reused so p1
-timing slices/glosses just work; letters play their parent word ("ש as in
-Shema"); Baruch Shem rows are silent, `counts:false`, line-level strip —
+timing slices/glosses just work; letters speak their own NAME from the
+letters track while the gloss ties them back ("ש as in Shema"); Baruch Shem
+rows are silent, `counts:false`, line-level strip —
 liturgy may appear on paper/screens but never on the scroll. Completion =
 touch every counting token. Per-level intros in `copy.ts` `levelCopy` carry
 the modern→literal translation gradient. Progress adds `levelsCompleted` to
@@ -222,7 +229,10 @@ node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport ag
 
 ## Open items / next steps
 
-0. **Sponsor-deferred stretch goals**: particle/delighter effects on highlights
+0. **Replace the placeholder letter audio** (level 1): espeak-ng speaks the
+   letter names today; record a human (Spencer or the eventual young voice) and
+   re-run tools/build-letters-track.mjs.
+1. **Sponsor-deferred stretch goals**: particle/delighter effects on highlights
    + period-specific celebrations; young/child voice audio for early eras
    (current recording = the "talmudic" endpoint). Also nice: per-era aux-pulse
    colors (completion pulse is warm gold even on the blue tablet), and covering

@@ -71,7 +71,7 @@ export class MiniLevelSession {
     private eraDef: EraDef,
     private onComplete: () => void,
   ) {
-    this.scrub = new ScrubPlayer(shared.engine, 'p1');
+    this.scrub = new ScrubPlayer(shared.engine, level.audioTrack);
   }
 
   start() {
@@ -244,10 +244,11 @@ export class MiniLevelSession {
     if (!chunk.every((t) => this.touched.has(t.id))) return;
     this.playedChunks.add(group);
     const { engine } = this.shared;
-    const first = engine.wordSlice('p1', chunk[0].audioRef!.wordId);
-    const last = engine.wordSlice('p1', chunk[chunk.length - 1].audioRef!.wordId);
+    const track = this.level.audioTrack;
+    const first = engine.wordSlice(track, chunk[0].audioRef!.wordId);
+    const last = engine.wordSlice(track, chunk[chunk.length - 1].audioRef!.wordId);
     if (first && last) {
-      setTimeout(() => engine.playSegment('p1', first.start, last.end), 500);
+      setTimeout(() => engine.playSegment(track, first.start, last.end), 500);
     }
   }
 

@@ -66,12 +66,13 @@ async function bootShared(): Promise<AppShared> {
   // --- Audio: start all loads now, but only p1 gates the start button —
   // p2/p3 finish downloading behind the landing screen and first session.
   const engine = new AudioEngine();
-  const trackLoads = new Map(
+  const trackLoads = new Map<string, Promise<void>>(
     shema.paragraphs.map((p) => [
       p.id,
       engine.loadTrack(p.id, p.audioTrack, `timing/${p.id}.json`),
     ]),
   );
+  trackLoads.set('letters', engine.loadTrack('letters', 'audio/letters.mp3', 'timing/letters.json'));
   await trackLoads.get('p1');
   canvas.addEventListener('pointerdown', () => engine.unlock(), { once: true });
 

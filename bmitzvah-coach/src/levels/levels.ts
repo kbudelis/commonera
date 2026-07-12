@@ -43,8 +43,8 @@ export interface LevelDef {
   content: ContentSpec;
   typography: TypographySpec;
   interaction: InteractionSpec;
-  /** All mini-level audio slices key against the p1 timing map. */
-  audioTrack: 'p1';
+  /** Which audio track the level's slices key against. */
+  audioTrack: 'p1' | 'letters';
 }
 
 const STRIP_ALL = { he: true, translit: true, gloss: true };
@@ -67,7 +67,7 @@ export const LEVELS: readonly LevelDef[] = [
       strip: { he: false, translit: false, gloss: true },
     },
     interaction: { hitPadFactor: 0.12 },
-    audioTrack: 'p1',
+    audioTrack: 'letters',
   },
   {
     id: 'l2-laptop',
