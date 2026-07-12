@@ -1,5 +1,4 @@
 import {
-  BoxGeometry,
   CircleGeometry,
   DirectionalLight,
   Group,
@@ -8,15 +7,18 @@ import {
   MeshBasicNodeMaterial,
   MeshStandardNodeMaterial,
   PlaneGeometry,
+  TorusGeometry,
 } from 'three/webgpu';
+import { makeEnvTexture } from '../lighting';
 import { createScreenMaterial } from '../screenMaterial';
+import { deviceMaterial, roundedBox } from './deviceKit';
 import type { EraDef, EraScene } from './types';
 
 const SCREEN_W = 1.38;
 const SCREEN_H = 0.92;
-const SCREEN_Z = 0.019;
+const SCREEN_Z = 0.033;
 
-/** A 2026 tablet: dark glass slab, warm reading-app screen, daylight. */
+/** A 2026 tablet: brushed-aluminum slab, glass face, warm reading-app screen. */
 export const eraTablet: EraDef = {
   id: 'tablet2026',
   pointer: 'touchCursor',
@@ -42,10 +44,19 @@ export const eraTablet: EraDef = {
     const disposables: { dispose(): void }[] = [];
     const track = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
 
-    const body = new Mesh(
-      track(new BoxGeometry(1.52, 1.06, 0.035)),
-      track(new MeshStandardNodeMaterial({ color: '#2b2e33', metalness: 0.7, roughness: 0.35 })),
+    // Brushed-aluminum unibody with rounded corners.
+    const alu = track(
+      deviceMaterial({ tex: 'metal', color: '#9ba1ab', metalness: 0.85, normalScale: 0.7 }),
     );
+    const body = new Mesh(track(roundedBox(1.52, 1.06, 0.05, 0.03)), alu);
+
+    // Glass face: glossy near-black slab the screen sits inside — its margin
+    // around the lit area reads as the bezel.
+    const glass = new Mesh(
+      track(roundedBox(1.47, 1.01, 0.012, 0.022)),
+      track(new MeshStandardNodeMaterial({ color: '#08090b', roughness: 0.14, metalness: 0.25 })),
+    );
+    glass.position.z = 0.026;
 
     const screenMat = createScreenMaterial(inkTexture, {
       mode: 'darkOnLight',
@@ -57,23 +68,48 @@ export const eraTablet: EraDef = {
     screen.position.z = SCREEN_Z;
 
     const camDot = new Mesh(
-      track(new CircleGeometry(0.008, 16)),
-      track(new MeshBasicNodeMaterial({ color: '#14161a' })),
+      track(new CircleGeometry(0.007, 16)),
+      track(new MeshBasicNodeMaterial({ color: '#10131c' })),
     );
     camDot.position.set(0, 0.5, SCREEN_Z);
+    const camRing = new Mesh(track(new TorusGeometry(0.0095, 0.002, 8, 24)), alu);
+    camRing.position.set(0, 0.5, SCREEN_Z);
     const homeBar = new Mesh(
       track(new PlaneGeometry(0.18, 0.011)),
       track(new MeshBasicNodeMaterial({ color: '#8a8d93' })),
     );
     homeBar.position.set(0, -0.5, SCREEN_Z);
 
-    group.add(body, screen, camDot, homeBar);
+    // Power + volume buttons along the top edge.
+    const buttonMat = track(
+      deviceMaterial({ tex: 'metal', color: '#787e88', metalness: 0.85, normalScale: 0.5 }),
+    );
+    for (const [x, w] of [
+      [0.52, 0.1],
+      [0.32, 0.16],
+    ]) {
+      const button = new Mesh(track(roundedBox(w, 0.016, 0.024, 0.007)), buttonMat);
+      button.position.set(x, 0.534, 0);
+      group.add(button);
+    }
 
-    // Bright, even daylight — screens don't need drama.
+    group.add(body, glass, screen, camDot, camRing, homeBar);
+
+    // Bright, even daylight — plus a daylight room for the aluminum to mirror.
     const hemi = new HemisphereLight('#ffffff', '#c8c2b8', 1.1);
     const key = new DirectionalLight('#f2ede4', 0.5);
     key.position.set(0.4, 1, 1.5);
     group.add(hemi, key, key.target);
+    const env = track(
+      makeEnvTexture({
+        sky: '#cdd6e0',
+        floor: '#8f8578',
+        glowColor: '255, 250, 240',
+        glowPos: [40, 10],
+        glowRadius: 40,
+        glowAlpha: 0.95,
+      }),
+    );
 
     const scene: EraScene = {
       id: 'tablet2026',
@@ -92,7 +128,7 @@ export const eraTablet: EraDef = {
           aux: screenMat.aux,
         },
       },
-      environment: { texture: null, intensity: 1 },
+      environment: { texture: env, intensity: 0.9 },
       lighting: { update() {} },
       fitSize: { width: 1.66, height: 1.2 },
       dispose() {
