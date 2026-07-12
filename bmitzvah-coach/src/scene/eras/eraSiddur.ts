@@ -1,6 +1,7 @@
 import {
   BoxGeometry,
   CanvasTexture,
+  CylinderGeometry,
   Group,
   HemisphereLight,
   Mesh,
@@ -12,12 +13,31 @@ import {
 } from 'three/webgpu';
 import { makeEnvTexture } from '../lighting';
 import { createParchmentMaterial } from '../parchmentMaterial';
+import { deviceMaterial, roundedBox } from './deviceKit';
 import type { EraDef, EraScene } from './types';
 
 const PAGE_W = 1.05;
 const PAGE_H = 1.4;
 /** Gentle outward bow of an open book page. */
 const bowZ = (u: number) => 0.028 * Math.sin(u * Math.PI);
+
+/** The stacked-page fore-edge: fine cream lines across the block's thickness. */
+function pageEdgeTexture(): CanvasTexture {
+  const c = document.createElement('canvas');
+  c.width = 128;
+  c.height = 16;
+  const g = c.getContext('2d')!;
+  g.fillStyle = '#e6dbbd';
+  g.fillRect(0, 0, 128, 16);
+  for (let x = 0; x < 128; x += 2) {
+    const shade = 208 + ((x * 7919) % 28);
+    g.fillStyle = `rgb(${shade}, ${shade - 14}, ${shade - 48})`;
+    g.fillRect(x, 0, 1, 16);
+  }
+  const t = new CanvasTexture(c);
+  t.colorSpace = SRGBColorSpace;
+  return t;
+}
 
 /** Printer's headpiece: double rules + simple fleurons, drawn — never downloaded. */
 function ornamentTexture(): CanvasTexture {
@@ -94,14 +114,44 @@ export const eraSiddur: EraDef = {
     pageGeo.computeVertexNormals();
     const page = new Mesh(pageGeo, parchment.material);
 
-    // Binding: page block + leather cover + a hint of the facing page.
+    // Binding: page block + tooled leather cover + a hint of the facing page.
     const cream = track(new MeshStandardNodeMaterial({ color: '#e6dbbd', roughness: 0.9 }));
     const block = new Mesh(track(new BoxGeometry(1.16, 1.46, 0.09)), cream);
     block.position.z = -0.055;
-    const leather = track(new MeshStandardNodeMaterial({ color: '#452a16', roughness: 0.55 }));
-    const cover = new Mesh(track(new BoxGeometry(1.3, 1.56, 0.05)), leather);
+    // The fore-edge: stacked-page striping on the block's visible right face.
+    const edgeTex = track(pageEdgeTexture());
+    const foreEdge = new Mesh(
+      track(new PlaneGeometry(0.09, 1.44)),
+      track(new MeshStandardNodeMaterial({ map: edgeTex, roughness: 0.95 })),
+    );
+    foreEdge.position.set(0.581, 0, -0.055);
+    foreEdge.rotation.y = Math.PI / 2;
+    const leather = track(
+      deviceMaterial({ tex: 'leather', albedo: false, color: '#4a2c16', repeat: 2, normalScale: 1.2 }),
+    );
+    const cover = new Mesh(track(roundedBox(1.3, 1.56, 0.055, 0.028)), leather);
     cover.position.z = -0.115;
-    const facing = new Mesh(track(new PlaneGeometry(0.42, 1.4)), cream);
+    // Spine roll along the gutter edge.
+    const spine = new Mesh(track(new CylinderGeometry(0.045, 0.045, 1.56, 18)), leather);
+    spine.position.set(-0.64, 0, -0.115);
+    group.add(spine);
+    // Brass clasps wrapping the fore-edge.
+    const brass = track(
+      deviceMaterial({ tex: 'metal', color: '#d9ae55', metalness: 0.75, roughness: 0.55, normalScale: 0.6 }),
+    );
+    for (const y of [-0.42, 0.42]) {
+      const clasp = new Mesh(track(roundedBox(0.09, 0.11, 0.03, 0.012)), brass);
+      clasp.position.set(0.63, y, -0.09);
+      group.add(clasp);
+    }
+    // The facing page lifts off the block with a gentle curl.
+    const facingGeo = track(new PlaneGeometry(0.42, 1.4, 12, 1));
+    const fpos = facingGeo.attributes.position;
+    const fuv = facingGeo.attributes.uv;
+    for (let i = 0; i < fpos.count; i++) fpos.setZ(i, 0.05 * Math.sin(fuv.getX(i) * Math.PI));
+    fpos.needsUpdate = true;
+    facingGeo.computeVertexNormals();
+    const facing = new Mesh(facingGeo, cream);
     facing.position.set(-0.72, 0, -0.02);
     facing.rotation.y = 0.5;
 
@@ -114,7 +164,7 @@ export const eraSiddur: EraDef = {
     );
     ornament.position.set(0, 0.655, bowZ(0.5) + 0.002);
 
-    group.add(page, block, cover, facing, ornament);
+    group.add(page, block, foreEdge, cover, facing, ornament);
 
     // Print-shop light: whiter, steadier than the scroll's candle.
     const lamp = new PointLight('#ffd9a8', 5, 0, 2);
