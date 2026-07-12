@@ -1,16 +1,21 @@
 import {
   BoxGeometry,
-  CylinderGeometry,
+  CircleGeometry,
   Group,
   HemisphereLight,
+  IcosahedronGeometry,
+  LatheGeometry,
   Mesh,
+  MeshBasicNodeMaterial,
   MeshStandardNodeMaterial,
   PlaneGeometry,
   PointLight,
+  Vector2,
 } from 'three/webgpu';
 import { makeEnvTexture } from '../lighting';
 import { createParchmentMaterial } from '../parchmentMaterial';
 import { noise2 } from '../scroll';
+import { deviceMaterial } from './deviceKit';
 import type { EraDef, EraScene } from './types';
 
 const VELLUM_W = 1.2;
@@ -56,24 +61,48 @@ export const eraManuscript: EraDef = {
     // The scribe's table: dark wood, stone paperweights, an ink pot.
     const table = new Mesh(
       track(new BoxGeometry(3.2, 0.04, 2.2)),
-      track(new MeshStandardNodeMaterial({ color: '#3c2c1a', roughness: 0.85 })),
+      track(deviceMaterial({ tex: 'wood', color: '#6a5138', repeat: 2 })),
     );
     table.position.set(0, 0, -0.06);
     table.rotation.x = Math.PI / 2; // the sheet lies "against" the viewer plane
-    const stone = track(new MeshStandardNodeMaterial({ color: '#7a7468', roughness: 0.9 }));
+    // River stones: jittered icosahedra, flattened against the sheet.
+    const stone = track(
+      deviceMaterial({ tex: 'plastic', albedo: false, color: '#68635a', normalScale: 0.5 }),
+    );
     for (const side of [-1, 1]) {
-      const weight = new Mesh(track(new CylinderGeometry(0.075, 0.085, 0.035, 18)), stone);
-      weight.rotation.x = Math.PI / 2;
+      const geo = track(new IcosahedronGeometry(0.085, 3));
+      const sp = geo.attributes.position;
+      for (let i = 0; i < sp.count; i++) {
+        const x = sp.getX(i);
+        const y = sp.getY(i);
+        const z = sp.getZ(i);
+        const bump = 1 + 0.17 * (noise2(x * 14 + side * 9, y * 14 - z * 6) - 0.5);
+        sp.setXYZ(i, x * bump, y * bump, z * bump * 0.55);
+      }
+      sp.needsUpdate = true;
+      geo.computeVertexNormals();
+      const weight = new Mesh(geo, stone);
+      weight.rotation.z = side * 0.7; // two different faces up
       weight.position.set(side * 0.655, 0.755, 0.026);
       group.add(weight);
     }
+    // Glazed ceramic ink pot: belly, neck, flared lip — and the ink inside.
+    const potProfile = [
+      [0, 0], [0.05, 0.002], [0.063, 0.014], [0.068, 0.034], [0.058, 0.054],
+      [0.041, 0.062], [0.037, 0.074], [0.046, 0.08], [0.05, 0.084], [0.042, 0.085],
+    ].map(([r, y]) => new Vector2(r, y));
     const pot = new Mesh(
-      track(new CylinderGeometry(0.055, 0.065, 0.07, 16)),
-      track(new MeshStandardNodeMaterial({ color: '#2a2018', roughness: 0.45 })),
+      track(new LatheGeometry(potProfile, 24)),
+      track(new MeshStandardNodeMaterial({ color: '#2a2018', roughness: 0.28, metalness: 0.05 })),
     );
     pot.rotation.x = Math.PI / 2;
-    pot.position.set(0.78, -0.55, 0.04);
-    group.add(vellum, table, pot);
+    pot.position.set(0.78, -0.55, -0.04);
+    const inkPool = new Mesh(
+      track(new CircleGeometry(0.036, 20)),
+      track(new MeshBasicNodeMaterial({ color: '#0c0805' })),
+    );
+    inkPool.position.set(0.78, -0.55, 0.036);
+    group.add(vellum, table, pot, inkPool);
 
     // The candle rig this era was born for.
     const candle = new PointLight('#ffb066', 7, 0, 2);
