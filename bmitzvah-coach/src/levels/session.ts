@@ -102,9 +102,13 @@ export class MiniLevelSession {
       );
     }
 
-    this.pointer = new ScrollPointer(shared.canvas, camera, [
-      { mesh: this.era.surface.mesh, index: new WordIndex(this.baked.words), pid: level.id },
-    ]);
+    this.pointer = new ScrollPointer(
+      shared.canvas,
+      camera,
+      [{ mesh: this.era.surface.mesh, index: new WordIndex(this.baked.words), pid: level.id }],
+      // Hover was chaos — words only register while pressing/dragging.
+      { requirePress: true },
+    );
     this.wirePointer();
 
     shared.machine.go({ name: 'mini', level: level.index });
