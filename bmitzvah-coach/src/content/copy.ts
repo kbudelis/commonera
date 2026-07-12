@@ -73,6 +73,7 @@ export const copy = {
     hint: 'Start today. End up two thousand years ago.',
     replay: 'Read again',
     locked: 'Locked',
+    challengeKicker: 'This era’s challenge',
   },
   credits: {
     title: 'Credits & sources',
@@ -104,6 +105,8 @@ export interface LevelCopy {
   introKicker: string;
   introTitle: string;
   introBody: string;
+  /** The highlighted "what makes this level harder" callout. */
+  introChallenge: string;
   introCta: string;
   doneKicker: string;
   doneTitle: string;
@@ -123,6 +126,9 @@ export const levelCopy: Record<string, LevelCopy> = {
       'The most famous sentence in the Torah — “we’re all here, we’re in this ' +
       'together” — is built from the letters on this screen. Tap one and hear ' +
       'the word it opens. Letters make words. Words make the Shema.',
+    introChallenge:
+      'Press each letter to collect it. Labels tell you every letter’s name — ' +
+      'this is the only level that gives you all of them.',
     introCta: 'Let’s explore',
     doneKicker: 'Twelve for twelve',
     doneTitle: 'You can read the raw ingredients.',
@@ -140,6 +146,9 @@ export const levelCopy: Record<string, LevelCopy> = {
       'Eight words — the spine of the Shema and the V’ahavta. Listen. One. Love. ' +
       'Heart. Soul. Touch each one and a real cantor sings it. ' +
       '(In 1995, downloading one of these sounds took all afternoon.)',
+    introChallenge:
+      'Whole words now — and the letter names are gone. Each label shows how ' +
+      'its word sounds, not what the letters are called.',
     introCta: 'Boot it up',
     doneKicker: 'Eight words down',
     doneTitle: 'You just read actual Torah words.',
@@ -159,6 +168,9 @@ export const levelCopy: Record<string, LevelCopy> = {
       'time — the whole wake-up call: we’re all here, we’re present, we’re in ' +
       'this together. Trace the line, then the whispered reply underneath. A ' +
       'Torah scroll never shows that whisper. Paper doesn’t mind.',
+    introChallenge:
+      'No more labels under the words, and two full sentences to read. Press ' +
+      'and hold a word to hear it and see its sounds.',
     introCta: 'Roll the sheet in',
     doneKicker: 'Typed and read',
     doneTitle: 'You read the line AND the whisper.',
@@ -176,6 +188,9 @@ export const levelCopy: Record<string, LevelCopy> = {
       'This is the Shema the way the first printed prayer books set it: sofer-style ' +
       'letters, no vowels on the page. “Hear, O Israel: the Eternal is our God, the ' +
       'Eternal is One.” Hover a word when you want its sounds back.',
+    introChallenge:
+      'The vowels vanish from the page — sofer letters only, like a real ' +
+      'scroll. Press a word and the strip shows its pointed form.',
     introCta: 'Open the book',
     doneKicker: 'Read like 1565',
     doneTitle: 'No vowels. You read it anyway.',
@@ -193,6 +208,9 @@ export const levelCopy: Record<string, LevelCopy> = {
       'Someone wrote this page with a feather and iron-gall ink, ruling every line ' +
       'by hand. All six verses: love with all your heart, teach your kids, tie the ' +
       'sign, write the doorposts. Trace it end to end.',
+    introChallenge:
+      'The whole paragraph — six verses in a scribe’s hand, still no vowels. ' +
+      'The longest read yet.',
     introCta: 'Take the quill',
     doneKicker: 'The V’ahavta, complete',
     doneTitle: 'You just read a whole Torah paragraph.',
@@ -209,6 +227,9 @@ export const levelCopy: Record<string, LevelCopy> = {
     introBody:
       'No vowels, no labels, no shortcuts — three full paragraphs under a real ' +
       'cantor’s voice, the way the words have always lived. Take the yad.',
+    introChallenge:
+      'Everything at once: three full paragraphs, no labels, no vowels — ' +
+      'just the yad, the cantor, and you.',
     introCta: 'Unroll it',
     doneKicker: '',
     doneTitle: '',

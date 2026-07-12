@@ -24,6 +24,13 @@ export class Screens {
         .card p { font-size: 16px; line-height: 1.55; color: var(--muted); }
         .card .kicker { color: var(--accent); font-weight: 600; letter-spacing: 0.04em;
           text-transform: uppercase; font-size: 13px; margin-bottom: 8px; }
+        .card .challenge { margin-top: 16px; padding: 12px 16px; border-radius: 12px;
+          text-align: left; font-size: 14.5px; line-height: 1.5; color: var(--paper);
+          background: color-mix(in srgb, var(--accent) 12%, transparent);
+          border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+        .card .challenge b { display: block; color: var(--accent); font-size: 12px;
+          font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+          margin-bottom: 4px; }
         .btn { background: var(--accent); color: var(--accent-text); border: 0; border-radius: 26px;
           padding: 14px 34px; font: 700 17px Rubik, system-ui; cursor: pointer;
           margin-top: 22px; transition: transform 0.12s ease, box-shadow 0.12s ease; }
@@ -206,11 +213,19 @@ export class Screens {
     });
   }
 
-  levelIntro(kicker: string, title: string, body: string, cta: string, onStart: () => void) {
+  levelIntro(
+    kicker: string,
+    title: string,
+    body: string,
+    challenge: string,
+    cta: string,
+    onStart: () => void,
+  ) {
     const el = this.layer(
       'level-intro',
       `<div class="card"><div class="kicker">${kicker}</div>
        <h2>${title}</h2><p>${body}</p>
+       ${challenge ? `<div class="challenge"><b>${copy.timeline.challengeKicker}</b>${challenge}</div>` : ''}
        <button class="btn" id="go">${cta}</button></div>`,
     );
     el.querySelector('#go')!.addEventListener('click', () => {

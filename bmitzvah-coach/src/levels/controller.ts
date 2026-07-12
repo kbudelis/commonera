@@ -42,7 +42,7 @@ export class LevelController {
     this.session = null;
     machine.go({ name: 'levelIntro', level: index });
     const c = levelCopy[level.id];
-    screens.levelIntro(c.introKicker, c.introTitle, c.introBody, c.introCta, () => {
+    screens.levelIntro(c.introKicker, c.introTitle, c.introBody, c.introChallenge, c.introCta, () => {
       if (level.kind === 'scroll') {
         this.arc ??= this.startScroll();
         this.arc.begin();
