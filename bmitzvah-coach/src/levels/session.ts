@@ -34,6 +34,18 @@ export class MiniLevelSession {
   private frameHook: ((t: number, dt: number) => void) | null = null;
   private onResize = () => this.frameCamera();
   private tmp = new Vector3();
+  /** Where the camera would sit with the pointer centered. */
+  private camBase = new Vector3();
+  /** Pointer in NDC, drifting the camera a few percent — sells the 3D. */
+  private parallax = { x: 0, y: 0 };
+  private onPointerDrift = (e: PointerEvent) => {
+    this.parallax.x = (e.clientX / innerWidth) * 2 - 1;
+    this.parallax.y = -((e.clientY / innerHeight) * 2 - 1);
+  };
+  private onPointerGone = () => {
+    this.parallax.x = 0;
+    this.parallax.y = 0;
+  };
 
   constructor(
     private shared: AppShared,
@@ -99,8 +111,22 @@ export class MiniLevelSession {
     this.frameCamera();
     if (camera.position.lengthSq() < 1e-6) camera.position.copy(shared.camTarget);
     addEventListener('resize', this.onResize);
+    shared.canvas.addEventListener('pointermove', this.onPointerDrift);
+    shared.canvas.addEventListener('pointerleave', this.onPointerGone);
 
     this.frameHook = (t, dt) => {
+      // Subtle orbit around the device — the pointer steers the eye a few
+      // degrees; the shared camera lerp smooths the position and lookAt
+      // keeps the device the focal point. This hook runs after the lerp.
+      const r = this.camBase.z;
+      const yaw = this.parallax.x * 0.1;
+      const pitch = this.parallax.y * 0.07;
+      shared.camTarget.set(
+        r * Math.sin(yaw) * Math.cos(pitch),
+        r * Math.sin(pitch),
+        r * Math.cos(yaw) * Math.cos(pitch),
+      );
+      camera.lookAt(0, 0, 0);
       this.yad.update(dt);
       this.era.lighting.update(t);
       this.era.update?.(t, dt);
@@ -132,7 +158,8 @@ export class MiniLevelSession {
 
   private frameCamera() {
     const { width, height } = this.era.fitSize;
-    this.shared.camTarget.set(0, 0, this.shared.fitDist(width, height));
+    this.camBase.set(0, 0, this.shared.fitDist(width, height));
+    this.shared.camTarget.copy(this.camBase);
   }
 
   private wirePointer() {
@@ -216,7 +243,12 @@ export class MiniLevelSession {
   dispose() {
     const { scene } = this.shared.ctx;
     removeEventListener('resize', this.onResize);
+    this.shared.canvas.removeEventListener('pointermove', this.onPointerDrift);
+    this.shared.canvas.removeEventListener('pointerleave', this.onPointerGone);
     if (this.frameHook) this.shared.frameHooks.delete(this.frameHook);
+    this.shared.camTarget.copy(this.camBase);
+    // The scroll arc assumes an unrotated camera looking down -z.
+    this.shared.ctx.camera.quaternion.set(0, 0, 0, 1);
     this.pointer.dispose();
     this.scrub.stop();
     scene.remove(this.era.group, this.yad.group);
