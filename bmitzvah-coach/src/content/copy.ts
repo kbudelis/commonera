@@ -111,7 +111,7 @@ export const copy = {
       'Scroll lettering: Stam Ashkenaz CLM by Yoram Gnat, the Culmus Project (GPL with font-embedding exception).',
       'Pointed Hebrew: Taamey Frank CLM, Culmus Project (GPL+FE). UI type: Rubik (SIL OFL).',
       'Parchment textures: <a href="https://ambientcg.com/view?id=Paper005" target="_blank" rel="noopener">ambientCG Paper005</a> (CC0). Era-device textures: <a href="https://ambientcg.com" target="_blank" rel="noopener">ambientCG</a> Wood027, Plastic004, Leather037, Metal009 (CC0).',
-      'Letter-name audio (level 1): a synthesized placeholder (espeak-ng), to be replaced by a human recording.',
+      'Letter-name voice (level 1): neural TTS (Microsoft edge-tts, he-IL) — demo placeholder pending a recorded human voice.',
       'Plain-English translations and all app copy are original to this project.',
       'Built with three.js (WebGPU renderer). This app supplements a real teacher — it doesn’t replace one.',
     ],
@@ -153,8 +153,8 @@ export const levelCopy: Record<string, LevelCopy> = {
     introTitle: 'It starts with twelve letters.',
     introBody:
       'The most famous sentence in the Torah — “we’re all here, we’re in this ' +
-      'together” — is built from the letters on this screen. Tap one and hear ' +
-      'the word it opens. Letters make words. Words make the Shema.',
+      'together” — is built from the letters on this screen. Tap each one to ' +
+      'collect it and see its name. Letters make words. Words make the Shema.',
     introChallenge:
       'Press each letter to collect it. Labels tell you every letter’s name — ' +
       'this is the only level that gives you all of them.',
