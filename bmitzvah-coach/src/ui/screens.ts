@@ -98,8 +98,16 @@ export class Screens {
       <div id="chip"></div>
       <button id="credits-link" style="position:fixed;bottom:10px;right:14px;z-index:5;
         pointer-events:auto;background:none;border:0;color:#6a5c44;cursor:pointer;
-        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.credits.title}</button>`,
+        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.credits.title}</button>
+      <button id="help-link" style="position:fixed;bottom:10px;left:14px;z-index:5;
+        pointer-events:auto;background:none;border:0;color:#6a5c44;cursor:pointer;
+        font:400 12px Rubik,system-ui;text-decoration:underline">${copy.help.link}</button>`,
     );
+    document.getElementById('help-link')!.addEventListener('click', () => this.toggleHelp());
+    addEventListener('keydown', (e) => {
+      if (e.key !== '?' || (e.target as HTMLElement)?.tagName === 'INPUT') return;
+      this.toggleHelp();
+    });
     document.getElementById('credits-link')!.addEventListener('click', () => {
       const m = this.layer(
         'credits-modal',
@@ -113,6 +121,32 @@ export class Screens {
       m.querySelectorAll('a').forEach((a) => (a.style.color = '#d4a017'));
       m.querySelector('#cclose')!.addEventListener('click', () => this.dismiss('credits-modal'));
     });
+  }
+
+  /** The ?-key panel: audio timing controls + level/debug URL params. */
+  toggleHelp() {
+    if (document.getElementById('help-modal')) {
+      this.dismiss('help-modal');
+      return;
+    }
+    const section = (sec: { heading: string; rows: readonly (readonly string[])[] }) => `
+      <h3 style="font:600 14px Rubik;color:var(--accent);margin:16px 0 6px">${sec.heading}</h3>
+      ${sec.rows
+        .map(
+          ([k, v]) => `<div style="display:flex;gap:12px;font:400 13.5px/1.6 Rubik">
+            <code style="flex:0 0 150px;color:var(--paper)">${k}</code>
+            <span style="color:var(--muted)">${v}</span></div>`,
+        )
+        .join('')}`;
+    const m = this.layer(
+      'help-modal',
+      `<div class="card" style="text-align:left;max-width:620px">
+        <h2>${copy.help.title}</h2>
+        <p class="small" style="margin-top:0">${copy.help.intro}</p>
+        ${copy.help.sections.map(section).join('')}
+        <button class="btn" id="hclose">${copy.help.close}</button></div>`,
+    );
+    m.querySelector('#hclose')!.addEventListener('click', () => this.dismiss('help-modal'));
   }
 
   private layer(id: string, inner: string, scrim = true): HTMLElement {

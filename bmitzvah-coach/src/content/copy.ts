@@ -75,6 +75,34 @@ export const copy = {
     locked: 'Locked',
     challengeKicker: 'This era’s challenge',
   },
+  help: {
+    title: 'Controls & dev tools',
+    link: '? Help',
+    intro: 'Press ? anywhere to open this panel. Settings ride the URL as parameters.',
+    sections: [
+      {
+        heading: 'Audio timing tool',
+        rows: [
+          ['?timing=p1 / p2 / p3', 'open the word-timing editor for that recording'],
+          ['Space', 'mark the next word boundary while the audio plays'],
+          [', and .', 'nudge the selected boundary offset earlier / later'],
+          ['Enter', 'replay the audio around the selected word'],
+          ['E', 'export the refined timing map as JSON'],
+        ],
+      },
+      {
+        heading: 'Levels & debugging',
+        rows: [
+          ['?level=1–5', 'jump straight into a mini level'],
+          ['?level=6', 'jump to the full scroll experience'],
+          ['?unlockAll=1', 'open every era on the timeline'],
+          ['?debugRects=1', 'draw the baked ink and hit boxes'],
+          ['?forceWebGL=1', 'force the WebGL2 renderer (skip WebGPU)'],
+        ],
+      },
+    ],
+    close: 'Close',
+  },
   credits: {
     title: 'Credits & sources',
     items: [
