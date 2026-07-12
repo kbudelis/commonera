@@ -7,15 +7,25 @@ promoted: false
 
 Status: Project feedback captured for later promotion into planned work.
 
-Source: Client demo call with Rachel, summarized from the transcript at `/Users/tyler.linahan/.codex/attachments/9df407e1-f18e-4c8f-929f-9ce411348302/pasted-text.txt`. Follow-up creative direction from Ty is labeled separately below.
+Source: client demo call summarized from a local transcript attachment.
+Follow-up creative direction from the product lead is labeled separately below.
 
 ## Executive Summary
 
-Rachel strongly validated the current visual and conceptual foundation. The app feels beautiful, calming, poetic, and stylistically coherent. Her feedback does not call for a redesign. The next iteration should make the experience more concise, deepen the month readings, and create a clearer journey from familiar Western astrology into the emotional, spiritual, and seasonal meaning of the Hebrew calendar.
+The client reviewer strongly validated the current visual and conceptual
+foundation. The app feels beautiful, calming, poetic, and stylistically
+coherent. The feedback does not call for a redesign. The next iteration should
+make the experience more concise, deepen the month readings, and create a
+clearer journey from familiar Western astrology into the emotional, spiritual,
+and seasonal meaning of the Hebrew calendar.
 
 The central product opportunity is to begin with something users already recognize about themselves—their Western zodiac sign—and then surprise them with a richer Hebrew-month interpretation. Western astrology should create familiarity and trust without overpowering the Hebrew-calendar layer, which remains the product's deeper and more distinctive offering.
 
-Ty's follow-up direction sharpens the immediate priority: focus first on copywriting and the text/glyph composition. After that foundation works, give the constellation/month page more visual magic through a celestial atmosphere related to the opening screen. Motion and secondary screens follow later.
+The product lead's follow-up direction sharpens the immediate priority: focus
+first on copywriting and the text/glyph composition. After that foundation
+works, give the constellation/month page more visual magic through a celestial
+atmosphere related to the opening screen. Motion and secondary screens follow
+later.
 
 ## Client Feedback: What Is Working
 
@@ -30,7 +40,10 @@ Ty's follow-up direction sharpens the immediate priority: focus first on copywri
 
 ## Client Feedback: Product Positioning
 
-Western astrology should remain in the product and become a more intentional entry point. Ty raised the possibility of removing Virgo to avoid leaning on Western astrology, but Rachel recommended using it more clearly because prospective users are likely to know their zodiac sign already.
+Western astrology should remain in the product and become a more intentional
+entry point. The product lead raised the possibility of removing Virgo to avoid
+leaning on Western astrology, but the client reviewer recommended using it more
+clearly because prospective users are likely to know their zodiac sign already.
 
 The intended progression is:
 
@@ -47,7 +60,9 @@ A concise articulation of the product promise is:
 
 ## Client Feedback: Hebrew-Month Meaning
 
-Rachel sees the Hebrew months as the strongest differentiator when they are presented as cycles of emotional and spiritual work rather than collections of correspondences.
+The client reviewer sees the Hebrew months as the strongest differentiator when
+they are presented as cycles of emotional and spiritual work rather than
+collections of correspondences.
 
 For Elul, she identified themes including:
 
@@ -97,7 +112,8 @@ The opening should establish wonder quickly and move into the personalized exper
 - Retain the Hebrew month glyph and its abstract calligraphic treatment.
 - Retain the Western zodiac sign and give it enough prominence to create recognition.
 - Use the Hebrew month to deepen the reading rather than repeat zodiac traits.
-- Independently verify every Hebrew glyph and attribution; Rachel praised the symbol aesthetically but could not validate its accuracy.
+- Independently verify every Hebrew glyph and attribution; the client reviewer
+  praised the symbol aesthetically but could not validate its accuracy.
 
 ### Current Month Reading
 
