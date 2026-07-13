@@ -18,8 +18,12 @@ export interface PointerEvents {
     uv: { u: number; v: number };
     point: { x: number; y: number; z: number };
     pid: string;
+    /** Button/finger currently down — the "activating" state in press mode. */
+    pressed: boolean;
   };
   surfaceleave: Record<string, never>;
+  /** Button/finger released (fires wherever the pointer is). */
+  release: Record<string, never>;
 }
 
 const HOLD_MS = 350;
@@ -67,9 +71,10 @@ export class ScrollPointer extends EventTarget {
 
   private onLeave = () => this.clear();
 
-  /** In press mode, releasing lets go of the word (the surface stays live). */
+  /** Releasing lets go of the word in press mode (the surface stays live). */
   private onRelease = () => {
     if (this.opts.requirePress) this.clearWord();
+    this.emit('release', {});
   };
 
   emit<K extends keyof PointerEvents>(type: K, detail: PointerEvents[K]) {
@@ -95,15 +100,16 @@ export class ScrollPointer extends EventTarget {
       return;
     }
 
+    const pressed = e.type === 'pointerdown' || (e.buttons ?? 0) > 0;
     const uv = { u: hit.uv.x, v: hit.uv.y };
     this.onSurface = true;
     this.emit('surfacemove', {
       uv,
       point: { x: hit.point.x, y: hit.point.y, z: hit.point.z },
       pid: target.pid,
+      pressed,
     });
 
-    const pressed = e.type === 'pointerdown' || (e.buttons ?? 0) > 0;
     if (this.opts.requirePress && !pressed) {
       this.clearWord();
       return;
