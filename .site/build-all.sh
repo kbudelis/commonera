@@ -11,7 +11,8 @@
 # A failing project is SKIPPED with a warning; it never blocks the others.
 #
 # Optional per-project metadata for the gallery card: <project>/project.json
-#   { "name": "...", "emoji": "..", "description": "...", "status": "live|wip" }
+#   { "name": "...", "emoji": "..", "description": "...", "status": "live|wip",
+#     "url": "https://..." }   <- hosted elsewhere: build is skipped, tile links out
 set -uo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -31,8 +32,19 @@ for dir in "$ROOT"/*/; do
   name="$(basename "$dir")"
   case "$name" in _site|node_modules|.*) continue ;; esac
 
+  meta="$dir/project.json"
+  pname="$(prettify "$name")"; emoji="✨"; desc=""; url=""
+  if [ -f "$meta" ]; then
+    jname="$(jq -r '.name // empty' "$meta")"; [ -n "$jname" ] && pname="$jname"
+    emoji="$(jq -r '.emoji // "✨"' "$meta")"
+    desc="$(jq -r '.description // ""' "$meta")"
+    url="$(jq -r '.url // ""' "$meta")"
+  fi
+
   built=""
-  if [ -f "$dir/package.json" ] && jq -e '.scripts.build' "$dir/package.json" >/dev/null 2>&1; then
+  if [ -n "$url" ]; then
+    echo "== $name: hosted externally at $url — skipping build"
+  elif [ -f "$dir/package.json" ] && jq -e '.scripts.build' "$dir/package.json" >/dev/null 2>&1; then
     echo "== $name: building"
     if (cd "$dir" && (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) \
         && BASE_PATH="${BASE}${name}/" npm run build); then
@@ -53,14 +65,9 @@ for dir in "$ROOT"/*/; do
     rsync -a --exclude node_modules --exclude '.git' "$built"/ "$OUT/$name/"
   fi
 
-  meta="$dir/project.json"
-  pname="$(prettify "$name")"; emoji="✨"; desc=""
-  if [ -f "$meta" ]; then
-    jname="$(jq -r '.name // empty' "$meta")"; [ -n "$jname" ] && pname="$jname"
-    emoji="$(jq -r '.emoji // "✨"' "$meta")"
-    desc="$(jq -r '.description // ""' "$meta")"
-  fi
-  if [ -n "$built" ]; then
+  if [ -n "$url" ]; then
+    CARDS+="<a class=\"card\" href=\"$url\" target=\"_blank\" rel=\"noopener\"><span class=\"emoji\">$emoji</span><h2>$pname</h2><p>$desc</p><span class=\"badge\">live ↗</span></a>"
+  elif [ -n "$built" ]; then
     CARDS+="<a class=\"card\" href=\"./$name/\"><span class=\"emoji\">$emoji</span><h2>$pname</h2><p>$desc</p></a>"
   else
     # Not deployed yet: unlinked stub so every team is visible from day one.
