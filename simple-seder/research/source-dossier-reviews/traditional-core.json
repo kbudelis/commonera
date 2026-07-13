@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "traditional-core",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A broad traditional English-and-Hebrew Haggadah whose strongest value is a reliable ritual and narrative backbone; selected passages need OCR cleanup, beginner-facing action cues, and compassionate framing around violent or land-centered liturgy.",
+  "sourceAssessment": {
+    "voice": "Traditional, formal, explanatory, and prayer-centered, with a mid-century English register and substantial Hebrew embedded in the page extraction.",
+    "bestUses": [
+      "The core order and ritual-symbol explanations for a traditional-theme Haggadah",
+      "A concise Exodus arc from ancestral migration through slavery, cry, and liberation",
+      "Familiar praise, meal, and table ritual passages that can anchor a cohesive source-led edition"
+    ],
+    "beginnerRisks": [
+      "The extraction contains broken Hebrew glyphs and layout artifacts that require visual comparison with the original pages.",
+      "Some instructions assume that guests already know which object to lift, which cup to fill, and what action follows.",
+      "Plague, firstborn, Temple, land, and Jerusalem passages need clear nontriumphalist or traditional-only gates."
+    ],
+    "politicalContext": "Biblical Israel, the land, Temple, and Jerusalem occur as traditional liturgy. The source also contains modern-sounding land refrains; the project may use a Jerusalem refrain only for a traditional selection without a social-justice override, and may not turn liturgy into exclusive modern political advocacy.",
+    "creditContext": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization. The source record is CC0 1.0, but separately attributed or embedded material still requires item-level review and every selected page needs an access-and-modification record."
+  },
+  "recommendedSequences": [
+    {
+      "id": "traditional-core-seder-roadmap",
+      "title": "A traditional Seder roadmap",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-f8u-8f918297218b"
+      ],
+      "beginnerContext": "Before the first blessing, explain that the Seder follows fourteen named stages and that the host will announce each action. Define the wine or grape juice, greens, matzah, afikoman, bitter herb, meal, and closing songs when first mentioned.",
+      "rationale": "These two source-order records provide the clearest compact overview of the traditional sequence and the early ritual logic, making them suitable for an orientation page rather than scattering unexplained Hebrew stage names.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-object-definitions-required",
+        "host-action-cues-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization in the final source page."
+    },
+    {
+      "id": "traditional-core-exodus-arc",
+      "title": "From migration to liberation",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-traditional-core-16um-24a4ab7f2193",
+        "research-traditional-core-17f7-1d9f8d5fc7d7",
+        "research-traditional-core-198m-f4c0bfd7319f",
+        "research-traditional-core-19rl-abe466be58a5",
+        "research-traditional-core-1biw-ce2e6d379db2"
+      ],
+      "beginnerContext": "Introduce the people in the story and state the arc plainly: Jacob's family went to Egypt, grew into a people, was enslaved and harmed, cried out, and was heard. Pause after oppression before describing liberation so the emotional movement is intelligible.",
+      "rationale": "These source-order passages create a usable traditional Exodus narrative across migration, population growth, forced labor, suffering, and divine response, giving a novice more than keywords without requiring the entire rabbinic exposition.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nontriumphalist-violence-framing",
+        "age-appropriate-harm-context",
+        "plain-language-narrative-bridges-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Birnbaum, Hebrew Publishing Company, and the Varady digitization; note cuts from the longer traditional exposition."
+    },
+    {
+      "id": "traditional-core-three-symbols",
+      "title": "Pesach, matzah, maror, and lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1nuu-9d906cfc8d5c",
+        "research-traditional-core-1oj7-e505139e4af6",
+        "research-traditional-core-1oyy-c34117f8546d",
+        "research-traditional-core-1prz-799a55151bef",
+        "research-traditional-core-1qcs-d38d2438ff81"
+      ],
+      "beginnerContext": "Point to each object as it is named and explain it before asking anyone to read: the offering recalls deliverance, matzah recalls hurried departure, and maror recalls the bitterness of slavery. Then connect the symbols to the teaching that every generation enters the story personally.",
+      "rationale": "These consecutive records form the source's complete central teaching on the three required symbols and the every-generation obligation, a coherent unit that supplies both ritual meaning and personal connection.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "insertionSectionId": "maggid",
+      "editorialGates": [
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "temple-offering-context",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and the Varady digitization; preserve the sequence as a single sourced unit."
+    },
+    {
+      "id": "traditional-core-praise-transition",
+      "title": "From redemption to praise",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1s8u-79d1db5ea5e9",
+        "research-traditional-core-1stz-5f07f2d80c75",
+        "research-traditional-core-1tdy-a90cfab6eeea"
+      ],
+      "beginnerContext": "Tell guests that the story now turns into gratitude and song. State whether the group will read responsively, sing, or listen, and make participation optional.",
+      "rationale": "The adjacent passages preserve the transition out of the central telling and into praise, preventing a clipped psalm fragment from appearing without its narrative reason.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "participation-cue-required",
+        "plain-language-transition-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit the Birnbaum edition and Varady digitization in the final credits."
+    },
+    {
+      "id": "traditional-core-table-actions",
+      "title": "Washing and symbolic eating",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1vdz-daf1db2cb673",
+        "research-traditional-core-1x3y-2f88959244e8"
+      ],
+      "beginnerContext": "State exactly what happens: guests may wash their own hands or pour water for one another over a basin, then everyone eats matzah, bitter herb with haroset, and the matzah-maror sandwich as directed. Define each food and give allergy-safe alternatives.",
+      "rationale": "These source-order records contain the washing and symbolic-eating progression, but the project must supply accessible host instructions around the traditional blessings and compressed ritual prose.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "host-action-cues-required",
+        "mutual-handwashing-option-required",
+        "food-definition-and-allergy-note",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit the Birnbaum source and digitization; note that accessible action directions are project-authored bridges."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-traditional-core-0-1fd564451840",
+      "reasons": [
+        "The page has no searchable text and cannot supply a verifiable reading."
+      ]
+    },
+    {
+      "segmentId": "research-traditional-core-gdr-ed45498f205e",
+      "reasons": [
+        "The extraction is dominated by corrupt glyphs and requires reconstruction from the rendered source before use."
+      ]
+    },
+    {
+      "segmentId": "research-traditional-core-1l1y-79d501e19775",
+      "reasons": [
+        "The extraction is not reliably readable as an exact source passage."
+      ]
+    },
+    {
+      "segmentId": "research-traditional-core-29n0-f2dc18cd088e",
+      "reasons": [
+        "The collective destruction language is unsuitable for default peace-focused runtime use."
+      ]
+    },
+    {
+      "segmentId": "research-traditional-core-2sls-bd8dcd1a37f2",
+      "reasons": [
+        "The Jerusalem refrain is allowed only under the project's traditional-without-social-justice rule and should not enter the generic candidate pool."
+      ]
+    }
+  ],
+  "notes": [
+    "The source can provide a cohesive traditional backbone when whole source-order movements are used instead of isolated phrases.",
+    "Do not silently modernize or paraphrase the canonical source text; add clearly separated beginner bridges and action cues.",
+    "Every selected extraction must be checked against the rendered page before human approval, especially where Hebrew and English columns interleave.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

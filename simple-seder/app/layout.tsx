@@ -1,4 +1,14 @@
 import type { Metadata } from "next";
+import "@fontsource/atkinson-hyperlegible/latin-400.css";
+import "@fontsource/atkinson-hyperlegible/latin-400-italic.css";
+import "@fontsource/atkinson-hyperlegible/latin-700.css";
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-600.css";
+import "@fontsource/inter/latin-700.css";
+import "@fontsource/inter/latin-800.css";
+import "@fontsource/source-serif-4/latin-400.css";
+import "@fontsource/source-serif-4/latin-400-italic.css";
+import "@fontsource/source-serif-4/latin-600.css";
 import "./globals.css";
 
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";

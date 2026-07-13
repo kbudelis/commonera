@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "rittangel-latin",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "Rittangel’s 1644 Hebrew-Latin Haggadah is a rare early-modern comparative witness. Its Latin translation, historical typography, and uneven OCR make it valuable for specialist sidebars and source comparison, while requiring facsimile verification and a modern English explanation before any guest-facing use.",
+  "sourceAssessment": {
+    "voice": "Antiquarian, bilingual Hebrew-Latin, early-modern, scholarly, highly formal, and mediated by imperfect historical OCR.",
+    "bestUses": [
+      "Historical notes about how the Seder was translated and described in seventeenth-century Latin",
+      "A specialist traditional-theme comparison of ritual order and Dayenu",
+      "Long-form source appendices with facsimile-checked excerpts"
+    ],
+    "beginnerRisks": [
+      "The source is not in contemporary English and cannot function as direct beginner orientation.",
+      "Every OCR-derived passage must be checked against the page image before publication.",
+      "Early-modern Christian framing and Latinized names can distort or exoticize Jewish practice if presented without context."
+    ],
+    "politicalContext": "The work is a seventeenth-century historical document rather than a modern political source. Biblical land and peoplehood language must remain historical-liturgical, and polemical material about religious groups should stay research-only.",
+    "creditContext": "Credit Johann Stephan Rittangel and Aharon N. Varady, identify the public-domain work and CC BY-SA 4.0 transcription, and never silently modernize the Latin, Hebrew, or OCR."
+  },
+  "recommendedSequences": [
+    {
+      "id": "rittangel-latin-preparing-the-home",
+      "title": "Preparing for the Seder night",
+      "sectionIds": ["kadesh"],
+      "segmentIds": [
+        "research-rittangel-latin-56s-954df8257811",
+        "research-rittangel-latin-5qc-f0b4ef413860",
+        "research-rittangel-latin-6az-d7651e922344",
+        "research-rittangel-latin-72x-32bc00a85d4a"
+      ],
+      "beginnerContext": "Summarize in modern English that the source begins with removing leaven, evening prayers, returning home, and approaching the prepared table.",
+      "rationale": "These consecutive pages form the work’s complete transition from pre-Passover preparation into the household Seder rather than isolating a single antiquarian instruction.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "facsimile-visual-check-required", "modern-english-summary-required"],
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the public-domain original and open transcription."
+    },
+    {
+      "id": "rittangel-latin-first-cup-to-questions",
+      "title": "First cup through the questions",
+      "sectionIds": ["kadesh", "urchatz", "karpas", "yachatz", "maggid"],
+      "segmentIds": [
+        "research-rittangel-latin-7us-f9b4c72b86a5",
+        "research-rittangel-latin-8km-2524f91c1c74",
+        "research-rittangel-latin-99r-aabd96761e05",
+        "research-rittangel-latin-9sk-03d0e52af030",
+        "research-rittangel-latin-aj7-c1fd6f888108",
+        "research-rittangel-latin-b24-6ef313682102"
+      ],
+      "beginnerContext": "Use the app’s ordinary action cues first, then label this as a seventeenth-century Latin account of Kiddush, washing, breaking matzah, invitation, questions, and the first answer.",
+      "rationale": "Six source-order segments preserve the continuous early ritual sequence and its handoff into the freedom story.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "facsimile-visual-check-required", "do-not-substitute-for-host-instructions", "modern-english-summary-required"],
+      "creditNotes": "Credit Rittangel and Varady; do not silently correct the historical transcription or OCR."
+    },
+    {
+      "id": "rittangel-latin-duty-and-four-children",
+      "title": "The duty to tell and the Four Children",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-rittangel-latin-bok-8d1f9c1e4896",
+        "research-rittangel-latin-ccf-4c4038fd2df4",
+        "research-rittangel-latin-cwj-58db9ea74155",
+        "research-rittangel-latin-diw-59dd2fedbd99",
+        "research-rittangel-latin-e78-759e1334092a"
+      ],
+      "beginnerContext": "Explain that the text moves from the obligation to retell the Exodus into four different learning postures; use inclusive modern labels outside the exact source excerpt.",
+      "rationale": "These adjacent records contain one coherent pedagogical movement from the sages’ all-night telling through the four archetypal children and the instruction to begin for someone who cannot ask.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "facsimile-visual-check-required", "inclusive-modern-framing-required", "modern-english-summary-required"],
+      "creditNotes": "Credit Rittangel and Varady and retain both public-domain and transcription-license information."
+    },
+    {
+      "id": "rittangel-latin-oppression-and-redemption",
+      "title": "Oppression, cry, and redemption",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-rittangel-latin-ic7-5df6d89be2f7",
+        "research-rittangel-latin-iy0-aaad6bebfbb0",
+        "research-rittangel-latin-jse-9c99375e0c77",
+        "research-rittangel-latin-kco-e6b2e1826329",
+        "research-rittangel-latin-ku4-61e3888ec2e5",
+        "research-rittangel-latin-lrl-84e493ccdfbf",
+        "research-rittangel-latin-mc2-ac6d14b2fbf1"
+      ],
+      "beginnerContext": "Provide a concise English story first: forced labor intensified, the people cried out, their suffering was seen, and the text turns toward deliverance.",
+      "rationale": "Seven source-order segments maintain the causal story from oppression through the cry and response, ending with the traditional exposition of signs and wonders while omitting one locally quarantined OCR fragment.",
+      "themes": ["traditional", "social-justice", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "facsimile-visual-check-required", "modern-english-summary-required", "nontriumphalist-plague-framing", "disclose-abridgment"],
+      "creditNotes": "Credit Rittangel and Varady; visually verify every OCR-derived line against the cited pages."
+    },
+    {
+      "id": "rittangel-latin-three-symbols",
+      "title": "Passover, matzah, maror, and lived memory",
+      "sectionIds": ["maggid", "motzi-matzah", "maror", "hallel"],
+      "segmentIds": [
+        "research-rittangel-latin-ss7-5de2fb2f40a6",
+        "research-rittangel-latin-tbl-01a9917b974e",
+        "research-rittangel-latin-u2v-df71c5c02a39",
+        "research-rittangel-latin-ujr-0da97571749d",
+        "research-rittangel-latin-vdq-8aa4d457f399"
+      ],
+      "beginnerContext": "Point to each ritual food and explain its meaning in contemporary English before showing the Latin witness; then explain the move from memory into praise.",
+      "rationale": "The source sequence contains the three core symbol explanations, the every-generation teaching, and the transition into Hallel as a single ritual argument.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "facsimile-visual-check-required", "visible-object-cues-required", "modern-english-summary-required"],
+      "creditNotes": "Credit Rittangel and Varady; retain exact source wording and disclose any separate modern translation."
+    },
+    {
+      "id": "rittangel-latin-dayenu-transcription",
+      "title": "Hebrew-Latin Dayenu witness",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-rittangel-latin-286b-7ae27264c23a",
+        "research-rittangel-latin-28y4-2fb5ebbe79f1",
+        "research-rittangel-latin-29qu-3413dafaa9e8",
+        "research-rittangel-latin-2alm-bf2a0f194da8"
+      ],
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song and make clear that this selection is a historical Hebrew-Latin transcription, not the app’s English sing-along version.",
+      "rationale": "The four official transcription records preserve the complete Dayenu progression in source order and are more reliable than reconstructing it from scattered OCR pages.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-latin-specialist-opt-in", "modern-english-summary-required", "traditional-land-language-context"],
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the official open transcription and its CC BY-SA 4.0 conditions."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-rittangel-latin-1aj-d4b4c8c190f6",
+      "reasons": ["Digitization footer fragment with no coherent ritual or scholarly content."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-1ba-5089b748c530",
+      "reasons": ["Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-w0u-a05dbf820d1c",
+      "reasons": ["Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-lem-68fb70bfe159",
+      "reasons": ["Local quality checks flag the OCR as likely gibberish; it must remain research-only until a new transcription is visually established."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-1lod-782c649ff34c",
+      "reasons": ["Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-1m9q-37e2c0952fdb",
+      "reasons": ["Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-18v7-057d7a3ff1b8",
+      "reasons": ["Collective-vengeance prayer is inconsistent with the project’s peace-focused default and remains research-only."]
+    },
+    {
+      "segmentId": "research-rittangel-latin-25sa-19f1735b7c66",
+      "reasons": ["Early-modern Christian polemic about Jewish observance is unsuitable for guest-facing use and remains research-only."]
+    }
+  ],
+  "notes": [
+    "The source is included as an opt-in historical witness; Latin and difficult OCR do not justify erasing it from the corpus.",
+    "No OCR-derived passage should be promoted without a visual comparison to the corresponding facsimile page.",
+    "All recommended sequences remain candidate-only pending human editorial and language review."
+  ]
+}

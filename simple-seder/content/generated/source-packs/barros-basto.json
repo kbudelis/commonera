@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "barros-basto",
+  "sourceTitle": "Hagadah shel Pessah",
+  "modules": [
+    {
+      "id": "barros-kadesh-mnemonic",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "exactText": "A ordem ou maneira de cumprir estas cerimonias está indicada nos seguintes versos mnemónicos: Kadesh Urh'ats: Karpas Yah'ats: Magid Rah'tsah: Motsi Matsah: Maror Korekh: Shulh'an Orekh: Tsafun Barekh: Hallel Nirtsah:",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 7 (printed p. 5), order of the Seder",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 30,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "provenanceHash": "697825a64674eed02e58a0b3e7abdc10eafbb6bcff3bd906fa7c6849dfc4e0c8",
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      }
+    },
+    {
+      "id": "barros-karpas-greens",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "exactText": "Na terceira bandeja põe-se alface, salsa, ou folhas verdes de aipo.",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 7 (printed p. 5), plate preparation",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3"
+      },
+      "sectionIds": [
+        "karpas"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 11,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "provenanceHash": "b04e3f40707734f456a31f1855113977bcec72b9fae4ae2b993040d462457eae",
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      }
+    }
+  ]
+}

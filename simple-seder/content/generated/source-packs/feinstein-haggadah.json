@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "feinstein-haggadah",
+  "sourceTitle": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+  "modules": [
+    {
+      "id": "feinstein-kadesh-poured-by-another",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "exactText": "Kiddush is recited over the first cup of wine. Red wine is preferred, although white wine fulfils the obligation. One should not pour one's own wine; Instead, it should be poured by another, as a sign of freedom and prosperity.",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 4 (printed p. 3), instruction iv",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 40,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "f0f300b28cce8a56f5b93140f150b8a7369f5c262d7e737e896aa5ce21469896",
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      }
+    },
+    {
+      "id": "feinstein-yachatz-afikoman",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "exactText": "Break the middle matzah in two pieces, setting the larger one aside to be used later as the afikoman, and returning the other.",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 8 (printed p. 7), Yachatz",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d"
+      },
+      "sectionIds": [
+        "yachatz"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 23,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "05b0e9e0daee81b843bbec8b296efcef6f4fdc6f56cb3b0153e55a688cba733f",
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      }
+    }
+  ]
+}

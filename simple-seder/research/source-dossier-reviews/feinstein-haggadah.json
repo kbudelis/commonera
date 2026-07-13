@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "feinstein-haggadah",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A complete traditional Haggadah with a modern English translation and useful stage-by-stage ritual structure; it can support a source-led liturgical backbone after visual OCR review, while its severe Four Children and plague language needs context and its appended software license must never enter ritual content.",
+  "sourceAssessment": {
+    "voice": "Formal, text-centered, traditional, bilingual, and compact, with a relatively modern English translation embedded in dense Hebrew-English page layouts.",
+    "bestUses": [
+      "A coherent traditional sequence from preparation through Maggid and symbolic eating",
+      "Direct English translations of core blessings and scriptural exposition",
+      "A concise source-led option for guests who want more liturgy and less contemporary commentary"
+    ],
+    "beginnerRisks": [
+      "The extraction merges Hebrew, transliteration, footnotes, and English columns and must be checked against rendered pages.",
+      "Traditional Four Children, plague, firstborn, land, and Temple language can be harsh or opaque without framing.",
+      "The final third of the extracted file is a software-license appendix and is not Haggadah content."
+    ],
+    "politicalContext": "The source's Israel, land, Temple, and Jerusalem language is inherited liturgy rather than a modern policy argument. It still requires the project's traditional-only and non-exclusive framing rules, especially where Dayenu or grace language could sound like contemporary entitlement.",
+    "creditContext": "Credit Eve Levavi Feinstein and Efraim Feinstein, identify the Haggadah for the Passover Seder / Haggadat Mah Zot, link CC BY-SA 4.0, indicate changes, and preserve ShareAlike terms. Embedded materials require item-level review."
+  },
+  "recommendedSequences": [
+    {
+      "id": "feinstein-removing-leaven",
+      "title": "Preparing by removing leaven",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-64-2b36225e1e56",
+        "research-feinstein-haggadah-t7-bda6c8162f28"
+      ],
+      "beginnerContext": "Explain that searching for and nullifying hametz is a pre-Passover practice, not something guests must improvise at the table. Give a short practical definition of leaven and clearly mark this as optional preparation.",
+      "rationale": "The adjacent opening records preserve a complete preparatory ritual and its meaning, useful for a host guide or traditional appendix rather than an unexplained first page.",
+      "themes": [
+        "traditional",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-preparation-opt-in",
+        "plain-language-hametz-definition",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and preserve CC BY-SA 4.0 attribution and ShareAlike terms."
+    },
+    {
+      "id": "feinstein-questions-and-story-opening",
+      "title": "Four Questions into Maggid",
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-9it-fe4702a6adc9",
+        "research-feinstein-haggadah-aot-ef2a518cb905"
+      ],
+      "beginnerContext": "Explain the salt water and broken matzah actions before the youngest willing person or another guest asks the Four Questions. Define Maggid and state that the questions lead into the Exodus story.",
+      "rationale": "The three adjacent segments connect preliminary ritual actions with the formal questions and story opening, retaining the intended order rather than detaching the blessing text.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "visible-object-cues-required",
+        "no-child-forced-to-read",
+        "plain-language-maggid-definition",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and indicate any cuts to the bilingual text."
+    },
+    {
+      "id": "feinstein-four-children",
+      "title": "The traditional Four Children",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-ddp-eee72f169f5b",
+        "research-feinstein-haggadah-eos-6b00a975b43c"
+      ],
+      "beginnerContext": "Introduce the figures as inherited teaching types, not judgments about actual children or guests. Explain the historical language, avoid assigning labels around the table, and give a gentler discussion prompt.",
+      "rationale": "The two adjacent records preserve the traditional Four Children unit and its responses, stopping at a complete sentence before the source turns to a new scriptural exposition. Keeping the figures together is safer and more intelligible than extracting only the severe description of one child.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "nonlabeling-introduction-required",
+        "harsh-language-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; identify this as a traditional teaching in their translation."
+    },
+    {
+      "id": "feinstein-ancestry-to-oppression",
+      "title": "From ancestry to oppression",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-gwl-3a59455ab1b8",
+        "research-feinstein-haggadah-icj-c9eb79111eff",
+        "research-feinstein-haggadah-jr8-36d28562553c",
+        "research-feinstein-haggadah-l1w-434bcb321cac",
+        "research-feinstein-haggadah-mhm-928cfd72587e"
+      ],
+      "beginnerContext": "State the narrative arc before the detailed verses: the family went to Egypt, became a people, and was enslaved and harmed. Explain that the people's cry and liberation continue in the following part of Maggid. Introduce each scriptural quotation with one sentence of plain-language meaning.",
+      "rationale": "Five source-order segments preserve the traditional verse-by-verse movement from ancestry through oppression and stop after a complete scriptural sentence. The later page records were removed because their extracted text ends mid-exposition.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-narrative-bridges-required",
+        "age-appropriate-harm-context",
+        "rendered-page-ocr-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and preserve CC BY-SA 4.0 and any embedded source note."
+    },
+    {
+      "id": "feinstein-plagues-and-compassion",
+      "title": "Plagues with diminished joy",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-qoe-365aef2c0e50",
+        "research-feinstein-haggadah-rte-328d5a77e167",
+        "research-feinstein-haggadah-ssl-734e330b01b1",
+        "research-feinstein-haggadah-u8x-d7f3e727b60b"
+      ],
+      "beginnerContext": "Explain that the plagues are catastrophes within the liberation story, name the cup-diminishing custom, and say explicitly that the table does not celebrate civilian suffering. Use wine or grape juice and give one action cue before the list.",
+      "rationale": "The adjacent passages retain the narrative and ritual treatment of the plagues while stopping before the most elaborate numerical multiplication, making a more usable adult or mixed-age unit.",
+      "themes": [
+        "traditional",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "nontriumphalist-plague-framing",
+        "wine-or-grape-juice-explicit",
+        "cup-diminishing-action-cue",
+        "age-appropriate-harm-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and indicate any abridgment of the traditional plague exposition."
+    },
+    {
+      "id": "feinstein-dayenu-symbols-and-praise",
+      "title": "Gratitude, symbols, and the turn to praise",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-z8q-5a10aef546c1",
+        "research-feinstein-haggadah-10hg-a9e3bc431d73",
+        "research-feinstein-haggadah-11oy-093ea077e5b1",
+        "research-feinstein-haggadah-130s-9c2f717ba7fb",
+        "research-feinstein-haggadah-145w-137f594e1e1e",
+        "research-feinstein-haggadah-15at-a9a930c54606",
+        "research-feinstein-haggadah-16rn-688cff34e57a"
+      ],
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song, then point to the traditional symbols and explain each one before the every-generation teaching. Signal the transition from telling into praise.",
+      "rationale": "Seven consecutive passages preserve the source's complete theological and ritual turn from gratitude through Pesach, matzah, maror, lived memory, and Hallel.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-theme-only",
+        "nontriumphalist-firstborn-and-land-framing",
+        "visible-object-cues-required",
+        "temple-language-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins, preserve ShareAlike terms, and identify omitted Dayenu verses if abridged."
+    },
+    {
+      "id": "feinstein-washing-and-symbolic-foods",
+      "title": "Washing, matzah, and bitter herb",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-1b62-30cb82877c2c",
+        "research-feinstein-haggadah-1c7k-646b956418f8",
+        "research-feinstein-haggadah-1dch-1120ef3b8143"
+      ],
+      "beginnerContext": "Give practical instructions before the liturgy: wash hands individually or by pouring for one another, eat matzah, then bitter herb with haroset and the sandwich. Define haroset and provide allergy-safe substitutions.",
+      "rationale": "The three adjacent source records hold the table rituals in their proper order and can serve as a concise traditional block when paired with accessible host directions.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions",
+        "allergy-safe-alternatives",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; distinguish project-authored action cues from source text."
+    },
+    {
+      "id": "feinstein-grace-after-meals",
+      "title": "Opening grace after the meal",
+      "sectionIds": [
+        "barech"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-1ee4-64546382f98a",
+        "research-feinstein-haggadah-1fe0-05d0bf77130e",
+        "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+        "research-feinstein-haggadah-1htp-e3b94299332d"
+      ],
+      "beginnerContext": "Explain that Barech is the gratitude said after eating and tell guests whether the leader will read or everyone will respond. Offer a shortened path without implying that a mixed-belief guest must affirm every theological line.",
+      "rationale": "The four source-order records provide a coherent entrance into grace and communal response, retaining the liturgical progression instead of using a blessing fragment out of context.",
+      "themes": [
+        "traditional",
+        "mindfulness",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mixed-belief-introduction-required",
+        "responsive-reading-cues",
+        "traditional-land-language-review",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and preserve the CC BY-SA 4.0 notice and change statement."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-feinstein-haggadah-33cw-3c23bf6c39ca",
+      "reasons": [
+        "This begins the appended GNU software-license text, not the Haggadah ritual content."
+      ]
+    },
+    {
+      "segmentId": "research-feinstein-haggadah-3tlm-4743f8168b2b",
+      "reasons": [
+        "This remains part of the software-license appendix and must never enter the ritual candidate pool."
+      ]
+    }
+  ],
+  "notes": [
+    "Every segment from source order 101 through 138 is an appended software-license or related non-Haggadah record and is excluded from content assembly.",
+    "The bilingual extraction needs rendered-page comparison before exact text can be approved.",
+    "The source's CC BY-SA license permits substantial reuse with attribution, modifications identified, and ShareAlike compliance.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "rittangel-latin",
+  "sourceTitle": "Liber Rituum Paschalium",
+  "modules": [
+    {
+      "id": "rittangel-dayenu-latin",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "exactText": "Si enim eduxisset nos ex Ægypto Et non fecisset de eis judicia, sufficeret nobis:",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "Open Siddur Dayenu transcription post 36451; visually cross-checked against scan PDF p. 27 (printed p. 19)",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 14,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "provenanceHash": "49256ef6f543c5ca2c78b09d3e830980a7cdb0b9ff613885c4f35b907b9878d1",
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Johann Stephan Rittangel’s 1644 Liber Rituum Paschalium; transcription by Aharon N. Varady for Open Siddur (CC BY-SA 4.0)."
+      }
+    },
+    {
+      "id": "rittangel-dayenu-hebrew",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "exactText": "אִלּוּ הוֹצִיאָנוּ מִמִּצְרַיִם. וְלֹא עָשָׂה בָהֶם שְׁפָטִים דַּיֵּנוּ׃",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "Open Siddur Dayenu transcription post 36451; visually cross-checked against scan PDF p. 27 (printed p. 19)",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 8,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "provenanceHash": "ceb4a57d6e0653a2372f704aee88cfb5bf3a5b8d3f5e83f9bd40cf433dc63ff6",
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Johann Stephan Rittangel’s 1644 Liber Rituum Paschalium; transcription by Aharon N. Varady for Open Siddur (CC BY-SA 4.0)."
+      }
+    }
+  ]
+}

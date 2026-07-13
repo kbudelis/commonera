@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "other-side-of-sea",
+  "sourceTitle": "The Other Side of the River, The Other Side of the Sea",
+  "modules": [
+    {
+      "id": "truah-maggid-fulcrum",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "exactText": "This is the seder’s fulcrum, the turning point that leverages our collective memories of slavery and turns them into collective obligation.",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF sheet p. 6 (printed p. 15), In Every Generation",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 21,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "provenanceHash": "73ec38643e9b8e34ac3cd1ef8e3948ee57fbc1744b241791904ba63dc3cf0682",
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      }
+    },
+    {
+      "id": "truah-maggid-tomato",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "exactText": "Lift up the tomato on the seder plate and say: “This tomato on our seder plate: What does it mean?” It represents the workers who picked it and the organizing that has changed their lives.",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF sheet p. 4 (printed p. 41), Rabban Gamliel Says",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "environment"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "plate-option",
+      "treatment": "verbatim-normalized",
+      "wordCount": 35,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "provenanceHash": "2764fc55cff6c4863307ffab144ee797ac03c31ca90ada0dc28b4fee4c262e16",
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      }
+    }
+  ]
+}

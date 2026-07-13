@@ -1,0 +1,983 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mayer-ashkenaz",
+  "sourceTitle": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer",
+      "Review separately sourced additions item by item",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=61266"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-mayer-ashkenaz-festival-sanctification",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "Festival sanctification and Exodus memory",
+      "exactText": "לְהוֹדִֽיעַ שֶָׁ לֵבָב בְּ וּגְבוּרוֹת לְאוֹהֲבָיו וְנִפְלָאוֹת רַבּוֹת לִבְנֵי יְדִידָיו׃ And THEY chose it on this day of all the days, and desired it and sanctified it of all occasions, to be praised on it for the wonders of THEIR works, to be commemorated on it year after year. To make known that on it the CAUSE took THEIR servants from Egypt, salvaged us from the iron furnace. To make known that on it they received THEIR rule as desired, to serve THEM wholeheartedly. To make known that on it THEY did vengeance on their enemies, and on it sunk their stressors in the sea. To make known that on it the CAUSE our God did miracles and great things for those who love THEM, and wonders aplenty for the children of those THEY cherished. ג\n\nים מִֵּ ל־הָעַ כְׇּ מִ תָּ שְֶׁ ֽ דֵַּ וְאוֹתָֽנוּ־קִ תָּ י בָֽנוּ־בָחַֽרְ כְִּ ַבָּת שֶׁ [ ךָ שְֶׁ וּמוֹעֲדֵי קׇדְ [ נוּ׃ תָּ וֹן הִנְחַלְ שָֽׂ שָָֽׂ מְחָה וְ שִָֽׂ בְּ For You chose us and sanctified us over all the peoples, and in [love and desire, in] happiness and joy apportioned Your [Sabbath and] sacred festivals to us. שֶׁ דֵֵּ ָה מְקַ וֹה יְה תָּ רוּך אַ בָּ בָּת וְ שַָּׁ [רָאֵל שְָֽׂ יִ ים׃נִֶּ מַ זְֶּ וְהַ Blessed are You, CAUSE, who sanctifies [the Sabbath and] Israel and the occasions. The following parts are added on Saturday nights, folowing the custom of YaQNeHaZ. Since YaQNeHaZ sounds like the German ”jag den Hase” – ”hunt the hare,” this is illustrated with a depiction of a hare hunt. The first Saturday night blessing, for the light — Ner.",
+      "segmentIds": [
+        "research-mayer-ashkenaz-734-439d81669a56",
+        "research-mayer-ashkenaz-7ns-b31dd91fe9e2"
+      ],
+      "sourceLocation": "PDF p. 3, segment 7 through PDF p. 4, segment 1",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 3, segment 7 through PDF p. 4, segment 1",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-734-439d81669a56",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 9184,
+            "normalizedEndOffset": 9927
+          },
+          {
+            "id": "research-mayer-ashkenaz-7ns-b31dd91fe9e2",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 9928,
+            "normalizedEndOffset": 10695
+          }
+        ]
+      },
+      "provenanceHash": "f0da7eb1130368b6289e9f42f89de605a67e4cd61a00a40fb315905543bfd636",
+      "componentProvenanceHashes": [
+        "439d81669a56534a21f4811ec798891397d961acd86b122b36b5e159f01e42fa",
+        "b31dd91fe9e27eae4941c501a690a142abe6521772d09275a08b1129d08ab1c2"
+      ],
+      "wordCount": 275,
+      "characterCount": 1512,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain that this is an extended traditional sanctification passage linking Passover to the Exodus and festival calendar. Offer it only to a table seeking substantial liturgy, define the sea and vengeance imagery, and follow with the simpler wine blessing from a separate verified module.",
+      "rationale": "These two adjacent intact records preserve one complete liturgical movement in an otherwise control-character-corrupted Kadesh extraction; keeping them together prevents a partial clause from standing alone.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer, identify the CC BY-SA 4.0 edition, indicate changes, and preserve ShareAlike terms.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "multilingual-render-check",
+        "nontriumphalist-sea-and-vengeance-framing",
+        "separate-wine-blessing-module-required",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-abraham-and-nimrod",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "Abraham challenges the idols",
+      "exactText": "אָנָא הוּוָא אַלְדִי פִֿ אַסְמָא, וּ כְׄלַקְתַךּ וּכְׄלַקְתְהוֹם, וּכְׄלַקְתְ גְמִיע אַסְמָאוָאת וּלַארָאצִׄי!“ From that moment on, Avraham went against his father. And he said to him, “O my father, tell me please, who is the master who creates the world?” He said to him, “O my son, those idols that are in the house, they are the ones who created the world.” He said to him, “O my father, noble are their laws to me. Come, let us sacrifice an offering to them, that they may desire me.” There his father went into the house of the godless of wood and stone and silver and gold, there he went to his mother. And he said to her, “O my mother, get up, make me a great feast, and let us sacrifice it to the idols, that that they may desire me.”\n\nחַ שֶַׁ עַלוּ כִׄיר אָו פְֿ יִ י, תַסְמַע בִּ לְקוּל?“ קָאל לוֹ „יָא אֵי וַדְנַךּ מָה פֿוּמָךּ יְקוּל! אִידָא מָא שֶׁוא, עַלָא וָּ רַ בְּ וא וְלָא גִ וָּ יהוֹם לַא קַ פִֿ וּ לְאֵילָא לְאַזְלִי כְּ דוּהוּם, וּתְתַרְ בְּ תְעִ מִיע גְָּ אַלְדִי כְׄלַקְנִי וּכַׄלְקַךּ וּכְׄלַק מָאוָואת וּלַאְרָאצִׄי?“ סְִּ אַ When his father heard his words, he ran to Nimrod the sultan. He said to him, “O milord, investigate what my son did today!” Said Nimrod to Avraham, “What plot have you plotted?” He said, “O sir, I have not plotted anything, but rather they were fighting over the treats, and they themselves burned each other!” He said to them, “What nonsense! Can they speak or move or do good or evil? How could your voice say such a thing?” He said to him, “O milord, may your ears hear what your mouth says!\n\nאִידָא וא, וָּ רַ בְּ גִָּ וא וְלָא וָּ יהוֹם לַא קַ פִֿ מָא וּ לְאֵילָא כְּ דוּהוּם, וּתְתַרְ בְּ תְעִ שֶׁעַלָא לְאַזְלִי אַלְדִי כְׄלַקְנִי וּכַׄלְקַךּ וּכְׄלַק גְמִיע מָאוָואת וּלַאְרָאצִׄי?“ קָאל נִמְרוֹד סְִּ אַ רָהָם, „אָנָא הוּוָא אַלְדִי כְׄלַקְתַךּ בְֿ לְאַ מָאוָואת סְִּ וּכְׄלַקְתְהוֹם, וּכְׄלַקְתְ גְמִיע אַ אן כְָּ ידִי, אַנְ סִִּ וּלַארָאצִׄי!“ קָאל לוֹ „יָא אַנְתִין עְלָא לְחַק, אְמַר לְסַמְסְ תַזְרַק אן מָא כְָּ רְקְ! וּ שֶַׁ פִֿ וּתְגִׄיבּ בְּ מִן לְגַׄרְ י מִן הָאדָא? לְאִילָהּ אַלְדִי שֶַׁ עְמַלְתְ דַךּ וַחְרַקְתְהוֹם, בְּ קַצַׄרְנִי עְלָא מְעַ א עְלִיךּ וּנְחַרְקַךּ!“ תָּ יְקַצַׄרְנִי חַ From that moment on, Nimrod said to his servants: “This one, if we let him go עָה, אָמַר נִמְרוֹד לַעֲבָדָיו שָָּׁ מֵאוֹתָהּ הַ אעָא, קָאל נִמְרוֹד סִָּ י דַאלַךּ אַ פִֿ יד",
+      "segmentIds": [
+        "research-mayer-ashkenaz-weh-de7c22303f16",
+        "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+        "research-mayer-ashkenaz-128o-55a3625113dc"
+      ],
+      "sourceLocation": "PDF p. 13, segment 7 through PDF p. 14, segment 8",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 13, segment 7 through PDF p. 14, segment 8",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-weh-de7c22303f16",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 41993,
+            "normalizedEndOffset": 42736
+          },
+          {
+            "id": "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 46509,
+            "normalizedEndOffset": 47311
+          },
+          {
+            "id": "research-mayer-ashkenaz-128o-55a3625113dc",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 49560,
+            "normalizedEndOffset": 50345
+          }
+        ]
+      },
+      "provenanceHash": "614643f3b5f91345150552367079dd280dec8bf62b708189d339d8ca44155f7f",
+      "componentProvenanceHashes": [
+        "de7c22303f166388a2540baeaf2ca766c3ab1dfdceb51e5bb399095f16b5982c",
+        "14c4bfbd9640edf9daf7045180f58ddc9cb75a025110aa6c655e05f3c9b984bf",
+        "55a3625113dc2e0564eac2d9da75c8f6edfce35f533c472523bd681a99f7b71a"
+      ],
+      "wordCount": 411,
+      "characterCount": 2334,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Introduce this as a traditional expansion about young Abraham challenging his father's idols and the ruler Nimrod, not part of the basic Exodus outline. Name the characters, summarize the missing transitions, and use it only with an adult or well-facilitated table.",
+      "rationale": "The three source-order intact records preserve the central confrontation in the edition's long Judeo-Arabic Abraham narrative while skipping corrupted intervening continuations; a host bridge is essential but the source's distinctive story remains recognizable.",
+      "creditNotes": "Credit Mayer and separately verify the historical source and translation attribution printed for this Judeo-Arabic narrative.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-credit-check",
+        "missing-transition-bridges-required",
+        "multilingual-render-check",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-exodus-piyyut",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "An Exodus poem from suffering to redemption",
+      "exactText": "Our ancestors were within the land of Egypt, suffering and laboring under Pharaoh king of Egypt’s hand. But they were fruitful and multiplied like earth’s dust, and grew in stature like the Lebanon cedars. You redeemed our ancestors from Egypt, with a strong hand and an outstretched arm. Our ancestors were within the land of Egypt, suffering and laboring under Pharaoh king of Egypt’s hand. But they were fruitful and multiplied like earth’s dust, and grew in stature like the Lebanon cedars. The seed of Yeshurun wore groaning, for the hand of the enemy was high over them. The Living and Enduring heard their voice, the Sovereign, Sovereign of sovereigns, the Holy Blessed One, gave ear to them. A good and upright one THEY raised from them, beloved Moshe in a vision was sent to them.\n\nTogether he showed them the signs of Shaddai, and with distinct plagues the Ḥamites were judged. All their firstborns were given to the slaughter, the first of their wombs to a great disease. Thus a great cry fell within the land of Egypt, weeping and mourning in all her courtyards. From slavery to freedom the beloved ones went out, and none failed from the ranks of their tribes. The Rock of Eternities led them in THEIR goodness, and brought them to the Reed Sea in great compassion. The sea closed them in with its vast waves, the bigot pursued with his vast force. They raised their eyes to the Heights, to beg for compassion from Jacob’s Might. The redeemed of the CAUSE opened their mouths, and praised their Sovereign for THEIR many wonders.\n\nשֵֶׁ דוּת נַפְ פְֶּ תֵֽנוּ וְעַל־ לָּ אֻ גְָּ עַל־ רָאֵל׃ שְָֽׂ אַל יִ גָָּ ָה וֹה יְה תָּ רוּךְ אַ בָּ Thus, CAUSE our God and God of our ancestors, bring us to other festivals and pilgrimages to come to greet us in peace, rejoicing in the building of Your city and celebrating in Your labor. And we will eat there of the sacrifices and paschal offerings from which their blood is brought onto Your altar wall as desired, and we will thank You with a new song for our redemption and the liberation of our souls. Blessed are You, CAUSE, who redeemed Israel. לא",
+      "segmentIds": [
+        "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+        "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+        "research-mayer-ashkenaz-23st-976da6d2a99b"
+      ],
+      "sourceLocation": "PDF p. 31, segment 3 through PDF p. 31, segment 6",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 31, segment 3 through PDF p. 31, segment 6",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 95872,
+            "normalizedEndOffset": 96661
+          },
+          {
+            "id": "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 96662,
+            "normalizedEndOffset": 97412
+          },
+          {
+            "id": "research-mayer-ashkenaz-23st-976da6d2a99b",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 98237,
+            "normalizedEndOffset": 98797
+          }
+        ]
+      },
+      "provenanceHash": "ef249dbf5f03c112d24b50ff5dbdc6914a855998fd844a2fec84a8d69d1db8f5",
+      "componentProvenanceHashes": [
+        "28cedb2aaec130e7c7c6fb23f73233f6671cac50052853faa641f713ab0899bc",
+        "f58c67a6f50b5cfcc724fdc016332a3e4f9e4ac68162970766a149b2ee49c0e4",
+        "976da6d2a99bf8ddf052bf40096687a45640e7e262fd8589327bbdfbc54328e6"
+      ],
+      "wordCount": 375,
+      "characterCount": 2103,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "State the narrative arc before the poem: the Israelites suffered slavery, liberation came through destructive plagues, they crossed the sea, and the liturgy turns toward future celebration. Frame firstborn and enemy-death imagery with sorrow and keep Temple hopes within inherited historical liturgy.",
+      "rationale": "Three source-order intact records form a continuous piyyut from oppression through plagues and escape into the redemption blessing, preserving the edition's traditional poetic voice without relying on corrupted core pages.",
+      "creditNotes": "Credit Mayer and retain the source's attribution for the piyyut and any historical translation.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-credit-check",
+        "nontriumphalist-firstborn-and-sea-framing",
+        "temple-and-land-language-context",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-buber-closing-story",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "A Hasidic closing story",
+      "exactText": "נִרְצָה AcceptableNirtzah Pray that God accepts this good-willed. With us may Jerusalem once more be filled! Prega Iddio che il bon voler’ accetta e che in Gieruscialaim ce rimetta! ְרֵיגַה אִידִיוֹ קֵי אִיל בּוֹן ווֹלֵיר אַצֵיטַה פֶּ ָלִַם צִי רִימֵטַה׃ שֶׁאֵי קֵי אִין יְרוּ From the Venice Haggadah of 1609 To get us into the mood of Nirtzah, let’s start by reading a (slightly edited) passage from Martin Buber’s Tales of the Ḥasidim: In Russia in the early nineteenth century, it was common to draft Jewish boys into the army, in which they were forced to serve to their sixtieth year. They were known as cantonists. On the eve of Passover, a man whose uniform identified him as a cantonist arrived in Koznitz and asked to be admitted to the holy maggid.\n\nWhen he stood in his presence, he begged to be allowed to participate in the Seder, and the maggid gave his permission. When, in the course of the rites of the Seder, they came to the words: “The order of Pesaḥ is concluded,” the guest asked whether he might sing, and his request was granted.After the closing words of the song: “…pəduyim l-Tziyon b-rina,” which means, “redeemed, to Zion in joy,” he cried out in Russian: “Подъём! Podyom!” that is, “Let’s go!” The maggid rose and said in a voice filled with jubilation: “We are ready to go to Zion.” But the guest had vanished. This concluding piyyut fragment, part of a larger cycle by the mid-eleventh century R. Yosef Bonfils, was originally written as a coda to the extensive poetic and halakhic additions for Shabbat haGadol, and first introduced into the seder in the mid-fourteenth century.",
+      "segmentIds": [
+        "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+        "research-mayer-ashkenaz-3hd8-7092887beb15"
+      ],
+      "sourceLocation": "PDF p. 55, segment 1 through PDF p. 55, segment 2",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 55, segment 1 through PDF p. 55, segment 2",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+            "label": "PDF p. 55",
+            "pageNumber": 55,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 161716,
+            "normalizedEndOffset": 162475
+          },
+          {
+            "id": "research-mayer-ashkenaz-3hd8-7092887beb15",
+            "label": "PDF p. 55",
+            "pageNumber": 55,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 162476,
+            "normalizedEndOffset": 163326
+          }
+        ]
+      },
+      "provenanceHash": "d2d62d13fee909270766539625fb54d87b1e009338ccd0391e65a6121d3f1b90",
+      "componentProvenanceHashes": [
+        "317c4f0bd0a80b9e3bb7e9ab55db74fe6893826e6c3c1e10f7bb1a944a95acac",
+        "7092887beb159854c69ccec66703f11c45ab87cce2e64832257177d3e68e791b"
+      ],
+      "wordCount": 279,
+      "characterCount": 1611,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Nirtzah closes the formal Seder and that this is a historical Hasidic story about longing and readiness. Define the military conscription context, identify the quoted Zion language as inherited in the story, and make the long reading optional.",
+      "rationale": "The two adjacent records preserve the complete narrative setup and resolution of the edited Martin Buber story, rather than quoting its final Zion line without its historical frame.",
+      "creditNotes": "Credit Mayer and preserve the printed Martin Buber and Tales of the Hasidim attribution; confirm item-level reuse status before runtime approval.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-rights-and-credit-review",
+        "historical-zion-language-context",
+        "traditional-or-specialist-opt-in",
+        "traditional-without-social-justice-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-western-yiddish-closing-song",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "Western Yiddish build-well song",
+      "exactText": "This text has grown to be a beloved part of the Western Ashkenazi rite, to the point where the traditional German Jewish greeting after the Seder is “Bau gut,” or “build well!” Since Western Yiddish phonology is much closer to standard German than it is to YIVO, this text has been transcribed using German orthography. אַׄלמעכטיגר גאָט , אַלמעכטיגר גאָט, ל שירהפֶּנוּן בּױא דײַן טעמ אַלזוֹ שיר אוּנ אַלזוֹ באַלד אין אוּנדזערן טאַגן שירה יאַ שירה נוּן בּױא, נוּן בּױא, ל שירהפֶּנוּן בּױא דײַן טעמ Allmächtiger Gott, Allmächtiger Gott, Nun bau dein’ Tempel schiere, Also schier und also bald, In unseren Tagen schiere, Ja schiere; Nun bau, nun bau, Nun bau dein’ Tempel schiere.\n\nבׄאַרמהערציגר גאָט , באַרמהערציגר גאָט, נוּן בּױא… Barmherziger Gott, Barmherziger Gott, Nun bau… גׄראָסר גאָט , דׄעמוּטיגר גאָט , נוּן בּױא… Großer Gott, Demütiger Gott, Nun bau… הׄוֹכער גאָט , װׄירדיגר גאָט , זׄיסר גאָט , חׄינ׳טר גאָט , נוּן בּױא… Hoher Gott, Würdiger Gott, Süßer Gott, „Chen“-ter Gott, Nun bau… טׄוּגענדליכר גאָט , יׄוּדישר גאָט , נוּן בּױא… Tugendlicher Gott, Jüdischer Gott, Nun bau… ׄרעפֿטיגר גאָט כְּ, לׄעבענדיגר גאָט , מׄעכטיגר גאָט , נׄאַמהאַפֿטיגר גאָט , סׄענפטיגר גאָט , עׄיבֿיגר גאָט , נוּן בּױא… Kräftiger Gott, Lebendiger Gott, Mächtiger Gott, Namhafter Gott, Sänftiger Gott, Ewiger Gott, Nun bau… פֿׄורכטצוּמר גאָט , צׄימליכר גאָט , קׄעניגליכר גאָט , רׄײכר גאָט , נוּן בּױא… Furchtsamer Gott, Ziemlicher Gott, Königlicher Gott, Reicher Gott, Nun bau… שׄײנר גאָט , תּׄרױטר גאָט , נוּן בּױא… Schöner Gott, Trauter Gott, Nun bau… דוּא בישט גאָט אוּנ׳ קײנר מער, נוּן בּױא… Du bist Gott und Keiner mehr, Nun bau… ס",
+      "segmentIds": [
+        "research-mayer-ashkenaz-3ris-0c268db67dfe",
+        "research-mayer-ashkenaz-3s1m-6a57aba1f373"
+      ],
+      "sourceLocation": "PDF p. 60, segment 2 through PDF p. 60, segment 3",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 60, segment 2 through PDF p. 60, segment 3",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-3ris-0c268db67dfe",
+            "label": "PDF p. 60",
+            "pageNumber": 60,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 175636,
+            "normalizedEndOffset": 176313
+          },
+          {
+            "id": "research-mayer-ashkenaz-3s1m-6a57aba1f373",
+            "label": "PDF p. 60",
+            "pageNumber": 60,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 176314,
+            "normalizedEndOffset": 177255
+          }
+        ]
+      },
+      "provenanceHash": "28d467d9f5148343fa254383157907a086318e3e2398f3c6a4ce5a55a636bf17",
+      "componentProvenanceHashes": [
+        "0c268db67dfeccac6a85f55f80135d66be77b300273f1ebcdbff6db81e67d01c",
+        "6a57aba1f37338080d2d3f79d6f62412e4542ca3d73dcf25f2806e3288d83584"
+      ],
+      "wordCount": 268,
+      "characterCount": 1620,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "playful"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce this as a Western Ashkenazi closing song whose traditional refrain hopes for the Temple's rebuilding. Give a transliteration and one repeated response, explain the historical liturgical meaning, and let guests listen instead of sing.",
+      "rationale": "The adjacent intact records preserve the song's historical note, refrain, and cumulative alphabetic continuation as one specialist musical unit.",
+      "creditNotes": "Credit Mayer and the Western Ashkenazi traditional source identified in the edition; indicate any verses omitted.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "multilingual-render-check",
+        "participation-cue-required",
+        "temple-language-context",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-echad-mi-yodea",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "Who knows one?",
+      "exactText": "ע מִי יוֹדֵֽעַ בַּ אַרְ ע אֲנִי יוֹדֵֽעַ! בַּ אַרְ הוֹת, מֵָּ ע אִ בַּ אַרְ ה אָבוֹת… שֶָׁ ל שְֶׁ Arbaˤ mi yodéaˤ? Arbaˤ ani yodéaˤ! Arbaˤ immahot. Shlosha avot… Four, who knows it? Four, I know it! Four are the matriarchs. Three are the patriarchs… ה מִי יוֹדֵֽעַ שָָּׁ חֲמִ ה אֲנִי יוֹדֵֽעַ! שָָּׁ חֲמִ י תוֹרָה שֵֶׁ ְמֵּ ה חֻ שָָּׁ חֲמִ הוֹת… מֵָּ ע אִ בַּ אַרְ Ḥamisha mi yodéaˤ? Ḥamisha ani yodéaˤ! Ḥamisha ḥumməshei Torah. Arbaˤ immahot… Five, who knows it? Five, I know it! Five are the Pentateuch’s pentas. Four are the matriarchs… ה מִי יוֹדֵֽעַ שְָּׂ שִֶׁ ה אֲנִי יוֹדֵֽעַ! שְָּׂ שִֶׁ נָה שְֶׁ ה סִדְרֵי מִ שָָּׁ שִֶׁ י תוֹרָה… שֵֶׁ ְמֵּ ה חֻ שָָּׁ חֲמִ Shisha mi yodéaˤ? Shisha ani yodéaˤ! Shisha sidrei Mishna. Ḥamisha ḥumməshei Torah… Six, who knows it?\n\nSix, I know it! Six are the Mishnah’s orders. Five are the Pentateuch’s pentas… בְעָה מִי יוֹדֵֽעַ שִֶׁ בְעָה אֲנִי יוֹדֵֽעַ! שִֶׁ תָא, בָּ שֶַׁ בְעָה יְמֵי שִֶׁ נָה… שְֶׁ ה סִדְרֵי מִ שָָּׁ שִֶׁ Shivˤa mi yodéaˤ? Shivˤa ani yodéaˤ! Shivˤa yəmei Shabbata. Shisha sidrei Mishna… Seven, who knows it? Seven, I know it! Seven are the days of the week.… Six are the Mishnah’s orders… מוֹנָה מִי יוֹדֵֽעַ שְֶׁ מוֹנָה אֲנִי יוֹדֵֽעַ! שְֶׁ מוֹנָה יְמֵי מִילָה שְֶׁ תָא… בָּ שֶַׁ בְעָה יְמֵי שִֶׁ Shəmona mi yodéaˤ? Shəmona ani yodéaˤ! Shəmona yəmei mila. Shivˤa yəmei Shabbata… Eight, who knows it? Eight, I know it! Eight are the days of circumcision. Seven are the days of the week… עָה מִי יוֹדֵֽעַ שְֶׁ תִּ עָה אֲנִי יוֹדֵֽעַ! שְֶׁ תִּ עָה יַרְחֵי לֵדָה שְֶׁ תִּ מוֹנָה יְמֵי מִילָה… שְֶׁ Tishˤa mi yodéaˤ?\n\nTishˤa ani yodéaˤ! Tishˤa yarḥe leda. Shəmona yəmei mila… Nine, who knows it? Nine, I know it! Nine are the pregnancy months. Eight are the days of circumcision… רָה מִי יוֹדֵֽעַ ָֹ עֲש רָה אֲנִי יוֹדֵֽעַ! ָֹ עֲש רַֽיָא בְּ רָה דִ שָָֽׂ עֲ עָה יַרְחֵי לֵדָה… שְֶׁ תִּ ˤAsara mi yodéaˤ? ˤAsara ani yodéaˤ! ˤAsara dibráya. Tishˤa yarḥe leda… Ten, who knows it? Ten, I know it! Ten are the commandments. Nine are the pregnancy months… ר מִי יוֹדֵֽעַ שָָֽׂ אַחַד עָ ר אֲנִי יוֹדֵֽעַ! שָָֽׂ אַחַד עָ איָּוֹכְבַֽ כְּר שָָֽׂ אַחַד עָ רַֽיָא… בְּ רָה דִ שָָֽׂ עֲ Aḥad-ˤasar mi yodéaˤ? Aḥad-ˤasar ani yodéaˤ! Aḥad-ˤasar kokhváyya. ˤAsara dibráyya… Eleven, who knows it? Eleven, I know it! Eleven are [Joseph’s] stars. Ten are the commandments… סב",
+      "segmentIds": [
+        "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+        "research-mayer-ashkenaz-3uy4-6b36896af084",
+        "research-mayer-ashkenaz-3vkg-a4f092b9792a"
+      ],
+      "sourceLocation": "PDF p. 62, segment 1 through PDF p. 62, segment 3",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 62, segment 1 through PDF p. 62, segment 3",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+            "label": "PDF p. 62",
+            "pageNumber": 62,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 179309,
+            "normalizedEndOffset": 180075
+          },
+          {
+            "id": "research-mayer-ashkenaz-3uy4-6b36896af084",
+            "label": "PDF p. 62",
+            "pageNumber": 62,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 180076,
+            "normalizedEndOffset": 180879
+          },
+          {
+            "id": "research-mayer-ashkenaz-3vkg-a4f092b9792a",
+            "label": "PDF p. 62",
+            "pageNumber": 62,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 180880,
+            "normalizedEndOffset": 181617
+          }
+        ]
+      },
+      "provenanceHash": "801f0452f3a1087d1c790c0d07a8b0820b0747c70b8b213f9c1029b72cead286",
+      "componentProvenanceHashes": [
+        "a6c5567d2bf89d3ef09fdedbd6d5684cc8f3994e80cb80746670423de73ce09c",
+        "6b36896af0845c180554b33b6fd4126493eec179fe4e4cf39a77ea10a531dd44",
+        "a4f092b9792a900bbe6b4574faa89899d17339ab9c3e706dd6e58174e40685a5"
+      ],
+      "wordCount": 407,
+      "characterCount": 2310,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Tell guests this is a cumulative number song near the end of the Seder. Teach the question-and-response pattern, clarify unfamiliar references only when they first appear, and stop at a natural number if time is short.",
+      "rationale": "Three consecutive intact records preserve the middle-to-late cumulative structure and the edition's inclusive wording, making a usable participatory closing activity.",
+      "creditNotes": "Credit Mayer and identify the traditional cumulative song; note any shortened verse range.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "multilingual-render-check",
+        "optional-shortened-ending",
+        "participation-cue-required",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-multilingual-chad-gadya-game",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "A multilingual Chad Gadya guessing game",
+      "exactText": "Ḥad Gadya On the next few pages I’ll be including the final verses of a bunch of different languages, and we’ll try to guess which one is which. Some are traditional Jewish languages while others are original translations. Each group will have a bank of possible guesses for you to assign. Let’s do this! Section 1:ֽAramaics Guess bank: Normative Aramaic, Gramatically Corrected Aramaic , Hulaulá (Sanadanj Neo-Aramaic), Lishana Deni (Zakho Neo-Aramaic), Tărgŭn Bìyènlìyén Dì (alternate-universe Chinese Neo-Aramaic which went through tonogenesis) va-ăṯå Quḏšå Briḵ Hu, u-nḵēs yåṯ mal’ăḵa d- moṯa, di-nḵēs yåṯ ṭabbåḥå, di-nḵēs yåṯ torå, di- šṯē yåṯ mayyå, d-aḏˤiḵu yåṯ nurå, d-oqiḏ yåṯ ḥuṭråˤ di-mḥē yåṯ kalbå, di-nḵēt l-šunnårå, da- ăḵal yåṯ gaḏyå, di-zḇēn abbå bi-ṯrē zuzē, gaḏyå ḥăḏa, gaḏyå ḥăḏå.\n\nמוֹתָא דְֵּ רִיךְ הוּא, וּנְכֵיס יָת־מַלְאֲכָא בְּ א שֶָׁ וַאֲתָא קוּדְ א,יָּ תֵי יָת־מַ שְֶׁ דִֵּ נְכֵיס יָת־תּוֹרָא, דִֵּ חָא, בָּ נְכֵיס יָת־טַ דִֵּ מְחֵי דִֵּ אוֹקִיד יָת־חוּטְרָא, דְֵּ אַדְעִיכוּ יָת־נוּרָא, דְֵּ זְבֵין דִֵּ דְיָא, גַָּ אֲכַל יָת־ דֵַּ רָא, נֶָּ וּשֶׁ נְכֵית לְ דִֵּ א, בָּ לְ כְַּ יָת־ דְיָא חֲדָא׃ גַָּ דְיָא חֲדָא, גַָּ תְרֵי זוּזֵי, בִּ א בָּ אַ hiye haQadoš Barux Hu, frišta molăke dəbḥale, ke qăṣābăke dəbḥale, ke tortăke dəbḥale, ke make štenila, ke nurăke mtixlu, ke ṣiwăke məqle ke kalbăke dile, ke qaṭwăke ngzale, ke ʾəzzonăke xilale, ʾəzzonăke tati šəqlale tre šahiye, xa ʾəzza, xa ʾəzza.\n\nחַלֵי בְּ דְֵּ י כְֵּ א מוֹלֲ תַּ שְֶׁ רוּךְ הוּא, פְרִי בָּ שֶׁדוֹ קָָּ הִיֵי הַ נִילַה, תֵּ שְֶׁ י כְֵּ מַ כְֵּ חַלֵי, בְּ דְֵּ י כְֵּ תֲּ תּוֹרְ כְֵּ חַלֵי, בְּ דְֵּ י כְֵּ בֲּ קֲצַא כְֵּ י כְֵּ קַטְוֲ כְֵּ ילֵי, דִֵּ י כְֵּ בֲּ לְ כְַּ כְֵּ י מְקְלֵי, כְֵּ צִיוֲ כְֵּ כְלוּ, תִּ י מְ כְֵּ נוּרֲ כְֵּ הִיֵי, שֶַׁ רֵי תְּ קְלַלֵי שְֶׁ י תִּ תַּ י כְֵּ וֹנֲ זֶּ י כִילַלֵי, עְ כְֵּ וֹנֲ זֶּ עְ כְֵּ נְגְזַלֵי, א׃\n\nזֶַּ א, כַא עְ זֶַּ כַא עְ wì-kádŏxì bălŭhŭ mádē dāwăr, wì-tú nà-ĕi mărăhă măwĕtì, tú nà-ĕi xōhèdì dì, tú nà-ĕi níw dì, hē nà-ĕi mĕi dì, mìyè nà-ĕi nŭr dì, xāw nà-ĕi gān dì, dăqī nà-ĕi gŏ dì, nĭhĕtì nà-ĕi māw dì, mĭhăr nà-ĕi gădìyă dì, băbá zăbĕn wì-sídì tìr-ĕi qén dì, hād-ĕi gădìyă, hād-ĕi gădìyă ֬ל֬וּה֬וּ מַ֥דֵ֨י דַ֨וַ֬ר וִ֖ת֥וּ נַ֖אֵ֬י מַ֬רַ֬הַ֬א מַ֬וֵ֬תִ֖י ת֥וּ נַ֖אֵ֬י בַּ ֥ד֬וֹשִ֖י כְַּ וִ֖ ש֨וֹהֵ֖דִ֖י דִ֖י ת֥וּ נַ֖אֵ֬י נִ֥ו דִ֖י הֵ֨י נַ֖אֵ֬י מֵ֬י דִ֖י מִ֖יֵ֖י נַ֖אֵ֬י נ֬וּר דִ֖י שַ֨ו נַ֖אֵ֬י גַ֨ן דִ֖י דַ֬גִׄ֨י נַ֖אֵ֬י ג֬וֹ דִ֖י נִ֬הֵ֬תִ֖י נַ֖אֵ֬י מַ֨ו דִ֖י מִ֬הַ֬ר נַ֖אֵ֬י גַ֬דִ֖יַ֬א דִ֖י בַ֬בַ֥א זַ֬בֵ֬ן וִ֖סִ֥דִ֖י טִ֖רֵ֬י גֵ֥ׄן דִ֖י הַ֨דֵ֬י גַ֬דִ֖יַ֬א, הַ֨דֵ֬י גַ֬דִ֖יַ֬א׃ sēle haQadoš Barux Hu, ẓbaḥle daw malax ha- mavet, d-ẓbaḥle daw šoḥeṭ, d-ẓbaḥle daw tōra, d-štēle daw māya, d-močvele daw nura, d- moqezle daw ʿaṣṣa, d-mxēle daw kalba, d-ngzla daw qaṭūsa, d-bxılla daw gadya, d-zunne babi bitre zuze, ḥad gadya, ḥad gadya, babi zunne tre zuze.",
+      "segmentIds": [
+        "research-mayer-ashkenaz-3xmz-ceaa08384105",
+        "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+        "research-mayer-ashkenaz-3yqh-59a48139de78",
+        "research-mayer-ashkenaz-3z1z-969ac85afd71"
+      ],
+      "sourceLocation": "PDF p. 64, segment 1 through PDF p. 64, segment 4",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 64, segment 1 through PDF p. 64, segment 4",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-3xmz-ceaa08384105",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 183563,
+            "normalizedEndOffset": 184362
+          },
+          {
+            "id": "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 184363,
+            "normalizedEndOffset": 184984
+          },
+          {
+            "id": "research-mayer-ashkenaz-3yqh-59a48139de78",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 184985,
+            "normalizedEndOffset": 185398
+          },
+          {
+            "id": "research-mayer-ashkenaz-3z1z-969ac85afd71",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 185399,
+            "normalizedEndOffset": 186361
+          }
+        ]
+      },
+      "provenanceHash": "f88ba1c7f0b26bf2034506722dafdf03e34b3d7dfff56fdce737247259fb0369",
+      "componentProvenanceHashes": [
+        "ceaa083841051d3307347d3333df87e488398afc582848b8785fc650e1ad641f",
+        "55ce2a5a17922920366059426591388fbe1273801a99c063b6782eeed99d45f1",
+        "59a48139de784e8dfd556911ca80b5d1c08a733bf50c51108c266226cd695f3c",
+        "969ac85afd71905fb35f712cd8f998f3a2021d38a3020a4ded506d5df0597cf6"
+      ],
+      "wordCount": 468,
+      "characterCount": 2801,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Explain that this is an optional language game based on the final Chad Gadya verse, not a required ritual. Read the ordinary English pattern first, divide guests into teams only if they want to play, and avoid assuming knowledge of any language.",
+      "rationale": "Four consecutive intact records preserve the game's instructions and first group of Aramaic variants, a coherent specialist activity that should never replace the basic closing orientation.",
+      "creditNotes": "Credit Mayer and separately preserve or verify the attribution of each translation included in the selected game.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "multilingual-render-check",
+        "participation-optional",
+        "plain-language-chad-gadya-summary-required",
+        "specialist-language-game-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mayer-ashkenaz-chad-gadya-call-and-response",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "title": "Chad Gadya call and response",
+      "exactText": "Now I’m going to teach you all the melody my family uses for Chad Gadya, and we’ll be singing the whole thing. It’s a call and response, so you’ll catch on fast. That my father bought for two coins, One kid-goat, one kid-goat D-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! תְרֵי זוּזֵי בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד And then came the cat, And ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata shunra, v-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! וּנְרָא שֶׁוַאֲתָא וְאָכְלָא לְגַדְיָא, תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד And then came the dog, And bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata khalba, v-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! א בָּ וַאֲתָא כַלְ וּנְרָא, שֶׁ ךְ לְ שֶַׁ וְנָ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד עד\n\nAnd then came the stick, And beat the dog, That bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata ḥutra, v-hikka l-khalba, d-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! וַאֲתָא חוּטְרָא א, בָּ ה לְכַלְ כְָּ וְהִ וּנְרָא, שֶׁ ךְ לְ שֶַׁ נָ דְֵּ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד And then came the fire, And burned the stick, That beat the dog, That bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata nura, v-saraf l-ḥutra, d-hikka l-khalba, d-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya!\n\nוַאֲתָא נוּרָא רַף לְחוּטְרָא, שָָֽׂ וְ א, בָּ ה לְכַלְ כְָּ הִ דְֵּ וּנְרָא, שֶׁ ךְ לְ שֶַׁ נָ דְֵּ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד And then came the water, And quenched the fire, That burned the stick, That beat the dog, That bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata mayya, v-khava l-nura, d-saraf l-ḥutra, d-hikka l-khalba, d-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! איָּ וַאֲתָא מַ וְכָבָא לְנוּרָא, רַף לְחוּטְרָא, שָָֽׂ דְֵּ א, בָּ ה לְכַלְ כְָּ הִ דְֵּ וּנְרָא, שֶׁ ךְ לְ שֶַׁ נָ דְֵּ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד And then came the ox, And drank the water, That quenched the fire, That burned the stick, That beat the dog, That bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata tora, v-shata l-mayya, d-khava l-nura, d-saraf l-ḥutra, d-hikka l-khalba, d-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! וַאֲתָא תוֹרָא א,יָּ תָה לְמַ שֶָׁ וְ כָבָא לְנוּרָא, דְֵּ רַף לְחוּטְרָא, שָָֽׂ דְֵּ א, בָּ ה לְכַלְ כְָּ הִ דְֵּ וּנְרָא, שֶׁ ךְ לְ שֶַׁ נָ דְֵּ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃ גַָּ דְיָא, חַד גַָּ חַד עה\n\nAnd then came the slaughterer, And slaughtered the ox, That drank the water, That quenched the fire, That burned the stick, That beat the dog, That bit the cat, That ate the kid-goat, That my father bought for two coins, One kid-goat, one kid-goat. V-ata shoḥet, v-shaḥat l-tora, d-shata l-mayya, d-khava l-nura, d-saraf l-ḥutra, d-hikka l-khalba, d-nashakh l-shunra, d-akhla l-gadya, d-zabbin abba bi-trei zuzei, ḥad gadya, ḥad gadya! וֹחֵט שֶׁוַאֲתָא חַט לְתוֹרָא, שֶָׁ וְ א,יָּ תָה לְמַ שֶָׁ דְֵּ כָבָא לְנוּרָא, דְֵּ רַף לְחוּטְרָא, שָָֽׂ דְֵּ א, בָּ ה לְכַלְ כְָּ הִ דְֵּ וּנְרָא, שֶׁ ךְ לְ שֶַׁ נָ דְֵּ אָכְלָא לְגַדְיָא, דְֵּ תְרֵי זוּזֵי, בִּ א בָּ ין אַ בִּ זַ דְֵּ דְיָא׃",
+      "segmentIds": [
+        "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+        "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+        "research-mayer-ashkenaz-4wdb-8d560939e426",
+        "research-mayer-ashkenaz-4xg5-81c8c68b4bca"
+      ],
+      "sourceLocation": "PDF p. 74, segment 3 through PDF p. 76, segment 1",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 74, segment 3 through PDF p. 76, segment 1",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "componentLocators": [
+          {
+            "id": "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+            "label": "PDF p. 74",
+            "pageNumber": 74,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 226793,
+            "normalizedEndOffset": 227827
+          },
+          {
+            "id": "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+            "label": "PDF p. 75",
+            "pageNumber": 75,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 227828,
+            "normalizedEndOffset": 228574
+          },
+          {
+            "id": "research-mayer-ashkenaz-4wdb-8d560939e426",
+            "label": "PDF p. 75",
+            "pageNumber": 75,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 228575,
+            "normalizedEndOffset": 229972
+          },
+          {
+            "id": "research-mayer-ashkenaz-4xg5-81c8c68b4bca",
+            "label": "PDF p. 76",
+            "pageNumber": 76,
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+            "normalizedStartOffset": 229973,
+            "normalizedEndOffset": 230654
+          }
+        ]
+      },
+      "provenanceHash": "667e4710cc856cbb7e972da67f2c1b6042e3607069e06f913659401dec4ec603",
+      "componentProvenanceHashes": [
+        "cc9f3be95df99b8b21029ee84628ab285618ec6910562ce727f4b9248ccf4e97",
+        "d5a4d27cf9dde2f4f151bdef291c20df6ba3ec2343482c520c6367dd3033a5d1",
+        "8d560939e42612c3bf43ac2db92b1f50ce859b87853dcc24c383c4c86f00b92c",
+        "81c8c68b4bcaa3495864accdd3858f0e17f1b7638dd0bb335aaa5d11370a6028"
+      ],
+      "wordCount": 676,
+      "characterCount": 3864,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "closing-reflection",
+      "beginnerContext": "Tell guests that Chad Gadya is a playful cumulative end song and teach the repeated line before beginning. Make singing optional, explain that the chain becomes violent in a folktale-like way, and allow an early stop for children or time.",
+      "rationale": "Four consecutive intact records preserve the author's melody instruction and the song's rising call-and-response chain, providing a more accessible closing choice than the specialist guessing game.",
+      "creditNotes": "Credit Mayer and identify Chad Gadya as a traditional song in the final source page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-folktale-violence-context",
+        "multilingual-render-check",
+        "optional-shortened-ending",
+        "participation-cue-required",
+        "traditional-or-specialist-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "velveteen-rabbi",
+  "sourceTitle": "The Velveteen Rabbi's Haggadah for Pesach",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat.",
+    "license": "custom-owner-permission",
+    "conditions": [
+      "Credit Rachel Barenblat",
+      "Share freely and do not sell",
+      "Preserve printed credits for embedded material"
+    ],
+    "primaryUrl": "https://velveteenrabbi.com/2025/04/04/new-edition-of-the-vr-haggadah/"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-velveteen-rabbi-preparing-the-table",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Preparing people, objects, and expectations",
+      "exactText": "Welcome / how to use this book Welcome to the Velveteen Rabbi’s Haggadah for Pesach! Here are some ‘liner notes’ to start you on your journey. There is more in this haggadah than could be used at any seder. I hope you’ll touch on each of the 15 steps of the seder, conveniently numbered 1-15. Often there are multiple selections for a given prayer / piece of story (e.g. there are six versions of The Four Children!) so you can choose the one that speaks to you this year. Feel free also to augment this with selections from other haggadot or other readings/prayers/poems/meditations that move you—or to use this to augment the haggadah you’re accustomed to using. (Please note that this haggadah features a non-traditional Birkat Hamazon / Grace After Meals; if you want the full traditional text, it's easily findable online.)\n\nIn preparing for your seder, you might want to have: • a goblet of wine or juice for Elijah and a goblet of water for Miriam; • salt water on the table (in which participants will dip something green;) • wine or grape juice for everyone, enough for four symbolic cups apiece; • matzah (at least three pieces; enough for everyone at the table to taste;) • a seder plate, or a big plate with little bowls for different ritual items; • optional: scallions with which to beat each other during Dayenu (Persian custom) Many traditional seder plates include five items: • zeroa , a roasted shank bone representing the Paschal lamb, the holiday offering made in Temple days (vegetarians today often use a roasted beet for its blood-red color, or a roasted sweet potato for the pun of calling it the Paschal Yam;)\n\n• beitzah , a roasted egg (symbol of re/birth; maybe also symbol of the fallen Temple) • maror , the bitter herb (often horseradish), symbolizing the bitterness of slavery; • karpas , the green vegetable, symbolizing spring growth and renewal; • charoset , a mixture of apples/nuts/cinnamon (following a common Ashkenazic recipe) or dried fruit/nuts/honey (following a common Sefardic one), representing the clay or mortar used by the Israelite slaves. Optional additions include: • an orange , representing the inclusion of all genders and sexualities at the table; • an olive , representing hopes for peace in the Middle East and everywhere; • and other items; a quick internet search will yield all kinds of ideas! In this, as in the whole seder experience, do what feels right to you, and don’t be afraid to take risks. The Passover story is all about risk and its reward. May your celebration of Passover be meaningful, and may it enrich and expand your sense of yourself, your relationship with your community, and your connection with your Source! Rabbi Rachel Barenblat 3",
+      "segmentIds": [
+        "research-velveteen-rabbi-zl-561e71343ef8",
+        "research-velveteen-rabbi-1mm-e77d133da47d",
+        "research-velveteen-rabbi-290-5f2cd0161e36"
+      ],
+      "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 3",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 3",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-zl-561e71343ef8",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 1281,
+            "normalizedEndOffset": 2109
+          },
+          {
+            "id": "research-velveteen-rabbi-1mm-e77d133da47d",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 2110,
+            "normalizedEndOffset": 2915
+          },
+          {
+            "id": "research-velveteen-rabbi-290-5f2cd0161e36",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 2916,
+            "normalizedEndOffset": 3995
+          }
+        ]
+      },
+      "provenanceHash": "4a65c5225acac8f0588636ed7735c5ac3358a7c2946fb530497c711c7908e28b",
+      "componentProvenanceHashes": [
+        "561e71343ef8658b0e3805fc9a78150209a4328294c0d3e489b81cd28ec197aa",
+        "e77d133da47d36e7732ec6e32b8535f9aec5e6bdb1d574fd8151d1261b5dff37",
+        "5f2cd0161e36f6d375949723e9b63132f62a30bcff7a29ef74afc9c175f61bdd"
+      ],
+      "wordCount": 465,
+      "characterCount": 2716,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Use this before the Seder to explain what guests will read, eat, ask, and do. Add a simple checklist naming the plate, matzah, wine or grape juice, salt water, basin, towels, and optional additions.",
+      "rationale": "The three adjacent preparation records form an unusually strong host-and-guest orientation in the source's own voice, reducing the need for generic AI-written setup.",
+      "creditNotes": "Credit Rabbi Rachel Barenblat and observe the share-with-credit, do-not-sell condition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "plain-language-object-checklist-required",
+        "turn-taking-invitation-required",
+        "wine-or-grape-juice-explicit"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-opening-the-seder",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Entering sacred time together",
+      "exactText": "Opening Prayer We read responsively: Long ago at this season, our people set out on a journey. On such a night as this, Israel went from degradation to joy. We give thanks for the liberation of days gone by. And we pray for all who are still bound. Eternal God, may all who hunger come to rejoice in a new Passover. Let all the human family sit at Your table, drink the wine of deliverance, eat the bread of freedom: Freedom from bondage and freedom from oppression Freedom from hunger and freedom from want Freedom from hatred and freedom from fear Freedom to think and freedom to speak Freedom to teach and freedom to learn Freedom to love and freedom to share Freedom to hope and freedom to rejoice Soon, in our days Amen. 1 [Woodcut by Yaron Livay] 1 Adapted from Gates of Freedom , (New Jersey: Behrman House, 1982), p. 3. 4\n\nOpening Prayer In Difficult Times What does it mean this year to celebrate freedom? What does it mean this year to claim we are free? Are we free to speak – or only if we hold the “right” opinions? Are we free to be who we are – or only if we fit a certain mold? Can we celebrate liberation when innocents are shackled? When “give me your tired, your poor” seems out of style? When communities live in fear, Seder’s journey feels hollow. What does Seder mean this year? What if we don’t feel free? Sometimes Seder is about hope we don’t yet know how to feel. We are not the first generation to live Passover in tight times. We welcomed Elijah to our door during the Crusades. We sang Seder songs in the Warsaw Ghetto and in the camps. The world is not yet healed or whole. There is no sign of redemption. That has never stopped us from building, singing, retelling, yearning. The way things have been is not the only way the world can be. It is our covenant to seek greater freedom for all who are bound. Dr. King knew, “Injustice anywhere is a threat to justice everywhere.” Justice everywhere is our destination. May this seder be our fuel. 2 (R. Rachel Barenblat) 2 Originally published at Velveteen Rabbi, 2025 5\n\nWelcome In the northern hemisphere, Passover coincides with the beginning of spring: a time for renewal, rethinking, rebirth. We throw open the windows of our houses, we sweep away winter's grit and dust. The story of Passover is a story of liberation and new beginnings. May this Passover give us the insight and courage to create ourselves anew. Sanctuary O Lord, prepare me to be a sanctuary, pure and holy, tried and true And in thanksgiving I'll be a living sanctuary for You! V'asu li mikdash v'shachanti b'tochamVa-anachnu n'varech Yah Me-ata v'ad olam! וְעַשׁוּ ליִ מִקְדַשׁ וְשָׁכָנְתִי בְּתוֹֹכַם וְאָנַחְנוּ נְבָרֵך יָה מֵעֵתָה וְעֵד עוֹֹלַם! Order! Order! \"Seder\" comes from לסדר / l’sader , to arrange, and there’s a set order to the proceedings: Kadesh Recite the kiddush Urchatz Wash the hands Karpas Eat a green vegetable Yachatz Break the middle matzah Maggid Tell the Pesach story Rakhtzah Wash the hands Motzi Say the Ha-Motzi Matzah Say the blessing for matzah Maror Eat the bitter herb Korekh Eat bitter herb with matzah Shulkhan Orekh Serve the festive meal Tzafun Eat the Afikoman Barekh Say the grace after meals Hallel Recite the Hallel Nirtzah Conclude the seder 6",
+      "segmentIds": [
+        "research-velveteen-rabbi-330-8d172ea368a4",
+        "research-velveteen-rabbi-3q2-bbafe9a569d3",
+        "research-velveteen-rabbi-4nv-c126a43ae858"
+      ],
+      "sourceLocation": "PDF p. 4, segment 1 through PDF p. 6, segment 1",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 4, segment 1 through PDF p. 6, segment 1",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-330-8d172ea368a4",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 3996,
+            "normalizedEndOffset": 4825
+          },
+          {
+            "id": "research-velveteen-rabbi-3q2-bbafe9a569d3",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 4826,
+            "normalizedEndOffset": 6042
+          },
+          {
+            "id": "research-velveteen-rabbi-4nv-c126a43ae858",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 6043,
+            "normalizedEndOffset": 7233
+          }
+        ]
+      },
+      "provenanceHash": "57dae8079005fde242bfb124b4efee4105268bfe6827a1661af314adf5141b5f",
+      "componentProvenanceHashes": [
+        "8d172ea368a49d2e173d35890617effee36115a7d5acaf6ef6517895ab14a529",
+        "bbafe9a569d36ead6b7fc4d73194778cce937fbfc234c86a63c2e003a4f9e193",
+        "c126a43ae858fd4e3820d162b4b38aeae0bd9f62b8eabc211bf9d9adceacea43"
+      ],
+      "wordCount": 576,
+      "characterCount": 3239,
+      "sectionIds": [
+        "kadesh",
+        "urchatz"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Say that the first cup contains wine or grape juice and that the opening marks a change from ordinary dinner to a shared ritual. Explain the first handwashing and offer both self-washing and pouring for one another over a basin.",
+      "rationale": "The opening records create a cohesive threshold from gathering and intention into the first ritual acts, well suited to the source's contemplative voice.",
+      "creditNotes": "Credit Barenblat and preserve any printed credit attached to the opening poem or blessing.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "host-action-cues-required",
+        "mutual-handwashing-option-required",
+        "wine-or-grape-juice-explicit"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-questions-and-telling",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Questions that open the story",
+      "exactText": "קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 5.מַגִּיד Maggid: Tell the Story Maggid , the Hebrew word for “story,” is at the root of the word haggadah . In re-telling the story of the Exodus, we speak ourselves into our communal past. A Story About Stories When the Baal Shem Tov saw misfortune threatening the Jews, he would go into the the forest to meditate. He would light a fire and say a prayer and the trouble would be averted. Later his disciple, the Maggid of Mezritch, would go to the same place and say: \"Master of the Universe, listen! I cannot light the fire, but I know the place and I can say the prayer.\" Still later, Rabbi Moshe-Leib of Sasov would go into the forest and say: \"I cannot light the fire, I do not know the prayer, but I know the place.\" Today we call out to God, \"I am unable to light the fire and I do not know the prayer; I cannot even find the forest. All I can do is tell the story, and this must be enough.\" This is the longest section of the seder. Enjoy... and don't be afraid to fortify yourself with a snack, and/or to cherrypick texts/songs as needed! 18\n\nMaggid With maggid we tell the story, The exodus from degradation to dignity, M'g'nut l'shevach, From slavery to freedom. Each of us is to tell this story and we who do so at length are surely to be praised. But this collective story of the journey from slavery to freedom is not the entirety of the tale. Each of us bears our own stories which relate our journeys, our paths to freedom. If each of us must relate our people's story all the more so should we be praised for continuing the story adding the individual strands which make our identity, which explain our journeys. To journey is to prepare, to leave, to travel, to wander and wonder. To journey is to arrive, to accustom, to question, to change, to remain as we were, yet touched by the journey. What are our journeys from slavery to liberation from alienation to community from afar to within from foreign to familiar from anxiety to comfort from narrow spaces to expanse? As we answer, we continue maggid . We tell our stories. (Lisa S. Greene) from Open Closed Open And what is my life span? I'm like a man gone out of Egypt: the Red Sea parts, I cross on dry land, two walls of water, on my right hand and on my left. Pharaoh's army and his horsement behind me. Before me the desert, perhaps the Promised Land too. That is my life span. (Yehuda Amichai) 19\n\nOnce Were Slaves עֲבָדִים הָיִינוּ לְפַרְעֹה בְּמִצְריִם. וַיּוֹצִיאֵנוּ יְיָ אֱלֹהֵינוּ מִשָּׁם בְּיָד חֲזָקָה וּבִזְרוֹעַ נְטוּיָה, וְאִלּוּ לֹא הוֹצִיא הַקָּדוֹשׁ בָּרוּךְ הוּא אֶת־אֲבוֹתֵינוּ מִמִּצְרַיִם, הֲרֵי אָנוּ וּבָנֵינוּ וּבְנֵי בָנֵינוּ, מְשֻׁעְבָּדִים הָיִינוּ לְפַרְעֹה בְּמִצְרָיִם. וַאֲפִילוּ כֻּלָּנוּ חֲכָמִים, כֻּלָּנוּ נְבוֹנִים, כֻּלָּנוּ זְקֵנִים, כֻּלָּנוּ יוֹדְעִים אֶת־הַתּוֹרָה, מִצְוָה עָלֵינוּ לְסַפֵּר בִּיצִיאַת מִצְרָיִם. וְכָל הַמַּרְבֶּה לְסַפֵּר בִּיצִיאַת מִצְרַיִם, הֲרֵי זֶה מְשֻׁבָּח: Avadim hayyinu l’far’oh b’mitzrayim, v’yotzi-ehnu Adonai Eloheynu mi-sham b’yad khazakah u’vizro’a n’tuyah, v'ilu lo hotzi ha-Kadosh Baruch Hu et-avoteinu mi-Mitzrayim, harei anu u-vaneinu u'vnei vaneinu, m'shuabadim hayyinu l'Pharaoh b'Mitzrayim. V'afilu kulanu chachamim, kulanu k'vonim, kulanu z'keinim, kulanu yod'im et-ha-Torah, mitzvah aleinu l'saper b'y'tziat Mitzrayim. V'chol hamarbeh l'saper bitziyat Mitzrayim, harei zeh m'shubach. We were slaves to a Pharaoh in Egypt, and the Eternal led us out from there with a mighty hand and an outstretched arm. Had not the Holy One led our ancestors out of Egypt, we and our children and our children’s children would still be enslaved. Therefore, even if all of us were wise, all-discerning, scholars, sages and learned in Torah, it would still be our duty to tell the story of the Exodus. \"Avadim hayinu; ata b’nei chorin. We were slaves, but now we are free.\" Are there ways in which we are still enslaved? To what or to whom? Are there ways in which others are still enslaved? To what or to whom? What will we do to help shed those constrictions? 20\n\nEvery Person Needs to Have A Certain Egypt Every person needs to have a certain Egypt To draw themselves from it With a strong arm, or with grinding teeth. Every person needs terror and great darkness, and comfort and promise and salvation, that they would know to look toward heaven. Every person needs one prayer that would always be on their lips. A person needs – one time – to bend over. Every person needs to have a certain Egypt, To redeem themselves from it, from slavery, to go out at night to the desert of fears, to march straight into the waters, to see them open on both sides. Every person needs a shoulder, on which to carry the bones of Joseph, Every person needs to straighten their backs. Every person needs to have a certain Egypt, and a Jerusalem, and one long journey, that they will forever remember in their feet. (Amnon Ribak) [Woodcut by Yaron Livay] Why Is Tonight Different? Because on all other nights, we are divided on many issues, political, social and religious, but on this night, we remember as we sit together that we are one people wth a long history and rich intellectual heritage, and we need to be a light unto the nations for the good of humankind and the world. 5 (Chaim Hames) 5 A Quest for Our Times: The Louis Jacobs Haggadah . 21\n\nThe Questions It is traditional for the youngest person at a seder to ask four questions. (It’s actually one question with four answers.) We know the question, and we know the answers, but we ask anyway because there is always something to learn. No matter how “wise” we become, we must remember to question. מַה נִּשְׁתַּנָּה הַלַּיְלָה הַזֶּה מִכָּל הַלֵּילוֹֹת? שֶׁבְּכָל הַלֵּילוֹֹת אָנוֹ אוֹֹכְלִין חָמֵץ וּמַצָּה. הַלַּיְלָה הַזֶּה כֻּלּוֹ מַצָּה: שֶׁבְּכָל הַלֵּילוֹֹת אָנוּ אוֹֹכְלִין שְׁאָר יְרָקוֹֹת הַלַּיְלָה הַזֶּה מָרוֹֹר: שֶׁבְּכָל הַלֵּילוֹֹת אֵין אָנוּ מַטְבִּילִין אֲפִילוּ פַּעַם אֶחָת. הַלַּיְלָה הַזֶּה שְׁתֵּי פְעָמִים: שֶׁבְּכָל הַלֵּילוֹֹת אָנוּ אוֹֹכְלִין בֵּין יוֹשְׁבִין וּבֵין מְסֻבִּין. הַלַּיְלָה הַזֶּה כֻּלָּנוּ מְסֻבִּין: Mah nishtanah halaila hazeh mikol halaylot? Shebakhol halaylot anu okhleen khamaytz u’matzah, halaila hazeh kulo matzah. Shebakhol halaylot anu okhleen sh’ahr y’rakot, halaila hazeh maror. Shebakhol halaylot ayn anu matbeeleen afeelu pa’am akhat, halaila hazeh sh’tay f’ameem. Shebakhol halaylot anu okh’leen beyn yoshveen u’vayn m’subeen, halaila hazeh kulanu m’subeen. 22\n\nWhy is tonight different from all other nights? 1 . On all other nights we may eat either leavened bread or matzah; tonight, only matzah (that we may recall the unleavened bread our ancestors baked in haste). 2. On all other nights we may eat a variety of herbs; tonight, we eat bitter herbs (that we may recall the suffering of slavery). 3. On all other nights we needn’t dip our food in condiments even once; tonight we dip twice (in saltwater to remember our tears when we were enslaved, and in haroset to remember the mortar and the bricks which we made). 4. On all other nights we may eat sitting up or reclining; tonight, we recline (to remind ourselves to savor our liberation). ...and We Also Ask In the coming year, how do you hope to bring yourself closer to freedom? In the coming year, what is one action you will take to bring others closer to freedom? What obligations does our relative degree of freedom place on us? What do we owe to people who are not free? Anyone who wishes to may answer. 23",
+      "segmentIds": [
+        "research-velveteen-rabbi-ig7-384a7cdd926a",
+        "research-velveteen-rabbi-jgy-fac0bf1178b5",
+        "research-velveteen-rabbi-khq-462aa47e42fc",
+        "research-velveteen-rabbi-lr0-bfa7e26e26cd",
+        "research-velveteen-rabbi-mqf-825349f5b7b5",
+        "research-velveteen-rabbi-nls-338340d21a88"
+      ],
+      "sourceLocation": "PDF p. 18, segment 1 through PDF p. 23, segment 1",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 18, segment 1 through PDF p. 23, segment 1",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-ig7-384a7cdd926a",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 23911,
+            "normalizedEndOffset": 25233
+          },
+          {
+            "id": "research-velveteen-rabbi-jgy-fac0bf1178b5",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 25234,
+            "normalizedEndOffset": 26557
+          },
+          {
+            "id": "research-velveteen-rabbi-khq-462aa47e42fc",
+            "label": "PDF p. 20",
+            "pageNumber": 20,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 26558,
+            "normalizedEndOffset": 28187
+          },
+          {
+            "id": "research-velveteen-rabbi-lr0-bfa7e26e26cd",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 28188,
+            "normalizedEndOffset": 29462
+          },
+          {
+            "id": "research-velveteen-rabbi-mqf-825349f5b7b5",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 29463,
+            "normalizedEndOffset": 30591
+          },
+          {
+            "id": "research-velveteen-rabbi-nls-338340d21a88",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 30592,
+            "normalizedEndOffset": 31602
+          }
+        ]
+      },
+      "provenanceHash": "98db4d7c3af1c6c8a86aa3d9fd9d3f700a542470f82587f89febd132ac75f077",
+      "componentProvenanceHashes": [
+        "384a7cdd926af425ec20efc6f7d98b90b495722283e855c13815dbf8c38067f6",
+        "fac0bf1178b55998e81285db6a80b31aa3649a8d9e58127e27643a3104ba4505",
+        "462aa47e42fcec66f3ee019595d2131b3187eb663ca915b16d4de0e1a599c042",
+        "bfa7e26e26cdb87dd1ce9a57e8406769074090e8605e0e3e4f97bd57313a974b",
+        "825349f5b7b52677375ac92be0e2a54a848a2412e78a8a53b061dfb6c8e57413",
+        "338340d21a88f969872e895fcfa37176f5550e82fd60b956957fd30caa621caf"
+      ],
+      "wordCount": 1288,
+      "characterCount": 7696,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "family-storytelling",
+        "mindfulness",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "playful"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Maggid is the section where the table tells the Exodus story and that questions are part of the ritual. Assign short readings around the table, let guests pass, and give younger participants concrete prompts.",
+      "rationale": "Six consecutive source passages move from ritual questioning into the obligation and permission to retell, preserving the source's invitation to make the Haggadah partly one's own.",
+      "creditNotes": "Credit Barenblat and retain every source-presented contributor credit in this movement.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-specific-concrete-prompts",
+        "embedded-credit-check",
+        "right-to-pass-required",
+        "turn-taking-invitation-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-exodus-narrative",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Slavery, courage, and the road out",
+      "exactText": "[Woodcut by Yaron Livay] The Exodus: A Story In Seven Short Chapters 1. Once upon a time our people went into exile in the land of Egypt. During a famine our ancestor Jacob and his family fled to Egypt where food was plentiful. His son Joseph had risen to high position in Pharaoh’s court, and our people were well-respected. We felt safe. 2. Generations passed and our people remained in Egypt. In time, a new Pharaoh ascended to the throne. He found our difference threatening, and ordered our people enslaved. In fear of rebellion, Pharaoh decreed that all Hebrew boy-children be killed. Two midwives named Shifrah and Puah defied his orders, claiming that “the Hebrew women are so hardy, they give birth before we arrive!” 33\n\nThrough their courage, a boy survived; midrash tells us he was radiant with light. Fearing for his safety, his family placed him in a basket and he floated down the Nile. He was found, and adopted, by Pharaoh’s daughter, who named him Moshe because min ha-mayim m’shi-tihu , she drew him forth from the water. She hired his mother Yocheved as his wet-nurse. Thus he survived to adulthood, and was raised as Prince of Egypt. 3. Although a child of privilege, as he grew he became aware of the slaves who worked in the brickyards of his father. When he saw an overseer mistreat a slave, he struck the overseer and killed him. Fearing retribution, he set out across the Sinai alone. God spoke to him from a burning bush, which though it flamed was not consumed.\n\nThe Voice called him to lead the Hebrew people to freedom. Moses argued with God, pleading inadequacy, but God disagreed. Sometimes our responsibilities choose us. 4. Moses returned to Egypt and went to Pharaoh to argue the injustice of slavery. He gave Pharaoh a mandate which resounds through history: Let my people go. Pharaoh refused, and Moses warned him that Mighty God would strike the Egyptian people. These threats were not idle: ten terrible plagues were unleashed upon the Egyptians. Only when his nation lay in ruins did Pharaoh agree to our liberation. 5. Fearful that Pharaoh would change his mind, our people fled, not waiting for their bread dough to rise. (For this reason we eat unleavened bread as we take part in their journey.) Our people did not leave Egypt alone; a “mixed multitude” went with them. From this we learn that liberation is not for us alone, but for all the nations of the earth. Even Pharaoh’s daughter came with us, and took on the new name Batya, “daughter of God.” 34\n\nShirat HaYam • The Song of the Sea The water is wide: I cannot get o'er And neither have I wings to fly Give me a boat that can carry two And both shall row: my love and I. Mi chamochah ba-Eilim, Adonai? Mi kamochah nedar ba’kodesh? Nora t’hilot oseh fele. Nora t’hilot oseh fele. מִי כָמֹכָה בָּאֵלִים יהו׳׳ה, מִי כָּמֹכָה נֶאְדָּר בַּקֹּדֶשׁ, נוֹרָא תְהִילֹּת עֹשֵׂה פֶלֶא: נוֹרָא תְהִילֹּת עֹשֵׂה פֶלֶא: Who’s like You among the powers? Who’s like You, majestically holy, Awesome in praise Doing wonders! 6. Pharaoh’s army followed us to the Sea of Reeds. We plunged into the waters. Only when we had gone as far as we could did the waters part for us. We mourn, even now, that Pharaoh’s army drowned: our liberation is bittersweet because people died in our pursuit. 7. To this day we relive our liberation, that we may not become complacent, that we may always rejoice in our freedom. Freedom. It isn’t once, to walk out under the Milky Way, feeling the rivers of light, the fields of dark— freedom is daily, prose-bound, routine remembering. Putting together, inch by inch the starry worlds. From all the lost collections. 13 (Adrienne Rich) 13 Rich, Adrienne, from \"For Memory,\" A Wild Patience Has Taken Me This Far (New York: W.W. Norton, 1981), p. 9. 35\n\nThe Blood On The Doorposts L istening for messages From angels and autocrats Offering mysterious futures, Random threats, And freakish opportunities, Slaughtering lambs and Smearing their sacrifices on doorposts As if that will save us from death. Heeding pundits and prophets while Hiding our true selves, Preparing to run just in case, Grabbing the dog and the family photos. A lintel dripping with blood Documents terror and intimidation And offers only metaphorical salvation. The plagues are real and This time they’re directed at us. So what are we going to do? Go through the red viscous portal And then what? It might not be too late But even if it is There’s always the Sea of Reeds And whatever’s on the other side.\n\n14 (Trisha Arlin) from Passover I set my table with metaphor: the curling parsley - green sign nailed to the doors of God's underground; salt of desert and eyes; the roasted shank bone of a Pascal lamb, relic of sacrifice and bleating spring. Down the long table, past fresh shoots of a root they have been hacking at for centuries, you hold up the unleavened bread -- a baked scroll whose wavy lines are undecipherable. … One exodus prefigures the next. The glaciers fled before hot whips of air. Waves bowed at God's gesture for fugitive Israel to pass; while fish, caught then behind windows of water, remembered how their brothers once pulled themselves painfully from the sea, willing legs to grow from slanted fins. Now the blossoms pass from April's tree, refugee raindrops mar the glass, borders are transitory. And the changeling gene, still seeking stone sanctuary, moves on. (Linda Pastan) 14 Originally published as part of Bayit’s offering “From the Depths,” https://yourbayit.org/depths/ 36\n\nThe Ten Plagues Midrash teaches that, while watching the Egyptians succumb to the ten plagues, the angels broke into songs of jubilation. God rebuked them, saying “My creatures are perishing, and you sing praises?” As we recite each plague, we spill a drop of wine—symbol of joy—from our cups. Our joy in our liberation will always be tarnished by the pain visited upon the Egyptians. דָּם Dam Blood צְפַרְדֵּעַ Tzfarde’ah Frogs כִּנִּים Kinim Lice עָרוֹב Arov Insect swarms דֶּבֶר Dever Cattle plague שְׁחִין Sh'chin Boils בָּרָד Barad Hail אַרְבֶּה Arbeh Locusts חֹשֶׁךְ Choshech Darkness מַכַּת בְּכוֹרוֹת. Makat B'chorot Death of the First-Born Today's plagues may be less obvious or dramatic, but are no less insidious...and responsibility for their existence lies on our shoulders.\n\nThey include: A pathy in the face of evil B rutal torture of the helpless C ruel mockery of the old and the weak D espair of human goodness E nvy of the joy of others F alsehood and deception corroding our faith G reedy theft of earth’s resources H atred of learning and culture I nstigation of war and aggression J ustice delayed, justice denied, justice mocked… 15 Shekhinah, soften our hearts and the hearts of our enemies. Help us to dream new paths to freedom, so that the next sea-opening is not also a drowning; so that our singing is never again their wailing. So that our freedom leaves no one orphaned, childless, gasping for air. 16 16 Adapted from The Journey Continues: Ma’Ayan Passover Haggadah, by The Jewish Women’s Project, a program of the JCC on the Upper West Side, p. 21 15 From Gates of Freedom , p. 31. 37",
+      "segmentIds": [
+        "research-velveteen-rabbi-108p-10f7a20886ae",
+        "research-velveteen-rabbi-10sz-d123c5f849de",
+        "research-velveteen-rabbi-11e2-5cabd60c9783",
+        "research-velveteen-rabbi-1263-c8925163f76d",
+        "research-velveteen-rabbi-1357-ffd524f703f1",
+        "research-velveteen-rabbi-13pd-0cc19b47ed65",
+        "research-velveteen-rabbi-14ha-45ceef81c8bf",
+        "research-velveteen-rabbi-1536-8100779fff5f"
+      ],
+      "sourceLocation": "PDF p. 33, segment 1 through PDF p. 37, segment 2",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 33, segment 1 through PDF p. 37, segment 2",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-108p-10f7a20886ae",
+            "label": "PDF p. 33",
+            "pageNumber": 33,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 46969,
+            "normalizedEndOffset": 47698
+          },
+          {
+            "id": "research-velveteen-rabbi-10sz-d123c5f849de",
+            "label": "PDF p. 34",
+            "pageNumber": 34,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 47699,
+            "normalizedEndOffset": 48457
+          },
+          {
+            "id": "research-velveteen-rabbi-11e2-5cabd60c9783",
+            "label": "PDF p. 34",
+            "pageNumber": 34,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 48458,
+            "normalizedEndOffset": 49466
+          },
+          {
+            "id": "research-velveteen-rabbi-1263-c8925163f76d",
+            "label": "PDF p. 35",
+            "pageNumber": 35,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 49467,
+            "normalizedEndOffset": 50730
+          },
+          {
+            "id": "research-velveteen-rabbi-1357-ffd524f703f1",
+            "label": "PDF p. 36",
+            "pageNumber": 36,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 50731,
+            "normalizedEndOffset": 51456
+          },
+          {
+            "id": "research-velveteen-rabbi-13pd-0cc19b47ed65",
+            "label": "PDF p. 36",
+            "pageNumber": 36,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 51457,
+            "normalizedEndOffset": 52461
+          },
+          {
+            "id": "research-velveteen-rabbi-14ha-45ceef81c8bf",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 52462,
+            "normalizedEndOffset": 53249
+          },
+          {
+            "id": "research-velveteen-rabbi-1536-8100779fff5f",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 53250,
+            "normalizedEndOffset": 54078
+          }
+        ]
+      },
+      "provenanceHash": "cb51d7421bc8ca7765751d49861a71e33a1bf646c3f955e573aed7678b642656",
+      "componentProvenanceHashes": [
+        "10f7a20886ae48809d20ddf94760a5fd01cb23907fb3f774f5212bf2ae32650f",
+        "d123c5f849dea88f29f65f92ed24e5b9763a62b364a412d35b85c03f7724178a",
+        "5cabd60c9783b98d13c47189b6133af41427ecc69efe082416890f433bb721d9",
+        "c8925163f76d9a1ad99dcb3c079dae46c89d761f7cb149c0206013d9222a8700",
+        "ffd524f703f1336ade38620cc1fe8cfdff8247935581dc2a1f1cb4cc518346be",
+        "0cc19b47ed6596aade3ddb49717e8bde6154019ea1ee20fa0b555b915bb972ba",
+        "45ceef81c8bf29d2c3b80ea3d9333cd5eece577801e24c879a51004993da52c8",
+        "8100779fff5fa00d5614dc5ea283974b5774883eb4dfe9ecd8c3f351c13eec9e"
+      ],
+      "wordCount": 1225,
+      "characterCount": 7116,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "family-storytelling",
+        "social-justice",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce the main figures and state the full arc: a ruler enslaved the Israelites, resistance and courage kept hope alive, Moses confronted Pharaoh, plagues brought suffering, and the people escaped. Pause for compassion before celebrating freedom.",
+      "rationale": "The eight source-order segments preserve a complete modern retelling with narrative momentum, making it a strong source-led backbone rather than a collection of thematic keywords.",
+      "creditNotes": "Credit Rabbi Rachel Barenblat and all individually credited writers appearing in the selected narrative.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "embedded-credit-check",
+        "nontriumphalist-plague-framing",
+        "plain-language-character-introductions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-plate-and-inclusion",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Plate symbols and an inclusive table",
+      "exactText": "1-7: Seven Sacred Symbols at Seder The Maror , bitter herb or horseradish, representing the bitterness of slavery. The Haroset , a mixture of apples and nuts and wine, representing the bricks and mortar we made in ancient times, and the new structures we are beginning to build today. The Lamb Shank (or: beet ) representing the sacrifices we have made to survive. Before the tenth plague, our people slaughtered lambs and marked our doors with blood: because of this marking, the Angel of Death passed over our homes and our first-born were spared. The Egg , which symbolizes creative power, our rebirth. The Parsley , representing the new growth of spring, for we are earthy, rooted beings, connected to the Earth and nourished by our connection. Salt water of our tears, both then and now. Matzot of our unleavened hearts: may this Seder enable our spirits to rise. 20 20 Adapted from The Women's Haggadah, E.M. Broner, (San Francisco: Harper, 1993) 44\n\n8: The Orange Susannah Heschel attended a seder where bread was placed on the seder plate, a reaction to someone who'd said lesbians belonged in Judaism like bread belongs at a seder. She taught us instead to include an orange, suggesting \"the fruitfulness for all Jews when lesbians and gay men are contributing and active members of Jewish life.” We include an orange to remind us that there is—there must be—a place at the table for all of us, in all of our genders, gender expressions, and sexual orientations. [Illustration by Emily Cooper] 9: The Olive Also on our seder plate is an olive. After the Flood, Noah’s dove brought back an olive branch as a sign that the earth was again habitable. Today ancient olive groves are destroyed by violence, making a powerful symbol of peace into a casualty of war. We keep an olive on our seder plate as an embodied prayer for peace everywhere. 10: This Year's Addition... What item calls to you this year to connect the seder with one of today's needs for liberation? 45",
+      "segmentIds": [
+        "research-velveteen-rabbi-1bx9-a73757f480b3",
+        "research-velveteen-rabbi-1cnt-19c8a6006db9"
+      ],
+      "sourceLocation": "PDF p. 44, segment 1 through PDF p. 45, segment 1",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 44, segment 1 through PDF p. 45, segment 1",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-1bx9-a73757f480b3",
+            "label": "PDF p. 44",
+            "pageNumber": 44,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 62109,
+            "normalizedEndOffset": 63064
+          },
+          {
+            "id": "research-velveteen-rabbi-1cnt-19c8a6006db9",
+            "label": "PDF p. 45",
+            "pageNumber": 45,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 63065,
+            "normalizedEndOffset": 64083
+          }
+        ]
+      },
+      "provenanceHash": "995d8b09202fafe48044b6c625f90d1e9dff19484e5a77822d5cf988d93b4e0c",
+      "componentProvenanceHashes": [
+        "a73757f480b37b04118ccb63298a8a913235046a21c27241c76410c8bdafc380",
+        "19c8a6006db90e5047122c934d197ff988e220f380dc809953c7e4dac38b2f3f"
+      ],
+      "wordCount": 343,
+      "characterCount": 1975,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "lgbtq",
+        "family-storytelling",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "Point to each named plate object and explain its practical use before its symbolism. If an orange or other optional item appears, say why this table chose it and give an accurate history.",
+      "rationale": "The adjacent records join traditional plate explanation to the source's inclusive additions, letting personalization grow from the ritual object rather than from a detached theme card.",
+      "creditNotes": "Credit Barenblat and preserve any named originator or quoted source attached to each optional plate practice.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "optional-plate-item-selected",
+        "origin-story-fact-check",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-washing-and-eating",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "From handwashing to the Hillel sandwich",
+      "exactText": "קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 6.רָחְצָה Rachtza: Wash the Hands What does washing our hands tell us? That bodies are sacred and deserving of care. It is our hands that plant and write, that caress and create—and also our hands that strike and poison and smash. We wash our hands not to absolve ourselves of responsibility, but to affirm the need to make our hands holy. At this season of freedom and rebirth, we consecrate our hands to the task of building freedom for all who suffer. בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו, וְצִוָּנוּ עַל נְטִילַת יָדָיִם: Baruch atah, Adonai, eloheinu melech ha-olam, asher kidshanu b'mitzvotav, v'tzivanu al n'tilat yadayim.\n\nBlessed are You, Source of all Being, You make us holy in connecting-command, and command us to wash our hands. Season of the Egg It’s the season of the egg, older than any named creed…. Christians paint them; we roast them. The only time in the whirling year I ever eat roasted egg: a campfire flavor, bit burnt, reeking of haste like the matzoh there was no time to let rise. The egg of the world cracks raggedly open and the wet scraggly chick of northern spring emerges gaunt, dripping. Soon it will preen its green feathers, soon it will grow fat and strong, its wings blue and binding. Tonight we dip the egg in salt water like bowls of tears. Elijah comes with the fierce early spring bringing prophecy that cracks open the head swollen with importance. Every day there is more work to do and stronger light. (Marge Piercy) It is customary in many households to eat a roasted or boiled egg at this time. 47\n\nקַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 7–8.מוֹצִיא/מַצָּה Motzi/Matzah: Bless and Eat We eat matzah because our ancestors had no time to wait for dough to rise. Matzah reminds us that when the chance for liberation comes, we must seize it even if we do not feel ready. Indeed, if we wait until we feel fully ready, we may never act at all. בְָּרוּךְ אַתָּה יְיָ, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, הַמּוֹצִיא לֶחֶם מִן הָאָרֶץ: בָּרוּךְ אַתָּה יְיָ, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתַָיו וְצִוָּנוּ עַל אֲכִילַת מַצָּה: Baruch atah, Adonai eloheinu, melech ha’olam, hamotzi lechem min ha’aretz. Baruch atah, Adonai eloheinu, melech ha’olam, asher kidshanu b’mitzvotav, v’tzivanu al achilat matzah.\n\nBlessed are You, Adonai, Sovereign of all worlds, who brings forth bread from the earth. Blessed are You, Adonai, Sovereign of all worlds, You make us holy in connecting-command, and command us to eat matzah. from Imagine the Angels of Bread This is the year that squatters evict landlords, gazing like admirals from the rail of the roofdeck. This is the year that shawled refugees deport judges who stare at the floor and their swollen feet as files are stamped with their destination…. This is the year that those who swim the border's undertow and shiver in boxcars are greeted with trumpets and drums on the other side. This is the year that hands pulling tomatoes from the vine uproot the dead from the earth that sprouts the vine…. If every rebellion begins with the idea that conquerors on horseback are not many-legged gods, that they too drown if plunged in the river, Then this is the year – So may every humiliated mouth, teeth like desecrated headstones, fill with the angels of bread. Adapted from Martín Espada 48\n\nקַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 9.מָרוֹר Maror: Bitter Herb Why do we eat maror? Maror represents the bitterness of bondage. We don't pretend away life's bitterness. Instead, we let ourselves taste the bitterness, as our ancestors have done before us. Only when we let ourselves feel the bitterness can we experience sweetness fully. בָּרוּךְ אַתָּה יְיַָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ עַל אֲכִילַת מָרוֹר: Baruch atah, Adonai, eloheinu melech ha’olam, asher kidshanu b’mitzvotav v’tzivanu al achilat maror. Blessed are You, Adonai, Sovereign of all worlds, You make us holy in connecting-command, and command us to eat the bitter herb. קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ.\n\nצָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 10.כּוֹרֵךְ Korech: The Hillel Sandwich The sage Hillel originated the tradition of eating a sandwich of all the food symbols balanced together. \"I dedicate myself to sweetening every bitterness.\" קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 11. שֻׁלְחָן עוֹרֵךְ Shulchan Orech: The Festive Meal Sanctuary O Lord, prepare me to be a sanctuary, pure and holy, tried and true And in thanksgiving I'll be a living sanctuary for You! V'asu li mikdash v'shachanti b'tochamVa-anachnu n'varech Yah Me-ata v'ad olam! וְעַשׁוּ ליִ מִקְדַשׁ וְשָׁכָנְתִי בְּתוֹֹכַם וְאָנַחְנוּ נְבָרֵך יָה מֵעֵתָה וְעֵד עוֹֹלַם! 49\n\nקַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 12. צָפוּן Tzafun: Afikoman Find the afikoman and distribute it to all who are seated at the table. When the Temple still stood in Jerusalem, it was customary to make an offering of a paschal lamb at this season. We eat the afikoman in memory of the offering. Tzafun means “hidden,” and the afikoman is hidden for children to find. Why end the meal thus? Because we want the dinner to end with the taste of slavery and freedom in our mouths. But this explains eating matzah late, not the charade of hiding it.\n\nWe hide the larger half of the broken matzah because we are affirming that there is more that is hidden and mysterious in the world than any information we can gather. (Adapted from R. Arthur Waskow) קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 13. בָֹּרֵךְ Barech: Bless the Meal Listen with the night falling we are saying thank you we are stopping on the bridges to bow from the railings we are running out of the glass rooms with our mouths full of food to look at the sky and say thank you… 23 (W.S. Merwin) 23 W. S. Merwin, from Earth Prayers (San Francisco: Harper, 1991), p. 244. 50",
+      "segmentIds": [
+        "research-velveteen-rabbi-1ekp-e4854286bcc4",
+        "research-velveteen-rabbi-1fay-cd6db21e70ec",
+        "research-velveteen-rabbi-1g0c-b788687cb016",
+        "research-velveteen-rabbi-1gqm-8d0eeedad4c1",
+        "research-velveteen-rabbi-1hj6-dbb4c639e362",
+        "research-velveteen-rabbi-1ibl-f449ee93806f",
+        "research-velveteen-rabbi-1j37-ba0ca3251523",
+        "research-velveteen-rabbi-1jov-49b2d3f7a21b"
+      ],
+      "sourceLocation": "PDF p. 47, segment 1 through PDF p. 50, segment 2",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 47, segment 1 through PDF p. 50, segment 2",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-1ekp-e4854286bcc4",
+            "label": "PDF p. 47",
+            "pageNumber": 47,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 65545,
+            "normalizedEndOffset": 66489
+          },
+          {
+            "id": "research-velveteen-rabbi-1fay-cd6db21e70ec",
+            "label": "PDF p. 47",
+            "pageNumber": 47,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 66490,
+            "normalizedEndOffset": 67403
+          },
+          {
+            "id": "research-velveteen-rabbi-1g0c-b788687cb016",
+            "label": "PDF p. 48",
+            "pageNumber": 48,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 67404,
+            "normalizedEndOffset": 68349
+          },
+          {
+            "id": "research-velveteen-rabbi-1gqm-8d0eeedad4c1",
+            "label": "PDF p. 48",
+            "pageNumber": 48,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 68350,
+            "normalizedEndOffset": 69377
+          },
+          {
+            "id": "research-velveteen-rabbi-1hj6-dbb4c639e362",
+            "label": "PDF p. 49",
+            "pageNumber": 49,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 69378,
+            "normalizedEndOffset": 70400
+          },
+          {
+            "id": "research-velveteen-rabbi-1ibl-f449ee93806f",
+            "label": "PDF p. 49",
+            "pageNumber": 49,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 70401,
+            "normalizedEndOffset": 71394
+          },
+          {
+            "id": "research-velveteen-rabbi-1j37-ba0ca3251523",
+            "label": "PDF p. 50",
+            "pageNumber": 50,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 71395,
+            "normalizedEndOffset": 72174
+          },
+          {
+            "id": "research-velveteen-rabbi-1jov-49b2d3f7a21b",
+            "label": "PDF p. 50",
+            "pageNumber": 50,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 72175,
+            "normalizedEndOffset": 72990
+          }
+        ]
+      },
+      "provenanceHash": "ef803ab15a6ead8a8395bbd924a681ba3b078e273920ef2a99b2e51db7996b4f",
+      "componentProvenanceHashes": [
+        "e4854286bcc42c7d99fbc7d1f6dfd4aa1f402f6a5e17595cabf691ee1da30079",
+        "cd6db21e70ec07b90215db06bd007c5f4f029627fc9eec06ec2308fbd4e3d3b9",
+        "b788687cb016be75f7849059f3e267fda0924f66556edf592cced7f2fb06fef2",
+        "8d0eeedad4c13f4bd10784f3f67d7b0c1dccdd707fedc4a35d67e3acb6aecb1c",
+        "dbb4c639e362aa3ae32e700269cca6ba630820096b0305e2537a94ec0b7cf2cb",
+        "f449ee93806f585d146aecd4ba13cf207b47c6c2d71aa6799683c2a458c4e5a1",
+        "ba0ca325152321844a71a1d40db80cb6eb13435cb20e35b9f764d3f5505bf922",
+        "49b2d3f7a21ba257e3134f0da1104cae7092be628de36d49b5365b2851ab6510"
+      ],
+      "wordCount": 1158,
+      "characterCount": 7452,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell everyone exactly what to do, one action at a time: wash personally or pour for one another, eat matzah, taste bitter herb with haroset, then make the sandwich. Define haroset, explain the blessings, and include allergy substitutions.",
+      "rationale": "Eight consecutive records preserve the correct practical and emotional movement through the symbolic foods, one of the source's clearest ready-to-lead ritual sequences.",
+      "creditNotes": "Credit Barenblat and preserve printed credits for blessings, translations, poems, or meditations in the sequence.",
+      "sourcePresentedAttribution": [
+        "(Adapted from R. Arthur Waskow)"
+      ],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": "(Adapted from R. Arthur Waskow)",
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "custom-owner-permission",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "allergy-safe-alternatives",
+        "embedded-credit-check",
+        "host-pacing-cues-required",
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-elijah-and-miriam",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Opening the door and filling the cup",
+      "exactText": "Pour Out Your Love (Option Three) Shfoch ahavatecha al ha-goyim asher y'da'ucha v'al mamlechot asher b'shimcha kor'im biglal chasadim shehem osim im Yaakov um'ginim al amcha Yisrael mipnei ochleihem, yizku lir'ot b'sukkat b'chirecha v'lishmo'ach b'simchat goyecha. שְׁפֹךְ אַהֲבָתְךָ עַל הַגּוֹיִים אֲשֶׁר יְדָעוּךָ וְעַל מַמְלָכוֹת אֲשֶׁר בְּשִׁמְךָ קוֹרְאִים בִּגְלַל חֲסָדִים שֶׁהֵם עוֹשִׂים עִם יַעֲקֹב וּמְגִנִּים עַל עַמְּךָ יִשְׂרָאֵל מִפְּנֵי אוֹכְלֵיהֶם. יִזְכּוּ לִרְאוֹת בְּסֻכַּת בְּחִירֶיךָ וְלִשְׂמֹחַ בְּשִׂמְחַת גּוֹיֶיךָ. Pour out Your love on nations that know You, and realms that call Your Name, for the caring deeds they perform for all who limp in the world, for their defense of all who wrestle with God. May all who pour love into the world merit the Sukkah of Peace, and may they rejoice among the joy of all Your nations. Ufros aleinu sukkat shlomecha. וּפְרֹשׂ עָלֵינוּ סֻכַּת שְׁלוֹֹמֶךָ. Spread over us wings of peace: shalom.\n\nBefore We Open The Door Before we open the door for Elijah, sit quietly and ask inside, “What questions are so important for our lives that we want to invoke of Elijah so that we can ask him? Then, when we sing and open the door, pose our questions to Elijah from our deepest places; let's not rush to resume the Seder. Wait and listen for what we might experience as Elijah's answer to us this year. adapted from Rabbi Zalman Shachter-Shalomi z\"l Miriam and Elijah Three thousand years ago, a farmer arose in the Middle East who challenged the ruling elite. In his passionate advocacy for common people, Elijah created a legend that would inspire generations. Elijah declared that he would return in the guise of someone poor or oppressed, coming to people's doors to see how he would be treated. Thus would he know whether or not humanity had become ready to participate in the dawn of the Messianic age. He is said to visit every seder, and sip there from his cup of wine. 64\n\nTonight we welcome two prophets: not only Elijah, but also Miriam, sister of Moses. Elijah is a symbol of messianic redemption at the end of time; Miriam, of redemption in our present lives. Miriam’s cup is filled with water, evoking her Well which followed the Israelites in the wilderness. After the crossing of the Red Sea, Miriam sang to the Israelites a song. The words in the Torah are only the beginning: Sing to God, for God has triumphed gloriously; Horse and driver, God has hurled into the sea. So the Rabbis asked: Why is the Song of Miriam only partially stated in the Torah? And in midrash is found the answer: the song is incomplete so that future generations will finish it. That is our task. 32 Open the door for Elijah and Miriam; rise. You abound in blessings, God, creator of the universe, Who sustains us with living water. May we, like the children of Israel leaving Egypt, be guarded and nurtured & kept alive in the wilderness and may You give us eyes to see that the journey itself holds the promise of redemption. Amen. 33 33 Adapted from an insert in Lilith magazine sometime in the 1990s. 32 Miriam’s Well , p. 28 65\n\nEliahu Hanavi / Miriam Ha-Neviah Eliyahu ha-navi, Eliyahu ha-Tishbi, Eliyahu (3x) ha-Giladi. Bimheirah v'yameinu, yavo ei-leinu im Mashiach ben David (2x) אֵלִיָּהוּ הַנָּבִיא אֵלִיָּהוּ הַתִּשְׁבִּי אֵלִיָּהוּ הַגִּלְעָדִי בִּמְהֵרָה בְיָמֵנוּ יָבוֹא אֵלֵינוּ עִם מָשִׁיחַ בֶּן דָּוִד, עִם מָשִׁיחַ בֶּן דָּוִד! Elijah, the prophet; Elijiah, the Tishbite; Elijah, of Gilead! Come quickly in our days with the Messiah from the line of David. Miriam ha-n'vi'ah oz v'zimrah b'yadah. Miriam tirkod itanu l'hagdil zimrat olam. Miriam tirkod itanu l'taken et ha-olam. Bimheirah v'yameinu hi t'vi'einu el mei ha-y'shuah. מִרְיַם הַנְבִיאָה עֹז וְזִמְרָה בְּיָדָהּ, מִרְיַם תִּרְקֹד אִתָּנוּ לְהַגְדִּיל זִמְרַת עוֹלָם מִרְיַם תִּרְקֹד אִתָנוּ לְתַקֵן אֶת הֵעוֹלָם. בִּמְהֵרַה בְיָמֵנוּ הִיא תְבִיאֵנוּ אֶל מֵי הַיְשׁוּעָה! Miriam the prophet, strength and song in her hand; Miriam, dance with us in order to increase the song of the world. Miriam, dance with us in order to repair the world. Soon she will bring us to the waters of redemption! 34 34 Second verse by R. Leila Gal Berner. 66\n\nCup of Elijah The cup of Elijah holds wine; the cup of Miriam holds water. Wine is more precious until you have no water. Water that flows in our veins, water that is the stuff of life, for we are made of breath and water, vision and fact. Elijah is the extraordinary; Miriam brings the daily wonders: the joy of a fresh morning like a newly prepared table, a white linen cloth on which nothing has yet spilled. The descent into the heavy waters of sleep healing us. The scent of baking bread, roasting chicken, fresh herbs, the faces of friends across the table: what sustains us every morning, every evening, the common daily miracles like the taste of cool water. [image by Ruth] 35 (poem by Marge Piercy) “I have come to look forward to the opening of the door for an Elijah who is always a no-show, and I have come to believe that precisely by not appearing, that great prophet is showing us something we need to know. What does it mean that there is never anyone at the door?” 36 (Harvey Cox) 36 Harvey Cox, from Common Prayer. 35 Goblet image from RuthsJewishStamps.com. 67",
+      "segmentIds": [
+        "research-velveteen-rabbi-1yu2-7e5211687376",
+        "research-velveteen-rabbi-1zkm-54d56b7ce076",
+        "research-velveteen-rabbi-20bt-86823d0d5fe4",
+        "research-velveteen-rabbi-217m-f8dae0aa0f63",
+        "research-velveteen-rabbi-221q-6a8041ebdd0a"
+      ],
+      "sourceLocation": "PDF p. 64, segment 1 through PDF p. 67, segment 1",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 64, segment 1 through PDF p. 67, segment 1",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-1yu2-7e5211687376",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 91802,
+            "normalizedEndOffset": 92757
+          },
+          {
+            "id": "research-velveteen-rabbi-1zkm-54d56b7ce076",
+            "label": "PDF p. 64",
+            "pageNumber": 64,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 92758,
+            "normalizedEndOffset": 93736
+          },
+          {
+            "id": "research-velveteen-rabbi-20bt-86823d0d5fe4",
+            "label": "PDF p. 65",
+            "pageNumber": 65,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 93737,
+            "normalizedEndOffset": 94881
+          },
+          {
+            "id": "research-velveteen-rabbi-217m-f8dae0aa0f63",
+            "label": "PDF p. 66",
+            "pageNumber": 66,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 94882,
+            "normalizedEndOffset": 95965
+          },
+          {
+            "id": "research-velveteen-rabbi-221q-6a8041ebdd0a",
+            "label": "PDF p. 67",
+            "pageNumber": 67,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 95966,
+            "normalizedEndOffset": 97046
+          }
+        ]
+      },
+      "provenanceHash": "32b921a2cfeafdd85cf6b1872c7b94c3b7c83e9bc1f8c14ab5086e8612c3224d",
+      "componentProvenanceHashes": [
+        "7e521168737669372c8fc382c0fcccc9670d8782306b9e6e24c45beb56dad0cb",
+        "54d56b7ce0768df0f2d4833961ec4193dab70ecd512f5879f6f5ba846525637d",
+        "86823d0d5fe4f77e3236b798c09fe3294265a72dbb2b3f7f4c0890306d99c087",
+        "f8dae0aa0f63ffd51728f5c71811eb09a0177eb6629de8d89d3ccf5c288eccef",
+        "6a8041ebdd0a9937191a2514731cbb5c1994bc4c47787c355c86ce9f3afdcc5e"
+      ],
+      "wordCount": 887,
+      "characterCount": 5248,
+      "sectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "mindfulness",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain Elijah's cup, Miriam's cup, and who will open the door or pour water. Present hope and welcome as the purpose of the actions and make song or prayer participation optional.",
+      "rationale": "Five adjacent records preserve the source's paired treatment of Elijah and Miriam, balancing inherited hope with women's leadership and the symbolism of sustaining water.",
+      "creditNotes": "Credit Barenblat and every separately named author or song source appearing in the sequence.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "clear-door-and-pouring-actions",
+        "embedded-credit-check",
+        "miriams-cup-selected",
+        "song-participation-optional"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-velveteen-rabbi-reflective-conclusion",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "title": "Carrying freedom beyond the table",
+      "exactText": "To My Haggadah Over the years your staples have slipped and pages loosened. Here a faded purple crescent of ancient wine, there a smudge from bricks of date paste. But when you speak I swoon. Tell me again how we were slaves to a Pharaoh in Egypt but the Holy One brought us out from there with a mighty hand and an outstretched arm. Sing to me of unleavened bread, of parsley dipped in bitter tears. Remind me if I wait until I feel fully ready I might never leap at all. Waltz me giddy through psalms of praise. Promise me next year a world redeemed. (Rabbi Rachel Barenblat) קַדֵּשׁ וּרְחַץ. כַּרְפַּס. יַחַץ. מַגִּיד. רָחְצָה. מוֹצִיא. מַצָּה. מָרוֹר. כּוֹרֵךְ. שֻׁלְחָן עוֹרֵךְ. צָפוּן. בָּרֵךְ. הַלֵּל. נִרְצָה. Kadesh. Urchatz. Karpas. Yachatz. Maggid. Rachtza. Motzi. Matzah. Maror. Korech. Shulchan orech. Tzafun. Barech. Hallel. Nirtzah. 15. נִרְצָה Nirtzah: Conclusion Tonight we have acknowledged our ancestors. We vow that we will not allow their stories, their experiences, their wisdom to fade. These are our legacy, which we will study and teach to our friends and children. The task of liberation is long, and it is work we ourselves must do. As it is written in Pirke Avot , a collection of rabbinic wisdom: “It is not incumbent upon us to finish the task, but neither may we refrain from beginning it.” 69\n\nRedemption Seemed As Close As The Kitchen Sink We have reached the end of the seder. We have traveled through sacred time, making the journey from slavery to freedom. We have pushed the limits of our imaginations, embracing the idea that we, too, were slaves in Egypt, and we, too, will celebrate next year’s seder in a Jerusalem filled with peace. We have savored the taste of a dry, humble cracker—at once the bread of poverty and the symbol of our redemption. Tonight, we have shared our table with prophets and let the voices of our ancestors mingle with our own songs of praise. And now, that intensity begins to fade away. We look around through tired eyes—there is wine spilled on the table, matzah crumbs cover the floor. It is time to do the dishes.\n\nWe are poised, right now, somewhere between Jerusalem and our kitchen sinks. The demands of the ordinary pull us away from the seder’s extraordinary delights, and we are faced with the task of keeping the songs of freedom ringing in our ears. There is no easy way to do this; no simple formula can guide every one of us. But each of us needs to reflect: What does it mean to say that God brought our ancestors out of Egypt? What does it mean to say that we, too, were slaves in that place? What are the consequences of these words? What kinds of responsibilities do they place on us? How do we walk away from this table and still keep the teachings of this evening close to our hearts? 37 (Deborah Glanzberg-Krainin) (Optional) Fifth Cup of Wine We dedicate this fifth cup to our hopes that...\n\n[Insert here hopes for something that seems impossible: peace between Israelis and Palestinians; an end to poverty; healing for all who are sick...] Isaac Luria taught that, when the world was made, God’s infinity was too great to be contained, and creation shattered. The world that we know consists of broken vessels, with sparks of God trapped inside. We bless this cup to remind us of our obligation to find the holy sparks in our broken world, and to fix what must be mended. בָּרוּךְ אַתָּה יְיָ, אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, בּוֹרֵא פְּרִי הַגָּפֶן: Baruch atah, Adonai, eloheinu melech ha’olam, borei pri hagafen. Blessed are you, Adonai our God, Ruler of the universe, creator of the fruit of the vine. 37 “Redemption Seemed as Close as the Kitchen Sink,” Deborah Glanzberg-Krainin, from The Women’s Seder Sourcebook , Jewish Lights 2002, pp. 259-260. 70",
+      "segmentIds": [
+        "research-velveteen-rabbi-24d0-cdbd71190474",
+        "research-velveteen-rabbi-25dt-841c1c7b0019",
+        "research-velveteen-rabbi-25yw-e1b2401746b5",
+        "research-velveteen-rabbi-26ky-68cd419c949d"
+      ],
+      "sourceLocation": "PDF p. 69, segment 1 through PDF p. 70, segment 3",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 69, segment 1 through PDF p. 70, segment 3",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "componentLocators": [
+          {
+            "id": "research-velveteen-rabbi-24d0-cdbd71190474",
+            "label": "PDF p. 69",
+            "pageNumber": 69,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 98964,
+            "normalizedEndOffset": 100288
+          },
+          {
+            "id": "research-velveteen-rabbi-25dt-841c1c7b0019",
+            "label": "PDF p. 70",
+            "pageNumber": 70,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 100289,
+            "normalizedEndOffset": 101047
+          },
+          {
+            "id": "research-velveteen-rabbi-25yw-e1b2401746b5",
+            "label": "PDF p. 70",
+            "pageNumber": 70,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 101048,
+            "normalizedEndOffset": 101841
+          },
+          {
+            "id": "research-velveteen-rabbi-26ky-68cd419c949d",
+            "label": "PDF p. 70",
+            "pageNumber": 70,
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+            "normalizedStartOffset": 101842,
+            "normalizedEndOffset": 102704
+          }
+        ]
+      },
+      "provenanceHash": "9ff34d39e49f9fc56b02246c6fa55d16a4c92f5c6bb5ed3bd6caeecd8c0235b1",
+      "componentProvenanceHashes": [
+        "cdbd711904748640aaa5c6768672c970c77f8b8143dff606ad514a24f721c636",
+        "841c1c7b00196fa601e8115673706e571b1333dc6ce9c8d443e618b2ed06882d",
+        "e1b2401746b50fc4fdba6b9c451c80084965072b9faa88ecd57adfb818d265d7",
+        "68cd419c949db0562e7b5067856259665ffd973df59329ed48069927356e0f77"
+      ],
+      "wordCount": 652,
+      "characterCount": 3743,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "mindfulness",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests that Nirtzah closes the formal order but sends the work of freedom into the year ahead. Offer one final shared line and one optional reflection rather than introducing a new discussion.",
+      "rationale": "The four source-order records create a complete contemplative ending, resolving the source's themes instead of stopping after a song or mid-sentence invitation.",
+      "creditNotes": "Credit Rabbi Rachel Barenblat and observe the noncommercial share-with-credit permission.",
+      "sourcePresentedAttribution": [
+        "(Rabbi Rachel Barenblat)"
+      ],
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": "(Rabbi Rachel Barenblat)",
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "peace-and-shared-humanity-check",
+        "single-closing-prompt"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

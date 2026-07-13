@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-13",
+  "processingMode": "local-source-dossier-review",
+  "externalModelApiUsed": false,
+  "humanReviewClaimed": false,
+  "completeLocalCorpus": {
+    "sourceCount": 20,
+    "segmentCount": 1999,
+    "exactCharacterCount": 1845812,
+    "canonicalReconstructionVerified": true,
+    "storage": "research/generated/source-segments/*.jsonl",
+    "runtimeShippingPolicy": "The complete corpus is research-only; browser packs contain reviewed sequences only."
+  },
+  "localEditorialReview": {
+    "reviewedSourceCount": 20,
+    "missingSourceIds": [],
+    "reviewedSequenceCount": 134,
+    "reviewedSequenceExactCharacterCount": 473856,
+    "status": "complete-local-agent-review"
+  },
+  "runtimePack": {
+    "sourceCount": 20,
+    "moduleCount": 75,
+    "exactCharacterCount": 263659,
+    "maturity": "local-reviewed-demo-pack",
+    "activeRuntimeLoadingMode": "per-source-dynamic",
+    "comprehensiveLocalOrganization": true
+  }
+}

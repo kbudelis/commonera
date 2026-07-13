@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpus": {
+    "sourceCount": 20,
+    "segmentCount": 1999,
+    "approvedPrecomputeCount": 1962,
+    "quarantinedCount": 37,
+    "normalizedContentCharacters": 1847791,
+    "approximateStaticPagesAt2800Characters": 660,
+    "allSourcesCoverageVerified": true
+  },
+  "models": {
+    "classifier": "gpt-5.4-nano",
+    "composer": "gpt-5.4"
+  },
+  "transport": "direct",
+  "classification": {
+    "model": "gpt-5.4-nano",
+    "transport": "direct",
+    "requestCount": 122,
+    "estimatedInputTokens": {
+      "lower": 628886,
+      "likely": 860544,
+      "upper": 1677579
+    },
+    "maximumOutputTokens": 670912,
+    "cost": {
+      "likelyInputUsd": 0.1721088,
+      "maximumInputUsd": 0.33551580000000003,
+      "maximumOutputUsd": 0.8386399999999999,
+      "maximumTotalUsd": 1.1741557999999999
+    },
+    "standardPricingPerMillionTokens": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "batchDiscountApplied": 0
+  },
+  "compositionProjection": {
+    "model": "gpt-5.4",
+    "transport": "direct",
+    "requestCount": 150,
+    "estimatedInputTokens": {
+      "lower": 605198,
+      "likely": 828143,
+      "upper": 1577478
+    },
+    "maximumOutputTokens": 390000,
+    "cost": {
+      "likelyInputUsd": 2.0703575,
+      "maximumInputUsd": 3.943695,
+      "maximumOutputUsd": 5.8500000000000005,
+      "maximumTotalUsd": 9.793695
+    },
+    "standardPricingPerMillionTokens": {
+      "input": 2.5,
+      "output": 15
+    },
+    "batchDiscountApplied": 0
+  },
+  "pricing": {
+    "gpt-5.4-nano": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "gpt-5.4-mini": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gpt-5.4": {
+      "input": 2.5,
+      "output": 15
+    }
+  },
+  "caveats": [
+    "Token counts are conservative character/byte bounds, not tokenizer output.",
+    "Maximum output assumes every request uses its full max_output_tokens allowance.",
+    "Pricing is configuration captured with this estimate and must be rechecked before submission.",
+    "No API request is authorized by generating this estimate."
+  ],
+  "estimateId": "60e519d393cda58810fe1364ca00aa335abb95ee7d8a50dd24d2f21e103ec710",
+  "executionProjection": {
+    "classification": {
+      "mode": "direct",
+      "controls": {
+        "concurrency": 3,
+        "rpm": 60,
+        "tpm": 180000,
+        "averageLatencySeconds": 15
+      },
+      "likelyMinutes": 11,
+      "conservativeProjectionMinutes": 21,
+      "note": "Projection only; server latency, retries, account rate limits, and model availability can increase elapsed time."
+    },
+    "composition": {
+      "mode": "direct",
+      "controls": {
+        "concurrency": 3,
+        "rpm": 60,
+        "tpm": 180000,
+        "averageLatencySeconds": 25
+      },
+      "likelyMinutes": 21,
+      "conservativeProjectionMinutes": 42,
+      "note": "Projection only; server latency, retries, account rate limits, and model availability can increase elapsed time."
+    }
+  }
+}

@@ -12,26 +12,63 @@ test("staged intake and generated views expose keyboard and status semantics", a
   assert.match(page, /handleTabKeyDown/);
   assert.match(page, /event\.key === "ArrowRight"/);
   assert.match(page, /event\.key === "ArrowLeft"/);
-  assert.match(page, /aria-pressed={isActive}/);
+  assert.match(page, /aria-pressed={selected}/);
   assert.match(page, /ref={resultRef} tabIndex={-1}/);
   assert.match(page, /resultRef\.current\?\.focus/);
 });
 
-test("editable generated copy grows with its content and has print-safe mirrors", async () => {
+test("reading preview is static and editing happens on a separate screen", async () => {
   const [page, css] = await Promise.all([
     readFile(new URL("app/page.tsx", projectRoot), "utf8"),
     readFile(new URL("app/globals.css", projectRoot), "utf8"),
   ]);
 
+  const readingSection = page.slice(page.indexOf("function ReadingSection"), page.indexOf("function SourcesPage"));
   assert.match(page, /function AutoTextarea/);
   assert.match(page, /textarea\.scrollHeight/);
   assert.match(page, /new ResizeObserver/);
-  assert.match(page, /className="print-copy"/);
-  assert.match(page, /className="print-section-title"/);
+  assert.doesNotMatch(readingSection, /<input|<AutoTextarea/);
+  assert.match(page, />Edit Haggadah</);
+  assert.match(page, /className={`editor-screen type-/);
+  assert.match(page, />Back to preview</);
+  assert.match(page, /<EditorSection key=/);
+  assert.doesNotMatch(page, /function save\(|>Save</);
   assert.match(css, /\.section-page,\.aux-page\{height:auto!important;min-height:11in!important;max-height:none!important;overflow:visible!important/);
-  assert.match(css, /\.section-page textarea,\.section-title,\.invitation textarea\{display:none!important\}/);
-  assert.match(css, /\.print-copy,\.print-section-title\{display:block!important/);
+  assert.match(css, /\.editor-screen\{min-height:100svh/);
   assert.match(css, /filter:grayscale\(1\)!important/);
+});
+
+test("intake, sources, invitation, and host guide include the requested finishing behavior", async () => {
+  const [page, css] = await Promise.all([
+    readFile(new URL("app/page.tsx", projectRoot), "utf8"),
+    readFile(new URL("app/globals.css", projectRoot), "utf8"),
+  ]);
+
+  assert.match(page, /How long should the seder be\?/);
+  assert.match(page, /20-min script/);
+  assert.match(page, /About 32–36 min live \+ dinner/);
+  assert.match(page, /OPTIONAL TABLE QUESTION/);
+  assert.match(page, /About 55–65 min live \+ dinner/);
+  assert.match(page, /About 95–110 min live \+ dinner/);
+  assert.match(page, /LIVE_PLANNING_RANGES\[profile\.length\]\.label/);
+  assert.match(page, /What themes should run through the story\?/);
+  assert.match(page, /className="step-two-grid"/);
+  assert.match(css, /\.step-two-grid\{display:grid;grid-template-columns:1fr/);
+  assert.match(css, /overflow-wrap:normal;word-break:normal;hyphens:none/);
+  assert.match(css, /@media screen and \(max-width:600px\)\{\s*\.choice-grid\.choices-2,\.choice-grid\.choices-3\{grid-template-columns:1fr\}/);
+  assert.match(page, /type-\$\{profile\.typography\}/);
+  assert.match(page, /showPicker\?\.\(\)/);
+  assert.match(page, /className="cover-picker"/);
+  assert.match(page, /className="intake-cover-gallery"/);
+  assert.equal((page.match(/Choose your cover/g) ?? []).length, 1);
+  assert.doesNotMatch(page, /className="cover-gallery"/);
+  assert.match(page, /function SourcesPage/);
+  assert.match(page, /<SourcesPage credits={documentCredits}/);
+  assert.match(page, /document\.invitation\} minRows=\{8\}/);
+  assert.match(page, /className="guide-card-grid"/);
+  assert.match(page, /className="plate-card-grid"/);
+  for (const image of ["zeroa", "beitzah", "maror", "charoset", "karpas", "chazeret", "orange", "pomegranate"]) assert.match(page, new RegExp(`return "${image}\\.png"`));
+  assert.match(css, /\.plate-object-slot img\{filter:grayscale\(1\)!important\}/);
 });
 
 test("editorial redesign uses the cream, espresso, and cobalt chapter system", async () => {
@@ -56,7 +93,7 @@ test("editorial redesign uses the cream, espresso, and cobalt chapter system", a
   assert.match(css, /--clay:#1c62bd/);
   assert.match(css, /\.how\{min-height:84svh/);
   assert.match(css, /\.result\{min-height:100svh/);
-  assert.match(css, /\.cover-gallery\{grid-template-columns:repeat\(2,1fr\)/);
+  assert.match(css, /\.workspace\{max-width:850px;grid-template-columns:minmax\(0,850px\);gap:0/);
   assert.match(css, /@media screen and \(max-width:760px\)/);
 });
 
@@ -73,5 +110,39 @@ test("intake preview uses a stable, legible modernist poster treatment", async (
   assert.doesNotMatch(page, /const previewCover = useMemo/);
   assert.match(css, /\.editorial-preview>\.preview-panel\{[^}]*background:rgba\(12,48,104,\.95\)/);
   assert.match(css, /\.intake-preview\.editorial-preview h3\{[^}]*color:#fff/);
+  assert.match(css, /\.editorial-preview\.type-readable>\.preview-panel\{[^}]*width:86%/);
   assert.match(css, /@media screen and \(max-width:760px\)\{\s*\.intake-preview\.editorial-preview\{min-height:148px/);
+});
+
+test("all typography choices bundle their actual offline fonts", async () => {
+  const layout = await readFile(new URL("app/layout.tsx", projectRoot), "utf8");
+  const css = await readFile(new URL("app/globals.css", projectRoot), "utf8");
+
+  assert.match(layout, /@fontsource\/source-serif-4\/latin-400\.css/);
+  assert.match(layout, /@fontsource\/inter\/latin-400\.css/);
+  assert.match(layout, /@fontsource\/atkinson-hyperlegible\/latin-400\.css/);
+  assert.match(css, /--font-readable:"Atkinson Hyperlegible"/);
+});
+
+test("print and PDF export use a dedicated US Letter document", async () => {
+  const [page, css] = await Promise.all([
+    readFile(new URL("app/page.tsx", projectRoot), "utf8"),
+    readFile(new URL("app/globals.css", projectRoot), "utf8"),
+  ]);
+
+  assert.match(page, /function PrintableHaggadah/);
+  assert.match(page, /document\.profile\.length === 20 \? "compact-print"/);
+  assert.match(page, /className="workspace screen-document"/);
+  assert.match(page, /<PrintableHaggadah document={document}/);
+  assert.match(page, /function printHaggadah\(\)/);
+  assert.match(page, /window\.print\(\)/);
+  assert.match(page, /new jsPDF\(\{ unit: "pt", format: "letter" \}\)/);
+  assert.match(page, /const pageW = 612, pageH = 792/);
+  assert.match(page, /pdf\.getNumberOfPages\(\)/);
+  assert.match(page, /pdf\.setPage\(pageNumber\)/);
+  assert.match(css, /@page\{\s*size:Letter portrait;\s*margin:\.55in \.65in/);
+  assert.match(css, /\.print-document \.cover\{[^}]*height:9\.9in!important/);
+  assert.match(css, /\.print-document \.section-page\{[^}]*break-before:page!important/);
+  assert.match(css, /\.print-document\.compact-print \.section-page\{[^}]*break-before:auto!important/);
+  assert.match(css, /\.screen-document[^}]*display:none!important/);
 });

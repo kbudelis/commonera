@@ -1,0 +1,726 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "freedom-seder-earth",
+  "title": "The Freedom Seder for the Earth",
+  "creator": "Rabbi Arthur Waskow and The Shalom Center",
+  "family": "eco-justice",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "An interfaith, ecological Freedom Seder that links spring, ritual foods, Exodus, civil-rights history, and responsibility for the living earth. Its strongest sequences are vivid and participatory, while its 2009 political examples, expansive theological interpretations, songs, and embedded quotations must remain visibly sourced and historically framed.",
+  "sourceAssessment": {
+    "voice": "Prophetic, poetic, interfaith, ecological, and workshop-oriented, with an embodied theology of God as the interbreathing life of the world.",
+    "bestUses": [
+      "Environmental and interfaith theme paths",
+      "Longer participatory Seders with room for communal reading and action",
+      "Explanations of matzah, maror, charoset, Miriam's Cup, and the four cups",
+      "Historical framing for the modern Freedom Seder movement"
+    ],
+    "beginnerRisks": [
+      "The source's preferred names for God and its prophetic metaphors need plain-language introduction rather than silent substitution.",
+      "Several ecological descriptions of the biblical plagues are interpretive midrash, not historical or scientific explanations.",
+      "Many songs, poems, speeches, and translations are embedded third-party material with their own printed credits.",
+      "Campaign suggestions, contact information, and policy examples date from 2009 and should not be presented as current guidance."
+    ],
+    "politicalContext": "The source openly advocates ecological, economic, anti-war, and civil-rights action. Use those passages only when the selected themes support them, label named campaigns and political examples as historical, and retain its peace-centered, non-exclusivist language. References to biblical Israel, ancient Jerusalem, Christianity, and Islam are historical or interfaith context rather than contemporary territorial claims.",
+    "creditContext": "Credit Rabbi Arthur Waskow, The Shalom Center, and The Freedom Seder for the Earth on the final sources page. Preserve each embedded writer, translator, musician, or speaker credit and the source's printed permission line where required."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 25,
+    "segmentCount": 69,
+    "exactCharacterCount": 61656,
+    "exactWordCount": 10893,
+    "reconstructionSha256": "93d0ec6a766701727103adbb7ee6632e294e38de2d555a6a9ea997d571d4071d",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Attribute Waskow and The Shalom Center",
+      "Preserve source-presented credits and ShareAlike notice"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=8852"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-freedom-seder-earth-oxb-d56d206f5d2c",
+        "research-freedom-seder-earth-uek-3c2087bd497c",
+        "research-freedom-seder-earth-16ze-df61934ad171"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-freedom-seder-earth-cbe-0eab937de8c5",
+        "research-freedom-seder-earth-d88-e258fb05d8d6",
+        "research-freedom-seder-earth-duq-864b3210f16c"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-freedom-seder-earth-eiv-425bdbcaa2b5",
+        "research-freedom-seder-earth-fic-9c04feaf2b3e",
+        "research-freedom-seder-earth-g47-b5cf57093722"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 38,
+      "segmentIds": [
+        "research-freedom-seder-earth-0-fb7728ce5d08",
+        "research-freedom-seder-earth-2r-40b8f5648d41",
+        "research-freedom-seder-earth-p8-bd67d0af0147",
+        "research-freedom-seder-earth-1em-1de59ac0302c",
+        "research-freedom-seder-earth-2dm-05642e20595f",
+        "research-freedom-seder-earth-31d-5849ac5e2a52",
+        "research-freedom-seder-earth-3lr-d8e76bb469ea",
+        "research-freedom-seder-earth-4bf-d9a803723c53",
+        "research-freedom-seder-earth-56n-66e7ee04c11a",
+        "research-freedom-seder-earth-5xo-3d9bf43c911e",
+        "research-freedom-seder-earth-6s0-e936bba2443a",
+        "research-freedom-seder-earth-7j5-a10c91023201",
+        "research-freedom-seder-earth-isy-ed3c75873f5e",
+        "research-freedom-seder-earth-jsj-e602cf2639b8",
+        "research-freedom-seder-earth-kci-96cdb4af9d7b",
+        "research-freedom-seder-earth-l1v-00fe47d48575",
+        "research-freedom-seder-earth-lnd-d21b08e7e625",
+        "research-freedom-seder-earth-mgi-983fa4c1ed52",
+        "research-freedom-seder-earth-nal-315f11f79f9f",
+        "research-freedom-seder-earth-o43-194a4832353e",
+        "research-freedom-seder-earth-oxb-d56d206f5d2c",
+        "research-freedom-seder-earth-plc-1d5951fa7c3c",
+        "research-freedom-seder-earth-qjn-e3edd153eea5",
+        "research-freedom-seder-earth-r3k-0d8a0609942a",
+        "research-freedom-seder-earth-rkw-69af66278151",
+        "research-freedom-seder-earth-s7i-fe779380cc8a",
+        "research-freedom-seder-earth-t5s-003b93e2a485",
+        "research-freedom-seder-earth-tis-f225b2d7a079",
+        "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+        "research-freedom-seder-earth-vmb-ce7c6531aa9e",
+        "research-freedom-seder-earth-yzq-4c5d5c4b5f21",
+        "research-freedom-seder-earth-12ig-f442b173d6b7",
+        "research-freedom-seder-earth-135d-1e5ad2b1e805",
+        "research-freedom-seder-earth-13sb-e62c1465e0e3",
+        "research-freedom-seder-earth-14kf-5d2564beb27e",
+        "research-freedom-seder-earth-159e-e37267cff759",
+        "research-freedom-seder-earth-15v9-4be9570a638a",
+        "research-freedom-seder-earth-16gd-d0385eb2170a"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 11,
+      "segmentIds": [
+        "research-freedom-seder-earth-83y-6a802d25fb33",
+        "research-freedom-seder-earth-94g-ec7b4c6965dc",
+        "research-freedom-seder-earth-9s8-f84a902d2da2",
+        "research-freedom-seder-earth-aes-f8205ae37eab",
+        "research-freedom-seder-earth-gqf-45f7bc56301c",
+        "research-freedom-seder-earth-ho5-05bd8c3df36e",
+        "research-freedom-seder-earth-i9d-da3aa0943b5d",
+        "research-freedom-seder-earth-w5p-5fd6456ca882",
+        "research-freedom-seder-earth-wt5-ead8f4bf0802",
+        "research-freedom-seder-earth-xgb-53cfe46b8b6f",
+        "research-freedom-seder-earth-ycl-9d6fc65b9be5"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-freedom-seder-earth-17kj-dea31e49f52f",
+        "research-freedom-seder-earth-18eq-eb550c0c98d7",
+        "research-freedom-seder-earth-191u-353478cfda34"
+      ]
+    },
+    "barech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-freedom-seder-earth-uek-3c2087bd497c"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 11,
+      "segmentIds": [
+        "research-freedom-seder-earth-axj-0095afb9df87",
+        "research-freedom-seder-earth-bpu-9c7d49d3ef1f",
+        "research-freedom-seder-earth-yzq-4c5d5c4b5f21",
+        "research-freedom-seder-earth-1010-c33e9cee86e1",
+        "research-freedom-seder-earth-10li-78fe6d96de42",
+        "research-freedom-seder-earth-11cu-448848b50363",
+        "research-freedom-seder-earth-11wk-4d4c4ac02247",
+        "research-freedom-seder-earth-16ze-df61934ad171",
+        "research-freedom-seder-earth-19ks-15acd1c5622f",
+        "research-freedom-seder-earth-1a6v-0babae7bd745",
+        "research-freedom-seder-earth-1avv-b2309e29847e"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 9,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 4
+  },
+  "recommendedSequences": [
+    {
+      "id": "freedom-earth-seder-history",
+      "title": "From spring festival to Freedom Seder",
+      "sectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "insertionSectionId": "kadesh",
+      "segmentIds": [
+        "research-freedom-seder-earth-p8-bd67d0af0147",
+        "research-freedom-seder-earth-1em-1de59ac0302c",
+        "research-freedom-seder-earth-2dm-05642e20595f",
+        "research-freedom-seder-earth-31d-5849ac5e2a52"
+      ],
+      "beginnerContext": "Introduce this as the source author's account of how Passover imagery traveled through Jewish, Christian, Muslim, and Black freedom traditions, and explain that the sequence ends with the first 1969 Freedom Seder.",
+      "rationale": "The four passages form one chronological narrative from ancient spring practices through Exodus traditions and the civil-rights era to the first Freedom Seder.",
+      "themes": [
+        "interfaith",
+        "social-justice",
+        "traditional"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "interfaith-or-social-justice-theme-only",
+        "present-origin-claims-as-source-authors-framing",
+        "embedded-translation-attribution-review"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow and The Shalom Center; preserve the Ahmed Ali Qur'an translation attribution and the named historical figures.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 2, segment 2",
+        "end": "PDF p. 3, segment 2",
+        "locators": [
+          {
+            "id": "research-freedom-seder-earth-p8-bd67d0af0147",
+            "sourceLocation": "PDF p. 2, segment 2",
+            "locator": {
+              "label": "PDF p. 2",
+              "pageNumber": 2,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 908,
+              "normalizedEndOffset": 1821
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-1em-1de59ac0302c",
+            "sourceLocation": "PDF p. 2, segment 3",
+            "locator": {
+              "label": "PDF p. 2",
+              "pageNumber": 2,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 1822,
+              "normalizedEndOffset": 3081
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-2dm-05642e20595f",
+            "sourceLocation": "PDF p. 3, segment 1",
+            "locator": {
+              "label": "PDF p. 3",
+              "pageNumber": 3,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 3082,
+              "normalizedEndOffset": 3936
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-31d-5849ac5e2a52",
+            "sourceLocation": "PDF p. 3, segment 2",
+            "locator": {
+              "label": "PDF p. 3",
+              "pageNumber": 3,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 3937,
+              "normalizedEndOffset": 4670
+            }
+          }
+        ]
+      },
+      "totalWords": 620,
+      "exactTextSequenceSha256": "351a7c07437a2d44768ced96a2601ca4979247d344c86289bad336d67fed1e41",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "freedom-earth-miriam-water-creativity",
+      "title": "Miriam's water and creative freedom",
+      "sectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-freedom-seder-earth-uek-3c2087bd497c",
+        "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+        "research-freedom-seder-earth-vmb-ce7c6531aa9e"
+      ],
+      "beginnerContext": "Explain that Miriam's Cup is filled with water in honor of Miriam, whose well sustained the Israelites in the wilderness; identify the passage as an interfaith and diasporic meditation on water.",
+      "rationale": "The sequence moves from a cup ritual to African diasporic water wisdom, then to Miriam's actions and a poem, maintaining water as the organizing image throughout.",
+      "themes": [
+        "feminist",
+        "environment",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "feminist-environment-or-interfaith-theme-only",
+        "embedded-poem-and-proverb-attribution-review",
+        "do-not-universalize-distinct-african-traditions",
+        "preserve-michael-twitty-and-muriel-rukeyser-credits"
+      ],
+      "creditNotes": "Credit The Shalom Center, Michael Twitty, and Muriel Rukeyser on the final sources page, preserving the source's placement of their contributions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 16, segment 1",
+        "end": "PDF p. 16, segment 3",
+        "locators": [
+          {
+            "id": "research-freedom-seder-earth-uek-3c2087bd497c",
+            "sourceLocation": "PDF p. 16, segment 1",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 39404,
+              "normalizedEndOffset": 40135
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+            "sourceLocation": "PDF p. 16, segment 2",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 40136,
+              "normalizedEndOffset": 40978
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-vmb-ce7c6531aa9e",
+            "sourceLocation": "PDF p. 16, segment 3",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 40979,
+              "normalizedEndOffset": 41676
+            }
+          }
+        ]
+      },
+      "totalWords": 391,
+      "exactTextSequenceSha256": "4fcb84492af354e9c01d5175f9753274a4ef518d62d984458531853ee584b114",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "freedom-earth-matzah-maror-charoset",
+      "title": "Three tastes of transformation",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": "maggid",
+      "segmentIds": [
+        "research-freedom-seder-earth-w5p-5fd6456ca882",
+        "research-freedom-seder-earth-wt5-ead8f4bf0802"
+      ],
+      "beginnerContext": "Place the matzah, bitter herb, and charoset where everyone can see them; tell guests when to lift and taste each item and define charoset as the sweet fruit-and-nut mixture on the Seder plate.",
+      "rationale": "These passages give a complete sensory progression from matzah to maror to charoset and explain how bitter memory and sweet possibility coexist at the table.",
+      "themes": [
+        "environment",
+        "traditional",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "retain-source-theology-with-plain-language-introduction",
+        "do-not-rewrite-blessings-as-direct-quotations",
+        "confirm-allergy-safe-charoset-alternative-in-host-guide"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow, The Shalom Center, and The Freedom Seder for the Earth on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 17, segment 1",
+        "end": "PDF p. 17, segment 2",
+        "locators": [
+          {
+            "id": "research-freedom-seder-earth-w5p-5fd6456ca882",
+            "sourceLocation": "PDF p. 17, segment 1",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 41677,
+              "normalizedEndOffset": 42520
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-wt5-ead8f4bf0802",
+            "sourceLocation": "PDF p. 17, segment 2",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 42521,
+              "normalizedEndOffset": 43354
+            }
+          }
+        ]
+      },
+      "totalWords": 284,
+      "exactTextSequenceSha256": "0f361b541ac44279ea785076cfb41498c76959a3e2c23e6d193bf1efe579a180",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "freedom-earth-dayenu-to-action",
+      "title": "An unfinished Dayenu and embodied action",
+      "sectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-freedom-seder-earth-13sb-e62c1465e0e3",
+        "research-freedom-seder-earth-14kf-5d2564beb27e",
+        "research-freedom-seder-earth-159e-e37267cff759",
+        "research-freedom-seder-earth-15v9-4be9570a638a",
+        "research-freedom-seder-earth-16gd-d0385eb2170a"
+      ],
+      "beginnerContext": "Explain Dayenu as a cumulative song meaning 'it would have been enough,' then tell guests that this adaptation deliberately answers that justice work is not complete after any single achievement.",
+      "rationale": "The sequence carries one argument from an ecological and social-justice Dayenu, through interfaith intention and civil-rights sit-ins, to choosing a concrete action after the Seder.",
+      "themes": [
+        "environment",
+        "social-justice",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-2009-activist-workshop-opt-in",
+        "embedded-hajj-translation-and-song-attribution-review",
+        "replace-address-collection-instruction-with-privacy-safe-voluntary-action",
+        "do-not-present-dated-lobbying-targets-as-current"
+      ],
+      "creditNotes": "Credit The Shalom Center, Ali Shariati, Rabbi Arthur Waskow, and the source-presented song writers or traditions on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 21, segment 2",
+        "end": "PDF p. 22, segment 4",
+        "locators": [
+          {
+            "id": "research-freedom-seder-earth-13sb-e62c1465e0e3",
+            "sourceLocation": "PDF p. 21, segment 2",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 51563,
+              "normalizedEndOffset": 52574
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-14kf-5d2564beb27e",
+            "sourceLocation": "PDF p. 22, segment 1",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 52575,
+              "normalizedEndOffset": 53473
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-159e-e37267cff759",
+            "sourceLocation": "PDF p. 22, segment 2",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 53474,
+              "normalizedEndOffset": 54260
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-15v9-4be9570a638a",
+            "sourceLocation": "PDF p. 22, segment 3",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 54261,
+              "normalizedEndOffset": 55020
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-16gd-d0385eb2170a",
+            "sourceLocation": "PDF p. 22, segment 4",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 55021,
+              "normalizedEndOffset": 55705
+            }
+          }
+        ]
+      },
+      "totalWords": 749,
+      "exactTextSequenceSha256": "860a2c5ba8c6447c0894b018318316d161bcc50739c419f63340b57d8d0b8abd",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "freedom-earth-elijah-afikoman-praise",
+      "title": "Elijah, the afikoman, and responsibility",
+      "sectionIds": [
+        "tzafun",
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-freedom-seder-earth-16ze-df61934ad171",
+        "research-freedom-seder-earth-17kj-dea31e49f52f",
+        "research-freedom-seder-earth-18eq-eb550c0c98d7",
+        "research-freedom-seder-earth-191u-353478cfda34"
+      ],
+      "beginnerContext": "Explain Elijah's Cup, tell children that the afikoman is the hidden matzah they may search for, and state in advance that any donation named in the activity is voluntary and chosen by the adults.",
+      "rationale": "The passages make a coherent closing movement from accepting responsibility, through song and the children's afikoman search, to a communal reading about carrying one another toward justice and mercy.",
+      "themes": [
+        "environment",
+        "social-justice",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "embedded-mlk-pete-seeger-and-poem-attribution-review",
+        "content-note-for-historical-violence-references",
+        "children-may-search-but-adults-control-any-donation",
+        "preserve-peace-focused-closing"
+      ],
+      "creditNotes": "Credit The Shalom Center, Dr. Martin Luther King Jr., Pete Seeger, and the source-presented author of the closing reading on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 23, segment 1",
+        "end": "PDF p. 24, segment 2",
+        "locators": [
+          {
+            "id": "research-freedom-seder-earth-16ze-df61934ad171",
+            "sourceLocation": "PDF p. 23, segment 1",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 55706,
+              "normalizedEndOffset": 56466
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-17kj-dea31e49f52f",
+            "sourceLocation": "PDF p. 23, segment 2",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 56467,
+              "normalizedEndOffset": 57553
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-18eq-eb550c0c98d7",
+            "sourceLocation": "PDF p. 24, segment 1",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 57554,
+              "normalizedEndOffset": 58385
+            }
+          },
+          {
+            "id": "research-freedom-seder-earth-191u-353478cfda34",
+            "sourceLocation": "PDF p. 24, segment 2",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+              "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+              "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+              "normalizedStartOffset": 58386,
+              "normalizedEndOffset": 59067
+            }
+          }
+        ]
+      },
+      "totalWords": 642,
+      "exactTextSequenceSha256": "f1c55b7b08e7c9d4123994f53cd1e69cc1d384dd4e3da85b63d2fd0580520ce8",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-freedom-seder-earth-2r-40b8f5648d41",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "Permission, contact, and fee boilerplate belongs in research and credits, not in a generated ritual reading."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-mgi-983fa4c1ed52",
+      "sourceLocation": "PDF p. 12, segment 1",
+      "reasons": [
+        "A dated contemporary-plagues list begins here and should not be inserted without a full historical and factual update."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-nal-315f11f79f9f",
+      "sourceLocation": "PDF p. 12, segment 2",
+      "reasons": [
+        "The list combines graphic violence, dated public-health references, and contemporary conflicts in a form unsuitable for automatic beginner output."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-o43-194a4832353e",
+      "sourceLocation": "PDF p. 12, segment 3",
+      "reasons": [
+        "The segment mixes a prophetic reading with a continuation of the dated plague exercise and lacks a clean insertion boundary."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-oxb-d56d206f5d2c",
+      "sourceLocation": "PDF p. 13, segment 1",
+      "reasons": [
+        "The invited-speaker and contemporary-plague instructions are event-specific and date-sensitive."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-t5s-003b93e2a485",
+      "sourceLocation": "PDF p. 15, segment 1",
+      "reasons": [
+        "The segment is a fragment of a dated climate quotation and cannot stand alone coherently."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-xgb-53cfe46b8b6f",
+      "sourceLocation": "PDF p. 17, segment 3",
+      "reasons": [
+        "The orange explanation uses obsolete terminology and then crosses into an incomplete political quotation; use the separately reviewed Second Seder Plate orange sequence instead."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-yzq-4c5d5c4b5f21",
+      "sourceLocation": "PDF p. 18, segment 2",
+      "reasons": [
+        "The segment combines copyrighted song lyrics, cup ritual, and a new action section; it requires item-level rights and boundary review before use."
+      ]
+    },
+    {
+      "id": "research-freedom-seder-earth-1avv-b2309e29847e",
+      "sourceLocation": "PDF p. 25, segment 2",
+      "reasons": [
+        "Acknowledgments and artwork commentary belong on the final sources page rather than in the ritual flow."
+      ]
+    }
+  ],
+  "notes": [
+    "The source's ecological theology should be preserved as its own voice; a short beginner bridge may define it, but the model must not homogenize it into generic spirituality.",
+    "The source dates from 2009. References to contemporary plagues, campaigns, contact details, technologies, and public officials must be labeled or refreshed outside exact quotations.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

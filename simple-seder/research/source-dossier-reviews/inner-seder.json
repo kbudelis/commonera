@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "inner-seder",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A dense, contemplative, eco-spiritual Haggadah with powerful inner-work interpretations and a full traditional structure; its enduring ritual and ethical sequences are valuable, while numerous 2026 political passages must remain research-only or explicitly contextualized.",
+  "sourceAssessment": {
+    "voice": "Meditative, mystical, eco-spiritual, justice-oriented, textually learned, and often written for adults already comfortable with Jewish liturgy and contemporary activism.",
+    "bestUses": [
+      "Mindfulness and spiritual-depth interpretations woven into traditional ritual moments",
+      "A concise ethical Exodus telling focused on oppression, cry, and responsibility",
+      "Meal and blessing passages that connect bodily action, gratitude, ecology, and peace"
+    ],
+    "beginnerRisks": [
+      "The source frequently assumes knowledge of Hebrew, rabbinic concepts, mystical vocabulary, and the traditional Seder sequence.",
+      "Many passages address specific 2026 political events and can become outdated or partisan when detached from their source context.",
+      "Long interpretive units can overwhelm a short or mixed-age Seder unless paired with concrete action cues and trimmed as complete movements."
+    ],
+    "politicalContext": "The edition openly advocates Palestinian dignity, opposes settler violence and war, and also affirms Jewish and Israeli actors working for safety and peace. Those commitments align with shared humanity, but event-specific allegations, party or government references, and contemporary conflict claims must not enter default modules without current sourcing and an explicit opt-in.",
+    "creditContext": "Credit Rabbi David Seidenberg and neohasid.org, link the CC BY-SA 4.0 license, identify modifications, and preserve ShareAlike terms. The source contains many embedded readings, translations, and poems that require their own credit and rights review."
+  },
+  "recommendedSequences": [
+    {
+      "id": "inner-seder-brokenness-and-transformation",
+      "title": "Broken matzah and inner transformation",
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-3de-7ab6524dc2a6",
+        "research-inner-seder-ahl-fc3cb7bc7e03"
+      ],
+      "beginnerContext": "First identify the middle matzah, explain that the larger half becomes the afikoman, and state how it will be hidden and returned. Then invite guests to treat the break as an optional reflection on what is unfinished and what might become whole.",
+      "rationale": "These source-order passages connect the physical act of breaking matzah with the source's central inner-Seder method, offering spiritual depth grounded in a visible ritual rather than an abstract meditation.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-action-cues-required",
+        "afikoman-search-and-return-explained",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; preserve CC BY-SA 4.0 attribution, change notice, and ShareAlike terms."
+    },
+    {
+      "id": "inner-seder-retelling-obligation",
+      "title": "Why this story is retold",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-e1l-2b9cfae39d65",
+        "research-inner-seder-et1-33d9edb805f7",
+        "research-inner-seder-fhs-763fc3a33503"
+      ],
+      "beginnerContext": "Tell guests that Maggid is the storytelling section and that the story belongs to the whole table. Invite people to take turns reading, while allowing anyone to pass.",
+      "rationale": "The three adjacent records establish the obligation to tell, expand it into active participation, and frame the narrative as lived rather than merely historical, a coherent orientation to Maggid.",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "turn-taking-invitation-required",
+        "right-to-pass-required",
+        "plain-language-maggid-definition",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org and indicate any abridgment."
+    },
+    {
+      "id": "inner-seder-four-children",
+      "title": "Four ways of approaching the story",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-ixc-d2c70ad4faba",
+        "research-inner-seder-jlp-cb11d3448c43",
+        "research-inner-seder-k8u-00309386ad48",
+        "research-inner-seder-ku4-34aaaa2ce7be",
+        "research-inner-seder-ler-0524ca4d9f76"
+      ],
+      "beginnerContext": "Introduce these as four modes that can exist within any person, not fixed labels for actual children. Explain unfamiliar spiritual vocabulary and do not ask guests to identify one another.",
+      "rationale": "Five consecutive records preserve the source's contemplative reinterpretation as a complete psychological movement, avoiding the harm of extracting a single label without its balancing perspectives.",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "nonlabeling-introduction-required",
+        "plain-language-spiritual-vocabulary",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and preserve any attribution attached to adapted Four Children material."
+    },
+    {
+      "id": "inner-seder-compact-torah-arc",
+      "title": "A compact Torah story",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-pxu-366984ca3612",
+        "research-inner-seder-qlw-05489ada2f42"
+      ],
+      "beginnerContext": "Introduce the main people and sequence before reading: ancestors migrate, descendants are enslaved, oppression intensifies, the people cry out, and liberation begins. Clarify that the text is a compact scriptural retelling rather than the whole story.",
+      "rationale": "The adjacent records condense the biblical and rabbinic arc into a source-led narrative unit that can support a shorter Haggadah without reducing Exodus to isolated terms.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-character-introductions",
+        "nontriumphalist-violence-framing",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0; indicate any cuts."
+    },
+    {
+      "id": "inner-seder-oppression-cry-and-refuge",
+      "title": "Oppression, cry, and responsibility",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-wcz-1d0ca35ac57e",
+        "research-inner-seder-x18-64320e1f6615",
+        "research-inner-seder-xqd-07d9ef292594",
+        "research-inner-seder-ybu-9bac97851de9",
+        "research-inner-seder-z1s-1954344a1e50",
+        "research-inner-seder-zmh-c24de1615778"
+      ],
+      "beginnerContext": "Explain that the traditional verses linger over what oppression does to families and how a cry becomes heard. Invite one concrete question about whose cries society notices today, without requiring personal disclosure or making unsupported current claims.",
+      "rationale": "Six adjacent records form a sustained ethical exposition from forced labor and family harm through the people's cry and the obligation to notice vulnerability, one of the source's strongest justice-centered movements.",
+      "themes": [
+        "social-justice",
+        "mindfulness",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "no-unsupported-current-claims",
+        "concrete-discussion-prompt",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; retain CC BY-SA 4.0 and any item-level credits."
+    },
+    {
+      "id": "inner-seder-symbols-and-every-generation",
+      "title": "Symbols becoming lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1d4n-f3bd4d5cb453",
+        "research-inner-seder-1dpp-4ff49838b5e4",
+        "research-inner-seder-1ede-79ae281ed179",
+        "research-inner-seder-1evg-2f885502f640",
+        "research-inner-seder-1fjp-fd3030ed8653",
+        "research-inner-seder-1g6y-f8855467cf54",
+        "research-inner-seder-1gqo-ebf5d7d13d9d"
+      ],
+      "beginnerContext": "Point to the matzah and maror and define them before moving into meditation. Explain that 'in every generation' asks guests to connect memory to present responsibility, not to pretend they literally lived in ancient Egypt.",
+      "rationale": "The seven consecutive source records keep ritual objects, embodied interpretation, and the every-generation teaching in one complete movement, making the contemplative layer legible and grounded.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org and preserve source-presented attributions for any embedded interpretation."
+    },
+    {
+      "id": "inner-seder-mindful-table-rituals",
+      "title": "Mindful washing and symbolic eating",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1n6r-df7562c98a40",
+        "research-inner-seder-1nsy-066b7bbdf0b4",
+        "research-inner-seder-1oyx-3ed699816ec8",
+        "research-inner-seder-1pnz-a87ea803a49e"
+      ],
+      "beginnerContext": "Give the practical instructions before reflection: guests may wash their own hands or pour for one another over a basin, then eat matzah, bitter herb with haroset, and the sandwich. Keep any silence or visualization optional.",
+      "rationale": "The four adjacent passages bring the source's contemplative voice into the actual table sequence while preserving the correct ritual order, so meaning follows an understandable action.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "environment"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "mutual-handwashing-option-required",
+        "food-definition-and-allergy-note",
+        "do-not-replace-host-instructions",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; identify project-authored action bridges separately."
+    },
+    {
+      "id": "inner-seder-gratitude-and-peace",
+      "title": "Grace, enoughness, and peace",
+      "sectionIds": [
+        "barech"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1v2d-58e41b2bd406",
+        "research-inner-seder-1vor-16a676bfb400",
+        "research-inner-seder-1w82-b937c3e15789",
+        "research-inner-seder-1xn0-4a2c8061fdbe"
+      ],
+      "beginnerContext": "Explain that Barech is gratitude after eating and invite guests to notice sustenance, interdependence, and the wish for peace. State whether the table will read all four paragraphs or one selected portion.",
+      "rationale": "These source-order passages form an inward-to-outward arc from food and sufficiency to collective wellbeing and peace, giving the contemplative source a coherent closing table movement.",
+      "themes": [
+        "mindfulness",
+        "environment",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-barech-definition",
+        "peace-focused-language-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0 and preserve embedded credits."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-inner-seder-0-67bcd2e5c63c",
+      "reasons": [
+        "The 2026 activist dedication names a current killing and political actors; keep it in source research, not default runtime text."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-j1-8382e147aa4a",
+      "reasons": [
+        "The opening combines difficult extraction, political setup, and specialized ritual additions that require separate contextual review."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1ci-b4e73274fee6",
+      "reasons": [
+        "Event-specific claims about current Israeli and Palestinian politics require external current sourcing and explicit editorial review."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-cg8-8138d51ee01b",
+      "reasons": [
+        "The Ukraine and Gaza references are date-specific and should not be treated as evergreen ritual text."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-g6l-757d4a17ab49",
+      "reasons": [
+        "The prompt depends on current wars and requires a deliberately contemporary, fact-checked edition."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-rae-46936b810bff",
+      "reasons": [
+        "The contemporary state and redemption assertion is not appropriate for default peace-focused generation."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-tty-91149f90f341",
+      "reasons": [
+        "The ICE reference is current and partisan; it requires a dated social-justice opt-in and verified context."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-10es-0e2a8c3c32da",
+      "reasons": [
+        "Current West Bank allegations require current primary-source verification before reuse."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-131o-63b8aca9aa8a",
+      "reasons": [
+        "The contemporary political passage is not suitable for the evergreen candidate pool."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1bt0-ab79622952b1",
+      "reasons": [
+        "References to current Israeli and United States administrations will date quickly and require explicit contemporary framing."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1q92-f6ed4216d0bd",
+      "reasons": [
+        "Modern sovereignty claims require political-context review and are outside default ritual assembly."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1yfm-be855b59cae7",
+      "reasons": [
+        "The passage invokes current anger and conflict and requires a current-events opt-in."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1z7o-b880c0ac1d4a",
+      "reasons": [
+        "The hostages reference is event-specific and must remain in research until current verification."
+      ]
+    },
+    {
+      "segmentId": "research-inner-seder-1zus-4e9cce60eddd",
+      "reasons": [
+        "The current-conflict continuation cannot be used as evergreen ritual text."
+      ]
+    }
+  ],
+  "notes": [
+    "This source is not rejected for its politics; enduring contemplative and ethical movements are included, while dated claims are separated so the app does not present them without current verification.",
+    "The source's CC BY-SA license supports substantial reuse with attribution, change notice, and ShareAlike compliance.",
+    "A cohesive mindfulness version should use several whole sequences from this source rather than sprinkle isolated mystical sentences into an otherwise unrelated Haggadah.",
+    "All recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

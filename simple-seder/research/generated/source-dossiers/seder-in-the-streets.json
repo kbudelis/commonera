@@ -1,0 +1,710 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "seder-in-the-streets",
+  "title": "Seder in the Streets Passover Haggadah",
+  "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+  "family": "justice-human-rights",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A participatory 2014 protest Seder built in solidarity with immigrant hunger strikers. It offers unusually clear table orientation, shared-reading instructions, ritual explanations, and a compact Exodus narrative, but its Obama-era policy claims and campaign tactics are historical advocacy and must not be silently presented as current or politically neutral.",
+  "sourceAssessment": {
+    "voice": "Direct, communal, bilingual-aware, activist, and facilitator-led, with an emphasis on story sharing, questions, symbolic objects, and public solidarity.",
+    "bestUses": [
+      "Beginner orientation and permission to take turns reading",
+      "Participatory and interfaith table practices",
+      "An accessible compact Exodus narrative",
+      "Immigrant-justice Yachatz and protest-Seder history when explicitly selected"
+    ],
+    "beginnerRisks": [
+      "The original event was a foodless public protest outside the White House, not a conventional home meal.",
+      "Campaign claims, legal details, officials, and statistics describe 2014 and are not current guidance.",
+      "Several modules quote or adapt other Haggadot and must preserve their source-presented credits.",
+      "Some extracted segments end by opening the next activity, so only complete source-order sequences should be used."
+    ],
+    "politicalContext": "This is explicitly immigrant-justice advocacy from the Obama era. Selecting a social-justice or interfaith theme can justify ritual passages, but named administrations, agencies, boycotts, divestment campaigns, and legislative claims require a separate historical-activism opt-in. Its use of Mitzrayim deliberately avoids casting contemporary Egyptians or Arabs as villains and is compatible with the project's peace-focused policy.",
+    "creditContext": "Credit Danielle Gershkoff, Rachel Lerman, Rachel Beck, Margot Seigle, Open Siddur, and Seder in the Streets Passover Haggadah on the final sources page. Preserve the named source for embedded JFREJ, JCA, Avodah, JOI, family-Haggadah, and other borrowed readings."
+  },
+  "corpus": {
+    "acquisitionKind": "official-source-snapshot",
+    "pageCount": null,
+    "segmentCount": 34,
+    "exactCharacterCount": 28203,
+    "exactWordCount": 4797,
+    "reconstructionSha256": "33e53e47b584a0f2444b50fcfac733044030d92a4ee24a465feedcf2bc74d82f",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit all compilers and Open Siddur",
+      "Preserve source-presented credits and ShareAlike notice"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=10879"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-seder-in-the-streets-0-e9a3d483d752",
+        "research-seder-in-the-streets-l4-14dec73c9732",
+        "research-seder-in-the-streets-5kg-f29648d49611"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-seder-in-the-streets-6cp-3a9fb929505e"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-seder-in-the-streets-6zu-68d065e7791a"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 18,
+      "segmentIds": [
+        "research-seder-in-the-streets-19a-2a49bd245b4d",
+        "research-seder-in-the-streets-1v6-a2b7760282be",
+        "research-seder-in-the-streets-2i7-2981df3e913e",
+        "research-seder-in-the-streets-33n-6c6e70a5c10e",
+        "research-seder-in-the-streets-3nn-c40577d92286",
+        "research-seder-in-the-streets-46x-2d09c3dd472d",
+        "research-seder-in-the-streets-4uy-fa5a355ed654",
+        "research-seder-in-the-streets-7ow-4ff4b487d2b1",
+        "research-seder-in-the-streets-dai-8af519f0dcc0",
+        "research-seder-in-the-streets-dxf-f1636ab80e9f",
+        "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+        "research-seder-in-the-streets-f4a-6243c3f3e386",
+        "research-seder-in-the-streets-fpk-7e400d8fe332",
+        "research-seder-in-the-streets-gd1-6e50f55b9562",
+        "research-seder-in-the-streets-h1h-2f043d48b9c2",
+        "research-seder-in-the-streets-hlb-cc0532c3dea2",
+        "research-seder-in-the-streets-i9g-d7855ab2e8dd",
+        "research-seder-in-the-streets-jm0-91b4e6b93935"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-seder-in-the-streets-8ce-cc28378a77ba",
+        "research-seder-in-the-streets-90b-135287ae03e4"
+      ]
+    },
+    "maror": {
+      "segmentCount": 9,
+      "segmentIds": [
+        "research-seder-in-the-streets-8ce-cc28378a77ba",
+        "research-seder-in-the-streets-90b-135287ae03e4",
+        "research-seder-in-the-streets-9kx-aec8d28aafac",
+        "research-seder-in-the-streets-a90-5541b56c62e9",
+        "research-seder-in-the-streets-az5-7ca96aaf4c5a",
+        "research-seder-in-the-streets-bjs-338af7e12dd8",
+        "research-seder-in-the-streets-c4d-ce6191c16f74",
+        "research-seder-in-the-streets-com-69db7a5737dd",
+        "research-seder-in-the-streets-i9g-d7855ab2e8dd"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-seder-in-the-streets-ix3-3499535ab790"
+      ]
+    },
+    "barech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-seder-in-the-streets-ix3-3499535ab790"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-seder-in-the-streets-jm0-91b4e6b93935"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-seder-in-the-streets-jm0-91b4e6b93935",
+        "research-seder-in-the-streets-kc4-9fa9141fdf17",
+        "research-seder-in-the-streets-kxz-b05c93f2b1ef"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 15,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 1,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "streets-opening-place-at-table",
+      "title": "A place and a voice at the table",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-2i7-2981df3e913e",
+        "research-seder-in-the-streets-33n-6c6e70a5c10e"
+      ],
+      "beginnerContext": "Invite each guest to put one personally meaningful object near their place, and explain that people may take turns reading, ask questions, request slower speech, or pass.",
+      "rationale": "These passages provide the exact orientation a first-time table needs: what Passover recalls, what Seder means, how symbolic objects work, and how shared reading and questions will happen.",
+      "themes": [
+        "family-storytelling",
+        "interfaith",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "adapt-public-fabric-activity-to-home-table-without-changing-quoted-text",
+        "retain-language-access-and-pass-options",
+        "social-justice-family-or-interfaith-theme-only"
+      ],
+      "creditNotes": "Credit Seder in the Streets and all four compilers on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 5",
+        "end": "official source snapshot, segment 6",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-2i7-2981df3e913e",
+            "sourceLocation": "official source snapshot, segment 5",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 3247,
+              "normalizedEndOffset": 4018
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-33n-6c6e70a5c10e",
+            "sourceLocation": "official source snapshot, segment 6",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 4019,
+              "normalizedEndOffset": 4738
+            }
+          }
+        ]
+      },
+      "totalWords": 265,
+      "exactTextSequenceSha256": "746ce64bdb86096aa2c2bbf7558662948048f1375d781a5bce864846a0fce4b2",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "streets-food-hunger-and-mitzrayim",
+      "title": "Food, hunger strike, and the narrow place",
+      "sectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-3nn-c40577d92286",
+        "research-seder-in-the-streets-46x-2d09c3dd472d"
+      ],
+      "beginnerContext": "State that this is historical material from a 2014 foodless solidarity Seder, define a hunger strike, and explain that the Hebrew name Mitzrayim can also evoke a narrow or constricted place.",
+      "rationale": "The pair explains why the original event changed a ritual meal into a foodless protest and then supplies the source's deliberate, non-anti-Arab language for naming the biblical oppressor.",
+      "themes": [
+        "social-justice",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-2014-protest-seder-opt-in",
+        "do-not-convert-hunger-strike-description-into-host-instruction",
+        "preserve-non-anti-arab-context",
+        "label-activist-analysis-as-source-voice"
+      ],
+      "creditNotes": "Credit Seder in the Streets and its compilers; retain the source's 2014 event context on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 7",
+        "end": "official source snapshot, segment 8",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-3nn-c40577d92286",
+            "sourceLocation": "official source snapshot, segment 7",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 4739,
+              "normalizedEndOffset": 5432
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-46x-2d09c3dd472d",
+            "sourceLocation": "official source snapshot, segment 8",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 5433,
+              "normalizedEndOffset": 6297
+            }
+          }
+        ]
+      },
+      "totalWords": 268,
+      "exactTextSequenceSha256": "c064edf1006e501b1f84803eb5dc92cc4858e1d20060613accb968ed1715b998",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "streets-water-washing-karpas",
+      "title": "Miriam's water, handwashing, and karpas",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-5kg-f29648d49611",
+        "research-seder-in-the-streets-6cp-3a9fb929505e"
+      ],
+      "beginnerContext": "Explain that this source used water instead of wine in solidarity with hunger strikers; for a home Seder, identify the first cup separately and tell guests exactly when to wash and when to dip a green vegetable in salt water.",
+      "rationale": "The two passages maintain water as a continuous symbol from Miriam's well to ritual handwashing and then explain karpas through spring, tears, and renewal.",
+      "themes": [
+        "feminist",
+        "environment",
+        "mindfulness",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "do-not-confuse-source-water-cups-with-standard-wine-or-grape-juice",
+        "give-each-person-and-mutual-pouring-handwashing-options",
+        "preserve-lerman-family-haggadah-credit"
+      ],
+      "creditNotes": "Credit Seder in the Streets and the Lerman Family Haggadah as presented by the source.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 10",
+        "end": "official source snapshot, segment 11",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-5kg-f29648d49611",
+            "sourceLocation": "official source snapshot, segment 10",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 7216,
+              "normalizedEndOffset": 8232
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-6cp-3a9fb929505e",
+            "sourceLocation": "official source snapshot, segment 11",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 8233,
+              "normalizedEndOffset": 9065
+            }
+          }
+        ]
+      },
+      "totalWords": 313,
+      "exactTextSequenceSha256": "f11fde8b08e8bbacff08ee0561d56b429bcc5b0c4ac9bcecaf705ac346b32730",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "streets-yachatz-separated-families",
+      "title": "Yachatz and separated families",
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-6zu-68d065e7791a",
+        "research-seder-in-the-streets-7ow-4ff4b487d2b1"
+      ],
+      "beginnerContext": "Tell the host to take the middle of three matzot, break it, return the smaller piece, and wrap and hide the larger afikoman; explain that this adaptation connects the broken pieces with families separated by detention and deportation.",
+      "rationale": "The second passage completes the first passage's quotation and then moves naturally into Maggid, preserving one coherent metaphor of separation, return, and freedom.",
+      "themes": [
+        "social-justice",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "immigrant-justice-theme-or-explicit-opt-in",
+        "historical-policy-context-required",
+        "offer-content-note-and-pass-option-for-family-separation",
+        "preserve-jfrej-and-jca-credits"
+      ],
+      "creditNotes": "Credit Seder in the Streets, JFREJ's Immigrant Justice/Racial Justice Haggadah insert, and JCA's Immigrant Rights Freedom Seder on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 12",
+        "end": "official source snapshot, segment 13",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-6zu-68d065e7791a",
+            "sourceLocation": "official source snapshot, segment 12",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 9066,
+              "normalizedEndOffset": 9967
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-7ow-4ff4b487d2b1",
+            "sourceLocation": "official source snapshot, segment 13",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 9968,
+              "normalizedEndOffset": 10813
+            }
+          }
+        ]
+      },
+      "totalWords": 276,
+      "exactTextSequenceSha256": "a75fe6a1f39edf5bdb23dae6d45daa6140a32ca4af5f08f0b1c2d07af1dac9f6",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "streets-four-questions-explained",
+      "title": "The Four Questions with answers",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-8ce-cc28378a77ba",
+        "research-seder-in-the-streets-90b-135287ae03e4",
+        "research-seder-in-the-streets-9kx-aec8d28aafac"
+      ],
+      "beginnerContext": "Explain that the Four Questions are traditionally asked by the youngest willing participant but may be shared by anyone; point to the matzah, maror, dipping foods, and reclining as each is named.",
+      "rationale": "The first passage supplies all four questions and the next two answer each one in direct, accessible language before opening a separate optional discussion.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "preserve-dc-avodah-and-joi-credits",
+        "do-not-continue-into-unreviewed-alternative-faq",
+        "clarify-that-reclining-may-be-symbolic-or-adapted-for-accessibility"
+      ],
+      "creditNotes": "Credit Seder in the Streets, the DC Avodah Haggadah, and The JOI Haggadah on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 14",
+        "end": "official source snapshot, segment 16",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-8ce-cc28378a77ba",
+            "sourceLocation": "official source snapshot, segment 14",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 10814,
+              "normalizedEndOffset": 11674
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-90b-135287ae03e4",
+            "sourceLocation": "official source snapshot, segment 15",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 11675,
+              "normalizedEndOffset": 12416
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-9kx-aec8d28aafac",
+            "sourceLocation": "official source snapshot, segment 16",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 12417,
+              "normalizedEndOffset": 13283
+            }
+          }
+        ]
+      },
+      "totalWords": 432,
+      "exactTextSequenceSha256": "8641970e3e1ccac517167f58d0bc3d0a206ab814af60bb913c1cb5ee44445b7f",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "streets-compact-exodus-story",
+      "title": "A compact Exodus narrative",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-seder-in-the-streets-dxf-f1636ab80e9f",
+        "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+        "research-seder-in-the-streets-f4a-6243c3f3e386"
+      ],
+      "beginnerContext": "Before reading, briefly explain that Joseph had earlier helped Egypt survive a famine and that the Israelites' descendants remained there; this supplies the one missing setup before the source begins with the new Pharaoh.",
+      "rationale": "The three passages give a continuous beginner-readable story from enslavement and Moses' birth through the burning bush, the demand for freedom, and the plagues, ending with compassion for Egyptian suffering.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "supply-joseph-and-famine-setup-before-source-text",
+        "correct-pharaoh-spelling-only-in-bridge-not-in-exact-quotation",
+        "preserve-compassion-for-egyptian-civilians",
+        "do-not-append-dated-campaign-plagues"
+      ],
+      "creditNotes": "Credit Seder in the Streets and its four compilers on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 23",
+        "end": "official source snapshot, segment 25",
+        "locators": [
+          {
+            "id": "research-seder-in-the-streets-dxf-f1636ab80e9f",
+            "sourceLocation": "official source snapshot, segment 23",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 18051,
+              "normalizedEndOffset": 18828
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+            "sourceLocation": "official source snapshot, segment 24",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 18829,
+              "normalizedEndOffset": 19593
+            }
+          },
+          {
+            "id": "research-seder-in-the-streets-f4a-6243c3f3e386",
+            "sourceLocation": "official source snapshot, segment 25",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+              "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+              "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+              "normalizedStartOffset": 19594,
+              "normalizedEndOffset": 20359
+            }
+          }
+        ]
+      },
+      "totalWords": 430,
+      "exactTextSequenceSha256": "9389eace4486fa0af2a1db274d2f43327dee16c33eb851c65dfcf169ff5739b8",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-seder-in-the-streets-0-e9a3d483d752",
+      "sourceLocation": "official source snapshot, segment 1",
+      "reasons": [
+        "The event preface runs directly into a dated deportation statistic and is better retained as source-history metadata."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-l4-14dec73c9732",
+      "sourceLocation": "official source snapshot, segment 2",
+      "reasons": [
+        "Obama-era statistics and direct presidential advocacy are historical, partisan campaign material rather than default ritual text."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-19a-2a49bd245b4d",
+      "sourceLocation": "official source snapshot, segment 3",
+      "reasons": [
+        "The segment equates a current agency regime with enslavement in a way that requires historical activist context and should not be automatically generated."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-1v6-a2b7760282be",
+      "sourceLocation": "official source snapshot, segment 4",
+      "reasons": [
+        "The segment mixes dated legal claims with an incomplete event setup and lacks a clean reading boundary."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-4uy-fa5a355ed654",
+      "sourceLocation": "official source snapshot, segment 9",
+      "reasons": [
+        "A source typo says God redeemed the people from Israel, and the segment crosses from shared-reading instructions into two different rituals."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-a90-5541b56c62e9",
+      "sourceLocation": "official source snapshot, segment 17",
+      "reasons": [
+        "The beginning of a specialized Jewish-identity FAQ is research context, not a coherent ritual passage."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-az5-7ca96aaf4c5a",
+      "sourceLocation": "official source snapshot, segment 18",
+      "reasons": [
+        "A dated FAQ about antisemitic stereotypes and class requires specialist editing and full original citations."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-bjs-338af7e12dd8",
+      "sourceLocation": "official source snapshot, segment 19",
+      "reasons": [
+        "explicit-israel-politics-default-exclusion",
+        "Explicit Israel and Zionism FAQ material is excluded from default runtime under the project's political-framing policy."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-c4d-ce6191c16f74",
+      "sourceLocation": "official source snapshot, segment 20",
+      "reasons": [
+        "Immigration-law claims are dated and should not be presented as current legal guidance."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-com-69db7a5737dd",
+      "sourceLocation": "official source snapshot, segment 21",
+      "reasons": [
+        "Tax, benefits, citizenship, and economic claims are dated and require independent verification before any reuse."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-dai-8af519f0dcc0",
+      "sourceLocation": "official source snapshot, segment 22",
+      "reasons": [
+        "The NAFTA argument is historical policy analysis and ends at a narrative boundary."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-fpk-7e400d8fe332",
+      "sourceLocation": "official source snapshot, segment 26",
+      "reasons": [
+        "The segment crosses from a compassionate plague ritual into Obama-era campaign tactics and ends on an incomplete list."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-gd1-6e50f55b9562",
+      "sourceLocation": "official source snapshot, segment 27",
+      "reasons": [
+        "The contemporary-plagues and tactics list is dated, highly partisan, and incomplete without the following segment."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-h1h-2f043d48b9c2",
+      "sourceLocation": "official source snapshot, segment 28",
+      "reasons": [
+        "Boycott, divestment, DACA, and named-agency campaign demands are excluded from default nonpartisan generation."
+      ]
+    },
+    {
+      "id": "research-seder-in-the-streets-kc4-9fa9141fdf17",
+      "sourceLocation": "official source snapshot, segment 33",
+      "reasons": [
+        "The phrase Next year in Jerusalem is not permitted in this source's social-justice framing, and the project requires social justice to override the traditional refrain."
+      ]
+    }
+  ],
+  "notes": [
+    "The compact Exodus sequence begins after Joseph's arrival story; a short factual setup is mandatory so first-time guests are not dropped into the middle.",
+    "A social-justice theme does not automatically authorize every 2014 policy assertion. Ritual interpretations and time-bound campaign advocacy are gated separately.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

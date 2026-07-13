@@ -44,6 +44,10 @@ export interface QuoteEntry {
   rights: "public-domain" | "original-translation" | "owner-approved-demo";
   sourceUrl: string;
   approved: true;
+  /** Marks a non-Jewish contemplative text that receives stricter runtime limits. */
+  externalContemplative?: true;
+  traditionLabel?: string;
+  placementNote?: string;
 }
 
 export interface SederPlateGuideEntry {
@@ -54,7 +58,11 @@ export interface SederPlateGuideEntry {
 }
 
 export interface DocumentSourceMetrics {
-  primarySourceId: "shir-geulah" | "velveteen-rabbi";
+  /** Complete beginner-facing ritual structure; not the profile's featured editorial source. */
+  proceduralBackboneSourceId: "shir-geulah" | "velveteen-rabbi";
+  featuredSourceId: string;
+  featuredSourceWords: number;
+  supportingSourceIds: string[];
   /** Reviewed non-house wording, including inherited traditional liturgy. */
   borrowedWords: number;
   houseWords: number;
@@ -99,7 +107,12 @@ export interface HaggadahDocument {
   shoppingList: string[];
   sederPlateGuide: SederPlateGuideEntry[];
   sourceSpineId: "shir-geulah-primary" | "velveteen-rabbi-primary";
+  featuredSourceId: string;
   sourceMetrics: DocumentSourceMetrics;
+  /** Approved supplemental source IDs offered to the optional model reranker. */
+  runtimePassageCandidateIds: string[];
+  /** Whether supplemental exact text came from the embedded fallback or lazy reviewed packs. */
+  runtimeContentMode: "embedded-smoke-index" | "per-source-dynamic";
   createdAt: string;
   editorialWarnings: string[];
 }

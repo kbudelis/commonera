@@ -1,0 +1,344 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "wandering-is-over",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "An accessible, feminist, family-oriented Haggadah with unusually clear ritual explanations and women-centered storytelling; its best complete movements can orient novices, while dated statistics, embedded readings, and land language require targeted review.",
+  "sourceAssessment": {
+    "voice": "Warm, conversational, participatory, feminist, and designed for a mixed-experience home table rather than a specialist liturgical setting.",
+    "bestUses": [
+      "A novice-friendly welcome and overview of what the Seder does",
+      "An Exodus telling that restores Shifra, Puah, Miriam, and other women's agency",
+      "Family questions, an orange ritual, and meal instructions that naturally invite participation"
+    ],
+    "beginnerRisks": [
+      "Some sections rely on embedded material whose original credit and reuse terms must travel with the passage.",
+      "Several contemporary statistics and examples are dated and should not be presented as timeless fact.",
+      "A few land and Israel lines conflict with the project's default peace-focused, non-Zionist framing."
+    ],
+    "politicalContext": "The source combines feminist liberation framing with inherited land language and some contemporary advocacy. Women-centered and justice-centered material is strongly usable, but modern claims, Israel refrains, and dated examples need the project's traditional-only or current-fact gates.",
+    "creditContext": "Credit JewishBoston and the Jewish Women's Archive and preserve the CC BY-SA 3.0 notice and ShareAlike terms. Separately credited poems, adaptations, and readings require item-level rights review and their printed attributions must be preserved."
+  },
+  "recommendedSequences": [
+    {
+      "id": "wandering-is-over-orientation-and-first-washing",
+      "title": "Orientation and the first washing",
+      "sectionIds": [
+        "kadesh",
+        "urchatz"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-nu-287e526bff9b",
+        "research-wandering-is-over-4qn-fd0a38570535",
+        "research-wandering-is-over-5c5-9cdd9d1dc95e"
+      ],
+      "beginnerContext": "Use this before the first ritual to say that there is no single right way to host, that the Seder explores the Exodus through questions and shared experience, and that guests may take turns reading. Identify wine or grape juice and explain both self-washing and pouring for one another over a basin.",
+      "rationale": "These source-order records combine the source's welcoming participation guidance with the first blessing and its unusually clear explanation of the two handwashings, creating a practical novice threshold while omitting page furniture and license text.",
+      "themes": [
+        "feminist",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "playful"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "turn-taking-invitation-required",
+        "wine-or-grape-juice-explicit",
+        "mutual-handwashing-option-required",
+        "host-action-cues-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the CC BY-SA 3.0 ShareAlike notice."
+    },
+    {
+      "id": "wandering-is-over-karpas-to-yachatz",
+      "title": "Spring greens and broken matzah",
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "motzi-matzah"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-66k-4342f0c8d71d",
+        "research-wandering-is-over-6ry-cf7e50dbd3a8",
+        "research-wandering-is-over-7nh-7214199c9186"
+      ],
+      "beginnerContext": "Point out the green vegetable and salt water, then identify the middle matzah before breaking it. Explain which half becomes the afikoman, that children or any guests may search for it, and that the host may offer a small prize or trade when it is returned.",
+      "rationale": "The three adjacent records move naturally from spring and tears to the broken middle matzah and its later return, pairing sensory ritual with a clear narrative image of hurried departure.",
+      "themes": [
+        "environment",
+        "family-storytelling",
+        "feminist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "visible-object-cues-required",
+        "afikoman-search-and-return-explained",
+        "child-inclusive-not-child-exclusive",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive; preserve any separately printed attribution."
+    },
+    {
+      "id": "wandering-is-over-questions-and-memory",
+      "title": "Questions, memory, and family history",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-8rj-6580df166f6a",
+        "research-wandering-is-over-9yk-f33e753e04eb"
+      ],
+      "beginnerContext": "Tell guests that asking is part of the ritual and that this Haggadah tells Exodus through songs, images, and discussion rather than a single continuous script. Invite each person to choose one concrete family or Passover memory and allow anyone to pass.",
+      "rationale": "The two source-order passages explain the source's impressionistic method and then invite family and community stories, a coherent participatory setup that avoids the extracted page-furniture records between them.",
+      "themes": [
+        "family-storytelling",
+        "feminist",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "playful"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "clear-speaker-and-listener-cues",
+        "right-to-pass-required",
+        "age-specific-concrete-wording",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit the containing Haggadah and retain any named contributors attached to individual questions."
+    },
+    {
+      "id": "wandering-is-over-women-and-exodus",
+      "title": "Women's resistance and the Exodus",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-gkv-7f6590d638a8",
+        "research-wandering-is-over-hyn-a8547bf1591d",
+        "research-wandering-is-over-ivd-09f510a27a39"
+      ],
+      "beginnerContext": "Introduce the arc in plain language: the ancestors reached Egypt, a new ruler enslaved their descendants, Shifra and Puah resisted orders to kill newborn boys, Moses later confronted Pharaoh, plagues struck Egypt, and the people left. Acknowledge Egyptian suffering and explain the cup-diminishing action.",
+      "rationale": "These source-order records preserve the source's narrative movement from ancestral beginnings through the midwives' resistance to the plague ritual while excluding unusable page-furniture extractions.",
+      "themes": [
+        "feminist",
+        "social-justice",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nontriumphalist-plague-framing",
+        "age-appropriate-infant-harm-context",
+        "plain-language-character-introductions",
+        "cup-diminishing-action-cue",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the source-presented Temple Emunah attribution."
+    },
+    {
+      "id": "wandering-is-over-symbols-and-orange",
+      "title": "Traditional symbols and an orange",
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-n72-212fc90ef513",
+        "research-wandering-is-over-omy-daddaafb6c66"
+      ],
+      "beginnerContext": "Point to and define the traditional symbols before adding the orange. Explain that the orange is a modern symbol of inclusion and name Susannah Heschel and the history accurately without repeating a false origin story.",
+      "rationale": "The two source-order records connect the required ritual-symbol teaching to the source's feminist and LGBTQ-inclusive orange history while omitting an intervening page-furniture record.",
+      "themes": [
+        "feminist",
+        "lgbtq",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "optional-plate-item-selected",
+        "visible-object-cues-required",
+        "origin-story-fact-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the source's attribution for Susannah Heschel and the orange ritual."
+    },
+    {
+      "id": "wandering-is-over-miriam",
+      "title": "Miriam's courage and water",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-p84-6b89abdc32e1",
+        "research-wandering-is-over-puy-5d41d206f8a9",
+        "research-wandering-is-over-qgi-2558cdbc06df"
+      ],
+      "beginnerContext": "Introduce Miriam as Moses's sister and a leader in her own right. If using a cup of water, explain who fills it, when the table notices it, and that guests may sing, read, discuss, or simply listen.",
+      "rationale": "The three contiguous source records develop Miriam from story character to communal symbol and offer several possible ritual locations without pretending there is one fixed practice.",
+      "themes": [
+        "feminist",
+        "environment",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "miriams-cup-selected",
+        "water-ritual-action-cue",
+        "song-participation-optional",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit the containing Haggadah and preserve the source's Tamara Cohen, Debbie Friedman, and other printed attributions."
+    },
+    {
+      "id": "wandering-is-over-table-milestones",
+      "title": "Blessings, bitter herb, afikoman, and grace",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun",
+        "barech"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-tj7-030a5ece9dcf",
+        "research-wandering-is-over-uuh-b24e0187aceb",
+        "research-wandering-is-over-w6l-3d627bb82fe1"
+      ],
+      "beginnerContext": "Supply the omitted practical steps between these source passages: wash personally or for one another, bless and eat matzah, taste bitter herb with haroset, build the sandwich, eat the meal, retrieve and share the afikoman, then begin grace. Define every food and include allergy substitutions.",
+      "rationale": "These source-order milestones retain the usable blessings and meaning of the symbolic foods through post-meal gratitude while avoiding extracted records quarantined as page furniture; they require verified host-direction modules to fill the named gaps.",
+      "themes": [
+        "family-storytelling",
+        "traditional"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions",
+        "allergy-safe-alternatives",
+        "verified-host-direction-modules-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve all source-presented blessing and adaptation credits."
+    },
+    {
+      "id": "wandering-is-over-closing-songs",
+      "title": "Cumulative closing songs",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-wandering-is-over-15qj-75ff7702b038",
+        "research-wandering-is-over-174d-2b1a99169590",
+        "research-wandering-is-over-18nn-3e91c30579aa"
+      ],
+      "beginnerContext": "Tell guests that these are playful cumulative songs sung near the end. Teach one response before starting, make singing optional, and stop at a natural verse if the table is ready to close.",
+      "rationale": "The three source-order records carry Echad Mi Yodea into Chad Gadya as a coherent participatory ending while avoiding the final extracted typo in the angel-of-death verse.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "participation-cue-required",
+        "optional-shortened-ending",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and retain any song-source credit printed in the edition."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-wandering-is-over-0-1fd564451840",
+      "reasons": [
+        "The page has no searchable text and cannot support exact reuse."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-87m-446bffc901f1",
+      "reasons": [
+        "The modern Israel destination line conflicts with the generic peace-focused candidate pool and is limited to a gated traditional selection."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-juv-0fdc0bb01a81",
+      "reasons": [
+        "The contemporary statistic requires current verification and is not suitable as timeless runtime text."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-kjq-2dc486e46cba",
+      "reasons": [
+        "Dated factual claims require research updates and context before reuse."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-l8n-9d0519fa30c1",
+      "reasons": [
+        "The modern social statistic should remain research-only until current-source verification."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-lvj-a0ef8e551485",
+      "reasons": [
+        "The contemporary example is date-sensitive and cannot enter a static approved module without fact review."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-128a-2e028a21367c",
+      "reasons": [
+        "Contemporary Jerusalem and Israel framing requires a traditional-only political gate and should not enter default generation."
+      ]
+    },
+    {
+      "segmentId": "research-wandering-is-over-199k-be044aa44a66",
+      "reasons": [
+        "The extraction contains a consequential typo and violent ending that require correction against the rendered page and adult context."
+      ]
+    }
+  ],
+  "notes": [
+    "The source should be included broadly because its CC license explicitly allows reuse with attribution and ShareAlike compliance.",
+    "Sequences containing embedded authors or adaptations still require item-level credit and rights review; inclusion of the containing Haggadah alone does not erase printed contributor credits.",
+    "The orientation, women-and-Exodus, Miriam, and table sequences can form a coherent feminist or mixed-age spine when used together.",
+    "Records flagged by the local quality policy as page furniture or license boilerplate were not placed in recommended sequences even when their underlying page contains useful material.",
+    "These recommendations remain local-agent-reviewed candidates and do not grant runtime eligibility."
+  ]
+}

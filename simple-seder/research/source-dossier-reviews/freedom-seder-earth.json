@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "freedom-seder-earth",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "An interfaith, ecological Freedom Seder that links spring, ritual foods, Exodus, civil-rights history, and responsibility for the living earth. Its strongest sequences are vivid and participatory, while its 2009 political examples, expansive theological interpretations, songs, and embedded quotations must remain visibly sourced and historically framed.",
+  "sourceAssessment": {
+    "voice": "Prophetic, poetic, interfaith, ecological, and workshop-oriented, with an embodied theology of God as the interbreathing life of the world.",
+    "bestUses": [
+      "Environmental and interfaith theme paths",
+      "Longer participatory Seders with room for communal reading and action",
+      "Explanations of matzah, maror, charoset, Miriam's Cup, and the four cups",
+      "Historical framing for the modern Freedom Seder movement"
+    ],
+    "beginnerRisks": [
+      "The source's preferred names for God and its prophetic metaphors need plain-language introduction rather than silent substitution.",
+      "Several ecological descriptions of the biblical plagues are interpretive midrash, not historical or scientific explanations.",
+      "Many songs, poems, speeches, and translations are embedded third-party material with their own printed credits.",
+      "Campaign suggestions, contact information, and policy examples date from 2009 and should not be presented as current guidance."
+    ],
+    "politicalContext": "The source openly advocates ecological, economic, anti-war, and civil-rights action. Use those passages only when the selected themes support them, label named campaigns and political examples as historical, and retain its peace-centered, non-exclusivist language. References to biblical Israel, ancient Jerusalem, Christianity, and Islam are historical or interfaith context rather than contemporary territorial claims.",
+    "creditContext": "Credit Rabbi Arthur Waskow, The Shalom Center, and The Freedom Seder for the Earth on the final sources page. Preserve each embedded writer, translator, musician, or speaker credit and the source's printed permission line where required."
+  },
+  "recommendedSequences": [
+    {
+      "id": "freedom-earth-seder-history",
+      "title": "From spring festival to Freedom Seder",
+      "sectionIds": ["kadesh", "maggid"],
+      "insertionSectionId": "kadesh",
+      "segmentIds": [
+        "research-freedom-seder-earth-p8-bd67d0af0147",
+        "research-freedom-seder-earth-1em-1de59ac0302c",
+        "research-freedom-seder-earth-2dm-05642e20595f",
+        "research-freedom-seder-earth-31d-5849ac5e2a52"
+      ],
+      "beginnerContext": "Introduce this as the source author's account of how Passover imagery traveled through Jewish, Christian, Muslim, and Black freedom traditions, and explain that the sequence ends with the first 1969 Freedom Seder.",
+      "rationale": "The four passages form one chronological narrative from ancient spring practices through Exodus traditions and the civil-rights era to the first Freedom Seder.",
+      "themes": ["interfaith", "social-justice", "traditional"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "interfaith-or-social-justice-theme-only",
+        "present-origin-claims-as-source-authors-framing",
+        "embedded-translation-attribution-review"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow and The Shalom Center; preserve the Ahmed Ali Qur'an translation attribution and the named historical figures."
+    },
+    {
+      "id": "freedom-earth-miriam-water-creativity",
+      "title": "Miriam's water and creative freedom",
+      "sectionIds": ["barech", "hallel"],
+      "segmentIds": [
+        "research-freedom-seder-earth-uek-3c2087bd497c",
+        "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+        "research-freedom-seder-earth-vmb-ce7c6531aa9e"
+      ],
+      "beginnerContext": "Explain that Miriam's Cup is filled with water in honor of Miriam, whose well sustained the Israelites in the wilderness; identify the passage as an interfaith and diasporic meditation on water.",
+      "rationale": "The sequence moves from a cup ritual to African diasporic water wisdom, then to Miriam's actions and a poem, maintaining water as the organizing image throughout.",
+      "themes": ["feminist", "environment", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "feminist-environment-or-interfaith-theme-only",
+        "embedded-poem-and-proverb-attribution-review",
+        "do-not-universalize-distinct-african-traditions",
+        "preserve-michael-twitty-and-muriel-rukeyser-credits"
+      ],
+      "creditNotes": "Credit The Shalom Center, Michael Twitty, and Muriel Rukeyser on the final sources page, preserving the source's placement of their contributions."
+    },
+    {
+      "id": "freedom-earth-matzah-maror-charoset",
+      "title": "Three tastes of transformation",
+      "sectionIds": ["maggid", "motzi-matzah", "maror", "korech"],
+      "insertionSectionId": "maggid",
+      "segmentIds": [
+        "research-freedom-seder-earth-w5p-5fd6456ca882",
+        "research-freedom-seder-earth-wt5-ead8f4bf0802"
+      ],
+      "beginnerContext": "Place the matzah, bitter herb, and charoset where everyone can see them; tell guests when to lift and taste each item and define charoset as the sweet fruit-and-nut mixture on the Seder plate.",
+      "rationale": "These passages give a complete sensory progression from matzah to maror to charoset and explain how bitter memory and sweet possibility coexist at the table.",
+      "themes": ["environment", "traditional", "mindfulness"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "retain-source-theology-with-plain-language-introduction",
+        "do-not-rewrite-blessings-as-direct-quotations",
+        "confirm-allergy-safe-charoset-alternative-in-host-guide"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow, The Shalom Center, and The Freedom Seder for the Earth on the final sources page."
+    },
+    {
+      "id": "freedom-earth-dayenu-to-action",
+      "title": "An unfinished Dayenu and embodied action",
+      "sectionIds": ["maggid", "nirtzah"],
+      "segmentIds": [
+        "research-freedom-seder-earth-13sb-e62c1465e0e3",
+        "research-freedom-seder-earth-14kf-5d2564beb27e",
+        "research-freedom-seder-earth-159e-e37267cff759",
+        "research-freedom-seder-earth-15v9-4be9570a638a",
+        "research-freedom-seder-earth-16gd-d0385eb2170a"
+      ],
+      "beginnerContext": "Explain Dayenu as a cumulative song meaning 'it would have been enough,' then tell guests that this adaptation deliberately answers that justice work is not complete after any single achievement.",
+      "rationale": "The sequence carries one argument from an ecological and social-justice Dayenu, through interfaith intention and civil-rights sit-ins, to choosing a concrete action after the Seder.",
+      "themes": ["environment", "social-justice", "interfaith"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-2009-activist-workshop-opt-in",
+        "embedded-hajj-translation-and-song-attribution-review",
+        "replace-address-collection-instruction-with-privacy-safe-voluntary-action",
+        "do-not-present-dated-lobbying-targets-as-current"
+      ],
+      "creditNotes": "Credit The Shalom Center, Ali Shariati, Rabbi Arthur Waskow, and the source-presented song writers or traditions on the final sources page."
+    },
+    {
+      "id": "freedom-earth-elijah-afikoman-praise",
+      "title": "Elijah, the afikoman, and responsibility",
+      "sectionIds": ["tzafun", "hallel", "nirtzah"],
+      "segmentIds": [
+        "research-freedom-seder-earth-16ze-df61934ad171",
+        "research-freedom-seder-earth-17kj-dea31e49f52f",
+        "research-freedom-seder-earth-18eq-eb550c0c98d7",
+        "research-freedom-seder-earth-191u-353478cfda34"
+      ],
+      "beginnerContext": "Explain Elijah's Cup, tell children that the afikoman is the hidden matzah they may search for, and state in advance that any donation named in the activity is voluntary and chosen by the adults.",
+      "rationale": "The passages make a coherent closing movement from accepting responsibility, through song and the children's afikoman search, to a communal reading about carrying one another toward justice and mercy.",
+      "themes": ["environment", "social-justice", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "embedded-mlk-pete-seeger-and-poem-attribution-review",
+        "content-note-for-historical-violence-references",
+        "children-may-search-but-adults-control-any-donation",
+        "preserve-peace-focused-closing"
+      ],
+      "creditNotes": "Credit The Shalom Center, Dr. Martin Luther King Jr., Pete Seeger, and the source-presented author of the closing reading on the final sources page."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-freedom-seder-earth-2r-40b8f5648d41",
+      "reasons": ["Permission, contact, and fee boilerplate belongs in research and credits, not in a generated ritual reading."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-mgi-983fa4c1ed52",
+      "reasons": ["A dated contemporary-plagues list begins here and should not be inserted without a full historical and factual update."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-nal-315f11f79f9f",
+      "reasons": ["The list combines graphic violence, dated public-health references, and contemporary conflicts in a form unsuitable for automatic beginner output."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-o43-194a4832353e",
+      "reasons": ["The segment mixes a prophetic reading with a continuation of the dated plague exercise and lacks a clean insertion boundary."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-oxb-d56d206f5d2c",
+      "reasons": ["The invited-speaker and contemporary-plague instructions are event-specific and date-sensitive."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-t5s-003b93e2a485",
+      "reasons": ["The segment is a fragment of a dated climate quotation and cannot stand alone coherently."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-xgb-53cfe46b8b6f",
+      "reasons": ["The orange explanation uses obsolete terminology and then crosses into an incomplete political quotation; use the separately reviewed Second Seder Plate orange sequence instead."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-yzq-4c5d5c4b5f21",
+      "reasons": ["The segment combines copyrighted song lyrics, cup ritual, and a new action section; it requires item-level rights and boundary review before use."]
+    },
+    {
+      "segmentId": "research-freedom-seder-earth-1avv-b2309e29847e",
+      "reasons": ["Acknowledgments and artwork commentary belong on the final sources page rather than in the ritual flow."]
+    }
+  ],
+  "notes": [
+    "The source's ecological theology should be preserved as its own voice; a short beginner bridge may define it, but the model must not homogenize it into generic spirituality.",
+    "The source dates from 2009. References to contemporary plagues, campaigns, contact details, technologies, and public officials must be labeled or refreshed outside exact quotations.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

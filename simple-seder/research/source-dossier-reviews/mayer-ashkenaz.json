@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mayer-ashkenaz",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A highly ambitious 2025–2026 Ashkenazi Haggadah combining original inclusive translation, multilingual verse, historical additions, games, and commentary; the canonical extraction currently corrupts much of its ritual core, so this dossier recommends only intact traditional supplements and closing sequences while recording the source as a future backbone after extraction repair.",
+  "sourceAssessment": {
+    "voice": "Learned, inventive, multilingual, playful, traditional, and editorially idiosyncratic, shifting among formal liturgy, verse directions, scholarly notes, games, and contemporary political material.",
+    "bestUses": [
+      "Opt-in traditional and specialist supplements that preserve the edition's distinctive historical and multilingual voice",
+      "An intact women's-history-style Abraham narrative, medieval or Western Ashkenazi songs, and closing cumulative-song activities",
+      "A future traditional backbone after the core Kadesh-through-meal extraction is repaired and visually verified"
+    ],
+    "beginnerRisks": [
+      "Control characters and scrambled Hebrew affect most core ritual segments, so they cannot enter reviewed sequences under the current local quality policy.",
+      "The intact selections still assume comfort with textual variants, historical notes, many languages, and insider humor.",
+      "Original additions include current politics, violence, land and Temple claims, games, and third-party works that need explicit gates and complete host framing."
+    ],
+    "politicalContext": "The edition includes traditional land and Jerusalem liturgy, explicit modern foreign-policy satire, a current hostage prayer, and other dated political material. None belongs in default peace-focused assembly without an explicit current or traditional gate; the source's usable ritual core must remain non-exclusive and cannot imply collective blame.",
+    "creditContext": "Credit Isaac Gantwerk Mayer, identify Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions under CC BY-SA 4.0, link the license, indicate modifications, and preserve ShareAlike terms. Every separately sourced addition, quotation, song, game, or literary excerpt requires item-level rights and attribution review."
+  },
+  "recommendedSequences": [
+    {
+      "id": "mayer-ashkenaz-festival-sanctification",
+      "title": "Festival sanctification and Exodus memory",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-734-439d81669a56",
+        "research-mayer-ashkenaz-7ns-b31dd91fe9e2"
+      ],
+      "beginnerContext": "Explain that this is an extended traditional sanctification passage linking Passover to the Exodus and festival calendar. Offer it only to a table seeking substantial liturgy, define the sea and vengeance imagery, and follow with the simpler wine blessing from a separate verified module.",
+      "rationale": "These two adjacent intact records preserve one complete liturgical movement in an otherwise control-character-corrupted Kadesh extraction; keeping them together prevents a partial clause from standing alone.",
+      "themes": [
+        "traditional"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "nontriumphalist-sea-and-vengeance-framing",
+        "separate-wine-blessing-module-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer, identify the CC BY-SA 4.0 edition, indicate changes, and preserve ShareAlike terms."
+    },
+    {
+      "id": "mayer-ashkenaz-abraham-and-nimrod",
+      "title": "Abraham challenges the idols",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-weh-de7c22303f16",
+        "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+        "research-mayer-ashkenaz-128o-55a3625113dc"
+      ],
+      "beginnerContext": "Introduce this as a traditional expansion about young Abraham challenging his father's idols and the ruler Nimrod, not part of the basic Exodus outline. Name the characters, summarize the missing transitions, and use it only with an adult or well-facilitated table.",
+      "rationale": "The three source-order intact records preserve the central confrontation in the edition's long Judeo-Arabic Abraham narrative while skipping corrupted intervening continuations; a host bridge is essential but the source's distinctive story remains recognizable.",
+      "themes": [
+        "traditional",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "adult-or-facilitated-mixed-age-use",
+        "missing-transition-bridges-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and separately verify the historical source and translation attribution printed for this Judeo-Arabic narrative."
+    },
+    {
+      "id": "mayer-ashkenaz-exodus-piyyut",
+      "title": "An Exodus poem from suffering to redemption",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+        "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+        "research-mayer-ashkenaz-23st-976da6d2a99b"
+      ],
+      "beginnerContext": "State the narrative arc before the poem: the Israelites suffered slavery, liberation came through destructive plagues, they crossed the sea, and the liturgy turns toward future celebration. Frame firstborn and enemy-death imagery with sorrow and keep Temple hopes within inherited historical liturgy.",
+      "rationale": "Three source-order intact records form a continuous piyyut from oppression through plagues and escape into the redemption blessing, preserving the edition's traditional poetic voice without relying on corrupted core pages.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "nontriumphalist-firstborn-and-sea-framing",
+        "temple-and-land-language-context",
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and retain the source's attribution for the piyyut and any historical translation."
+    },
+    {
+      "id": "mayer-ashkenaz-buber-closing-story",
+      "title": "A Hasidic closing story",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+        "research-mayer-ashkenaz-3hd8-7092887beb15"
+      ],
+      "beginnerContext": "Explain that Nirtzah closes the formal Seder and that this is a historical Hasidic story about longing and readiness. Define the military conscription context, identify the quoted Zion language as inherited in the story, and make the long reading optional.",
+      "rationale": "The two adjacent records preserve the complete narrative setup and resolution of the edited Martin Buber story, rather than quoting its final Zion line without its historical frame.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "traditional-without-social-justice-only",
+        "historical-zion-language-context",
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-rights-and-credit-review"
+      ],
+      "creditNotes": "Credit Mayer and preserve the printed Martin Buber and Tales of the Hasidim attribution; confirm item-level reuse status before runtime approval."
+    },
+    {
+      "id": "mayer-ashkenaz-western-yiddish-closing-song",
+      "title": "Western Yiddish build-well song",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3ris-0c268db67dfe",
+        "research-mayer-ashkenaz-3s1m-6a57aba1f373"
+      ],
+      "beginnerContext": "Introduce this as a Western Ashkenazi closing song whose traditional refrain hopes for the Temple's rebuilding. Give a transliteration and one repeated response, explain the historical liturgical meaning, and let guests listen instead of sing.",
+      "rationale": "The adjacent intact records preserve the song's historical note, refrain, and cumulative alphabetic continuation as one specialist musical unit.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "playful"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "temple-language-context",
+        "participation-cue-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and the Western Ashkenazi traditional source identified in the edition; indicate any verses omitted."
+    },
+    {
+      "id": "mayer-ashkenaz-echad-mi-yodea",
+      "title": "Who knows one?",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+        "research-mayer-ashkenaz-3uy4-6b36896af084",
+        "research-mayer-ashkenaz-3vkg-a4f092b9792a"
+      ],
+      "beginnerContext": "Tell guests this is a cumulative number song near the end of the Seder. Teach the question-and-response pattern, clarify unfamiliar references only when they first appear, and stop at a natural number if time is short.",
+      "rationale": "Three consecutive intact records preserve the middle-to-late cumulative structure and the edition's inclusive wording, making a usable participatory closing activity.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "participation-cue-required",
+        "optional-shortened-ending",
+        "multilingual-render-check"
+      ],
+      "creditNotes": "Credit Mayer and identify the traditional cumulative song; note any shortened verse range."
+    },
+    {
+      "id": "mayer-ashkenaz-multilingual-chad-gadya-game",
+      "title": "A multilingual Chad Gadya guessing game",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3xmz-ceaa08384105",
+        "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+        "research-mayer-ashkenaz-3yqh-59a48139de78",
+        "research-mayer-ashkenaz-3z1z-969ac85afd71"
+      ],
+      "beginnerContext": "Explain that this is an optional language game based on the final Chad Gadya verse, not a required ritual. Read the ordinary English pattern first, divide guests into teams only if they want to play, and avoid assuming knowledge of any language.",
+      "rationale": "Four consecutive intact records preserve the game's instructions and first group of Aramaic variants, a coherent specialist activity that should never replace the basic closing orientation.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "specialist-language-game-opt-in",
+        "plain-language-chad-gadya-summary-required",
+        "participation-optional",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and separately preserve or verify the attribution of each translation included in the selected game."
+    },
+    {
+      "id": "mayer-ashkenaz-chad-gadya-call-and-response",
+      "title": "Chad Gadya call and response",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+        "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+        "research-mayer-ashkenaz-4wdb-8d560939e426",
+        "research-mayer-ashkenaz-4xg5-81c8c68b4bca"
+      ],
+      "beginnerContext": "Tell guests that Chad Gadya is a playful cumulative end song and teach the repeated line before beginning. Make singing optional, explain that the chain becomes violent in a folktale-like way, and allow an early stop for children or time.",
+      "rationale": "Four consecutive intact records preserve the author's melody instruction and the song's rising call-and-response chain, providing a more accessible closing choice than the specialist guessing game.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "participation-cue-required",
+        "age-appropriate-folktale-violence-context",
+        "optional-shortened-ending",
+        "multilingual-render-check"
+      ],
+      "creditNotes": "Credit Mayer and identify Chad Gadya as a traditional song in the final source page."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-mayer-ashkenaz-0-08684969b8db",
+      "reasons": [
+        "Title and edition metadata belongs in credits, and the extracted Hebrew contains control-character corruption."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-blw-735dae418214",
+      "reasons": [
+        "The children-returning-to-the-land line requires a traditional-only land gate and should not enter default generation."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-l7n-1403b6553d7e",
+      "reasons": [
+        "This begins a contemporary theatrical Four Children supplement that requires separate contextual and rights review."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-lsu-5a842b8c2f1b",
+      "reasons": [
+        "The satirical child and parent dialogue uses stereotypes and insider references unsuitable for default beginner use."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-mkw-fe112ba40edb",
+      "reasons": [
+        "The language-community caricature and role-play require specialist opt-in and sensitivity review."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-n6r-70d84bff45fc",
+      "reasons": [
+        "The explicit modern foreign-policy satire is not evergreen and requires a deliberate political opt-in."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-17f7-d6f2646600c5",
+      "reasons": [
+        "The current hostage prayer requires current verification and a dated contemporary edition."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-1foc-ae292e149999",
+      "reasons": [
+        "The violent angelic expansion is not needed for the beginner plague arc and requires adult traditional context."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-1gtd-ccaa6b6ba518",
+      "reasons": [
+        "The divine-war language conflicts with default peace-focused framing."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-2orw-c111a0d463bb",
+      "reasons": [
+        "The Cup of Curses material is unsuitable for default peace-focused use and requires explicit adult editorial review."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-40w4-ec3de559f10f",
+      "reasons": [
+        "The dead-languages game is a specialist appendix, not core ritual content, and requires separate usability and source review."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-42vk-275ff9f139ea",
+      "reasons": [
+        "The multilingual game continuation is not appropriate for default novice assembly."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-4tk2-13cfdb336bbd",
+      "reasons": [
+        "The Daniel Handler excerpt requires independent rights and attribution review."
+      ]
+    },
+    {
+      "segmentId": "research-mayer-ashkenaz-4u7e-7e1cd1d63e59",
+      "reasons": [
+        "The Lemony Snicket material remains blocked until separate reuse permission or license is established."
+      ]
+    }
+  ],
+  "notes": [
+    "The source remains valuable and licensed for reuse, but most core ritual records contain control characters that the local policy correctly blocks from recommended sequences.",
+    "Repairing and re-segmenting the core pages against the rendered PDF is a prerequisite before this source can serve as a Kadesh-through-meal backbone.",
+    "The intact recommendations therefore emphasize specialist stories and closing songs rather than pretending the current extraction supports a complete novice Haggadah.",
+    "Every separately sourced story, song, translation, and literary excerpt requires its printed credit and item-level rights decision.",
+    "The CC BY-SA 4.0 source license supports reuse of Mayer's own material with attribution, modifications identified, and ShareAlike compliance.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

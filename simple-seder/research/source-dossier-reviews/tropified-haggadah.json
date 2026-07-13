@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "tropified-haggadah",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A full Hebrew Haggadah marked with cantillation that is exceptionally useful for chant-aware traditional supplements, but not as an English beginner spine; selected sequences preserve complete ritual units and must be paired with plain-language meaning and action cues.",
+  "sourceAssessment": {
+    "voice": "Liturgically precise, Hebrew-forward, chant-oriented, traditional, and visually dependent on vocalization and trope marks.",
+    "bestUses": [
+      "Optional Hebrew chant panels for ritually experienced hosts",
+      "Traditional-theme call-and-response and song selections",
+      "Facilitator editions that explicitly teach how a passage is sung"
+    ],
+    "beginnerRisks": [
+      "The extracted text is principally Hebrew and cannot orient an English-only first-time host by itself.",
+      "Cantillation marks need correct font rendering and may be lost or made confusing by careless line wrapping.",
+      "Long traditional passages include assumptions and ritual details that require an accessible English explanation."
+    ],
+    "politicalContext": "Traditional biblical, land, temple, and Jerusalem language appears as liturgy rather than modern political advocacy. Any Jerusalem refrain must obey the project rule limiting it to a traditional selection without a social-justice override.",
+    "creditContext": "Credit Isaac Gantwerk Mayer, identify the CC BY-SA 4.0 source, indicate changes, and preserve ShareAlike terms. Review embedded textual material and verify that cantillation survives typesetting."
+  },
+  "recommendedSequences": [
+    {
+      "id": "tropified-haggadah-questions-and-teaching",
+      "title": "Chanted questions and teaching",
+      "sectionIds": ["karpas", "yachatz", "maggid"],
+      "segmentIds": [
+        "research-tropified-haggadah-1a0g-5481067f08c8",
+        "research-tropified-haggadah-1b3m-e567213c2439",
+        "research-tropified-haggadah-1c8b-ff1947fb5c9d"
+      ],
+      "beginnerContext": "Explain the ritual actions in English first, then identify the Hebrew portions selected for chanting: the invitation, the Four Questions, the duty to tell, and the Four Children.",
+      "rationale": "These consecutive source records preserve the complete opening movement of Maggid instead of extracting a trope-marked line without its ritual and narrative setting.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "paired-plain-language-meaning-required", "historical-liturgical-land-language-context", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify the CC BY-SA 4.0 tropified edition; indicate any cuts."
+    },
+    {
+      "id": "tropified-haggadah-ancestry-to-redemption",
+      "title": "Chanted ancestry, oppression, and cry",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-tropified-haggadah-1d68-b6ee373f7800",
+        "research-tropified-haggadah-1ecn-cc12dd5ae485",
+        "research-tropified-haggadah-1fhb-2166a261338a"
+      ],
+      "beginnerContext": "Give guests the Exodus arc in clear English before this selection: the family migrated, grew, was enslaved, cried out, and was heard.",
+      "rationale": "The three adjacent Hebrew records form a sustained traditional exposition from ancestral migration through oppression and the response to the enslaved people’s cry.",
+      "themes": ["traditional", "family-storytelling", "social-justice"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "paired-plain-language-meaning-required", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer; retain CC BY-SA 4.0 attribution and ShareAlike requirements."
+    },
+    {
+      "id": "tropified-haggadah-plagues-and-dayenu",
+      "title": "Plagues leading into Dayenu",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-tropified-haggadah-1gok-f4b738001788",
+        "research-tropified-haggadah-1hvc-a7d3376159d0",
+        "research-tropified-haggadah-1ixo-17a13714d7ae",
+        "research-tropified-haggadah-1k16-57a8e11ccca6"
+      ],
+      "beginnerContext": "Frame the plagues with sorrow for suffering, tell guests how to diminish the cup, and explain that Dayenu shifts from catastrophe toward gratitude.",
+      "rationale": "The source’s consecutive progression from redemption imagery through the plague list and rabbinic expansion into Dayenu preserves the traditional narrative turn.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "paired-plain-language-meaning-required", "nontriumphalist-plague-framing", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and preserve the CC BY-SA 4.0 license and change notice."
+    },
+    {
+      "id": "tropified-haggadah-symbols-and-lived-memory",
+      "title": "Matzah, maror, and lived memory",
+      "sectionIds": ["maggid", "motzi-matzah", "maror", "hallel"],
+      "segmentIds": [
+        "research-tropified-haggadah-1l8h-528dc417dce6",
+        "research-tropified-haggadah-1mb0-6ab9ba8b9e69"
+      ],
+      "beginnerContext": "Point to the matzah and maror, summarize their meanings in English, and explain that the text asks every generation to experience the freedom story personally before moving into praise.",
+      "rationale": "These adjacent passages complete the central ritual-symbol explanations, the every-generation teaching, and the source’s direct transition into Hallel.",
+      "themes": ["traditional", "family-storytelling", "mindfulness"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "visible-object-cues-required", "paired-plain-language-meaning-required", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify the tropified CC BY-SA 4.0 source in final credits."
+    },
+    {
+      "id": "tropified-haggadah-eating-and-grace",
+      "title": "Eating rituals into grace after meals",
+      "sectionIds": ["rachtzah", "motzi-matzah", "maror", "korech", "shulchan-orech", "tzafun", "barech"],
+      "segmentIds": [
+        "research-tropified-haggadah-1nka-671ad7779fc2",
+        "research-tropified-haggadah-1okf-f11b30760768",
+        "research-tropified-haggadah-1pje-15b2ae233d04"
+      ],
+      "beginnerContext": "Use the project’s English host directions to say exactly what each person washes, eats, and drinks; present this Hebrew only as an optional liturgical layer.",
+      "rationale": "The source records follow one uninterrupted table sequence from the second cup through washing and symbolic eating into the opening of grace after the meal.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "do-not-substitute-for-host-instructions", "paired-plain-language-meaning-required", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer; retain CC BY-SA 4.0 attribution, change notice, and ShareAlike terms."
+    },
+    {
+      "id": "tropified-haggadah-closing-chain-songs",
+      "title": "Closing cumulative songs",
+      "sectionIds": ["nirtzah"],
+      "segmentIds": [
+        "research-tropified-haggadah-2bjc-0e32a25c2a66",
+        "research-tropified-haggadah-2cih-cfbf94530cb2",
+        "research-tropified-haggadah-2dip-87248cc8c54e",
+        "research-tropified-haggadah-2ei9-d623c34659bb"
+      ],
+      "beginnerContext": "Tell guests that these are playful cumulative songs traditionally sung at the end; provide a refrain cue and make participation optional.",
+      "rationale": "Four final source-order segments preserve the complete rising pattern of Echad Mi Yodea and the continuation of Chad Gadya as a coherent closing activity.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["playful", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["hebrew-chant-opt-in", "participation-cue-required", "paired-plain-language-meaning-required", "cantillation-rendering-check"],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and preserve the source’s CC BY-SA 4.0 conditions."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-tropified-haggadah-0-7de1301a8f4b",
+      "reasons": ["Title, edition, and production material belongs in credits rather than the ritual reading stream."]
+    },
+    {
+      "segmentId": "research-tropified-haggadah-fal-96a52b986136",
+      "reasons": ["This eleven-word extraction fragment begins and ends mid-psalm and is not independently coherent."]
+    }
+  ],
+  "notes": [
+    "This source is preserved as an opt-in chant resource rather than excluded for requiring Hebrew literacy.",
+    "Every selected sequence needs a visually verified Hebrew font and a separate plain-language English explanation; the source text itself must remain exact.",
+    "All sequences remain local-agent-reviewed candidates, not human-approved runtime material."
+  ]
+}

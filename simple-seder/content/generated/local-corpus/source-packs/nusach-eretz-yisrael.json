@@ -1,0 +1,949 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "nusach-eretz-yisrael",
+  "sourceTitle": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer and Open Siddur",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=30641"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-first-cup",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "First cup in the reconstructed rite",
+      "exactText": "And God finished on the seventh day the labor that God had done, and ceased on the seventh day from all the labor that God had done. And God blessed the seventh day and sanctified it, for on it God ceased from all the labor that God created to do. בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגֶּפֶן׃ Blessed are You, oh Cause our God, Sovereign of the Universe, creator of the fruit of the vine. בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם אָשֵׁר קִדֵּשׁ יִשְׂרָאֵל עַמּוֹ מִכׇּל־הָעַמִּים וְרָצָה בָּהֶם מִכׇּל־הַלְּשׁוֹנוֹת. וַיִּתֵּן־לָנוּ יְיָ אֱלֹהֵינוּ [שַׁבָּתֹת לִמְנוּחָה] חַגִּים וּזְמַנִּים לַשָּׂשׂוֹן [אֶת־יוֹם הַשַּׁבָּת הַזֶּה] אֶת־יוֹם חַג הַמַּצּוֹת לְשִׂמְחָה וּלְיוֹם טוֹב וּלְמִקְרָאֵי קֹדֶשׁ. כִּי בּוֹ עָשָׂה יְיָ אֱלֹהֵינוּ נִסִּים וּגְבוּרוֹת לָאֹהֲבָיו וְנִפְלָאוֹת לִבְנֵי יְדִידָיו׃ בָּרוּךְ אַתָּה יְיָ מִקְדַּשׁ יִשְׂרָאֵל [הַשַּׁבָּת] וְחַג הַמַּצּוֹת וּמוֹעֲדֵי שִׂמְחָה וְהַזְּמַנִּים וּמִקְרָאֵי קֹדֶשׁ׃ בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ בַּיָּמִים הָאֵלֶּה׃\n\nבָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לַזְּמַן הַזֶּה׃ Blessed are You, oh Cause our God, Sovereign of the Universe, who sanctified the people Israel over fall peoples, and desired them over all tongues, and gave us, oh Cause our God, [Sabbaths for rest,] pilgrimages and times for celebration, [this Sabbath day,] this day of the Flatbread Pilgrimage, for joy and for a holiday and for a holy occasion. For on it Cause our God made miracles and wonders for the loving, amazing things for the sons of the adoring. Blessed are You, oh Cause, who blessed Israel, [the Sabbath], and the Flatbread Pilgrimage and celebratory occasions and times and holy occasions. Blessed are You, oh Cause our God, Sovereign of the Universe, who did miracles for our ancestors in these days.\n\nBlessed are You, oh Cause our God, Sovereign of the Universe, who gave us life, sustained us, and brought us to this time. (אם מוצאי שבת אומרים) [if Saturday night we say] בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא מְאוֹרֵי הָאֵשׁ׃ Blessed are You, oh Cause our God, Sovereign of the Universe, creator of the light of the fire. בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם הַמַּבְדִּיל בֵּין קֹדֶשׁ לְקֹדֶשׁ. בֵּין שַׁבָּת קֹדֶשׁ לְיוֹם מִקְרָא קֹדֶשׁ. בֵּין הַטָּמֵא לַטָּהוֹר. בֵּין הַיָּם לֶחָרָבָה. בֵּין הַמַּיִם הָעֶלְיוֹנִים לַמַּיִם הַתַּחְתּוֹנִים. בֵּין יִשְׂרָאֵל לַגּוֹיִם. בֵּין קְדֻשַּׁת שַׁבָּת לִקְדֻשַּׁת יוֹם טוֹב׃ Blessed are You, oh Cause our God, Sovereign of the Universe, who separates between holy and holy, between holy Sabbath and holy occasion day, between impure and pure, between the sea and the dry land, between the upper waters and lower waters, between Israel and the nations, between the holiness of the Sabbath and the holiness of the holiday.",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+        "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+        "research-nusach-eretz-yisrael-28g-67e9267f2572"
+      ],
+      "sourceLocation": "official source snapshot, segment 2 through official source snapshot, segment 4",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 2 through official source snapshot, segment 4",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 1010,
+            "normalizedEndOffset": 2072
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 2073,
+            "normalizedEndOffset": 2895
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-28g-67e9267f2572",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 2896,
+            "normalizedEndOffset": 3890
+          }
+        ]
+      },
+      "provenanceHash": "530188eec00645869f796a545ff65ad827934ab2edf77b7629e2a66448aade38",
+      "componentProvenanceHashes": [
+        "970dd5f2162fbc49ebf8bf9e173860413e8f619df610b84fa654538d0252e0e7",
+        "9d30b5fa914f27a0fc23e1c6c12f6f6388bc11cb33eb9bbfeacc5b1240ea656c",
+        "67e9267f25727d7ba373ca8d63a7ac61d62396de4dc1d5d8f7d6eba927beaee2"
+      ],
+      "wordCount": 433,
+      "characterCount": 2882,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "before-blessing",
+      "beginnerContext": "Explain that this is a reconstructed ancient Land of Israel form of the first-cup blessing, then tell guests whether to read the English, Hebrew, or both.",
+      "rationale": "These adjacent passages complete the first-cup blessing and its seasonal additions without jumping to a different ritual moment.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; identify the CC BY-SA 4.0 edition and any adaptation.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required",
+        "preserve-distinctive-translation"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-questions-and-servitude",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "Questions leading into servitude",
+      "exactText": "(בן הבכור ירים את־הכוס השני ויאמר) The eldest son lifts the second cup and says: מָה נִשְׁתַּנָּה הַלַּיְלָה הַזֶּה מִכׇּל הַלֵּילוֹת׃ What distinguishes this night from all nights? שֶׁבְּכׇל הַלֵּילוֹת אֵין אָנוּ מְטַבְּלִים אָפִילוּ פַעַם אַחַת, וְהַלַּיְלָה הַזֶּה אָנוּ חַיָּיבִין שְׁתֵּי פְעָמִים׃ On all other nights we do not dip even one time, and on this night we are required to do so two times. שֶׁבְּכׇל הַלֵּילוֹת אָנוּ אוֹכְלִים בֵּין חָמֵץ בֵין מַצָּה, וְהַלַּיְלָה הַזֶּה כֻּלּוֹ מַצָּה׃ On all other nights we eat either leavened bread or flatbread, and on this night all flatbread. שֶׁבְּכׇל הַלֵּילוֹת אָנוּ אוֹכְלִים בֵּין בְּשַׂר צָלִי שָׁלוּק וּמְבוּשָּׁל, וְהַלַּיְלָה הַזֶּה הָיִינוּ אוֹכְלִים בְּבֵית הַמִּקְדָשׁ כֻּלּוֹ צָלִי׃ On all other nights we eat meat either roasted, boiled, or cooked, and on this night we would eat in the Holy Temple only roasted.\n\nשֶׁבְּכׇל־הַלֵּילוֹת אָנוּ אוֹכְלִים שְׁאָר יְרָקוֹת, וְהַלַּיְלָה הַזֶּה מְרוֹרִים׃ On all other nights we eat many vegetables, and on this night bitter ones. שֶׁבְּכׇל־הַלֵּילוֹת אָנוּ אוֹכְלִין בֵּין יוֹשְׁבִין בֵין מְסֻבִּין, וְהַלַּיְלָה הַזֶּה כֻּלָּנוּ מְסֻבִּין׃ On all other nights we eat either lyin’ down or sittin’ up, and on this night we all sit up. (הבן יניח את־הכוס, ובעל הסדר עונה) The son puts down the cup, and the father answers. The first paragraph is in Aramaic. מָה שְׁנוֹ לֵיליָא הָדֵין מִכָּל־לֵילְוָותָא? What distinguishes this night from all nights? דְּבֵיהּ נְפָקוּ אַבַהֲתָנָא מֵאַרְעָא דְּמִצְרַיִם לְפִי דַּהְווֹ אַבַהֲתָנָא בְּאַרְעָא דְּמִצְרַיִם מְשׁוּעְבָּדִין תְחוֹת מַכּוֹת דְּפַרְעֹה. וַהְווֹ מִצְרָאֵי דְּחִיקִין יָתְהוֹן, וּמְשַׁעְבְּדִין יָתְהוֹן, וּרְמָא עֲלֵיהוֹן פֻּלְחָנָא קַשְׁיָא דְּלֵית אִינוּן יָכְלִין לְמֵיקַם בְּהֵן. On it our ancestors left the land of Egypt, for our ancestors were in the land of Egypt enslaved, subject to attacks of Pharaoh.\n\nAnd the Egyptians stressed them and enslaved them and made them do hard labor that they could not stand to do. צַלּוֹ אַבַהֲתָנָא קֳדָם קוּדְשָׁא בְּרִיךְ הוּא, וּשְׁמַע קוּדְשָׁא בְּרִיךְ הוּא בְּקֹל צְלוֹתְהוֹן, וְעַבַד לְהוֹן נִסִּין, וְאַפֵיקִינוּן מֵתַּמָן. וְכַד נְפָקוּ אַבַהֲתָנָא מֵאַרְעֵהוֹן דְּמִצְרָאֵי, נָּסִיבּוּ יַת־לִישָׁא דִלְחִֵם כַד הֲוָה פַּטִיר וַאֲפוֹ יָתֵיהּ בְּמִשְׁאַרָא וְלַקֵיטוּ מְרָרֵי וָאַכְלוּהֵי עִם פַּטִיר׃ Our ancestors prayed to the blessed Holy One, and the blessed Holy One heard the sound of their prayers, and did for them miracles, and brought them from there. And when our ancestors left from the Egyptians’ land, they took bread-dough while it was flat and baked it in a kneading-trough and gathered bitter herbs and ate it with the flatbread. לְפִי דַּעֲתוֹ שֶׁלַּבֵּן, אָבִיו מְלַמְּדוֹ. מַתְחִיל בִּגְנוּת וּמְסַיֵּים בְּשֶׁבַח, וְאוֹמֵר — According to the knowledge of the child, the father teaches.",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-50b-13ab1491e7f3",
+        "research-nusach-eretz-yisrael-5ov-524f24981157",
+        "research-nusach-eretz-yisrael-6gm-d0afc27efc29"
+      ],
+      "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 10",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 10",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-50b-13ab1491e7f3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 6491,
+            "normalizedEndOffset": 7374
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-5ov-524f24981157",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 7375,
+            "normalizedEndOffset": 8373
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-6gm-d0afc27efc29",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 8374,
+            "normalizedEndOffset": 9320
+          }
+        ]
+      },
+      "provenanceHash": "ab33774942ca35a31f19450ace5f78d7eab7202d68532bd997fa9bcb1088bb04",
+      "componentProvenanceHashes": [
+        "13ab1491e7f3728f7b0c8aff85abe1d6d57d5ac81151785050edc5d05bd57a28",
+        "524f249811572a5410788d122180c9431e70a39ec9c35266cb1607a7fe659ac9",
+        "d0afc27efc2916ad5eb9017842e9cd37506b3734c9da84f7bcec02470d1f4771"
+      ],
+      "wordCount": 415,
+      "characterCount": 2831,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Introduce the Four Questions as observations about what makes this night different, and explain that the response begins the story of oppression and the cry for freedom.",
+      "rationale": "The source moves directly from the questions into its compact account of forced labor, prayer, and deliverance, preserving the question-and-answer logic of Maggid.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; retain source attribution on the final credits page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required",
+        "preserve-distinctive-translation"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-exodus-recitations",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "From ancestral beginnings to the plagues",
+      "exactText": "He starts with shame and finishes with glory, and says — בְּעֵ֣בֶר הַנָּהָ֗ר יָשְׁב֤וּ אֲבֽוֹתֵיכֶם֙ מֵֽעוֹלָ֔ם תֶּ֛רַח אֲבִ֥י אַבְרָהָ֖ם וַאֲבִ֣י נָח֑וֹר וַיַּעַבְד֖וּ אֱלֹהִ֥ים אֲחֵרִֽים׃ וָ֠אֶקַּ֠ח אֶת־אֲבִיכֶ֤ם אֶת־אַבְרָהָם֙ מֵעֵ֣בֶר הַנָּהָ֔ר וָֽאוֹלֵ֥ךְ אֹת֖וֹ בְּכׇל־אֶ֣רֶץ כְּנָ֑עַן וארב וָֽאַרְבֶּה֙ אֶת־זַרְע֔וֹ וָאֶתֶּן־ל֖וֹ אֶת־יִצְחָֽק׃ וָאֶתֵּ֣ן לְיִצְחָ֔ק אֶֽת־יַעֲקֹ֖ב וְאֶת־עֵשָׂ֑ו וָֽאֶתֵּ֨ן לְעֵשָׂ֜ו אֶת־הַ֤ר שֵׂעִיר֙ לָרֶ֣שֶׁת אוֹת֔וֹ וְיַעֲקֹ֥ב וּבָנָ֖יו יָרְד֥וּ מִצְרָֽיִם׃ Across the river your ancestors dwelt of yore, Teraḥ the father of Abraham and the father of Naḥor, and they worshipped other gods. And I took your father Abraham from across the river and brought him through all the land of Canaan and expanded his seed and gave him Isaac. And I gave to Isaac Jacob and Esau, and I gave to Esau Mt. Seir to inherit, and Jacob and his sons went down to Egypt. (Joshua 24:2–4) בָּרוּךְ שׁוֹמֵר הַבְטָחָתוֹ שֶׁלְּיִשְׂרָאֵל. בָּרוּךְ הוּא!\n\nשֶׁהַקָּדוֹשׁ מַחְשֵׁב אֶת הַקֵּץ… Blessed be the Guardian of the Trust of Israel. Blessed be the One! כְּמֹשֶׁאָמַר לְאַבְרָהָם אָבִינוּ בֵּין הַבְּתָרִים שֶׁנֶּאֱמַר — וַיֹּ֣אמֶר לְאַבְרָ֗ם יָדֹ֨עַ תֵּדַ֜ע כִּי־גֵ֣ר ׀ יִהְיֶ֣ה זַרְעֲךָ֗ בְּאֶ֙רֶץ֙ לֹ֣א לָהֶ֔ם וַעֲבָד֖וּם וְעִנּ֣וּ אֹתָ֑ם אַרְבַּ֥ע מֵא֖וֹת שָׁנָֽה׃ For the Holy One knows the end… as God said to Abraham our father between the pieces as it is written (Genesis 15:13) — And said to Abraham, know this: know that an immigrant your seed will be in a land not theirs, and they will work and be oppressed four hundred years. וְהִיא שֶׁעָמְדָה לַאֲבוֹתֵינוּ וְלָנוּ שֶׁלֹּא אֶחָד בִּלְבָד עָמַד עָלֵינוּ לְכַלּוֹתֵינוּ אֶלָּא בְּכׇל־דּוֹר וָדוֹר עוֹמְדִים עָלֵינוּ לְכַלּוֹתֵנוּ וְהַקָּדוֹשׁ בָּרוּךְ הוּא מַצִּילֵנוּ מִיָּדָם׃ And it was true for our ancestors and for us that it was not only one that stood up against us to destroy us, but in each and every generation they stand against us to destroy us, and the blessed Holy One saves is from their hand.\n\nצֵא וּלְמַד מָה בִּקֵּשׁ לָבָן הָאֲרַמִּי לַעֲשׂוֹת לְיַעֲקֹב אָבִינוּ, שֶׁפַּרְעֹה הָרָשָׁע לֹא גָּזַר אֶלָּא עַל הַזְּכָרִים, וְלָבָן בִּקֵּשׁ לַעֲקוֹר אֶת־הַכֹּל שֶׁנֶּאֱמַר — אֲרַמִּי֙ אֹבֵ֣ד אָבִ֔י וַיֵּ֣רֶד מִצְרַ֔יְמָה — אֲנוּסָה עַל פִּי הַדִּבֵּר. Go and learn what Laban the Aramean wanted to do to Jacob our father, for the wicked Pharaoh only decreed against the males, but Laban wanted to uproot the entirety, as it is written (Deuteronomy 26:6-8): An Aramean, destruction, my father and he went down to Egypt – helplessly, according to the word. וַיָּ֥גׇר שָׁ֖ם בִּמְתֵ֣י מְעָ֑ט וַֽיְהִי־שָׁ֕ם לְג֥וֹי גָּד֖וֹל עָצ֥וּם וָרָֽב׃ וַיָּרֵ֧עוּ אֹתָ֛נוּ הַמִּצְרִ֖ים וַיְעַנּ֑וּנוּ וַיִּתְּנ֥וּ עָלֵ֖ינוּ עֲבֹדָ֥ה קָשָֽׁה׃ וַנִּצְעַ֕ק אֶל־יְהֹוָ֖ה אֱלֹהֵ֣י אֲבֹתֵ֑ינוּ וַיִּשְׁמַ֤ע יְהֹוָה֙ אֶת־קֹלֵ֔נוּ וַיַּ֧רְא אֶת־עׇנְיֵ֛נוּ וְאֶת־עֲמָלֵ֖נוּ וְאֶֽת־לַחֲצֵֽנוּ׃ וַיּוֹצִאֵ֤נוּ יְהֹוָה֙ מִמִּצְרַ֔יִם — לֹא עַל יְדֵי מַלְאָךְ, לֹא עַלְיְדֵי שָׂרָף, לֹא עַלְיְדֵי שָׁלִיחַ, אֶלָּא הַקָּדוֹשׁ בָּרוּךְ הוּא בְּעַצְמוֹ.\n\nAnd he dwelt there in small numbers, and became there a great and mighty and powerful nation. And the Egyptians were evil to us, and oppressed us, and gave us hard work. And we cried out to the Cause the God of our ancestors and the Cause heard our voice and saw our pain and our labor and our struggle. And the Cause brought us from Egypt – not by an angel, nor by seraph, nor by messenger, but the blessed Holy One God-self. בְּיָ֤ד חֲזָקָה֙ — שְׁתַּיִם. וּבִזְרֹ֣עַ נְטוּיָ֔ה — שְׁתַּיִם. וּבְמֹרָ֖א גָּדֹ֑ל — שְׁתַּיִם. וּבְאֹת֖וֹת — שְׁתַּיִם. וּבְמֹפְתִֽים — שְׁתַּיִם׃ With a strong hand— two. And an outstretched arm — two. And with great terror — two. And signs — two. And wonders — two. אֵלּוּ עֶשֶׂר מַכּוֹת שֶׁהֵבִיא הַמָּקוֹם בָּרוּךְ הוּא עַל הַמִּצְרִים בְּמִצְרַיִם וְאֵלּוּ הֵן׃\n\nThese are the ten plagues that the Blessed Present One brought on the Egyptians in Egypt, and these are they: דָּם. צְפַרְדֵּיעַ. כִּנִּים. עֲרוֹב. דֶּבֶר. שְׁחִין. בָּרַד. אַרְבֶּה. חוֹשֶׁךְ. מַכּוֹת בְּכוֹרוֹת׃ Blood. Frog. Lice. Horde. Plague. Boil. Hail. Locusts. Darkness. Plagues of the firstborn. וְהוֹצִיאֵנוּ מִשָּׁם שֶׁנֶּאֱמַר — וְאוֹתָ֖נוּ הוֹצִ֣יא מִשָּׁ֑ם׃ And God brought us from there, as it is said (Deuteronomy 6:23) — and us [God] brought from there. רַבָּן גַּמְלִיאֵל אוֹמֵר׃ כׇּל שֶׁלֹּא אָמַר שְׁלוֹשָׁה דְּבָרִים אֵילּוּ בַּפֶּסַח לֹא יָצָא יְדֵי חוֹבָתוֹ — פֶּסַח מַצָּה וּמְרוֹרִים׃ Rabban Gamliel says: all who do not say these three things on Passover have not fulfilled their obligations — Passover-offering, flatbread, bitter herbs. פֶּסַח עַל־שׁוּם שֶׁפָּסַח הַמָּקוֹם בָּרוּךְ הוּא עַל בָּתֵּי אֲבוֹתֵינוּ בְּמִצְרַיִם שֶׁנֶּאֱמַר — וַאֲמַרְתֶּ֡ם זֶֽבַח־פֶּ֨סַח ה֜וּא לַֽיהֹוָ֗ה אֲשֶׁ֣ר פָּ֠סַ֠ח עַל־בָּתֵּ֤י בְנֵֽי־יִשְׂרָאֵל֙ בְּמִצְרַ֔יִם בְּנׇגְפּ֥וֹ אֶת־מִצְרַ֖יִם וְאֶת־בָּתֵּ֣ינוּ הִצִּ֑יל וַיִּקֹּ֥ד הָעָ֖ם וַיִּֽשְׁתַּחֲוֽוּ׃",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-76x-d7863e18b969",
+        "research-nusach-eretz-yisrael-7xv-786afb475928",
+        "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+        "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+        "research-nusach-eretz-yisrael-a4w-ba5c1aded43a"
+      ],
+      "sourceLocation": "official source snapshot, segment 11 through official source snapshot, segment 15",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 11 through official source snapshot, segment 15",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-76x-d7863e18b969",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 9321,
+            "normalizedEndOffset": 10290
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-7xv-786afb475928",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 10291,
+            "normalizedEndOffset": 11312
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 11313,
+            "normalizedEndOffset": 12339
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 12340,
+            "normalizedEndOffset": 13135
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-a4w-ba5c1aded43a",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 13136,
+            "normalizedEndOffset": 14202
+          }
+        ]
+      },
+      "provenanceHash": "cf0caba6f043fa3e73a14f4649be5f2df890189763eb7cec303ba8c89120e29e",
+      "componentProvenanceHashes": [
+        "d7863e18b96972ff940d5076f6a44689b731972770eccf6ca379408c4704fa22",
+        "786afb475928eaca5bda7938eb22d15e8fdc65d456dc882555bf36ba1a7e44f7",
+        "1fad44ccdda499cf9442b86fc4b1e7302a1fb4d5117517faa63719685e4bcfb9",
+        "d2c1e357ebb1eefccf5db0b080cb461a618e4889b0b5484050e49f3fdb5e5ec1",
+        "ba5c1aded43a6b0887606eae51d5e7def6214dce190fef60627a65e859792a05"
+      ],
+      "wordCount": 708,
+      "characterCount": 4885,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Before reading, give a short spoken bridge: the Haggadah widens the Exodus story by tracing the family’s earlier migrations, enslavement, cry, and divine response.",
+      "rationale": "Five consecutive passages carry one sustained biblical exposition from ancestral history through oppression and deliverance to the naming of the ten plagues.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur and preserve CC BY-SA 4.0 attribution and ShareAlike conditions.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "nontriumphalist-plague-framing",
+        "preserve-distinctive-translation"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-three-symbols",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "Passover, matzah, and maror explained",
+      "exactText": "Passover-offering on account of that the Blessed Present One passed over the houses of our ancestors in Egypt as it is said (Exodus 12:27) — and you will say, a Passover-sacrifice it is to the Cause who passed over the houses of the children of Israel in Egypt during the smiting of the Egyptians, but our houses God saved, and the people bowed and prostrated. מְרוֹרִים עַל־שׁוּם שֶׁמָּרְרוּ הַמִּצְרִים אֶת־חַיֵּי אֲבוֹתֵינוּ בְּמִצְרַיִם שֶׁנֶּאֱמַר — וַיְמָרְר֨וּ אֶת־חַיֵּיהֶ֜ם בַּעֲבֹדָ֣ה קָשָׁ֗ה בְּחֹ֙מֶר֙ וּבִלְבֵנִ֔ים וּבְכׇל־עֲבֹדָ֖ה בַּשָּׂדֶ֑ה אֵ֚ת כׇּל־עֲבֹ֣דָתָ֔ם אֲשֶׁר־עָבְד֥וּ בָהֶ֖ם בְּפָֽרֶךְ׃ Bitter herbs on account of that the Egyptians embittered the lives of our ancestors in Egypt as it is said (Exodus 1:14) — and they embittered their lives with hard labor with mortar and bricks and all labor in the field, all their labors that they did harshly.\n\nמַצָּה עַל־שׁוּם שֶׁנִּגְאֲלוּ שֶׁנֶּאֱמַר — וַיֹּאפ֨וּ אֶת־הַבָּצֵ֜ק אֲשֶׁ֨ר הוֹצִ֧יאוּ מִמִּצְרַ֛יִם עֻגֹ֥ת מַצּ֖וֹת כִּ֣י לֹ֣א חָמֵ֑ץ כִּֽי־גֹרְשׁ֣וּ מִמִּצְרַ֗יִם וְלֹ֤א יָֽכְלוּ֙ לְהִתְמַהְמֵ֔הַּ וְגַם־צֵדָ֖ה לֹא־עָשׂ֥וּ לָהֶֽם׃ Flatbread on account of that we were redeemed, as it is said (Exodus 12:39) — And they baked from the dough that they had taken out of Egypt flatbread cakes, for they were not leavened, for they had fled from Egypt and could not dilly-dally, and had not made any provisions for them. בְכׇל־דוֹר וָדוֹר חַיָּיב אָדָם לִרְאוֹת אֶת־עַצְמוֹ כְּאִילּוּ הוּא יָצָא מִמִּצְרַיִם שֶׁנֶּאֱמַר — וְהִגַּדְתָּ֣ לְבִנְךָ֔ בַּיּ֥וֹם הַה֖וּא לֵאמֹ֑ר בַּעֲב֣וּר זֶ֗ה עָשָׂ֤ה יְהֹוָה֙ לִ֔י בְּצֵאתִ֖י מִמִּצְרָֽיִם׃ In each and every generation a person is required to see himself as if he left Egypt as it is said (Exodus 13:8) — And tell your child on this day, saying, for this the Cause did for me when I left Egypt.\n\nלְפִיכָךְ אָנוּ חַיָּיבִים לְהוֹדוֹת לְהַלֵּל לְשַׁבֵּחַ לְפָאֵר לְרוֹמֵם לְגַדֵּל לְנַצֵּחַ לְמִי שֶׁעָשָׂה לָנוּ וְלַאֲבוֹתֵינוּ אֶת־כׇּל־הַנִּסִּים הָאֵלּוּ וְהוֹצִיאָנוּ מֵעַבְדוּת לְחֵרוּת וְנֹאמַר לְפָנָיו הַלְלוּיָהּ׃ Thus we are require to thank, to praise, to laud, to glorify, to exalt, to magnify, to acclaim the one who did for us and our ancestors all these miracles and brought us from slavery to freedom, and we will say before God: Praise the Source! הַ֥לְלוּ יָ֨הּ ׀ הַ֭לְלוּ עַבְדֵ֣י יְהֹוָ֑ה הַֽ֝לְל֗וּ אֶת־שֵׁ֥ם יְהֹוָֽה׃ יְהִ֤י שֵׁ֣ם יְהֹוָ֣ה מְבֹרָ֑ךְ מֵ֝עַתָּ֗ה וְעַד־עוֹלָֽם׃ מִמִּזְרַח־שֶׁ֥מֶשׁ עַד־מְבוֹא֑וֹ מְ֝הֻלָּ֗ל שֵׁ֣ם יְהֹוָֽה׃ רָ֖ם עַל־כׇּל־גּוֹיִ֥ם ׀ יְהֹוָ֑ה עַ֖ל הַשָּׁמַ֣יִם כְּבוֹדֽוֹ׃ מִ֭י כַּיהֹוָ֣ה אֱלֹהֵ֑ינוּ הַֽמַּגְבִּיהִ֥י לָשָֽׁבֶת׃ הַֽמַּשְׁפִּילִ֥י לִרְא֑וֹת בַּשָּׁמַ֥יִם וּבָאָֽרֶץ מְקִ֥ימִ֣י מֵעָפָ֣ר דָּ֑ל מֵ֝אַשְׁפֹּ֗ת יָרִ֥ים אֶבְיֽוֹן׃ לְהוֹשִׁיבִ֥י עִם־נְדִיבִ֑ים עִ֗֝ם נְדִיבֵ֥י עַמּֽוֹ׃ מֽוֹשִׁיבִ֨י ׀ עֲקֶ֬רֶת הַבַּ֗יִת אֵֽם־הַבָּנִ֥ים שְׂמֵחָ֗ה הַֽלְלוּ־יָֽהּ׃ Praise the Source! Praise, servants of the Cause; praise the name of the Cause.",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+        "research-nusach-eretz-yisrael-bmv-bd2fbe9d31b2",
+        "research-nusach-eretz-yisrael-ccy-f04204446450"
+      ],
+      "sourceLocation": "official source snapshot, segment 16 through official source snapshot, segment 18",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 16 through official source snapshot, segment 18",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 14203,
+            "normalizedEndOffset": 15078
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-bmv-bd2fbe9d31b2",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 15079,
+            "normalizedEndOffset": 16017
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-ccy-f04204446450",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 16018,
+            "normalizedEndOffset": 17120
+          }
+        ]
+      },
+      "provenanceHash": "90e55946ca48a027f420f747f67d845e6237c06d3ff7b7dc05bbc3773ab47cae",
+      "componentProvenanceHashes": [
+        "e7d9192e92df9349ec1b88ccdecb9ba0963a0af1d196f88f8b01750c3fe3347e",
+        "bd2fbe9d31b2c6f12225b04c8ba88bdea321104a09b4ac7f62aebb0367d3116e",
+        "f0420444645040e5303041f1f32f628121b95258db5cf5f7dc1f9a88c4b20410"
+      ],
+      "wordCount": 414,
+      "characterCount": 2919,
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Point to each ritual food as it is named and explain that these passages connect what guests can see and taste to the remembered movement from bondage toward freedom.",
+      "rationale": "The three adjacent records give the source’s complete explanation of the central symbols and then turn naturally from explanation toward gratitude and song.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; indicate any abridgment while retaining the CC BY-SA 4.0 terms.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "preserve-distinctive-translation",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-first-hallel",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "Praise after the freedom story",
+      "exactText": "May the Cause’s name be blessed from now to eternity. From the sun’s rise until its set, praised is the Cause’s name. High over all nations is the Cause, over heaven God’s Glory. Who is like the Cause our God, who sits in the heights? From above looking down upon the heaven and the earth. Raising the poor from dust, lifting the needy from dung-heaps. Setting them with princes, with the princes of God’s people. Setting a home for the barren as a rejoicing mother of children. Praise the Source! (Psalms 113) בְּצֵ֣את יִ֭שְׂרָאֵל מִמִּצְרָ֑יִם בֵּ֥ית יַ֝עֲקֹ֗ב מֵעַ֥ם לֹעֵֽז׃ הָיְתָ֣ה יְהוּדָ֣ה לְקׇדְשׁ֑וֹ יִ֝שְׂרָאֵ֗ל מַמְשְׁלוֹתָֽיו׃ הַיָּ֣ם רָ֭אָה וַיָּנֹ֑ס הַ֝יַּרְדֵּ֗ן יִסֹּ֥ב לְאָחֽוֹר׃ הֶ֭הָרִים רָקְד֣וּ כְאֵילִ֑ים גְּ֝בָע֗וֹת כִּבְנֵי־צֹֽאן׃ מַה־לְּךָ֣ הַ֭יָּם כִּ֣י תָנ֑וּס הַ֝יַּרְדֵּ֗ן תִּסֹּ֥ב לְאָחֽוֹר׃ הֶ֭הָרִים תִּרְקְד֣וּ כְאֵילִ֑ים גְּ֝בָע֗וֹת כִּבְנֵי־צֹֽאן׃ מִלִּפְנֵ֣י אָ֭דוֹן ח֣וּלִי אָ֑רֶץ מִ֝לִּפְנֵ֗י אֱל֣וֹהַּ יַעֲקֹֽב׃ הַהֹפְכִ֣י הַצּ֣וּר אֲגַם־מָ֑יִם חַ֝לָּמִ֗ישׁ לְמַעְיְנוֹ־מָֽיִם׃\n\nWhen Israel was leaving Egypt, Jacob’s house from a strange-tongued people. Judah became the Holy One’s, Israel God’s dominion. The sea looked and flew away, the Jordan flowed backwards. The mountains danced like rams, the hills like lambs. What’s with you, oh sea, why fly away? O Jordan, why flow backwards? O mountains, why dance like rams? O hills, why dance like lambs? From before the Master the earth quakes; from before the One God of Jacob! Who turns the crag to a water lake, rock to a water well. (Psalm 114) אַ֫תָּה גָאַלְתָּ אֶת־אֲבוֹתֵינוּ מִמִּצְרַיִם בְּיָד חֲזָקָה וּבִזְרֹעַ נְטוּיָה׃ בִּ֫הְיוֹת אֲבוֹתֵינוּ בְּתוֹךְ אֶרֶץ מִצְרַיִם. הָיוּ מְעֻנִּים וּמְשֻׁעְבָּדִים תַּחַת־יַד פַּרְעֹה מֶלֶךְ מִצְרַיִם׃ גַּ֫ם שָׁם פָּרוּ וְרָבוּ כַּעֲפַר הָאָרֶץ וּכְאַרְזֵי הַלְּבָנוֹן גָּבְהוּ בְקוֹמָה׃ דִּ֫בֶּר פַּרְעֹה הָרָשָׁע לִמְחוֹת אֶת־שְׁמָם וּלְהַאֲבִיד אֶת־זִכְרָם מִקֶּרֶב תֵּבֵל׃ ה֫וּא וְעַמּוֹ בְעֵצָה אַחַת הָיוּ וַיִּתְחַכְּמוּ סוֹד עַל־זֶרַע יִשְׂרָאֵל׃\n\nוַ֫יְמָרְרוּ אֶת־חַיֵּיהֶם בְּפָרֶךְ וּבְתַשְׁנִיק גָּדוֹל קָצְרָה רוּחָם׃ זֶ֫רַע יְשֻׁרוּן אֲנָחָה לָבַשׁ כִּי־יַד אוֹיֵב גָּבְרָה עֲלֵיהֶם׃ חַ֫י וְקַיָּם שָׁמַע קוֹלָם מֶלֶך מַלְכֵי הַמְּלָכִים הֶאֱזִין לָהֶם׃ ט֫וֹב וְיָשָׁר גָּדַּל מֵהֶם מֹשֶׁה יְדִיד בֶּחָזוֹן הֻשְׁלַח לָהֶם׃ יַ֫חַד הֶרְאָם אוֹתוֹת שַׁדַּי וּבְמִינֵי נְגָעִים נִשְׁפְּטוּ בְנֵי־חָם׃ כׇּ֫ל־בְּכוֹרֵיהֶם לַטֶּבַח מָסָר רֵאשִׁית בִּטְנָם לְדֶבֶר גָּדוֹל׃ לָ֫כֵן נָפְלָה צְעָקָה גְּדוֹלָה בְּתוֹךְ אֶרֶץ מִצְרַיִם בְּכִי וּמִסְפֵּד בְּכׇל־חוּצוֹתֶיהָ׃ מֵ֫עַבְדוּת לְחֵרוּת יָצְאוּ יְדִידִים וְאֵין כּוֹשׁל בְּמִסְפַּר שְׁבָטָיו׃ נָ֫הֲגָם בְּטוּבוֹ צוּר עוֹלָמִים וַיַּגִּיעֵם לְיַם־סוּף בְּרַחֲמִים רַבִּים׃ סָ֫גַר הַיָּם עֲלֵיהֶם בַּהֲמוֹן גַּלָּיו שׂוֹנֵא רוֹדֵף בַּהֲמוֹן חֵילוֹ׃ עֵ֫ינֵיהֶם נָשְׂאוּ לַמָּרוֹם לְבַקֵּשׁ רַחֲמִים מֵאֲבִיר יַעֲקֹב׃ פִּ֫יהֶם פָּתְחוּ גְאוּלֵי יְיָ וְשִׁבְּחוּ לְמַלְכָּם עַל־רֹב נִפְלְאוֹתָיו׃ צָ֫הַל רוֹכְבוֹ בְּאוֹיְבֵי עַמּוֹ לְהַשְׁלִיךְ שׂוֹנְאָיו אֶל־תּוֹךְ מְצוּלָה׃ קָ֫רַע יְיָ אֶת־מֵי יַם־סוּף וְקִיֵּם אֶת־הַשְּׁבוּעָה אֲשֶׁר נִשְׁבַּע לַאֲבוֹתֵינוּ׃ רָ֫אוּ יְדִידִים בְּפִגְרֵי שׂוֹנְאֵיהֶם שֶׁהֵם מֻטָּלִים עַל־שְׂפַת הַיָּם׃ שִׁ֫ירָה וְזִמְרָה וְדִבְרֵי הַלֵּל אָמַר מֹשֶׁה רָבֵּינוּ לִפְנֵי קוֹנוֹ׃ תְּ֫הִלָּה וְתִפְאֶרֶת וְדִבְרֵי תִשְׁבָּחוֹת אָמְרוּ פְדוּיִים לִפְנֵי גוֹאֲלָם וּמוֹשִׁיעָם׃",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+        "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+        "research-nusach-eretz-yisrael-eqy-a2d9204c7e31"
+      ],
+      "sourceLocation": "official source snapshot, segment 19 through official source snapshot, segment 21",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 19 through official source snapshot, segment 21",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 17121,
+            "normalizedEndOffset": 18137
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 18138,
+            "normalizedEndOffset": 19113
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-eqy-a2d9204c7e31",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 19114,
+            "normalizedEndOffset": 20423
+          }
+        ]
+      },
+      "provenanceHash": "edcea2d7797acb16413fc09bcfea8288716a2892c038a589dee43a8df9fc52ba",
+      "componentProvenanceHashes": [
+        "73e74f0fd0f31d0ca30b6f3c8a289a142a8d2ba7bf0ba12f1343295bac95aebe",
+        "b694b9d855ec50c21a592565df234a2ff82aa2c4eaf513e41dbae6dd201d468c",
+        "a2d9204c7e31404d9fd5875cd451dd31f1bd009ed332253dbdc6472888f6d254"
+      ],
+      "wordCount": 420,
+      "characterCount": 3304,
+      "sectionIds": [
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "hallel"
+      ],
+      "insertionSectionId": "hallel",
+      "themes": [
+        "traditional",
+        "environment",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests that the story now shifts into poetry: the table responds to liberation with Psalms and a historical liturgical composition.",
+      "rationale": "These source-adjacent passages preserve the movement from Psalm 113 into the sea imagery of Psalm 114 and the rite’s added poetic retelling.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur and retain any passage-level attributions resolved from the canonical source.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "identify-genre-shift",
+        "preserve-distinctive-translation"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-eating-and-grace",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "Matzah, meal, and table blessing",
+      "exactText": "וירים את־המצה ויאמר) He drinks, and lifts the flatbread and says: בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ עַל אֲכִילַת מַצָּה וּמָרוֹר בַּלַּיְלָה הַזֶּה לְהַזְכִּיר גְּבוּרָתוֹ שֶׁלְּמֶלֶךְ מַלְכֵי הַמְּלָכִים. בָּרוּךְ הוּא שֶׁעָשָׂה נִסִּים לַאֲבֹתֵינוּ בַּזְּמַן הַזֶּה בַּעֲבוּר אַבְרָהָם יִצְחָק וְיַעֲקֹב. בָּרוּךְ אַתָּה יְיָ זוֹכֵר הַבְּרִית׃ בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם הַמּוֹצִיא לֶחֶם מִן־הָאָרֶץ אָמֵן׃ Blessed are You, oh Cause our God, Sovereign of the Universe, who sanctified us with divine commandments and commanded us about the eating of flatbread and bitter herbs on this night to recall the might of the Sovereign, Sovereign of Sovereigns. Blessed be the One who did miracles for our ancestors at this time, for the sake of Abraham, Isaac, and Jacob. Blessed are You, oh Cause, who remembers the covenant. Blessed are You, oh Cause our God, Sovereign of the Universe, who brings forth bread from the earth, amen.\n\n(ויאכלו) They eat. (בעל הסדר ירים את הכוס השלישי ויאמר נִבָּרֵךְ!) The seder leader lifts the third cup and says “Let us bless!” נִבָּרֵךְ שֶׁאָכַלְנוּ מִשֶּׁלּוֹ וּמִטֻּבוֹ חָיִינוּ׃ בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם אָ֫ז בַּ֫פֶּסַח גָּ֫אַלְתָּ דּ֫וֹרְשֵׁי ה֫וֹד כְּבוֹדוֹ הִ֫צַּלְתָּ וְ֫הוֹשַׁעְתָּ ז֫רָעָם עֲשִׂי עֻגוֹת כַּכָּתוּב — וַיְמַהֵ֧ר אַבְרָהָ֛ם הָאֹ֖הֱלָה אֶל־שָׂרָ֑ה וַיֹּ֗אמֶר מַהֲרִ֞י שְׁלֹ֤שׁ סְאִים֙ קֶ֣מַח סֹ֔לֶת ל֖וּשִׁי וַעֲשִׂ֥י עֻגֽוֹת׃ וְנֶאֱמַר — פּוֹתֵ֥חַ אֶת־יָדֶ֑ךָ וּמַשְׂבִּ֖יעַ לְכׇל־חַ֣י רָצֽוֹן׃ בָּרוּךְ אַתָּה יְיָ הַזַּן אֶת־הַכּוֹל׃ Let us bless the one from whom we ate and from whose goodness we live. Blessed are You, oh Cause our God, Sovereign of the Universe… As it happened by Passover came redemption for those who deigned to seek your glorious majesty, exiting and freeing generations of the maker of cakes, as it is written (Genesis 18:6) — And Abraham hurried to the tent to Sarah and said, ‘Hurry, three seah of semolina flour, bake and make cakes!\n\nAnd it is said (Psalm 145:16) — You open Your hand and satiate all life as it desires. Blessed are You, oh Cause, who feeds all. זֹ֫את ח֫וּקַּת הַפֶּסַח טָ֫הֳרַת יְ֫דִידִים כֻּ֫לָּם יָצְאוּ שְׂמֵחִים לִ֫שְׁמוֹר אֶת־חוֹדֶשׁ הָאָבִיב כַּכָּתוּב — שָׁמוֹר֙ אֶת־חֹ֣דֶשׁ הָאָבִ֔יב וְעָשִׂ֣יתָ פֶּ֔סַח לַיהֹוָ֖ה אֱלֹהֶ֑יךָ כִּ֞י בְּחֹ֣דֶשׁ הָֽאָבִ֗יב הוֹצִ֨יאֲךָ֜ יְהֹוָ֧ה אֱלֹהֶ֛יךָ מִמִּצְרַ֖יִם לָֽיְלָה׃ וְנֶאֱמַר — וְאָכַלְתָּ֖ וְשָׂבָ֑עְתָּ וּבֵֽרַכְתָּ֙ אֶת־יְהֹוָ֣ה אֱלֹהֶ֔יךָ עַל־הָאָ֥רֶץ הַטֹּבָ֖ה אֲשֶׁ֥ר נָֽתַן־לָֽךְ׃ בָּרוּךְ אַתָּה יְיָ עַל־הַאָרֶץ וְעַל הַמַּזוֹן׃ Here is the judgement of Passover, a keepsake of purity for the loved ones. Most everyone went out nigh in joy, on account of the month of spring, as it is written (Deuteronomy 16:1) — Guard the month of spring, and make a Passover for Adonai your God, for in the month of spring Adonai your God brought you from Egypt by night.\n\nAnd it is said (Deuteronomy 8:10) — And you will eat and be sated and bless Adonai your God for the good land given you. Blessed are You, oh Cause, for the land and for the food. מִ֫צְוֹת פֶּסַח וּמִילָה נָ֫תַתָּה לַאֲבוֹתֵינוּ שָׂ֫מַחְתָּ עֲ֫מוּסִים פָּ֫קַדְתָּ צְ֫אוּ קְ֫דוֹשִׁים ר֫וֹמְמוּת שָׁ֫קַדְתָּ וְהִיצַּלְתָּ וְהוֹשַׁעְתָּ הִרְגַּלְתָּ וּפָסַחְתָּ כַּכָּתוּב — וַאֲמַרְתֶּ֡ם זֶֽבַח־פֶּ֨סַח ה֜וּא לַֽיהֹוָ֗ה אֲשֶׁ֣ר פָּ֠סַ֠ח עַל־בָּתֵּ֤י בְנֵֽי־יִשְׂרָאֵל֙ בְּמִצְרַ֔יִם בְּנׇגְפּ֥וֹ אֶת־מִצְרַ֖יִם וְאֶת־בָּתֵּ֣ינוּ הִצִּ֑יל וַיִּקֹּ֥ד הָעָ֖ם וַיִּֽשְׁתַּחֲוֽוּ׃ וְנֶאֱמַר — בּוֹנֵ֣ה יְרֽוּשָׁלַ֣‍ִם יְהֹוָ֑ה נִדְחֵ֖י יִשְׂרָאֵ֣ל יְכַנֵּֽס׃ בָּרוּךְ אַתָּה יְיָ הַבּוֹנֶה בְּרַחֲמָיו אֶת־יְרוּשָׁלַיִם אָמֵן בְּיָמֵינוּ וּבִמְהֵרָה וּבִימֵי כׇּל־עַמּוֹ יִשְׂרָאֵל׃ Passover flatbread and qualified circumcision You revealed to our ancestors, satisfying those trembling under their loads. Vamoose! — by Writ — to be holy, e- Xalting You, who guards and saves and rescues and fests and passes over.",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-if4-bd0f37d09b5d",
+        "research-nusach-eretz-yisrael-j73-832f6aeafc03",
+        "research-nusach-eretz-yisrael-jz7-037fea372ca0",
+        "research-nusach-eretz-yisrael-koa-8977fe01b485"
+      ],
+      "sourceLocation": "official source snapshot, segment 26 through official source snapshot, segment 29",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 26 through official source snapshot, segment 29",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-if4-bd0f37d09b5d",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 23872,
+            "normalizedEndOffset": 24878
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-j73-832f6aeafc03",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 24879,
+            "normalizedEndOffset": 25890
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-jz7-037fea372ca0",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 25891,
+            "normalizedEndOffset": 26793
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-koa-8977fe01b485",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 26794,
+            "normalizedEndOffset": 27800
+          }
+        ]
+      },
+      "provenanceHash": "db5bcecfa4f2b56f42ce9d4bfa54525ed351542e8719ea4aacaaaf0c873db61a",
+      "componentProvenanceHashes": [
+        "bd0f37d09b5dbfe0eb89e6fc19c2bcb0ddd7e61e2ea2428faaa7c07a37a6ea7f",
+        "832f6aeafc038f22841e7bd41adccaf0cda0cc11dc6408e7e22a58f7f191a5dd",
+        "037fea372ca0e18bef29b3692f7227e3e48fa4ebf60f5d48c7a43d43b4ffa4ac",
+        "8977fe01b485d5007d512c6882f1cf827c3ca87e6fed623a90c95c3267594217"
+      ],
+      "wordCount": 561,
+      "characterCount": 3931,
+      "sectionIds": [
+        "motzi-matzah",
+        "maror",
+        "shulchan-orech",
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "motzi-matzah",
+        "maror",
+        "shulchan-orech",
+        "barech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "before-blessing",
+      "beginnerContext": "Separate the practical actions from the source reading: first explain what everyone eats and when, then identify the transition from the meal to the third cup and grace.",
+      "rationale": "The sequence follows the source’s own order from eating matzah and maror through the meal into the opening movements of blessing after food.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; adaptations remain subject to CC BY-SA 4.0.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-substitute-for-host-instructions",
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-nusach-eretz-yisrael-nishmat-praise",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "title": "Nishmat and embodied praise",
+      "exactText": "(Psalm 136) נִשְׁמַת כׇּל־חַי תְּבָרֵךְ אֶת־שִׁמְךָ יְיָ אֱלֹהֵינוּ וְרוּחַ כׇּל־בָּשָׂר תְּפָאֵר וּתְרוֹמֵם זִכְרְךָ מַלְכֵּנוּ׃ מִן־הָעוֹלָם וְעַד־הָעוֹלָם אַתָּה אֵל וּמִבַּלְעָדֶיךָ אֵין לָנוּ מֶלֶךְ גּוֹאֵל עוֹזֵר וּמוֹשִיעַ פּוֹדֶה וּמַצִּיל וּמְפַרְנֵס וּמְרַחֵם בְּכׇל־עֵת צָרָה וְצוּקָה אֵין לָנוּ מֶלֶךְ אֶלָּא אָתָּה׃ אֱלֹהֵי הָרִאשׁוֹנִים וְהָאַחֲרוֹנִים אֱלֹהַּ כׇּל־בְּרִיוֹת אֲדוֹן כׇּל־תּוֹלָדוֹת הַמְּהֻלָל בְּרֹב הַתִּשְׁבָּחוֹת הַמְנַהֵג עוֹלָמוֹ בְּחֶסֶד וּבְרִיּוֹתָיו בְּרַחֲמִים׃ וַיְיָ לֹא־יָנוּם וְלֹא־יִישָׁן׃ הַמְּעוֹרֵר יְשֵׁנִים וְהַמֵּקִיץ נִרְדָּמִים סוֹמֵךְ נוֹפְלִים רוֹפֵא חוֹלִים וּלְךָ אֲנַחְנוּ מוֹדִים׃ אִלּוּ פִינוּ מָלֵא שִׁירָה כַּיָּם וּלְשׁוֹנֵנוּ רִנָּה כַּהֲמוֹן גַּלָּיו וְשִׂפְתוֹתֵינוּ שֶׁבַח כְּמֶרְחֲבֵי רָקִיעַ וְעֵינֵינוּ מְאִירוֹת כַּשֶׁמֶשׁ וְיָּרֵחַ וְיָדֵינוּ כְּנִשְׂרֵי שָׁמַיִם וְרַגְלֵינוּ כָּאַיָּלוֹת אֵין אֲנַחְנוּ מַסְפִּיקִים לְהוֹדוֹת־לָךְ יְיָ אֱלֹהֵינוּ וֵאלֹהֵי אֲבוֹתֵינוּ וּלְבָרֵךְ אֶת־שִׁמְךָ עַל־אַחַת מֵאֶלֶף אַלְפֵי אֲלָפִים וְרִבֵּי רְבָבוֹת הַטּוֹבוֹת נִסִּים וְנִפְלָאוֹת שֶׁעָשִׂיתָ עִם־אֲבוֹתֵינוּ׃ מִמִּצְרַיִם גְּאַלְתָּנוּ וּמִבֵּית עֲבָדִים פְּדִיתָנוּ בְּרָעָב זַנְתָּנוּ וּבְשָׂבָע כִּלְכַּלְתָּנוּ מֵחֶרֶב הִצַּלְתָּנוּ וּמִדֶּבֶר מִלַּטְתָּנוּ וּמֵחֳלָיִם רָעִים דִּלִּיתָנוּ׃ וְעַד הֵנָּה עֲזָרוּנוּ רַחֲמֶיךָ וְלֹא עֲזָבוּנוּ חֲסָדֶיךָ וְאַל תִּטְּשֵׁנוּ יְיָ אֱלֹהֵינוּ לָנֶצַח׃\n\nלָכֵן אֵבָרִים שֶׁפִּלַּגְתָּ בָּנוּ וְרוּחַ וּנְשָׁמָה שֶׁנָּפַחְתָּ בְּאַפֵּינוּ וְלָשׁוֹן אֲשֶׁר שַׂמְתָּ בְּפִינוּ הֵן הֵם יוֹדוּ וִיבָרְכוּ וִישַׁבְּחוּ אֶת־שִׁמְךָ יְיָ אֱלֹהֵינוּ׃ כִּי כׇל־פֶּה לְךָ יוֹדֶה וְכׇל־לָשׁוֹן לְךָ תִשָּׁבַע וְכׇל־בֶּרֶךְ לְךָ תִכְרַע וְכׇל־קוֹמָה לְפָנֶיךָ תִשְׁתַּחֲוֶה וְכׇל־לְבָבוֹת יִירָאוּךָ וְכׇל־קֶרֶב וּכְלָיוֹת יְזַמְּרוּ לִשְׁמֶךָ כַּדָבָר שֶׁנֶּאֱמַר — כׇּ‍֥ל עַצְמוֹתַ֨ ׀ תֹּאמַרְנָה֮ יְהֹוָ֗ה מִ֥י כָ֫מ֥וֹךָ מַצִּ֣יל עָ֭נִי מֵחָזָ֣ק מִמֶּ֑נּוּ וְעָנִ֥י וְ֝אֶבְי֗וֹן מִגֹּֽזְלֽוֹ׃ מִי־יִדְמֶה־לָּךְ וּמִי־יִשְׁוֶה־לָּךְ וּמִי־יַעֲרָךְ־לָךְ וּמִי יַעֲשֶׂה כְמַעֲשֶׂיךְ הָאֵל הַגָּדוֹל הַגִּבּוֹר וְהַנּוֹרָא אֵל עֶלְיוֹן קֹנֵה שָׁמַיִם וָאָרֶץ׃ הָאֵל בְּתַעֲצֻמוֹת עֻזָּךְ הַגָּדוֹל לִכְבוֹד שִׁמְךָ הַגִּבּוֹר לָנֶצַח נוֹרְאוֹתֶיךָ׃ נְהַלֶּלְךָ וּנְשַׁבֵּחֲךָ וּנְבָרֵךְ אֶת־שֵׁם קׇדְשֶָךְ כְּמוֹ שֶׁדָּוִד עַבְדְּךָ אָמַר לְפָנֶיךָ — לְדָוִ֨ד ׀ בָּרְכִ֣י נַ֭פְשִׁי אֶת־יְהֹוָ֑ה וְכׇל־קְ֝רָבַ֗י אֶת־שֵׁ֥ם קׇדְשֽׁוֹ׃ וְכָתוּב — רַנְּנ֣וּ צַ֭דִּיקִים בַּֽיהֹוָ֑ה לַ֝יְשָׁרִ֗ים נָאוָ֥ה תְהִלָּֽה׃ The soul of all life blesses Your name, oh Cause our God, and the breath of all flesh glorifies and exults Your remembrance, our Sovereign.\n\nFrom this world to the next, You are God, and other than You we have no sovereign, redeemer, helper, and savior, freer, rescuer, provider, and nurturer in every stressful and sour time; we have no sovereign but You. God of the first and the last, God of all creations, Master of all generations, praised in the many laudations, leading God’s world in mercy and God’s creations in compassion. And the Cause does not slumber nor sleep. The one who awakens the sleeping, and arouses the drowsing, supports the fallen, heals the sick, and to You we thank.\n\nIf our mouths were full of song like the sea, and our tongues cheers like the vast waves, and our lips laudation like the wide firmament, and our eyes shining like the sun and moon, and our hands like the raptors of the sky, and our legs like gazelles, we would not have enough to thank You, oh Cause our God and God of our ancestors, or bless Your name for one of the thousand thousands and myriad myriads of goodnesses, miracles and wonders, that you did with our ancestors. From Egypt You redeemed us, and from the house of slavery You freed us. In hunger You fed us, in satiation You provided us, from the sword You saved us, and from plague You protected us, and from bad sicknesses You preserved us.\n\nAnd until this Your compassion has helped us, let not Your mercies leave us, and do not forsake us, oh Cause our God, ever. Thus limbs that You divided in us, and breath and soul that You breathed in our noses, and tongue that You put in our mouths, these, they will thank and bless and laud Your Name, oh Cause our God. For every mouth thanks You, and every tongue swears to You, and every knee bends to You, and all who come before You prostrate, and all hearts revere You, and all guts and innards hymn to Your Name as it says, as it is said (Psalm 35:10) — All my bones say, oh Cause, who is like You? You save the poor from those stronger than them, the poor and needy from the despoiler.\n\nWho could be compared to You, and who is parallel to You, and who could stand upon to You, and who could do as You do? God, great and mighty and awesome, Highest God, who possesses heaven and earth. God — in mighty strength, Great — to honor Your name, Mighty — forever Your awesomeness. We praise You, and laud You, and bless Your holy Name as David Your servant said before you (Psalm 103:1) — Of David. Bless, oh my soul, the Cause, and oh all my innards, the divine holy Name. And it is written (Psalm 33:1) — Cheer, righteous ones, for the Cause, for the upright it is pleasing to praise. בְּפִי יְ֫שָׁרִים תִּתְר֫וֹמָם וּבְדִבְרֵי צַ֫דִּיקִים תִּתְבָּ֫רַךְ וּבִלְשׁוֹן חֲ֫סִידִים תִּתְקַ֫דָּשׁ וּבְקֶרֶב קְ֫דוֹשִׁים תִּתְהַ֫לָּל׃\n\nIn the mouth of the incorruptible You are respected, In the words of the saintly You are benedicted, In the tongues of the adherents You are consecrated, And in the midst of the consecrated You are canonized. וּבְמַקְהֵלוֹת רִבְבוֹת עַמְּךָ בֵּית יִשְׂרָאֵל יִתְפָּאֵר שִׁמְךָ מַלְכֵּנוּ בְּכׇל־דּוֹר וָדוֹר שֶׁכֵּן חוֹבַת כׇּל־הַיְצוּרִים מִלְפָנֶיךָ יְיָ אֱלֹהֵינוּ וֵאלֹהֵי אֲבוֹתֵינוּ לְהוֹדוֹת לְהַלֵּל לְשַׁבֵּחַ לְפָאֵר לְרוֹמֵם וּלְקַדֵּשׁ עַל כׇּל דִּבְרֵי שִׁירוֹת וְתֻּשְׁבְָחוֹת שֶׁאָמַר דָּוִד בֶּן־יִשַׁי עַבְדְּךָ מְשִׁיחֶךָ׃ And in the myriad congregations of Your people the house of Israel, Your name is glorified in each and every generation, for thus is required of all who are established before You, oh Cause our God and God of our ancestors, to thank, to praise, to laud, to glorify, to exalt and to sanctify over all the words of song and laudation that were spoken by David Jesse’s son Your anointed servant.\n\nיִשְׁתַּבַּח שִׁמְךָ לָעַד מַלְכֵּנוּ הָאֵל הַמֶּלֶךְ הַגָּדוֹל וְהַקָּדוֹשׁ בַּשָּׁמַיִם וּבָאָרֶץ כִּי לְךָ נָאֶה יְיָ אֱלֹהֵינוּ וֵאלֹהֵי אֲבוֹתֵינוּ שִׁיר וּשְׁבָחָה הַלֵּל וְזִמְרָה עֹז וּמֶמְשָׁלָה נֶצַח גְּדֻלָּה וּגְבוּרָה תְּהִלָּה וְתִפְאֶרֶת קְדֻשָּׁה וּמַלְכוּת׃ בְּרָכוֹת וְהוֹדָאוֹת מֵעַתָּה וְעַד־עוֹלָם׃ Lauded be Your name forever, our Sovereign, God, Great and Holy Sovereign of heaven and earth. For to You this is pleasing, oh Cause our God and God of our ancestors: song and lauding, praise and hymn, strength and regime, eternity, greatness and power, praising and glory, holiness and sovereignty. Blessings and thanksgivings from here to eternity. (בעל הסדר ירים את הכוס הרביעי ויאמר) (The seder leader lifts the fourth cup and says) בָּרוּךְ אַתָּה יְיָ אֵל מֶלֶךְ גָּדוֹל בַּתֻּשְׁבָּחוֹת אֵל הַהוֹדָאוֹת אֲדוֹן הַנִּפְלָאוֹת הַבּוֹחֵר בְּשִׁירֵי זִמְרָה מֶלֶךְ אֵל חַי הָעוֹלָמִים אָמֵן׃ בָּרוּךְ אַתָּה יְיָ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגֶּפֶן׃",
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-ypj-0cd7631b028c",
+        "research-nusach-eretz-yisrael-zrm-937e9609164d",
+        "research-nusach-eretz-yisrael-10of-268bfa4af79f",
+        "research-nusach-eretz-yisrael-113r-5c1eb1d29fd7",
+        "research-nusach-eretz-yisrael-11nd-904184a1a6b1",
+        "research-nusach-eretz-yisrael-126n-50fe42d512d7",
+        "research-nusach-eretz-yisrael-12r3-583112949cc3",
+        "research-nusach-eretz-yisrael-13h1-5aa766dfffb2"
+      ],
+      "sourceLocation": "official source snapshot, segment 48 through official source snapshot, segment 55",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "official source snapshot, segment 48 through official source snapshot, segment 55",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "componentLocators": [
+          {
+            "id": "research-nusach-eretz-yisrael-ypj-0cd7631b028c",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 44983,
+            "normalizedEndOffset": 46353
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-zrm-937e9609164d",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 46354,
+            "normalizedEndOffset": 47534
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-10of-268bfa4af79f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 47535,
+            "normalizedEndOffset": 48086
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-113r-5c1eb1d29fd7",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 48087,
+            "normalizedEndOffset": 48792
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-11nd-904184a1a6b1",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 48793,
+            "normalizedEndOffset": 49486
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-126n-50fe42d512d7",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 49487,
+            "normalizedEndOffset": 50222
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-12r3-583112949cc3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 50223,
+            "normalizedEndOffset": 51156
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-13h1-5aa766dfffb2",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+            "normalizedStartOffset": 51157,
+            "normalizedEndOffset": 52143
+          }
+        ]
+      },
+      "provenanceHash": "127849232261204e4404fe036f2bc098050a2f75e59cdd82952daf8728097cdb",
+      "componentProvenanceHashes": [
+        "0cd7631b028cb0287b639a121a8331d23e4db6f4acf5807d60b6dc938a99785c",
+        "937e9609164db9de638790a788a68d56c1a1818917fdf7f879320345b469ff5d",
+        "268bfa4af79f15e781407d8867f1b5ff8dafca20ab7c90cecd550e04427552ec",
+        "5c1eb1d29fd7719ccc018f80552fe03af5782fe6bc78f0fb12e56c1bc0b01c49",
+        "904184a1a6b1523b4ff736e8ce572bb88abc864daeae59b427189b472e69d298",
+        "50fe42d512d70d59ebad2bc699b916fe922efca6fe0c4e7833391e264ece3c1d",
+        "583112949cc3b6ed83aafb4eb02b8a8c82292a4fb751ff5593290e9cb28c46ae",
+        "5aa766dfffb259cb27007fa2a11c95fc8471e0cba106e485b1258114a597647b"
+      ],
+      "wordCount": 1040,
+      "characterCount": 7167,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "mindfulness",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Introduce this as an extended closing poem in which breath, body, language, and community become instruments of gratitude; it belongs only in a spacious edition.",
+      "rationale": "Eight consecutive segments preserve a complete long-form arc of Nishmat rather than extracting isolated devotional sentences from the middle of the prayer.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; preserve CC BY-SA 4.0 attribution, change notice, and ShareAlike requirements.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": null,
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "long-form-only",
+        "preserve-distinctive-translation"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

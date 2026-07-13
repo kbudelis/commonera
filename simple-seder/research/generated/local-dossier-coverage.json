@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-13",
+  "processingMode": "local-independent-dossier-qa",
+  "externalModelApiUsed": false,
+  "humanReviewClaimed": false,
+  "status": "local-agent-qa-complete-with-fail-closed-editorial-gates",
+  "scope": {
+    "sourceCount": 20,
+    "dossierCount": 20,
+    "canonicalSegmentCount": 1999,
+    "canonicalExactCharacterCount": 1845812,
+    "reviewedSequenceCount": 134,
+    "recommendedSegmentReferenceCount": 497,
+    "uniqueRecommendedSegmentCount": 497,
+    "reviewedExactWordCount": 76726,
+    "reviewedExactCharacterCount": 473856,
+    "runtimeSafeModuleCount": 75,
+    "runtimeSafeExactCharacterCount": 263659,
+    "policyClearRuntimeModuleCount": 39,
+    "failClosedRuntimeModuleCount": 36,
+    "sourcesWithAtLeastTwoRuntimeSafeModules": 20,
+    "sourcesWithAtLeastOnePolicyClearRuntimeModule": 15
+  },
+  "checks": {
+    "identityAndStructure": "pass",
+    "canonicalIdsOrderAndHashes": "pass",
+    "localQuarantineAndExplicitExclusions": "pass",
+    "beginnerContext": "pass",
+    "sectionAndThemeAccuracy": "pass-with-reviewed-metadata-overrides",
+    "politicalSafety": {
+      "status": "pass",
+      "reviewedSequencesWithHardRiskMatch": 0,
+      "reviewedSequencesWithExplicitPoliticalMatch": 0,
+      "reviewedSequencesWithJerusalemRefrain": 0
+    },
+    "attribution": {
+      "status": "pass-with-item-level-gates",
+      "sourcePresentedAttributionSequenceCount": 7,
+      "allHavePreservedCreditNotes": true,
+      "embeddedWorkSequencesRequireReviewOrRetainedCredit": true
+    },
+    "explicitOptIn": {
+      "status": "pass",
+      "fullyGatedSourceIds": [
+        "barros-basto",
+        "battlestar-seder",
+        "english-jews-seder",
+        "levy-home-service",
+        "mayer-ashkenaz",
+        "nusach-eretz-yisrael",
+        "rittangel-latin",
+        "socialist-hagode",
+        "tropified-haggadah"
+      ],
+      "assessment": "Full-source opt-in is limited to historical, specialist, non-English, franchise, or explicitly ideological material; other sources use sequence-level opt-in selectively."
+    },
+    "narrativeCoherence": {
+      "status": "pass-with-specialist-facsimile-gates",
+      "fixesApplied": [
+        "Repaired split Barros Basto question and ancestry sequences while preserving canonical order.",
+        "Stopped the English Jews sequence before the intentionally omitted violent passage.",
+        "Removed broken page-column seams from four Levy sequences.",
+        "Completed the Other Side of the Sea contributor passage and kept its multi-section sequence out of runtime insertion.",
+        "Removed the Freedom Seder ecological candidate whose extracted text inseparably included contact boilerplate.",
+        "Trimmed two Feinstein sequences at complete source boundaries instead of carrying page-column fragments into runtime.",
+        "Removed cut-off Traditional Core Maggid and Dayenu candidates and anchored its complete three-symbol sequence at Maggid.",
+        "Added five explicit insertion anchors only where a full reviewed sequence coherently fits one ritual seam."
+      ]
+    }
+  },
+  "runtimeEditorialGates": {
+    "status": "fail-closed",
+    "unresolvedGateNameCount": 18,
+    "blockedModuleCount": 36,
+    "policyClearModuleCount": 39,
+    "sourcesWithoutPolicyClearModule": [
+      {
+        "sourceId": "traditional-core",
+        "blocker": "OCR and page-layout verification is still required."
+      },
+      {
+        "sourceId": "tropified-haggadah",
+        "blocker": "Cantillation and Hebrew rendering must be visually verified."
+      },
+      {
+        "sourceId": "feinstein-haggadah",
+        "blocker": "Rendered-page OCR verification is still required for the multi-column source."
+      },
+      {
+        "sourceId": "barros-basto",
+        "blocker": "Portuguese meaning and facsimile OCR must be checked."
+      },
+      {
+        "sourceId": "battlestar-seder",
+        "blocker": "Franchise and embedded-work rights review is still required."
+      }
+    ],
+    "note": "Policy-clear means no unresolved editorial gate; profile selection and explicit opt-in rules may still apply. Genuine visual, language, and rights gates were not waived."
+  },
+  "bySource": [
+    { "sourceId": "traditional-core", "reviewedSequences": 5, "runtimeSafeModules": 2, "policyClearRuntimeModules": 0, "status": "qa-passed-fail-closed" },
+    { "sourceId": "wandering-is-over", "reviewedSequences": 8, "runtimeSafeModules": 3, "policyClearRuntimeModules": 3, "status": "qa-passed" },
+    { "sourceId": "inner-seder", "reviewedSequences": 8, "runtimeSafeModules": 5, "policyClearRuntimeModules": 5, "status": "qa-passed" },
+    { "sourceId": "other-side-of-sea", "reviewedSequences": 7, "runtimeSafeModules": 5, "policyClearRuntimeModules": 5, "status": "qa-passed" },
+    { "sourceId": "freedom-seder-earth", "reviewedSequences": 5, "runtimeSafeModules": 2, "policyClearRuntimeModules": 2, "status": "qa-passed" },
+    { "sourceId": "shir-geulah", "reviewedSequences": 8, "runtimeSafeModules": 5, "policyClearRuntimeModules": 2, "status": "qa-passed" },
+    { "sourceId": "velveteen-rabbi", "reviewedSequences": 8, "runtimeSafeModules": 5, "policyClearRuntimeModules": 4, "status": "qa-passed" },
+    { "sourceId": "nusach-eretz-yisrael", "reviewedSequences": 7, "runtimeSafeModules": 4, "policyClearRuntimeModules": 4, "status": "qa-passed" },
+    { "sourceId": "seder-in-the-streets", "reviewedSequences": 6, "runtimeSafeModules": 3, "policyClearRuntimeModules": 3, "status": "qa-passed" },
+    { "sourceId": "tropified-haggadah", "reviewedSequences": 6, "runtimeSafeModules": 3, "policyClearRuntimeModules": 0, "status": "qa-passed-fail-closed" },
+    { "sourceId": "feinstein-haggadah", "reviewedSequences": 8, "runtimeSafeModules": 5, "policyClearRuntimeModules": 0, "status": "qa-passed-fail-closed" },
+    { "sourceId": "socialist-hagode", "reviewedSequences": 5, "runtimeSafeModules": 2, "policyClearRuntimeModules": 1, "status": "qa-passed" },
+    { "sourceId": "mlk-freedom-seder", "reviewedSequences": 7, "runtimeSafeModules": 2, "policyClearRuntimeModules": 2, "status": "qa-passed" },
+    { "sourceId": "second-seder-plate", "reviewedSequences": 7, "runtimeSafeModules": 4, "policyClearRuntimeModules": 4, "status": "qa-passed" },
+    { "sourceId": "mayer-ashkenaz", "reviewedSequences": 8, "runtimeSafeModules": 8, "policyClearRuntimeModules": 1, "status": "qa-passed" },
+    { "sourceId": "english-jews-seder", "reviewedSequences": 6, "runtimeSafeModules": 3, "policyClearRuntimeModules": 1, "status": "qa-passed" },
+    { "sourceId": "rittangel-latin", "reviewedSequences": 6, "runtimeSafeModules": 4, "policyClearRuntimeModules": 1, "status": "qa-passed" },
+    { "sourceId": "levy-home-service", "reviewedSequences": 7, "runtimeSafeModules": 4, "policyClearRuntimeModules": 1, "status": "qa-passed" },
+    { "sourceId": "barros-basto", "reviewedSequences": 7, "runtimeSafeModules": 3, "policyClearRuntimeModules": 0, "status": "qa-passed-fail-closed" },
+    { "sourceId": "battlestar-seder", "reviewedSequences": 5, "runtimeSafeModules": 3, "policyClearRuntimeModules": 0, "status": "qa-passed-fail-closed" }
+  ],
+  "remainingLimits": [
+    "Local Codex-agent QA is not human editorial approval.",
+    "Specialist facsimile and OCR sequences remain opt-in and require rendered-page checks.",
+    "Separately credited embedded works remain subject to item-level rights review.",
+    "The complete exact corpus remains research-only; only reviewed insertion-safe sequences compile into the runtime catalog."
+  ]
+}

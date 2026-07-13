@@ -1,0 +1,976 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "wandering-is-over",
+  "sourceTitle": "The Wandering Is Over Haggadah: Including Women's Voices",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive.",
+    "license": "CC-BY-SA-3.0",
+    "conditions": [
+      "Preserve attribution and ShareAlike notice",
+      "Review separately credited embedded material item by item"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=19085"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-wandering-is-over-orientation-and-first-washing",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Orientation and the first washing",
+      "exactText": "In ancient times, eating while lounging on a pillow or couch was a sign of freedom. We anticipate this seder should take about a half hour from start to dinner. Enjoy! There’s really no one right way to celebrate Passover. The important thing is to explore the story, raise questions, and share the experience with others. JewishBoston.com and the Jewish Womenʹs Archive have a common commitment to making it easier for people to participate in Jewish life. We hope this Haggadah helps you do this. You can download as many additional copies as you need at www.JewishBoston.com/passover. Weʹd love to know what you think; you can contact us by email at feedback@JewishBoston.com or jwa.org/contact. The Jewish Womenʹs Archive (JWA) is devoted to making known the stories, struggles, and achievements of Jewish women in North America.\n\nThe Wandering is Over Haggadah: Including Women’s Voices Page | 5 sacred stories, remembering the Exodus from Egypt, and raising our voices in song. We praise God, who sanctifies the family of Israel and the holidays. יְיָ אַתָּה בָּרוּךְ , הָ מֶלֶךְ עוֹלָםאֱלֹהֵינוּ , הַזֶּה לַזְּמַן וְהִגִּיעָנוּ וְקִיְּמָנוּ שֶׁהֶחֱיָנוּ : Baruch Atah Adonai, Eloheinu Melech ha-olam, she-hechiyanu v’key’manu v’higiyanu lazman hazeh. We praise God, Ruler of Everything, who has kept us alive, raised us up, and brought us to this happy moment. Drink the first glass of wine! וּרְחַץRitual hand­washing in preparation for the seder | urchatz | Water is refreshing, cleansing, and clear, so it’s easy to understand why so many cultures and religions use water for symbolic purification.\n\nWe will wash our hands twice during our seder: now, with no blessing, to get us ready for the rituals to come; and then again later, we’ll wash again with a blessing, preparing us for the meal, which Judaism thinks of as a ritual in itself. (The Jewish obsession with food is older than you thought!) To wash your hands, you don’t need soap, but you do need a cup to pour water over your hands. Pour water on each of your hands three times, alternating between your hands. If the people around your table don’t want to get up to walk all the way over to the sink, you could pass a pitcher and a bowl around so everyone can wash at their seats… just be careful not to spill! Too often during our daily lives we don’t stop and take the moment to prepare for whatever it is we’re about to do. Let’s pause to consider what we hope to get out of our evening together tonight. Go around the table and share one hope or expectation you have for tonight’s seder. Happy Passover from www.JewishBoston.com! Visit us to find social activities, explore community resources, enjoy holiday tips and programs.",
+      "segmentIds": [
+        "research-wandering-is-over-nu-287e526bff9b",
+        "research-wandering-is-over-4qn-fd0a38570535",
+        "research-wandering-is-over-5c5-9cdd9d1dc95e"
+      ],
+      "sourceLocation": "PDF p. 2, segment 2 through PDF p. 5, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 2, segment 2 through PDF p. 5, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-nu-287e526bff9b",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 858,
+            "normalizedEndOffset": 1691
+          },
+          {
+            "id": "research-wandering-is-over-4qn-fd0a38570535",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 6143,
+            "normalizedEndOffset": 6916
+          },
+          {
+            "id": "research-wandering-is-over-5c5-9cdd9d1dc95e",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 6917,
+            "normalizedEndOffset": 8011
+          }
+        ]
+      },
+      "provenanceHash": "a8a25776c9e3c8e1e4b2a62d6671d95899e26cc77b5b965b057b1e871d077f70",
+      "componentProvenanceHashes": [
+        "287e526bff9b84a1e0837807f90d2bd30fc848747216a39aa742a6aa20cb7218",
+        "fd0a38570535c87ff9b9dd2b5744e7257c7702beac33fe02ea9557ea0b55b000",
+        "9cdd9d1dc95ef605a9dff11944c732af7b8ba9be2cadcb4a794defeafd6d35ba"
+      ],
+      "wordCount": 457,
+      "characterCount": 2704,
+      "sectionIds": [
+        "kadesh",
+        "urchatz"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "playful"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Use this before the first ritual to say that there is no single right way to host, that the Seder explores the Exodus through questions and shared experience, and that guests may take turns reading. Identify wine or grape juice and explain both self-washing and pouring for one another over a basin.",
+      "rationale": "These source-order records combine the source's welcoming participation guidance with the first blessing and its unusually clear explanation of the two handwashings, creating a practical novice threshold while omitting page furniture and license text.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the CC BY-SA 3.0 ShareAlike notice.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "host-action-cues-required",
+        "mutual-handwashing-option-required",
+        "turn-taking-invitation-required",
+        "wine-or-grape-juice-explicit"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-wandering-is-over-karpas-to-yachatz",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Spring greens and broken matzah",
+      "exactText": "The Wandering is Over Haggadah: Including Women’s Voices Page | 6 כַּרְפַּסDipping a green vegetable in salt water| karpas | Passover, like many of our holidays, combines the celebration of an event from our Jewish memory with a recognition of the cycles of nature. As we remember the liberation from Egypt, we also recognize the stirrings of spring and rebirth happening in the world around us. The symbols on our table bring together elements of both kinds of celebration. We now take a vegetable, representing our joy at the dawning of spring after our long, cold winter. Most families use a green vegetable such as parsley or celery, but some families from Eastern Europe have a tradition of using a boiled potato since greens were hard to come by at Passover time.\n\nWhatever symbol of spring and sustenance we’re using, we now dip it into salt water, a symbol of the tears our ancestors shed as slaves. Before we eat it, we recite a short blessing: יְיָ אַתָּה בָּרוּךְ, הָעוֹלָם מֶלֶךְ אֱלֹהֵינוּ, הָאֲדָמָה פְּרִי בּוֹרֵא: Baruch Atah Adonai, Eloheinu Melech ha‐olam, borei p’ree ha‐adama. We praise God, Ruler of Everything, who creates the fruits of the earth. We look forward to spring and the reawakening of flowers and greenery. They haven’t been lost, just buried beneath the snow, getting ready for reappearance just when we most needed them. We all have aspects of ourselves that sometimes get buried under the stresses of our busy lives. What has this winter taught us? What elements of our own lives do we hope to revive this spring? יַחַץBreaking the middle matzah | yachatz | There are three pieces of matzah stacked on the table. We now break the middle matzah into two pieces. The host should wrap up the larger of the pieces and, at some point Happy Passover from www.JewishBoston.com! Visit us to find social activities, explore community resources, enjoy holiday tips and programs.\n\nThe Wandering is Over Haggadah: Including Women’s Voices Page | 7 between now and the end of dinner, hide it. This piece is called the afikomen, literally “dessert” in Greek. After dinner, the guests will have to hunt for the afikomen in order to wrap up the meal… and win a prize. We eat matzah in memory of the quick flight of our ancestors from Egypt. As slaves, they had faced many false starts before finally being let go. So when the word of their freedom came, they took whatever dough they had and ran with it before it had the chance to rise, leaving it looking something like matzah. Uncover and hold up the three pieces of matzah and say: This is the bread of poverty which our ancestors ate in the land of Egypt.",
+      "segmentIds": [
+        "research-wandering-is-over-66k-4342f0c8d71d",
+        "research-wandering-is-over-6ry-cf7e50dbd3a8",
+        "research-wandering-is-over-7nh-7214199c9186"
+      ],
+      "sourceLocation": "PDF p. 6, segment 1 through PDF p. 7, segment 1",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 6, segment 1 through PDF p. 7, segment 1",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-66k-4342f0c8d71d",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 8012,
+            "normalizedEndOffset": 8781
+          },
+          {
+            "id": "research-wandering-is-over-6ry-cf7e50dbd3a8",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 8782,
+            "normalizedEndOffset": 9916
+          },
+          {
+            "id": "research-wandering-is-over-7nh-7214199c9186",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 9917,
+            "normalizedEndOffset": 10641
+          }
+        ]
+      },
+      "provenanceHash": "a8b4fec5e25a0b2ddb5b14c49269e95125135138e320946648b95fe15894c522",
+      "componentProvenanceHashes": [
+        "4342f0c8d71dbabccf48faf18d0a1f038e58bf01a97fac691c06566966168c3c",
+        "cf7e50dbd3a832a938b204430accbbe16218002dc22ce493385a8804fa4fc6e1",
+        "7214199c91864263d28e7a36d56c4a5cad0afd0d1efe9fb322f19223f0285b24"
+      ],
+      "wordCount": 458,
+      "characterCount": 2631,
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "motzi-matzah"
+      ],
+      "sourceSectionIds": [
+        "karpas",
+        "yachatz",
+        "motzi-matzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "family-storytelling",
+        "feminist"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Point out the green vegetable and salt water, then identify the middle matzah before breaking it. Explain which half becomes the afikoman, that children or any guests may search for it, and that the host may offer a small prize or trade when it is returned.",
+      "rationale": "The three adjacent records move naturally from spring and tears to the broken middle matzah and its later return, pairing sensory ritual with a clear narrative image of hurried departure.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive; preserve any separately printed attribution.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "afikoman-search-and-return-explained",
+        "child-inclusive-not-child-exclusive",
+        "embedded-credit-check",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-wandering-is-over-questions-and-memory",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Questions, memory, and family history",
+      "exactText": "The Haggadah doesn’t tell the story of Passover in a linear fashion. We don’t hear of Moses being found by the daughter of Pharaoh – actually, we don’t hear much of Moses at all. Instead, we get an impressionistic collection of songs, images, and stories of both the Exodus from Egypt and from Passover celebrations through the centuries. Some say that minimizing the role of Moses keeps us focused on the miracles God performed for us. Others insist that we keep the focus on the role that every member of the community has in bringing about positive change. Happy Passover from www.JewishBoston.com! Visit us to find social activities, explore community resources, enjoy holiday tips and programs.\n\nWhat stories do we at this table have to tell? Is there a tale of liberation or a memory for us to share tonight? What lessons can these stories teach us? What do we ask? Weave the stories of your family or community into your Passover tradition. Below you will find some questions to discuss during the seder. For Everyone: • What is your most distinct Passover memory? What smells, images, sounds, and tastes come to mind when you think of Passover? • Which Passover ritual holds the greatest significance or meaning for you? Why? • How has the celebration of Passover evolved over time in your family or community? (You might want to bring pictures of past seders.) • Have there been times in your life when the Passover themes of liberation and redemption have been particularly resonant for you? If so, describe those times. For Elders: • How does this seder differ from those you attended as a child? Are there things you miss? New traditions you enjoy? • Describe a family seder from your youth. What roles did men, women, and children play? • How was Passover observed in the community in which you grew up?",
+      "segmentIds": [
+        "research-wandering-is-over-8rj-6580df166f6a",
+        "research-wandering-is-over-9yk-f33e753e04eb"
+      ],
+      "sourceLocation": "PDF p. 7, segment 3 through PDF p. 8, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 7, segment 3 through PDF p. 8, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-8rj-6580df166f6a",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 11359,
+            "normalizedEndOffset": 12058
+          },
+          {
+            "id": "research-wandering-is-over-9yk-f33e753e04eb",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 12908,
+            "normalizedEndOffset": 14023
+          }
+        ]
+      },
+      "provenanceHash": "63eb6f5db66d11fbcabc95a3ddfddc0d5c6c35e0d5900b3134277d54db809ae7",
+      "componentProvenanceHashes": [
+        "6580df166f6a960c34a0ce1958ad331b89ef75fe2fbe3c57e79cdeb0434cc8a4",
+        "f33e753e04ebcb5775478f96e05b0fcfc149efe35269ec1de069faafa06b55a6"
+      ],
+      "wordCount": 315,
+      "characterCount": 1816,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "family-storytelling",
+        "feminist",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "playful"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests that asking is part of the ritual and that this Haggadah tells Exodus through songs, images, and discussion rather than a single continuous script. Invite each person to choose one concrete family or Passover memory and allow anyone to pass.",
+      "rationale": "The two source-order passages explain the source's impressionistic method and then invite family and community stories, a coherent participatory setup that avoids the extracted page-furniture records between them.",
+      "creditNotes": "Credit the containing Haggadah and retain any named contributors attached to individual questions.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-specific-concrete-wording",
+        "clear-speaker-and-listener-cues",
+        "embedded-credit-check",
+        "right-to-pass-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-wandering-is-over-women-and-exodus",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Women's resistance and the Exodus",
+      "exactText": "We welcome the silent one to sit with us at our tables and experience a community that welcomes the voices of women. (Used with permission of the Temple Emunah Womenʹs Seder Haggadah Design Committee) Telling Our Story Our story starts in ancient times, with Abraham, the first person to have the idea that maybe all those little statues his contemporaries worshiped as gods were just statues. The idea of one God, invisible and all‐powerful, inspired him to leave his family and begin a new people in Canaan, the land that would one day bear his grandson Jacob’s adopted name, Israel. God had made a promise to Abraham that his family would become a great nation, but this promise came with a frightening vision of the troubles along the way: “Your descendants will dwell for a time in a land that is not their own, and they will be enslaved and afflicted for four hundred years; however, I will punish the nation that enslaved them, and afterwards they shall leave with great wealth.ʺ\n\nWe were forced to perform hard labor, perhaps even building pyramids. The Egyptians feared that even as slaves, the Israelites might grow strong and rebel. So Pharaoh decreed that Israelite baby boys should be drowned, to prevent the Israelites from overthrowing those who had enslaved them. The Passover story is most often associated with the leadership of Moses, but in fact the cycle of protest that culminated in the Exodus from Egypt began with the courageous acts of two women who disobeyed Pharaoh’s decree to murder all Hebrew male babies born in Egypt. These women, Shifra and Puah, practiced a bold and noteworthy profession—midwifery. It was their commitment to preserving human life and their skills as midwives that provided the safe and secret delivery of Hebrew baby boys. That the biblical text actually mentions Shifra and Puah by name suggests the ultimate importance of their role in the liberation of the Israelites. God heard the cries of the Israelites. And God brought us out of Egypt with a strong hand and outstretched arm, with great awe, miraculous signs and wonders. God brought us out not by angel or messenger, but through God’s own intervention.\n\nThe Wandering is Over Haggadah: Including Women’s Voices Page | 15 The Ten Plagues As we rejoice at our deliverance from slavery, we acknowledge that our freedom was hard‐earned. We regret that our freedom came at the cost of the Egyptians’ suffering, for we are all human beings made in the image of God. We pour out a drop of wine for each of the plagues as we recite them. Dip a finger or a spoon into your wine glass for a drop for each plague. These are the ten plagues which God brought down on the Egyptians: דָּםBlood | dam | צְפַרְדֵּֽעַFrogs | tzfardeiya | כִּנִּיםLice | kinim | עָרוֹבBeasts | arov | דֶּֽבֶרCattle disease | dever | שְׁחִיןBoils | sh’chin | בָּרָדHail | barad | אַרְבֶּהLocusts | arbeh | חֹֽשֶׁךְDarkness | choshech | בְּכוֹרוֹת מַכַּתDeath of the Firstborn | makat b’chorot | The Egyptians needed ten plagues because after each one they were able to come up with excuses and explanations rather than change their behavior. Could we be making the same mistakes? Make up your own list. What are the plagues in your life? What are the plagues in our world today? What behaviors do we need to change to fix them? Happy Passover from www.JewishBoston.com! Visit us to find social activities, explore community resources, enjoy holiday tips and programs.",
+      "segmentIds": [
+        "research-wandering-is-over-gkv-7f6590d638a8",
+        "research-wandering-is-over-hyn-a8547bf1591d",
+        "research-wandering-is-over-ivd-09f510a27a39"
+      ],
+      "sourceLocation": "PDF p. 13, segment 2 through PDF p. 15, segment 1",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 13, segment 2 through PDF p. 15, segment 1",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-gkv-7f6590d638a8",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 21487,
+            "normalizedEndOffset": 22473
+          },
+          {
+            "id": "research-wandering-is-over-hyn-a8547bf1591d",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 23279,
+            "normalizedEndOffset": 24456
+          },
+          {
+            "id": "research-wandering-is-over-ivd-09f510a27a39",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 24457,
+            "normalizedEndOffset": 25734
+          }
+        ]
+      },
+      "provenanceHash": "b3e10c4ed63f5b83faab675b21511f4376ff90fa192601e919b11e799d9f2cd9",
+      "componentProvenanceHashes": [
+        "7f6590d638a8dc34298308aff66dadc62173c8b7da8565ff9f77a31678d87c90",
+        "a8547bf1591dba4b5ee3326862e3c58c30050831ca88a105550cd25e2cd1da69",
+        "09f510a27a393fbfb97aaa168141615f174d3d89105f04763d9ed7ac0fe14582"
+      ],
+      "wordCount": 589,
+      "characterCount": 3444,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "feminist",
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce the arc in plain language: the ancestors reached Egypt, a new ruler enslaved their descendants, Shifra and Puah resisted orders to kill newborn boys, Moses later confronted Pharaoh, plagues struck Egypt, and the people left. Acknowledge Egyptian suffering and explain the cup-diminishing action.",
+      "rationale": "These source-order records preserve the source's narrative movement from ancestral beginnings through the midwives' resistance to the plague ritual while excluding unusable page-furniture extractions.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the source-presented Temple Emunah attribution.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-infant-harm-context",
+        "cup-diminishing-action-cue",
+        "embedded-credit-check",
+        "nontriumphalist-plague-framing",
+        "plain-language-character-introductions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-wandering-is-over-symbols-and-orange",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Traditional symbols and an orange",
+      "exactText": "There are still some symbols on our seder plate we haven’t talked about yet. Rabban Gamliel would say that whoever didn’t explain the shank bone, matzah, and marror (or bitter herbs) hasn’t done Passover justice. The shank bone represents the Pesach, the special lamb sacrifice made in the days of the Temple for the Passover holiday. It is called the pesach, from the Hebrew word meaning “to pass over,” because God passed over the houses of our ancestors in Egypt when visiting plagues upon our oppressors. The matzah reminds us that when our ancestors were finally free to leave Egypt, there was no time to pack or prepare. Our ancestors grabbed whatever dough was made and set out on their journey, letting their dough bake into matzah as they fled. The bitter herbs provide a visceral reminder of the bitterness of slavery, the life of hard labor our ancestors experienced in Egypt. The Orange Even after one has encountered the collection of seemingly unconnected foods on the seder plate year after year, it’s fun to ask what it’s all about. Since each item is supposed\n\nDuring a visit to Oberlin College in the early 1980s, she read a feminist Haggadah that called for placing a piece of bread on the seder plate as a symbol of the need to include gays and lesbians in Jewish life. Heschel liked the idea of putting something new on the seder plate to represent suppressed voices, but she was uncomfortable with using chametz, which she felt would invalidate the very ritual it was meant to enhance. She chose instead to add an orange and to interpret it as a symbol of all marginalized populations. Miriam’s Cup A decade later, the ritual of Miriam’s Cup emerged as another way to honor women during the seder. Miriam’s Cup builds upon the message of the orange, transforming the seder into an empowering and inclusive experience.",
+      "segmentIds": [
+        "research-wandering-is-over-n72-212fc90ef513",
+        "research-wandering-is-over-omy-daddaafb6c66"
+      ],
+      "sourceLocation": "PDF p. 18, segment 2 through PDF p. 19, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 18, segment 2 through PDF p. 19, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-n72-212fc90ef513",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 30062,
+            "normalizedEndOffset": 31138
+          },
+          {
+            "id": "research-wandering-is-over-omy-daddaafb6c66",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 31930,
+            "normalizedEndOffset": 32691
+          }
+        ]
+      },
+      "provenanceHash": "b4db397e10eec61ad1597c5db30755332a7f4e400d25a2552f1cf193e0bde323",
+      "componentProvenanceHashes": [
+        "212fc90ef513203cec604515fb93fb2b39ea22f2e6faa1d8ca8226c682988b21",
+        "daddaafb6c6649d60c17f043ebd9cc9b77c7b85032d6d0f3e179824276f36abd"
+      ],
+      "wordCount": 318,
+      "characterCount": 1839,
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "lgbtq",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Point to and define the traditional symbols before adding the orange. Explain that the orange is a modern symbol of inclusion and name Susannah Heschel and the history accurately without repeating a false origin story.",
+      "rationale": "The two source-order records connect the required ritual-symbol teaching to the source's feminist and LGBTQ-inclusive orange history while omitting an intervening page-furniture record.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve the source's attribution for Susannah Heschel and the orange ritual.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "optional-plate-item-selected",
+        "origin-story-fact-check",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-wandering-is-over-miriam",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Miriam's courage and water",
+      "exactText": "Although Miriam, a prophet and the sister of Moses, is never mentioned in the traditional Haggadah text, she is one of the central figures in the Exodus story. According to Jewish feminist writer Tamara Cohen, the practice of filling a goblet with water to symbolize Miriam’s inclusion in the seder originated at a Rosh Chodesh group in Boston in 1989. The idea resonated with many people and quickly spread. Miriam has long been associated with water. The rabbis attribute to Miriam the well that traveled with the Israelites throughout their wandering in the desert. In the Book of Numbers, the well dries up immediately following Miriam’s death. Of course, water played a role in Miriam’s life from the first time we meet her, watching over the infant Moses on the Nile, through her triumphant crossing of the Red Sea.\n\nThe Wandering is Over Haggadah: Including Women’s Voices Page | 20 There is no agreed‐upon ritual for incorporating Miriam’s Cup into the seder, but there are three moments in the seder that work particularly well with Miriam’s story. 1. As Moses’s sister, Miriam protected him as an infant and made sure he was safely received by Pharaoh’s daughter. Some seders highlight this moment by invoking her name at the start of the Maggid section when we begin telling the Passover story. 2. Other seders, such as this one, incorporate Miriam’s cup when we sing songs of praise during the Maggid and later during the Hallel as a reminder that Miriam led the Israelites in song and dance during the Exodus. 3. Still others place Miriam’s Cup alongside the cup we put out for Elijah.\n\nJust as there is no set time in the seder to use Miriam’s Cup, there is no set ritual or liturgy either. Some fill the cup with water at the start of the seder; others fill the cup during the seder. Some sing Debbie Friedman’s “Miriam’s Song”; others sing “Miriam Ha‐Neviah.” As with all seder symbols, Miriam’s Cup is most effective when it inspires discussion. What does Miriam mean to you? How do all of her roles, as sister, protector, prophet, leader, singer, and dancer, contribute to our understanding of the Exodus story? Who are the Miriams of today? In Every Generation חַיָּב וָדוֹר אֶת־עַצְמוֹבְּכָל־דּוֹר לִרְאוֹת אָדָם , מִמִּצְרָ יָצָא הוּא ֽיִםכְּאִלּוּ : B’chol dor vador chayav adam lirot et-atzmo, k’ilu hu yatzav mimitzrayim. In every generation, everyone is obligated to see themselves as though they personally left Egypt. Happy Passover from www.JewishBoston.com! Visit us to find social activities, explore community resources, enjoy holiday tips and programs.",
+      "segmentIds": [
+        "research-wandering-is-over-p84-6b89abdc32e1",
+        "research-wandering-is-over-puy-5d41d206f8a9",
+        "research-wandering-is-over-qgi-2558cdbc06df"
+      ],
+      "sourceLocation": "PDF p. 19, segment 3 through PDF p. 20, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 19, segment 3 through PDF p. 20, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-p84-6b89abdc32e1",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 32692,
+            "normalizedEndOffset": 33513
+          },
+          {
+            "id": "research-wandering-is-over-puy-5d41d206f8a9",
+            "label": "PDF p. 20",
+            "pageNumber": 20,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 33514,
+            "normalizedEndOffset": 34289
+          },
+          {
+            "id": "research-wandering-is-over-qgi-2558cdbc06df",
+            "label": "PDF p. 20",
+            "pageNumber": 20,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 34290,
+            "normalizedEndOffset": 35274
+          }
+        ]
+      },
+      "provenanceHash": "bcac1aa3313860bb18874334d0233f2511f2b0bca75884dae9d4e9d6abc7a189",
+      "componentProvenanceHashes": [
+        "6b89abdc32e1377338b7b476bcac7df03ce8d52c3d87806bdf28086bbe7f1e70",
+        "5d41d206f8a9e90760b47db37aa5d6eca0d9096a7b7a7fb8653f7fe6ee6b04b2",
+        "2558cdbc06df2df2922ffecf89de123424f655af1debeeb5cb4f842c2824ca42"
+      ],
+      "wordCount": 430,
+      "characterCount": 2584,
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "environment",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Introduce Miriam as Moses's sister and a leader in her own right. If using a cup of water, explain who fills it, when the table notices it, and that guests may sing, read, discuss, or simply listen.",
+      "rationale": "The three contiguous source records develop Miriam from story character to communal symbol and offer several possible ritual locations without pretending there is one fixed practice.",
+      "creditNotes": "Credit the containing Haggadah and preserve the source's Tamara Cohen, Debbie Friedman, and other printed attributions.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "miriams-cup-selected",
+        "song-participation-optional",
+        "water-ritual-action-cue"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-wandering-is-over-table-milestones",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Blessings, bitter herb, afikoman, and grace",
+      "exactText": "After you have poured the water over your hands, recite this short blessing. הָעוֹלָםבָּרוּךְ מֶֽלֶךְ אֱלֹהֵֽינוּ יְיָ אַתָּה, בְּמִצְוֹתָיו קִדְּשָֽׁנוּ אֲשֶׁר, וְצִוָּנוּ יָדָֽיִם נְטִילַת עַל: Baruch Atah Adonai, Eloheinu Melech ha-olam, asher kid’shanu b’mitzvotav v’tzivanu al n’tilat yadayim. We praise God, Ruler of Everything, who made us holy through obligations, commanding us to wash our hands. מַצָּה מוֹצִיאThe blessing over the meal and matzah | motzi matzah | The familiar hamotzi blessing marks the formal start of the meal. Because we are using matzah instead of bread, we add a blessing celebrating this mitzvah. יְיָ אַתָּה בְָּרוּךְ, הָעוֹלָם מֶֽלֶךְ אֱלֹהֵֽינוּ, הָאָֽרֶץ מִן לֶֽחֶם הַמּוֹצִיא : Baruch Atah Adonai, Eloheinu Melech ha‐olam, hamotzi lechem min ha‐aretz. We praise God, Ruler of Everything, who brings bread from the land.\n\nWe don’t totally eradicate the taste of the bitter with the taste of the sweet… but doesn’t the sweet mean more when it’s layered over the bitterness? בָּ הָעוֹלָםרוּךְ מֶֽלֶךְ אֱלֹהֵֽינוּ יְיַָ אַתָּה , וְ בְּמִצְוֹתָיו קִדְּשָֽׁנוּ אֲשֶׁר עַל צִוָּֽנוּ מָ רוֹראֲכִילַת : Baruch Atah Adonai, Eloheinu Melech ha‐olam, asher kid’shanu b’mitzvotav v’tzivanu al achilat maror. We praise God, Ruler of Everything, who made us holy through obligations, commanding us to eat bitter herbs. כּוֹרֵךְEating a sandwich of matzah and bitter herb | koreich | When the Temple stood in Jerusalem, the biggest ritual of them all was eating the lamb offered as the pesach or Passover sacrifice. The great sage Hillel would put the meat in a sandwich made of matzah, along with some of the bitter herbs. While we do not make\n\nAs we eat the afikomen, our last taste of matzah for the evening, we are grateful for moments of silliness and happiness in our lives. בָּרֵךְSaying grace after the meal and inviting Elijah the Prophet | bareich | Refill everyone’s wine glass. We now say grace after the meal, thanking God for the food we’ve eaten. On Passover, this becomes something like an extended toast to God, culminating with drinking our third glass of wine for the evening: We praise God, Ruler of Everything, whose goodness sustains the world. You are the origin of love and compassion, the source of bread for all. Thanks to You, we need never lack for food; You provide food enough for everyone. We praise God, source of food for everyone.",
+      "segmentIds": [
+        "research-wandering-is-over-tj7-030a5ece9dcf",
+        "research-wandering-is-over-uuh-b24e0187aceb",
+        "research-wandering-is-over-w6l-3d627bb82fe1"
+      ],
+      "sourceLocation": "PDF p. 22, segment 2 through PDF p. 24, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 22, segment 2 through PDF p. 24, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-tj7-030a5ece9dcf",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 38275,
+            "normalizedEndOffset": 39133
+          },
+          {
+            "id": "research-wandering-is-over-uuh-b24e0187aceb",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 39977,
+            "normalizedEndOffset": 40784
+          },
+          {
+            "id": "research-wandering-is-over-w6l-3d627bb82fe1",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 41709,
+            "normalizedEndOffset": 42427
+          }
+        ]
+      },
+      "provenanceHash": "2d7f7ac3a0ff26519153485c7f10d9ea99758069ee5786284812ce917c1cfcd9",
+      "componentProvenanceHashes": [
+        "030a5ece9dcfe1356a334d49f026e1f2c60a89202eb76cbb778bdf3db8453603",
+        "b24e0187aceb8ef1fc81e0e73b9930a504a33acaa472cd65132fee5905a8d655",
+        "3d627bb82fe14eab588f6bbb2b6b77ed86cfa0d336f38409a58fa3fb2ade5f01"
+      ],
+      "wordCount": 387,
+      "characterCount": 2387,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun",
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun",
+        "barech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "family-storytelling",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Supply the omitted practical steps between these source passages: wash personally or for one another, bless and eat matzah, taste bitter herb with haroset, build the sandwich, eat the meal, retrieve and share the afikoman, then begin grace. Define every food and include allergy substitutions.",
+      "rationale": "These source-order milestones retain the usable blessings and meaning of the symbolic foods through post-meal gratitude while avoiding extracted records quarantined as page furniture; they require verified host-direction modules to fill the named gaps.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and preserve all source-presented blessing and adaptation credits.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "allergy-safe-alternatives",
+        "embedded-credit-check",
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions",
+        "verified-host-direction-modules-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-wandering-is-over-closing-songs",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "title": "Cumulative closing songs",
+      "exactText": "I know five. Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth Who knows six? I know six. Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth Who knows seven? I know seven. Seven are the days of the week Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth Who knows eight? I know eight. Eight are the days for circumcision Seven are the days of the week Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth\n\nI know eleven. Eleven are the stars Ten are the Words from Sinai Nine are the months of childbirth Eight are the days for circumcision Seven are the days of the week Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth Who knows twelve? I know twelve. Twelve are the tribes Eleven are the stars Ten are the Words from Sinai Nine are the months of childbirth Eight are the days for circumcision Seven are the days of the week Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth Who knows thirteen? I know thirteen Thirteen are the attributes of God Twelve are the tribes Eleven are the stars Ten are the Words from Sinai Nine are the months of childbirth Eight are the days for circumcision Seven are the days of the week Six are the orders of the Mishnah Five are the books of the Torah Four are the matriarchs Three are the patriarchs Two are the tablets of the covenant One is our God in Heaven and Earth\n\nOne little goat, one little goat: The fire came and burned the stick That beat the dog that bit the cat That ate the goat, Which my father bought for two zuzim. One little goat, one little goat: The water came and extinguished the Fire that burned the stick That beat the dog that bit the cat That ate the goat, Which my father bought for two zuzim. One little goat, one little goat: The ox came and drank the water That extinguished the fire That burned the stick that beat the dog That bit the cat that ate the goat, Which my father bought for two zuzim. One little goat, one little goat: The butcher came and killed the ox, That drank the water That extinguished the fire That burned the stick that beat the dog That bit the cat that ate the goat, Which my father bought for two zuzim.",
+      "segmentIds": [
+        "research-wandering-is-over-15qj-75ff7702b038",
+        "research-wandering-is-over-174d-2b1a99169590",
+        "research-wandering-is-over-18nn-3e91c30579aa"
+      ],
+      "sourceLocation": "PDF p. 31, segment 2 through PDF p. 33, segment 2",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 31, segment 2 through PDF p. 33, segment 2",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "componentLocators": [
+          {
+            "id": "research-wandering-is-over-15qj-75ff7702b038",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 54091,
+            "normalizedEndOffset": 55000
+          },
+          {
+            "id": "research-wandering-is-over-174d-2b1a99169590",
+            "label": "PDF p. 32",
+            "pageNumber": 32,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 55885,
+            "normalizedEndOffset": 57058
+          },
+          {
+            "id": "research-wandering-is-over-18nn-3e91c30579aa",
+            "label": "PDF p. 33",
+            "pageNumber": 33,
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+            "normalizedStartOffset": 57875,
+            "normalizedEndOffset": 58663
+          }
+        ]
+      },
+      "provenanceHash": "c0a9ebcb7e5aa20fc8ed9d9b559a2973789a3bfb510adc0e5ae15ba93cc142e4",
+      "componentProvenanceHashes": [
+        "75ff7702b0386008397b91d6123556f0f853f9a3b2d5a50f6c1771e0c25c2fd0",
+        "2b1a99169590d2a4dc1e32d4b6dffa71f5d9904e93fb2a46d96cb090add58007",
+        "3e91c30579aa99eb222c4d49057e6cf1a082c1003e411ce5f2f92adc40e447cf"
+      ],
+      "wordCount": 561,
+      "characterCount": 2874,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Tell guests that these are playful cumulative songs sung near the end. Teach one response before starting, make singing optional, and stop at a natural verse if the table is ready to close.",
+      "rationale": "The three source-order records carry Echad Mi Yodea into Chad Gadya as a coherent participatory ending while avoiding the final extracted typo in the angel-of-death verse.",
+      "creditNotes": "Credit JewishBoston and the Jewish Women's Archive and retain any song-source credit printed in the edition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "optional-shortened-ending",
+        "participation-cue-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

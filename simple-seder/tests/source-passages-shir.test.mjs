@@ -36,7 +36,7 @@ function hash(text) {
 
 test("Shir source corpus has honest all-section tier coverage", async () => {
   const { shirSourcePassages, shirCoverage } = await loadCorpus();
-  assert.equal(shirSourcePassages.length, 28);
+  assert.equal(shirSourcePassages.length, 36);
   assert.deepEqual([...shirCoverage.sectionIds].sort(), [...expectedSections].sort());
   for (const tier of ["short", "medium", "full"]) {
     assert.deepEqual([...shirCoverage.byTier[tier]].sort(), [...expectedSections].sort(), `${tier} tier has a source gap`);
@@ -44,7 +44,11 @@ test("Shir source corpus has honest all-section tier coverage", async () => {
   for (const passage of shirSourcePassages) {
     assert.ok(expectedSections.includes(passage.sectionId));
     assert.ok(passage.tiers.length > 0);
-    if (passage.tiers.includes("short")) assert.deepEqual(passage.tiers, ["short", "medium", "full"]);
+    if (passage.id.endsWith("-concise")) {
+      assert.deepEqual(passage.tiers, ["short"]);
+    } else if (passage.tiers.includes("short")) {
+      assert.deepEqual(passage.tiers, ["short", "medium", "full"]);
+    }
     if (passage.tiers.includes("medium")) assert.ok(passage.tiers.includes("full"));
   }
 });
@@ -81,15 +85,21 @@ test("each tier contains enough reviewed source wording for a source-primary spi
       .filter((passage) => passage.tiers.includes(tier))
       .reduce((sum, passage) => sum + passage.text.trim().split(/\s+/).length, 0),
   ]));
-  assert.ok(totals.short >= 1_100, `short source spine has only ${totals.short} words`);
+  // The concise tier deliberately uses short, exact excerpts so a complete
+  // beginner seder remains runnable in roughly half an hour. Traditional
+  // liturgy and quoted material are measured separately by the assembly audit.
+  assert.ok(totals.short >= 500, `short source spine has only ${totals.short} words`);
   assert.ok(totals.medium >= 1_700, `medium source spine has only ${totals.medium} words`);
   assert.ok(totals.full >= 1_850, `full source spine has only ${totals.full} words`);
   assert.ok(totals.short < totals.medium && totals.medium < totals.full);
-  assert.deepEqual(totals, { short: 1278, medium: 1898, full: 1983 });
+  assert.deepEqual(totals, { short: 534, medium: 1898, full: 1983 });
   assert.deepEqual(shirCoverage.sourceWordTotals, totals);
   assert.deepEqual(
     [...shirCoverage.expansionSections.medium].sort(),
-    ["barech", "hallel", "kadesh", "korech", "maggid", "tzafun"].sort(),
+    [
+      "barech", "hallel", "kadesh", "karpas", "korech", "maggid",
+      "maror", "shulchan-orech", "tzafun", "urchatz", "yachatz",
+    ].sort(),
   );
   assert.deepEqual(shirCoverage.expansionSections.full, ["nirtzah"]);
 });

@@ -1,0 +1,719 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "tropified-haggadah",
+  "title": "The Passover Seder Haggadah, Tropified",
+  "creator": "Isaac Gantwerk Mayer",
+  "family": "traditional-liturgical",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A full Hebrew Haggadah marked with cantillation that is exceptionally useful for chant-aware traditional supplements, but not as an English beginner spine; selected sequences preserve complete ritual units and must be paired with plain-language meaning and action cues.",
+  "sourceAssessment": {
+    "voice": "Liturgically precise, Hebrew-forward, chant-oriented, traditional, and visually dependent on vocalization and trope marks.",
+    "bestUses": [
+      "Optional Hebrew chant panels for ritually experienced hosts",
+      "Traditional-theme call-and-response and song selections",
+      "Facilitator editions that explicitly teach how a passage is sung"
+    ],
+    "beginnerRisks": [
+      "The extracted text is principally Hebrew and cannot orient an English-only first-time host by itself.",
+      "Cantillation marks need correct font rendering and may be lost or made confusing by careless line wrapping.",
+      "Long traditional passages include assumptions and ritual details that require an accessible English explanation."
+    ],
+    "politicalContext": "Traditional biblical, land, temple, and Jerusalem language appears as liturgy rather than modern political advocacy. Any Jerusalem refrain must obey the project rule limiting it to a traditional selection without a social-justice override.",
+    "creditContext": "Credit Isaac Gantwerk Mayer, identify the CC BY-SA 4.0 source, indicate changes, and preserve ShareAlike terms. Review embedded textual material and verify that cantillation survives typesetting."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 37,
+    "segmentCount": 77,
+    "exactCharacterCount": 113479,
+    "exactWordCount": 11347,
+    "reconstructionSha256": "a232f0000134b2f92589a20c671150bb8d663ea06a5da8786473d9399b40d61a",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From The Passover Seder Haggadah, Tropified by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=24582"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 77,
+      "segmentIds": [
+        "research-tropified-haggadah-0-7de1301a8f4b",
+        "research-tropified-haggadah-13g-9b20088a9f02",
+        "research-tropified-haggadah-2s2-0ef8b9cb5755",
+        "research-tropified-haggadah-4bz-23225106bec1",
+        "research-tropified-haggadah-5wm-a27b0f737636",
+        "research-tropified-haggadah-7kl-d917907f82f1",
+        "research-tropified-haggadah-909-2aaa5f2fc77c",
+        "research-tropified-haggadah-a7s-f3848fc5e8b0",
+        "research-tropified-haggadah-bsa-3d3ebf2244a4",
+        "research-tropified-haggadah-d81-5c73f7437a13",
+        "research-tropified-haggadah-ehp-ad2dfa76e54b",
+        "research-tropified-haggadah-fal-96a52b986136",
+        "research-tropified-haggadah-fea-386f8430b5f7",
+        "research-tropified-haggadah-gik-eeffb381ba31",
+        "research-tropified-haggadah-hod-812496424f0d",
+        "research-tropified-haggadah-jgt-d5498223166b",
+        "research-tropified-haggadah-l67-b418912fe4c4",
+        "research-tropified-haggadah-mh9-2df8b41eb39a",
+        "research-tropified-haggadah-neu-1f2aa97c2824",
+        "research-tropified-haggadah-oj3-89e493f3cee5",
+        "research-tropified-haggadah-pen-c6f9f9451d99",
+        "research-tropified-haggadah-q7q-74ffc8334ba5",
+        "research-tropified-haggadah-r6g-b66873f2f692",
+        "research-tropified-haggadah-sh7-faf5ce938033",
+        "research-tropified-haggadah-tgj-5d6085c44c59",
+        "research-tropified-haggadah-uf5-b9967ac9e5f5",
+        "research-tropified-haggadah-w6s-e172c4b1d8e3",
+        "research-tropified-haggadah-xir-1027ab35f3d8",
+        "research-tropified-haggadah-yy8-b38813a4052d",
+        "research-tropified-haggadah-1029-0c013ad30cea",
+        "research-tropified-haggadah-11ba-1049488b3a04",
+        "research-tropified-haggadah-12jq-c7b79e28b270",
+        "research-tropified-haggadah-12ts-296327104a57",
+        "research-tropified-haggadah-13qi-9696fcc01ab0",
+        "research-tropified-haggadah-14su-c79f4e80b191",
+        "research-tropified-haggadah-15o1-9131461bf7f7",
+        "research-tropified-haggadah-16bc-997dfcce72e1",
+        "research-tropified-haggadah-17tx-282e624c67b6",
+        "research-tropified-haggadah-18wf-c88d5957f710",
+        "research-tropified-haggadah-1a0g-5481067f08c8",
+        "research-tropified-haggadah-1b3m-e567213c2439",
+        "research-tropified-haggadah-1c8b-ff1947fb5c9d",
+        "research-tropified-haggadah-1d68-b6ee373f7800",
+        "research-tropified-haggadah-1ecn-cc12dd5ae485",
+        "research-tropified-haggadah-1fhb-2166a261338a",
+        "research-tropified-haggadah-1gok-f4b738001788",
+        "research-tropified-haggadah-1hvc-a7d3376159d0",
+        "research-tropified-haggadah-1ixo-17a13714d7ae",
+        "research-tropified-haggadah-1k16-57a8e11ccca6",
+        "research-tropified-haggadah-1l8h-528dc417dce6",
+        "research-tropified-haggadah-1mb0-6ab9ba8b9e69",
+        "research-tropified-haggadah-1nka-671ad7779fc2",
+        "research-tropified-haggadah-1okf-f11b30760768",
+        "research-tropified-haggadah-1pje-15b2ae233d04",
+        "research-tropified-haggadah-1qln-c240784618e5",
+        "research-tropified-haggadah-1ril-7ad9aa30f702",
+        "research-tropified-haggadah-1sov-637bcf54d16a",
+        "research-tropified-haggadah-1tt7-368e4b126420",
+        "research-tropified-haggadah-1uyg-f95b6e638245",
+        "research-tropified-haggadah-1w46-303ac9372046",
+        "research-tropified-haggadah-1x9a-f254462bf715",
+        "research-tropified-haggadah-1yf0-a9aa2a7338af",
+        "research-tropified-haggadah-1zha-20c865c95d12",
+        "research-tropified-haggadah-20n8-0a6d14b955be",
+        "research-tropified-haggadah-21qd-969956855993",
+        "research-tropified-haggadah-22wc-11b2cbe97ab6",
+        "research-tropified-haggadah-245m-84a60b6c2238",
+        "research-tropified-haggadah-25de-422274236eb2",
+        "research-tropified-haggadah-26lb-f96edc47d0d3",
+        "research-tropified-haggadah-27nr-d84c436dc082",
+        "research-tropified-haggadah-28oj-c3513735b87c",
+        "research-tropified-haggadah-29oj-a8be050436d8",
+        "research-tropified-haggadah-2an7-f91be781a810",
+        "research-tropified-haggadah-2bjc-0e32a25c2a66",
+        "research-tropified-haggadah-2cih-cfbf94530cb2",
+        "research-tropified-haggadah-2dip-87248cc8c54e",
+        "research-tropified-haggadah-2ei9-d623c34659bb"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "hallel": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 2,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "tropified-haggadah-questions-and-teaching",
+      "title": "Chanted questions and teaching",
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-1a0g-5481067f08c8",
+        "research-tropified-haggadah-1b3m-e567213c2439",
+        "research-tropified-haggadah-1c8b-ff1947fb5c9d"
+      ],
+      "beginnerContext": "Explain the ritual actions in English first, then identify the Hebrew portions selected for chanting: the invitation, the Four Questions, the duty to tell, and the Four Children.",
+      "rationale": "These consecutive source records preserve the complete opening movement of Maggid instead of extracting a trope-marked line without its ritual and narrative setting.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "paired-plain-language-meaning-required",
+        "historical-liturgical-land-language-context",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify the CC BY-SA 4.0 tropified edition; indicate any cuts.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 3",
+        "end": "authoritative odt text, segment 5",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-1a0g-5481067f08c8",
+            "sourceLocation": "authoritative odt text, segment 3",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 59632,
+              "normalizedEndOffset": 61041
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1b3m-e567213c2439",
+            "sourceLocation": "authoritative odt text, segment 4",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 61042,
+              "normalizedEndOffset": 62506
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1c8b-ff1947fb5c9d",
+            "sourceLocation": "authoritative odt text, segment 5",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 62507,
+              "normalizedEndOffset": 63727
+            }
+          }
+        ]
+      },
+      "totalWords": 412,
+      "exactTextSequenceSha256": "943e201f0048a71e75e7e5440da7800ca10e630f84c886858d3fb6165499b05b",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "tropified-haggadah-ancestry-to-redemption",
+      "title": "Chanted ancestry, oppression, and cry",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-1d68-b6ee373f7800",
+        "research-tropified-haggadah-1ecn-cc12dd5ae485",
+        "research-tropified-haggadah-1fhb-2166a261338a"
+      ],
+      "beginnerContext": "Give guests the Exodus arc in clear English before this selection: the family migrated, grew, was enslaved, cried out, and was heard.",
+      "rationale": "The three adjacent Hebrew records form a sustained traditional exposition from ancestral migration through oppression and the response to the enslaved people’s cry.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "paired-plain-language-meaning-required",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer; retain CC BY-SA 4.0 attribution and ShareAlike requirements.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 6",
+        "end": "authoritative odt text, segment 8",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-1d68-b6ee373f7800",
+            "sourceLocation": "authoritative odt text, segment 6",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 63728,
+              "normalizedEndOffset": 65254
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1ecn-cc12dd5ae485",
+            "sourceLocation": "authoritative odt text, segment 7",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 65255,
+              "normalizedEndOffset": 66718
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1fhb-2166a261338a",
+            "sourceLocation": "authoritative odt text, segment 8",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 66719,
+              "normalizedEndOffset": 68275
+            }
+          }
+        ]
+      },
+      "totalWords": 424,
+      "exactTextSequenceSha256": "6bd38515ffa8d0b4e6ddd767a4997314c00add70c2334b3287ae7ea88c916913",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "tropified-haggadah-plagues-and-dayenu",
+      "title": "Plagues leading into Dayenu",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-1gok-f4b738001788",
+        "research-tropified-haggadah-1hvc-a7d3376159d0",
+        "research-tropified-haggadah-1ixo-17a13714d7ae",
+        "research-tropified-haggadah-1k16-57a8e11ccca6"
+      ],
+      "beginnerContext": "Frame the plagues with sorrow for suffering, tell guests how to diminish the cup, and explain that Dayenu shifts from catastrophe toward gratitude.",
+      "rationale": "The source’s consecutive progression from redemption imagery through the plague list and rabbinic expansion into Dayenu preserves the traditional narrative turn.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "paired-plain-language-meaning-required",
+        "nontriumphalist-plague-framing",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and preserve the CC BY-SA 4.0 license and change notice.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 9",
+        "end": "authoritative odt text, segment 12",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-1gok-f4b738001788",
+            "sourceLocation": "authoritative odt text, segment 9",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 68276,
+              "normalizedEndOffset": 69815
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1hvc-a7d3376159d0",
+            "sourceLocation": "authoritative odt text, segment 10",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 69816,
+              "normalizedEndOffset": 71195
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1ixo-17a13714d7ae",
+            "sourceLocation": "authoritative odt text, segment 11",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 71196,
+              "normalizedEndOffset": 72617
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1k16-57a8e11ccca6",
+            "sourceLocation": "authoritative odt text, segment 12",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 72618,
+              "normalizedEndOffset": 74176
+            }
+          }
+        ]
+      },
+      "totalWords": 568,
+      "exactTextSequenceSha256": "3f9c6387c593f56ce791ee552a8acd84a8d500b31c472cedf124096bac4fd13a",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "tropified-haggadah-symbols-and-lived-memory",
+      "title": "Matzah, maror, and lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-1l8h-528dc417dce6",
+        "research-tropified-haggadah-1mb0-6ab9ba8b9e69"
+      ],
+      "beginnerContext": "Point to the matzah and maror, summarize their meanings in English, and explain that the text asks every generation to experience the freedom story personally before moving into praise.",
+      "rationale": "These adjacent passages complete the central ritual-symbol explanations, the every-generation teaching, and the source’s direct transition into Hallel.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "visible-object-cues-required",
+        "paired-plain-language-meaning-required",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify the tropified CC BY-SA 4.0 source in final credits.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 13",
+        "end": "authoritative odt text, segment 14",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-1l8h-528dc417dce6",
+            "sourceLocation": "authoritative odt text, segment 13",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 74177,
+              "normalizedEndOffset": 75563
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1mb0-6ab9ba8b9e69",
+            "sourceLocation": "authoritative odt text, segment 14",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 75564,
+              "normalizedEndOffset": 77193
+            }
+          }
+        ]
+      },
+      "totalWords": 278,
+      "exactTextSequenceSha256": "5611d0429e9928bb8f1431dbc40609127c997a137ab5c3a1b0141dcf46384840",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "tropified-haggadah-eating-and-grace",
+      "title": "Eating rituals into grace after meals",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-1nka-671ad7779fc2",
+        "research-tropified-haggadah-1okf-f11b30760768",
+        "research-tropified-haggadah-1pje-15b2ae233d04"
+      ],
+      "beginnerContext": "Use the project’s English host directions to say exactly what each person washes, eats, and drinks; present this Hebrew only as an optional liturgical layer.",
+      "rationale": "The source records follow one uninterrupted table sequence from the second cup through washing and symbolic eating into the opening of grace after the meal.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "do-not-substitute-for-host-instructions",
+        "paired-plain-language-meaning-required",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer; retain CC BY-SA 4.0 attribution, change notice, and ShareAlike terms.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 15",
+        "end": "authoritative odt text, segment 17",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-1nka-671ad7779fc2",
+            "sourceLocation": "authoritative odt text, segment 15",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 77194,
+              "normalizedEndOffset": 78494
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1okf-f11b30760768",
+            "sourceLocation": "authoritative odt text, segment 16",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 78495,
+              "normalizedEndOffset": 79753
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-1pje-15b2ae233d04",
+            "sourceLocation": "authoritative odt text, segment 17",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 79754,
+              "normalizedEndOffset": 81130
+            }
+          }
+        ]
+      },
+      "totalWords": 390,
+      "exactTextSequenceSha256": "c0df348c4aea6d32e71a5836c068231fcd50376eda6af7cfff66dd14034f4270",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "tropified-haggadah-closing-chain-songs",
+      "title": "Closing cumulative songs",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-tropified-haggadah-2bjc-0e32a25c2a66",
+        "research-tropified-haggadah-2cih-cfbf94530cb2",
+        "research-tropified-haggadah-2dip-87248cc8c54e",
+        "research-tropified-haggadah-2ei9-d623c34659bb"
+      ],
+      "beginnerContext": "Tell guests that these are playful cumulative songs traditionally sung at the end; provide a refrain cue and make participation optional.",
+      "rationale": "Four final source-order segments preserve the complete rising pattern of Echad Mi Yodea and the continuation of Chad Gadya as a coherent closing activity.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "hebrew-chant-opt-in",
+        "participation-cue-required",
+        "paired-plain-language-meaning-required",
+        "cantillation-rendering-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and preserve the source’s CC BY-SA 4.0 conditions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "authoritative odt text, segment 37",
+        "end": "authoritative odt text, segment 40",
+        "locators": [
+          {
+            "id": "research-tropified-haggadah-2bjc-0e32a25c2a66",
+            "sourceLocation": "authoritative odt text, segment 37",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 108264,
+              "normalizedEndOffset": 109528
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-2cih-cfbf94530cb2",
+            "sourceLocation": "authoritative odt text, segment 38",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 109529,
+              "normalizedEndOffset": 110832
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-2dip-87248cc8c54e",
+            "sourceLocation": "authoritative odt text, segment 39",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 110833,
+              "normalizedEndOffset": 112112
+            }
+          },
+          {
+            "id": "research-tropified-haggadah-2ei9-d623c34659bb",
+            "sourceLocation": "authoritative odt text, segment 40",
+            "locator": {
+              "label": "authoritative odt text",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/tropified-haggadah.txt",
+              "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+              "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+              "normalizedStartOffset": 112113,
+              "normalizedEndOffset": 113555
+            }
+          }
+        ]
+      },
+      "totalWords": 551,
+      "exactTextSequenceSha256": "9dd6e4c6f94a80344a35baa3c97b53e6603239c8ff09e1051fd21f5129a732ab",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-tropified-haggadah-0-7de1301a8f4b",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "Title, edition, and production material belongs in credits rather than the ritual reading stream."
+      ]
+    },
+    {
+      "id": "research-tropified-haggadah-fal-96a52b986136",
+      "sourceLocation": "PDF p. 12, segment 1",
+      "reasons": [
+        "This eleven-word extraction fragment begins and ends mid-psalm and is not independently coherent."
+      ]
+    }
+  ],
+  "notes": [
+    "This source is preserved as an opt-in chant resource rather than excluded for requiring Hebrew literacy.",
+    "Every selected sequence needs a visually verified Hebrew font and a separate plain-language English explanation; the source text itself must remain exact.",
+    "All sequences remain local-agent-reviewed candidates, not human-approved runtime material."
+  ]
+}

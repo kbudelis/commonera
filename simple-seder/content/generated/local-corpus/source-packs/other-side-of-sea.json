@@ -1,0 +1,829 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "other-side-of-sea",
+  "sourceTitle": "The Other Side of the River, The Other Side of the Sea",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit T'ruah",
+      "Preserve printed contributor credits",
+      "Review embedded artwork and quotations item by item"
+    ],
+    "primaryUrl": "https://truah.org/resources/the-other-side-of-the-river-the-other-side-of-the-sea/"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-other-side-tomato-labor-dignity",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "The tomato as labor and liberation",
+      "exactText": "THE OTHER SIDE OF THE RIVER, THE OTHER SIDE OF THE SEA T’ruah: The Rabbinic Call for Human Rights • www.truah.org RAISING UP , RISING UP A day of slam-dunking tomatoes into that bucket, his body a human backboard, leaves a human stain. Over every worker’s heart, a deep brown sun, surrounded by a green halo. It’s our custom to raise up our matzah. The bread of poverty. The bread of oppression. But also the bread of liberation. The tomato, too, is a dual symbol. It reminds us that slavery persists, today, wherever farm laborers have not tasted the sweet freedom made real by the brave workers of CIW. And it celebrates the awesome power of those workers who refuse to forfeit their humanity, who point the way toward liberation. Not just for themselves. But for all of us.\n\nLet us raise up the tomato on our seder plate. Let us rouse ourselves to stand in solidarity with all who are exploited bringing food to our tables. And, in doing so, let us raise up our holy tables in a banquet of liberation, affirming wisdom and courage, wherever they are exiled, in any soul — there, or here. - Rabbi Michael Rothbaum, Congregation Beth Elohim, Acton, Mass. 42 When we see ourselves in relationship with the people who grow our food — and poor people as powerful social change agents in their own right — we become more fully whole ourselves, as the prophet Hosea taught, “Plant righteousness for yourself, harvest the fruits of goodness” (10:12), and as the Universal Declaration of Human Rights affirms, “Recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world.”",
+      "segmentIds": [
+        "research-other-side-of-sea-b2q-417880c323a7",
+        "research-other-side-of-sea-bob-7a78afc09a02"
+      ],
+      "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 2",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 2",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-b2q-417880c323a7",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 14354,
+            "normalizedEndOffset": 15130
+          },
+          {
+            "id": "research-other-side-of-sea-bob-7a78afc09a02",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 15131,
+            "normalizedEndOffset": 16031
+          }
+        ]
+      },
+      "provenanceHash": "3c3fd510cd8712c2381de55e107025978b161080375bcc20e9fdcd6d773b1b1e",
+      "componentProvenanceHashes": [
+        "417880c323a70ac4fefe52d95273fd546dbdb1f0d53c4513c3ba2a7576be41fa",
+        "7a78afc09a0250ba7780f10a7a9999e36903e0c7ae08c19d047faa58fce7cd3e"
+      ],
+      "wordCount": 295,
+      "characterCount": 1678,
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "environment"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Explain that some contemporary Seders add a tomato to acknowledge the farmworkers who bring food to the table; identify CIW as the Coalition of Immokalee Workers before reading.",
+      "rationale": "These adjacent passages introduce one symbol, explain both its bitterness and its liberatory meaning, and end with a direct ritual invitation rather than a disconnected policy lesson.",
+      "creditNotes": "Credit T'ruah and Rabbi Michael Rothbaum on the final sources page; preserve the Universal Declaration attribution contained in the passage.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "define-ciw-before-reading",
+        "preserve-contributor-credit",
+        "social-justice-theme-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-other-side-korekh-survivor-leadership",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Korekh and survivor-led liberation",
+      "exactText": "24 Korekh In Korekh, we combine bitter maror with sweet charoset in a single mouthful. This makes real for us the dual realities of trafficking survivors, who celebrate their freedom and move forward with their lives while fighting an uphill battle against trauma and poverty. As you enjoy your sandwich, consider these diverse reflections of trafficking survivors. “I wish the police could find him. I wish that I could send him to jail because he really destroyed me. He took a lot of time from me. But I don’t feel like I live with this; I don’t bring my past with me now… There is justice here [in America]. It’s fair here. I feel strong because I now know when I can say no and when I can say yes. I have choices.” – Anonymous, forced into sexual labor (Life Interrupted, p.\n\n148) “It’s hard juggling it all, but if I don’t do something, I have to think about what happened to me. So if I am in school and busy, I don’t think about it too much.” – Julia (ibid., p. 166) וֹרֵך כּ Can you imagine the Passover story if, rather than having figures like Moses and Miriam as our guides, it was told from the perspective of Pharaoh? Probably not. But what if it was told from the perspective of a well-intentioned Egyptian, who, though he stood to benefit from the privileges of his position, took pity upon the slaves? Part of the power of the Israelites’ journey from slavery to liberation lies in the fact that the struggle for freedom was led by slaves themselves — and the telling and retelling of that journey was thus theirs to craft.\n\nHow often do we hear today’s stories of injustice told from the perspective of a savior? How often do we hear them told by those who experienced those injustices, strategized and worked to counter them, and ultimately forged their own liberation? As we listen for today’s stories of communities breaking from today’s bondages, let us seek out the struggles led by those most directly affected by an injustice. And if the telling and retelling of those stories sounds foreign to our ears, let us rejoice in knowing that their stories are theirs alone to craft, and ours to hear, to seek to understand, and to engage. - Elena Stein, former Faith Organizer, Alliance for Fair Food 51",
+      "segmentIds": [
+        "research-other-side-of-sea-136g-d840a011cd0a",
+        "research-other-side-of-sea-13s4-b5ac6912324d",
+        "research-other-side-of-sea-14d8-c10a55a333ce"
+      ],
+      "sourceLocation": "PDF p. 14, segment 3 through PDF p. 14, segment 5",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 14, segment 3 through PDF p. 14, segment 5",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-136g-d840a011cd0a",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 50776,
+            "normalizedEndOffset": 51555
+          },
+          {
+            "id": "research-other-side-of-sea-13s4-b5ac6912324d",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 51556,
+            "normalizedEndOffset": 52315
+          },
+          {
+            "id": "research-other-side-of-sea-14d8-c10a55a333ce",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 52316,
+            "normalizedEndOffset": 52996
+          }
+        ]
+      },
+      "provenanceHash": "36c325f59fec82f73b753faee4497cd17e5fec0d059a3cc4e2b2451f328764ce",
+      "componentProvenanceHashes": [
+        "d840a011cd0a083d8203440cc4791a286124d20fc40529f232dedd902b4c41d8",
+        "b5ac6912324dd09f1c088b10b753a641efb21fdab5e98467951d72c96de40d50",
+        "c10a55a333ce8d1b00eb0b056d44607b2c906cc15917b3ce60afc538711b0db3"
+      ],
+      "wordCount": 400,
+      "characterCount": 2222,
+      "sectionIds": [
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "korech"
+      ],
+      "insertionSectionId": "korech",
+      "themes": [
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Before making the Hillel sandwich, explain that Korekh combines bitter maror and sweet charoset; offer a content note for trafficking testimony and tell guests they may pass on the reading.",
+      "rationale": "The sequence begins with Korekh's mixed taste, lets survivors speak in their own words, and then explicitly rejects savior-centered storytelling in favor of affected communities' leadership.",
+      "creditNotes": "Credit T'ruah, the quoted survivors as presented by the source, and Elena Stein on the final sources page; retain the Life Interrupted locator if this sequence is published.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-testimony-attribution-review",
+        "preserve-contributor-credit",
+        "social-justice-theme-only",
+        "trafficking-content-note-and-pass-option"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-other-side-tzafun-hidden-to-action",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Tzafun: seek what is hidden",
+      "exactText": "THE OTHER SIDE OF THE RIVER, THE OTHER SIDE OF THE SEA T’ruah: The Rabbinic Call for Human Rights • www.truah.org 56 Tzafun Tzafun, which literally means “hidden,” is the part of the seder where we seek what is not obvious, when we look for something other than what is in front of our faces. It is also when we return to that which was broken earlier in the evening and try to make it whole again. In this way, Tzafun serves as the organizing principle of the second half of our seder, where we ask ourselves what world we want to see. Then we commit ourselves to making it real. צָפוּן RABBIS IN ACTION At Yavneh’s core is the belief that the Jewish values and ethics the students learn are only realized when put into action, so integrated throughout our curriculum are opportunities to practice these values in real life situations.\n\nSpecifically, our middle school students engage in a three-year Jewish social justice curriculum, in which they examine how they can contribute to the world, responding to the needs of their own community through direct service and making a difference globally through philanthropy and advocacy. T’ruah’s Human Rights Shabbat has become an annual tradition at our school, in which our middle school students teach the elementary school students. In the last few years, we have closely examined the issue of human trafficking in America and the Jewish teachings that categorically make it an imperative for Jews to be involved. Our students have made tomato plates for their seder tables; engaged in inter-disciplinary learning researching the history of agriculture in America, calculating fair wages, and writing letters to Congress; and created presentations to raise awareness in the community.\n\n- Rabbi Laurie Hahn Tapper, Director of Jewish Studies and School Rabbi, Yavneh Day School, Los Gatos, Calif. By moving one little dot, Tzafun becomes Tzafon, North. What North Star will guide your work to bring about the world you want to see? It’s no accident that one of the leading national anti-trafficking organizations is named Polaris, after the North Star. wצָפוֹן צָפוּן 19 Florida farmworkers in 1960, from the Peabody Award-winning CBS documentary Harvest of Shame 2. Refer to the picture below. Do this picture and this quote surprise you? Why or why not? What do they teach us about the legacy of slavery in the United States? “We used to own our slaves. Now we just rent them.” – Florida grower quoted in the film RABBIS IN ACTION In December 2013, I visited a local Wendy’s restaurant with our middle school students.\n\nWe did not do so to grab a snack, but to take a stand for human rights. We were urging Wendy’s to join the Coalition of Immokalee Workers’ (CIW) Fair Food Program. Our task was not to be a menace, but to have meaningful conversations to create change. The manager knew we were coming and was happy to hear my students express their concerns about the exploitation of workers in Florida tomato fields. After talking with the manager, we handed her letters to pass along to the corporate office. She assured us that she would speak to her superiors and share our concerns. We then left and gathered our posters and signs to raise awareness outside the restaurant. This was just one afternoon and one action, but it was an afternoon that inspired me. I now believe that these students will not just learn our tradition, but also live its values, ensuring equality and human rights for all. - Rabbi Jesse M. Olitzky, Congregation Beth El, South Orange, N.J.",
+      "segmentIds": [
+        "research-other-side-of-sea-1fc3-b902b9190187",
+        "research-other-side-of-sea-1fzc-66b06a07b22b",
+        "research-other-side-of-sea-1goa-66568b57941e",
+        "research-other-side-of-sea-1hbg-51e53d0d88b7"
+      ],
+      "sourceLocation": "PDF p. 19, segment 1 through PDF p. 19, segment 4",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 19, segment 1 through PDF p. 19, segment 4",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-1fc3-b902b9190187",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 66531,
+            "normalizedEndOffset": 67367
+          },
+          {
+            "id": "research-other-side-of-sea-1fzc-66b06a07b22b",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 67368,
+            "normalizedEndOffset": 68265
+          },
+          {
+            "id": "research-other-side-of-sea-1goa-66568b57941e",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 68266,
+            "normalizedEndOffset": 69099
+          },
+          {
+            "id": "research-other-side-of-sea-1hbg-51e53d0d88b7",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 69100,
+            "normalizedEndOffset": 70053
+          }
+        ]
+      },
+      "provenanceHash": "753b20cedbd406f6ee6b255135bc5e43df4bc31369d73219128dd7d25f5671da",
+      "componentProvenanceHashes": [
+        "b902b919018793c9c37f54e1c64458176f7a8cdbaa45bdd5a84436453f0dc1f0",
+        "66b06a07b22bb3e593e4589c7f3383f0c0c3d0f62ce724df98659868d766aa84",
+        "66568b57941e2eb95eda3dd7ba2120c4682d48d160ebf930bae877bf7682376c",
+        "51e53d0d88b7cda86ac27675b68fa4a185c4906181465a7f3ddd3f7433faf278"
+      ],
+      "wordCount": 601,
+      "characterCount": 3525,
+      "sectionIds": [
+        "tzafun"
+      ],
+      "sourceSectionIds": [
+        "tzafun"
+      ],
+      "insertionSectionId": "tzafun",
+      "themes": [
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Tzafun means hidden and is the moment when the afikoman returns; frame the school and restaurant campaign as dated examples of turning learning into action, not as instructions for a current campaign.",
+      "rationale": "The passages sustain one arc from the hidden matzah to a guiding North Star and then to concrete, age-appropriate student action, making the source useful for participatory family tables.",
+      "creditNotes": "Credit T'ruah, Rabbi Laurie Hahn Tapper, and Rabbi Jesse M. Olitzky on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-dated-campaign-link-as-current",
+        "label-2013-campaign-as-historical",
+        "preserve-contributor-credit",
+        "social-justice-theme-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-other-side-barech-life-of-dignity",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Birkat Hamazon and a life of dignity",
+      "exactText": "THE OTHER SIDE OF THE RIVER, THE OTHER SIDE OF THE SEA T’ruah: The Rabbinic Call for Human Rights • www.truah.org In the third paragraph of birkat hamazon (Rachem…), we appeal to God for our most basic needs — sustenance and shelter. We pray, אֱלֹקינוּ ‘ ה תַּצְרִיכֵֽנוּ אַל וְנָא וָדָם בָּשָׂר מַתְּנַת לִידֵי לֹא .הַלְוָאָתָם לִידֵי וְלֹא Please do not make us depend, Adonai our God, on the gifts of flesh and blood or their loans. While in context this means gifts or loans from other people, it could also be understood more literally as actual “loans” of flesh and blood, such as take place in prostitution and forced labor. This reading cuts to the core of this paragraph’s concluding plea, “וָﬠֶד לְעוֹלָם נִכָּלֵם וְלֹא נֵבוֹשׁ ֶלֹּא שׁ” that we should never suffer embarrassment nor humiliation.”\n\nThis is, at base, what we all desire: a life of dignity. Unfortunately, the threat of becoming a gift of flesh and blood looms as largely today all over the world as it did for our ancestors. - Rabbi Raysh Weiss, PhD, Congregation Beth-El, Yardley, Pa.; T’ruah Summer Fellowship 2013; Bronfman Fellow 2001 58 1. Why might a shepherd be inclined to say a simpler, shorter form of this blessing? 2. Later authorities added the phrase “Sovereign of the World” to Benjamin’s original prayer. In the context of slavery and freedom, why does it matter that every blessing remind us that God is the ultimate Sovereign? How does our sense of the sacred or the Divine inspire our actions to build a world of chesed, lovingkindness? Bless and drink the third cup.",
+      "segmentIds": [
+        "research-other-side-of-sea-1k09-3ad8c187ae69",
+        "research-other-side-of-sea-1kmp-8ce8ac5d902d"
+      ],
+      "sourceLocation": "PDF p. 21, segment 1 through PDF p. 21, segment 2",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 21, segment 1 through PDF p. 21, segment 2",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-1k09-3ad8c187ae69",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 72585,
+            "normalizedEndOffset": 73392
+          },
+          {
+            "id": "research-other-side-of-sea-1kmp-8ce8ac5d902d",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 73393,
+            "normalizedEndOffset": 74146
+          }
+        ]
+      },
+      "provenanceHash": "233ad896082a0acc4b9870ee7a4c67c817d7461e1d3d1759975333d69d6e72d7",
+      "componentProvenanceHashes": [
+        "3ad8c187ae69d1d03ecddf8a682ade920939022b20d571658f924bc132a29d3a",
+        "8ce8ac5d902d87fefe4ac1a91c50730f846eeb409c954c78e54a5c48a982e9c5"
+      ],
+      "wordCount": 269,
+      "characterCount": 1562,
+      "sectionIds": [
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "barech"
+      ],
+      "insertionSectionId": "barech",
+      "themes": [
+        "social-justice",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Introduce Barech as the blessing after the meal and explain that this reading interprets one traditional plea for sustenance and shelter through the lens of coerced labor.",
+      "rationale": "The second passage completes the first passage's interpretation and turns a difficult subject into a clear universal claim: every person seeks a life of dignity.",
+      "creditNotes": "Credit T'ruah and Rabbi Raysh Weiss on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "coerced-labor-content-note",
+        "preserve-contributor-credit",
+        "social-justice-theme-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-other-side-four-children-agency",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Four Children: from awareness to agency",
+      "exactText": "17 The Four Children When we talk about forced labor, we may start out as the child who does not know to ask, because we don’t even know that the problem exists. Upon first encountering the issue, we ask simple questions. As we learn more, it is easy to slide into the frustration of the wicked child: This is such a massive uphill battle and I am so small — why should I bother caring? We seek the wisdom to overcome despair and find the ways in which we can be effective at fighting the root causes of forced labor. On the path from first realizations to despair to activism, where do you find yourself tonight? What has your journey been to this place? The seder demands that we look forward, not backward.\n\nTo the children’s questions about why we celebrate Passover, we respond, “because God took us out of Egypt“ and not “because we were slaves in Egypt.” We dwell on the joy and agency of liberation, not on the pain of slavery. A rabbi once taught me that Judaism was a “system for goodness.” Over the years, I have learned to recognize that I am a part of systems that are often far less than good: systems that privilege few and hurt many. Our society’s demand for cheap products and services, and my mere participation in modern commerce, implicates me in the cycle of exploitation. It is this recognition that drives me to work to reform our public institutions so that they enable others to enjoy the same freedom that we celebrate around the seder table. The ability to rejoice in our freedom carries with it great responsibility, for we cannot truly be free unless all people are free. Let us direct ourselves towards fixing systems that exploit vulnerable members of our communities and bring a time of liberation from these narrow places for all people. - Keeli Sorensen, V ice President of Victim Services at RAINN (Rape, Abuse & Incest National Network)",
+      "segmentIds": [
+        "research-other-side-of-sea-1l7n-7b0df0e11d78",
+        "research-other-side-of-sea-1lrd-81d8bd6f1862"
+      ],
+      "sourceLocation": "PDF p. 21, segment 3 through PDF p. 21, segment 4",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 21, segment 3 through PDF p. 21, segment 4",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-1l7n-7b0df0e11d78",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 74147,
+            "normalizedEndOffset": 74856
+          },
+          {
+            "id": "research-other-side-of-sea-1lrd-81d8bd6f1862",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 74857,
+            "normalizedEndOffset": 76018
+          }
+        ]
+      },
+      "provenanceHash": "47eee6a6ec4dcb1b9a91183fcdc2ecdddfbe70951740b3ec0c2ff954abcb66c0",
+      "componentProvenanceHashes": [
+        "7b0df0e11d786962f79468bd1505cb58f4d5489e5080a762a32723f64ab9a1ec",
+        "81d8bd6f1862fc3b02c7e9fb9152527571b56de848653dd73eb64fb4508b8063"
+      ],
+      "wordCount": 335,
+      "characterCount": 1872,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "First explain that the traditional Haggadah imagines four different kinds of questioners; this adaptation uses them as stages in learning about forced labor and finding a useful response.",
+      "rationale": "The pair moves coherently from not knowing, through overwhelm, toward joy, agency, and responsibility without suggesting that a guest must personally solve a vast injustice.",
+      "creditNotes": "Credit T'ruah and Keeli Sorensen on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "preserve-contributor-credit",
+        "replace-wicked-child-label-in-beginner-bridge-with-challenging-child",
+        "social-justice-theme-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-other-side-maggid-embodied-empathy",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Maggid with heart, body, humility, and song",
+      "exactText": "THE OTHER SIDE OF THE RIVER, THE OTHER SIDE OF THE SEA T’ruah: The Rabbinic Call for Human Rights • www.truah.org As we begin Maggid, we seek to enter into the experience of slavery and redemption with more than just our heads, but with our hearts and bodies as well. Rav Kook taught that the entire Haggadah centers on the biblical verse “You shall tell your child on that day, ‘Because of what the Eternal did for me when I went free from Egypt’” (Exodus 13:8), which we use to answer the wicked child and the one who does not know how to ask. Maybe that means that all I have to do to fulfill my obligation to see myself as if I were personally liberated from Egyptian bondage is to say this line. No way!\n\nWhen I say “what the Eternal did for me,” a robust seder depends on imagining the taskmaster’s lash, the Israelite hope for God’s compassion, and the sweet taste of freedom’s tears of joy on the far side of the sea. And yet, I am only imagining the move from degradation to redemption. My freedom to imagine a life of slavery is itself a form of privilege. As we engage the issue of modern slavery, let us constantly be aware of the privilege we bring as well as the power, so that we may take up the right amount of space at the table and no more. - Rabbi David Spinrad, Beth El Hebrew Congregation, Alexandria, Va. 12 “Shroud (On The Other Side),” by Claudia Cojocaru Ms. Cojocaru writes, “The shroud represents freeing people from the imprisonment of their minds and bodies.\n\nThere is always a shroud covering the essence of truth within.” Ms. Cojocaru’s reﬂection on her life as a trafﬁcking survivor is on p. 54. Hallel Fill the fourth cup and celebrate the world you want to see with songs that have sustained activists in the past and today — we’ve included a few of these songs, but feel free also to sing other songs that give you the strength to move forward. Psalm 118:25 הַלֵּל We may tell our story and utter our prayers on this Passover night, but something transformative happens when we sing. Song transports us from despair to courage. From hopelessness to joy. From slavery to freedom. If you can sing a Hallel psalm of gratitude, of hope, even of despair, you know your soul is still alive. Men were the priests and leaders of ancient ritual.\n\nBut women were the songleaders of our people: beginning with Miriam, who led the women in singing and dancing as we crossed the sea. Without time to bake bread, she instructed the women to pack their timbrels as they left slavery behind. They didn’t know what the future held, but the Israelites were preparing to sing, knowing that song would help them recognize when they were truly free. - Rabbi Angela W. Buchdahl, Central Synagogue, New York, N.Y.; Bronfman Fellow ‘89 63 Ana Adonai Hoshiah na ‘ה אָנָּא נָּא ִיﬠָה שׁהוֹ Please God save us! South African Folk Song Zulu (original): Siyahamba ekukhanyeni kwenkhos’. We are marching in the light of God. Anu tzo’adim l’ or Hashem. צוֹﬠָדִים אָנוּ ‘ה לְאוֹר Visit www.truah.org/haggadah-songs for links to recordings, where available.",
+      "segmentIds": [
+        "research-other-side-of-sea-1x82-cca6482ae15b",
+        "research-other-side-of-sea-1xrr-115313db10dd",
+        "research-other-side-of-sea-1ydd-b2886bc6ec30",
+        "research-other-side-of-sea-1yz4-976e226be114"
+      ],
+      "sourceLocation": "PDF p. 26, segment 1 through PDF p. 26, segment 4",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 26, segment 1 through PDF p. 26, segment 4",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-1x82-cca6482ae15b",
+            "label": "PDF p. 26",
+            "pageNumber": 26,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 89714,
+            "normalizedEndOffset": 90422
+          },
+          {
+            "id": "research-other-side-of-sea-1xrr-115313db10dd",
+            "label": "PDF p. 26",
+            "pageNumber": 26,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 90423,
+            "normalizedEndOffset": 91200
+          },
+          {
+            "id": "research-other-side-of-sea-1ydd-b2886bc6ec30",
+            "label": "PDF p. 26",
+            "pageNumber": 26,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 91201,
+            "normalizedEndOffset": 91983
+          },
+          {
+            "id": "research-other-side-of-sea-1yz4-976e226be114",
+            "label": "PDF p. 26",
+            "pageNumber": 26,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 91984,
+            "normalizedEndOffset": 92770
+          }
+        ]
+      },
+      "provenanceHash": "469f9a639c1707e9e6695093f34c433f14364c648d76c18304c288d152e5b503",
+      "componentProvenanceHashes": [
+        "cca6482ae15bafd7b29a363cabe86c6db1804b39f9a3652b4c215fdd881486bb",
+        "115313db10ddb01dd7e49b879d6249f90e547fc59b52ecd6cacd7c48906ded69",
+        "b2886bc6ec309011661446976a5dc4dd789f35a1233f855a122aef3a4dc06f79",
+        "976e226be114e92e9686a21eb7456df944af4be643aca613e0d8f61fbe4d6d90"
+      ],
+      "wordCount": 547,
+      "characterCount": 3059,
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain that Maggid is the long storytelling section and that the Haggadah asks each person to imagine having left Egypt, while this reading also cautions against confusing imagination with another person's lived experience.",
+      "rationale": "Four contiguous source records complete the argument about embodied storytelling, empathy, privilege, and responsible participation, then carry the source's transition into song without breaking a contributor quotation or sentence.",
+      "creditNotes": "Credit T'ruah, Rabbi David Spinrad, Claudia Cojocaru, and Rabbi Angela W. Buchdahl; preserve every printed attribution and separately review the artwork and song rights.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-artwork-and-song-rights-review",
+        "preserve-contributor-credit",
+        "social-justice-theme-only",
+        "song-participation-optional"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-other-side-karpas-nourish-the-journey",
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "title": "Karpas and nourishment for a long journey",
+      "exactText": "THE OTHER SIDE OF THE RIVER, THE OTHER SIDE OF THE SEA T’ruah: The Rabbinic Call for Human Rights • www.truah.org Karpas As the Four Questions will soon point out, we dip twice in our seder. The two dippings are opposites. The first time, as we prepare to enter a world of slavery, we dip a green vegetable into saltwater, marring its life-giving freshness with the taste of tears and death. The second time, as we move towards redemption, we moderate the bitterness of maror with the sweetness of charoset. Any time we find ourselves immersed in sadness and suffering, may we always have the courage to know that blessing is coming. Blessed are You ETERNAL our God, Sovereign, of time and space, who creates the fruit of the earth. The dipping of karpas also recalls the Israelites’ first stop after crossing the Red Sea, which was called Marah.\n\nAfter a three-day journey, they found water there, but it was bitter, undrinkable. God showed Moses a piece of wood to throw (dip) into the water, which made it potable. (Exodus 15:22-27) Even after a major initial victory, our elation can collapse swiftly under the weight of the next steps we have to take. Karpas reminds us that the journey to freedom — like the seder — is long, and we have to pace ourselves. This episode is also the source-text for the rabbis’ instituting reading Torah on Mondays and Thursdays, so we never go more than three days without water/Torah. Karpas reminds us that on the long road to redemption, we have to make sure we stop and nourish ourselves wherever we can. כַּרְפַּס Baruch Atah Adonai Eloheinu Melech ha’olam borei pri ha’adamah.",
+      "segmentIds": [
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-22b2-9bf644f14584"
+      ],
+      "sourceLocation": "PDF p. 28, segment 1 through PDF p. 28, segment 2",
+      "locator": {
+        "edition": "The Other Side of the River, The Other Side of the Sea",
+        "sourceLocation": "PDF p. 28, segment 1 through PDF p. 28, segment 2",
+        "localExtract": "research/source-extracts/other-side-of-sea.txt",
+        "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "componentLocators": [
+          {
+            "id": "research-other-side-of-sea-21nj-8aff38327a9c",
+            "label": "PDF p. 28",
+            "pageNumber": 28,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 95455,
+            "normalizedEndOffset": 96301
+          },
+          {
+            "id": "research-other-side-of-sea-22b2-9bf644f14584",
+            "label": "PDF p. 28",
+            "pageNumber": 28,
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+            "normalizedStartOffset": 96302,
+            "normalizedEndOffset": 97074
+          }
+        ]
+      },
+      "provenanceHash": "d458d1ad4848c5d9cca815ab121b728042a16fd01fc5af4f522eb3d90eb70a33",
+      "componentProvenanceHashes": [
+        "8aff38327a9c5798b874529bdee536980e82f2468e52657ab7fe8c93bed52d55",
+        "9bf644f145841a5ae2f5e0c28e9e51d16b0cf674f201e8f4fce056341ca97d17"
+      ],
+      "wordCount": 283,
+      "characterCount": 1620,
+      "sectionIds": [
+        "karpas"
+      ],
+      "sourceSectionIds": [
+        "karpas"
+      ],
+      "insertionSectionId": "karpas",
+      "themes": [
+        "social-justice",
+        "environment",
+        "mindfulness",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests to take a green vegetable, dip it in salt water, and taste it; then explain that the source connects this first dipping to both tears and the Israelites' search for drinkable water after crossing the sea.",
+      "rationale": "This is a complete ritual explanation with sensory instructions, an Exodus episode, and a practical insight about sustaining oneself during a long struggle.",
+      "creditNotes": "Credit T'ruah on the final sources page and identify the Exodus 15:22-27 reference retained in the reading.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "T'ruah: The Rabbinic Call for Human Rights",
+        "containingSource": "The Other Side of the River, The Other Side of the Sea",
+        "sourcePresented": null,
+        "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "explain-marah-reference-for-beginners",
+        "preserve-source-blessing-wording"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

@@ -1,0 +1,841 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "socialist-hagode",
+  "title": "Hagode shel Peysekh: in a Socialist Mode",
+  "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+  "family": "labor-secular",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A 1919 Yiddish socialist parody Haggadah presented in a 2025 bilingual edition. Its English translation preserves a forceful labor voice and inventive ritual reinterpretations, while the translator explicitly warns about racist progress narratives, anti-religious simplification, and glorification of revolutionary violence. It belongs only in an opt-in historical secular or labor path with the warning attached.",
+  "sourceAssessment": {
+    "voice": "Satirical, polemical, secular, Yiddish-inflected, class-conscious, and deliberately modeled on traditional Haggadah formulas.",
+    "bestUses": [
+      "Historical labor and secular Jewish context",
+      "A class-conscious Four Questions adaptation",
+      "Readings on work, hunger, housing, dignity, and collective freedom",
+      "Long adult Seders explicitly choosing socialist or labor history"
+    ],
+    "beginnerRisks": [
+      "The text is a historical polemic, not a neutral account of socialism, religion, labor history, or Jewish tradition.",
+      "Its Yiddish-English page pattern means coherent English sequences skip intervening Yiddish counterparts while preserving source order.",
+      "The original contains racist theories of historical progress, anti-Christian and anti-religious attacks, hostile class labels, and endorsements of violent revolution.",
+      "Transliterated liturgical phrases and period idiom need definitions for readers who do not know Yiddish or Hebrew."
+    ],
+    "politicalContext": "Treat every recommended sequence as an explicitly selected historical labor document. Preserve the translator's 2025 warning before any excerpt; never present violent revolution, contempt for religion, demeaning class labels, or pseudo-evolutionary claims as the app's own position. The source contains no basis for blaming contemporary religious, ethnic, national, or economic groups collectively.",
+    "creditContext": "Credit Benjamin Feigenbaum, Leon Zolotkof, Shlomo Jack Enkin Lewis, Hagode Shel Peysekh: In a Socialist Mode, and the 2025 translation on the final sources page. Indicate that the original is public domain and the translation is Attribution-ShareAlike, preserving notices about changes."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 47,
+    "segmentCount": 76,
+    "exactCharacterCount": 67254,
+    "exactWordCount": 11347,
+    "reconstructionSha256": "7e64ed7b58c9888898d8453ab6c307c9a8286dbdf3cdc875dd0f314585792b9d",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit original authors and Shlomo Enkin Lewis's translation",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=61621"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 11,
+      "segmentIds": [
+        "research-socialist-hagode-0-1fd564451840",
+        "research-socialist-hagode-y-837f44b4cbca",
+        "research-socialist-hagode-5m-d7758e375af3",
+        "research-socialist-hagode-bc-5a517428a1fb",
+        "research-socialist-hagode-12f-b59cadb9eb90",
+        "research-socialist-hagode-1wc-62daa5e2141b",
+        "research-socialist-hagode-2wo-29c8ba2a3162",
+        "research-socialist-hagode-3ju-f4af202b0dd3",
+        "research-socialist-hagode-49a-e23593b0b30c",
+        "research-socialist-hagode-5fl-b6e2585c1c3d",
+        "research-socialist-hagode-6e9-b84a5a17ad9c"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 62,
+      "segmentIds": [
+        "research-socialist-hagode-6xk-04302d65c714",
+        "research-socialist-hagode-93n-d1772dcc3629",
+        "research-socialist-hagode-9tc-84ecb6a1cfce",
+        "research-socialist-hagode-ais-adec1d8fbc7d",
+        "research-socialist-hagode-b13-572e36434f24",
+        "research-socialist-hagode-bpl-05d39f7a6539",
+        "research-socialist-hagode-cav-fe4213a03c1e",
+        "research-socialist-hagode-cve-ae73fc35cfb1",
+        "research-socialist-hagode-dgc-6aeeca7d6538",
+        "research-socialist-hagode-e2z-3563d562e845",
+        "research-socialist-hagode-exx-c0cfb7ed4df5",
+        "research-socialist-hagode-g2m-4cacf38a099c",
+        "research-socialist-hagode-gri-3cbbf9a96b92",
+        "research-socialist-hagode-h8p-dab7c829e03c",
+        "research-socialist-hagode-hwn-1a528a821406",
+        "research-socialist-hagode-ik3-70fc1c44fabd",
+        "research-socialist-hagode-j8x-8059e164af08",
+        "research-socialist-hagode-jtc-d1429dbbf5e9",
+        "research-socialist-hagode-kj5-27ba550016d5",
+        "research-socialist-hagode-l45-1ca14ae50ccf",
+        "research-socialist-hagode-lq8-67b2a646136b",
+        "research-socialist-hagode-mab-702ba928dade",
+        "research-socialist-hagode-my6-4fd7c6881443",
+        "research-socialist-hagode-njt-3062fb662b81",
+        "research-socialist-hagode-o5b-4d87673b7244",
+        "research-socialist-hagode-org-d88424d4baf6",
+        "research-socialist-hagode-pv8-6facdd422293",
+        "research-socialist-hagode-qfj-1aaca2b2320c",
+        "research-socialist-hagode-r7b-5210699d5c3e",
+        "research-socialist-hagode-s8w-a3bd4d5fff08",
+        "research-socialist-hagode-sty-4853aed94a62",
+        "research-socialist-hagode-tf8-f31681a994d9",
+        "research-socialist-hagode-tz8-091c098965fc",
+        "research-socialist-hagode-ul3-6c2f294dc2b4",
+        "research-socialist-hagode-v7v-ae5eefd8acf0",
+        "research-socialist-hagode-vy2-c8bcc2003d71",
+        "research-socialist-hagode-wtf-51ff26264fb7",
+        "research-socialist-hagode-x5r-6b67babf6010",
+        "research-socialist-hagode-xil-7620ee3b81ae",
+        "research-socialist-hagode-yeb-fb17cb55b2f6",
+        "research-socialist-hagode-zk7-b610db8ec0a6",
+        "research-socialist-hagode-1051-b6019e5a4ba8",
+        "research-socialist-hagode-10sk-78893700ff54",
+        "research-socialist-hagode-11fr-102561bc727b",
+        "research-socialist-hagode-121v-bc6987e616e2",
+        "research-socialist-hagode-12nx-c4435f47da8a",
+        "research-socialist-hagode-139i-cb10cbe5e0f6",
+        "research-socialist-hagode-1434-3023f967f5c0",
+        "research-socialist-hagode-14v5-e6a6a36d9808",
+        "research-socialist-hagode-161l-b34fabee2487",
+        "research-socialist-hagode-16nk-3dd619565b90",
+        "research-socialist-hagode-1763-f387040d9b70",
+        "research-socialist-hagode-187x-82a6edf0b324",
+        "research-socialist-hagode-18v2-6b3e42ce41eb",
+        "research-socialist-hagode-19kx-b4de2bca8fc0",
+        "research-socialist-hagode-1aj9-b8f623bc8efa",
+        "research-socialist-hagode-1bgh-bf5989a905bd",
+        "research-socialist-hagode-1ck1-a31445d7c0fe",
+        "research-socialist-hagode-1di2-d0214d6c7017",
+        "research-socialist-hagode-1egh-60ca9eba10cc",
+        "research-socialist-hagode-1f8r-cf32cf01b58a",
+        "research-socialist-hagode-1fjz-ff4aea92d681"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "hallel": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "nirtzah": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-socialist-hagode-6xk-04302d65c714",
+        "research-socialist-hagode-7hq-8e4eb2212da7",
+        "research-socialist-hagode-86c-ff25fe061a27",
+        "research-socialist-hagode-8n2-4bd971ae6d37"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 12,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 1
+  },
+  "recommendedSequences": [
+    {
+      "id": "socialist-translator-critical-frame",
+      "title": "Translator's critical historical frame",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-socialist-hagode-2wo-29c8ba2a3162",
+        "research-socialist-hagode-3ju-f4af202b0dd3",
+        "research-socialist-hagode-49a-e23593b0b30c"
+      ],
+      "beginnerContext": "Identify this as the 2025 translator's introduction to a 1919 socialist parody, not part of the original ritual; tell guests that the warning is required before any other excerpt from this source.",
+      "rationale": "The three passages form a complete responsible-use frame, naming the work's power while directly warning about racist historical ideas, anti-religious reduction, and revolutionary violence.",
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-socialist-source-opt-in",
+        "must-precede-all-other-source-sequences",
+        "adult-only",
+        "preserve-translator-credit-and-warning-in-full"
+      ],
+      "creditNotes": "Credit Shlomo Jack Enkin Lewis as the 2025 translator and preserve the Foundation for Yiddish Culture support acknowledgment contained in the passage.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 5, segment 1",
+        "end": "PDF p. 5, segment 3",
+        "locators": [
+          {
+            "id": "research-socialist-hagode-2wo-29c8ba2a3162",
+            "sourceLocation": "PDF p. 5, segment 1",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 3768,
+              "normalizedEndOffset": 4601
+            }
+          },
+          {
+            "id": "research-socialist-hagode-3ju-f4af202b0dd3",
+            "sourceLocation": "PDF p. 5, segment 2",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 4602,
+              "normalizedEndOffset": 5517
+            }
+          },
+          {
+            "id": "research-socialist-hagode-49a-e23593b0b30c",
+            "sourceLocation": "PDF p. 5, segment 3",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 5518,
+              "normalizedEndOffset": 7040
+            }
+          }
+        ]
+      },
+      "totalWords": 520,
+      "exactTextSequenceSha256": "16c40e02f535099e6145b1bdf54275f8651f89c518acce0d09fb0d1a186575b7",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "socialist-hunger-four-questions-exodus",
+      "title": "Hunger, Four Questions, and self-liberation",
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-socialist-hagode-6e9-b84a5a17ad9c",
+        "research-socialist-hagode-6xk-04302d65c714",
+        "research-socialist-hagode-8n2-4bd971ae6d37",
+        "research-socialist-hagode-93n-d1772dcc3629",
+        "research-socialist-hagode-b13-572e36434f24",
+        "research-socialist-hagode-bpl-05d39f7a6539",
+        "research-socialist-hagode-dgc-6aeeca7d6538"
+      ],
+      "beginnerContext": "After the translator's warning, explain that this is a 1919 class-parody of searching for chametz, Ha Lachma Anya, the Four Questions, Avadim Hayinu, and the command to remember the Exodus.",
+      "rationale": "Skipping only the intervening Yiddish counterparts, these English passages preserve the source's continuous argument from hunger at home through four class questions to its secular reading of liberation in this life.",
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-socialist-source-opt-in",
+        "translator-warning-must-appear-first",
+        "adult-only",
+        "label-anti-rabbinic-rhetoric-as-1919-source-voice",
+        "do-not-convert-hostile-class-labels-into-app-narration"
+      ],
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis's translation on the final sources page; note that intervening Yiddish counterparts are omitted, not reordered.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 7, segment 1",
+        "end": "PDF p. 13, segment 1",
+        "locators": [
+          {
+            "id": "research-socialist-hagode-6e9-b84a5a17ad9c",
+            "sourceLocation": "PDF p. 7, segment 1",
+            "locator": {
+              "label": "PDF p. 7",
+              "pageNumber": 7,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 8289,
+              "normalizedEndOffset": 8983
+            }
+          },
+          {
+            "id": "research-socialist-hagode-6xk-04302d65c714",
+            "sourceLocation": "PDF p. 7, segment 2",
+            "locator": {
+              "label": "PDF p. 7",
+              "pageNumber": 7,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 8984,
+              "normalizedEndOffset": 9709
+            }
+          },
+          {
+            "id": "research-socialist-hagode-8n2-4bd971ae6d37",
+            "sourceLocation": "PDF p. 9, segment 1",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 11198,
+              "normalizedEndOffset": 11794
+            }
+          },
+          {
+            "id": "research-socialist-hagode-93n-d1772dcc3629",
+            "sourceLocation": "PDF p. 9, segment 2",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 11795,
+              "normalizedEndOffset": 12719
+            }
+          },
+          {
+            "id": "research-socialist-hagode-b13-572e36434f24",
+            "sourceLocation": "PDF p. 11, segment 1",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 14295,
+              "normalizedEndOffset": 15176
+            }
+          },
+          {
+            "id": "research-socialist-hagode-bpl-05d39f7a6539",
+            "sourceLocation": "PDF p. 11, segment 2",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 15177,
+              "normalizedEndOffset": 15942
+            }
+          },
+          {
+            "id": "research-socialist-hagode-dgc-6aeeca7d6538",
+            "sourceLocation": "PDF p. 13, segment 1",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 17436,
+              "normalizedEndOffset": 18250
+            }
+          }
+        ]
+      },
+      "totalWords": 1005,
+      "exactTextSequenceSha256": "856dd6122023d36b2d8f1644664804d46cbf5a6780cff7d15250cdea10b5230d",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "socialist-labor-built-world",
+      "title": "Workers who built the world",
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-socialist-hagode-njt-3062fb662b81",
+        "research-socialist-hagode-o5b-4d87673b7244",
+        "research-socialist-hagode-pv8-6facdd422293"
+      ],
+      "beginnerContext": "Frame this as a period labor lament written after the First World War; explain the source's contrast between what workers produce and what they are able to keep, and offer a pass option for its harsh imagery.",
+      "rationale": "The English passages form a sustained account of starvation wages, housing and food insecurity, war, forced work, and bodily exhaustion, ending on the complete question of whether anyone hears the worker's cry.",
+      "themes": [
+        "social-justice",
+        "secular"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-labor-polemic-opt-in",
+        "translator-warning-must-appear-first",
+        "adult-only",
+        "historical-violence-and-deprivation-content-note",
+        "do-not-present-period-economic-comparisons-as-fact"
+      ],
+      "creditNotes": "Credit the 1919 authors and Shlomo Jack Enkin Lewis's 2025 English translation on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 21, segment 1",
+        "end": "PDF p. 23, segment 1",
+        "locators": [
+          {
+            "id": "research-socialist-hagode-njt-3062fb662b81",
+            "sourceLocation": "PDF p. 21, segment 1",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 30521,
+              "normalizedEndOffset": 31294
+            }
+          },
+          {
+            "id": "research-socialist-hagode-o5b-4d87673b7244",
+            "sourceLocation": "PDF p. 21, segment 2",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 31295,
+              "normalizedEndOffset": 32091
+            }
+          },
+          {
+            "id": "research-socialist-hagode-pv8-6facdd422293",
+            "sourceLocation": "PDF p. 23, segment 1",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 33524,
+              "normalizedEndOffset": 34254
+            }
+          }
+        ]
+      },
+      "totalWords": 426,
+      "exactTextSequenceSha256": "ad37d8b0b1391d57d9bccf9c17ee8ae5cfec8bec45afa86838f1f3ac427fc08b",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "socialist-maror-freedom-equality",
+      "title": "Maror, freedom, and equality",
+      "sectionIds": [
+        "maror",
+        "hallel"
+      ],
+      "insertionSectionId": "maror",
+      "segmentIds": [
+        "research-socialist-hagode-v7v-ae5eefd8acf0",
+        "research-socialist-hagode-x5r-6b67babf6010",
+        "research-socialist-hagode-xil-7620ee3b81ae",
+        "research-socialist-hagode-zk7-b610db8ec0a6",
+        "research-socialist-hagode-1051-b6019e5a4ba8",
+        "research-socialist-hagode-121v-bc6987e616e2",
+        "research-socialist-hagode-12nx-c4435f47da8a"
+      ],
+      "beginnerContext": "Explain that the text substitutes Freedom, Equality, and Socialism into familiar Maror and Hallel formulas; distinguish this historical parody from a blessing or creed endorsed by the app.",
+      "rationale": "Across alternating bilingual pages, the English sequence completes one liturgical arc from bodily bitterness to freedom, equality, women's dignity, liberation imagery, and collective self-reliance.",
+      "themes": [
+        "secular",
+        "social-justice",
+        "feminist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-socialist-and-anti-religious-rhetoric-opt-in",
+        "translator-warning-must-appear-first",
+        "adult-only",
+        "do-not-present-attacks-on-religion-as-project-voice",
+        "preserve-english-page-order-across-bilingual-source"
+      ],
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis; identify this as a translated parody of traditional Haggadah and Hallel formulas.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 27, segment 2",
+        "end": "PDF p. 33, segment 2",
+        "locators": [
+          {
+            "id": "research-socialist-hagode-v7v-ae5eefd8acf0",
+            "sourceLocation": "PDF p. 27, segment 2",
+            "locator": {
+              "label": "PDF p. 27",
+              "pageNumber": 27,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 40459,
+              "normalizedEndOffset": 41401
+            }
+          },
+          {
+            "id": "research-socialist-hagode-x5r-6b67babf6010",
+            "sourceLocation": "PDF p. 29, segment 1",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 42975,
+              "normalizedEndOffset": 43436
+            }
+          },
+          {
+            "id": "research-socialist-hagode-xil-7620ee3b81ae",
+            "sourceLocation": "PDF p. 29, segment 2",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 43437,
+              "normalizedEndOffset": 44578
+            }
+          },
+          {
+            "id": "research-socialist-hagode-zk7-b610db8ec0a6",
+            "sourceLocation": "PDF p. 31, segment 1",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 46087,
+              "normalizedEndOffset": 46836
+            }
+          },
+          {
+            "id": "research-socialist-hagode-1051-b6019e5a4ba8",
+            "sourceLocation": "PDF p. 31, segment 2",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 46837,
+              "normalizedEndOffset": 47683
+            }
+          },
+          {
+            "id": "research-socialist-hagode-121v-bc6987e616e2",
+            "sourceLocation": "PDF p. 33, segment 1",
+            "locator": {
+              "label": "PDF p. 33",
+              "pageNumber": 33,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 49315,
+              "normalizedEndOffset": 50108
+            }
+          },
+          {
+            "id": "research-socialist-hagode-12nx-c4435f47da8a",
+            "sourceLocation": "PDF p. 33, segment 2",
+            "locator": {
+              "label": "PDF p. 33",
+              "pageNumber": 33,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 50109,
+              "normalizedEndOffset": 50885
+            }
+          }
+        ]
+      },
+      "totalWords": 1032,
+      "exactTextSequenceSha256": "a469d02cbd3f2218344ab242bb52fb1865f2436e6602032fc5ba0e800a8a7e57",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "socialist-progress-and-public-good",
+      "title": "Progress and the public good",
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-socialist-hagode-1434-3023f967f5c0",
+        "research-socialist-hagode-161l-b34fabee2487",
+        "research-socialist-hagode-16nk-3dd619565b90",
+        "research-socialist-hagode-187x-82a6edf0b324",
+        "research-socialist-hagode-18v2-6b3e42ce41eb"
+      ],
+      "beginnerContext": "Describe this as a historical secular hymn that places faith in Progress and democratic control of shared prosperity; remind guests that the translator critiques the source's theory of progress.",
+      "rationale": "The English passages continue across the alternating Yiddish pages as one sustained closing hymn, ending with collective governance rather than an incomplete page fragment.",
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-socialist-source-opt-in",
+        "translator-warning-must-appear-first",
+        "adult-only",
+        "label-progress-theology-as-period-ideology-not-fact",
+        "do-not-endorse-revolutionary-violence"
+      ],
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis's translation, noting that the sequence follows the English pages of a bilingual edition.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 35, segment 1",
+        "end": "PDF p. 39, segment 2",
+        "locators": [
+          {
+            "id": "research-socialist-hagode-1434-3023f967f5c0",
+            "sourceLocation": "PDF p. 35, segment 1",
+            "locator": {
+              "label": "PDF p. 35",
+              "pageNumber": 35,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 51952,
+              "normalizedEndOffset": 52960
+            }
+          },
+          {
+            "id": "research-socialist-hagode-161l-b34fabee2487",
+            "sourceLocation": "PDF p. 37, segment 1",
+            "locator": {
+              "label": "PDF p. 37",
+              "pageNumber": 37,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 54489,
+              "normalizedEndOffset": 55279
+            }
+          },
+          {
+            "id": "research-socialist-hagode-16nk-3dd619565b90",
+            "sourceLocation": "PDF p. 37, segment 2",
+            "locator": {
+              "label": "PDF p. 37",
+              "pageNumber": 37,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 55280,
+              "normalizedEndOffset": 55946
+            }
+          },
+          {
+            "id": "research-socialist-hagode-187x-82a6edf0b324",
+            "sourceLocation": "PDF p. 39, segment 1",
+            "locator": {
+              "label": "PDF p. 39",
+              "pageNumber": 39,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 57309,
+              "normalizedEndOffset": 58141
+            }
+          },
+          {
+            "id": "research-socialist-hagode-18v2-6b3e42ce41eb",
+            "sourceLocation": "PDF p. 39, segment 2",
+            "locator": {
+              "label": "PDF p. 39",
+              "pageNumber": 39,
+              "localExtract": "research/source-extracts/socialist-hagode.txt",
+              "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+              "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+              "normalizedStartOffset": 58142,
+              "normalizedEndOffset": 59072
+            }
+          }
+        ]
+      },
+      "totalWords": 722,
+      "exactTextSequenceSha256": "9888c5977b054cf911de5ab670eee0bc8043d214670e21662f56ecd7ce62bb77",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-socialist-hagode-0-1fd564451840",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical quarantine: no searchable text."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-gri-3cbbf9a96b92",
+      "sourceLocation": "PDF p. 15, segment 2",
+      "reasons": [
+        "The passage explicitly presents violent struggle as the only road to liberation and cannot enter the project's peace-focused output."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-ik3-70fc1c44fabd",
+      "sourceLocation": "PDF p. 17, segment 1",
+      "reasons": [
+        "The passage repeats a racist and dehumanizing pseudo-evolutionary account identified as harmful by the translator."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-j8x-8059e164af08",
+      "sourceLocation": "PDF p. 17, segment 2",
+      "reasons": [
+        "The passage continues the source's cannibalism and primitive-humanity theory and is excluded under the translator's warning."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-l45-1ca14ae50ccf",
+      "sourceLocation": "PDF p. 19, segment 1",
+      "reasons": [
+        "The passage presents a reductive universal theory of slavery and historical progress as fact."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-lq8-67b2a646136b",
+      "sourceLocation": "PDF p. 19, segment 2",
+      "reasons": [
+        "The passage continues the harmful cannibalism-to-capitalism progress narrative."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-s8w-a3bd4d5fff08",
+      "sourceLocation": "PDF p. 25, segment 1",
+      "reasons": [
+        "The passage combines a call to wield a staff with glorified worker bloodshed and is incompatible with peace-focused runtime output."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-sty-4853aed94a62",
+      "sourceLocation": "PDF p. 25, segment 2",
+      "reasons": [
+        "The passage depicts sacrificing a capitalist beast and crosses into an incomplete violent parody."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-1aj9-b8f623bc8efa",
+      "sourceLocation": "PDF p. 41, segment 1",
+      "reasons": [
+        "The closing parody collectively attacks Christianity and religion and includes hostile stereotypes not suitable for runtime output."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-1ck1-a31445d7c0fe",
+      "sourceLocation": "PDF p. 43, segment 1",
+      "reasons": [
+        "The cumulative parody uses demeaning labels and exists mainly to set up a violent revolutionary ending."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-1egh-60ca9eba10cc",
+      "sourceLocation": "PDF p. 45, segment 1",
+      "reasons": [
+        "The cumulative song glorifies a revolution that slaughters its predecessor and is excluded under the peace-focused policy."
+      ]
+    },
+    {
+      "id": "research-socialist-hagode-1fjz-ff4aea92d681",
+      "sourceLocation": "PDF p. 47, segment 1",
+      "reasons": [
+        "License and file-access boilerplate belongs in research metadata and the final credits page, not a ritual reading."
+      ]
+    }
+  ],
+  "notes": [
+    "All recommended reading sequences are English-only paths through an alternating Yiddish-English edition; skipped Yiddish counterparts are not omitted from the local corpus.",
+    "No sequence from this source may appear unless the translator's critical frame appears first and the user has chosen an explicit secular labor-history path.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

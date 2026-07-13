@@ -1,0 +1,2909 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mayer-ashkenaz",
+  "title": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+  "creator": "Isaac Gantwerk Mayer",
+  "family": "traditional-liturgical",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A highly ambitious 2025–2026 Ashkenazi Haggadah combining original inclusive translation, multilingual verse, historical additions, games, and commentary; the canonical extraction currently corrupts much of its ritual core, so this dossier recommends only intact traditional supplements and closing sequences while recording the source as a future backbone after extraction repair.",
+  "sourceAssessment": {
+    "voice": "Learned, inventive, multilingual, playful, traditional, and editorially idiosyncratic, shifting among formal liturgy, verse directions, scholarly notes, games, and contemporary political material.",
+    "bestUses": [
+      "Opt-in traditional and specialist supplements that preserve the edition's distinctive historical and multilingual voice",
+      "An intact women's-history-style Abraham narrative, medieval or Western Ashkenazi songs, and closing cumulative-song activities",
+      "A future traditional backbone after the core Kadesh-through-meal extraction is repaired and visually verified"
+    ],
+    "beginnerRisks": [
+      "Control characters and scrambled Hebrew affect most core ritual segments, so they cannot enter reviewed sequences under the current local quality policy.",
+      "The intact selections still assume comfort with textual variants, historical notes, many languages, and insider humor.",
+      "Original additions include current politics, violence, land and Temple claims, games, and third-party works that need explicit gates and complete host framing."
+    ],
+    "politicalContext": "The edition includes traditional land and Jerusalem liturgy, explicit modern foreign-policy satire, a current hostage prayer, and other dated political material. None belongs in default peace-focused assembly without an explicit current or traditional gate; the source's usable ritual core must remain non-exclusive and cannot imply collective blame.",
+    "creditContext": "Credit Isaac Gantwerk Mayer, identify Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions under CC BY-SA 4.0, link the license, indicate modifications, and preserve ShareAlike terms. Every separately sourced addition, quotation, song, game, or literary excerpt requires item-level rights and attribution review."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 83,
+    "segmentCount": 307,
+    "exactCharacterCount": 252955,
+    "exactWordCount": 45448,
+    "reconstructionSha256": "2427c0f83ec6013d7e5c2c99798c57f2359ce303e14f74beea1153834fb3ab84",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer",
+      "Review separately sourced additions item by item",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=61266"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 18,
+      "segmentIds": [
+        "research-mayer-ashkenaz-0-08684969b8db",
+        "research-mayer-ashkenaz-b3-a1c82b1ea8cc",
+        "research-mayer-ashkenaz-y2-7e763406a785",
+        "research-mayer-ashkenaz-1iw-8ded5562dd6a",
+        "research-mayer-ashkenaz-250-80411d031714",
+        "research-mayer-ashkenaz-2qf-c78882c109a3",
+        "research-mayer-ashkenaz-3bm-2d4132b717d5",
+        "research-mayer-ashkenaz-3y2-8d04d4772561",
+        "research-mayer-ashkenaz-4m3-85eead85248d",
+        "research-mayer-ashkenaz-56d-8556c9f31683",
+        "research-mayer-ashkenaz-5ri-e71437d25c51",
+        "research-mayer-ashkenaz-6hc-6ea4a81a25a6",
+        "research-mayer-ashkenaz-734-439d81669a56",
+        "research-mayer-ashkenaz-7ns-b31dd91fe9e2",
+        "research-mayer-ashkenaz-894-1cc828968c23",
+        "research-mayer-ashkenaz-8t2-fa8458bde8df",
+        "research-mayer-ashkenaz-9jk-cb3da16180f3",
+        "research-mayer-ashkenaz-3fwx-cdfb36353d11"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-mayer-ashkenaz-a7z-cac674b190ae",
+        "research-mayer-ashkenaz-b0p-7bcd57fd0606",
+        "research-mayer-ashkenaz-blw-735dae418214"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 138,
+      "segmentIds": [
+        "research-mayer-ashkenaz-cbv-d55d81ca5423",
+        "research-mayer-ashkenaz-efe-c6154d8eaf2f",
+        "research-mayer-ashkenaz-f47-c7172be91f81",
+        "research-mayer-ashkenaz-fzw-f2d988a9870c",
+        "research-mayer-ashkenaz-gjg-6d93999a8acb",
+        "research-mayer-ashkenaz-h58-a961f1361c48",
+        "research-mayer-ashkenaz-hse-3ac4a6f442d6",
+        "research-mayer-ashkenaz-ilv-d7178221439b",
+        "research-mayer-ashkenaz-j61-cb302b859fa4",
+        "research-mayer-ashkenaz-jo5-3ea12ebbef33",
+        "research-mayer-ashkenaz-k8h-2a993b522f2b",
+        "research-mayer-ashkenaz-knr-dcc577f448e2",
+        "research-mayer-ashkenaz-l7n-1403b6553d7e",
+        "research-mayer-ashkenaz-lsu-5a842b8c2f1b",
+        "research-mayer-ashkenaz-mkw-fe112ba40edb",
+        "research-mayer-ashkenaz-n6r-70d84bff45fc",
+        "research-mayer-ashkenaz-18oq-badf5f09114f",
+        "research-mayer-ashkenaz-19fd-383cc0f8691a",
+        "research-mayer-ashkenaz-1a1i-eeab134b9310",
+        "research-mayer-ashkenaz-1ank-ce2255485602",
+        "research-mayer-ashkenaz-1biw-2f1832abae81",
+        "research-mayer-ashkenaz-1c93-08c9868eccc6",
+        "research-mayer-ashkenaz-1cqb-c20ba6afb694",
+        "research-mayer-ashkenaz-1dbz-15cab87e2ffc",
+        "research-mayer-ashkenaz-1dyc-c12497323ef0",
+        "research-mayer-ashkenaz-1erq-a5c28585754a",
+        "research-mayer-ashkenaz-1f62-409243cce6a7",
+        "research-mayer-ashkenaz-1foc-ae292e149999",
+        "research-mayer-ashkenaz-1g8o-a2d26220eb71",
+        "research-mayer-ashkenaz-1gtd-ccaa6b6ba518",
+        "research-mayer-ashkenaz-1hp1-bde46566a0ae",
+        "research-mayer-ashkenaz-1id9-81aaf349bbc0",
+        "research-mayer-ashkenaz-1jck-833b3f657b56",
+        "research-mayer-ashkenaz-1jyx-cfe7e5c51c0d",
+        "research-mayer-ashkenaz-1kwx-39ac4a7d13c8",
+        "research-mayer-ashkenaz-1lhq-e6506b72996c",
+        "research-mayer-ashkenaz-1m25-c26bbfc06b23",
+        "research-mayer-ashkenaz-1q4s-117211d1ae36",
+        "research-mayer-ashkenaz-1rpj-b1c36ec143a4",
+        "research-mayer-ashkenaz-1tu4-8af2b80f2861",
+        "research-mayer-ashkenaz-1wfz-244f5820da56",
+        "research-mayer-ashkenaz-1zbu-ebbaefaaa2c6",
+        "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+        "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+        "research-mayer-ashkenaz-235x-ad4aa248e933",
+        "research-mayer-ashkenaz-23st-976da6d2a99b",
+        "research-mayer-ashkenaz-248e-8f519e900a4b",
+        "research-mayer-ashkenaz-2d5n-47d9d70b11cd",
+        "research-mayer-ashkenaz-2orw-c111a0d463bb",
+        "research-mayer-ashkenaz-31wm-853a35e09231",
+        "research-mayer-ashkenaz-3329-6e552cbdb8d7",
+        "research-mayer-ashkenaz-33ov-983379fdc10c",
+        "research-mayer-ashkenaz-35u8-7d772305b6fe",
+        "research-mayer-ashkenaz-379g-a020830d7682",
+        "research-mayer-ashkenaz-3aaf-9477ae9352da",
+        "research-mayer-ashkenaz-3aw9-d1c3523acd68",
+        "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+        "research-mayer-ashkenaz-3hd8-7092887beb15",
+        "research-mayer-ashkenaz-3m29-7b124e3e9c62",
+        "research-mayer-ashkenaz-3ms5-3cb312175aed",
+        "research-mayer-ashkenaz-3ngt-e973a938891a",
+        "research-mayer-ashkenaz-3o0o-0a3aca23fa99",
+        "research-mayer-ashkenaz-3oll-3936839d10e5",
+        "research-mayer-ashkenaz-3p7t-65dd560ef831",
+        "research-mayer-ashkenaz-3prq-6af6c8feb492",
+        "research-mayer-ashkenaz-3qc0-a79ea29f72fe",
+        "research-mayer-ashkenaz-3qyt-b2752031473d",
+        "research-mayer-ashkenaz-3ris-0c268db67dfe",
+        "research-mayer-ashkenaz-3s1m-6a57aba1f373",
+        "research-mayer-ashkenaz-3srs-f6300e449fe6",
+        "research-mayer-ashkenaz-3t35-0b767b7b641d",
+        "research-mayer-ashkenaz-3tqp-a9b3e73884e0",
+        "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+        "research-mayer-ashkenaz-3uy4-6b36896af084",
+        "research-mayer-ashkenaz-3vkg-a4f092b9792a",
+        "research-mayer-ashkenaz-3w4y-d4cfb07b21f1",
+        "research-mayer-ashkenaz-3wqq-51aee5481649",
+        "research-mayer-ashkenaz-3xmz-ceaa08384105",
+        "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+        "research-mayer-ashkenaz-3yqh-59a48139de78",
+        "research-mayer-ashkenaz-3z1z-969ac85afd71",
+        "research-mayer-ashkenaz-3zsq-3542e86dd823",
+        "research-mayer-ashkenaz-40w4-ec3de559f10f",
+        "research-mayer-ashkenaz-41iz-09e52d19383a",
+        "research-mayer-ashkenaz-427j-04a59d8d21c7",
+        "research-mayer-ashkenaz-42vk-275ff9f139ea",
+        "research-mayer-ashkenaz-43m9-556bac4ea742",
+        "research-mayer-ashkenaz-43xl-17713f67044f",
+        "research-mayer-ashkenaz-44im-8c0185f26bdb",
+        "research-mayer-ashkenaz-459a-c88cb91803fb",
+        "research-mayer-ashkenaz-45ul-da4a9cb8e33d",
+        "research-mayer-ashkenaz-46mt-f71da6f120b3",
+        "research-mayer-ashkenaz-474a-791f37419c4e",
+        "research-mayer-ashkenaz-47zo-e15ce4bc40a2",
+        "research-mayer-ashkenaz-48oa-e9f60d16ab8b",
+        "research-mayer-ashkenaz-494c-06eea2156b84",
+        "research-mayer-ashkenaz-49mv-6e9a5b20c91b",
+        "research-mayer-ashkenaz-4ahb-ced08ce4419f",
+        "research-mayer-ashkenaz-4b3v-601bfa81cd58",
+        "research-mayer-ashkenaz-4bsm-201312c70e84",
+        "research-mayer-ashkenaz-4cbd-ecd212b00adb",
+        "research-mayer-ashkenaz-4cvz-8a187d06ffe7",
+        "research-mayer-ashkenaz-4de4-4784f0200f04",
+        "research-mayer-ashkenaz-4dzj-93ba09d02556",
+        "research-mayer-ashkenaz-4eo2-d9bc177b6647",
+        "research-mayer-ashkenaz-4fc0-cfac783d4b49",
+        "research-mayer-ashkenaz-4fww-65deeffc94c3",
+        "research-mayer-ashkenaz-4gh0-3198f441311e",
+        "research-mayer-ashkenaz-4h0v-84933a8bf831",
+        "research-mayer-ashkenaz-4hrc-9667bbc7b1cb",
+        "research-mayer-ashkenaz-4iav-54a4912f494e",
+        "research-mayer-ashkenaz-4j1x-1ce2365970ae",
+        "research-mayer-ashkenaz-4jsx-d1931fdf6ec8",
+        "research-mayer-ashkenaz-4zzn-432b73318e81",
+        "research-mayer-ashkenaz-50l4-512e615d6e6e",
+        "research-mayer-ashkenaz-514y-d3c327bd3681",
+        "research-mayer-ashkenaz-51s5-dccd4c175e1e",
+        "research-mayer-ashkenaz-52dq-b22983dc0ebf",
+        "research-mayer-ashkenaz-52v5-f6c3373aa1db",
+        "research-mayer-ashkenaz-53en-35fcd34f69ee",
+        "research-mayer-ashkenaz-53zb-1750d26d5e65",
+        "research-mayer-ashkenaz-54vy-300afa496ac5",
+        "research-mayer-ashkenaz-55eg-71342ceb8779",
+        "research-mayer-ashkenaz-55yo-e3809d517eb8",
+        "research-mayer-ashkenaz-56ie-7a953525eac4",
+        "research-mayer-ashkenaz-57i3-e2d755409a30",
+        "research-mayer-ashkenaz-580e-be1279019d35",
+        "research-mayer-ashkenaz-58jt-d82c952528ef",
+        "research-mayer-ashkenaz-590z-08928a690fc3",
+        "research-mayer-ashkenaz-59mp-6e6003b7dc0e",
+        "research-mayer-ashkenaz-5adg-27289d5c165f",
+        "research-mayer-ashkenaz-5azg-93ef970909c5",
+        "research-mayer-ashkenaz-5bjp-c59cb9a7aa82",
+        "research-mayer-ashkenaz-5c2x-4638c8a5c11e",
+        "research-mayer-ashkenaz-5cpp-d5ac590cdf09",
+        "research-mayer-ashkenaz-5d6u-c3afcdb24415",
+        "research-mayer-ashkenaz-5drf-6f22ba08f57d",
+        "research-mayer-ashkenaz-5eec-bd06ddab9b8e"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-mayer-ashkenaz-24up-622d627ac229"
+      ]
+    },
+    "maror": {
+      "segmentCount": 51,
+      "segmentIds": [
+        "research-mayer-ashkenaz-d7w-ea784adb9882",
+        "research-mayer-ashkenaz-du4-6ed12a9e3e4f",
+        "research-mayer-ashkenaz-nth-80f17ee8d9d5",
+        "research-mayer-ashkenaz-obc-57cf3f785e0e",
+        "research-mayer-ashkenaz-p1r-5f0d09c84d43",
+        "research-mayer-ashkenaz-pno-f613c829b579",
+        "research-mayer-ashkenaz-q9u-c9c608fc4941",
+        "research-mayer-ashkenaz-qvu-2efc7ed7c266",
+        "research-mayer-ashkenaz-rgy-15940b279ee6",
+        "research-mayer-ashkenaz-s29-e6b770f04b37",
+        "research-mayer-ashkenaz-t0g-84b79c5893e0",
+        "research-mayer-ashkenaz-tjg-507a0daad005",
+        "research-mayer-ashkenaz-u4a-a0fcfb27c8d0",
+        "research-mayer-ashkenaz-up7-3bed16034e34",
+        "research-mayer-ashkenaz-v8l-c9ee5a7cca08",
+        "research-mayer-ashkenaz-vsd-f5cf1be49797",
+        "research-mayer-ashkenaz-weh-de7c22303f16",
+        "research-mayer-ashkenaz-wz5-922065bd36f2",
+        "research-mayer-ashkenaz-xiq-a02576649968",
+        "research-mayer-ashkenaz-y6k-69125da8e182",
+        "research-mayer-ashkenaz-yqa-d42970dbe2a3",
+        "research-mayer-ashkenaz-zar-0b5065fb6974",
+        "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+        "research-mayer-ashkenaz-10i8-6196eaa0a502",
+        "research-mayer-ashkenaz-112t-fae51396893a",
+        "research-mayer-ashkenaz-11na-49caaa462ea1",
+        "research-mayer-ashkenaz-128o-55a3625113dc",
+        "research-mayer-ashkenaz-12ui-d6177c6d044e",
+        "research-mayer-ashkenaz-13g4-e3b45d60cf37",
+        "research-mayer-ashkenaz-140j-22e5f058120d",
+        "research-mayer-ashkenaz-14l0-c365b8817888",
+        "research-mayer-ashkenaz-15ad-18d6ab8fa345",
+        "research-mayer-ashkenaz-15v7-d746f44f3235",
+        "research-mayer-ashkenaz-16vw-ed15560886b3",
+        "research-mayer-ashkenaz-17f7-d6f2646600c5",
+        "research-mayer-ashkenaz-181o-236fd997655e",
+        "research-mayer-ashkenaz-1q4s-117211d1ae36",
+        "research-mayer-ashkenaz-1rpj-b1c36ec143a4",
+        "research-mayer-ashkenaz-1sn3-a0d893c851c9",
+        "research-mayer-ashkenaz-1t4k-786150c8cdb9",
+        "research-mayer-ashkenaz-1tu4-8af2b80f2861",
+        "research-mayer-ashkenaz-1uoh-3ba0d583c793",
+        "research-mayer-ashkenaz-1v9g-047314838981",
+        "research-mayer-ashkenaz-1vui-e0e0655ad472",
+        "research-mayer-ashkenaz-2005-4ac12922c1f8",
+        "research-mayer-ashkenaz-25w4-33dbdaef6c54",
+        "research-mayer-ashkenaz-26j6-6374622b7255",
+        "research-mayer-ashkenaz-274n-4284e5c4a9f8",
+        "research-mayer-ashkenaz-27t3-dc8a60934ba1",
+        "research-mayer-ashkenaz-2orw-c111a0d463bb",
+        "research-mayer-ashkenaz-2pdb-cee145b1bb95"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 5,
+      "segmentIds": [
+        "research-mayer-ashkenaz-28eg-c498a502cda0",
+        "research-mayer-ashkenaz-292i-cc318f97c298",
+        "research-mayer-ashkenaz-29p2-18bf29f61674",
+        "research-mayer-ashkenaz-2ac1-9453bcd524b8",
+        "research-mayer-ashkenaz-2njq-779b4acaf75c"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 73,
+      "segmentIds": [
+        "research-mayer-ashkenaz-1m25-c26bbfc06b23",
+        "research-mayer-ashkenaz-1mvu-ceb15cc4adfc",
+        "research-mayer-ashkenaz-1nnk-bcf81fb443ef",
+        "research-mayer-ashkenaz-1nx4-9b47d5cf6ea8",
+        "research-mayer-ashkenaz-1og2-f46eea3889f0",
+        "research-mayer-ashkenaz-1ozc-32798c9b1325",
+        "research-mayer-ashkenaz-1peh-e7f227c6eb1e",
+        "research-mayer-ashkenaz-1q4s-117211d1ae36",
+        "research-mayer-ashkenaz-1qje-1f2b2e50fd45",
+        "research-mayer-ashkenaz-1r3n-0390b09101d0",
+        "research-mayer-ashkenaz-1wfz-244f5820da56",
+        "research-mayer-ashkenaz-1x4m-783a13e64125",
+        "research-mayer-ashkenaz-1xqz-316900cace88",
+        "research-mayer-ashkenaz-1ynu-c3b28486a1a6",
+        "research-mayer-ashkenaz-2005-4ac12922c1f8",
+        "research-mayer-ashkenaz-20s2-40a0bf426fc5",
+        "research-mayer-ashkenaz-21cd-0540651a4785",
+        "research-mayer-ashkenaz-2ayp-0da3b24c2a2c",
+        "research-mayer-ashkenaz-2bmw-02f0996f2e12",
+        "research-mayer-ashkenaz-2c9r-c204130de027",
+        "research-mayer-ashkenaz-2cob-00cf31b201a0",
+        "research-mayer-ashkenaz-2d5n-47d9d70b11cd",
+        "research-mayer-ashkenaz-2e5n-813c19c23df7",
+        "research-mayer-ashkenaz-2emn-5a08d988c7b8",
+        "research-mayer-ashkenaz-2fcf-7ae0938b79c6",
+        "research-mayer-ashkenaz-2g0l-a05dad985ed3",
+        "research-mayer-ashkenaz-2gig-871afb5330b6",
+        "research-mayer-ashkenaz-2h1d-980b7d28de40",
+        "research-mayer-ashkenaz-2hkc-c56ba8e9abae",
+        "research-mayer-ashkenaz-2i31-91d21e96cd3c",
+        "research-mayer-ashkenaz-2iz0-1aeb2bc60230",
+        "research-mayer-ashkenaz-2jkr-35d9a42c2658",
+        "research-mayer-ashkenaz-2ka6-1b0d8ebf2ca8",
+        "research-mayer-ashkenaz-2kxr-c1b36dc6d3c8",
+        "research-mayer-ashkenaz-2lma-f5daf2fd35ec",
+        "research-mayer-ashkenaz-2m7i-8f7f065a248d",
+        "research-mayer-ashkenaz-2my1-64e01f853e4d",
+        "research-mayer-ashkenaz-2njq-779b4acaf75c",
+        "research-mayer-ashkenaz-2o59-050aeb11419a",
+        "research-mayer-ashkenaz-2pzl-434140125d31",
+        "research-mayer-ashkenaz-2qkl-8da1092363e8",
+        "research-mayer-ashkenaz-2ran-41f2a4158d39",
+        "research-mayer-ashkenaz-2rwm-660e2ef17286",
+        "research-mayer-ashkenaz-2skc-d050760d60fd",
+        "research-mayer-ashkenaz-2tbv-52b694397897",
+        "research-mayer-ashkenaz-2twn-ea486ae58d1a",
+        "research-mayer-ashkenaz-2uh6-f91bef69641f",
+        "research-mayer-ashkenaz-2v72-e076cb236d67",
+        "research-mayer-ashkenaz-2vui-020884bf646b",
+        "research-mayer-ashkenaz-2whq-0b8a40386722",
+        "research-mayer-ashkenaz-2x6e-2de042c22426",
+        "research-mayer-ashkenaz-2xrl-529b0631967d",
+        "research-mayer-ashkenaz-2ydk-825e57f2cb2d",
+        "research-mayer-ashkenaz-2z7v-7a080b48eaab",
+        "research-mayer-ashkenaz-2zty-7f6b91a02094",
+        "research-mayer-ashkenaz-30hn-9341029fcfc3",
+        "research-mayer-ashkenaz-3174-c8b83ada8ebd",
+        "research-mayer-ashkenaz-349w-63a062c934a7",
+        "research-mayer-ashkenaz-3571-de25111b5898",
+        "research-mayer-ashkenaz-36gt-57d4f20d31d4",
+        "research-mayer-ashkenaz-379g-a020830d7682",
+        "research-mayer-ashkenaz-37tr-209fe6e59fe5",
+        "research-mayer-ashkenaz-38dz-cbd48b1d4247",
+        "research-mayer-ashkenaz-3919-3085105bf4c8",
+        "research-mayer-ashkenaz-39qn-4343ff7c88ba",
+        "research-mayer-ashkenaz-3bk3-a6d83e80b581",
+        "research-mayer-ashkenaz-3c39-ae48ae935c15",
+        "research-mayer-ashkenaz-3cmt-6ef442ce7585",
+        "research-mayer-ashkenaz-3d53-2e3edf053ca9",
+        "research-mayer-ashkenaz-3dr7-260a3e2d4db2",
+        "research-mayer-ashkenaz-3edb-8f4b3113e6f5",
+        "research-mayer-ashkenaz-3ezw-55c9462047fb",
+        "research-mayer-ashkenaz-3fb8-1dfb40be95ca"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 31,
+      "segmentIds": [
+        "research-mayer-ashkenaz-cbv-d55d81ca5423",
+        "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+        "research-mayer-ashkenaz-3i0v-0c6bbc28f20c",
+        "research-mayer-ashkenaz-3ik9-93cd034d6509",
+        "research-mayer-ashkenaz-3j4v-e4ea67c16f28",
+        "research-mayer-ashkenaz-3jqv-675148ee0360",
+        "research-mayer-ashkenaz-3kpj-f2be9c3c97f1",
+        "research-mayer-ashkenaz-3lh3-482c5b88b4a8",
+        "research-mayer-ashkenaz-4kku-7bb4aca4e460",
+        "research-mayer-ashkenaz-4lfp-30609bf38557",
+        "research-mayer-ashkenaz-4m0w-954ccef71bae",
+        "research-mayer-ashkenaz-4mkr-9928403b4e5d",
+        "research-mayer-ashkenaz-4n6l-1b7fc7ad94f8",
+        "research-mayer-ashkenaz-4nrj-aa2d854e08f2",
+        "research-mayer-ashkenaz-4o5x-2e4925202891",
+        "research-mayer-ashkenaz-4on2-b2f33aad4531",
+        "research-mayer-ashkenaz-4pfj-82f87f8f5235",
+        "research-mayer-ashkenaz-4q4c-b3eb7afe9cc2",
+        "research-mayer-ashkenaz-4qyx-0d5107d87a53",
+        "research-mayer-ashkenaz-4rjm-47f82697012a",
+        "research-mayer-ashkenaz-4s32-b75f6f3c0149",
+        "research-mayer-ashkenaz-4srm-f2c6d2eb3b22",
+        "research-mayer-ashkenaz-4tk2-13cfdb336bbd",
+        "research-mayer-ashkenaz-4u7e-7e1cd1d63e59",
+        "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+        "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+        "research-mayer-ashkenaz-4wdb-8d560939e426",
+        "research-mayer-ashkenaz-4xg5-81c8c68b4bca",
+        "research-mayer-ashkenaz-4xz3-8ac9502eb693",
+        "research-mayer-ashkenaz-4ymi-ba302ba5586b",
+        "research-mayer-ashkenaz-4zd4-981f3344788c"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 260,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 2,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 3
+  },
+  "recommendedSequences": [
+    {
+      "id": "mayer-ashkenaz-festival-sanctification",
+      "title": "Festival sanctification and Exodus memory",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-734-439d81669a56",
+        "research-mayer-ashkenaz-7ns-b31dd91fe9e2"
+      ],
+      "beginnerContext": "Explain that this is an extended traditional sanctification passage linking Passover to the Exodus and festival calendar. Offer it only to a table seeking substantial liturgy, define the sea and vengeance imagery, and follow with the simpler wine blessing from a separate verified module.",
+      "rationale": "These two adjacent intact records preserve one complete liturgical movement in an otherwise control-character-corrupted Kadesh extraction; keeping them together prevents a partial clause from standing alone.",
+      "themes": [
+        "traditional"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "nontriumphalist-sea-and-vengeance-framing",
+        "separate-wine-blessing-module-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer, identify the CC BY-SA 4.0 edition, indicate changes, and preserve ShareAlike terms.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 3, segment 7",
+        "end": "PDF p. 4, segment 1",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-734-439d81669a56",
+            "sourceLocation": "PDF p. 3, segment 7",
+            "locator": {
+              "label": "PDF p. 3",
+              "pageNumber": 3,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 9184,
+              "normalizedEndOffset": 9927
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-7ns-b31dd91fe9e2",
+            "sourceLocation": "PDF p. 4, segment 1",
+            "locator": {
+              "label": "PDF p. 4",
+              "pageNumber": 4,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 9928,
+              "normalizedEndOffset": 10695
+            }
+          }
+        ]
+      },
+      "totalWords": 275,
+      "exactTextSequenceSha256": "f0da7eb1130368b6289e9f42f89de605a67e4cd61a00a40fb315905543bfd636",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-abraham-and-nimrod",
+      "title": "Abraham challenges the idols",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-weh-de7c22303f16",
+        "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+        "research-mayer-ashkenaz-128o-55a3625113dc"
+      ],
+      "beginnerContext": "Introduce this as a traditional expansion about young Abraham challenging his father's idols and the ruler Nimrod, not part of the basic Exodus outline. Name the characters, summarize the missing transitions, and use it only with an adult or well-facilitated table.",
+      "rationale": "The three source-order intact records preserve the central confrontation in the edition's long Judeo-Arabic Abraham narrative while skipping corrupted intervening continuations; a host bridge is essential but the source's distinctive story remains recognizable.",
+      "themes": [
+        "traditional",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "adult-or-facilitated-mixed-age-use",
+        "missing-transition-bridges-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and separately verify the historical source and translation attribution printed for this Judeo-Arabic narrative.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 13, segment 7",
+        "end": "PDF p. 14, segment 8",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-weh-de7c22303f16",
+            "sourceLocation": "PDF p. 13, segment 7",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 41993,
+              "normalizedEndOffset": 42736
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+            "sourceLocation": "PDF p. 14, segment 4",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 46509,
+              "normalizedEndOffset": 47311
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-128o-55a3625113dc",
+            "sourceLocation": "PDF p. 14, segment 8",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 49560,
+              "normalizedEndOffset": 50345
+            }
+          }
+        ]
+      },
+      "totalWords": 411,
+      "exactTextSequenceSha256": "614643f3b5f91345150552367079dd280dec8bf62b708189d339d8ca44155f7f",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-exodus-piyyut",
+      "title": "An Exodus poem from suffering to redemption",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+        "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+        "research-mayer-ashkenaz-23st-976da6d2a99b"
+      ],
+      "beginnerContext": "State the narrative arc before the poem: the Israelites suffered slavery, liberation came through destructive plagues, they crossed the sea, and the liturgy turns toward future celebration. Frame firstborn and enemy-death imagery with sorrow and keep Temple hopes within inherited historical liturgy.",
+      "rationale": "Three source-order intact records form a continuous piyyut from oppression through plagues and escape into the redemption blessing, preserving the edition's traditional poetic voice without relying on corrupted core pages.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "nontriumphalist-firstborn-and-sea-framing",
+        "temple-and-land-language-context",
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and retain the source's attribution for the piyyut and any historical translation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 31, segment 3",
+        "end": "PDF p. 31, segment 6",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+            "sourceLocation": "PDF p. 31, segment 3",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 95872,
+              "normalizedEndOffset": 96661
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+            "sourceLocation": "PDF p. 31, segment 4",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 96662,
+              "normalizedEndOffset": 97412
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-23st-976da6d2a99b",
+            "sourceLocation": "PDF p. 31, segment 6",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 98237,
+              "normalizedEndOffset": 98797
+            }
+          }
+        ]
+      },
+      "totalWords": 375,
+      "exactTextSequenceSha256": "ef249dbf5f03c112d24b50ff5dbdc6914a855998fd844a2fec84a8d69d1db8f5",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-buber-closing-story",
+      "title": "A Hasidic closing story",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+        "research-mayer-ashkenaz-3hd8-7092887beb15"
+      ],
+      "beginnerContext": "Explain that Nirtzah closes the formal Seder and that this is a historical Hasidic story about longing and readiness. Define the military conscription context, identify the quoted Zion language as inherited in the story, and make the long reading optional.",
+      "rationale": "The two adjacent records preserve the complete narrative setup and resolution of the edited Martin Buber story, rather than quoting its final Zion line without its historical frame.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "traditional-without-social-justice-only",
+        "historical-zion-language-context",
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-rights-and-credit-review"
+      ],
+      "creditNotes": "Credit Mayer and preserve the printed Martin Buber and Tales of the Hasidim attribution; confirm item-level reuse status before runtime approval.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 55, segment 1",
+        "end": "PDF p. 55, segment 2",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+            "sourceLocation": "PDF p. 55, segment 1",
+            "locator": {
+              "label": "PDF p. 55",
+              "pageNumber": 55,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 161716,
+              "normalizedEndOffset": 162475
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3hd8-7092887beb15",
+            "sourceLocation": "PDF p. 55, segment 2",
+            "locator": {
+              "label": "PDF p. 55",
+              "pageNumber": 55,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 162476,
+              "normalizedEndOffset": 163326
+            }
+          }
+        ]
+      },
+      "totalWords": 279,
+      "exactTextSequenceSha256": "d2d62d13fee909270766539625fb54d87b1e009338ccd0391e65a6121d3f1b90",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-western-yiddish-closing-song",
+      "title": "Western Yiddish build-well song",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3ris-0c268db67dfe",
+        "research-mayer-ashkenaz-3s1m-6a57aba1f373"
+      ],
+      "beginnerContext": "Introduce this as a Western Ashkenazi closing song whose traditional refrain hopes for the Temple's rebuilding. Give a transliteration and one repeated response, explain the historical liturgical meaning, and let guests listen instead of sing.",
+      "rationale": "The adjacent intact records preserve the song's historical note, refrain, and cumulative alphabetic continuation as one specialist musical unit.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "playful"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "temple-language-context",
+        "participation-cue-required",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and the Western Ashkenazi traditional source identified in the edition; indicate any verses omitted.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 60, segment 2",
+        "end": "PDF p. 60, segment 3",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-3ris-0c268db67dfe",
+            "sourceLocation": "PDF p. 60, segment 2",
+            "locator": {
+              "label": "PDF p. 60",
+              "pageNumber": 60,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 175636,
+              "normalizedEndOffset": 176313
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3s1m-6a57aba1f373",
+            "sourceLocation": "PDF p. 60, segment 3",
+            "locator": {
+              "label": "PDF p. 60",
+              "pageNumber": 60,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 176314,
+              "normalizedEndOffset": 177255
+            }
+          }
+        ]
+      },
+      "totalWords": 268,
+      "exactTextSequenceSha256": "28d467d9f5148343fa254383157907a086318e3e2398f3c6a4ce5a55a636bf17",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-echad-mi-yodea",
+      "title": "Who knows one?",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+        "research-mayer-ashkenaz-3uy4-6b36896af084",
+        "research-mayer-ashkenaz-3vkg-a4f092b9792a"
+      ],
+      "beginnerContext": "Tell guests this is a cumulative number song near the end of the Seder. Teach the question-and-response pattern, clarify unfamiliar references only when they first appear, and stop at a natural number if time is short.",
+      "rationale": "Three consecutive intact records preserve the middle-to-late cumulative structure and the edition's inclusive wording, making a usable participatory closing activity.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "participation-cue-required",
+        "optional-shortened-ending",
+        "multilingual-render-check"
+      ],
+      "creditNotes": "Credit Mayer and identify the traditional cumulative song; note any shortened verse range.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 62, segment 1",
+        "end": "PDF p. 62, segment 3",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+            "sourceLocation": "PDF p. 62, segment 1",
+            "locator": {
+              "label": "PDF p. 62",
+              "pageNumber": 62,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 179309,
+              "normalizedEndOffset": 180075
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3uy4-6b36896af084",
+            "sourceLocation": "PDF p. 62, segment 2",
+            "locator": {
+              "label": "PDF p. 62",
+              "pageNumber": 62,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 180076,
+              "normalizedEndOffset": 180879
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3vkg-a4f092b9792a",
+            "sourceLocation": "PDF p. 62, segment 3",
+            "locator": {
+              "label": "PDF p. 62",
+              "pageNumber": 62,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 180880,
+              "normalizedEndOffset": 181617
+            }
+          }
+        ]
+      },
+      "totalWords": 407,
+      "exactTextSequenceSha256": "801f0452f3a1087d1c790c0d07a8b0820b0747c70b8b213f9c1029b72cead286",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-multilingual-chad-gadya-game",
+      "title": "A multilingual Chad Gadya guessing game",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-3xmz-ceaa08384105",
+        "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+        "research-mayer-ashkenaz-3yqh-59a48139de78",
+        "research-mayer-ashkenaz-3z1z-969ac85afd71"
+      ],
+      "beginnerContext": "Explain that this is an optional language game based on the final Chad Gadya verse, not a required ritual. Read the ordinary English pattern first, divide guests into teams only if they want to play, and avoid assuming knowledge of any language.",
+      "rationale": "Four consecutive intact records preserve the game's instructions and first group of Aramaic variants, a coherent specialist activity that should never replace the basic closing orientation.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "specialist-language-game-opt-in",
+        "plain-language-chad-gadya-summary-required",
+        "participation-optional",
+        "multilingual-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Mayer and separately preserve or verify the attribution of each translation included in the selected game.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 64, segment 1",
+        "end": "PDF p. 64, segment 4",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-3xmz-ceaa08384105",
+            "sourceLocation": "PDF p. 64, segment 1",
+            "locator": {
+              "label": "PDF p. 64",
+              "pageNumber": 64,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 183563,
+              "normalizedEndOffset": 184362
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+            "sourceLocation": "PDF p. 64, segment 2",
+            "locator": {
+              "label": "PDF p. 64",
+              "pageNumber": 64,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 184363,
+              "normalizedEndOffset": 184984
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3yqh-59a48139de78",
+            "sourceLocation": "PDF p. 64, segment 3",
+            "locator": {
+              "label": "PDF p. 64",
+              "pageNumber": 64,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 184985,
+              "normalizedEndOffset": 185398
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-3z1z-969ac85afd71",
+            "sourceLocation": "PDF p. 64, segment 4",
+            "locator": {
+              "label": "PDF p. 64",
+              "pageNumber": 64,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 185399,
+              "normalizedEndOffset": 186361
+            }
+          }
+        ]
+      },
+      "totalWords": 468,
+      "exactTextSequenceSha256": "f88ba1c7f0b26bf2034506722dafdf03e34b3d7dfff56fdce737247259fb0369",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "mayer-ashkenaz-chad-gadya-call-and-response",
+      "title": "Chad Gadya call and response",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+        "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+        "research-mayer-ashkenaz-4wdb-8d560939e426",
+        "research-mayer-ashkenaz-4xg5-81c8c68b4bca"
+      ],
+      "beginnerContext": "Tell guests that Chad Gadya is a playful cumulative end song and teach the repeated line before beginning. Make singing optional, explain that the chain becomes violent in a folktale-like way, and allow an early stop for children or time.",
+      "rationale": "Four consecutive intact records preserve the author's melody instruction and the song's rising call-and-response chain, providing a more accessible closing choice than the specialist guessing game.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-or-specialist-opt-in",
+        "participation-cue-required",
+        "age-appropriate-folktale-violence-context",
+        "optional-shortened-ending",
+        "multilingual-render-check"
+      ],
+      "creditNotes": "Credit Mayer and identify Chad Gadya as a traditional song in the final source page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 74, segment 3",
+        "end": "PDF p. 76, segment 1",
+        "locators": [
+          {
+            "id": "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+            "sourceLocation": "PDF p. 74, segment 3",
+            "locator": {
+              "label": "PDF p. 74",
+              "pageNumber": 74,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 226793,
+              "normalizedEndOffset": 227827
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+            "sourceLocation": "PDF p. 75, segment 1",
+            "locator": {
+              "label": "PDF p. 75",
+              "pageNumber": 75,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 227828,
+              "normalizedEndOffset": 228574
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-4wdb-8d560939e426",
+            "sourceLocation": "PDF p. 75, segment 2",
+            "locator": {
+              "label": "PDF p. 75",
+              "pageNumber": 75,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 228575,
+              "normalizedEndOffset": 229972
+            }
+          },
+          {
+            "id": "research-mayer-ashkenaz-4xg5-81c8c68b4bca",
+            "sourceLocation": "PDF p. 76, segment 1",
+            "locator": {
+              "label": "PDF p. 76",
+              "pageNumber": 76,
+              "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+              "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+              "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+              "normalizedStartOffset": 229973,
+              "normalizedEndOffset": 230654
+            }
+          }
+        ]
+      },
+      "totalWords": 676,
+      "exactTextSequenceSha256": "667e4710cc856cbb7e972da67f2c1b6042e3607069e06f913659401dec4ec603",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-mayer-ashkenaz-0-08684969b8db",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs",
+        "Title and edition metadata belongs in credits, and the extracted Hebrew contains control-character corruption."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-b3-a1c82b1ea8cc",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-y2-7e763406a785",
+      "sourceLocation": "PDF p. 2, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1iw-8ded5562dd6a",
+      "sourceLocation": "PDF p. 2, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-250-80411d031714",
+      "sourceLocation": "PDF p. 2, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2qf-c78882c109a3",
+      "sourceLocation": "PDF p. 2, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3bm-2d4132b717d5",
+      "sourceLocation": "PDF p. 3, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3y2-8d04d4772561",
+      "sourceLocation": "PDF p. 3, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4m3-85eead85248d",
+      "sourceLocation": "PDF p. 3, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5ri-e71437d25c51",
+      "sourceLocation": "PDF p. 3, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-6hc-6ea4a81a25a6",
+      "sourceLocation": "PDF p. 3, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-894-1cc828968c23",
+      "sourceLocation": "PDF p. 4, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-8t2-fa8458bde8df",
+      "sourceLocation": "PDF p. 4, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-9jk-cb3da16180f3",
+      "sourceLocation": "PDF p. 5, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-a7z-cac674b190ae",
+      "sourceLocation": "PDF p. 5, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-b0p-7bcd57fd0606",
+      "sourceLocation": "PDF p. 6, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-blw-735dae418214",
+      "sourceLocation": "PDF p. 6, segment 2",
+      "reasons": [
+        "The children-returning-to-the-land line requires a traditional-only land gate and should not enter default generation."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-cbv-d55d81ca5423",
+      "sourceLocation": "PDF p. 6, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-d7w-ea784adb9882",
+      "sourceLocation": "PDF p. 7, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-du4-6ed12a9e3e4f",
+      "sourceLocation": "PDF p. 7, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-efe-c6154d8eaf2f",
+      "sourceLocation": "PDF p. 7, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-f47-c7172be91f81",
+      "sourceLocation": "PDF p. 7, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-fzw-f2d988a9870c",
+      "sourceLocation": "PDF p. 8, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-gjg-6d93999a8acb",
+      "sourceLocation": "PDF p. 8, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-h58-a961f1361c48",
+      "sourceLocation": "PDF p. 8, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-hse-3ac4a6f442d6",
+      "sourceLocation": "PDF p. 8, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-ilv-d7178221439b",
+      "sourceLocation": "PDF p. 9, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-j61-cb302b859fa4",
+      "sourceLocation": "PDF p. 9, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-jo5-3ea12ebbef33",
+      "sourceLocation": "PDF p. 9, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-knr-dcc577f448e2",
+      "sourceLocation": "PDF p. 10, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-l7n-1403b6553d7e",
+      "sourceLocation": "PDF p. 10, segment 2",
+      "reasons": [
+        "This begins a contemporary theatrical Four Children supplement that requires separate contextual and rights review."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-lsu-5a842b8c2f1b",
+      "sourceLocation": "PDF p. 10, segment 3",
+      "reasons": [
+        "The satirical child and parent dialogue uses stereotypes and insider references unsuitable for default beginner use."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-mkw-fe112ba40edb",
+      "sourceLocation": "PDF p. 11, segment 1",
+      "reasons": [
+        "The language-community caricature and role-play require specialist opt-in and sensitivity review."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-n6r-70d84bff45fc",
+      "sourceLocation": "PDF p. 11, segment 2",
+      "reasons": [
+        "The explicit modern foreign-policy satire is not evergreen and requires a deliberate political opt-in."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-nth-80f17ee8d9d5",
+      "sourceLocation": "PDF p. 11, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-obc-57cf3f785e0e",
+      "sourceLocation": "PDF p. 11, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-p1r-5f0d09c84d43",
+      "sourceLocation": "PDF p. 12, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-pno-f613c829b579",
+      "sourceLocation": "PDF p. 12, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-q9u-c9c608fc4941",
+      "sourceLocation": "PDF p. 12, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-qvu-2efc7ed7c266",
+      "sourceLocation": "PDF p. 12, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-rgy-15940b279ee6",
+      "sourceLocation": "PDF p. 12, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-s29-e6b770f04b37",
+      "sourceLocation": "PDF p. 12, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-tjg-507a0daad005",
+      "sourceLocation": "PDF p. 13, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-u4a-a0fcfb27c8d0",
+      "sourceLocation": "PDF p. 13, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-up7-3bed16034e34",
+      "sourceLocation": "PDF p. 13, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-v8l-c9ee5a7cca08",
+      "sourceLocation": "PDF p. 13, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-vsd-f5cf1be49797",
+      "sourceLocation": "PDF p. 13, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-wz5-922065bd36f2",
+      "sourceLocation": "PDF p. 13, segment 8",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-xiq-a02576649968",
+      "sourceLocation": "PDF p. 13, segment 9",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-y6k-69125da8e182",
+      "sourceLocation": "PDF p. 14, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-yqa-d42970dbe2a3",
+      "sourceLocation": "PDF p. 14, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-zar-0b5065fb6974",
+      "sourceLocation": "PDF p. 14, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-10i8-6196eaa0a502",
+      "sourceLocation": "PDF p. 14, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-112t-fae51396893a",
+      "sourceLocation": "PDF p. 14, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-11na-49caaa462ea1",
+      "sourceLocation": "PDF p. 14, segment 7",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-12ui-d6177c6d044e",
+      "sourceLocation": "PDF p. 15, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-13g4-e3b45d60cf37",
+      "sourceLocation": "PDF p. 15, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-140j-22e5f058120d",
+      "sourceLocation": "PDF p. 15, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-14l0-c365b8817888",
+      "sourceLocation": "PDF p. 15, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-15ad-18d6ab8fa345",
+      "sourceLocation": "PDF p. 15, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-15v7-d746f44f3235",
+      "sourceLocation": "PDF p. 15, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-16vw-ed15560886b3",
+      "sourceLocation": "PDF p. 16, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-17f7-d6f2646600c5",
+      "sourceLocation": "PDF p. 16, segment 2",
+      "reasons": [
+        "The current hostage prayer requires current verification and a dated contemporary edition."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-181o-236fd997655e",
+      "sourceLocation": "PDF p. 16, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-18oq-badf5f09114f",
+      "sourceLocation": "PDF p. 16, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-19fd-383cc0f8691a",
+      "sourceLocation": "PDF p. 17, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1a1i-eeab134b9310",
+      "sourceLocation": "PDF p. 17, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1ank-ce2255485602",
+      "sourceLocation": "PDF p. 17, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1biw-2f1832abae81",
+      "sourceLocation": "PDF p. 18, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1c93-08c9868eccc6",
+      "sourceLocation": "PDF p. 18, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1cqb-c20ba6afb694",
+      "sourceLocation": "PDF p. 18, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1dbz-15cab87e2ffc",
+      "sourceLocation": "PDF p. 19, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1dyc-c12497323ef0",
+      "sourceLocation": "PDF p. 19, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1f62-409243cce6a7",
+      "sourceLocation": "PDF p. 20, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1foc-ae292e149999",
+      "sourceLocation": "PDF p. 20, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs",
+        "The violent angelic expansion is not needed for the beginner plague arc and requires adult traditional context."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1g8o-a2d26220eb71",
+      "sourceLocation": "PDF p. 20, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1gtd-ccaa6b6ba518",
+      "sourceLocation": "PDF p. 20, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs",
+        "The divine-war language conflicts with default peace-focused framing."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1hp1-bde46566a0ae",
+      "sourceLocation": "PDF p. 21, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1id9-81aaf349bbc0",
+      "sourceLocation": "PDF p. 21, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1jck-833b3f657b56",
+      "sourceLocation": "PDF p. 22, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1jyx-cfe7e5c51c0d",
+      "sourceLocation": "PDF p. 22, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1kwx-39ac4a7d13c8",
+      "sourceLocation": "PDF p. 23, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1lhq-e6506b72996c",
+      "sourceLocation": "PDF p. 23, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1m25-c26bbfc06b23",
+      "sourceLocation": "PDF p. 23, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1mvu-ceb15cc4adfc",
+      "sourceLocation": "PDF p. 24, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1nnk-bcf81fb443ef",
+      "sourceLocation": "PDF p. 24, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1nx4-9b47d5cf6ea8",
+      "sourceLocation": "PDF p. 25, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1og2-f46eea3889f0",
+      "sourceLocation": "PDF p. 25, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1ozc-32798c9b1325",
+      "sourceLocation": "PDF p. 25, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1peh-e7f227c6eb1e",
+      "sourceLocation": "PDF p. 25, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1q4s-117211d1ae36",
+      "sourceLocation": "PDF p. 25, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1qje-1f2b2e50fd45",
+      "sourceLocation": "PDF p. 26, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1r3n-0390b09101d0",
+      "sourceLocation": "PDF p. 26, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1rpj-b1c36ec143a4",
+      "sourceLocation": "PDF p. 26, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1sn3-a0d893c851c9",
+      "sourceLocation": "PDF p. 27, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1t4k-786150c8cdb9",
+      "sourceLocation": "PDF p. 27, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1tu4-8af2b80f2861",
+      "sourceLocation": "PDF p. 27, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1v9g-047314838981",
+      "sourceLocation": "PDF p. 28, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1vui-e0e0655ad472",
+      "sourceLocation": "PDF p. 28, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1wfz-244f5820da56",
+      "sourceLocation": "PDF p. 28, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1x4m-783a13e64125",
+      "sourceLocation": "PDF p. 29, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1xqz-316900cace88",
+      "sourceLocation": "PDF p. 29, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1ynu-c3b28486a1a6",
+      "sourceLocation": "PDF p. 30, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-1zbu-ebbaefaaa2c6",
+      "sourceLocation": "PDF p. 30, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2005-4ac12922c1f8",
+      "sourceLocation": "PDF p. 30, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-20s2-40a0bf426fc5",
+      "sourceLocation": "PDF p. 31, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-21cd-0540651a4785",
+      "sourceLocation": "PDF p. 31, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-235x-ad4aa248e933",
+      "sourceLocation": "PDF p. 31, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-248e-8f519e900a4b",
+      "sourceLocation": "PDF p. 32, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-24up-622d627ac229",
+      "sourceLocation": "PDF p. 32, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-25w4-33dbdaef6c54",
+      "sourceLocation": "PDF p. 33, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-26j6-6374622b7255",
+      "sourceLocation": "PDF p. 33, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-274n-4284e5c4a9f8",
+      "sourceLocation": "PDF p. 33, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-27t3-dc8a60934ba1",
+      "sourceLocation": "PDF p. 34, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-28eg-c498a502cda0",
+      "sourceLocation": "PDF p. 34, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-292i-cc318f97c298",
+      "sourceLocation": "PDF p. 34, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-29p2-18bf29f61674",
+      "sourceLocation": "PDF p. 35, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2ac1-9453bcd524b8",
+      "sourceLocation": "PDF p. 35, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2ayp-0da3b24c2a2c",
+      "sourceLocation": "PDF p. 35, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2bmw-02f0996f2e12",
+      "sourceLocation": "PDF p. 36, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2c9r-c204130de027",
+      "sourceLocation": "PDF p. 36, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2cob-00cf31b201a0",
+      "sourceLocation": "PDF p. 36, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2d5n-47d9d70b11cd",
+      "sourceLocation": "PDF p. 36, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2e5n-813c19c23df7",
+      "sourceLocation": "PDF p. 37, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2emn-5a08d988c7b8",
+      "sourceLocation": "PDF p. 37, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2fcf-7ae0938b79c6",
+      "sourceLocation": "PDF p. 37, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2g0l-a05dad985ed3",
+      "sourceLocation": "PDF p. 37, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2gig-871afb5330b6",
+      "sourceLocation": "PDF p. 38, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2h1d-980b7d28de40",
+      "sourceLocation": "PDF p. 38, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2hkc-c56ba8e9abae",
+      "sourceLocation": "PDF p. 38, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2i31-91d21e96cd3c",
+      "sourceLocation": "PDF p. 38, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2iz0-1aeb2bc60230",
+      "sourceLocation": "PDF p. 39, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2jkr-35d9a42c2658",
+      "sourceLocation": "PDF p. 39, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2ka6-1b0d8ebf2ca8",
+      "sourceLocation": "PDF p. 39, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs",
+        "modern-nationalist-affirmation"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2kxr-c1b36dc6d3c8",
+      "sourceLocation": "PDF p. 40, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2lma-f5daf2fd35ec",
+      "sourceLocation": "PDF p. 40, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2m7i-8f7f065a248d",
+      "sourceLocation": "PDF p. 40, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2my1-64e01f853e4d",
+      "sourceLocation": "PDF p. 41, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2njq-779b4acaf75c",
+      "sourceLocation": "PDF p. 41, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2o59-050aeb11419a",
+      "sourceLocation": "PDF p. 41, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2orw-c111a0d463bb",
+      "sourceLocation": "PDF p. 42, segment 1",
+      "reasons": [
+        "The Cup of Curses material is unsuitable for default peace-focused use and requires explicit adult editorial review."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2pdb-cee145b1bb95",
+      "sourceLocation": "PDF p. 42, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2pzl-434140125d31",
+      "sourceLocation": "PDF p. 42, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2qkl-8da1092363e8",
+      "sourceLocation": "PDF p. 42, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2ran-41f2a4158d39",
+      "sourceLocation": "PDF p. 43, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2rwm-660e2ef17286",
+      "sourceLocation": "PDF p. 43, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2skc-d050760d60fd",
+      "sourceLocation": "PDF p. 43, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2tbv-52b694397897",
+      "sourceLocation": "PDF p. 44, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2twn-ea486ae58d1a",
+      "sourceLocation": "PDF p. 44, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2uh6-f91bef69641f",
+      "sourceLocation": "PDF p. 44, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2v72-e076cb236d67",
+      "sourceLocation": "PDF p. 45, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2vui-020884bf646b",
+      "sourceLocation": "PDF p. 45, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2whq-0b8a40386722",
+      "sourceLocation": "PDF p. 45, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2x6e-2de042c22426",
+      "sourceLocation": "PDF p. 46, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2xrl-529b0631967d",
+      "sourceLocation": "PDF p. 46, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2ydk-825e57f2cb2d",
+      "sourceLocation": "PDF p. 46, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2z7v-7a080b48eaab",
+      "sourceLocation": "PDF p. 47, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-2zty-7f6b91a02094",
+      "sourceLocation": "PDF p. 47, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-30hn-9341029fcfc3",
+      "sourceLocation": "PDF p. 47, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3174-c8b83ada8ebd",
+      "sourceLocation": "PDF p. 48, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-31wm-853a35e09231",
+      "sourceLocation": "PDF p. 48, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3329-6e552cbdb8d7",
+      "sourceLocation": "PDF p. 49, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-33ov-983379fdc10c",
+      "sourceLocation": "PDF p. 49, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-349w-63a062c934a7",
+      "sourceLocation": "PDF p. 49, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3571-de25111b5898",
+      "sourceLocation": "PDF p. 50, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-35u8-7d772305b6fe",
+      "sourceLocation": "PDF p. 50, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-36gt-57d4f20d31d4",
+      "sourceLocation": "PDF p. 50, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-37tr-209fe6e59fe5",
+      "sourceLocation": "PDF p. 51, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-38dz-cbd48b1d4247",
+      "sourceLocation": "PDF p. 51, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3919-3085105bf4c8",
+      "sourceLocation": "PDF p. 51, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-39qn-4343ff7c88ba",
+      "sourceLocation": "PDF p. 52, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3aaf-9477ae9352da",
+      "sourceLocation": "PDF p. 52, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3aw9-d1c3523acd68",
+      "sourceLocation": "PDF p. 52, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3bk3-a6d83e80b581",
+      "sourceLocation": "PDF p. 52, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3c39-ae48ae935c15",
+      "sourceLocation": "PDF p. 53, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3cmt-6ef442ce7585",
+      "sourceLocation": "PDF p. 53, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3d53-2e3edf053ca9",
+      "sourceLocation": "PDF p. 53, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3dr7-260a3e2d4db2",
+      "sourceLocation": "PDF p. 53, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3edb-8f4b3113e6f5",
+      "sourceLocation": "PDF p. 54, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3ezw-55c9462047fb",
+      "sourceLocation": "PDF p. 54, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3fb8-1dfb40be95ca",
+      "sourceLocation": "PDF p. 54, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3fwx-cdfb36353d11",
+      "sourceLocation": "PDF p. 54, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3i0v-0c6bbc28f20c",
+      "sourceLocation": "PDF p. 55, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3ik9-93cd034d6509",
+      "sourceLocation": "PDF p. 56, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3j4v-e4ea67c16f28",
+      "sourceLocation": "PDF p. 56, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3jqv-675148ee0360",
+      "sourceLocation": "PDF p. 56, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3kpj-f2be9c3c97f1",
+      "sourceLocation": "PDF p. 57, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3lh3-482c5b88b4a8",
+      "sourceLocation": "PDF p. 57, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3m29-7b124e3e9c62",
+      "sourceLocation": "PDF p. 57, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3ms5-3cb312175aed",
+      "sourceLocation": "PDF p. 58, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3ngt-e973a938891a",
+      "sourceLocation": "PDF p. 58, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3o0o-0a3aca23fa99",
+      "sourceLocation": "PDF p. 58, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3p7t-65dd560ef831",
+      "sourceLocation": "PDF p. 59, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3prq-6af6c8feb492",
+      "sourceLocation": "PDF p. 59, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3qc0-a79ea29f72fe",
+      "sourceLocation": "PDF p. 59, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3qyt-b2752031473d",
+      "sourceLocation": "PDF p. 60, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3srs-f6300e449fe6",
+      "sourceLocation": "PDF p. 61, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3t35-0b767b7b641d",
+      "sourceLocation": "PDF p. 61, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3tqp-a9b3e73884e0",
+      "sourceLocation": "PDF p. 61, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3w4y-d4cfb07b21f1",
+      "sourceLocation": "PDF p. 63, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3wqq-51aee5481649",
+      "sourceLocation": "PDF p. 63, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-3zsq-3542e86dd823",
+      "sourceLocation": "PDF p. 64, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-40w4-ec3de559f10f",
+      "sourceLocation": "PDF p. 65, segment 1",
+      "reasons": [
+        "The dead-languages game is a specialist appendix, not core ritual content, and requires separate usability and source review."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-42vk-275ff9f139ea",
+      "sourceLocation": "PDF p. 65, segment 4",
+      "reasons": [
+        "The multilingual game continuation is not appropriate for default novice assembly."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-43xl-17713f67044f",
+      "sourceLocation": "PDF p. 66, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-46mt-f71da6f120b3",
+      "sourceLocation": "PDF p. 66, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-474a-791f37419c4e",
+      "sourceLocation": "PDF p. 67, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-47zo-e15ce4bc40a2",
+      "sourceLocation": "PDF p. 67, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-48oa-e9f60d16ab8b",
+      "sourceLocation": "PDF p. 67, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-49mv-6e9a5b20c91b",
+      "sourceLocation": "PDF p. 67, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4ahb-ced08ce4419f",
+      "sourceLocation": "PDF p. 68, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4b3v-601bfa81cd58",
+      "sourceLocation": "PDF p. 68, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4bsm-201312c70e84",
+      "sourceLocation": "PDF p. 68, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4cbd-ecd212b00adb",
+      "sourceLocation": "PDF p. 68, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4fc0-cfac783d4b49",
+      "sourceLocation": "PDF p. 69, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4fww-65deeffc94c3",
+      "sourceLocation": "PDF p. 69, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4gh0-3198f441311e",
+      "sourceLocation": "PDF p. 69, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4hrc-9667bbc7b1cb",
+      "sourceLocation": "PDF p. 70, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4iav-54a4912f494e",
+      "sourceLocation": "PDF p. 70, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4jsx-d1931fdf6ec8",
+      "sourceLocation": "PDF p. 71, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4kku-7bb4aca4e460",
+      "sourceLocation": "PDF p. 71, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4m0w-954ccef71bae",
+      "sourceLocation": "PDF p. 72, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4n6l-1b7fc7ad94f8",
+      "sourceLocation": "PDF p. 72, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4nrj-aa2d854e08f2",
+      "sourceLocation": "PDF p. 72, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4o5x-2e4925202891",
+      "sourceLocation": "PDF p. 72, segment 6",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4on2-b2f33aad4531",
+      "sourceLocation": "PDF p. 72, segment 7",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4pfj-82f87f8f5235",
+      "sourceLocation": "PDF p. 73, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4q4c-b3eb7afe9cc2",
+      "sourceLocation": "PDF p. 73, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4qyx-0d5107d87a53",
+      "sourceLocation": "PDF p. 73, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4rjm-47f82697012a",
+      "sourceLocation": "PDF p. 73, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4tk2-13cfdb336bbd",
+      "sourceLocation": "PDF p. 74, segment 1",
+      "reasons": [
+        "The Daniel Handler excerpt requires independent rights and attribution review."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4u7e-7e1cd1d63e59",
+      "sourceLocation": "PDF p. 74, segment 2",
+      "reasons": [
+        "The Lemony Snicket material remains blocked until separate reuse permission or license is established."
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4xz3-8ac9502eb693",
+      "sourceLocation": "PDF p. 76, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4ymi-ba302ba5586b",
+      "sourceLocation": "PDF p. 77, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4zd4-981f3344788c",
+      "sourceLocation": "PDF p. 78, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-4zzn-432b73318e81",
+      "sourceLocation": "PDF p. 78, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-50l4-512e615d6e6e",
+      "sourceLocation": "PDF p. 78, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-514y-d3c327bd3681",
+      "sourceLocation": "PDF p. 78, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-51s5-dccd4c175e1e",
+      "sourceLocation": "PDF p. 79, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-52dq-b22983dc0ebf",
+      "sourceLocation": "PDF p. 79, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-52v5-f6c3373aa1db",
+      "sourceLocation": "PDF p. 79, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-53en-35fcd34f69ee",
+      "sourceLocation": "PDF p. 79, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-53zb-1750d26d5e65",
+      "sourceLocation": "PDF p. 79, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-54vy-300afa496ac5",
+      "sourceLocation": "PDF p. 80, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-55eg-71342ceb8779",
+      "sourceLocation": "PDF p. 80, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-55yo-e3809d517eb8",
+      "sourceLocation": "PDF p. 80, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-56ie-7a953525eac4",
+      "sourceLocation": "PDF p. 80, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-57i3-e2d755409a30",
+      "sourceLocation": "PDF p. 81, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-580e-be1279019d35",
+      "sourceLocation": "PDF p. 81, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-58jt-d82c952528ef",
+      "sourceLocation": "PDF p. 81, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-590z-08928a690fc3",
+      "sourceLocation": "PDF p. 81, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-59mp-6e6003b7dc0e",
+      "sourceLocation": "PDF p. 81, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5adg-27289d5c165f",
+      "sourceLocation": "PDF p. 82, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5azg-93ef970909c5",
+      "sourceLocation": "PDF p. 82, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5bjp-c59cb9a7aa82",
+      "sourceLocation": "PDF p. 82, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5c2x-4638c8a5c11e",
+      "sourceLocation": "PDF p. 82, segment 4",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5cpp-d5ac590cdf09",
+      "sourceLocation": "PDF p. 82, segment 5",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5d6u-c3afcdb24415",
+      "sourceLocation": "PDF p. 83, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5drf-6f22ba08f57d",
+      "sourceLocation": "PDF p. 83, segment 2",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-mayer-ashkenaz-5eec-bd06ddab9b8e",
+      "sourceLocation": "PDF p. 83, segment 3",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    }
+  ],
+  "notes": [
+    "The source remains valuable and licensed for reuse, but most core ritual records contain control characters that the local policy correctly blocks from recommended sequences.",
+    "Repairing and re-segmenting the core pages against the rendered PDF is a prerequisite before this source can serve as a Kadesh-through-meal backbone.",
+    "The intact recommendations therefore emphasize specialist stories and closing songs rather than pretending the current extraction supports a complete novice Haggadah.",
+    "Every separately sourced story, song, translation, and literary excerpt requires its printed credit and item-level rights decision.",
+    "The CC BY-SA 4.0 source license supports reuse of Mayer's own material with attribution, modifications identified, and ShareAlike compliance.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

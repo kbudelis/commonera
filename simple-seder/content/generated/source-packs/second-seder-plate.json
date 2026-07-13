@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "second-seder-plate",
+  "sourceTitle": "A Second Passover Seder Plate with Seven Additions",
+  "modules": [
+    {
+      "id": "second-plate-miriam-fish",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "exactText": "And the fish, representing the constant flowing nature of water, represented Miriam, prophecy, the waters, and the spiritual aspects of faith.",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 2, Miriam’s Fish",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "feminist",
+        "traditional",
+        "mindfulness",
+        "environment"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "plate-option",
+      "treatment": "verbatim-normalized",
+      "wordCount": 21,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "184764e11c18b80bd7bfb43c5c9db9a24f629a6d96305de7d24d24e3b22ad5f3",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      }
+    },
+    {
+      "id": "second-plate-leeks",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "exactText": "May we avoid letting nostalgia filter our past, and remember that there's no such thing as a free lunch. May we be satiated rather than gluttonous, and may that be enough for us.",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 3, Leeks",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "mindfulness",
+        "secular"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "plate-option",
+      "treatment": "verbatim-normalized",
+      "wordCount": 33,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "0f5b8088d7d0ddad04170f7072ecca824c9fd953d30b95485fa2194e5ec5252d",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      }
+    }
+  ]
+}

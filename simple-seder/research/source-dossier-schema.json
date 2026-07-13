@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "simple-seder/source-dossier-review.schema.json",
+  "title": "Local source dossier review override",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceId",
+    "status",
+    "review",
+    "summary",
+    "sourceAssessment",
+    "recommendedSequences",
+    "exclusions",
+    "notes"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "sourceId": { "type": "string", "minLength": 1 },
+    "status": { "const": "local-agent-reviewed-candidate" },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "externalModelApiUsed", "batchModelReviewed", "humanReviewed", "reviewer", "reviewedAt"],
+      "properties": {
+        "mode": { "const": "local-codex-agent" },
+        "externalModelApiUsed": { "const": false },
+        "batchModelReviewed": { "const": false },
+        "humanReviewed": { "const": false },
+        "reviewer": { "type": "string", "minLength": 2 },
+        "reviewedAt": { "type": "string", "format": "date" }
+      }
+    },
+    "summary": { "type": "string", "minLength": 30 },
+    "sourceAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["voice", "bestUses", "beginnerRisks", "politicalContext", "creditContext"],
+      "properties": {
+        "voice": { "type": "string", "minLength": 10 },
+        "bestUses": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+        "beginnerRisks": { "type": "array", "items": { "type": "string", "minLength": 3 } },
+        "politicalContext": { "type": "string", "minLength": 10 },
+        "creditContext": { "type": "string", "minLength": 10 }
+      }
+    },
+    "recommendedSequences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "sectionIds",
+          "segmentIds",
+          "beginnerContext",
+          "rationale",
+          "themes",
+          "tones",
+          "requiresExplicitOptIn",
+          "editorialGates",
+          "creditNotes"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 4 },
+          "sectionIds": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "insertionSectionId": { "type": "string", "minLength": 1 },
+          "segmentIds": { "type": "array", "minItems": 2, "maxItems": 8, "uniqueItems": true, "items": { "type": "string" } },
+          "beginnerContext": { "type": "string", "minLength": 20 },
+          "rationale": { "type": "string", "minLength": 20 },
+          "themes": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "tones": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "requiresExplicitOptIn": { "type": "boolean" },
+          "editorialGates": { "type": "array", "items": { "type": "string" } },
+          "creditNotes": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["segmentId", "reasons"],
+        "properties": {
+          "segmentId": { "type": "string", "minLength": 1 },
+          "reasons": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } }
+        }
+      }
+    },
+    "notes": { "type": "array", "items": { "type": "string", "minLength": 3 } }
+  }
+}

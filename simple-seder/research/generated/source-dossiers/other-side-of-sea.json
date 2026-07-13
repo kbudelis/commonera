@@ -1,0 +1,934 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "other-side-of-sea",
+  "title": "The Other Side of the River, The Other Side of the Sea",
+  "creator": "T'ruah: The Rabbinic Call for Human Rights",
+  "family": "justice-human-rights",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A substantial modular social-justice Haggadah whose strongest passages connect familiar ritual actions to worker dignity, survivor leadership, shared responsibility, and the practical work of liberation. Its dated statistics, campaign references, graphic trafficking testimony, and many embedded contributors require selective use rather than wholesale insertion.",
+  "sourceAssessment": {
+    "voice": "Rabbinic, activist, explanatory, and frequently testimonial, moving between traditional ritual interpretation and concrete human-rights organizing.",
+    "bestUses": [
+      "Beginner-friendly explanations of karpas, Maggid, Korekh, Tzafun, and Birkat Hamazon",
+      "Social-justice and labor-rights thematic inserts grounded in a ritual action",
+      "Prompts that center the leadership of people directly affected by injustice",
+      "Longer adult or mixed-age Seders where a facilitator can hold difficult material"
+    ],
+    "beginnerRisks": [
+      "The source assumes familiarity with advocacy organizations, labor policy, immigration law, and trafficking terminology.",
+      "Several testimonies describe sexual exploitation, forced labor, racism, or deportation and need content notes and a genuine option to skip.",
+      "Statistics and named campaigns date from the 2010s and must be labeled historically rather than presented as current facts.",
+      "PDF headers, footnotes, image captions, and contributor transitions sometimes share a canonical segment with the reading itself."
+    ],
+    "politicalContext": "Use as a social-justice source, not as politically neutral ritual prose. Keep its commitments to dignity and worker-led change, identify dated U.S. policy material as historical, and exclude contemporary partisan claims from default generation. Biblical or liturgical references to Israel and Jerusalem are not modern nationalist claims, but no sequence here should introduce exclusive territorial language.",
+    "creditContext": "Credit T'ruah and The Other Side of the River, The Other Side of the Sea on the final sources page. Preserve the printed contributor name for every selected passage and review embedded artwork, testimony, poems, songs, and quotations item by item as required by the source conditions."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 38,
+    "segmentCount": 144,
+    "exactCharacterCount": 128634,
+    "exactWordCount": 21580,
+    "reconstructionSha256": "92f516b227bbd52a52d59599bcbc96a0393d868af2d996d84282712f00ec8015",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit T'ruah",
+      "Preserve printed contributor credits",
+      "Review embedded artwork and quotations item by item"
+    ],
+    "primaryUrl": "https://truah.org/resources/the-other-side-of-the-river-the-other-side-of-the-sea/"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-other-side-of-sea-0-ed8b7546a6c6",
+        "research-other-side-of-sea-2904-1ec0b791eb2f",
+        "research-other-side-of-sea-29s9-084aed0fdfc3",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-22b2-9bf644f14584",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-other-side-of-sea-2058-fe50ec0cca9c",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 90,
+      "segmentIds": [
+        "research-other-side-of-sea-n3-4c9546b1ef92",
+        "research-other-side-of-sea-19i-e4472e2dfd13",
+        "research-other-side-of-sea-1vb-dfa3f8ea232d",
+        "research-other-side-of-sea-2eb-712fb9d00fd8",
+        "research-other-side-of-sea-34x-414c9fe139eb",
+        "research-other-side-of-sea-3kc-190ccdf79376",
+        "research-other-side-of-sea-465-74180b7c0ab3",
+        "research-other-side-of-sea-5ce-ffdac664f375",
+        "research-other-side-of-sea-61l-20e29f5a21f9",
+        "research-other-side-of-sea-6mt-23d7ec7bfe1e",
+        "research-other-side-of-sea-78f-7e8b5e234678",
+        "research-other-side-of-sea-7wt-909a9f164682",
+        "research-other-side-of-sea-8mt-77a6c8a1c50c",
+        "research-other-side-of-sea-9lp-73471e04f44c",
+        "research-other-side-of-sea-a9z-405050c434d0",
+        "research-other-side-of-sea-b2q-417880c323a7",
+        "research-other-side-of-sea-bob-7a78afc09a02",
+        "research-other-side-of-sea-cdc-b5f505a39e28",
+        "research-other-side-of-sea-d3j-ea824ce793b0",
+        "research-other-side-of-sea-doj-99b37e1fc467",
+        "research-other-side-of-sea-eqm-3d8f4575e489",
+        "research-other-side-of-sea-hd8-38591d8abbb5",
+        "research-other-side-of-sea-hxt-49b2d3b3fa84",
+        "research-other-side-of-sea-imk-f53d5d2e64eb",
+        "research-other-side-of-sea-jb1-aaf7905b3764",
+        "research-other-side-of-sea-kbu-02f75a35d513",
+        "research-other-side-of-sea-ljs-d433b8f3d699",
+        "research-other-side-of-sea-m6m-6972155f8ff2",
+        "research-other-side-of-sea-mox-391fc8093dbf",
+        "research-other-side-of-sea-npg-ffc8d1b652e1",
+        "research-other-side-of-sea-rn1-3bacaeabb624",
+        "research-other-side-of-sea-xt9-db1c97b7fe73",
+        "research-other-side-of-sea-10xn-4c999ae1dfc4",
+        "research-other-side-of-sea-11yr-2b3b2e9edb2c",
+        "research-other-side-of-sea-12ki-a47050434f03",
+        "research-other-side-of-sea-13s4-b5ac6912324d",
+        "research-other-side-of-sea-14d8-c10a55a333ce",
+        "research-other-side-of-sea-14w5-5dd4ba633c3b",
+        "research-other-side-of-sea-15f1-bfc615bfbe17",
+        "research-other-side-of-sea-15zy-cbb3d2481794",
+        "research-other-side-of-sea-16ol-c55a443d85dc",
+        "research-other-side-of-sea-17js-47794e837a25",
+        "research-other-side-of-sea-189t-4b00ec317f57",
+        "research-other-side-of-sea-19hj-ec823dafe21e",
+        "research-other-side-of-sea-1a7b-a0d13534b841",
+        "research-other-side-of-sea-1atx-467d8dba2ab8",
+        "research-other-side-of-sea-1bdk-b6169f3c4039",
+        "research-other-side-of-sea-1cp1-2d0fd5318209",
+        "research-other-side-of-sea-1i1y-5e3be809eb36",
+        "research-other-side-of-sea-1mnn-1660a2e25fcd",
+        "research-other-side-of-sea-1na8-767e8a399902",
+        "research-other-side-of-sea-1nz5-ddbeddaa7916",
+        "research-other-side-of-sea-1ooi-71e6052b9a99",
+        "research-other-side-of-sea-1ptj-e7c4c321a410",
+        "research-other-side-of-sea-1qca-838f5cb15a5f",
+        "research-other-side-of-sea-1qyp-e1f773657b06",
+        "research-other-side-of-sea-1rnn-45d0345daa2c",
+        "research-other-side-of-sea-1sm2-79f05a1a9ec4",
+        "research-other-side-of-sea-1t6m-e2dcad48421a",
+        "research-other-side-of-sea-1trm-5a77f97d43ce",
+        "research-other-side-of-sea-1uiz-f4aae78bba44",
+        "research-other-side-of-sea-1v9u-7b185b776149",
+        "research-other-side-of-sea-1vub-fe8ab1100076",
+        "research-other-side-of-sea-1wd7-82593ba42cc9",
+        "research-other-side-of-sea-1x82-cca6482ae15b",
+        "research-other-side-of-sea-1xrr-115313db10dd",
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-22b2-9bf644f14584",
+        "research-other-side-of-sea-26r7-4f609959d80f",
+        "research-other-side-of-sea-27p0-1b38ae98d614",
+        "research-other-side-of-sea-28c1-949d511fd443",
+        "research-other-side-of-sea-2aha-5dc7ecc9a6fa",
+        "research-other-side-of-sea-2b5h-52f71226fb28",
+        "research-other-side-of-sea-2by1-742dcdaeb7f2",
+        "research-other-side-of-sea-2ekj-6282900be03e",
+        "research-other-side-of-sea-2f5q-16d97eb6365b",
+        "research-other-side-of-sea-2fv9-203f9b94d45c",
+        "research-other-side-of-sea-2gig-f1e054fc3297",
+        "research-other-side-of-sea-2hni-9a8eefb828d0",
+        "research-other-side-of-sea-2iem-eccb2e4e34ed",
+        "research-other-side-of-sea-2j3c-f17f4459fbdb",
+        "research-other-side-of-sea-2jrx-9936491bac4e",
+        "research-other-side-of-sea-2kel-3ab631c6cf05",
+        "research-other-side-of-sea-2kxy-75e7720e419c",
+        "research-other-side-of-sea-2lod-02f3fae6943a",
+        "research-other-side-of-sea-2meo-36b5f8526336",
+        "research-other-side-of-sea-2n5i-cca6359e2103",
+        "research-other-side-of-sea-2o7v-be0df5e1e7cf",
+        "research-other-side-of-sea-2ow1-16fafff7c048",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 7,
+      "segmentIds": [
+        "research-other-side-of-sea-npg-ffc8d1b652e1",
+        "research-other-side-of-sea-ofr-22b878eb8ae5",
+        "research-other-side-of-sea-p5w-98afc372ed67",
+        "research-other-side-of-sea-puz-9ed66c4cabe5",
+        "research-other-side-of-sea-qer-3e5a88e4c0a7",
+        "research-other-side-of-sea-r0j-ae506c23eb02",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "motzi-matzah": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-other-side-of-sea-s5w-04b1ec48bd35",
+        "research-other-side-of-sea-ssx-b5e988abf431",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "maror": {
+      "segmentCount": 14,
+      "segmentIds": [
+        "research-other-side-of-sea-kbu-02f75a35d513",
+        "research-other-side-of-sea-kzy-37981ea6a494",
+        "research-other-side-of-sea-ssx-b5e988abf431",
+        "research-other-side-of-sea-ti4-4b89a543742f",
+        "research-other-side-of-sea-u4l-3abadb10c796",
+        "research-other-side-of-sea-uo9-e557cc60b262",
+        "research-other-side-of-sea-vhk-03f570d8456e",
+        "research-other-side-of-sea-vvu-c73a00d276b7",
+        "research-other-side-of-sea-wjt-04fe4b564e06",
+        "research-other-side-of-sea-x7e-9591307e6af6",
+        "research-other-side-of-sea-109z-afb4f3877ddb",
+        "research-other-side-of-sea-136g-d840a011cd0a",
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-other-side-of-sea-1dci-96043be8606b",
+        "research-other-side-of-sea-1e28-79c072343f2a",
+        "research-other-side-of-sea-1eno-fcdc2fdb8a67",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "tzafun": {
+      "segmentCount": 5,
+      "segmentIds": [
+        "research-other-side-of-sea-1fc3-b902b9190187",
+        "research-other-side-of-sea-1fzc-66b06a07b22b",
+        "research-other-side-of-sea-1goa-66568b57941e",
+        "research-other-side-of-sea-1hbg-51e53d0d88b7",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "barech": {
+      "segmentCount": 7,
+      "segmentIds": [
+        "research-other-side-of-sea-1int-654acc281315",
+        "research-other-side-of-sea-1jbq-d111be0cb11b",
+        "research-other-side-of-sea-1k09-3ad8c187ae69",
+        "research-other-side-of-sea-1kmp-8ce8ac5d902d",
+        "research-other-side-of-sea-1l7n-7b0df0e11d78",
+        "research-other-side-of-sea-1lrd-81d8bd6f1862",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 12,
+      "segmentIds": [
+        "research-other-side-of-sea-m6m-6972155f8ff2",
+        "research-other-side-of-sea-mox-391fc8093dbf",
+        "research-other-side-of-sea-1vub-fe8ab1100076",
+        "research-other-side-of-sea-1ydd-b2886bc6ec30",
+        "research-other-side-of-sea-1yz4-976e226be114",
+        "research-other-side-of-sea-1zkz-786c22cfa046",
+        "research-other-side-of-sea-22wj-47a0f28db402",
+        "research-other-side-of-sea-23nx-636f00f1c73a",
+        "research-other-side-of-sea-246g-27b262531c1a",
+        "research-other-side-of-sea-24wd-107fd81213dc",
+        "research-other-side-of-sea-25l7-f0a717ef9f8b",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 16,
+      "segmentIds": [
+        "research-other-side-of-sea-eqm-3d8f4575e489",
+        "research-other-side-of-sea-fcv-971568ffdc32",
+        "research-other-side-of-sea-fxx-b037fea789c2",
+        "research-other-side-of-sea-glr-bd121428978e",
+        "research-other-side-of-sea-xt9-db1c97b7fe73",
+        "research-other-side-of-sea-yew-caf96eded39b",
+        "research-other-side-of-sea-yzf-2105ef9071e0",
+        "research-other-side-of-sea-zl3-11218d3904ff",
+        "research-other-side-of-sea-2058-fe50ec0cca9c",
+        "research-other-side-of-sea-20t5-67be3f37211e",
+        "research-other-side-of-sea-263x-8427b99de998",
+        "research-other-side-of-sea-2cgl-1ed781c258df",
+        "research-other-side-of-sea-2d2k-77e9bfe1914d",
+        "research-other-side-of-sea-2dpx-e790b8251429",
+        "research-other-side-of-sea-2pkd-83fcc9b7fbdc",
+        "research-other-side-of-sea-2qt3-906ef0dd28ad"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 13,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 1,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 4
+  },
+  "recommendedSequences": [
+    {
+      "id": "other-side-tomato-labor-dignity",
+      "title": "The tomato as labor and liberation",
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-b2q-417880c323a7",
+        "research-other-side-of-sea-bob-7a78afc09a02"
+      ],
+      "beginnerContext": "Explain that some contemporary Seders add a tomato to acknowledge the farmworkers who bring food to the table; identify CIW as the Coalition of Immokalee Workers before reading.",
+      "rationale": "These adjacent passages introduce one symbol, explain both its bitterness and its liberatory meaning, and end with a direct ritual invitation rather than a disconnected policy lesson.",
+      "themes": [
+        "social-justice",
+        "environment"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "define-ciw-before-reading",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Rabbi Michael Rothbaum on the final sources page; preserve the Universal Declaration attribution contained in the passage.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 5, segment 1",
+        "end": "PDF p. 5, segment 2",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-b2q-417880c323a7",
+            "sourceLocation": "PDF p. 5, segment 1",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 14354,
+              "normalizedEndOffset": 15130
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-bob-7a78afc09a02",
+            "sourceLocation": "PDF p. 5, segment 2",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 15131,
+              "normalizedEndOffset": 16031
+            }
+          }
+        ]
+      },
+      "totalWords": 295,
+      "exactTextSequenceSha256": "3c3fd510cd8712c2381de55e107025978b161080375bcc20e9fdcd6d773b1b1e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-korekh-survivor-leadership",
+      "title": "Korekh and survivor-led liberation",
+      "sectionIds": [
+        "korech"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-136g-d840a011cd0a",
+        "research-other-side-of-sea-13s4-b5ac6912324d",
+        "research-other-side-of-sea-14d8-c10a55a333ce"
+      ],
+      "beginnerContext": "Before making the Hillel sandwich, explain that Korekh combines bitter maror and sweet charoset; offer a content note for trafficking testimony and tell guests they may pass on the reading.",
+      "rationale": "The sequence begins with Korekh's mixed taste, lets survivors speak in their own words, and then explicitly rejects savior-centered storytelling in favor of affected communities' leadership.",
+      "themes": [
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "trafficking-content-note-and-pass-option",
+        "embedded-testimony-attribution-review",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, the quoted survivors as presented by the source, and Elena Stein on the final sources page; retain the Life Interrupted locator if this sequence is published.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 14, segment 3",
+        "end": "PDF p. 14, segment 5",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-136g-d840a011cd0a",
+            "sourceLocation": "PDF p. 14, segment 3",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 50776,
+              "normalizedEndOffset": 51555
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-13s4-b5ac6912324d",
+            "sourceLocation": "PDF p. 14, segment 4",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 51556,
+              "normalizedEndOffset": 52315
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-14d8-c10a55a333ce",
+            "sourceLocation": "PDF p. 14, segment 5",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 52316,
+              "normalizedEndOffset": 52996
+            }
+          }
+        ]
+      },
+      "totalWords": 400,
+      "exactTextSequenceSha256": "36c325f59fec82f73b753faee4497cd17e5fec0d059a3cc4e2b2451f328764ce",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-tzafun-hidden-to-action",
+      "title": "Tzafun: seek what is hidden",
+      "sectionIds": [
+        "tzafun"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-1fc3-b902b9190187",
+        "research-other-side-of-sea-1fzc-66b06a07b22b",
+        "research-other-side-of-sea-1goa-66568b57941e",
+        "research-other-side-of-sea-1hbg-51e53d0d88b7"
+      ],
+      "beginnerContext": "Explain that Tzafun means hidden and is the moment when the afikoman returns; frame the school and restaurant campaign as dated examples of turning learning into action, not as instructions for a current campaign.",
+      "rationale": "The passages sustain one arc from the hidden matzah to a guiding North Star and then to concrete, age-appropriate student action, making the source useful for participatory family tables.",
+      "themes": [
+        "social-justice",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "label-2013-campaign-as-historical",
+        "do-not-present-dated-campaign-link-as-current",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, Rabbi Laurie Hahn Tapper, and Rabbi Jesse M. Olitzky on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 19, segment 1",
+        "end": "PDF p. 19, segment 4",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-1fc3-b902b9190187",
+            "sourceLocation": "PDF p. 19, segment 1",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 66531,
+              "normalizedEndOffset": 67367
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1fzc-66b06a07b22b",
+            "sourceLocation": "PDF p. 19, segment 2",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 67368,
+              "normalizedEndOffset": 68265
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1goa-66568b57941e",
+            "sourceLocation": "PDF p. 19, segment 3",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 68266,
+              "normalizedEndOffset": 69099
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1hbg-51e53d0d88b7",
+            "sourceLocation": "PDF p. 19, segment 4",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 69100,
+              "normalizedEndOffset": 70053
+            }
+          }
+        ]
+      },
+      "totalWords": 601,
+      "exactTextSequenceSha256": "753b20cedbd406f6ee6b255135bc5e43df4bc31369d73219128dd7d25f5671da",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-barech-life-of-dignity",
+      "title": "Birkat Hamazon and a life of dignity",
+      "sectionIds": [
+        "barech"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-1k09-3ad8c187ae69",
+        "research-other-side-of-sea-1kmp-8ce8ac5d902d"
+      ],
+      "beginnerContext": "Introduce Barech as the blessing after the meal and explain that this reading interprets one traditional plea for sustenance and shelter through the lens of coerced labor.",
+      "rationale": "The second passage completes the first passage's interpretation and turns a difficult subject into a clear universal claim: every person seeks a life of dignity.",
+      "themes": [
+        "social-justice",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "coerced-labor-content-note",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Rabbi Raysh Weiss on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 21, segment 1",
+        "end": "PDF p. 21, segment 2",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-1k09-3ad8c187ae69",
+            "sourceLocation": "PDF p. 21, segment 1",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 72585,
+              "normalizedEndOffset": 73392
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1kmp-8ce8ac5d902d",
+            "sourceLocation": "PDF p. 21, segment 2",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 73393,
+              "normalizedEndOffset": 74146
+            }
+          }
+        ]
+      },
+      "totalWords": 269,
+      "exactTextSequenceSha256": "233ad896082a0acc4b9870ee7a4c67c817d7461e1d3d1759975333d69d6e72d7",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-four-children-agency",
+      "title": "Four Children: from awareness to agency",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-1l7n-7b0df0e11d78",
+        "research-other-side-of-sea-1lrd-81d8bd6f1862"
+      ],
+      "beginnerContext": "First explain that the traditional Haggadah imagines four different kinds of questioners; this adaptation uses them as stages in learning about forced labor and finding a useful response.",
+      "rationale": "The pair moves coherently from not knowing, through overwhelm, toward joy, agency, and responsibility without suggesting that a guest must personally solve a vast injustice.",
+      "themes": [
+        "social-justice"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "replace-wicked-child-label-in-beginner-bridge-with-challenging-child",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Keeli Sorensen on the final sources page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 21, segment 3",
+        "end": "PDF p. 21, segment 4",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-1l7n-7b0df0e11d78",
+            "sourceLocation": "PDF p. 21, segment 3",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 74147,
+              "normalizedEndOffset": 74856
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1lrd-81d8bd6f1862",
+            "sourceLocation": "PDF p. 21, segment 4",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 74857,
+              "normalizedEndOffset": 76018
+            }
+          }
+        ]
+      },
+      "totalWords": 335,
+      "exactTextSequenceSha256": "47eee6a6ec4dcb1b9a91183fcdc2ecdddfbe70951740b3ec0c2ff954abcb66c0",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-maggid-embodied-empathy",
+      "title": "Maggid with heart, body, humility, and song",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-1x82-cca6482ae15b",
+        "research-other-side-of-sea-1xrr-115313db10dd",
+        "research-other-side-of-sea-1ydd-b2886bc6ec30",
+        "research-other-side-of-sea-1yz4-976e226be114"
+      ],
+      "beginnerContext": "Explain that Maggid is the long storytelling section and that the Haggadah asks each person to imagine having left Egypt, while this reading also cautions against confusing imagination with another person's lived experience.",
+      "rationale": "Four contiguous source records complete the argument about embodied storytelling, empathy, privilege, and responsible participation, then carry the source's transition into song without breaking a contributor quotation or sentence.",
+      "themes": [
+        "social-justice",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "embedded-artwork-and-song-rights-review",
+        "song-participation-optional",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, Rabbi David Spinrad, Claudia Cojocaru, and Rabbi Angela W. Buchdahl; preserve every printed attribution and separately review the artwork and song rights.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 26, segment 1",
+        "end": "PDF p. 26, segment 4",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-1x82-cca6482ae15b",
+            "sourceLocation": "PDF p. 26, segment 1",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 89714,
+              "normalizedEndOffset": 90422
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1xrr-115313db10dd",
+            "sourceLocation": "PDF p. 26, segment 2",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 90423,
+              "normalizedEndOffset": 91200
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1ydd-b2886bc6ec30",
+            "sourceLocation": "PDF p. 26, segment 3",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 91201,
+              "normalizedEndOffset": 91983
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-1yz4-976e226be114",
+            "sourceLocation": "PDF p. 26, segment 4",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 91984,
+              "normalizedEndOffset": 92770
+            }
+          }
+        ]
+      },
+      "totalWords": 547,
+      "exactTextSequenceSha256": "469f9a639c1707e9e6695093f34c433f14364c648d76c18304c288d152e5b503",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "other-side-karpas-nourish-the-journey",
+      "title": "Karpas and nourishment for a long journey",
+      "sectionIds": [
+        "karpas"
+      ],
+      "segmentIds": [
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-22b2-9bf644f14584"
+      ],
+      "beginnerContext": "Tell guests to take a green vegetable, dip it in salt water, and taste it; then explain that the source connects this first dipping to both tears and the Israelites' search for drinkable water after crossing the sea.",
+      "rationale": "This is a complete ritual explanation with sensory instructions, an Exodus episode, and a practical insight about sustaining oneself during a long struggle.",
+      "themes": [
+        "social-justice",
+        "environment",
+        "mindfulness",
+        "traditional"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "explain-marah-reference-for-beginners",
+        "preserve-source-blessing-wording"
+      ],
+      "creditNotes": "Credit T'ruah on the final sources page and identify the Exodus 15:22-27 reference retained in the reading.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 28, segment 1",
+        "end": "PDF p. 28, segment 2",
+        "locators": [
+          {
+            "id": "research-other-side-of-sea-21nj-8aff38327a9c",
+            "sourceLocation": "PDF p. 28, segment 1",
+            "locator": {
+              "label": "PDF p. 28",
+              "pageNumber": 28,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 95455,
+              "normalizedEndOffset": 96301
+            }
+          },
+          {
+            "id": "research-other-side-of-sea-22b2-9bf644f14584",
+            "sourceLocation": "PDF p. 28, segment 2",
+            "locator": {
+              "label": "PDF p. 28",
+              "pageNumber": 28,
+              "localExtract": "research/source-extracts/other-side-of-sea.txt",
+              "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+              "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+              "normalizedStartOffset": 96302,
+              "normalizedEndOffset": 97074
+            }
+          }
+        ]
+      },
+      "totalWords": 283,
+      "exactTextSequenceSha256": "d458d1ad4848c5d9cca815ab121b728042a16fd01fc5af4f522eb3d90eb70a33",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-other-side-of-sea-8mt-77a6c8a1c50c",
+      "sourceLocation": "PDF p. 4, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr",
+        "Run-together OCR and a fragmentary dated policy discussion make this unsafe for exact runtime reading."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-vhk-03f570d8456e",
+      "sourceLocation": "PDF p. 11, segment 4",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-16ol-c55a443d85dc",
+      "sourceLocation": "PDF p. 15, segment 4",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr",
+        "Run-together OCR and compressed political taxonomy require source-page repair before use."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-1bdk-b6169f3c4039",
+      "sourceLocation": "PDF p. 17, segment 4",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr",
+        "Run-together OCR and dated visa statistics are unsuitable for a polished, source-faithful reading."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-24wd-107fd81213dc",
+      "sourceLocation": "PDF p. 30, segment 1",
+      "reasons": [
+        "The segment crosses from a handwashing reflection into graphic child-sex-trafficking testimony, so it has no safe standalone insertion boundary."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-25l7-f0a717ef9f8b",
+      "sourceLocation": "PDF p. 30, segment 2",
+      "reasons": [
+        "Graphic child-sex-trafficking testimony is not appropriate for default beginner or family generation."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-263x-8427b99de998",
+      "sourceLocation": "PDF p. 30, segment 3",
+      "reasons": [
+        "The segment continues graphic trafficking material and then crosses into Nirtzah without a clean editorial boundary."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2904-1ec0b791eb2f",
+      "sourceLocation": "PDF p. 31, segment 3",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr",
+        "Run-together OCR combines a bibliography, activity link, and Kadesh opening."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2d2k-77e9bfe1914d",
+      "sourceLocation": "PDF p. 33, segment 3",
+      "reasons": [
+        "Dated U.S. immigration-policy advocacy should remain research-only unless separately updated and contextualized."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2dpx-e790b8251429",
+      "sourceLocation": "PDF p. 33, segment 4",
+      "reasons": [
+        "Terminology debate is valuable research but too specialized and date-sensitive for automatic Haggadah insertion."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2ekj-6282900be03e",
+      "sourceLocation": "PDF p. 34, segment 1",
+      "reasons": [
+        "A contemporary U.S. election reference and campaign argument are excluded from default nonpartisan runtime output."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2pkd-83fcc9b7fbdc",
+      "sourceLocation": "PDF p. 37, segment 3",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr",
+        "Run-together OCR and dated trafficking statistics span nearly every section tag without a usable reading boundary."
+      ]
+    },
+    {
+      "id": "research-other-side-of-sea-2qt3-906ef0dd28ad",
+      "sourceLocation": "PDF p. 38, segment 1",
+      "reasons": [
+        "contact-boilerplate"
+      ]
+    }
+  ],
+  "notes": [
+    "The recommended material is a curated subset of a much larger modular source; adjacent pages often belong to different contributors and should not be concatenated merely because they are adjacent.",
+    "All statistics, organization links, and campaign descriptions must be treated as source-dated historical material unless independently updated outside the quoted passage.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

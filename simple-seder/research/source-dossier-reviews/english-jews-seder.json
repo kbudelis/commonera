@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "english-jews-seder",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "Dávid Kaufmann’s 1892 documentary study reconstructs distinctive medieval English Jewish Seder customs from Jacob ben Judah’s 1287 manuscript. It is strongest as historical context, host-guide material, and carefully translated source notes rather than as uninterrupted beginner-facing liturgy.",
+  "sourceAssessment": {
+    "voice": "Academic, documentary, formal, text-critical, and multilingual, alternating English historical analysis with medieval Hebrew source excerpts.",
+    "bestUses": [
+      "Short historical sidebars on medieval English Jewish Seder practice",
+      "Host-guide context for haroset, early table customs, and the ritual order",
+      "Traditional long-form editions that can label manuscript variants and poetic additions"
+    ],
+    "beginnerRisks": [
+      "This is a scholarly article about a Haggadah, not a continuous modern Haggadah script.",
+      "Many primary excerpts are untranslated or embedded inside technical comparison and footnote discussion.",
+      "Names, abbreviations, manuscript variants, and page references require editorial explanation before use."
+    ],
+    "politicalContext": "Its references to pre-expulsion England, exile, and historical persecution belong to medieval and scholarly context. They must not be generalized into blame toward present-day national, religious, or ethnic groups.",
+    "creditContext": "Credit Dávid Kaufmann for the public-domain study and Aharon N. Varady for the CC BY-SA 4.0 transcription; preserve transcription licensing and indicate changes."
+  },
+  "recommendedSequences": [
+    {
+      "id": "english-jews-seder-manuscript-orientation",
+      "title": "A medieval English Seder survives",
+      "sectionIds": ["kadesh"],
+      "segmentIds": [
+        "research-english-jews-seder-0-2b743cb55bac",
+        "research-english-jews-seder-ou-f0749b2b0890",
+        "research-english-jews-seder-1bk-021d4c1b201f"
+      ],
+      "beginnerContext": "Present this as a short historical note before the ritual begins: a 1287 English Jewish manuscript preserves local Seder customs from before the expulsion.",
+      "rationale": "The article’s opening three segments establish the manuscript, explain why the rite is distinctive, and introduce its linguistic setting as one coherent documentary frame.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-sidebar-only", "distinguish-commentary-from-liturgy", "plain-language-context-required"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; identify the public-domain study and CC BY-SA 4.0 transcription."
+    },
+    {
+      "id": "english-jews-seder-haroset-history",
+      "title": "Medieval haroset ingredients and authority",
+      "sectionIds": ["maror", "korech"],
+      "segmentIds": [
+        "research-english-jews-seder-1vj-495e26e447b3",
+        "research-english-jews-seder-2h5-f7db7f5d3e0d",
+        "research-english-jews-seder-334-cc0cb11a571e"
+      ],
+      "beginnerContext": "First explain that haroset is the fruit-and-nut mixture used with the bitter herb, then identify these paragraphs as historical evidence about regional recipes rather than the app’s cooking instructions.",
+      "rationale": "The three consecutive passages move from the manuscript’s recipe through comparative regional practice to the English rabbinic authority behind that practice.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-sidebar-only", "ingredient-safety-and-modern-recipe-separate", "translate-hebrew-excerpt-before-display"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and retain the transcription’s ShareAlike conditions."
+    },
+    {
+      "id": "english-jews-seder-table-and-questions",
+      "title": "Medieval table order and questions",
+      "sectionIds": ["kadesh", "urchatz", "karpas", "yachatz", "maggid"],
+      "segmentIds": [
+        "research-english-jews-seder-3qv-c275ca68efee",
+        "research-english-jews-seder-42i-d84c0c331987",
+        "research-english-jews-seder-4mr-47d913cd5173",
+        "research-english-jews-seder-59j-f26915b2aeb3",
+        "research-english-jews-seder-5x6-8c769899d700"
+      ],
+      "beginnerContext": "Explain the modern action for each step independently; then use this sequence to show how medieval English Jews ordered the cups, vegetables, matzah, questions, and teaching roles.",
+      "rationale": "The records follow the manuscript’s own early-Seder order into the Four Questions and Four Children, making a coherent comparative sequence despite the scholarly commentary around it.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-sidebar-only", "do-not-substitute-for-host-instructions", "translate-hebrew-excerpt-before-display"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve article and transcription attribution."
+    },
+    {
+      "id": "english-jews-seder-maggid-variants",
+      "title": "Distinctive medieval Maggid readings",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-english-jews-seder-6cl-01404a9201ff",
+        "research-english-jews-seder-6y1-58aaacd5440a",
+        "research-english-jews-seder-7hn-e58c03423c92",
+        "research-english-jews-seder-86d-9c3afa888029"
+      ],
+      "beginnerContext": "Label this explicitly as a scholar’s comparison of manuscript readings, and summarize the relevant difference before displaying any Hebrew excerpt.",
+      "rationale": "These consecutive paragraphs document one cluster of Maggid variants, including omissions, additions, and altered formulations, without detaching a single variant from its analysis.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["specialist-textual-note-only", "distinguish-commentary-from-liturgy", "translate-hebrew-excerpt-before-display"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; changes to the transcription must be identified under CC BY-SA 4.0."
+    },
+    {
+      "id": "english-jews-seder-later-table-practice",
+      "title": "Hallel, washing, eating, and afikoman practice",
+      "sectionIds": ["hallel", "rachtzah", "motzi-matzah", "maror", "korech", "tzafun"],
+      "segmentIds": [
+        "research-english-jews-seder-8ql-f4b17c832e48",
+        "research-english-jews-seder-9bu-a1c8a9d9b273",
+        "research-english-jews-seder-9u3-ae56dafcf0ab",
+        "research-english-jews-seder-aju-b328ab8b5880"
+      ],
+      "beginnerContext": "Use a modern host cue for every action and identify this source only as evidence of how one medieval community handled Hallel, the second washing, ritual foods, and the afikoman.",
+      "rationale": "The sequence stays with the article’s later-Seder procedural discussion and preserves the relationship among washing, blessings, symbolic eating, and the end of the meal.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-sidebar-only", "do-not-substitute-for-host-instructions", "translate-hebrew-excerpt-before-display"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and preserve the transcription license and change notice."
+    },
+    {
+      "id": "english-jews-seder-closing-piyyut",
+      "title": "A preserved closing poem",
+      "sectionIds": ["nirtzah"],
+      "segmentIds": [
+        "research-english-jews-seder-fy8-7adc59fa94c0",
+        "research-english-jews-seder-gja-d5c357ca8b3b",
+        "research-english-jews-seder-h1y-466556acfad3"
+      ],
+      "beginnerContext": "Explain that the article preserves a medieval poetic addition sung near the end of the Seder, then provide an editorially checked translation or refrain guide.",
+      "rationale": "The three final article segments introduce the poem, discuss its textual form, and reproduce its conclusion as one self-contained historical unit.",
+      "themes": ["traditional", "family-storytelling"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-song-opt-in", "translate-hebrew-excerpt-before-display", "participation-cue-required"],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve public-domain and CC BY-SA 4.0 source information."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-english-jews-seder-byl-dc180914ecc6",
+      "reasons": ["Extended collective-vengeance verses are unsuitable for the peace-focused default and are not needed to document the source’s constructive contributions."]
+    },
+    {
+      "segmentId": "research-english-jews-seder-cho-151fca8049d0",
+      "reasons": ["This continuation catalogs additional collective-vengeance verses and should remain research-only."]
+    },
+    {
+      "segmentId": "research-english-jews-seder-hni-9db9e9c9134a",
+      "reasons": ["Modern transcription-project note belongs in provenance documentation rather than the Haggadah reading stream."]
+    },
+    {
+      "segmentId": "research-english-jews-seder-i98-ed2cdf4d1fee",
+      "reasons": ["Transcription request and project notes are metadata, not source liturgy or historical explanation for guests."]
+    },
+    {
+      "segmentId": "research-english-jews-seder-iuj-34d99a69b031",
+      "reasons": ["Detached scholarly endnotes are research apparatus and should not be inserted as a reading."
+      ]
+    }
+  ],
+  "notes": [
+    "This source remains included as documentary and contextual material; its scholarly form is a reason to label it, not to discard it.",
+    "Quoted Hebrew must not be presented to beginners without a checked translation and an explanation of whether it is liturgy, a manuscript variant, or scholarly commentary.",
+    "All recommended sequences remain candidate-only pending human editorial review."
+  ]
+}

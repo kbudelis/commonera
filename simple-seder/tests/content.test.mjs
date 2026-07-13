@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-import { runValidation, validateContent } from "../scripts/validate-content.mjs";
+import { runValidation, validateContent, validateRuntimeSourceCorpus } from "../scripts/validate-content.mjs";
 
 test("content pack satisfies structural and source validation", async () => {
   const result = await runValidation();
@@ -13,7 +13,7 @@ test("content pack satisfies structural and source validation", async () => {
     sections: 14,
     inserts: 108,
     tones: 3,
-    quotes: 53,
+    quotes: 56,
     sources: 20,
     covers: 8,
     coverMasters: 8,
@@ -43,6 +43,42 @@ test("explicit borrowing permission is reviewable, not categorically rejected", 
   const result = validateContent(minimal);
   assert.ok(result.warnings.some((warning) => warning.includes("custom-permission")));
   assert.ok(!result.errors.some((error) => error.includes("custom-permission needs a documented")));
+});
+
+test("runtime source compilation rejects altered, unapproved, or ineligible passages", async () => {
+  const index = JSON.parse(
+    await readFile(new URL("../research/source-runtime-index.json", import.meta.url), "utf8"),
+  );
+  const passage = index.sources.flatMap((source) => source.passages)[0];
+  if (!passage) return;
+  const sourceCatalog = index.sources.map((source) => ({ id: source.sourceId }));
+
+  const altered = structuredClone(index);
+  altered.sources.find((source) => source.sourceId === passage.sourceId)
+    .passages.find((item) => item.id === passage.id).exactText += " altered";
+  assert.ok(
+    validateRuntimeSourceCorpus(altered, sourceCatalog).errors.some((error) =>
+      error.includes("exact-text provenance hash"),
+    ),
+  );
+
+  const unapproved = structuredClone(index);
+  unapproved.sources.find((source) => source.sourceId === passage.sourceId)
+    .passages.find((item) => item.id === passage.id).approvalStatus = "candidate-review";
+  assert.ok(
+    validateRuntimeSourceCorpus(unapproved, sourceCatalog).errors.some((error) =>
+      error.includes("not approved for the compiled runtime index"),
+    ),
+  );
+
+  const ineligible = structuredClone(index);
+  ineligible.sources.find((source) => source.sourceId === passage.sourceId)
+    .passages.find((item) => item.id === passage.id).rights.runtimeEligible = false;
+  assert.ok(
+    validateRuntimeSourceCorpus(ineligible, sourceCatalog).errors.some((error) =>
+      error.includes("is not runtime-eligible"),
+    ),
+  );
 });
 
 test("policies include both eligible named sources and item-level limits", async () => {

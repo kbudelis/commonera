@@ -1,0 +1,689 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "seder-in-the-streets",
+  "sourceTitle": "Seder in the Streets Passover Haggadah",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit all compilers and Open Siddur",
+      "Preserve source-presented credits and ShareAlike notice"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=10879"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-streets-opening-place-at-table",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "A place and a voice at the table",
+      "exactText": "Upon arrival, they were asked to cut their piece of fabric into a circle, place it on the large piece of fabric in front of their seat, and place their item on it. This represented their plate, or place, at the table. Opening Leader: Passover is the time to remember the struggle and celebrate the liberation of the Jewish peoples. This tradition relies heavily on story telling. We want to use this opportunity to learn about a modern day struggle for liberation through the sharing of stories. Seder means order. We’re going to use the traditional order or structure of the seder while adapting the content of each section to fit this modern day context. We use a seder plate to hold symbolic ritual items that are used in describing and reliving the story of Passover.\n\nWe invite you to place your item in front of you on your plate. Throughout the seder, we will explain the various items and invite you to share yours. Passover has a strong tradition of asking questions. We encourage you to use this as an opportunity to ask the questions you are usually afraid to ask. No questions are off the table. Let this be a tool to facilitate deeper understanding between us, leaving us with a deeper commitment to each other’s struggle. We want to acknowledge that we have chosen to do the seder in english, and that there are some people present for whom English is not their first language. People have volunteered to translate one on one. It’s helpful if folks can remember to speak slowly.",
+      "segmentIds": [
+        "research-seder-in-the-streets-2i7-2981df3e913e",
+        "research-seder-in-the-streets-33n-6c6e70a5c10e"
+      ],
+      "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 6",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 6",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-2i7-2981df3e913e",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 3247,
+            "normalizedEndOffset": 4018
+          },
+          {
+            "id": "research-seder-in-the-streets-33n-6c6e70a5c10e",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 4019,
+            "normalizedEndOffset": 4738
+          }
+        ]
+      },
+      "provenanceHash": "746ce64bdb86096aa2c2bbf7558662948048f1375d781a5bce864846a0fce4b2",
+      "componentProvenanceHashes": [
+        "2981df3e913e6b422b52551f4e2769f672c67bac7d3a49e3d5a84c31a77ee20b",
+        "6c6e70a5c10ee4a8376bf32de9df6a9231ac9681a9f5f9db2e28d9961d4f180f"
+      ],
+      "wordCount": 265,
+      "characterCount": 1492,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "family-storytelling",
+        "interfaith",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Invite each guest to put one personally meaningful object near their place, and explain that people may take turns reading, ask questions, request slower speech, or pass.",
+      "rationale": "These passages provide the exact orientation a first-time table needs: what Passover recalls, what Seder means, how symbolic objects work, and how shared reading and questions will happen.",
+      "creditNotes": "Credit Seder in the Streets and all four compilers on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adapt-public-fabric-activity-to-home-table-without-changing-quoted-text",
+        "retain-language-access-and-pass-options",
+        "social-justice-family-or-interfaith-theme-only"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-streets-food-hunger-and-mitzrayim",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "Food, hunger strike, and the narrow place",
+      "exactText": "We also want to recognize that loss of language is loss of culture, and that many if not all of our ancestors grew up speaking a language other than English. Ritualized use of food Leader: A Seder is a ritual meal carried out in a specific order. Jewish tradition commands us to eat an abundant meal to mark holidays, requiring of us an abundance of food beyond what we would eat on a typical day. A hunger strike is also a highly ritualized use of food. It is the act of not eating as a tool of protest, placing the value of ones life on the line in pursuit of justice. For our Seder today will not eat as a tool of marking this overlapping moment of Passover and the #not1more hunger strike.\n\nA Stand Against All Forms Of Oppression Leader: We are gathered here with people targeted by many forms of oppression- racism, imperialism, classism, anti-Semitism, US dominance, capitalism. To firmly take a stand against present-day oppression towards Arab Americans and western imperialism in the Middle East, we will be using the Hebrew word mitzrayim in place of Egypt, to intentionally differentiate between the symbolic and ancient oppressors in the Passover story and contemporary Arab places or people. Mitzrayim is the word used throughout the Torah to mean the land of Egypt. It comes from the Hebrew word zar, meaning narrow or constricted. The Passover story is also the story of the birth of the Jewish people, and mitzrayim is the narrow passage we moved through. Leaving mitzrayim also means freeing ourselves from narrow- mindedness and oppression.",
+      "segmentIds": [
+        "research-seder-in-the-streets-3nn-c40577d92286",
+        "research-seder-in-the-streets-46x-2d09c3dd472d"
+      ],
+      "sourceLocation": "official source snapshot, segment 7 through official source snapshot, segment 8",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 7 through official source snapshot, segment 8",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-3nn-c40577d92286",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 4739,
+            "normalizedEndOffset": 5432
+          },
+          {
+            "id": "research-seder-in-the-streets-46x-2d09c3dd472d",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 5433,
+            "normalizedEndOffset": 6297
+          }
+        ]
+      },
+      "provenanceHash": "c064edf1006e501b1f84803eb5dc92cc4858e1d20060613accb968ed1715b998",
+      "componentProvenanceHashes": [
+        "c40577d922862f177b765642c1342c27e7bf00dec654a6315471ac3b47c29fae",
+        "2d09c3dd472d6d003e41d1bdb157f73630504ec437a5a910c153d376b331749c"
+      ],
+      "wordCount": 268,
+      "characterCount": 1559,
+      "sectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "State that this is historical material from a 2014 foodless solidarity Seder, define a hunger strike, and explain that the Hebrew name Mitzrayim can also evoke a narrow or constricted place.",
+      "rationale": "The pair explains why the original event changed a ritual meal into a foodless protest and then supplies the source's deliberate, non-anti-Arab language for naming the biblical oppressor.",
+      "creditNotes": "Credit Seder in the Streets and its compilers; retain the source's 2014 event context on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-convert-hunger-strike-description-into-host-instruction",
+        "explicit-historical-2014-protest-seder-opt-in",
+        "label-activist-analysis-as-source-voice",
+        "preserve-non-anti-arab-context"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-streets-water-washing-karpas",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "Miriam's water, handwashing, and karpas",
+      "exactText": "Miriam was a prophetess, and Moses’s sister. As the Jews would not have survived in the desert without water, the hunger strikers need water to maintain life. We join together to celebrate life, struggle, and sustenance by drinking these four cups. Before we drink each cup, we will call forth the names and stories of four matriarchs in our own lives- water sustains life, women sustain the life of a community. Who on our own journey has been a way-station for us? Who has quenched our thirst for knowledge? To whom do we look for our role models? Who sang with joy at our accomplishments? (Lerman Family Haggadah, 1990s) Blessing over the first cup בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם שֶׁהַכֹּל נִהְיָה בִּדְבָרוֹ:‏ Barukh atah Adonai, Eloheinu, melekh ha-olam shehakol nih’yeh bid’varo Blessed are you, Lord, our God, sovereign of the universe Who made all things exist through His word Ur’ḥatz – ritual handwashing Pair share: Think about any preconceptions or judgments you are bringing with you.\n\nLet’s acknowledge them and wash them away, so we can all be completely open to learning and hearing each others’ experiences. Karpas – dipping greens into salt water The vegetable for Karpas symbolizes spring and renewal. Traditionally, we dip a vegetable in salt water as a reminder of the tears shed by our ancestors when they were slaves. Today we live with the many contradictions of bitter and sweet, past and future, freedom and oppression. We will honor this tradition by picking a piece of spring from around us, noticing the life and newness in it, and then dipping it in salt water and placing it on our seder plate. This tradition reminds us of the bitterness on our way to liberation, part of the life cycle of history, each human, each story, each piece of nature, reminds us of this cycle of bitterness and liberation.",
+      "segmentIds": [
+        "research-seder-in-the-streets-5kg-f29648d49611",
+        "research-seder-in-the-streets-6cp-3a9fb929505e"
+      ],
+      "sourceLocation": "official source snapshot, segment 10 through official source snapshot, segment 11",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 10 through official source snapshot, segment 11",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-5kg-f29648d49611",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 7216,
+            "normalizedEndOffset": 8232
+          },
+          {
+            "id": "research-seder-in-the-streets-6cp-3a9fb929505e",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 8233,
+            "normalizedEndOffset": 9065
+          }
+        ]
+      },
+      "provenanceHash": "f11fde8b08e8bbacff08ee0561d56b429bcc5b0c4ac9bcecaf705ac346b32730",
+      "componentProvenanceHashes": [
+        "f29648d49611a718d0142b3ef244c522f5f674a59f90dbe1db6bd15694e0fe6f",
+        "3a9fb929505e0a1bda216f0cdcea123d7fa3215b61b3ffa06cfc81fb4511a57f"
+      ],
+      "wordCount": 313,
+      "characterCount": 1850,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "environment",
+        "mindfulness",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that this source used water instead of wine in solidarity with hunger strikers; for a home Seder, identify the first cup separately and tell guests exactly when to wash and when to dip a green vegetable in salt water.",
+      "rationale": "The two passages maintain water as a continuous symbol from Miriam's well to ritual handwashing and then explain karpas through spring, tears, and renewal.",
+      "creditNotes": "Credit Seder in the Streets and the Lerman Family Haggadah as presented by the source.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-confuse-source-water-cups-with-standard-wine-or-grape-juice",
+        "give-each-person-and-mutual-pouring-handwashing-options",
+        "preserve-lerman-family-haggadah-credit"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-streets-yachatz-separated-families",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "Yachatz and separated families",
+      "exactText": "Yaḥatz – breaking middle matzah “We break the middle matzah in two, wrapping one portion in a napkin and hiding it. This division reminds us of the forced division of communities and families due to disappearances, detentions, and deportations of immigrants that are carried out in the name of public safety. The portion of matzah that remains visible becomes our bread of affliction, lekhem oni, the suffering of those who do not know where their loved ones have been taken. The hidden piece of matzah, the afikomen, represents the horror hidden from our view – the treatment of those detained and prevented from speaking with their families, friends, or even lawyers. The disappeared are doubly blocked from our sight, physically separated in jails and detention centers, but also wrapped in a blanket of fear of further disappearances and legal attacks, fears intended to silence their communities.\n\nUntil these divided parts are made one again, our seder cannot truly be ended. Until these families and communities are reunited, we have not yet achieved our freedom.” (JFREJ- Immigrant Justice/Racial Justice Haggadah Seder Plate Insert, April 2003) Maggid – storytelling “The time has come to embrace this story as our own. The time has come to honor each generation reading this story anew. The time has come to join hands with all who dream of freedom.” (JCA’s Immigrant Rights Freedom Seder, 2010) Why Are We Here? In a pair share, why are you here today? The Four Questions: מַה נִּשְּׁתַּנָה הַלַּיְלָה הַזֶּה מִכָּל הַלֵּילוֹת?‏ Mah nishtanah halaila hazeh mikol halaylot? שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין חָמֵץ וּמַצָּה,-הַלַּיְלָה הַזֶּה כּוּלוֹ מַצָּה?‏ Shebakhol halaylot anu okhleen khamaytz u’matzah, halaila hazeh kulo matzah.",
+      "segmentIds": [
+        "research-seder-in-the-streets-6zu-68d065e7791a",
+        "research-seder-in-the-streets-7ow-4ff4b487d2b1"
+      ],
+      "sourceLocation": "official source snapshot, segment 12 through official source snapshot, segment 13",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 12 through official source snapshot, segment 13",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-6zu-68d065e7791a",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 9066,
+            "normalizedEndOffset": 9967
+          },
+          {
+            "id": "research-seder-in-the-streets-7ow-4ff4b487d2b1",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 9968,
+            "normalizedEndOffset": 10813
+          }
+        ]
+      },
+      "provenanceHash": "a75fe6a1f39edf5bdb23dae6d45daa6140a32ca4af5f08f0b1c2d07af1dac9f6",
+      "componentProvenanceHashes": [
+        "68d065e7791a2af720ad11703f97b4a77dbb1c3a5c0ba08e25d23ae91c2c14c8",
+        "4ff4b487d2b13e8abf4ee9a98b7642dda483f36ce09da812294307592fc83f4b"
+      ],
+      "wordCount": 276,
+      "characterCount": 1748,
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell the host to take the middle of three matzot, break it, return the smaller piece, and wrap and hide the larger afikoman; explain that this adaptation connects the broken pieces with families separated by detention and deportation.",
+      "rationale": "The second passage completes the first passage's quotation and then moves naturally into Maggid, preserving one coherent metaphor of separation, return, and freedom.",
+      "creditNotes": "Credit Seder in the Streets, JFREJ's Immigrant Justice/Racial Justice Haggadah insert, and JCA's Immigrant Rights Freedom Seder on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-policy-context-required",
+        "immigrant-justice-theme-or-explicit-opt-in",
+        "offer-content-note-and-pass-option-for-family-separation",
+        "preserve-jfrej-and-jca-credits"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-streets-four-questions-explained",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "The Four Questions with answers",
+      "exactText": "Why is it that on all other nights we eat either bread or matzah, but on this night we only eat matzah? שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין שְׁאָר יְרָקוֹת, הַלַּיְלָה הַזֶּה מָרוֹר?‏ Shebakhol halaylot anu okhleen sh’ahr y’rakot, halaila hazeh maror. Why is it that on all other nights we eat all kinds of herbs, but on this night we eat only bitter herbs? שֶׁבְּכָל הַלֵּילוֹת אֵין אֶנוּ מַטְבִּילִין אֲפִילוּ פַּעַם אֶחָת,הַלַּיְלָה הַזֶּה שְׁתֵּי פְעָמִים?‏ Shebakhol halaylot ayn anu matbeeleen afeelu pa’am akhat, halaila hazeh sh’tay f’ameem. Why is it that on all other nights we do not dip our herbs even once, but on this night we dip them twice? שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין בֵּין יוֹשְׁבִין וּבֵין מְסֻבִּין הַלַּיְלָה הַזֶּה כֻּלָנו מְסֻבִּין?‏ Shebakhol halaylot anu okh’leen beyn yoshveen u’vayn m’subeen, halaila hazeh kulanu m’subeen.\n\nWhy is it that on all other nights we eat either sitting or reclining, but on this night we eat in a reclining position? Why is it that on all other nights we eat either bread or matzah, but on this night we only eat matzah? On all other nights we may eat either leavened bread or matzah; tonight, only matzah, that we may recall the unleavened bread our ancestors baked in haste when they left slavery. Why is it that on all other nights we eat all kinds of herbs, but on this night we eat only bitter herbs? On all other nights we need not taste bitterness; tonight, we eat bitter herbs, that we may recall the suffering of slavery. Why is it that on all other nights we do not dip our herbs even once, but on this night we dip them twice?\n\nOn all other nights we needn’t dip our food in condiments even once; tonight we dip twice, in saltwater to remember our tears when we were enslaved, and in haroset to remember the mortar and the bricks which we made. Why is it that on all other nights we eat either sitting or reclining, but on this night we eat in a reclining position? On all other nights we eat sitting up; tonight, we recline, to remind ourselves to savor our liberation. (DC Avodah Haggadah) “If your own suffering does not serve to unite you with the suffering of others, if your own imprisonment does not join you with others in prison, if you in your smallness remain alone, then your pain will have been for naught.” (The JOI Hagaddah) The Four Alternative Questions: Small group breakouts: Read through together and discuss four presumptuous questions relating to Jewish people in the U.S.",
+      "segmentIds": [
+        "research-seder-in-the-streets-8ce-cc28378a77ba",
+        "research-seder-in-the-streets-90b-135287ae03e4",
+        "research-seder-in-the-streets-9kx-aec8d28aafac"
+      ],
+      "sourceLocation": "official source snapshot, segment 14 through official source snapshot, segment 16",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 14 through official source snapshot, segment 16",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-8ce-cc28378a77ba",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 10814,
+            "normalizedEndOffset": 11674
+          },
+          {
+            "id": "research-seder-in-the-streets-90b-135287ae03e4",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 11675,
+            "normalizedEndOffset": 12416
+          },
+          {
+            "id": "research-seder-in-the-streets-9kx-aec8d28aafac",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 12417,
+            "normalizedEndOffset": 13283
+          }
+        ]
+      },
+      "provenanceHash": "8641970e3e1ccac517167f58d0bc3d0a206ab814af60bb913c1cb5ee44445b7f",
+      "componentProvenanceHashes": [
+        "cc28378a77badeb87a63806b7e480d6408dd6d3ab44458d7e369f59a365641c7",
+        "135287ae03e4c85c9900726278347ca9034e5f6e740935348b1c6dc388adaca0",
+        "aec8d28aafac8c52d4b348ade25770bd647e962f97bef16d13db285a6306746e"
+      ],
+      "wordCount": 432,
+      "characterCount": 2471,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that the Four Questions are traditionally asked by the youngest willing participant but may be shared by anyone; point to the matzah, maror, dipping foods, and reclining as each is named.",
+      "rationale": "The first passage supplies all four questions and the next two answer each one in direct, accessible language before opening a separate optional discussion.",
+      "creditNotes": "Credit Seder in the Streets, the DC Avodah Haggadah, and The JOI Haggadah on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "clarify-that-reclining-may-be-symbolic-or-adapted-for-accessibility",
+        "do-not-continue-into-unreviewed-alternative-faq",
+        "preserve-dc-avodah-and-joi-credits"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-streets-compact-exodus-story",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "title": "A compact Exodus narrative",
+      "exactText": "They lived there in peace for many years and became known as Israelites. Years later, a new Pharoah came to rule who did not remember Joseph and all he had done for the people in Mitzrayim. He only feared that the Israelites would become too numerous and too powerful. This Pharoah made the Israelites slaves. He forced them to do hard labor, building cities with bricks made from clay and straw. The cruelest decree of all was the Pharoah’s order that every baby boy born to an Israelite woman be drowned in the River Nile. One couple, Amram and Yocheved, would not kill their newborn son. Instead, they hid him in their hut for three months. When his cries became too loud, Yocheved placed him in a basket in the river. Their daughter Miriam watched to see what would happen.\n\nAs the Pharaoh’s daughter came to bathe in the river, she discovered the basket with the baby inside and decided to keep him as her own. She named him Moshe (Moses) which means “drawn from the water.” Bravely, Miriam asked the princess if she needed a nurse to help her with the baby. She said yes and so Yocheved was able to care for her own son and teach him about his heritage. Moses would have remained in the Pharoah’s palace, but he could not ignore the suffering of his people. One day, he saw an Israelite slave being beaten and in anger, he killed the taskmaster. Knowing his life would be in danger once the news of this deed spread, he fled to Midian and became a Shepherd. One day, he came upon a bush that seemed to be on fire, but was not burning up.\n\nFrom the bush, he heard God’s voice calling to him saying: “I am the God of your ancestors. I have seen the suffering of the Israelites and have heard their cries. I am ready to take them out of Mitzrayim and bring them to a new land, a land flowing with milk and honey.” God told Moses to return to Mitzrayim to bring the message of freedom to the Israelites and to warn Pharoah that God would bring plagues to Mitzrayim if he did not let the slaves go free. When Moses asked Pharoah to free the Israelites, he refused, so God brought ten plagues to the land. We tell this story to remember our joy in being able to leave Mitzrayim. Yet our happiness is not complete, because the people of Mitzrayim, who are also God’s children, suffered from Pharoah’s evil ways.",
+      "segmentIds": [
+        "research-seder-in-the-streets-dxf-f1636ab80e9f",
+        "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+        "research-seder-in-the-streets-f4a-6243c3f3e386"
+      ],
+      "sourceLocation": "official source snapshot, segment 23 through official source snapshot, segment 25",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "official source snapshot, segment 23 through official source snapshot, segment 25",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "componentLocators": [
+          {
+            "id": "research-seder-in-the-streets-dxf-f1636ab80e9f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 18051,
+            "normalizedEndOffset": 18828
+          },
+          {
+            "id": "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 18829,
+            "normalizedEndOffset": 19593
+          },
+          {
+            "id": "research-seder-in-the-streets-f4a-6243c3f3e386",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+            "normalizedStartOffset": 19594,
+            "normalizedEndOffset": 20359
+          }
+        ]
+      },
+      "provenanceHash": "9389eace4486fa0af2a1db274d2f43327dee16c33eb851c65dfcf169ff5739b8",
+      "componentProvenanceHashes": [
+        "f1636ab80e9fc3c109c876c6cd6ec69d5e370f407089c32eb5a8ae576b1de1ac",
+        "7d0c5cfa178a2805c6619ef4c0951da993840ed47a1a90411250c07e26759231",
+        "6243c3f3e38687949278f254a4d734b289f8a005b0daa048aab5c7ace2793ebd"
+      ],
+      "wordCount": 430,
+      "characterCount": 2310,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Before reading, briefly explain that Joseph had earlier helped Egypt survive a famine and that the Israelites' descendants remained there; this supplies the one missing setup before the source begins with the new Pharaoh.",
+      "rationale": "The three passages give a continuous beginner-readable story from enslavement and Moses' birth through the burning bush, the demand for freedom, and the plagues, ending with compassion for Egyptian suffering.",
+      "creditNotes": "Credit Seder in the Streets and its four compilers on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "correct-pharaoh-spelling-only-in-bridge-not-in-exact-quotation",
+        "do-not-append-dated-campaign-plagues",
+        "preserve-compassion-for-egyptian-civilians",
+        "supply-joseph-and-famine-setup-before-source-text"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

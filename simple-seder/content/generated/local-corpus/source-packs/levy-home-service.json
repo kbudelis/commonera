@@ -1,0 +1,1048 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "levy-home-service",
+  "sourceTitle": "Haggadah or Home Service for the Festival of Passover",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy.",
+    "license": "public-domain",
+    "conditions": [
+      "Credit J. Leonard Levy and the digitization",
+      "Review dated assumptions before contemporary use"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=62228"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-levy-home-service-opening-orientation",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "Opening a home Seder",
+      "exactText": "/ 77182 game ^cvviee for the ^assoucr. r (The whole company shall recite the following in unison;) OPENING PRAYER. I ■■ I I i . I li ! O Lord our God, bow excellent is Thy Name in all the earth! We adore Thee and worship Thee, we extol and we love Thee, Source of all life. Thou alone art our God. O Eternal Father of all mankind! Thou alone art our Savior, and beside Thee there is none. At Thy altar, all Thy children do swear fealty and bow in reverence. (The family should assemble around a table, al the head of which should be seated the parents. In the centre of the table there should be placed an American flag, some unleav­ ened bread, a few flowers, a glass of wine and some lighted candles. Each of these symbols, which are purely arbitrary, will be explained subsequently. A wine glass should be placed btfore each of those present, as on four different occasions, ap-- propriate sentiments will be pledged. This being intended for family use, to be read by father or mother to a small congre­ gation consisting of their children and possibly also of invited guests, the use of the terms Reader and Child will be readily understood!) \\\\ ! h I 1\n\n4 HAGGADAH. (The Reader, taking a glass of wine in his hand shall then . say:) I We are gathered to-night within the home-sanctuary in honor of our holy religion and of our great and eventful history. We cannot help feeling grateful that although another cycle of seasons has passed, we are still spared to one another. We are thankful to God for the goodness He has shown us, for the blessings of health and home, friends and country. Our religion is meet elevating, our history is most ennobling. Both of them have claims upon us which demand our constant devotion. To our religion may we remain steadfast, to our history may we remain true, by carrying on the work for which our fathers so nobly struggled, suffering death m preference to desertion and torture rather than be traitors.\n\nMemo­ ries sad and sweet, tearful and joyful, does this evening awaken. But it likewise arouses hopes fair and bright, unsullied and unstained as the Gladsome lierht of day in a Guard us in Thy love. Guide us in Thy path. May we prove our love for Thee, O Father of all, by our devotion to Thy children, our fellowmen. May we be disposed to show unto others the consideration we seek for ourselves. May we overcome temptation and adhere to the law of righteousness. May our joys and sorrows become messen­ gers of grace to lead us unto Thee, May we deal with our fellowmeu as Thou dealest with us. Help us to re­ ceive our portion in life gratefully, and through all the chances and changes of our existence may we be able to say: Thy ways are just. For Thou art a God of Love and Jhy kingdom endureth forever. As Thou hast been with us in the past, so continue to be in the future, O God and Father of all, Amen.\n\n5 '• V, : 5 Why do we observe this service in the home to-night? Why do we observe customs that differ so much from those we follow on any other evening in the year? What is the meaning of the Hag and the flowers, the unleavened bread and the wine and also these lights? Why is this hol­ iday so important that we should celebrate it in so marked a manner? {The glass shaH then be passed around as a loving-cup, and all having drunk therefrom the Parents should pronounce a benediction on the head of each of their children. After being again seated one of the younger members of the family shall ask:) morning without clouds.",
+      "segmentIds": [
+        "research-levy-home-service-l0-4c02eb21eee9",
+        "research-levy-home-service-1h6-18471b781d00",
+        "research-levy-home-service-233-af2da9c11585",
+        "research-levy-home-service-2sh-0cca13d60720"
+      ],
+      "sourceLocation": "PDF p. 3, segment 1 through PDF p. 5, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 3, segment 1 through PDF p. 5, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-l0-4c02eb21eee9",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 756,
+            "normalizedEndOffset": 1913
+          },
+          {
+            "id": "research-levy-home-service-1h6-18471b781d00",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 1914,
+            "normalizedEndOffset": 2702
+          },
+          {
+            "id": "research-levy-home-service-233-af2da9c11585",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 2703,
+            "normalizedEndOffset": 3616
+          },
+          {
+            "id": "research-levy-home-service-2sh-0cca13d60720",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 3617,
+            "normalizedEndOffset": 4243
+          }
+        ]
+      },
+      "provenanceHash": "30de9ea58a7e570c275c712d8ec8f7fb9362b9cf5966896ab95e03b853a47e8a",
+      "componentProvenanceHashes": [
+        "4c02eb21eee93e372206ccfc7d8606150a739dcb0d44f4d93a972f5d0f26b3d8",
+        "18471b781d00532e041f83387a1870ea22c838a53715c26353344362ab7eef81",
+        "af2da9c11585c179420262e3dafad29bebe7101a0d7db72a7de71716b46a0c5b",
+        "0cca13d607206d90f690c1e76ed4641d5c2d8b79fd335b9a56a420efeaea4c32"
+      ],
+      "wordCount": 649,
+      "characterCount": 3490,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Tell guests that this is an 1896 Reform home service with period-specific gender roles and God language. Name the first cup as wine or grape juice, summarize the gathering’s purpose, and invite readers to substitute inclusive titles or pronouns before reading the historical prayer.",
+      "rationale": "These consecutive pages create a complete opening arc: gathering at home, gratitude for being together, questions about the night, and the parent blessing, stopping before an incomplete page-column transition.",
+      "creditNotes": "Credit J. Leonard Levy and the digitized 1896 public-domain edition; disclose any abridgment.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-gender-and-theology-context-required",
+        "historical-language-contextual-use",
+        "plain-language-action-cue-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-levy-home-service-exodus-story",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "From migration to Moses's demand",
+      "exactText": "! 6 i i Child . Will you tell us that history in a few words? i i Reader; The founder of our religion came from the far East. Abraham, who lived among the Chaldeans, seemed to un­ derstand that the worship of an unseen God was better than bowing before idols, and that religion should be a blessing and not a curse. He felt himself called upon to oppose the religions of his day, to establish the belief in one God, “the Lord, the most high God, the possessor of heaven and earth,” and to go out to the world and an­ nounce his belief. Thus with Abraham began the history of our religion and its followers, and from his day to ours we have felt it to be our highest privilege to enjoy the mis­ sion of Israel, “through whom all the nations of the earth shall be blessed.”\n\n)Our early fathers were shepherds, wandering from place to place, as the desert tribes do to this day. Isaac and Jacob handed down the traditions of Abraham to their descendants, who, through the influence of Joseph, had settled in the land of Goshen, in Egypt. Here seventy Hebrew souls flourished and prospered and grew into a ized nation has been affected by the event. Only a rude shepherd tribe was liberated four thousand years ago from the brickfields along the Nile, yet the mightiest peoples have felt the influence of that far-distant occur­ rence. It is true that only our early forefathers were re­ deemed from bondage; yet, such is our sympathy with the great memories of the past, that, on such a night as this we feel ourselves under the charm of the event as though we ourselves had been brought out of an Egypt. For the history of our religion and its followers is full of events similar to that which we so happily celebrate to­ night.\n\n7 1 U! i II powerful people. But as soon as they acquired power and influence they also gained the enmity of the rulers of Egypt, who determined to crush them by unheard of cru­ elty. The Pharaohs subjected the Israelites to hard bond­ age and visited upon them indescribable brutality. They were made slaves, to labor without hope of reward, to toil without opportunity for rest. They built treasure cities for Pharaoh, the King of Egypt, and were com­ pelled to make their own bricks. This persecution was carried on for many years, when the greatest man in the history of Israel, if not of the world, Moses, undertook the task of releasing his enslaved brethren. Appearing before Pharaoh, he read the first Declaration of Inde­ pendence and demanded the release of Israel, who should serve God and not man.",
+      "segmentIds": [
+        "research-levy-home-service-44i-f66d1cac9767",
+        "research-levy-home-service-4py-568d807d88e6",
+        "research-levy-home-service-5gg-feaf1ff074f1"
+      ],
+      "sourceLocation": "PDF p. 6, segment 1 through PDF p. 7, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 6, segment 1 through PDF p. 7, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-44i-f66d1cac9767",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 5346,
+            "normalizedEndOffset": 6117
+          },
+          {
+            "id": "research-levy-home-service-4py-568d807d88e6",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 6118,
+            "normalizedEndOffset": 7071
+          },
+          {
+            "id": "research-levy-home-service-5gg-feaf1ff074f1",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 7072,
+            "normalizedEndOffset": 7881
+          }
+        ]
+      },
+      "provenanceHash": "0222ab490cb944e3dc59c348affb93e67d15b1ceea38ad5de437a3a14dc98de1",
+      "componentProvenanceHashes": [
+        "f66d1cac9767de522b87856474afaf5dc0267a07d521ff2cee58b5da76e2a3ca",
+        "568d807d88e6b2d20dbe5ebb320feda23fec77fa829716998ce87de6c3b51962",
+        "feaf1ff074f1be417d61fb8a8bc005b39ef8411fc708e1d54b2a431b179fcdfa"
+      ],
+      "wordCount": 461,
+      "characterCount": 2537,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Introduce this as the opening of one historical retelling, define unfamiliar biblical names as needed, and make clear that this excerpt moves from a migrating family to enslavement and Moses's demand for freedom.",
+      "rationale": "Three adjacent segments answer a child’s request for the history and form a continuous arc through Pharaoh's forced labor and Moses's demand, stopping before a scrambled page-column seam.",
+      "creditNotes": "Credit J. Leonard Levy; identify the 1896 public-domain home service in the final source list.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-language-contextual-use",
+        "nontriumphalist-plague-framing",
+        "review-dated-theology-and-gender"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-levy-home-service-human-family",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "The human family and brotherly love",
+      "exactText": "AV Child. What is the mission of which we speak so often? Reader. c » 1 Perhaps the following parable may answer the ques­ tion: There is a steep mountain, whose top reaches to the very heavens. Above it sits Truth. A lonely pilgrim is climbing it, outstrips his fellow climbers, and ascending higher and ever higher, he catches a glimpse of the Di­ vine Beauty. Back to the plains he turns to tell his mes­ sace to the world. Descent is easy, until the traveller finds that be is attacked from ambushes. Obstacles are thrown in his way, difficulties are created by those he had earlier left behind. Long-and dreary are the detours he •.\n\nmakes, but everywhere he finds the same obstacles, the noblest mission of blessing the whole world, commissioned to be the vehicle of a religion of joy, commanded to live until right should be might and all men should call each other brethren, he has resolutely withstood tiials, suffered tribulations and endured persecution. He has been ostra­ cized for his opinions. He has been cut off by society for his beliefs. He might have surrendered. Had other nations been called on to endure what the Jew has suffered, they would probably have yielded. But he has been sup­ ported by the conviction that if it is heroic to die for a cause, it is more heroic to live for it. His is al) the greater heroism for knowing that the future always meant struggle, he, nevertheless, held on to his purpose un­ shaken. “Are you not afraid?’* said a young officer to an older companion whose face was pale, as they stood on the battle-field in the thick of the fight. “Yes,” he replied, “I am afraid, and if you were one-half as fearful as I, you would flee.” One less heroic than the Jew would have quailed. One less prepared for a mission than he would long since have renounced it.\n\nI 11 I I h same difficulties. Finally an angel spirit appears, and touching these opponents with the wand of Brotherly Love, • opposition is withdrawn. The pilgrim now is joined by his former opponents, and together they march down, chant­ ing triumphantly the message he had brought from above, “Mankind is one on the earth below, as God is One in the Heavens above.” Ou the plains beneath they all mingle. Our pilgrim is no longer one alone. Surrounded by bil­ lions, he is no longer to be distinguished, for he is as they, they are as he. That pilgrim is the Jew who, desiring to bless men with bis characteristic truth, has met with vio­ lent opposition, that must sooner or later cease. That truth is a simple one.\n\nIt is expressed in a few words as the Unity of God and the Unity of the Human Family. It means she Fatherhood of God and the Brotherhood of Man. It means that we all have one Father and that the same God has created all of us. It means that we should treat all men with courtesy and love, doing to others as we would that others should do to us. It means that we hope for the time when all men will cluster around the altar of the One God, as we gather around the family table in peace and love. Simple as this truth is the world has not yet learned it and even the members of oar own re­ ligion have prevented the realization of this grand and ennobling hope. For Judaism should have been like a huge ca'aracl, pouring down the mountain’s side to feed the lakes and rivers that might spread fertility. But the earthquake of intolerance and ignorance has loosened the rocks and dammed up the cataract with huge stones of prejudice and superstition. The Passover therefore comes with its message: “Prepare ye the way of the Lord; every valley shall be exalted; the crooked shall be made straight, the narrow shall be made broad. Take away these stones and let the living waters of your pure faith flow on unim­ peded! Remove these rocks that the waters of religion may run unobstructed, that they may rejoice the thirsty\n\n12 ! 1 ? 1 earth, that they may splash along merrily, announcing: Ho everyone that thirsteth come, come to the waters and drink without pay! Come everyone, be your creed what it may, be your sect what it may, come and drink and slake the thirst of your parched soul! ’ To work in this spirit alone gives a meaning to our lives ns Jews to-day Devotion to such a noble undertak­ ing alone justifies us in remaining Jews and in rearing ycu and consecrating you to your religion. For Judaism is a reasonable faith. It is like an arch whose keystone is Truth and whose supporting columns are Mercy and Justice. It seeks to rear a Temple that shall be a house of God for all peoples, where all men shall, side by side, worship their common Father in love and harmony.",
+      "segmentIds": [
+        "research-levy-home-service-9nu-07459f666f9d",
+        "research-levy-home-service-a5k-82aad278bfa5",
+        "research-levy-home-service-b22-cd0fb52b0797",
+        "research-levy-home-service-bm2-abc64193a33b",
+        "research-levy-home-service-cmq-efb8e8cf3053"
+      ],
+      "sourceLocation": "PDF p. 10, segment 1 through PDF p. 12, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 10, segment 1 through PDF p. 12, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-9nu-07459f666f9d",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 12522,
+            "normalizedEndOffset": 13159
+          },
+          {
+            "id": "research-levy-home-service-a5k-82aad278bfa5",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 13160,
+            "normalizedEndOffset": 14329
+          },
+          {
+            "id": "research-levy-home-service-b22-cd0fb52b0797",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 14330,
+            "normalizedEndOffset": 15049
+          },
+          {
+            "id": "research-levy-home-service-bm2-abc64193a33b",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 15050,
+            "normalizedEndOffset": 16369
+          },
+          {
+            "id": "research-levy-home-service-cmq-efb8e8cf3053",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 16370,
+            "normalizedEndOffset": 17131
+          }
+        ]
+      },
+      "provenanceHash": "87fa7f00bedd50a58ce1f3001babb7f0eb23a71f1bad5d5b8271dc1c6a8152a9",
+      "componentProvenanceHashes": [
+        "07459f666f9da8d52e9e54be0c0b7e6c0a95eaeaea656ef398e2711032e648da",
+        "82aad278bfa5fcc966ebe553df3d9caa62f250968a0134fb65ecdc9ef0dea3b8",
+        "cd0fb52b07970ab3736da87672f380f87614ba2f7b6f56fbd613828ccd986f90",
+        "abc64193a33b6bd0880f861d2f5dfd8517b4ed988b0b87bd80b3bccd44bed211",
+        "efb8e8cf30538c04aef5d9fb3d04bbc4f29555111dda914759b0cde6cf8db7d8"
+      ],
+      "wordCount": 848,
+      "characterCount": 4613,
+      "sectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "interfaith",
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Frame this as a period parable about solidarity and shared human dignity, while noting that its gendered phrase ‘Brotherly Love’ reflects its era.",
+      "rationale": "The source’s question, mountain parable, resolution, and explicit teaching about one human family form a single sustained universalist argument.",
+      "creditNotes": "Credit J. Leonard Levy and the public-domain 1896 edition; preserve the historical wording if quoted exactly.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-language-contextual-use",
+        "label-period-universalism",
+        "review-dated-theology-and-gender"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-levy-home-service-water-and-peace",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "Scripture readings of water and peace",
+      "exactText": "I! 14 (AU drink of the second glass of wine.) SCRIPTURE READINGS. If it had not been the Lord who was on our side, now may Israel say, Then they had swallowed us up quick, when their wrath was kindled against us. If it had not been the Lord who was on our side, when men rose up against us, The following verses are to be read alternately by Reader and the assembled company. them, lived for them and died for them. They sowed in tears, they went forth weeping bearing the precious seed of truth, that future geuerations might reap in joy. We, children of heroes and martyrs, pledge ourselves to them in sincerity and truth. Of our fathers we may say, their love was strong as death.\n\nMany waters could not quench their zeal, nor could the fires consume their devotion to God : even though the world offered all it had forthem to leave their religion and their mission, it was utterly con­ temned. We, too, will act in the spirit of our sires. We will consider no sacrifice too great, no duty too difficult, no labor too arduous to honor our religion, and to carry on the blessed mission of Israel that is to introduce the world’s Passover, when all men shall be brought out of the Egypt of narrowness and bigotry, when all men sh ill be liberated from the oppression of ignorance, when all hatred and uncharitableness shall be engulfed in the Red Sea of oblivion, and the ransomed hosts of humanity shall sing a new song of peace and love and goodwill for all.\n\ni 15 Il shall be exalted above the hills, and all nations shall flow unto it. I ■ i i i •i I Then the waters had overwhelmed us, the stream had gone over our souls. It shall come to pass in the fulness of time that the mountain of the Lord’s house shall be established in the top of the mountains. When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee. When thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee. Fear not ; for I have redeemed thee ; I have called thee by thy name ; thou art mine. Sing, 0 ye heavens, for the Lord hath redeemed Jacob, and glorified himself in Israel.\n\nHo, every one that thirsteth, come ye to the waters and drink. I, the Lord, will pour water upon him that thirsteth for me. He will teach us of his ways and we will walk in his paths. Nations shall beat their swords into ploughshares and their spears into pruning hooks. And many nations will go and say, Come ye, and let us go up to the house of God. Nation shall not lift up sword against nation, neither shall they learn war any more. That ye may know that I neither shall there be after me. {The whole company shall then sing the hymn on the follow­ ing page.) Ye are my witnesses, saith the Lord, and my servant whom I have chosen. i I am he. Before me there was no God",
+      "segmentIds": [
+        "research-levy-home-service-fe7-8f3caf749ef9",
+        "research-levy-home-service-fx7-c244313a374c",
+        "research-levy-home-service-gis-a7dbf9753120",
+        "research-levy-home-service-h1w-b1aff098ed98"
+      ],
+      "sourceLocation": "PDF p. 14, segment 1 through PDF p. 15, segment 2",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 14, segment 1 through PDF p. 15, segment 2",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-fe7-8f3caf749ef9",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 19951,
+            "normalizedEndOffset": 20634
+          },
+          {
+            "id": "research-levy-home-service-fx7-c244313a374c",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 20635,
+            "normalizedEndOffset": 21411
+          },
+          {
+            "id": "research-levy-home-service-gis-a7dbf9753120",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 21412,
+            "normalizedEndOffset": 22099
+          },
+          {
+            "id": "research-levy-home-service-h1w-b1aff098ed98",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 22100,
+            "normalizedEndOffset": 22774
+          }
+        ]
+      },
+      "provenanceHash": "684cdc4b3ab79197666aebc0b8e571f03cd07f207d2d4321831b9c47e5fa55e0",
+      "componentProvenanceHashes": [
+        "8f3caf749ef9b05f694a1368396ba05fd28c0981c50c166082a0369a3474343c",
+        "c244313a374ccf43a82fa12c755a70c3b4e86210db219c5fb83cc4f5da501dd2",
+        "a7dbf975312082129335e1cf73ef15a1a7277f9d0f8fef1827ee86ae2c5dee04",
+        "b1aff098ed98ebec2a8aa1a9675b8e0e0f1c8dbbb09a4e2bcfa3dbb3d89f5c2b"
+      ],
+      "wordCount": 540,
+      "characterCount": 2826,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "environment",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain that the source assembles biblical lines around rescue, water, learning, and peace; identify the source as a historical compilation rather than a single continuous biblical passage.",
+      "rationale": "Four consecutive records preserve the compiler’s designed movement from survival through water imagery to the prophetic hope of learning and weapons transformed into tools.",
+      "creditNotes": "Credit J. Leonard Levy and include source-level credit for the public-domain service.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-language-contextual-use",
+        "label-compiled-reading",
+        "verify-scriptural-attributions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-levy-home-service-freedom-and-law",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "Freedom joined to responsibility",
+      "exactText": "17 Reader: i Child: What further meaning has the Passover besides this duty of remaining true to our Religion and our Mission? . History itself was born on the night when Israel gained that most brilliant victory of liberating himself from slavery, formed himself into a nation and taught the world the lesson of freedom. It is worthy of our attention that if we were to-day invited to observe the Passover from the national Jewish standpoint, we would probably be morally compelled to refuse to do so. We stand to day not for Palestine, but for the world. Our history and our hopes are recited not for us alone, but for the whole hu­ man family. We keep the Passover not alone for our­ selves, but for the nations of the earth. Of all the gifts presented to man liberty is the choicest.\n\nLiberty without law must decline aud run wild, like the beasts of the field, and liberty degen­ erated has dug its own grave. It is the law that makes liberty valuable and crowns it as the highest of our gifts. It is an almost slavish obedience to the law that alone brings us liberty. In a special sense we may paraphrase the poet’s words aud say, “He alone is free whom the law makes free,” and it is this powerful combination of liberty and law, or civil liberty, that has been the special contribution of the Jew to society. Judaism was the first to announce that man was born to be free. The prerogative with which he was invested stamped his liberty aud proclaimed him the noblest of creation, for the beasts that roam the plains, the birds that traverse the pathless air and the finny tribes of the sea were under his control. In appearance erect, his look proclaimed his liberty. When Diogenes was asked “What is liberty!” he replied, in true Jewish style, “It is the greatest of all good things and the foundation of all excellence.’^ True, indeed, is this, for liberty to act and think and speak in harmony with law and truth—and this alone is liberty—is the flower of life, the vital essence of a happy existence on earth. Its elevating influence lends a charm and grace to all our\n\n19 I surroundings, and ensures the happiness, security and well-being of the state. As the elixir of the ancient phil­ osophers was designed to convert base metal into bright gold, so is Liberty intended to change the ignominious conditions of barbarism into the glorious estate of a re­ fined civilization. •‘Freedom Is the sun. the sea, the mountains, the air, Bondage is winter, darkness, death, despair.” This liberty, which is the perfect harmony between the freedom of the individual and a complete obedience to an orderly and systematic government, such as we are blessed with in this happy land, took its rise in Israel. In the domains of liberty Israel was pioneer, and not Europe, as has been often asserted. Historians agree that the na­ tions surrounding Israel were bold and courageous, lovers of the sea and adventure.\n\nThe Phoenicians, for example, sent their ships to all known lands, from the Tin-islands of Britain to the spice-bearing tropical isles of the Indian Ocean. But these nations, unlike Israel, had no idea of civil liberty. It was not until they had visited his sanc­ tuary in Judea, and stolen from his altar the sacred fire kindled there by the Jew, that they learned io make the light that has not yet been extinguished. Liberty and civilization have gone hand in hand. The impulse to­ wards Freedom given by Palestine was carried into Eu­ rope by the Phcenicians. Greece and Rome were the next recipients. Within the last few centuries we see it striding across Europe from Rome to the Italian republics, to Holland, Switzerland, England, America and France, until to-day the Jew has the proud satisfaction of seeing his idea realized in nearly every civilized community. Like that of a great stream is the story of liberty. On the mountain top are its many gurgling pools and rip­ pling brooks. By the unseen force of gravitation they wind their way with playful murmunngs down the moun­ tain’s side, here joining, here separating, but constantly\n\n20 I i ! I i I i i i •! hewing out a channel deep and broad. Obstacles are hurled aside; hindrances are swept away; all barriers to progress are overcome. Anon the great volume of waters reaches the plain and meanders on as a broad-flowing river, producing fertility and beauty on its banks, and carrying blessings and bounty on its bosom. From the top of Sinai the stream of liberty has come down through time. It has over-ridden nearly every obstacle invented by tyranny and despotism. “It was barred by the Phar­ aohs and Assyrian monarchs. It was checked by ambi­ tious Greeks and martial Romans. It was hindered by Czars and Emperors, and by lawless dukes and barons.” But it has at last wended its way down to the broad | lai ns of humanity.",
+      "segmentIds": [
+        "research-levy-home-service-i1o-91662e5989df",
+        "research-levy-home-service-jyb-a3f4fccf0354",
+        "research-levy-home-service-ky8-8907519f671a",
+        "research-levy-home-service-lld-7d3455b30ae5",
+        "research-levy-home-service-mh9-fe2ec985d069"
+      ],
+      "sourceLocation": "PDF p. 17, segment 1 through PDF p. 20, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 17, segment 1 through PDF p. 20, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-i1o-91662e5989df",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 23388,
+            "normalizedEndOffset": 24175
+          },
+          {
+            "id": "research-levy-home-service-jyb-a3f4fccf0354",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 25859,
+            "normalizedEndOffset": 27151
+          },
+          {
+            "id": "research-levy-home-service-ky8-8907519f671a",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 27152,
+            "normalizedEndOffset": 27984
+          },
+          {
+            "id": "research-levy-home-service-lld-7d3455b30ae5",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 27985,
+            "normalizedEndOffset": 29132
+          },
+          {
+            "id": "research-levy-home-service-mh9-fe2ec985d069",
+            "label": "PDF p. 20",
+            "pageNumber": 20,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 29133,
+            "normalizedEndOffset": 29880
+          }
+        ]
+      },
+      "provenanceHash": "3c05a5edf78e59964f8539b55d7c6bf190842e401d8700077660042dab5ef82f",
+      "componentProvenanceHashes": [
+        "91662e5989dfeb0869645608e7f3c528c8594a07888d1096d217002d983ffeff",
+        "a3f4fccf035497334d8ef6b7975244f4ef0dba4ca0ea195059ef15c92516c066",
+        "8907519f671a1ab9684c92f34112623e413c6e1d309f0fa823e5f4f77f6ecacc",
+        "7d3455b30ae5e3a1da54e28aec8c4e636f7119b800b49efe8202d0284f25e016",
+        "fe2ec985d0697c1e5128718f0981c47a9893622f7f46f490d72941363abf2b1c"
+      ],
+      "wordCount": 849,
+      "characterCount": 4813,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "social-justice",
+        "traditional",
+        "secular"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Introduce this as a long 1896 meditation arguing that liberation carries social responsibility and needs just law; tell guests that dated passages have been omitted.",
+      "rationale": "The selected source-order passages sustain the work’s freedom-and-law argument while omitting pages whose racial terminology or broken column boundaries are unacceptable for guest-facing reuse.",
+      "creditNotes": "Credit J. Leonard Levy and disclose that the public-domain sequence has been abridged by segment selection.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "disclose-abridgment",
+        "historical-language-contextual-use",
+        "long-form-only",
+        "review-civic-and-civilizational-assumptions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-levy-home-service-spring-and-renewal",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "Spring, dry bones, and renewal",
+      "exactText": "35 {Here the font th cup of wine is drunk.) ■■ r Child: Did it have no further meaning? Child. Was not the Passover originally an agricultural fes­ tival ? Reader. Yes; it brought to men the hope of immortality, sym­ bolized by the Howers upon this table. Man saw the flower fade and die and when spring returned, he saw it blossom again; and so he dreamed of a time when he should die, he too should blossom forth and live again. The spring is the first teacher of a resurrection. Ages and ages before an organized religion was known she had Reader. There is no doubt but that from the earliest times men have held festivals in praise of their God as the seasons of the year have changed. It is well known that long before the Exodus the Egyptians held a spring festival.\n\nIn the Scriptures we read that one of the important features of the celebration of the Passover wps the offering of the first ripe sheaves of barley. It was natural that when the win­ ter was over and the flowers appeared upon the earth, when the dove’s voice was again heard and the fig and vine began to grow that men should pour forth their hearts in gratitude for the joys and beauties of Spring. we never lack sustenance. Bless us, 0 God, with Thy Fatherly care that is more pleasing to us than any earthly possession. May we ever know the happiness of gratitude for all the joys and good provided for us by Thy bounty. Amen.\n\n56 I i uttered this truth with amazing eloquence. In every blade of grass that sought to bathe itself in the sunshine or drink in the refreshing dew, in every tiny bud that burst its cerements, she uttered it. And as it was with nature, so man thought concerning himself. There would be an awakening, not physical, but spiritual. And this thought seems to have been the burden of that vis­ ion described with so much force by the great prophet of the exile, Ezekiel, and which is one of the Scripture read­ ings selected for the Passover. By Babylon’s stream once he sat. Though a priest by birth, he was a prophet by nature. Endowed with a powerful imagination, he stands to-day as the most prolific of all the Bible writers, in the use of alle­ gory and symbols.\n\nTradition tells us that it was in the spring-time that he sat by the Chebar, musing, pondering, wondering. Around him nature appeared in her most attractive guise. The trees were gemmed with leaves of brightest green. The air was instinct with life; the hum of insect and the song of bird fell in musical cadence upon his ear. The soft zephyrs gently fanned his face, and the river moved merrily on in its course towards the great Euphrates. Fruit-trees filled the air with the delicious odor of their early blossoms, and the grassy meadows were dotted with Bowers of variegated hue. The prophet drank in the sweetness of the sight. Wherever he looked, he saw life and youth and activity. Suddenly be covered his face with his hands, and presen­ ted the mournful appearance of one stricken with sorrow and disappointment, misery and discontent. A thought, overpowering in its intensity, had passed through his mind. What a contrast did that brilliant, though almost inanimate picture present, to the distressing condition of his fellow-captives in the land of the kingof mighty Baby­ lon! How different, the bright hues, the beauteous scenery, the free bird winging its flight through the path-\n\n37 I j I J i ! 1 I f I. i less air, and the sombre aspect, the lonely condition, the enslaved position of captive Israel! Here was life: in Israel it seemed there was death. At once there was con­ jured up before his mind a picture that completely ex­ pressed his dismal thoughts. The peaceful, smiling val­ ley was strewn with the dead bones of the slain. As far as the eye could reach, it rested upon nothing but the relics of the dead. Wheresoever he stepped, he trod upon the dried remains of the departed. The picture was not exhilarating. The scene was not inspiring. In a moment, however, a brighter thought seemed to pass though his mind. The man of God hears what he calls the voice of the Almighty asking “Can these dead bones live!”\n\nand he answered “O Lord God Thou knowest.” Again we are told the voice spoke to him “Prophesy upon these dead bones and say unto them O ye dry bones, hear ye the word of the Lord. Behold I will cause breath to enter into you and ye shall live.” Scarcely had these words been uttered, than amid a great noise and shaking, the bones came together, bone to his bone. Sinews and flesh came up on them and skin covered them; but there was no breath in them. Again in the name of the Lord the prophet spoke “Come, O spirit, from the four corners of the earth, and breathe upon these slain, that they may live.” As he uttered this command, even then they lived, and standing upon their feet, they made an exceeding great army. (Ezekiel xxxvii). From the very earliest times this narrative has been regarded as nothing more or less than a mere allegory. The Talmtd explains “that the dead, that. Ezekiel resur­ rected were only creatures of the imagination.” (Talmud Sanhedrin, 91). Were there, however, any doubt of this, we have but to continue reading the Scriptural text which interprets it metaphorically. “These bones are the whole house of Israel: Behold, they say, Our bones are dried and our hope is lost.” Pure Judaism never taught the\n\n38 Reader. ■ Child. Will you tell us something about this belief? doctrine of the resurrection of the body. As far as we cau tell it is Zoroastrian in origin. Certain people, even sects among the Jews may have accepted the belier, but it never rose to the dignity of a creed. The resurrection of the dead, who are “to awaken in God’s likeness” has always been a high hope with the Jews. One of the most beautiful teachings of our religion is this very Immor­ tality-Belief. It is almost as old as the human heart, nearly as ancient as the human affections. In the dark night of bereave­ ment, man caught a nebulous, trembling suggestion, which has since evolved into a world of hope. The loving human heart racked by the pain of the loss of dear ones sent up a piteous appeal that was answered by the Immor­ tality-Belief.",
+      "segmentIds": [
+        "research-levy-home-service-15i7-33c8edc487cd",
+        "research-levy-home-service-163o-be87450c686e",
+        "research-levy-home-service-16l7-177409c89ab8",
+        "research-levy-home-service-176g-3c723e5d35d2",
+        "research-levy-home-service-183n-b846c61161d5",
+        "research-levy-home-service-18ob-6aa307b4126a",
+        "research-levy-home-service-19mp-38cbce808c12"
+      ],
+      "sourceLocation": "PDF p. 35, segment 1 through PDF p. 38, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 35, segment 1 through PDF p. 38, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-15i7-33c8edc487cd",
+            "label": "PDF p. 35",
+            "pageNumber": 35,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 53791,
+            "normalizedEndOffset": 54563
+          },
+          {
+            "id": "research-levy-home-service-163o-be87450c686e",
+            "label": "PDF p. 35",
+            "pageNumber": 35,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 54564,
+            "normalizedEndOffset": 55194
+          },
+          {
+            "id": "research-levy-home-service-16l7-177409c89ab8",
+            "label": "PDF p. 36",
+            "pageNumber": 36,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 55195,
+            "normalizedEndOffset": 55959
+          },
+          {
+            "id": "research-levy-home-service-176g-3c723e5d35d2",
+            "label": "PDF p. 36",
+            "pageNumber": 36,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 55960,
+            "normalizedEndOffset": 57154
+          },
+          {
+            "id": "research-levy-home-service-183n-b846c61161d5",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 57155,
+            "normalizedEndOffset": 57898
+          },
+          {
+            "id": "research-levy-home-service-18ob-6aa307b4126a",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 57899,
+            "normalizedEndOffset": 59136
+          },
+          {
+            "id": "research-levy-home-service-19mp-38cbce808c12",
+            "label": "PDF p. 38",
+            "pageNumber": 38,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 59137,
+            "normalizedEndOffset": 59959
+          }
+        ]
+      },
+      "provenanceHash": "14c857f7c369df5d107dec86cc1cf3a29ade4b97666dfdc422b28b2a072f95d1",
+      "componentProvenanceHashes": [
+        "33c8edc487cd469db8630e621e02e438f90bcd6487077fb56cf40636d4563479",
+        "be87450c686e613f1f1f06f1ab31b24fc5dcb31f985b2fe0353e7077096407aa",
+        "177409c89ab84a3160e844cb6770854e36d5aecf878e7f1817bce9048610f749",
+        "3c723e5d35d20d3bdb9b9e34fbea213de6e916cc3ef021918eb48d5180aa59b6",
+        "b846c61161d5db997d2bdd3cd9551442f91dc6087d7cba4631b0616355cd26ee",
+        "6aa307b4126aa071835868a9174640187d56e16c955482b1e88c0c336e0b59db",
+        "38cbce808c129cfc663b7282136f1ae810db66c821be81664f78293fdc893477"
+      ],
+      "wordCount": 1118,
+      "characterCount": 6174,
+      "sectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "mindfulness",
+        "traditional",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Passover is also a spring festival and that this historical reading moves from seasonal renewal to Ezekiel’s dry-bones vision and questions about life after death.",
+      "rationale": "Seven consecutive segments preserve the source’s seasonal and theological development through the dry-bones vision and the source's introduction to immortality, ending at a complete thought.",
+      "creditNotes": "Credit J. Leonard Levy and the public-domain 1896 source; retain exact wording if used as a historical reading.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-theology-as-consensus",
+        "historical-language-contextual-use",
+        "long-form-only",
+        "review-dated-science-and-religion-claims"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-levy-home-service-memory-and-legacy",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "title": "Memory, influence, and closing resolve",
+      "exactText": "1 40 Child. Are there not many who reject this hope? Reader.I ■ ■ i = >• \"I shot on arrow into the air, It iell to earth, I knew not where; For, so swiftly it flew, tbesight Could not follow it in its flight. I breathed a song into the air, It fell to earth, I knew not where; For who has sight so keen and strong That it can follow the flight of song? Long, long afterward, in an oak I found the arrow still unbroke; And the song, from beginning to end 1 found again, in the he art of a friend.” and believe that when we have laid down life here, we shall begin another life hereafter. We hope and believe that the coffin is a casket whose brightest gem has been removed elsewhere.\n\nWe hope and believe that the grave is not a goal, but a conservatory which enables man to live anew, not a blind-alley but a thoroughfare through which man passes into another state of being. We hope and believe that man is not an arrow of nothingness, shot at nothing. We know that when our darlings come to us we place them in a cradle. We hope that at death we are placed in another cradle, which we miscall a coffin, and are therein rocked into a higher life. If there be many who cannot accept this beautiful hope, who, perhaps sufiering under the load of one life cannot wish to carry the burdens of another, there is still for all an immortality in the influence they may exert on their times and posterity. The influence of our acts, for good or evil, is felt in times still distant. The fulfillment of our present plans is in the future. It is to this that Longfellow refers when he wrote the following verses:\n\n41 I L I i i We act to-day, but long, long afterward, that act brings' the blush of shame or the flush of pride to the cheeks of those we love. The good we do, the benevolence with which we act, the unselfishness we display, raise for us an immortality of influence. It depends on ourselves whether or no we leave behind the impress of our footsteps. It rests with us whether or no we inscribe our names on the indestructible granite or on the shifting sands. To gain this immortality we need but do our best in all the condi­ tions of life. If we act with unselfishness, if we will but deal benevolently, we will earn for ourselves an immortality of influence, as the poet has so truly said : “He who does the best be can in his own time, will live for all time.”\n\nThis is the true elixir of life. It is composed of a spe­ cific called duty and love, and is labelled ‘to be used con­ stantly/ In proportion as we are influenced by them shall we live on, and the memory of us shall not die. Our dead do not die, until we kill them by forgetfulness. They live on in us and through us, even as we shall in posterity. We are a heap of possibilities coming from the past, a mass of influence for the future. The continuous chain of good and evil knows no break, except we strengthen the latter and destroy the former. The im­ mortal influence of example knows no interruption, The past is linked to the present; the future is prepared in the now. In thia sense our loved ones never die, for they live in hearts and lives left behind. In moments of sacred joy, in hours of hallowed sorrow they beckon us on to love and duty. In times of trial and temptation, of success and failure, they stand out before our mental gaze. Once again we feel the pressure of the hand that gave childhood’s blessing; once again their lips meet ours in the kiss of hope; once again we hear their voices uttering words of counsel or comfort, and by the purity of our lives, by the nobility of our deeds, by the honesty of our acts, we prove that, being dead, yet they speak.\n\n42 IMMORTALITY.r SCRIPTURE READINGS. 1 4 For thou wilt not leave my soul in the grave ; neither wilt thou suffer thine holy one to see corruption. Then shall the dust return to the earth as it was ; and the spirit shall return unto God who gave it. I I For me—to have made one soul The better for my birth : To have added but one flower To the garden of the earth : To have struck one blow for truth In the daily fight with lies: To have done one deed of right In the face of calumnies : To have sown in the souls of men One thought that will not die— To have been a link in the chain of life : Shall be immortality. The following verses are to be read alternately by Reader and t he assembled company. For, lo, the winter is past, the rain is over and gone. The flowers appear on the earth; the lime of the singing of birds is come, and the voice of the turtle is heard in our land; The fig tree putteth forth her green figs, and the vines with the tender grape give a good smell. Arise, my love, my fair one, and come away. Until the day break, and the shadows flee away.\n\n43 CLOSING PRAYER. $Reader . :• .. A ? A good name is rather to be chosen than great riches, and loving favor rather than silver and gold. Hiches profit not in the day of wrath: but righteousness delivereth from death. i i ? i i ! Almighty God! We have come to Thee this night with the burden of our hopes and joys. We have laid upon the altar of our faith an act of devotion that cannot enrich Thee, but which may make us the wealthier and the hap­ pier. We have rehearsed what our lathers have done, not in a spirit of boastfulness and vainglory, but that we may become strengthened by their example, that we learn to do what they have done. As they went through the world preaching the gospel of liberty and love so shall we.\n\nAs they remained true and steadfast so shall we, with Thy help, O God. We thank Thee for an ancestry that we may pattern after. May we resolve to imitate our sires. May we de­ vote our life to the study of Thy word, given to us in Nature and in the Holy Books of men. May we resolve to fulfil the law of love, to cheer the sorrowing, to sustain tbe falling, to help the poor and suffering, to plead the cause of the widow and the orphan, to inveigh against all intolerance and bigotry and to become the champions of liberty. May we feel that the story of liberty is not com­ plete until the minds of men are free from ignorance and superstition, from error and blind belief. May we remove frcm our hearts the leaven of sin and unbelief, and may our purified souls worship Thee alone. We renew to-night the spiritual covenant of the Pass- over and we shall toil and labor for every cause that may bring about the universal Passover, when\n\ni- 44 I! 'I all men shall be tree, when all men shall be happy, when all men shall pass over into the promised land •of knowledge and happiness, of truth and the feai of God. We thank Thee for the hope that the spring season teaches us that there is no death. May we learn to profit by this lesson. May we employ our days on earth wisely, devoting ourselves to all causes that tend to better the conditions of our fellow-men. Loving one another, aiding one another, and trusting faithfully in Thee, may we peacefully spend our allotted days on earth and look forward fearlessly to the eternal beyond. May •we live so that we shall be loved living and regretted dead. May our life here ensure for us blessed immortality, and when the time shall come for us to return unto Thee, may we commit our spirit to Thy keeping, repeating the watch- word that has been our inspiration through all the various •circumstances of life: “Hear, O Israel, the Eternal isuiu •God ; the Eternal is Unity. Amen.",
+      "segmentIds": [
+        "research-levy-home-service-1caz-f243f03ac454",
+        "research-levy-home-service-1cty-1c42f9e500e1",
+        "research-levy-home-service-1dji-280592d5790f",
+        "research-levy-home-service-1e4r-365ce2949367",
+        "research-levy-home-service-1f4e-0f63f153b28c",
+        "research-levy-home-service-1fy8-2a4bff7bb946",
+        "research-levy-home-service-1gih-2c6b5bde907f",
+        "research-levy-home-service-1h8i-5c92e89e3fee"
+      ],
+      "sourceLocation": "PDF p. 40, segment 1 through PDF p. 44, segment 1",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 40, segment 1 through PDF p. 44, segment 1",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "componentLocators": [
+          {
+            "id": "research-levy-home-service-1caz-f243f03ac454",
+            "label": "PDF p. 40",
+            "pageNumber": 40,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 62603,
+            "normalizedEndOffset": 63285
+          },
+          {
+            "id": "research-levy-home-service-1cty-1c42f9e500e1",
+            "label": "PDF p. 40",
+            "pageNumber": 40,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 63286,
+            "normalizedEndOffset": 64205
+          },
+          {
+            "id": "research-levy-home-service-1dji-280592d5790f",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 64206,
+            "normalizedEndOffset": 64970
+          },
+          {
+            "id": "research-levy-home-service-1e4r-365ce2949367",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 64971,
+            "normalizedEndOffset": 66253
+          },
+          {
+            "id": "research-levy-home-service-1f4e-0f63f153b28c",
+            "label": "PDF p. 42",
+            "pageNumber": 42,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 66254,
+            "normalizedEndOffset": 67327
+          },
+          {
+            "id": "research-levy-home-service-1fy8-2a4bff7bb946",
+            "label": "PDF p. 43",
+            "pageNumber": 43,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 67328,
+            "normalizedEndOffset": 68056
+          },
+          {
+            "id": "research-levy-home-service-1gih-2c6b5bde907f",
+            "label": "PDF p. 43",
+            "pageNumber": 43,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 68057,
+            "normalizedEndOffset": 68993
+          },
+          {
+            "id": "research-levy-home-service-1h8i-5c92e89e3fee",
+            "label": "PDF p. 44",
+            "pageNumber": 44,
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+            "normalizedStartOffset": 68994,
+            "normalizedEndOffset": 69985
+          }
+        ]
+      },
+      "provenanceHash": "f89b109d3a71b7f098faad5971fd9e1489da9e00364aa868fd7d35f5e92e3028",
+      "componentProvenanceHashes": [
+        "f243f03ac4542ffd71cfcb176b341ce04bed314b6cce22a6161f976a51cacff1",
+        "1c42f9e500e10ab5a3b04e2a9aa66d0ea19d091d54aba72f56af26bbde0cdbc6",
+        "280592d5790f34bde323763d3cec0bedd04375face88345a7fd66d5b4242972a",
+        "365ce2949367faec7c05f241ae1df3baef105cdd4e468bfd99e2a0b9a8f38509",
+        "0f63f153b28c3b44b04152cd8cb33af393aaf7b12d57c6fb78b22326cea720f5",
+        "2a4bff7bb946b3ed19b244302f572243177e350758aece08986310b6bc10f022",
+        "2c6b5bde907fe823086522b8dd7e484e0ddfbbbee7c29e6c12d4da2aa4914bf0",
+        "5c92e89e3fee6e335158cbf9427ddd6476a6ba056be821c0734283e267720e5e"
+      ],
+      "wordCount": 1426,
+      "characterCount": 7389,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "family-storytelling",
+        "mindfulness",
+        "interfaith",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Name this as a historical closing meditation about how people live on through memory and influence, followed by scripture and a communal resolve.",
+      "rationale": "The final eight source segments move coherently from doubt and hope through ethical legacy into scripture and the service’s closing prayer.",
+      "creditNotes": "Credit J. Leonard Levy and identify the public-domain Haggadah or Home Service for the Festival of Passover.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-theology-as-consensus",
+        "historical-language-contextual-use",
+        "long-form-only",
+        "review-dated-theology-and-gender"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

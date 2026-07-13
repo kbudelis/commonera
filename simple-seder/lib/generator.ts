@@ -1,10 +1,12 @@
 import {
   coverOptions,
+  maggidNarratives,
   quoteCatalog,
   sectionBlueprints,
-  themeInserts,
   themeLabels,
+  themeMoments,
   toneOpeners,
+  type ThemeMoment,
 } from "../content/pack";
 import {
   passagesForSpine,
@@ -17,6 +19,16 @@ import {
   type PrimarySourceId,
   type SederSectionId,
 } from "../content/source-spines";
+import {
+  runtimePassageById,
+  runtimePassageCandidates,
+  runtimeFeaturedSource,
+  selectRuntimePassages,
+  smokeRuntimeContext,
+  type RuntimePassageCandidate,
+  type RuntimePassageContext,
+} from "../content/source-runtime";
+import { loadRuntimeContextForProfile } from "../content/runtime-pack-adapter";
 import {
   assertEditorial,
   CONTEXTUAL_QUOTE_IDS,
@@ -38,6 +50,7 @@ export interface ModelEnhancement {
   quoteIds?: string[];
   coverId?: string;
   bridges?: Record<string, string>;
+  passageIds?: string[];
 }
 
 function quoteSectionsForLength(length: GenerationProfile["length"]): string[] {
@@ -50,6 +63,16 @@ const quoteContexts: Record<string, string> = {
   maggid: "A voice that deepens this telling of oppression, resistance, and freedom:",
   nirtzah: "A closing line about the life we want to build after tonight:",
 };
+
+const contemplativeQuoteContexts: Record<string, string> = {
+  "q-dhammapada-hatred": "Alongside our closing hope for peace, the Dhammapada offers this Buddhist teaching:",
+  "q-gita-right-action": "As we choose an action, this historical Hindu translation asks us to value doing right even when we cannot control the result:",
+  "q-isha-self": "Alongside our shared-humanity closing, the Isha Upanishad offers this Vedantic vision:",
+};
+
+function quoteContextFor(quote: QuoteEntry, sectionId: string): string {
+  return contemplativeQuoteContexts[quote.id] ?? quoteContexts[sectionId];
+}
 
 function stableHash(value: string): number {
   let hash = 2166136261;
@@ -130,34 +153,51 @@ function selectQuotes(
   const themes = selectedThemes(profile);
   const profileKey = stableProfile(profile);
   const candidates = new Map(
-    sectionIds.map((sectionId, slot) => [
-      sectionId,
-      quoteCatalog
+    sectionIds.map((sectionId, slot) => {
+      const targetTheme = themes[slot % themes.length];
+      return [
+        sectionId,
+        quoteCatalog
         .filter(
           (quote) =>
             quote.approved &&
             quote.sectionIds.includes(sectionId) &&
             CONTEXTUAL_QUOTE_IDS[sectionId]?.has(quote.id) &&
-            quote.themes.some((theme) => themes.includes(theme)),
+            quote.themes.some((theme) => themes.includes(theme)) &&
+            (!quote.externalContemplative || profile.themes.includes("mindfulness")),
         )
         .sort(
-          (left, right) =>
-            stableHash(`quote:${slot}:${sectionId}:${left.id}:${profileKey}`) -
-            stableHash(`quote:${slot}:${sectionId}:${right.id}:${profileKey}`),
+          (left, right) => {
+            const leftExternalPriority =
+              sectionId === "nirtzah" && profile.themes.includes("mindfulness") && left.externalContemplative ? 1 : 0;
+            const rightExternalPriority =
+              sectionId === "nirtzah" && profile.themes.includes("mindfulness") && right.externalContemplative ? 1 : 0;
+            if (leftExternalPriority !== rightExternalPriority) return rightExternalPriority - leftExternalPriority;
+            const leftTarget = left.themes.includes(targetTheme) ? 1 : 0;
+            const rightTarget = right.themes.includes(targetTheme) ? 1 : 0;
+            if (leftTarget !== rightTarget) return rightTarget - leftTarget;
+            return stableHash(`quote:${slot}:${sectionId}:${left.id}:${profileKey}`) -
+              stableHash(`quote:${slot}:${sectionId}:${right.id}:${profileKey}`);
+          },
         ),
-    ]),
+      ];
+    }),
   );
   const selected = new Map<string, QuoteEntry>();
   const used = new Set<string>();
+  let externalContemplativeCount = 0;
 
   function place(index: number): boolean {
     if (index === sectionIds.length) return true;
     const sectionId = sectionIds[index];
     for (const quote of candidates.get(sectionId) ?? []) {
       if (used.has(quote.id)) continue;
+      if (quote.externalContemplative && externalContemplativeCount >= 1) continue;
       used.add(quote.id);
       selected.set(sectionId, quote);
+      if (quote.externalContemplative) externalContemplativeCount += 1;
       if (place(index + 1)) return true;
+      if (quote.externalContemplative) externalContemplativeCount -= 1;
       used.delete(quote.id);
       selected.delete(sectionId);
     }
@@ -170,21 +210,64 @@ function selectQuotes(
   return selected;
 }
 
-function audienceBridge(profile: GenerationProfile, sectionIndex: number): string {
+function assignedThemeMoments(profile: GenerationProfile): Map<string, ThemeMoment> {
+  const assignments = new Map<string, ThemeMoment>();
+  const themes = [...new Set(profile.themes)];
+  if (themes.length === 0) return assignments;
+
+  const usedMomentIds = new Set<string>();
+  const chooseForTheme = (theme: ThemeId, round: number): boolean => {
+    const candidates = [...themeMoments[theme]].sort(
+      (left, right) =>
+        stableHash(`theme-moment:${round}:${left.id}:${stableProfile(profile)}`) -
+        stableHash(`theme-moment:${round}:${right.id}:${stableProfile(profile)}`),
+    );
+    const chosen = candidates.find(
+      (candidate) =>
+        !assignments.has(candidate.sectionId) && !usedMomentIds.has(candidate.id),
+    );
+    if (!chosen) return false;
+    assignments.set(chosen.sectionId, chosen);
+    usedMomentIds.add(chosen.id);
+    return true;
+  };
+
+  themes.forEach((theme) => chooseForTheme(theme, 0));
+  let round = 1;
+  while (assignments.size < 3 && round < 4) {
+    for (const theme of themes) {
+      if (assignments.size >= 3) break;
+      chooseForTheme(theme, round);
+    }
+    round += 1;
+  }
+  return assignments;
+}
+
+function audienceBridge(
+  profile: GenerationProfile,
+  sectionIndex: number,
+  themedMoment?: ThemeMoment,
+): string {
   const sectionId = sectionBlueprints[sectionIndex].id;
+  if (themedMoment) {
+    if (profile.length === 20) return themedMoment.transition;
+    const participation = profile.audience === "kids"
+      ? kidParticipation[sectionId]
+      : tableParticipation[sectionId];
+    const combined = `${participation} ${themedMoment.transition}`;
+    return combined.trim().split(/\s+/u).length <= 45
+      ? combined
+      : themedMoment.transition;
+  }
+  // In the concise tier, the action copy already supplies an explicit role for
+  // every guest. Repeating another participation paragraph in all 14 sections
+  // made a nominally short seder much longer without making it clearer.
+  if (profile.length === 20) return "";
   if (profile.audience === "kids") {
     return kidParticipation[sectionId];
   }
-
-  const neutral = tableParticipation[sectionId];
-  const focusSections = new Set(["maggid", "nirtzah"]);
-  if (profile.themes.length === 0 || !focusSections.has(sectionId)) return neutral;
-
-  const themes = selectedThemes(profile);
-  const theme = sectionId === "maggid" ? themes[0] : themes[1] ?? themes[0];
-  const insertIndex = contextualThemeInsertIndex[theme][sectionId];
-  const insert = themeInserts[theme][insertIndex];
-  return `${neutral} ${insert.text}`;
+  return tableParticipation[sectionId];
 }
 
 const kidParticipation: Record<string, string> = {
@@ -192,7 +275,7 @@ const kidParticipation: Record<string, string> = {
   urchatz: "Children may wash their own hands, or take turns with a partner: one person holds their hands over the basin while the other gently pours water from the pitcher, then they switch roles.",
   karpas: "Let children dip their own parsley or celery in the salt water and describe how it tastes.",
   yachatz: "Show children which piece of matzah becomes the afikoman. They will search for it after dinner, and the finder often receives a small prize.",
-  maggid: "Invite children to ask the Four Questions, remove one drop of grape juice for each plague, and sing Dayenu. For a hands-on option, make ten plague picture cards with paper and crayons; children can hold up each card as its plague is named.",
+  maggid: "Children can ask the Four Questions, remove plague drops, sing Dayenu, and hold up ten plague picture cards drawn with crayons on paper.",
   rachtzah: "Children may wash their own hands before the matzah, or work in pairs over the basin: one pours gently from the pitcher while the other washes, then they switch. After washing, stay quiet until everyone has blessed and eaten the matzah.",
   "motzi-matzah": "Pass a small piece of matzah to each child and taste it together after the blessing.",
   maror: "Offer each child a tiny taste of romaine lettuce or mild horseradish; they may taste, smell, or pass.",
@@ -221,44 +304,56 @@ const tableParticipation: Record<string, string> = {
   nirtzah: "End by letting each person name one thought or action they want to carry forward.",
 };
 
-const contextualThemeInsertIndex: Record<ThemeId, Record<string, number>> = {
-  feminist: { karpas: 1, maggid: 0, "shulchan-orech": 11, nirtzah: 8 },
-  lgbtq: { karpas: 7, maggid: 0, "shulchan-orech": 1, nirtzah: 10 },
-  "social-justice": { karpas: 6, maggid: 0, "shulchan-orech": 6, nirtzah: 1 },
-  environment: { karpas: 0, maggid: 1, "shulchan-orech": 7, nirtzah: 11 },
-  interfaith: { karpas: 2, maggid: 4, "shulchan-orech": 10, nirtzah: 7 },
-  secular: { karpas: 2, maggid: 1, "shulchan-orech": 9, nirtzah: 11 },
-  mindfulness: { karpas: 2, maggid: 7, "shulchan-orech": 6, nirtzah: 11 },
-  traditional: { karpas: 4, maggid: 5, "shulchan-orech": 2, nirtzah: 11 },
-  "family-storytelling": { karpas: 6, maggid: 0, "shulchan-orech": 1, nirtzah: 11 },
-};
-
 const kidQuestions: Record<string, string> = {
-  kadesh: "What are you excited about tonight?",
-  urchatz: "What is one worry you would like to let go of?",
-  karpas: "What is something new you have seen growing this spring?",
-  yachatz: "When something breaks, who can help put it back together?",
-  maggid: "If you were leaving Egypt in a hurry, what would you bring?",
-  rachtzah: "After you eat the matzah: What helps you feel ready to begin something?",
-  "motzi-matzah": "What does the matzah taste and feel like?",
-  maror: "What is something difficult that a friend might need help with?",
-  korech: "What two different feelings can you have at the same time?",
-  "shulchan-orech": "Which food on the table has a family story?",
-  tzafun: "Why do you think the seder ends the meal with the matzah we hid?",
-  barech: "Who helped make tonight possible?",
-  hallel: "What is one thing you want to celebrate?",
-  nirtzah: "What kind action do you want to try tomorrow?",
+  kadesh: "A seder begins by making time feel special. What could our table do to make tonight feel welcoming?",
+  urchatz: "What helps your mind slow down when you first arrive somewhere?",
+  karpas: "Why do you think the seder puts fresh spring greens and salty tears in the same bite?",
+  yachatz: "Why might we save one broken piece of matzah and bring it back after dinner?",
+  maggid: "Which person in the Exodus story made a brave choice, and who did that choice help?",
+  rachtzah: "After you eat the matzah: How did washing a second time feel different from washing before karpas?",
+  "motzi-matzah": "Matzah recalls leaving before bread could rise. How can one plain food help a whole group remember a hurried journey?",
+  maror: "Why might tasting something bitter help us remember a hard part of the story?",
+  korech: "The sandwich holds bitter maror and sweet charoset together. When have you felt two different feelings at once?",
+  "shulchan-orech": "Which food here has a story about a person, place, or tradition?",
+  tzafun: "Why does the seder bring back the broken matzah before the night can end?",
+  barech: "Name one person and one part of nature that helped this meal reach us.",
+  hallel: "After a story with fear and loss, what gives the people a reason to sing?",
+  nirtzah: "What is one action tomorrow that could make someone else feel safer, freer, or more welcome?",
 };
 
-function promptForAudience(sectionId: string, prompt: string, profile: GenerationProfile): string {
-  if (profile.audience === "kids") {
-    return kidQuestions[sectionId];
-  }
-  if (profile.audience === "mixed") {
-    return `Everyone can answer or pass: ${kidQuestions[sectionId]}`;
-  }
-  if (sectionId === "rachtzah") {
-    return `After everyone has eaten the matzah: ${prompt}`;
+const adultQuestions: Record<string, string> = {
+  kadesh: "What quality would help this table hold honest questions and genuine welcome tonight?",
+  urchatz: "What do you notice when an ordinary act of washing is given your full attention?",
+  karpas: "What changes when renewal and grief are tasted in the same bite?",
+  yachatz: "Why might a ritual of freedom begin by breaking something and promising to return for it?",
+  maggid: "Which choice in the Exodus story changes what freedom becomes possible for everyone else?",
+  rachtzah: "After everyone has eaten the matzah: How did repeating the washing change your attention to it?",
+  "motzi-matzah": "What does a hurried, unfinished bread reveal about the conditions under which people often begin leaving danger?",
+  maror: "What kind of suffering becomes easier for a community to ignore when it is never allowed to interrupt the meal?",
+  korech: "What truth becomes clearer when bitterness, sweetness, and urgency are held together?",
+  "shulchan-orech": "Which dish carries a story about migration, adaptation, scarcity, celebration, or care?",
+  tzafun: "Why does the seder require the hidden broken piece to return before the ritual can move toward its close?",
+  barech: "Whose labor or knowledge made tonight possible while remaining easy to overlook?",
+  hallel: "What deserves praise after we have made room for grief and moral complexity?",
+  nirtzah: "What concrete practice could carry tonight’s concern for freedom into an ordinary week?",
+};
+
+function promptForAudience(
+  sectionId: string,
+  profile: GenerationProfile,
+  themedMoment?: ThemeMoment,
+): string {
+  const kidPrompt = themedMoment?.kidPrompt ?? kidQuestions[sectionId];
+  const adultPrompt = themedMoment?.adultPrompt ?? adultQuestions[sectionId];
+  let prompt = profile.audience === "kids"
+    ? kidPrompt
+    : profile.audience === "mixed"
+      ? `Everyone can answer or pass: ${kidPrompt}`
+      : adultPrompt;
+  if (sectionId === "rachtzah" && !/^After (?:you|everyone)/i.test(prompt)) {
+    prompt = profile.audience === "adults"
+      ? `After everyone has eaten the matzah: ${prompt}`
+      : `After you eat the matzah: ${prompt}`;
   }
   return prompt;
 }
@@ -288,11 +383,7 @@ const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   maggid: [
     {
       role: "ritual-direction",
-      text: "Uncover the three matzot and pour the second cup of wine or grape juice for each person; do not drink it yet. Invite the youngest willing guest—or anyone who wishes—to read the Four Questions printed below. When the ten plagues are named, each person uses a finger or spoon to remove one drop from their own cup for each plague: blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn. Set the drops on a napkin or small plate rather than licking your finger.",
-    },
-    {
-      role: "beginner-orientation",
-      text: "Here is the story’s outline. Pharaoh enslaved the Israelites in Egypt and ordered Hebrew baby boys killed. The midwives Shifra and Puah resisted him. Moses survived, grew up, fled Egypt, and returned to demand freedom. Pharaoh refused repeatedly, and ten plagues struck Egypt. The Israelites left in haste, reached the sea with Pharaoh’s army behind them, crossed through the parted water, and began the difficult journey from slavery toward freedom.",
+      text: "Uncover the three matzot and pour the second cup of wine or grape juice for each person; do not drink yet. Invite the youngest willing guest—or anyone who wishes—to read the Four Questions. As the ten plagues are named, each person uses a spoon to move one drop from their own cup to a napkin or plate for each: blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn.",
     },
   ],
   rachtzah: [{
@@ -333,6 +424,71 @@ const beginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
   }],
 };
 
+/**
+ * Essential host directions for the concise tier. These retain the actor,
+ * object, action, pass option, and newcomer clarification for every ritual,
+ * while leaving fuller explanations to the reviewed source passage that
+ * follows. The 45- and 90-minute tiers keep the more expansive directions.
+ */
+const conciseBeginnerSectionCopy: Record<SederSectionId, HouseParagraph[]> = {
+  kadesh: [{
+    role: "ritual-direction",
+    text: "Pour a small first cup of wine or grape juice for each person. Each person lifts their own cup, reads or listens to the English blessing below, and takes a sip. This formally begins the seder.",
+  }],
+  urchatz: [{
+    role: "ritual-direction",
+    text: "Wash without a blessing. Each person may use a sink or pour from the pitcher over their own hands. Or partners may pour for one another above the basin, switch roles, and dry with the towel.",
+  }],
+  karpas: [{
+    role: "ritual-direction",
+    text: "Pass parsley, celery, or another green vegetable. Each person dips a piece in salt water, says or listens to the blessing below, and eats it. Green marks spring; salt water recalls tears.",
+  }],
+  yachatz: [{
+    role: "ritual-direction",
+    text: "Break the middle of the three matzot in two. Return the smaller piece. Wrap and hide the larger piece, called the afikoman, for children or other guests to find after dinner. The finder receives a small prize or chooses a song.",
+  }],
+  maggid: [{
+    role: "ritual-direction",
+    text: "Pour the second cup of wine or grape juice; do not drink yet. Invite the youngest willing guest—or anyone who wishes—to read the Four Questions. Each person uses a spoon to move one drop from their cup to a napkin or plate for each plague: blood, frogs, lice, wild beasts, livestock disease, boils, hail, locusts, darkness, and death of the firstborn.",
+  }],
+  rachtzah: [{
+    role: "ritual-direction",
+    text: "Wash again before matzah. Guests may wash their own hands, or partners may take turns pouring over the basin. Say or listen to the handwashing blessing, dry, and return to the table. After washing, remain quiet until everyone has blessed and eaten the matzah.",
+  }],
+  "motzi-matzah": [{
+    role: "ritual-direction",
+    text: "The host lifts the matzah. Read or listen to the two blessings below, pass matzah until every person has a piece, and eat together.",
+  }],
+  maror: [{
+    role: "ritual-direction",
+    text: "Give each person a small bitter herb: prepared horseradish or romaine lettuce. Each person dips it in charoset and tastes it after the blessing. Anyone may take a mild portion, smell it, or pass.",
+  }],
+  korech: [{
+    role: "ritual-direction",
+    text: "Each person places maror and charoset between two small pieces of matzah to make the Hillel sandwich, then eats it. Anyone may make a mild version or pass.",
+  }],
+  "shulchan-orech": [{
+    role: "ritual-direction",
+    text: "Begin the festive meal. Name the dishes and allergens before guests serve themselves. Keep the hidden afikoman separate and return to the Haggadah after dinner.",
+  }],
+  tzafun: [{
+    role: "ritual-direction",
+    text: "Invite children or other guests to find the afikoman. Give the finder the agreed prize or honor. Return to the table, divide the afikoman, and let everyone eat a small piece.",
+  }],
+  barech: [{
+    role: "ritual-direction",
+    text: "Fill the third cup with wine or grape juice and say or read a brief gratitude. Then each person lifts their own cup, reads or listens to the wine blessing, and drinks.",
+  }],
+  hallel: [{
+    role: "ritual-direction",
+    text: "Fill the fourth cup with wine or grape juice. No one needs to know a tune. One person reads, ‘Give thanks for the good in our lives,’ and everyone answers, ‘May love and freedom grow.’ Repeat the response or choose a song. Guests may sing, hum, listen, or pass. Read the wine blessing and drink.",
+  }],
+  nirtzah: [{
+    role: "ritual-direction",
+    text: "The ordered part of the seder is ending. Each person may name one thought or action to carry beyond the table, or simply listen. Read the closing hope together.",
+  }],
+};
+
 const englishBlessings: Partial<Record<SederSectionId, string[]>> = {
   kadesh: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
   karpas: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the earth."],
@@ -346,6 +502,20 @@ const englishBlessings: Partial<Record<SederSectionId, string[]>> = {
   barech: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
   hallel: ["Blessed are You, Eternal our God, Guide of the universe, who creates the fruit of the vine."],
 };
+
+function sectionHasTraditionalLiturgy(
+  sectionId: SederSectionId,
+  profile: GenerationProfile,
+  spineId: RuntimeSpineId,
+): boolean {
+  if (sectionId === "maggid") return true;
+  const englishIsSeparate = Boolean(englishBlessings[sectionId]?.length) &&
+    !(sectionId === "motzi-matzah" && spineId === "shir-geulah-primary");
+  if (englishIsSeparate) return true;
+  if (profile.language !== "transliteration") return false;
+  const blueprint = sectionBlueprints.find((item) => item.id === sectionId);
+  return Boolean(blueprint?.blessing) || ["barech", "hallel"].includes(sectionId);
+}
 
 const maggidFourQuestions = "Why is this night different from all other nights? On other nights we eat leavened bread or matzah; tonight we eat matzah. On other nights we eat any vegetables; tonight we eat bitter herbs. On other nights we do not have to dip our food even once; tonight we dip twice. On other nights we may sit upright or recline; tonight we make a point of reclining as a sign of freedom.";
 
@@ -378,24 +548,106 @@ interface ComposedSectionBody {
   body: string[];
   blocks: AssemblyBlock[];
   passageIds: string[];
+  runtimeSourceIds: string[];
+}
+
+function runtimeInsertionIndex(
+  body: string[],
+  sectionId: SederSectionId,
+  profile: GenerationProfile,
+  candidate: RuntimePassageCandidate,
+): number {
+  const firstBlessing = body.findIndex((paragraph) =>
+    /^(?:Blessed|Praised) are You\b|^Barukh atah\b/i.test(paragraph.trim()),
+  );
+  const beforeBlessing = firstBlessing >= 0 ? firstBlessing : body.length;
+  switch (candidate.passage.seam) {
+    case "section-opening":
+      // Preserve the universal newcomer orientation at the very start.
+      return sectionId === "kadesh" ? Math.min(3, body.length) : Math.min(1, body.length);
+    case "ritual-setup":
+    case "ritual-explanation":
+    case "plate-option":
+      return Math.min(1, body.length);
+    case "story-core": {
+      if (sectionId === "maggid") {
+        const narrative = maggidNarratives[profile.length].paragraphs;
+        const lastNarrative = body.lastIndexOf(narrative[narrative.length - 1]);
+        if (lastNarrative >= 0) return lastNarrative + 1;
+      }
+      return beforeBlessing;
+    }
+    case "story-reflection": {
+      const concludingDirection = body.findIndex((paragraph) =>
+        /After the Exodus story and Dayenu/i.test(paragraph),
+      );
+      return concludingDirection >= 0 ? concludingDirection : beforeBlessing;
+    }
+    case "before-blessing":
+      return beforeBlessing;
+    case "song-introduction":
+      return Math.min(1, body.length);
+    case "closing-reflection": {
+      const closing = body.findIndex((paragraph) => /^Together, say:/i.test(paragraph));
+      return closing >= 0 ? closing : body.length;
+    }
+    case "after-blessing":
+    case "discussion-prompt":
+    case "meal-transition":
+    case "historical-sidebar":
+    case "optional-insert":
+      return body.length;
+  }
+}
+
+function bodyWithRuntimePassages(
+  body: string[],
+  sectionId: SederSectionId,
+  profile: GenerationProfile,
+  candidates: RuntimePassageCandidate[],
+): string[] {
+  const result = [...body];
+  for (const candidate of candidates) {
+    const index = runtimeInsertionIndex(result, sectionId, profile, candidate);
+    result.splice(
+      index,
+      0,
+      ...(candidate.passage.beginnerContext ? [candidate.passage.beginnerContext] : []),
+      candidate.passage.exactText,
+    );
+  }
+  return result;
 }
 
 function bodyForLength(
   blueprint: (typeof sectionBlueprints)[number],
   profile: GenerationProfile,
   spineId: RuntimeSpineId,
+  runtimeCandidates: RuntimePassageCandidate[] = [],
 ): ComposedSectionBody {
   const sectionId = blueprint.id as SederSectionId;
-  const houseParagraphs = [...beginnerSectionCopy[sectionId]];
+  const houseParagraphs = [...(
+    profile.length === 20
+      ? conciseBeginnerSectionCopy[sectionId]
+      : beginnerSectionCopy[sectionId]
+  )];
+  if (sectionId === "maggid") {
+    houseParagraphs.push(
+      ...maggidNarratives[profile.length].paragraphs.map((text) => ({
+        role: "beginner-orientation" as const,
+        text,
+      })),
+    );
+  }
   if (sectionId === "kadesh") {
     houseParagraphs.unshift(
       {
         role: "beginner-orientation",
-        text: "Welcome. A seder is Passover’s participatory home ritual and meal. Haggadah means ‘telling’: this booklet guides us through fourteen steps of welcome, symbolic foods, questions, the Exodus story, a festive meal, gratitude, songs, and a closing hope. No prior knowledge, Hebrew, singing ability, or religious belief is expected. Each section explains what is happening and what to do.",
+        text: "Welcome. A seder is Passover’s participatory home ritual and meal. This Haggadah guides fourteen steps of welcome, symbolic foods, questions, the Exodus, dinner, gratitude, songs, and a closing hope. No prior knowledge, Hebrew, singing ability, or religious belief is expected.",
       },
       {
         role: "beginner-orientation",
-        text: "We can take turns reading a paragraph or a whole section, and nobody has to lead everything. The host may invite the next reader or pass the reading around the table. Anyone may ask a question, add a memory, help with a ritual, listen, or pass. We will pause for the festive meal and return to the Haggadah afterward.",
+        text: "Take turns reading paragraphs or whole sections. The host can invite a reader or pass the reading around. Anyone may ask a question, share a memory, help with a ritual, listen, or pass. We pause for dinner and return afterward.",
       },
       {
         role: "bridge",
@@ -461,57 +713,232 @@ function bodyForLength(
   }
 
   return {
-    body: blocks.map((block) => block.text),
+    body: bodyWithRuntimePassages(
+      blocks.map((block) => block.text),
+      sectionId,
+      profile,
+      runtimeCandidates,
+    ),
     blocks,
-    passageIds: sourcePassages.map((passage) => passage.id),
+    passageIds: [
+      ...sourcePassages.map((passage) => passage.id),
+      ...runtimeCandidates.map((candidate) => candidate.passage.id),
+    ],
+    runtimeSourceIds: runtimeCandidates.map((candidate) => candidate.source.sourceId),
+  };
+}
+
+/**
+ * Small-table planning budgets for the live ritual, not reading-time weights.
+ * Dinner itself is additional; Shulchan Orech covers the transition into it.
+ * The concise tier is intentionally brisk, while the longer tiers reserve real
+ * time for conversation, plague activity, the afikoman, and communal song.
+ */
+export const LIVE_SECTION_MINUTES: Record<
+  GenerationProfile["length"],
+  Record<SederSectionId, number>
+> = {
+  20: {
+    kadesh: 2,
+    urchatz: 3,
+    karpas: 2,
+    yachatz: 2,
+    maggid: 6,
+    rachtzah: 3,
+    "motzi-matzah": 2,
+    maror: 2,
+    korech: 2,
+    "shulchan-orech": 2,
+    tzafun: 2,
+    barech: 2,
+    hallel: 2,
+    nirtzah: 2,
+  },
+  45: {
+    kadesh: 3,
+    urchatz: 4,
+    karpas: 3,
+    yachatz: 3,
+    maggid: 12,
+    rachtzah: 4,
+    "motzi-matzah": 3,
+    maror: 3,
+    korech: 3,
+    "shulchan-orech": 2,
+    tzafun: 4,
+    barech: 4,
+    hallel: 7,
+    nirtzah: 5,
+  },
+  90: {
+    kadesh: 4,
+    urchatz: 5,
+    karpas: 4,
+    yachatz: 4,
+    maggid: 32,
+    rachtzah: 5,
+    "motzi-matzah": 4,
+    maror: 4,
+    korech: 4,
+    "shulchan-orech": 2,
+    tzafun: 6,
+    barech: 7,
+    hallel: 13,
+    nirtzah: 6,
+  },
+};
+
+export const LIVE_PLANNING_RANGES: Record<
+  GenerationProfile["length"],
+  { minimum: number; maximum: number; label: string }
+> = {
+  20: { minimum: 32, maximum: 36, label: "32–36 minutes" },
+  45: { minimum: 55, maximum: 65, label: "55–65 minutes" },
+  90: { minimum: 95, maximum: 110, label: "95–110 minutes" },
+};
+
+/** Hands-on time at a small table, before any optional prompt discussion. */
+export const CONCISE_ACTION_MINUTES: Record<SederSectionId, number> = {
+  kadesh: 0.75,
+  urchatz: 2.75,
+  karpas: 1,
+  yachatz: 1.25,
+  maggid: 2.5,
+  rachtzah: 2.75,
+  "motzi-matzah": 1,
+  maror: 1,
+  korech: 1,
+  "shulchan-orech": 1,
+  tzafun: 2,
+  barech: 1,
+  hallel: 1.5,
+  nirtzah: 0.75,
+};
+
+const CONCISE_SPOKEN_WPM: Record<GenerationProfile["audience"], number> = {
+  adults: 140,
+  mixed: 130,
+  kids: 120,
+};
+
+const CONCISE_AUDIENCE_ACTION_MINUTES: Record<GenerationProfile["audience"], number> = {
+  adults: 0,
+  mixed: 0.75,
+  kids: 1.5,
+};
+
+export interface ConciseTimingAudit {
+  bodyWords: number;
+  bridgeWords: number;
+  optionalPromptWords: number;
+  quoteWords: number;
+  requiredSpokenWords: number;
+  totalRenderedWords: number;
+  spokenWordsPerMinute: number;
+  requiredReadingMinutes: number;
+  realisticActionMinutes: number;
+  estimatedCoreLiveMinutes: number;
+  displayedLiveMinutes: number;
+}
+
+const countWords = (value: string | undefined): number =>
+  (value ?? "").trim().split(/\s+/u).filter(Boolean).length;
+
+/**
+ * Audits the concise tier as it will be led: all body copy, transitions, and
+ * quote callouts are counted as spoken; table questions are explicitly
+ * optional. Dinner is outside the estimate.
+ */
+export function auditConciseTiming(document: HaggadahDocument): ConciseTimingAudit {
+  if (document.profile.length !== 20) {
+    throw new Error("Concise timing audit requires a 20-minute content-tier document.");
+  }
+  const bodyWords = document.sections.reduce(
+    (sum, section) => sum + section.body.reduce((bodySum, paragraph) => bodySum + countWords(paragraph), 0),
+    0,
+  );
+  const bridgeWords = document.sections.reduce((sum, section) => sum + countWords(section.bridge), 0);
+  const optionalPromptWords = document.sections.reduce((sum, section) => sum + countWords(section.prompt), 0);
+  const quoteWords = document.sections.reduce(
+    (sum, section) => sum + (section.quote
+      ? countWords(section.quoteContext) + countWords(section.quote.text)
+      : 0),
+    0,
+  );
+  const requiredSpokenWords = bodyWords + bridgeWords + quoteWords;
+  const totalRenderedWords = requiredSpokenWords + optionalPromptWords;
+  const spokenWordsPerMinute = CONCISE_SPOKEN_WPM[document.profile.audience];
+  const requiredReadingMinutes = requiredSpokenWords / spokenWordsPerMinute;
+  const realisticActionMinutes = Object.values(CONCISE_ACTION_MINUTES)
+    .reduce((sum, minutes) => sum + minutes, 0) +
+    CONCISE_AUDIENCE_ACTION_MINUTES[document.profile.audience];
+  return {
+    bodyWords,
+    bridgeWords,
+    optionalPromptWords,
+    quoteWords,
+    requiredSpokenWords,
+    totalRenderedWords,
+    spokenWordsPerMinute,
+    requiredReadingMinutes,
+    realisticActionMinutes,
+    estimatedCoreLiveMinutes: requiredReadingMinutes + realisticActionMinutes,
+    displayedLiveMinutes: document.sections.reduce((sum, section) => sum + section.minutes, 0),
   };
 }
 
 function allocateMinutes(length: GenerationProfile["length"]): number[] {
-  const weights = [2, 1, 2, 2, 7, 1, 2, 2, 2, 8, 3, 3, 4, 3];
-  const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
-  const raw = weights.map((weight) => (weight / totalWeight) * length);
-  const minutes = raw.map((value) => Math.max(1, Math.floor(value)));
-  let remaining = length - minutes.reduce((sum, value) => sum + value, 0);
+  return SECTION_ORDER.map((sectionId) => LIVE_SECTION_MINUTES[length][sectionId]);
+}
 
-  const ranked = raw
-    .map((value, index) => ({ index, fraction: value - Math.floor(value) }))
-    .sort((a, b) => b.fraction - a.fraction || a.index - b.index);
-
-  let cursor = 0;
-  while (remaining > 0) {
-    minutes[ranked[cursor % ranked.length].index] += 1;
-    cursor += 1;
-    remaining -= 1;
-  }
-  while (remaining < 0) {
-    const candidate = ranked
-      .slice()
-      .reverse()
-      .find(({ index }) => minutes[index] > 1);
-    if (!candidate) break;
-    minutes[candidate.index] -= 1;
-    remaining += 1;
-  }
-  return minutes;
+function humanSederDate(value: string): string {
+  const trimmed = value.trim();
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(trimmed);
+  if (!match) return trimmed;
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (
+    date.getUTCFullYear() !== year ||
+    date.getUTCMonth() !== month - 1 ||
+    date.getUTCDate() !== day
+  ) return trimmed;
+  return new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
 }
 
 function invitation(profile: GenerationProfile): string {
-  const host = profile.hostName.trim() || "your host";
-  const date = profile.sederDate.trim() || "Passover night";
+  const host = profile.hostName.trim();
+  const date = humanSederDate(profile.sederDate);
   const themes = selectedThemes(profile).map((theme) => themeLabels[theme]);
   const custom = profile.customTheme.trim();
   const values = custom ? `${themes.join(", ")}, and ${custom}` : themes.join(", ");
-  return `${host} invites you to a ${profile.length}-minute seder on ${date}, shaped around ${values}. A seder is a participatory Passover meal: we will take turns reading, ask questions, taste symbolic foods, tell the Exodus story, share dinner, and sing or listen together. No Passover or Hebrew experience is needed. You are welcome to read, share a thought or memory, help with a ritual, listen, or pass at any time.`;
+  const liveRange = LIVE_PLANNING_RANGES[profile.length].label;
+  const opening = host && date
+    ? `${host} invites you to a Passover seder on ${date}, planned for about ${liveRange} before dinner`
+    : host
+      ? `${host} invites you to a Passover seder on Passover night, planned for about ${liveRange} before dinner`
+      : date
+        ? `You’re invited to a Passover seder on ${date}, planned for about ${liveRange} before dinner`
+        : `You’re invited to a Passover seder on Passover night, planned for about ${liveRange} before dinner`;
+  return `${opening}, shaped around ${values}. A seder is a participatory Passover meal: we will take turns reading, ask questions, taste symbolic foods, tell the Exodus story, share dinner, and sing or listen together. No Passover or Hebrew experience is needed. You are welcome to read, share a thought or memory, help with a ritual, listen, or pass at any time.`;
 }
 
 function hostGuide(profile: GenerationProfile): string[] {
+  const liveMinutes = Object.values(LIVE_SECTION_MINUTES[profile.length])
+    .reduce((sum, minutes) => sum + minutes, 0);
+  const liveRange = LIVE_PLANNING_RANGES[profile.length].label;
   const guide = [
-    `Timing: the readings, rituals, and selected prompts are paced for about ${profile.length} minutes; the festive dinner is additional. Read through the Haggadah once, choose which optional prompts to keep, then allow separate time for arrival, the meal, and unhurried conversation.`,
+    `Timing: you chose the ${profile.length}-minute content tier. This controls the amount of reading; the table questions are optional. Live group rituals need additional time. The displayed small-table estimates total ${liveMinutes} minutes, so plan roughly ${liveRange} for the core readings, pouring, washing, dipping, plague activity, afikoman search, and songs. The festive dinner is additional, and each optional question you discuss may add 2–5 minutes. For 10–15 guests, multiple young children, ceremonial partner-pouring, or fuller conversation, add at least 10–20 minutes. Read through the Haggadah once, choose which optional prompts to keep, then allow separate time for arrival and the meal.`,
     "Set each place with a Haggadah, napkin, water glass, and a small wine glass or juice cup. Put the seder plate, three covered matzah pieces, salt water, extra matzah, wine or grape juice, and a washing bowl with pitcher and towel within easy reach.",
     "The four cups pace the seder from beginning to end: the first opens Kadesh, the second is poured before the Four Questions and drunk after Maggid, the third follows gratitude after dinner, and the fourth closes Hallel. Pour small amounts, and offer grape juice or another celebratory drink without explanation or pressure. Guests may sip rather than finish each cup; at two ounces per cup, allow about eight ounces per guest.",
     "Matzah is unleavened bread that recalls the Israelites leaving Egypt before dough could rise. Place three pieces together under a cloth or in a matzah cover, plus enough extra for everyone to taste during the meal.",
-    "There are two handwashings. Urchatz comes before karpas and has no blessing; Rachtzah comes before eating matzah and includes a blessing. At either washing, guests may wash their own hands at a sink or over the basin, or work in pairs while one person gently pours water over the other’s hands above the basin and then they switch. Explain the choices and the difference between the two washings before each one.",
+    "There are two handwashings. Urchatz comes before karpas and has no blessing; Rachtzah comes before eating matzah and includes a blessing. At either washing, guests may wash their own hands at a sink or over the basin, or work in pairs while one person gently pours water over the other’s hands above the basin and then they switch. Explain the choices and the difference between the two washings before each one. Each washing usually needs 2–4 minutes at a small table; plan at least 5 minutes for about 15 people or for ceremonial partner-pouring.",
     "Miriam’s cup is optional. If you use it, choose any cup, fill it with water before guests arrive, and place it near the seder plate. The Urchatz reading connects the water with Miriam and the well that sustained the Israelites in the wilderness.",
     "At Yachatz, break the middle matzah and hide or set aside the larger half, called the afikoman. Near the end, children or adults find it; everyone eats a small piece as the final taste of the meal. Decide beforehand whether the finder receives a small prize, chooses a song, or earns a shared treat.",
     "The festive meal occurs at Shulchan Orech. Serve food that works for your guests and your own Passover practice. Tell guests when the meal begins, keep the afikoman separate, and resume the Haggadah after plates are cleared.",
@@ -607,20 +1034,75 @@ function shoppingList(profile: GenerationProfile): string[] {
   return list;
 }
 
-export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
+export function generateHaggadah(
+  profile: GenerationProfile,
+  runtimeContext: RuntimePassageContext = smokeRuntimeContext,
+  preferredFeaturedSourceId?: string,
+): HaggadahDocument {
   const profileKey = stableProfile(profile);
   const sourceSpineId = selectSourceSpine(profile);
-  const primarySourceId = sourceIdForSpine(sourceSpineId);
+  const proceduralBackboneSourceId = sourceIdForSpine(sourceSpineId);
+  const preferredCandidates = preferredFeaturedSourceId
+    ? runtimePassageCandidates(
+      profile,
+      proceduralBackboneSourceId,
+      preferredFeaturedSourceId,
+      12,
+      runtimeContext,
+    )
+    : [];
+  const preferredIsUsable = preferredCandidates.some(
+    (candidate) => candidate.source.sourceId === preferredFeaturedSourceId,
+  );
+  const featuredSourceId = preferredIsUsable
+    ? preferredFeaturedSourceId!
+    : runtimeFeaturedSource(
+      profile,
+      proceduralBackboneSourceId,
+      runtimeContext,
+    )?.sourceId ?? proceduralBackboneSourceId;
+  const runtimeCandidates = runtimePassageCandidates(
+    profile,
+    proceduralBackboneSourceId,
+    featuredSourceId,
+    12,
+    runtimeContext,
+  );
+  const selectedRuntimePassages = selectRuntimePassages(
+    profile,
+    proceduralBackboneSourceId,
+    featuredSourceId,
+    undefined,
+    runtimeContext,
+  );
+  const runtimePassagesBySection = new Map<SederSectionId, RuntimePassageCandidate[]>();
+  for (const candidate of selectedRuntimePassages) {
+    const existing = runtimePassagesBySection.get(candidate.sectionId) ?? [];
+    runtimePassagesBySection.set(candidate.sectionId, [...existing, candidate]);
+  }
   const minutes = allocateMinutes(profile.length);
   const quoteSectionIds = quoteSectionsForLength(profile.length);
   const quotesBySection = selectQuotes(profile, quoteSectionIds);
+  const themedMoments = assignedThemeMoments(profile);
   const composedSections = sectionBlueprints.map((blueprint, index) => {
-    const composition = bodyForLength(blueprint, profile, sourceSpineId);
+    const composition = bodyForLength(
+      blueprint,
+      profile,
+      sourceSpineId,
+      runtimePassagesBySection.get(blueprint.id as SederSectionId),
+    );
+    const themedMoment = themedMoments.get(blueprint.id);
+    const includePrompt = profile.length !== 20 ||
+      Boolean(themedMoment) ||
+      blueprint.id === "maggid" ||
+      blueprint.id === "nirtzah";
     return {
       blueprint,
       composition,
-      prompt: promptForAudience(blueprint.id, blueprint.prompt, profile),
-      bridge: audienceBridge(profile, index),
+      prompt: includePrompt
+        ? promptForAudience(blueprint.id, profile, themedMoment)
+        : "",
+      bridge: audienceBridge(profile, index, themedMoment),
       quote: quotesBySection.get(blueprint.id),
     };
   });
@@ -628,13 +1110,13 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
   const sourceAssembly: HaggadahAssembly = {
     spineId: sourceSpineId,
     tier: profile.length,
-    sections: composedSections.map(({ blueprint, composition, prompt, bridge }) => ({
+    // Source-share accounting covers the Haggadah reading itself. Optional
+    // discussion questions and short personalized transitions are measured
+    // separately; otherwise a concise, highly participatory edition appears
+    // less source-led merely because it offers more ways to join in.
+    sections: composedSections.map(({ blueprint, composition }) => ({
       sectionId: blueprint.id as SederSectionId,
-      blocks: [
-        ...composition.blocks,
-        { kind: "house-copy", role: "bridge", text: bridge },
-        { kind: "house-copy", role: "table-prompt", text: prompt },
-      ],
+      blocks: [...composition.blocks],
     })),
   };
   const sourceErrors = validateAssembly(sourceAssembly);
@@ -642,9 +1124,15 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
     throw new Error(`Source-spine validation failed:\n- ${sourceErrors.join("\n- ")}`);
   }
   const measuredSources = sourceShareMetrics(sourceAssembly);
-  if (measuredSources.borrowedWordShare < 0.5) {
+  const runtimeBorrowedWords = selectedRuntimePassages.reduce(
+    (sum, candidate) => sum + candidate.passage.wordCount,
+    0,
+  );
+  const borrowedWords = measuredSources.borrowedWords + runtimeBorrowedWords;
+  const borrowedWordShare = borrowedWords / (measuredSources.totalWords + runtimeBorrowedWords);
+  if (borrowedWordShare < 0.5) {
     throw new Error(
-      `Source-first assembly fell below the 50% reviewed-source floor (${Math.round(measuredSources.borrowedWordShare * 100)}%; ${measuredSources.borrowedWords} reviewed-source, ${measuredSources.houseWords} house, ${measuredSources.traditionalWords} traditional words).`,
+      `Source-first assembly fell below the 50% reviewed-source floor (${Math.round(borrowedWordShare * 100)}%; ${borrowedWords} reviewed-source, ${measuredSources.houseWords} house, ${measuredSources.traditionalWords} traditional words).`,
     );
   }
 
@@ -661,12 +1149,18 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
         prompt,
         bridge,
         minutes: minutes[index],
-        sourceIds: [primarySourceId],
+        sourceIds: [...new Set([
+          proceduralBackboneSourceId as string,
+          ...(composition.blocks.some((block) => block.kind === "traditional-liturgy")
+            ? ["traditional-core"]
+            : []),
+          ...composition.runtimeSourceIds,
+        ])],
         passageIds: composition.passageIds,
       };
       if (quote) {
         section.quote = quote;
-        section.quoteContext = quoteContexts[blueprint.id];
+        section.quoteContext = quoteContextFor(quote, blueprint.id);
       }
       return section;
     },
@@ -688,13 +1182,29 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
     shoppingList: shoppingList(profile),
     sederPlateGuide: sederPlateGuide(profile),
     sourceSpineId,
+    featuredSourceId,
     sourceMetrics: {
-      primarySourceId,
-      borrowedWords: measuredSources.borrowedWords,
+      proceduralBackboneSourceId,
+      featuredSourceId,
+      featuredSourceWords:
+        (featuredSourceId === proceduralBackboneSourceId
+          ? measuredSources.bySource[proceduralBackboneSourceId]?.words ?? 0
+          : 0) +
+        selectedRuntimePassages
+          .filter((candidate) => candidate.source.sourceId === featuredSourceId)
+          .reduce((sum, candidate) => sum + candidate.passage.wordCount, 0),
+      supportingSourceIds: [...new Set(
+        selectedRuntimePassages
+          .filter((candidate) => candidate.source.sourceId !== featuredSourceId)
+          .map((candidate) => candidate.source.sourceId),
+      )],
+      borrowedWords,
       houseWords: measuredSources.houseWords,
       traditionalWords: measuredSources.traditionalWords,
-      borrowedWordShare: measuredSources.borrowedWordShare,
+      borrowedWordShare,
     },
+    runtimePassageCandidateIds: runtimeCandidates.map((candidate) => candidate.passage.id),
+    runtimeContentMode: runtimeContext.mode,
     createdAt: profile.sederDate
       ? `${profile.sederDate}T00:00:00.000Z`
       : "1970-01-01T00:00:00.000Z",
@@ -710,6 +1220,7 @@ export function generateHaggadah(profile: GenerationProfile): HaggadahDocument {
 export function mergeModelEnhancement(
   document: HaggadahDocument,
   enhancement: ModelEnhancement,
+  runtimeContext: RuntimePassageContext = smokeRuntimeContext,
 ): HaggadahDocument {
   const next: HaggadahDocument = {
     ...document,
@@ -724,9 +1235,89 @@ export function mergeModelEnhancement(
     hostGuide: [...document.hostGuide],
     shoppingList: [...document.shoppingList],
     sederPlateGuide: document.sederPlateGuide.map((entry) => ({ ...entry })),
-    sourceMetrics: { ...document.sourceMetrics },
+    sourceMetrics: {
+      ...document.sourceMetrics,
+      supportingSourceIds: [...document.sourceMetrics.supportingSourceIds],
+    },
+    runtimePassageCandidateIds: [...document.runtimePassageCandidateIds],
     editorialWarnings: [],
   };
+
+  if (enhancement.passageIds?.length) {
+    const allowed = new Set(document.runtimePassageCandidateIds);
+    for (const passageId of enhancement.passageIds) {
+      if (!allowed.has(passageId)) {
+        throw new Error(`Model suggested runtime passage outside its allowlisted shortlist: ${passageId}.`);
+      }
+    }
+    const selected = selectRuntimePassages(
+      document.profile,
+      document.sourceMetrics.proceduralBackboneSourceId,
+      document.featuredSourceId,
+      enhancement.passageIds,
+      runtimeContext,
+    );
+    let removedWords = 0;
+    let removedFeaturedWords = 0;
+    for (const section of next.sections) {
+      const currentRuntimePassages = section.passageIds
+        .map((passageId) => runtimePassageById(passageId, runtimeContext))
+        .filter((passage): passage is NonNullable<typeof passage> => Boolean(passage));
+      for (const passage of currentRuntimePassages) {
+        const bodyIndex = section.body.indexOf(passage.exactText);
+        if (bodyIndex < 0) {
+          throw new Error(`Runtime passage ${passage.id} no longer matches its exact approved text.`);
+        }
+        section.body.splice(bodyIndex, 1);
+        if (passage.beginnerContext) {
+          const contextIndex = section.body.indexOf(passage.beginnerContext);
+          if (contextIndex >= 0) section.body.splice(contextIndex, 1);
+        }
+        removedWords += passage.wordCount;
+        if (passage.sourceId === document.featuredSourceId) {
+          removedFeaturedWords += passage.wordCount;
+        }
+      }
+      const removedIds = new Set(currentRuntimePassages.map((passage) => passage.id));
+      section.passageIds = section.passageIds.filter((passageId) => !removedIds.has(passageId));
+      const proceduralBackboneSourceId = document.sourceMetrics.proceduralBackboneSourceId;
+      const keepsTraditionalLiturgy = sectionHasTraditionalLiturgy(
+        section.id as SederSectionId,
+        document.profile,
+        document.sourceSpineId,
+      );
+      section.sourceIds = [
+        proceduralBackboneSourceId,
+        ...(keepsTraditionalLiturgy ? ["traditional-core"] : []),
+      ];
+    }
+    for (const candidate of selected) {
+      const section = next.sections.find((item) => item.id === candidate.sectionId);
+      if (!section) throw new Error(`Runtime passage ${candidate.passage.id} has no valid section.`);
+      section.body = bodyWithRuntimePassages(
+        section.body,
+        candidate.sectionId,
+        document.profile,
+        [candidate],
+      );
+      section.passageIds.push(candidate.passage.id);
+      section.sourceIds = [...new Set([...section.sourceIds, candidate.source.sourceId])];
+    }
+    const insertedWords = selected.reduce((sum, candidate) => sum + candidate.passage.wordCount, 0);
+    const insertedFeaturedWords = selected
+      .filter((candidate) => candidate.source.sourceId === document.featuredSourceId)
+      .reduce((sum, candidate) => sum + candidate.passage.wordCount, 0);
+    next.sourceMetrics.borrowedWords = next.sourceMetrics.borrowedWords - removedWords + insertedWords;
+    next.sourceMetrics.featuredSourceWords =
+      next.sourceMetrics.featuredSourceWords - removedFeaturedWords + insertedFeaturedWords;
+    next.sourceMetrics.supportingSourceIds = [...new Set(
+      selected
+        .filter((candidate) => candidate.source.sourceId !== document.featuredSourceId)
+        .map((candidate) => candidate.source.sourceId),
+    )];
+    next.sourceMetrics.borrowedWordShare = next.sourceMetrics.borrowedWords /
+      (next.sourceMetrics.borrowedWords + next.sourceMetrics.houseWords);
+  }
 
   if (enhancement.coverId !== undefined) {
     if (!coverOptions.some((cover) => cover.id === enhancement.coverId)) {
@@ -786,6 +1377,11 @@ export function mergeModelEnhancement(
           `Model suggested quote ${quoteId} outside the seam-specific review for ${sectionId}.`,
         );
       }
+      if (quote.externalContemplative && !document.profile.themes.includes("mindfulness")) {
+        throw new Error(
+          `Model suggested external contemplative quote ${quoteId} without the Mindfulness & spiritual depth theme.`,
+        );
+      }
       if (!quote.themes.some((theme) => selectedThemes(document.profile).includes(theme))) {
         throw new Error(
           `Model suggested quote ${quoteId} outside the selected themes.`,
@@ -794,7 +1390,7 @@ export function mergeModelEnhancement(
       const section = next.sections.find((candidate) => candidate.id === sectionId);
       if (section) {
         section.quote = quote;
-        section.quoteContext = quoteContexts[sectionId];
+        section.quoteContext = quoteContextFor(quote, sectionId);
       }
     });
 
@@ -809,6 +1405,7 @@ export function mergeModelEnhancement(
             quote.sectionIds.includes(sectionId) &&
             CONTEXTUAL_QUOTE_IDS[sectionId]?.has(quote.id) &&
             quote.themes.some((theme) => selectedThemes(document.profile).includes(theme)) &&
+            (!quote.externalContemplative || document.profile.themes.includes("mindfulness")) &&
             !usedQuoteIds.has(quote.id),
         );
         section.quote = deterministicItem(
@@ -823,4 +1420,40 @@ export function mergeModelEnhancement(
   next.editorialWarnings = validateEditorial(next);
   assertEditorial(next);
   return next;
+}
+
+/**
+ * Upgrade the immediate smoke-index draft only when the comprehensive approval
+ * gate permits lazy source packs. A loader or validation failure returns the
+ * ordinary deterministic draft rather than interrupting generation.
+ */
+export async function generateHaggadahWithRuntimePacks(
+  profile: GenerationProfile,
+): Promise<HaggadahDocument> {
+  const sourceSpineId = selectSourceSpine(profile);
+  const proceduralBackboneSourceId = sourceIdForSpine(sourceSpineId);
+  const loaded = await loadRuntimeContextForProfile(profile, proceduralBackboneSourceId);
+  return generateHaggadah(profile, loaded.context, loaded.featuredSourceId);
+}
+
+/** Rehydrate the same lazy context before applying model-selected passage IDs. */
+export async function mergeModelEnhancementWithRuntimePacks(
+  document: HaggadahDocument,
+  enhancement: ModelEnhancement,
+): Promise<HaggadahDocument> {
+  if (document.runtimeContentMode !== "per-source-dynamic") {
+    return mergeModelEnhancement(document, enhancement, smokeRuntimeContext);
+  }
+  const loaded = await loadRuntimeContextForProfile(
+    document.profile,
+    document.sourceMetrics.proceduralBackboneSourceId,
+    {
+      featuredSourceId: document.featuredSourceId,
+      requestedPassageIds: document.runtimePassageCandidateIds,
+    },
+  );
+  if (!loaded.usedComprehensivePack) {
+    throw new Error("The approved comprehensive source context could not be reloaded safely.");
+  }
+  return mergeModelEnhancement(document, enhancement, loaded.context);
 }

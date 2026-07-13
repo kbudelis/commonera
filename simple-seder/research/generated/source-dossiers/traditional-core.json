@@ -1,0 +1,1087 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "traditional-core",
+  "title": "Seder Haggadah Shel Pesaḥ",
+  "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+  "family": "traditional-liturgical",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A broad traditional English-and-Hebrew Haggadah whose strongest value is a reliable ritual and narrative backbone; selected passages need OCR cleanup, beginner-facing action cues, and compassionate framing around violent or land-centered liturgy.",
+  "sourceAssessment": {
+    "voice": "Traditional, formal, explanatory, and prayer-centered, with a mid-century English register and substantial Hebrew embedded in the page extraction.",
+    "bestUses": [
+      "The core order and ritual-symbol explanations for a traditional-theme Haggadah",
+      "A concise Exodus arc from ancestral migration through slavery, cry, and liberation",
+      "Familiar praise, meal, and table ritual passages that can anchor a cohesive source-led edition"
+    ],
+    "beginnerRisks": [
+      "The extraction contains broken Hebrew glyphs and layout artifacts that require visual comparison with the original pages.",
+      "Some instructions assume that guests already know which object to lift, which cup to fill, and what action follows.",
+      "Plague, firstborn, Temple, land, and Jerusalem passages need clear nontriumphalist or traditional-only gates."
+    ],
+    "politicalContext": "Biblical Israel, the land, Temple, and Jerusalem occur as traditional liturgy. The source also contains modern-sounding land refrains; the project may use a Jerusalem refrain only for a traditional selection without a social-justice override, and may not turn liturgy into exclusive modern political advocacy.",
+    "creditContext": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization. The source record is CC0 1.0, but separately attributed or embedded material still requires item-level review and every selected page needs an access-and-modification record."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 118,
+    "segmentCount": 211,
+    "exactCharacterCount": 159625,
+    "exactWordCount": 31250,
+    "reconstructionSha256": "d98b4b69fff5a3f51b6eee7b9b8e84f6d1260b7e40942e59cae326ac0757923a",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company.",
+    "license": "CC0-1.0",
+    "conditions": [
+      "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+      "Record access date and modifications"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=28052"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 16,
+      "segmentIds": [
+        "research-traditional-core-0-1fd564451840",
+        "research-traditional-core-y-862dbfb007f3",
+        "research-traditional-core-46-64d70342764b",
+        "research-traditional-core-6z-f1a4094e6695",
+        "research-traditional-core-qc-ba1437ae250a",
+        "research-traditional-core-84h-6d90992b746e",
+        "research-traditional-core-8n2-8e47297f5aef",
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-b6g-cf71877ef70a",
+        "research-traditional-core-bxa-0e5aa94868a1",
+        "research-traditional-core-dyc-39e490addacb",
+        "research-traditional-core-pz2-011da227930e",
+        "research-traditional-core-1us5-32b4dd23ca08",
+        "research-traditional-core-292t-13a0d3402334",
+        "research-traditional-core-2qhd-42bdbd84d5c6",
+        "research-traditional-core-2s4l-44a54b165fd4"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-traditional-core-7ds-79af5c50b98b",
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-dyc-39e490addacb",
+        "research-traditional-core-k5v-fe5f21d32029"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-em9-91ff4bc47a59"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 98,
+      "segmentIds": [
+        "research-traditional-core-1d3-aece74533a81",
+        "research-traditional-core-2dy-3005a4f4614b",
+        "research-traditional-core-321-0b06e6896505",
+        "research-traditional-core-3x2-120066258dad",
+        "research-traditional-core-41a-b981befb3c35",
+        "research-traditional-core-4hw-1e141ccdf8e2",
+        "research-traditional-core-52t-de9488574152",
+        "research-traditional-core-5ru-28bff6636415",
+        "research-traditional-core-69j-317bb8dcd567",
+        "research-traditional-core-6rp-e28f89042cf3",
+        "research-traditional-core-bxa-0e5aa94868a1",
+        "research-traditional-core-ckd-19e633d5d810",
+        "research-traditional-core-dej-405ba7a0af5b",
+        "research-traditional-core-f8u-8f918297218b",
+        "research-traditional-core-gay-ede147524373",
+        "research-traditional-core-gck-61b49e35666c",
+        "research-traditional-core-gdr-ed45498f205e",
+        "research-traditional-core-hnl-14806297570c",
+        "research-traditional-core-k5v-fe5f21d32029",
+        "research-traditional-core-l16-75007dcac099",
+        "research-traditional-core-loy-7f96ff30fc39",
+        "research-traditional-core-max-9550e7020e5e",
+        "research-traditional-core-n41-0b853a9df957",
+        "research-traditional-core-nmz-002a506886b1",
+        "research-traditional-core-o8n-921afee2c71b",
+        "research-traditional-core-pbe-5785d605f5f5",
+        "research-traditional-core-qjn-66c2bddc6394",
+        "research-traditional-core-r6h-e71ffcc8288d",
+        "research-traditional-core-roh-1fd564451840",
+        "research-traditional-core-rpf-09863d870116",
+        "research-traditional-core-rr2-d37d8b9ed4ef",
+        "research-traditional-core-s7o-9979c394b3a0",
+        "research-traditional-core-som-c8dead7f5488",
+        "research-traditional-core-tek-39306b83e311",
+        "research-traditional-core-tws-1cd496a6d544",
+        "research-traditional-core-vt4-4b3dabf7a591",
+        "research-traditional-core-wfe-c78c800ca257",
+        "research-traditional-core-x5m-0627ce1a6ee0",
+        "research-traditional-core-xqf-56684d824605",
+        "research-traditional-core-yc8-2fba4539f20c",
+        "research-traditional-core-yy4-629af6c035f1",
+        "research-traditional-core-zfv-2f2f1e24be8e",
+        "research-traditional-core-10e8-7ef96cccd516",
+        "research-traditional-core-11hl-af228e39b7f9",
+        "research-traditional-core-128l-4590ade12dc5",
+        "research-traditional-core-12oc-3b166e10ff60",
+        "research-traditional-core-13mj-c3f233cd943d",
+        "research-traditional-core-145b-55961a2f2f99",
+        "research-traditional-core-14rk-95eef2eeed88",
+        "research-traditional-core-15cl-1e78e7d14dae",
+        "research-traditional-core-15sm-422c8ffc839e",
+        "research-traditional-core-16um-24a4ab7f2193",
+        "research-traditional-core-17f7-1d9f8d5fc7d7",
+        "research-traditional-core-18eh-e961be2836b0",
+        "research-traditional-core-198m-f4c0bfd7319f",
+        "research-traditional-core-19rl-abe466be58a5",
+        "research-traditional-core-1aiy-96ce9dd02448",
+        "research-traditional-core-1b03-8710e38b966b",
+        "research-traditional-core-1biw-ce2e6d379db2",
+        "research-traditional-core-1c3c-66640a2797bb",
+        "research-traditional-core-1d4j-0618e61deff3",
+        "research-traditional-core-1dka-0fbf7a8d9bb5",
+        "research-traditional-core-1e44-99cec14b176e",
+        "research-traditional-core-1epa-cd0cb2bf7c68",
+        "research-traditional-core-1fds-d1cfebb076f0",
+        "research-traditional-core-1fvy-7c5d75b81eca",
+        "research-traditional-core-1gjf-d38a95c83e21",
+        "research-traditional-core-1h1p-bd5a1dc1806a",
+        "research-traditional-core-1hk8-061e2318eb96",
+        "research-traditional-core-1ivc-1e192ab0f603",
+        "research-traditional-core-1lhr-94651b99686c",
+        "research-traditional-core-1m1v-685165d15ca6",
+        "research-traditional-core-1qcs-d38d2438ff81",
+        "research-traditional-core-1r86-2aa1359ecdb6",
+        "research-traditional-core-1tdy-a90cfab6eeea",
+        "research-traditional-core-1w6t-839c58279aef",
+        "research-traditional-core-2ihy-02579d7bccc2",
+        "research-traditional-core-2n8l-4115ac41b6cf",
+        "research-traditional-core-2nvd-8442cbc47db3",
+        "research-traditional-core-2sls-bd8dcd1a37f2",
+        "research-traditional-core-2tjk-68b0d64f1e85",
+        "research-traditional-core-2tl1-cb0fe2ce8895",
+        "research-traditional-core-2txw-ebf20f1ace75",
+        "research-traditional-core-2ut3-ee23af9ba3d2",
+        "research-traditional-core-2vf1-5c886317accb",
+        "research-traditional-core-2y9y-6209e5813bc0",
+        "research-traditional-core-2z18-bcde98c452a5",
+        "research-traditional-core-3a0x-1e0bc7d9f416",
+        "research-traditional-core-3ady-f80f8c8f91a0",
+        "research-traditional-core-3ayq-c9cbb5d92614",
+        "research-traditional-core-3bif-482af3bf020a",
+        "research-traditional-core-3bkg-0ff56fc75e65",
+        "research-traditional-core-3blr-ca2582d72cd3",
+        "research-traditional-core-3c9d-e011a97aad4a",
+        "research-traditional-core-3d5d-6673b351ce97",
+        "research-traditional-core-3dpf-d71430b56082",
+        "research-traditional-core-3eez-f07dbf9103da",
+        "research-traditional-core-3evn-fbe29a91e5fd"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-traditional-core-1us5-32b4dd23ca08",
+        "research-traditional-core-1vdz-daf1db2cb673",
+        "research-traditional-core-1w55-98f5d2feca14"
+      ]
+    },
+    "maror": {
+      "segmentCount": 16,
+      "segmentIds": [
+        "research-traditional-core-7ds-79af5c50b98b",
+        "research-traditional-core-839-5c131e4dcdf9",
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-gtk-57bb82d63f9e",
+        "research-traditional-core-k5v-fe5f21d32029",
+        "research-traditional-core-10e8-7ef96cccd516",
+        "research-traditional-core-10y2-051ebfa8f12e",
+        "research-traditional-core-1mn9-6b147dcfa227",
+        "research-traditional-core-1n8u-1f7867d17f9b",
+        "research-traditional-core-1nuu-9d906cfc8d5c",
+        "research-traditional-core-1oj7-e505139e4af6",
+        "research-traditional-core-1oyy-c34117f8546d",
+        "research-traditional-core-1prz-799a55151bef",
+        "research-traditional-core-1us5-32b4dd23ca08",
+        "research-traditional-core-1w9o-b45e347e4e9d",
+        "research-traditional-core-1x3y-2f88959244e8"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-traditional-core-k5v-fe5f21d32029"
+      ]
+    },
+    "tzafun": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-f8u-8f918297218b",
+        "research-traditional-core-ujt-e3f41e422313",
+        "research-traditional-core-1x3y-2f88959244e8"
+      ]
+    },
+    "barech": {
+      "segmentCount": 16,
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-1x3y-2f88959244e8",
+        "research-traditional-core-1zwt-872ad5444c6d",
+        "research-traditional-core-20mb-ff32b640dfd6",
+        "research-traditional-core-213h-16bb75401e29",
+        "research-traditional-core-21ls-3933ee4b56c7",
+        "research-traditional-core-227f-447e8294d255",
+        "research-traditional-core-22ql-05cf9e517a6f",
+        "research-traditional-core-23bi-84b2cfb34785",
+        "research-traditional-core-23qm-861251fd6eb7",
+        "research-traditional-core-24bt-8931fc816ba8",
+        "research-traditional-core-24vq-28619d3e6731",
+        "research-traditional-core-25qk-826cd1abce5e",
+        "research-traditional-core-26om-2e061627e60f",
+        "research-traditional-core-280k-eef820a6b34c",
+        "research-traditional-core-292t-13a0d3402334"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 78,
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-a2q-07ba6a3b4fa4",
+        "research-traditional-core-apf-47c49dda6c54",
+        "research-traditional-core-b6g-cf71877ef70a",
+        "research-traditional-core-dyc-39e490addacb",
+        "research-traditional-core-ujt-e3f41e422313",
+        "research-traditional-core-vf4-9828fabc093a",
+        "research-traditional-core-1dka-0fbf7a8d9bb5",
+        "research-traditional-core-1fvy-7c5d75b81eca",
+        "research-traditional-core-1hk8-061e2318eb96",
+        "research-traditional-core-1ige-b3632ac7fbff",
+        "research-traditional-core-1ivc-1e192ab0f603",
+        "research-traditional-core-1jlz-edc78c7bc705",
+        "research-traditional-core-1k6m-3c658453e2af",
+        "research-traditional-core-1kxr-1efa7c576ed9",
+        "research-traditional-core-1kzu-c23bb7700c1a",
+        "research-traditional-core-1l1y-79d501e19775",
+        "research-traditional-core-1s8u-79d1db5ea5e9",
+        "research-traditional-core-1stz-5f07f2d80c75",
+        "research-traditional-core-1tdy-a90cfab6eeea",
+        "research-traditional-core-1txn-effabeac5ad5",
+        "research-traditional-core-1x3y-2f88959244e8",
+        "research-traditional-core-1xo5-da8a6f0bcbff",
+        "research-traditional-core-1ygt-59becd7ebb81",
+        "research-traditional-core-1z94-4138823ea3a6",
+        "research-traditional-core-27ap-495cd9998893",
+        "research-traditional-core-28g1-cc6b797acc2d",
+        "research-traditional-core-29n0-f2dc18cd088e",
+        "research-traditional-core-2aii-de40ec37c707",
+        "research-traditional-core-2ay9-5105f93581b9",
+        "research-traditional-core-2bgc-33a059cf2cb8",
+        "research-traditional-core-2c11-ea754c5996e3",
+        "research-traditional-core-2clv-e6f02f3c2bc0",
+        "research-traditional-core-2d62-a83fe4ec89f9",
+        "research-traditional-core-2djg-4d34b11f9f12",
+        "research-traditional-core-2e9w-5a40b86ae606",
+        "research-traditional-core-2eul-ee626f06d8ca",
+        "research-traditional-core-2fm8-2f14ac69b480",
+        "research-traditional-core-2fz5-0435220bbec7",
+        "research-traditional-core-2gfw-87fdd692aa09",
+        "research-traditional-core-2h00-516b707940ab",
+        "research-traditional-core-2hl4-aaf3c7925dec",
+        "research-traditional-core-2hnt-adb99608f965",
+        "research-traditional-core-2hpl-87f23785d2be",
+        "research-traditional-core-2ihy-02579d7bccc2",
+        "research-traditional-core-2ji1-36e4b433af25",
+        "research-traditional-core-2jxl-7996b2d1cc3b",
+        "research-traditional-core-2kph-acba3d30800c",
+        "research-traditional-core-2la9-3895fac26bb4",
+        "research-traditional-core-2m6f-a6ea7336f0a4",
+        "research-traditional-core-2mts-b6a601eb656e",
+        "research-traditional-core-2oew-ae3ab4730907",
+        "research-traditional-core-2owy-d2d9210746e8",
+        "research-traditional-core-2prj-702234c53ea5",
+        "research-traditional-core-2qhd-42bdbd84d5c6",
+        "research-traditional-core-2rd4-861bd0571dc0",
+        "research-traditional-core-2sls-bd8dcd1a37f2",
+        "research-traditional-core-2w4y-c683e2361da1",
+        "research-traditional-core-2x1v-d8671290ce33",
+        "research-traditional-core-2xml-25f9c5af17d4",
+        "research-traditional-core-2zlg-015cf796afcd",
+        "research-traditional-core-30dx-d8c1e18f89b6",
+        "research-traditional-core-30q8-47ec5f5e05db",
+        "research-traditional-core-31dv-8dd37560aaa6",
+        "research-traditional-core-31zz-f153b8069610",
+        "research-traditional-core-32j7-cfd112b05222",
+        "research-traditional-core-33ae-c4f47e530f6b",
+        "research-traditional-core-348e-ea851e00e850",
+        "research-traditional-core-34v7-04863c09fd71",
+        "research-traditional-core-35pn-9625485df4dd",
+        "research-traditional-core-360p-f1884caf061d",
+        "research-traditional-core-36ln-10f7e77c9208",
+        "research-traditional-core-37js-831e7c8cda25",
+        "research-traditional-core-37w3-4a90450a12de",
+        "research-traditional-core-38cf-10886faaf51b",
+        "research-traditional-core-38tt-35d7abcaae63",
+        "research-traditional-core-39cj-7c57a2f03e82",
+        "research-traditional-core-39p2-cb122ff54b3c"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 6,
+      "segmentIds": [
+        "research-traditional-core-hnl-14806297570c",
+        "research-traditional-core-i6m-d9cc4a6fb420",
+        "research-traditional-core-j57-0d19cb273a39",
+        "research-traditional-core-jjl-868186161470",
+        "research-traditional-core-2sls-bd8dcd1a37f2",
+        "research-traditional-core-2tim-1fd564451840"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 33,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 13
+  },
+  "recommendedSequences": [
+    {
+      "id": "traditional-core-seder-roadmap",
+      "title": "A traditional Seder roadmap",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-f8u-8f918297218b"
+      ],
+      "beginnerContext": "Before the first blessing, explain that the Seder follows fourteen named stages and that the host will announce each action. Define the wine or grape juice, greens, matzah, afikoman, bitter herb, meal, and closing songs when first mentioned.",
+      "rationale": "These two source-order records provide the clearest compact overview of the traditional sequence and the early ritual logic, making them suitable for an orientation page rather than scattering unexplained Hebrew stage names.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-object-definitions-required",
+        "host-action-cues-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization in the final source page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 15, segment 1",
+        "end": "PDF p. 19, segment 2",
+        "locators": [
+          {
+            "id": "research-traditional-core-9h1-c1dbb3bffea2",
+            "sourceLocation": "PDF p. 15, segment 1",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 12277,
+              "normalizedEndOffset": 13057
+            }
+          },
+          {
+            "id": "research-traditional-core-f8u-8f918297218b",
+            "sourceLocation": "PDF p. 19, segment 2",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 19758,
+              "normalizedEndOffset": 21129
+            }
+          }
+        ]
+      },
+      "totalWords": 375,
+      "exactTextSequenceSha256": "adccc5a8ffd848825299f4e976a95e6099cefbb868b6dd6e19ef50de13bef861",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "traditional-core-exodus-arc",
+      "title": "From migration to liberation",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-traditional-core-16um-24a4ab7f2193",
+        "research-traditional-core-17f7-1d9f8d5fc7d7",
+        "research-traditional-core-198m-f4c0bfd7319f",
+        "research-traditional-core-19rl-abe466be58a5",
+        "research-traditional-core-1biw-ce2e6d379db2"
+      ],
+      "beginnerContext": "Introduce the people in the story and state the arc plainly: Jacob's family went to Egypt, grew into a people, was enslaved and harmed, cried out, and was heard. Pause after oppression before describing liberation so the emotional movement is intelligible.",
+      "rationale": "These source-order passages create a usable traditional Exodus narrative across migration, population growth, forced labor, suffering, and divine response, giving a novice more than keywords without requiring the entire rabbinic exposition.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nontriumphalist-violence-framing",
+        "age-appropriate-harm-context",
+        "plain-language-narrative-bridges-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Birnbaum, Hebrew Publishing Company, and the Varady digitization; note cuts from the longer traditional exposition.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 39, segment 1",
+        "end": "PDF p. 43, segment 1",
+        "locators": [
+          {
+            "id": "research-traditional-core-16um-24a4ab7f2193",
+            "sourceLocation": "PDF p. 39, segment 1",
+            "locator": {
+              "label": "PDF p. 39",
+              "pageNumber": 39,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 55534,
+              "normalizedEndOffset": 56274
+            }
+          },
+          {
+            "id": "research-traditional-core-17f7-1d9f8d5fc7d7",
+            "sourceLocation": "PDF p. 39, segment 2",
+            "locator": {
+              "label": "PDF p. 39",
+              "pageNumber": 39,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 56275,
+              "normalizedEndOffset": 57544
+            }
+          },
+          {
+            "id": "research-traditional-core-198m-f4c0bfd7319f",
+            "sourceLocation": "PDF p. 41, segment 1",
+            "locator": {
+              "label": "PDF p. 41",
+              "pageNumber": 41,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 58630,
+              "normalizedEndOffset": 59312
+            }
+          },
+          {
+            "id": "research-traditional-core-19rl-abe466be58a5",
+            "sourceLocation": "PDF p. 41, segment 2",
+            "locator": {
+              "label": "PDF p. 41",
+              "pageNumber": 41,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 59313,
+              "normalizedEndOffset": 60297
+            }
+          },
+          {
+            "id": "research-traditional-core-1biw-ce2e6d379db2",
+            "sourceLocation": "PDF p. 43, segment 1",
+            "locator": {
+              "label": "PDF p. 43",
+              "pageNumber": 43,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 61592,
+              "normalizedEndOffset": 62327
+            }
+          }
+        ]
+      },
+      "totalWords": 815,
+      "exactTextSequenceSha256": "daff118e56b8b4bc786853d8bb0c58b7feac582ff2e9cffecf7b3841a7529e1e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "traditional-core-three-symbols",
+      "title": "Pesach, matzah, maror, and lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1nuu-9d906cfc8d5c",
+        "research-traditional-core-1oj7-e505139e4af6",
+        "research-traditional-core-1oyy-c34117f8546d",
+        "research-traditional-core-1prz-799a55151bef",
+        "research-traditional-core-1qcs-d38d2438ff81"
+      ],
+      "beginnerContext": "Point to each object as it is named and explain it before asking anyone to read: the offering recalls deliverance, matzah recalls hurried departure, and maror recalls the bitterness of slavery. Then connect the symbols to the teaching that every generation enters the story personally.",
+      "rationale": "These consecutive records form the source's complete central teaching on the three required symbols and the every-generation obligation, a coherent unit that supplies both ritual meaning and personal connection.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "insertionSectionId": "maggid",
+      "editorialGates": [
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "temple-offering-context",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and the Varady digitization; preserve the sequence as a single sourced unit.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 53, segment 3",
+        "end": "PDF p. 55, segment 2",
+        "locators": [
+          {
+            "id": "research-traditional-core-1nuu-9d906cfc8d5c",
+            "sourceLocation": "PDF p. 53, segment 3",
+            "locator": {
+              "label": "PDF p. 53",
+              "pageNumber": 53,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 77574,
+              "normalizedEndOffset": 78450
+            }
+          },
+          {
+            "id": "research-traditional-core-1oj7-e505139e4af6",
+            "sourceLocation": "PDF p. 54, segment 1",
+            "locator": {
+              "label": "PDF p. 54",
+              "pageNumber": 54,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 78451,
+              "normalizedEndOffset": 79017
+            }
+          },
+          {
+            "id": "research-traditional-core-1oyy-c34117f8546d",
+            "sourceLocation": "PDF p. 54, segment 2",
+            "locator": {
+              "label": "PDF p. 54",
+              "pageNumber": 54,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 79018,
+              "normalizedEndOffset": 80062
+            }
+          },
+          {
+            "id": "research-traditional-core-1prz-799a55151bef",
+            "sourceLocation": "PDF p. 55, segment 1",
+            "locator": {
+              "label": "PDF p. 55",
+              "pageNumber": 55,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 80063,
+              "normalizedEndOffset": 80811
+            }
+          },
+          {
+            "id": "research-traditional-core-1qcs-d38d2438ff81",
+            "sourceLocation": "PDF p. 55, segment 2",
+            "locator": {
+              "label": "PDF p. 55",
+              "pageNumber": 55,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 80812,
+              "normalizedEndOffset": 81941
+            }
+          }
+        ]
+      },
+      "totalWords": 869,
+      "exactTextSequenceSha256": "867ba3be56b8075472a8c18128e6f0b868e437ba34f5dfb7e60da3c1bc0a685e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "traditional-core-praise-transition",
+      "title": "From redemption to praise",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1s8u-79d1db5ea5e9",
+        "research-traditional-core-1stz-5f07f2d80c75",
+        "research-traditional-core-1tdy-a90cfab6eeea"
+      ],
+      "beginnerContext": "Tell guests that the story now turns into gratitude and song. State whether the group will read responsively, sing, or listen, and make participation optional.",
+      "rationale": "The adjacent passages preserve the transition out of the central telling and into praise, preventing a clipped psalm fragment from appearing without its narrative reason.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "participation-cue-required",
+        "plain-language-transition-required",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit the Birnbaum edition and Varady digitization in the final credits.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 57, segment 1",
+        "end": "PDF p. 57, segment 3",
+        "locators": [
+          {
+            "id": "research-traditional-core-1s8u-79d1db5ea5e9",
+            "sourceLocation": "PDF p. 57, segment 1",
+            "locator": {
+              "label": "PDF p. 57",
+              "pageNumber": 57,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 83262,
+              "normalizedEndOffset": 84022
+            }
+          },
+          {
+            "id": "research-traditional-core-1stz-5f07f2d80c75",
+            "sourceLocation": "PDF p. 57, segment 2",
+            "locator": {
+              "label": "PDF p. 57",
+              "pageNumber": 57,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 84023,
+              "normalizedEndOffset": 84741
+            }
+          },
+          {
+            "id": "research-traditional-core-1tdy-a90cfab6eeea",
+            "sourceLocation": "PDF p. 57, segment 3",
+            "locator": {
+              "label": "PDF p. 57",
+              "pageNumber": 57,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 84742,
+              "normalizedEndOffset": 85450
+            }
+          }
+        ]
+      },
+      "totalWords": 403,
+      "exactTextSequenceSha256": "8c5d3d1cb9a53eb9a62cc01b49715433013f5f27653bb811a8b5286c41f7fae8",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "traditional-core-table-actions",
+      "title": "Washing and symbolic eating",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-traditional-core-1vdz-daf1db2cb673",
+        "research-traditional-core-1x3y-2f88959244e8"
+      ],
+      "beginnerContext": "State exactly what happens: guests may wash their own hands or pour water for one another over a basin, then everyone eats matzah, bitter herb with haroset, and the matzah-maror sandwich as directed. Define each food and give allergy-safe alternatives.",
+      "rationale": "These source-order records contain the washing and symbolic-eating progression, but the project must supply accessible host instructions around the traditional blessings and compressed ritual prose.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "host-action-cues-required",
+        "mutual-handwashing-option-required",
+        "food-definition-and-allergy-note",
+        "ocr-and-page-layout-check"
+      ],
+      "creditNotes": "Credit the Birnbaum source and digitization; note that accessible action directions are project-authored bridges.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 59, segment 2",
+        "end": "PDF p. 63, segment 1",
+        "locators": [
+          {
+            "id": "research-traditional-core-1vdz-daf1db2cb673",
+            "sourceLocation": "PDF p. 59, segment 2",
+            "locator": {
+              "label": "PDF p. 59",
+              "pageNumber": 59,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 87335,
+              "normalizedEndOffset": 88312
+            }
+          },
+          {
+            "id": "research-traditional-core-1x3y-2f88959244e8",
+            "sourceLocation": "PDF p. 63, segment 1",
+            "locator": {
+              "label": "PDF p. 63",
+              "pageNumber": 63,
+              "localExtract": "research/source-extracts/traditional-core.txt",
+              "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+              "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+              "normalizedStartOffset": 89566,
+              "normalizedEndOffset": 90292
+            }
+          }
+        ]
+      },
+      "totalWords": 301,
+      "exactTextSequenceSha256": "22da765fa34bf939e593ffee716c3136491006e47d156b1645bf37f4f4655d97",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-traditional-core-0-1fd564451840",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "The page has no searchable text and cannot supply a verifiable reading."
+      ]
+    },
+    {
+      "id": "research-traditional-core-y-862dbfb007f3",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-84h-6d90992b746e",
+      "sourceLocation": "PDF p. 13, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-gdr-ed45498f205e",
+      "sourceLocation": "PDF p. 22, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "The extraction is dominated by corrupt glyphs and requires reconstruction from the rendered source before use."
+      ]
+    },
+    {
+      "id": "research-traditional-core-roh-1fd564451840",
+      "sourceLocation": "PDF p. 28, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text"
+      ]
+    },
+    {
+      "id": "research-traditional-core-vf4-9828fabc093a",
+      "sourceLocation": "PDF p. 32, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-128l-4590ade12dc5",
+      "sourceLocation": "PDF p. 36, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-15cl-1e78e7d14dae",
+      "sourceLocation": "PDF p. 38, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-1l1y-79d501e19775",
+      "sourceLocation": "PDF p. 52, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "The extraction is not reliably readable as an exact source passage."
+      ]
+    },
+    {
+      "id": "research-traditional-core-23bi-84b2cfb34785",
+      "sourceLocation": "PDF p. 68, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-23qm-861251fd6eb7",
+      "sourceLocation": "PDF p. 68, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-29n0-f2dc18cd088e",
+      "sourceLocation": "PDF p. 73, segment 2",
+      "reasons": [
+        "The collective destruction language is unsuitable for default peace-focused runtime use."
+      ]
+    },
+    {
+      "id": "research-traditional-core-2d62-a83fe4ec89f9",
+      "sourceLocation": "PDF p. 76, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2djg-4d34b11f9f12",
+      "sourceLocation": "PDF p. 76, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2fm8-2f14ac69b480",
+      "sourceLocation": "PDF p. 78, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2fz5-0435220bbec7",
+      "sourceLocation": "PDF p. 78, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2hpl-87f23785d2be",
+      "sourceLocation": "PDF p. 82, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2ji1-36e4b433af25",
+      "sourceLocation": "PDF p. 84, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2m6f-a6ea7336f0a4",
+      "sourceLocation": "PDF p. 86, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2rd4-861bd0571dc0",
+      "sourceLocation": "PDF p. 90, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2sls-bd8dcd1a37f2",
+      "sourceLocation": "PDF p. 91, segment 2",
+      "reasons": [
+        "The Jerusalem refrain is allowed only under the project's traditional-without-social-justice rule and should not enter the generic candidate pool."
+      ]
+    },
+    {
+      "id": "research-traditional-core-2tim-1fd564451840",
+      "sourceLocation": "PDF p. 92, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text"
+      ]
+    },
+    {
+      "id": "research-traditional-core-2tl1-cb0fe2ce8895",
+      "sourceLocation": "PDF p. 94, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-30dx-d8c1e18f89b6",
+      "sourceLocation": "PDF p. 100, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-35pn-9625485df4dd",
+      "sourceLocation": "PDF p. 106, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-360p-f1884caf061d",
+      "sourceLocation": "PDF p. 106, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-37js-831e7c8cda25",
+      "sourceLocation": "PDF p. 108, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-37w3-4a90450a12de",
+      "sourceLocation": "PDF p. 108, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-39cj-7c57a2f03e82",
+      "sourceLocation": "PDF p. 110, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-39p2-cb122ff54b3c",
+      "sourceLocation": "PDF p. 110, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-3d5d-6673b351ce97",
+      "sourceLocation": "PDF p. 116, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-traditional-core-3eez-f07dbf9103da",
+      "sourceLocation": "PDF p. 118, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs"
+      ]
+    },
+    {
+      "id": "research-traditional-core-3evn-fbe29a91e5fd",
+      "sourceLocation": "visually audited transcriptions, segment 1",
+      "reasons": [
+        "provenance-label-in-reading"
+      ]
+    }
+  ],
+  "notes": [
+    "The source can provide a cohesive traditional backbone when whole source-order movements are used instead of isolated phrases.",
+    "Do not silently modernize or paraphrase the canonical source text; add clearly separated beginner bridges and action cues.",
+    "Every selected extraction must be checked against the rendered page before human approval, especially where Hebrew and English columns interleave.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

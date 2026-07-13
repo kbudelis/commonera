@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "traditional-core",
+  "sourceTitle": "Seder Haggadah Shel Pesaḥ",
+  "modules": [
+    {
+      "id": "traditional-kadesh-four-cups",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "exactText": "A CUP OF WINE IS PLACED BEFORE EACH PERSON AT THE TABLE. EVERYONE IS TO DRINK FOUR CUPS OF WINE DURING THE SEDER.",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 15 (printed p. 13), Kadesh setup; visually verified",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 23,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "provenanceHash": "d85572f1b9415a2b78647cc6512aa0844ace3326df372c1fe0c7f07fabbb0189",
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      }
+    },
+    {
+      "id": "traditional-maggid-slaves",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "exactText": "We were once the slaves of Pharaoh in Egypt, but the Lord our God brought us out from there with a mighty hand and an outstretched arm. Had not God brought our fathers out of Egypt, our children and grandchildren would still be enslaved to a Pharaoh in Egypt. Even if we all were wise and intelligent, learned and versed in the Torah, it would nevertheless be our duty to tell about the exodus from Egypt. The more anyone discusses the exodus from Egypt, the more praise he deserves.",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 25 (printed p. 21), Maggid; visually verified",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "story-core",
+      "treatment": "verbatim-normalized",
+      "wordCount": 89,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "provenanceHash": "38e1a887a5e6a77d3a4dc45040bfcb18671f7b2530fe3460e9f28d5d794d7fe9",
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      }
+    }
+  ]
+}

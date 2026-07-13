@@ -53,12 +53,15 @@ export const CONTEXTUAL_QUOTE_IDS: Record<string, ReadonlySet<string>> = {
     "q-hillel-self",
     "q-deuteronomy-justice",
     "q-deuteronomy-life",
+    "q-dhammapada-hatred",
     "q-ecclesiastes-season",
     "q-ecclesiastes-two",
     "q-eliot",
     "q-exodus-strength",
+    "q-gita-right-action",
     "q-isaiah-peace",
     "q-isaiah-repairer",
+    "q-isha-self",
     "q-jeremiah-welfare",
     "q-leviticus-neighbor",
     "q-malachi-parent",
@@ -201,6 +204,14 @@ export function validateEditorial(document: HaggadahDocument): string[] {
           `Quote ${section.quote.id} does not match a selected theme.`,
         );
       }
+      if (
+        section.quote.externalContemplative &&
+        !document.profile.themes.includes("mindfulness")
+      ) {
+        errors.push(
+          `External contemplative quote ${section.quote.id} requires the Mindfulness & spiritual depth theme.`,
+        );
+      }
     }
   });
 
@@ -215,6 +226,9 @@ export function validateEditorial(document: HaggadahDocument): string[] {
   }
   if (new Set(placedQuotes.map((quote) => quote.id)).size !== placedQuotes.length) {
     errors.push("Quotation IDs must be unique within a Haggadah.");
+  }
+  if (placedQuotes.filter((quote) => quote.externalContemplative).length > 1) {
+    errors.push("A Haggadah may contain at most one external contemplative quotation.");
   }
 
   editorialText(document).forEach((value) => {

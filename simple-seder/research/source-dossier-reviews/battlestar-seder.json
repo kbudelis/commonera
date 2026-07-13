@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "battlestar-seder",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A complete fan-created Battlestar Galactica Seder that maps ritual objects, cups, exile, cyclical history, guilt, and fellowship onto the television universe while also borrowing Sanskrit prayers. It is a meaningful example of playful adaptation but must remain an explicit fandom opt-in with separate franchise, quotation, and interfaith review.",
+  "sourceAssessment": {
+    "voice": "Playful, referential, adult-fandom, participatory, allegorical, irreverent in places, and intentionally dependent on knowledge of Battlestar Galactica.",
+    "bestUses": [
+      "An explicit fan-theme demonstration of how a Haggadah can be adapted",
+      "Optional readings about cyclical history, responsibility for what people create, and fellowship",
+      "A research example for playful ritual remapping rather than a default Haggadah spine"
+    ],
+    "beginnerRisks": [
+      "The jokes, characters, invented foods, and plot references are opaque to non-fans.",
+      "Franchise quotations and character material require rights review even though the compiled Haggadah is openly licensed.",
+      "Sanskrit prayers must be named as interfaith borrowing and never presented as Jewish liturgy.",
+      "Fictional violence and survival language can overwhelm the actual Passover story if not clearly framed."
+    ],
+    "politicalContext": "The source’s war, displacement, extinction, and enemy language refers to a fictional universe. It must not be mapped onto Israelis, Palestinians, Jews, Muslims, Arabs, or any contemporary conflict, and it cannot displace the app’s peace-focused editorial policy.",
+    "creditContext": "Credit David Lieberman, Alison Ogden, Mary Bruch, Aharon N. Varady, and Open Siddur; preserve CC BY-SA 4.0 and GFDL provenance, require explicit fandom opt-in, and review franchise quotations and embedded prayers separately."
+  },
+  "recommendedSequences": [
+    {
+      "id": "battlestar-seder-cycle-and-opening-prayer",
+      "title": "Cyclical history and an interfaith opening",
+      "sectionIds": ["kadesh"],
+      "segmentIds": [
+        "research-battlestar-seder-0-447aaced8456",
+        "research-battlestar-seder-n7-1d918a86d20b"
+      ],
+      "beginnerContext": "State that this is an opt-in Battlestar fan adaptation, explain the cyclical-history premise, and label the Gâyatrî Mantra as a Hindu text rather than Jewish liturgy.",
+      "rationale": "The source’s first two records establish its recurring-history lens and complete the deliberately cross-cultural opening before the plate ritual begins.",
+      "themes": ["secular", "family-storytelling", "interfaith"],
+      "tones": ["playful", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["explicit-battlestar-opt-in", "embedded-franchise-and-prayer-rights-review", "label-interfaith-borrowing", "no-contemporary-political-analogy"],
+      "creditNotes": "Credit all four compilers and Open Siddur; separately verify franchise quotation and Gâyatrî Mantra attribution."
+    },
+    {
+      "id": "battlestar-seder-plate-and-invitation",
+      "title": "Fan-remapped plate and invitation",
+      "sectionIds": ["karpas", "yachatz", "maggid"],
+      "segmentIds": [
+        "research-battlestar-seder-1bp-fa382377365f",
+        "research-battlestar-seder-1xv-c065100998af"
+      ],
+      "beginnerContext": "Explain the ordinary parsley, salt water, matzah, and invitation first, then show how the fan text playfully remaps each element to fictional exile and survival.",
+      "rationale": "These adjacent records keep the plate symbolism, ritual eating, invitation to those in need, and wish for peace together as one adapted ritual movement.",
+      "themes": ["secular", "family-storytelling"],
+      "tones": ["playful", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["explicit-battlestar-opt-in", "embedded-franchise-and-prayer-rights-review", "do-not-substitute-for-host-instructions", "no-contemporary-political-analogy"],
+      "creditNotes": "Credit Lieberman, Ogden, Bruch, Varady, and Open Siddur; preserve open-license provenance and review franchise references."
+    },
+    {
+      "id": "battlestar-seder-second-cup-story",
+      "title": "Second cup and fictional migration story",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-battlestar-seder-2jo-34591ddcc2ec",
+        "research-battlestar-seder-356-6abe986effc4",
+        "research-battlestar-seder-3r6-40c9300feb86"
+      ],
+      "beginnerContext": "Give the real Exodus story elsewhere in full; introduce this only as the fan Haggadah’s fictional second-cup story about exile, migration, danger, and searching for home.",
+      "rationale": "Three consecutive records preserve the second-cup toast and the full Battlestar migration narrative without confusing it with the project’s foundational Exodus account.",
+      "themes": ["secular", "family-storytelling"],
+      "tones": ["playful", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["explicit-battlestar-opt-in", "embedded-franchise-rights-review", "foundational-exodus-story-must-remain", "no-contemporary-political-analogy", "fiction-label-required"],
+      "creditNotes": "Credit all compilers and Open Siddur; review quoted and paraphrased franchise story material separately."
+    },
+    {
+      "id": "battlestar-seder-third-cup-responsibility",
+      "title": "Third cup and responsibility for creation",
+      "sectionIds": ["barech"],
+      "segmentIds": [
+        "research-battlestar-seder-4ab-12150ecf1b54",
+        "research-battlestar-seder-4v2-208a2ebe2e21"
+      ],
+      "beginnerContext": "Introduce this as a fictional ethical meditation: the characters face responsibility for creating life and for the consequences they tried to disown.",
+      "rationale": "The paired records set up the third cup as guilt and complete the source’s argument about moral responsibility for what people create.",
+      "themes": ["secular", "mindfulness", "social-justice"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["explicit-battlestar-opt-in", "embedded-franchise-rights-review", "fiction-label-required", "no-contemporary-political-analogy"],
+      "creditNotes": "Credit all compilers and Open Siddur and review any direct television dialogue before runtime approval."
+    },
+    {
+      "id": "battlestar-seder-fellowship-and-closing",
+      "title": "Fellowship and interfaith closing",
+      "sectionIds": ["hallel", "nirtzah"],
+      "segmentIds": [
+        "research-battlestar-seder-7z2-29c21f4ec708",
+        "research-battlestar-seder-8kw-0e5203ecf73e"
+      ],
+      "beginnerContext": "Name the fourth cup as fellowship, identify the closing Sanskrit prayer as an Upanishadic text, and explain that the final destination is fictional Earth.",
+      "rationale": "The source’s final ritual records move from responsibility to the fleet into a prayer for truth, light, and life and then the fan adaptation’s closing refrain.",
+      "themes": ["secular", "family-storytelling", "interfaith", "mindfulness"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["explicit-battlestar-opt-in", "embedded-franchise-and-prayer-rights-review", "label-interfaith-borrowing", "fiction-label-required", "no-contemporary-political-analogy"],
+      "creditNotes": "Credit the compilers and Open Siddur; verify the Upanishadic prayer translation and franchise material separately."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-battlestar-seder-5fj-7315413a4191",
+      "reasons": ["Character-counting song is highly spoiler-dependent and begins a run of dated insulting character descriptions."]
+    },
+    {
+      "segmentId": "research-battlestar-seder-61e-fd4dadc4042e",
+      "reasons": ["Dated gendered and insulting character descriptions are unsuitable for the project’s playful-but-respectful tone."]
+    },
+    {
+      "segmentId": "research-battlestar-seder-6oc-2555b56946c2",
+      "reasons": ["Body-shaming and insulting character labels are unsuitable for contemporary guest-facing use."]
+    },
+    {
+      "segmentId": "research-battlestar-seder-7bo-2e1b3012804f",
+      "reasons": ["Continuation of the dated character-label sequence is not needed for a coherent fandom demonstration."]
+    },
+    {
+      "segmentId": "research-battlestar-seder-973-f4af79d682f0",
+      "reasons": ["Preservation history, contributor notes, and license material belong in provenance and credits rather than the ritual reading stream."]
+    }
+  ],
+  "notes": [
+    "This source is included rather than erased, but every use must be triggered by an explicit Battlestar Galactica choice.",
+    "The real Exodus narrative and novice ritual instructions remain mandatory even when a fandom sequence is selected.",
+    "Open licensing of the compilation does not automatically clear embedded franchise dialogue, plot material, or third-party prayer translations.",
+    "All selected sequences remain candidate-only pending human rights and editorial review."
+  ]
+}

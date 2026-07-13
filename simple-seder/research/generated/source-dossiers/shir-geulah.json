@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "shir-geulah",
+  "title": "Haggadah Shir Ge'ulah / Song of Liberation",
+  "creator": "Emily Aviva Kapor-Mater",
+  "family": "beginner-accessible",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A full liberation-centered Haggadah that joins traditional structure, gender-expansive language, accessible explanation, and social-justice interpretation; its licensed text should be included as a substantial source, with separate gates for land refrains, dated examples, and embedded authors.",
+  "sourceAssessment": {
+    "voice": "Expansive, justice-centered, gender-conscious, liturgically engaged, and often conversational, with Hebrew, transliteration, historical notes, songs, and contemporary readings.",
+    "bestUses": [
+      "A liberation or LGBTQ-inclusive backbone built from complete source-order movements",
+      "Clear Maggid, Four Children, plague, Miriam, and symbol sequences with a distinctive authorial voice",
+      "Meal and peace passages that maintain the traditional order while broadening participation"
+    ],
+    "beginnerRisks": [
+      "The source is long and alternates among liturgy, commentary, songs, and appendices; extracts need visual and genre checks.",
+      "Some inherited land language and a final Jerusalem refrain are allowed only under the project's narrow traditional rule.",
+      "Several poems, songs, statistics, and contributed readings need separate credit, rights, or fact review."
+    ],
+    "politicalContext": "The source frames Passover as liberation and includes Jewish, feminist, queer, labor, and Palestinian references alongside traditional land language. Default use must remain peace-focused and non-exclusive; modern conflict passages and Jerusalem or Israel refrains require explicit editorial gates rather than blanket exclusion of the source.",
+    "creditContext": "Credit Emily Aviva Kapor-Mater and identify Haggadah Shir Ge'ulah / The Song of Liberation Haggadah under CC BY 4.0, link the license, and identify modifications. Preserve the source's printed credits and conduct item-level review for embedded authors, songs, and readings."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 74,
+    "segmentCount": 173,
+    "exactCharacterCount": 176632,
+    "exactWordCount": 26825,
+    "reconstructionSha256": "5c59856df1df8bd3bb46c3387614164eeb041efdc828568ecee653f7eb32d531",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Haggadah Shir Ge'ulah / Song of Liberation by Emily Aviva Kapor-Mater.",
+    "license": "CC-BY-4.0",
+    "conditions": [
+      "Credit Emily Aviva Kapor-Mater",
+      "Link the license and identify modifications"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=8819"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 17,
+      "segmentIds": [
+        "research-shir-geulah-0-af1cd332f108",
+        "research-shir-geulah-3m-27090e94fd18",
+        "research-shir-geulah-mt-b519d7747969",
+        "research-shir-geulah-cer-301b04256c50",
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-fok-191150525cba",
+        "research-shir-geulah-i7e-2c9b2ebf40ca",
+        "research-shir-geulah-ixv-833669108c0f",
+        "research-shir-geulah-jqq-33ca0ded0aba",
+        "research-shir-geulah-1m8h-99fbe2323610",
+        "research-shir-geulah-2cti-8070b61682ba",
+        "research-shir-geulah-38q1-c0cd7aa20a98",
+        "research-shir-geulah-3a46-648c49613e82",
+        "research-shir-geulah-3azt-c56dfb5c70c1",
+        "research-shir-geulah-3bmq-c4e9961068d1",
+        "research-shir-geulah-3chi-6564e1177295",
+        "research-shir-geulah-3d1v-ea8dcc492be1"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 5,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-kt7-ebf3c2e39da9",
+        "research-shir-geulah-lha-45f87d65e66d",
+        "research-shir-geulah-1d29-6fe278f850fd",
+        "research-shir-geulah-2ifu-150e29f732f2"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-mfk-94a71c6ae84b"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 63,
+      "segmentIds": [
+        "research-shir-geulah-9ex-81aa01d2f9f0",
+        "research-shir-geulah-9w5-626764e82160",
+        "research-shir-geulah-aj7-c26a2814a204",
+        "research-shir-geulah-d6m-97ba9ac6125b",
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-fok-191150525cba",
+        "research-shir-geulah-gq2-28cfec6bab6d",
+        "research-shir-geulah-hf8-f03b9f7e30fb",
+        "research-shir-geulah-kt7-ebf3c2e39da9",
+        "research-shir-geulah-mfk-94a71c6ae84b",
+        "research-shir-geulah-obt-975a3b15db74",
+        "research-shir-geulah-qbq-bcb452414033",
+        "research-shir-geulah-qzn-8f8019ff876d",
+        "research-shir-geulah-rqk-c80f50fe8250",
+        "research-shir-geulah-s8s-03dafd375e5a",
+        "research-shir-geulah-sqm-c27dcd162d02",
+        "research-shir-geulah-tfa-61f80caf0c58",
+        "research-shir-geulah-u1v-eae2d1d7a0c7",
+        "research-shir-geulah-uqk-1306a4fd4e67",
+        "research-shir-geulah-vfo-52107c35d1ac",
+        "research-shir-geulah-w34-3b30f7da604e",
+        "research-shir-geulah-x4m-c2fa476eb7be",
+        "research-shir-geulah-xv2-62b156bafb74",
+        "research-shir-geulah-yfb-0d9788ece9ac",
+        "research-shir-geulah-z2a-d4c8b099f9e7",
+        "research-shir-geulah-zv0-15abaa20af21",
+        "research-shir-geulah-10hn-624aded400f8",
+        "research-shir-geulah-118w-d9b4b3bac6ab",
+        "research-shir-geulah-11xx-8c097cd2777a",
+        "research-shir-geulah-12r8-7b574f739018",
+        "research-shir-geulah-139h-773ce344901a",
+        "research-shir-geulah-13zj-31b7924f3d3f",
+        "research-shir-geulah-14jk-e8ec44379911",
+        "research-shir-geulah-15iv-faa5e0ef1e92",
+        "research-shir-geulah-167k-b22372721ba8",
+        "research-shir-geulah-1783-b2f5abe7a93e",
+        "research-shir-geulah-17xj-4a7f7da46a20",
+        "research-shir-geulah-18mj-33eeee66a6ec",
+        "research-shir-geulah-19fd-42efda625070",
+        "research-shir-geulah-1a3h-8f50e781db7a",
+        "research-shir-geulah-1cdk-a76cf5896b56",
+        "research-shir-geulah-1ezb-d5f6c01484e2",
+        "research-shir-geulah-1fma-ef33bedb0074",
+        "research-shir-geulah-1gde-fae156b56592",
+        "research-shir-geulah-1gyo-e8b3460d6e7a",
+        "research-shir-geulah-1ih8-d8b346101a88",
+        "research-shir-geulah-1kit-f234c13302db",
+        "research-shir-geulah-2e0r-0918ac832b50",
+        "research-shir-geulah-2eq8-d7d54d8b80e0",
+        "research-shir-geulah-2feg-607e9237eccf",
+        "research-shir-geulah-2g78-eda646437e46",
+        "research-shir-geulah-2gtb-1ae20d6ee0bb",
+        "research-shir-geulah-2het-eefbe76c34a9",
+        "research-shir-geulah-2hzm-04ff881ea4ed",
+        "research-shir-geulah-2ifu-150e29f732f2",
+        "research-shir-geulah-2j28-97a80fa57658",
+        "research-shir-geulah-2zac-713b2181a135",
+        "research-shir-geulah-30c0-5e8552b68b9d",
+        "research-shir-geulah-343g-0af42f7db009",
+        "research-shir-geulah-35cn-3cab185322f9",
+        "research-shir-geulah-361u-4ef5cdec6990",
+        "research-shir-geulah-36rt-60a51645e108",
+        "research-shir-geulah-39f6-cf5c8a7a7b9f"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 5,
+      "segmentIds": [
+        "research-shir-geulah-b5g-380b7c4119b2",
+        "research-shir-geulah-bqq-303ad4f6713b",
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-1li1-a039a217908a",
+        "research-shir-geulah-1nd0-f17041dd4b6f"
+      ]
+    },
+    "maror": {
+      "segmentCount": 18,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-jqq-33ca0ded0aba",
+        "research-shir-geulah-kt7-ebf3c2e39da9",
+        "research-shir-geulah-obt-975a3b15db74",
+        "research-shir-geulah-p58-4d73df4f8489",
+        "research-shir-geulah-1awz-5391a9d34e8f",
+        "research-shir-geulah-1bpj-167dbbc49e60",
+        "research-shir-geulah-1cdk-a76cf5896b56",
+        "research-shir-geulah-1d29-6fe278f850fd",
+        "research-shir-geulah-1dsd-ebc8093ca126",
+        "research-shir-geulah-1eds-578a79b4e366",
+        "research-shir-geulah-1li1-a039a217908a",
+        "research-shir-geulah-1m8h-99fbe2323610",
+        "research-shir-geulah-1nd0-f17041dd4b6f",
+        "research-shir-geulah-1o1u-8c09e1cb85d9",
+        "research-shir-geulah-1p72-5e144ef5e050",
+        "research-shir-geulah-1pwo-e28012ee01e1",
+        "research-shir-geulah-2hzm-04ff881ea4ed"
+      ]
+    },
+    "korech": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-1p72-5e144ef5e050"
+      ]
+    },
+    "shulchan-orech": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-shir-geulah-1qr9-dbecf4957114",
+        "research-shir-geulah-3s2x-989e5467bda3"
+      ]
+    },
+    "tzafun": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-mfk-94a71c6ae84b",
+        "research-shir-geulah-1rbc-223e8c5c6ce6",
+        "research-shir-geulah-1rxe-e9a297fedd35"
+      ]
+    },
+    "barech": {
+      "segmentCount": 29,
+      "segmentIds": [
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-1skr-5e61f0edb4a1",
+        "research-shir-geulah-236c-73318fa23934",
+        "research-shir-geulah-24fn-d4f3cf681f56",
+        "research-shir-geulah-2553-f61a1dad2878",
+        "research-shir-geulah-26bh-a9805dff538e",
+        "research-shir-geulah-274k-2f08d07f8830",
+        "research-shir-geulah-27u1-839a505ef838",
+        "research-shir-geulah-28nh-bb2364c969c3",
+        "research-shir-geulah-29i6-c33b06a642c6",
+        "research-shir-geulah-2brn-01d295475af7",
+        "research-shir-geulah-2cti-8070b61682ba",
+        "research-shir-geulah-3dm1-4e7e3c0e814b",
+        "research-shir-geulah-3ehf-6353e9c186ba",
+        "research-shir-geulah-3f8m-f1fd7512c462",
+        "research-shir-geulah-3g04-cd5d9a38c6a4",
+        "research-shir-geulah-3gto-a20cbeefdcfe",
+        "research-shir-geulah-3hi5-62ce3bfb6b4b",
+        "research-shir-geulah-3i9c-33d5dffc3af7",
+        "research-shir-geulah-3irp-24e634606c3d",
+        "research-shir-geulah-3ju1-3f6acbebb5a3",
+        "research-shir-geulah-3kkb-be70e71469d0",
+        "research-shir-geulah-3lp3-fd333158ec7d",
+        "research-shir-geulah-3mmj-0e5bc766c126",
+        "research-shir-geulah-3n2e-9cfe0bb779c7",
+        "research-shir-geulah-3nq2-af807b0db50b",
+        "research-shir-geulah-3orj-e8294ab2027a",
+        "research-shir-geulah-3pij-deda2d850305",
+        "research-shir-geulah-3q9a-a053f8b3a425"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 54,
+      "segmentIds": [
+        "research-shir-geulah-2rv-13fdb0c8f0fd",
+        "research-shir-geulah-4g1-411f0fda60a0",
+        "research-shir-geulah-5u1-329b85119936",
+        "research-shir-geulah-6ap-6b1aa8e43b32",
+        "research-shir-geulah-76e-fd23d976307a",
+        "research-shir-geulah-7yy-98059370b0cb",
+        "research-shir-geulah-8r2-0345020f28f8",
+        "research-shir-geulah-dv4-ee2c1b198207",
+        "research-shir-geulah-eyg-3108335a9f4b",
+        "research-shir-geulah-1gyo-e8b3460d6e7a",
+        "research-shir-geulah-1hom-0afd2fed361a",
+        "research-shir-geulah-1ih8-d8b346101a88",
+        "research-shir-geulah-1jp1-ca5e86cb3b25",
+        "research-shir-geulah-1kit-f234c13302db",
+        "research-shir-geulah-1t9v-d5300e1355ac",
+        "research-shir-geulah-1uc6-a0b8afb022c4",
+        "research-shir-geulah-1v0t-8245c8ef8120",
+        "research-shir-geulah-1vuw-adbab53ee2e4",
+        "research-shir-geulah-1wkw-061a605346b0",
+        "research-shir-geulah-1xnn-10f63379c65f",
+        "research-shir-geulah-1y08-b0ef0bd5d3d7",
+        "research-shir-geulah-1yok-0d122354399b",
+        "research-shir-geulah-1zfc-ef03ecc9f8bc",
+        "research-shir-geulah-20g4-a09ed77c5437",
+        "research-shir-geulah-2159-90940cf9ef89",
+        "research-shir-geulah-229z-f77398365bfa",
+        "research-shir-geulah-2a8o-900127e0a962",
+        "research-shir-geulah-2b4w-5e8d577aef34",
+        "research-shir-geulah-2brn-01d295475af7",
+        "research-shir-geulah-2cti-8070b61682ba",
+        "research-shir-geulah-2df8-add5fed6c8ba",
+        "research-shir-geulah-2k4p-7970367ed435",
+        "research-shir-geulah-2ku3-49639dfb4f96",
+        "research-shir-geulah-2lua-670695497da7",
+        "research-shir-geulah-2mop-2ba6c86a2f1c",
+        "research-shir-geulah-2njy-5a4a47708821",
+        "research-shir-geulah-2oa0-35e34251a217",
+        "research-shir-geulah-2p2s-a31ded979b6f",
+        "research-shir-geulah-2pvw-1c67c82d3976",
+        "research-shir-geulah-2r0a-010e80817fba",
+        "research-shir-geulah-2rqn-a75bfc36c667",
+        "research-shir-geulah-2suc-db82a48ae51a",
+        "research-shir-geulah-2tpd-bce22a0d2ca2",
+        "research-shir-geulah-2uo2-866089fed402",
+        "research-shir-geulah-2vdp-bdf30c828ca0",
+        "research-shir-geulah-2wni-9bd004ced722",
+        "research-shir-geulah-2xep-750ff8199aa0",
+        "research-shir-geulah-2yfe-32ee40e7a2cf",
+        "research-shir-geulah-315i-737558030f28",
+        "research-shir-geulah-31t0-4f1ccb793f82",
+        "research-shir-geulah-32mw-76f90f23592c",
+        "research-shir-geulah-336p-53fe902a3497",
+        "research-shir-geulah-37mb-19eedee955c3",
+        "research-shir-geulah-38q1-c0cd7aa20a98"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-shir-geulah-n1h-4374b5e1ce54",
+        "research-shir-geulah-nni-aea661b459a5",
+        "research-shir-geulah-3r32-60b6999bf05f"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 13,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 1,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 7
+  },
+  "recommendedSequences": [
+    {
+      "id": "shir-geulah-liberation-opening",
+      "title": "Why liberation is told",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-mt-b519d7747969",
+        "research-shir-geulah-2rv-13fdb0c8f0fd"
+      ],
+      "beginnerContext": "Introduce the Haggadah as a guide to a participatory Passover meal and explain that the story moves between ancient slavery and present responsibility. Invite guests to take turns reading and allow anyone to pass.",
+      "rationale": "The early source-order records establish the edition's liberation purpose and participatory method, giving later justice readings a clear authorial frame rather than presenting them as isolated inserts.",
+      "themes": [
+        "social-justice",
+        "lgbtq",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "turn-taking-invitation-required",
+        "right-to-pass-required",
+        "plain-language-passover-orientation",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Emily Aviva Kapor-Mater and the CC BY 4.0 edition; indicate any abridgment.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 3, segment 1",
+        "end": "PDF p. 4, segment 1",
+        "locators": [
+          {
+            "id": "research-shir-geulah-mt-b519d7747969",
+            "sourceLocation": "PDF p. 3, segment 1",
+            "locator": {
+              "label": "PDF p. 3",
+              "pageNumber": 3,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 821,
+              "normalizedEndOffset": 3594
+            }
+          },
+          {
+            "id": "research-shir-geulah-2rv-13fdb0c8f0fd",
+            "sourceLocation": "PDF p. 4, segment 1",
+            "locator": {
+              "label": "PDF p. 4",
+              "pageNumber": 4,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 3595,
+              "normalizedEndOffset": 5760
+            }
+          }
+        ]
+      },
+      "totalWords": 183,
+      "exactTextSequenceSha256": "7d8141d5c52956cb6db205a8be92637fa2960ced0819752faba4cfc6638ccd5e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-questions-and-maggid",
+      "title": "Questions opening the telling",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-qbq-bcb452414033",
+        "research-shir-geulah-qzn-8f8019ff876d",
+        "research-shir-geulah-rqk-c80f50fe8250"
+      ],
+      "beginnerContext": "Explain that asking questions is a ritual act and that Maggid is the storytelling section. Give the Four Questions a clear reader cue, then say in plain language why the group turns from questions to the Exodus story.",
+      "rationale": "These adjacent records retain the question-and-response movement that launches Maggid without importing the preceding modern Israel refrain, so the sequence works in the default peace-focused edition.",
+      "themes": [
+        "family-storytelling",
+        "traditional",
+        "lgbtq"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "clear-reader-cues-required",
+        "plain-language-maggid-definition",
+        "hebrew-and-transliteration-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve any source-presented attribution for translations or songs.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 18, segment 1",
+        "end": "PDF p. 18, segment 3",
+        "locators": [
+          {
+            "id": "research-shir-geulah-qbq-bcb452414033",
+            "sourceLocation": "PDF p. 18, segment 1",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 34118,
+              "normalizedEndOffset": 34978
+            }
+          },
+          {
+            "id": "research-shir-geulah-qzn-8f8019ff876d",
+            "sourceLocation": "PDF p. 18, segment 2",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 34979,
+              "normalizedEndOffset": 35947
+            }
+          },
+          {
+            "id": "research-shir-geulah-rqk-c80f50fe8250",
+            "sourceLocation": "PDF p. 18, segment 3",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 35948,
+              "normalizedEndOffset": 36603
+            }
+          }
+        ]
+      },
+      "totalWords": 401,
+      "exactTextSequenceSha256": "b24a60d5dd860c4cc19e104b84c508bfc82537c5490c00cad068876d1a90215c",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-four-children",
+      "title": "Four children and four questions",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-u1v-eae2d1d7a0c7",
+        "research-shir-geulah-uqk-1306a4fd4e67",
+        "research-shir-geulah-vfo-52107c35d1ac",
+        "research-shir-geulah-w34-3b30f7da604e",
+        "research-shir-geulah-x4m-c2fa476eb7be",
+        "research-shir-geulah-xv2-62b156bafb74",
+        "research-shir-geulah-yfb-0d9788ece9ac"
+      ],
+      "beginnerContext": "Introduce the figures as four ways people may approach a difficult story, not labels for actual children. Translate unfamiliar terms, make reading roles optional, and give the table one strong follow-up question rather than asking guests to classify themselves.",
+      "rationale": "Seven consecutive records preserve the source's full reinterpretive arc and its internal balance; using the whole movement avoids a harsh or confusing child label appearing without response.",
+      "themes": [
+        "lgbtq",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nonlabeling-introduction-required",
+        "age-appropriate-language-review",
+        "one-contextual-discussion-prompt",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and retain any separately named contributor associated with the Four Children interpretation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 19, segment 3",
+        "end": "PDF p. 21, segment 3",
+        "locators": [
+          {
+            "id": "research-shir-geulah-u1v-eae2d1d7a0c7",
+            "sourceLocation": "PDF p. 19, segment 3",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 38947,
+              "normalizedEndOffset": 39835
+            }
+          },
+          {
+            "id": "research-shir-geulah-uqk-1306a4fd4e67",
+            "sourceLocation": "PDF p. 20, segment 1",
+            "locator": {
+              "label": "PDF p. 20",
+              "pageNumber": 20,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 39836,
+              "normalizedEndOffset": 40739
+            }
+          },
+          {
+            "id": "research-shir-geulah-vfo-52107c35d1ac",
+            "sourceLocation": "PDF p. 20, segment 2",
+            "locator": {
+              "label": "PDF p. 20",
+              "pageNumber": 20,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 40740,
+              "normalizedEndOffset": 41583
+            }
+          },
+          {
+            "id": "research-shir-geulah-w34-3b30f7da604e",
+            "sourceLocation": "PDF p. 20, segment 3",
+            "locator": {
+              "label": "PDF p. 20",
+              "pageNumber": 20,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 41584,
+              "normalizedEndOffset": 42933
+            }
+          },
+          {
+            "id": "research-shir-geulah-x4m-c2fa476eb7be",
+            "sourceLocation": "PDF p. 21, segment 1",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 42934,
+              "normalizedEndOffset": 43885
+            }
+          },
+          {
+            "id": "research-shir-geulah-xv2-62b156bafb74",
+            "sourceLocation": "PDF p. 21, segment 2",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 43886,
+              "normalizedEndOffset": 44614
+            }
+          },
+          {
+            "id": "research-shir-geulah-yfb-0d9788ece9ac",
+            "sourceLocation": "PDF p. 21, segment 3",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 44615,
+              "normalizedEndOffset": 45441
+            }
+          }
+        ]
+      },
+      "totalWords": 1096,
+      "exactTextSequenceSha256": "bed51023d39fd1e990cc0733abbd3e1c4795d7267e88e02a4fb800e563350992",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-exodus-and-plagues",
+      "title": "Oppression, departure, and diminished joy",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-139h-773ce344901a",
+        "research-shir-geulah-13zj-31b7924f3d3f",
+        "research-shir-geulah-14jk-e8ec44379911",
+        "research-shir-geulah-15iv-faa5e0ef1e92",
+        "research-shir-geulah-167k-b22372721ba8"
+      ],
+      "beginnerContext": "State the story arc before reading: the Israelites were enslaved, Moses confronted Pharaoh, plagues struck Egypt, and the people left. Explain the cup-diminishing action and say that freedom is not celebrated by ignoring Egyptian suffering.",
+      "rationale": "Five adjacent passages provide a continuous Exodus-and-plagues movement with ritual response, giving novices enough narrative to understand the action and its moral complexity.",
+      "themes": [
+        "social-justice",
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "wine-or-grape-juice-explicit",
+        "nontriumphalist-plague-framing",
+        "age-appropriate-harm-context",
+        "cup-diminishing-action-cue",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater under CC BY 4.0 and preserve any credited plague interpretation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 24, segment 1",
+        "end": "PDF p. 25, segment 2",
+        "locators": [
+          {
+            "id": "research-shir-geulah-139h-773ce344901a",
+            "sourceLocation": "PDF p. 24, segment 1",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 50885,
+              "normalizedEndOffset": 51822
+            }
+          },
+          {
+            "id": "research-shir-geulah-13zj-31b7924f3d3f",
+            "sourceLocation": "PDF p. 24, segment 2",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 51823,
+              "normalizedEndOffset": 52543
+            }
+          },
+          {
+            "id": "research-shir-geulah-14jk-e8ec44379911",
+            "sourceLocation": "PDF p. 24, segment 3",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 52544,
+              "normalizedEndOffset": 53814
+            }
+          },
+          {
+            "id": "research-shir-geulah-15iv-faa5e0ef1e92",
+            "sourceLocation": "PDF p. 25, segment 1",
+            "locator": {
+              "label": "PDF p. 25",
+              "pageNumber": 25,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 53815,
+              "normalizedEndOffset": 54703
+            }
+          },
+          {
+            "id": "research-shir-geulah-167k-b22372721ba8",
+            "sourceLocation": "PDF p. 25, segment 2",
+            "locator": {
+              "label": "PDF p. 25",
+              "pageNumber": 25,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 54704,
+              "normalizedEndOffset": 56018
+            }
+          }
+        ]
+      },
+      "totalWords": 830,
+      "exactTextSequenceSha256": "dc9246bce74de95c8f4c16c947406d0cb0ad666b8fa06c09b62a1fea2ce48860",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-sea-miriam-and-dayenu",
+      "title": "Crossing, Miriam, and gratitude",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1783-b2f5abe7a93e",
+        "research-shir-geulah-17xj-4a7f7da46a20",
+        "research-shir-geulah-18mj-33eeee66a6ec",
+        "research-shir-geulah-19fd-42efda625070",
+        "research-shir-geulah-1a3h-8f50e781db7a"
+      ],
+      "beginnerContext": "Explain that the story reaches the sea, where escape becomes possible and Miriam leads song. Give guests a singing or spoken-response option, then introduce Dayenu as a gratitude chain rather than a celebration of anyone's destruction.",
+      "rationale": "The five contiguous records preserve the narrative turn from danger through crossing and women's leadership into gratitude, a cohesive source-led emotional arc.",
+      "themes": [
+        "feminist",
+        "social-justice",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nontriumphalist-sea-framing",
+        "participation-cue-required",
+        "traditional-land-lines-review",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve printed song, translation, and Miriam attributions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 26, segment 1",
+        "end": "PDF p. 27, segment 2",
+        "locators": [
+          {
+            "id": "research-shir-geulah-1783-b2f5abe7a93e",
+            "sourceLocation": "PDF p. 26, segment 1",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 56019,
+              "normalizedEndOffset": 56934
+            }
+          },
+          {
+            "id": "research-shir-geulah-17xj-4a7f7da46a20",
+            "sourceLocation": "PDF p. 26, segment 2",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 56935,
+              "normalizedEndOffset": 57834
+            }
+          },
+          {
+            "id": "research-shir-geulah-18mj-33eeee66a6ec",
+            "sourceLocation": "PDF p. 26, segment 3",
+            "locator": {
+              "label": "PDF p. 26",
+              "pageNumber": 26,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 57835,
+              "normalizedEndOffset": 58872
+            }
+          },
+          {
+            "id": "research-shir-geulah-19fd-42efda625070",
+            "sourceLocation": "PDF p. 27, segment 1",
+            "locator": {
+              "label": "PDF p. 27",
+              "pageNumber": 27,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 58873,
+              "normalizedEndOffset": 59740
+            }
+          },
+          {
+            "id": "research-shir-geulah-1a3h-8f50e781db7a",
+            "sourceLocation": "PDF p. 27, segment 2",
+            "locator": {
+              "label": "PDF p. 27",
+              "pageNumber": 27,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 59741,
+              "normalizedEndOffset": 60802
+            }
+          }
+        ]
+      },
+      "totalWords": 787,
+      "exactTextSequenceSha256": "e52a13f0e8aba50073a87974bc28bc0bb77ec6c1765dabc301f9a8afba6cfe68",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-symbols-and-memory",
+      "title": "The three symbols and every generation",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1awz-5391a9d34e8f",
+        "research-shir-geulah-1bpj-167dbbc49e60",
+        "research-shir-geulah-1cdk-a76cf5896b56",
+        "research-shir-geulah-1d29-6fe278f850fd",
+        "research-shir-geulah-1dsd-ebc8093ca126",
+        "research-shir-geulah-1eds-578a79b4e366"
+      ],
+      "beginnerContext": "Point to each item and define it before the reading. Explain that the three symbols carry the story into the body and that 'every generation' asks what freedom requires now.",
+      "rationale": "Six consecutive records contain the complete symbol-and-memory unit, allowing the source's liberation framing to grow directly out of ritual objects rather than arrive as an unrelated theme paragraph.",
+      "themes": [
+        "social-justice",
+        "traditional",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "temple-offering-context",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and retain any source-presented attribution attached to the interpretations.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 28, segment 1",
+        "end": "PDF p. 29, segment 3",
+        "locators": [
+          {
+            "id": "research-shir-geulah-1awz-5391a9d34e8f",
+            "sourceLocation": "PDF p. 28, segment 1",
+            "locator": {
+              "label": "PDF p. 28",
+              "pageNumber": 28,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 60803,
+              "normalizedEndOffset": 61830
+            }
+          },
+          {
+            "id": "research-shir-geulah-1bpj-167dbbc49e60",
+            "sourceLocation": "PDF p. 28, segment 2",
+            "locator": {
+              "label": "PDF p. 28",
+              "pageNumber": 28,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 61831,
+              "normalizedEndOffset": 62695
+            }
+          },
+          {
+            "id": "research-shir-geulah-1cdk-a76cf5896b56",
+            "sourceLocation": "PDF p. 28, segment 3",
+            "locator": {
+              "label": "PDF p. 28",
+              "pageNumber": 28,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 62696,
+              "normalizedEndOffset": 63584
+            }
+          },
+          {
+            "id": "research-shir-geulah-1d29-6fe278f850fd",
+            "sourceLocation": "PDF p. 29, segment 1",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 63585,
+              "normalizedEndOffset": 64524
+            }
+          },
+          {
+            "id": "research-shir-geulah-1dsd-ebc8093ca126",
+            "sourceLocation": "PDF p. 29, segment 2",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 64525,
+              "normalizedEndOffset": 65295
+            }
+          },
+          {
+            "id": "research-shir-geulah-1eds-578a79b4e366",
+            "sourceLocation": "PDF p. 29, segment 3",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 65296,
+              "normalizedEndOffset": 66070
+            }
+          }
+        ]
+      },
+      "totalWords": 844,
+      "exactTextSequenceSha256": "e9703b3a3bc4e3c3b495646d4ab5fb15f9f2dfce218cc2d5991f7ac817db418c",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-table-rituals",
+      "title": "Matzah, sandwich, meal, and afikoman",
+      "sectionIds": [
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1nd0-f17041dd4b6f",
+        "research-shir-geulah-1p72-5e144ef5e050",
+        "research-shir-geulah-1pwo-e28012ee01e1",
+        "research-shir-geulah-1qr9-dbecf4957114",
+        "research-shir-geulah-1rbc-223e8c5c6ce6",
+        "research-shir-geulah-1rxe-e9a297fedd35"
+      ],
+      "beginnerContext": "Move one action at a time: bless and eat matzah, explain the bitter herb and haroset before building the sandwich, eat the meal, then retrieve and share the afikoman. Define every food and include allergy alternatives; supply the missing maror action from a separately verified source module.",
+      "rationale": "Six source-order records preserve the usable table sequence from matzah through sandwich, meal, and afikoman while deliberately omitting a run-together OCR record that cannot yet provide exact maror text.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-food-definitions",
+        "allergy-safe-alternatives",
+        "host-pacing-cues-required",
+        "verified-maror-module-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Emily Aviva Kapor-Mater and preserve CC BY 4.0 attribution and change notice.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 34, segment 1",
+        "end": "PDF p. 36, segment 3",
+        "locators": [
+          {
+            "id": "research-shir-geulah-1nd0-f17041dd4b6f",
+            "sourceLocation": "PDF p. 34, segment 1",
+            "locator": {
+              "label": "PDF p. 34",
+              "pageNumber": 34,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 76932,
+              "normalizedEndOffset": 77825
+            }
+          },
+          {
+            "id": "research-shir-geulah-1p72-5e144ef5e050",
+            "sourceLocation": "PDF p. 35, segment 1",
+            "locator": {
+              "label": "PDF p. 35",
+              "pageNumber": 35,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 79310,
+              "normalizedEndOffset": 80231
+            }
+          },
+          {
+            "id": "research-shir-geulah-1pwo-e28012ee01e1",
+            "sourceLocation": "PDF p. 35, segment 2",
+            "locator": {
+              "label": "PDF p. 35",
+              "pageNumber": 35,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 80232,
+              "normalizedEndOffset": 81332
+            }
+          },
+          {
+            "id": "research-shir-geulah-1qr9-dbecf4957114",
+            "sourceLocation": "PDF p. 36, segment 1",
+            "locator": {
+              "label": "PDF p. 36",
+              "pageNumber": 36,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 81333,
+              "normalizedEndOffset": 82055
+            }
+          },
+          {
+            "id": "research-shir-geulah-1rbc-223e8c5c6ce6",
+            "sourceLocation": "PDF p. 36, segment 2",
+            "locator": {
+              "label": "PDF p. 36",
+              "pageNumber": 36,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 82056,
+              "normalizedEndOffset": 82849
+            }
+          },
+          {
+            "id": "research-shir-geulah-1rxe-e9a297fedd35",
+            "sourceLocation": "PDF p. 36, segment 3",
+            "locator": {
+              "label": "PDF p. 36",
+              "pageNumber": 36,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 82850,
+              "normalizedEndOffset": 83690
+            }
+          }
+        ]
+      },
+      "totalWords": 887,
+      "exactTextSequenceSha256": "ee3bd4e222c9d685ec9c7fe8334b488c51455dcc7faf8e44a2826bd4084677b5",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "shir-geulah-gratitude-and-peace",
+      "title": "Gratitude turning toward peace",
+      "sectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-26bh-a9805dff538e",
+        "research-shir-geulah-274k-2f08d07f8830",
+        "research-shir-geulah-27u1-839a505ef838",
+        "research-shir-geulah-28nh-bb2364c969c3",
+        "research-shir-geulah-29i6-c33b06a642c6",
+        "research-shir-geulah-2a8o-900127e0a962"
+      ],
+      "beginnerContext": "Explain that after the meal the table gives thanks and widens the wish for wellbeing to everyone. Identify responsive lines, make prayer language optional for mixed-belief groups, and end with a concrete wish for peace and shared dignity.",
+      "rationale": "The six source-order records build a coherent post-meal movement from gratitude through collective care into peace, fitting the project's required framing without an isolated political slogan.",
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "mixed-belief-introduction-required",
+        "peace-and-shared-humanity-check",
+        "responsive-reading-cues",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve the attribution of any embedded prayer, poem, or translation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 44, segment 1",
+        "end": "PDF p. 46, segment 2",
+        "locators": [
+          {
+            "id": "research-shir-geulah-26bh-a9805dff538e",
+            "sourceLocation": "PDF p. 44, segment 1",
+            "locator": {
+              "label": "PDF p. 44",
+              "pageNumber": 44,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 101501,
+              "normalizedEndOffset": 102547
+            }
+          },
+          {
+            "id": "research-shir-geulah-274k-2f08d07f8830",
+            "sourceLocation": "PDF p. 44, segment 2",
+            "locator": {
+              "label": "PDF p. 44",
+              "pageNumber": 44,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 102548,
+              "normalizedEndOffset": 103464
+            }
+          },
+          {
+            "id": "research-shir-geulah-27u1-839a505ef838",
+            "sourceLocation": "PDF p. 45, segment 1",
+            "locator": {
+              "label": "PDF p. 45",
+              "pageNumber": 45,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 103465,
+              "normalizedEndOffset": 104524
+            }
+          },
+          {
+            "id": "research-shir-geulah-28nh-bb2364c969c3",
+            "sourceLocation": "PDF p. 45, segment 2",
+            "locator": {
+              "label": "PDF p. 45",
+              "pageNumber": 45,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 104525,
+              "normalizedEndOffset": 105629
+            }
+          },
+          {
+            "id": "research-shir-geulah-29i6-c33b06a642c6",
+            "sourceLocation": "PDF p. 46, segment 1",
+            "locator": {
+              "label": "PDF p. 46",
+              "pageNumber": 46,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 105630,
+              "normalizedEndOffset": 106583
+            }
+          },
+          {
+            "id": "research-shir-geulah-2a8o-900127e0a962",
+            "sourceLocation": "PDF p. 46, segment 2",
+            "locator": {
+              "label": "PDF p. 46",
+              "pageNumber": 46,
+              "localExtract": "research/source-extracts/shir-geulah.txt",
+              "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+              "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+              "normalizedStartOffset": 106584,
+              "normalizedEndOffset": 107743
+            }
+          }
+        ]
+      },
+      "totalWords": 878,
+      "exactTextSequenceSha256": "b97d0ed98102502b2b02b40317c71bfc0d191896c4df92be1711b2a18dd0b84e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-shir-geulah-3m-27090e94fd18",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-shir-geulah-n1h-4374b5e1ce54",
+      "sourceLocation": "PDF p. 16, segment 2",
+      "reasons": [
+        "The modern Israel destination line is limited to an explicit traditional selection and cannot enter the generic candidate pool."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-nni-aea661b459a5",
+      "sourceLocation": "PDF p. 16, segment 3",
+      "reasons": [
+        "The land refrain requires the project's traditional-without-social-justice gate."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-1ezb-d5f6c01484e2",
+      "sourceLocation": "PDF p. 29, segment 4",
+      "reasons": [
+        "The farmworker and tomato estimate is dated and requires current verification."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-1o1u-8c09e1cb85d9",
+      "sourceLocation": "PDF p. 34, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "run-together-ocr"
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2g78-eda646437e46",
+      "sourceLocation": "PDF p. 50, segment 1",
+      "reasons": [
+        "The embedded reading requires item-level rights and attribution review before runtime use."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2gtb-1ae20d6ee0bb",
+      "sourceLocation": "PDF p. 50, segment 2",
+      "reasons": [
+        "The contributed or embedded text needs separate creator, rights, and context verification."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2het-eefbe76c34a9",
+      "sourceLocation": "PDF p. 50, segment 3",
+      "reasons": [
+        "This reading cannot enter the approved pool until its item-level credit and reuse status are recorded."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2hzm-04ff881ea4ed",
+      "sourceLocation": "PDF p. 50, segment 4",
+      "reasons": [
+        "The historically or politically difficult embedded material requires adult context and rights review."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2ifu-150e29f732f2",
+      "sourceLocation": "PDF p. 51, segment 1",
+      "reasons": [
+        "The embedded work requires separate permission or license verification and full attribution."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-2j28-97a80fa57658",
+      "sourceLocation": "PDF p. 51, segment 2",
+      "reasons": [
+        "The Palestine-focused poem requires its own rights, attribution, date, and editorial-context review; it is not rejected merely for its subject."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-3r32-60b6999bf05f",
+      "sourceLocation": "PDF p. 74, segment 2",
+      "reasons": [
+        "The Jerusalem closing refrain is allowed only for a traditional selection without a social-justice override."
+      ]
+    },
+    {
+      "id": "research-shir-geulah-3s2x-989e5467bda3",
+      "sourceLocation": "visually audited transcriptions, segment 1",
+      "reasons": [
+        "provenance-label-in-reading"
+      ]
+    }
+  ],
+  "notes": [
+    "This source's CC BY 4.0 license explicitly supports reuse with attribution; it should be treated as a major source, not a marginal or excluded one.",
+    "A liberation or LGBTQ-inclusive version should draw several complete source-order movements from this Haggadah so its voice remains coherent.",
+    "Embedded works remain separately reviewable even though the containing Haggadah is licensed for reuse.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

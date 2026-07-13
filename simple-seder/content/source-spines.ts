@@ -176,9 +176,9 @@ const allowedHouseCopy: HouseCopyRole[] = [
 ];
 
 /**
- * Both source packs provide a complete primary voice. Runtime assembly selects
- * one of them and does not mix source prose. Secondary source seams remain
- * closed until a specific cross-source edit is reviewed for cohesion.
+ * Both source packs provide a complete beginner procedural backbone. The
+ * separate 20-source runtime index adds immutable featured/supporting passages
+ * only after this structural assembly has passed its own exact-text checks.
  */
 export const sourceSpines: SourceSpine[] = [
   {

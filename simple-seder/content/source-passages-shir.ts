@@ -32,9 +32,14 @@ const source = {
  */
 export const shirSourcePassages: ShirSourcePassage[] = [
   {
-    ...source, id: "shir-kadesh-four-cups", sectionId: "kadesh", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 12, Kadeish — The first cup",
+    ...source, id: "shir-kadesh-four-cups", sectionId: "kadesh", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 12, Kadeish — The first cup",
     text: "During the seder, we drink four cups of wine, based on the four actions by which God promised to redeem the people Israel: “I will bring you out from under the burdens of the Egyptians, and I will deliver you from their servitude, and I will redeem you with an outstretched arm and with great judgments, and I will take you to Me for a people, and I will be God for you.”",
     sourcePresentedAttribution: "Exodus 6:6–7", provenanceHash: "511e63d23ddf0f6b4c777f9a4db8c270a8953c441542d5814f774956380067bf",
+  },
+  {
+    ...source, id: "shir-kadesh-four-cups-concise", sectionId: "kadesh", role: "ritual-source", tiers: ["short"], locator: "PDF p. 12, Kadeish — The first cup (concise excerpt)",
+    text: "“I will bring you out from under the burdens of the Egyptians, and I will deliver you from their servitude, and I will redeem you with an outstretched arm and with great judgments, and I will take you to Me for a people, and I will be God for you.”",
+    sourcePresentedAttribution: "Exodus 6:6–7", provenanceHash: "8b9d9d3a3ab9483ec983488202c9b263be465993bc2cce1626b731689ac6cc2a",
   },
   {
     ...source, id: "shir-kadesh-kiddush-joy", sectionId: "kadesh", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 12, Kadeish commentary",
@@ -42,29 +47,49 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     provenanceHash: "450948b6f1a8d49aefb4fc2f363845e1ae89162895faa77f4f242b09ebd4a504",
   },
   {
-    ...source, id: "shir-urchatz-miriams-cup", sectionId: "urchatz", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 15, Miriam’s cup",
+    ...source, id: "shir-urchatz-miriams-cup", sectionId: "urchatz", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 15, Miriam’s cup",
     text: "Miriam’s Cup rests on the table, welcoming Miriam the prophet, sister of Moses and Aaron. It is a symbol of the well of water that followed the people Israel through the wilderness. The well provided physical nourishment through water, but also spiritual nourishment, as a constant reminder of the Divine presence within the community. It remains on our table throughout our seder, guiding us in our journey as we reenact the exodus from slavery to freedom tonight.",
     provenanceHash: "02b4338547ffed94f44fbd3a3a301ffc69d9dbac761ad34c315f341c559c4c15",
   },
   {
-    ...source, id: "shir-karpas-labor", sectionId: "karpas", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 15, Karpas commentary",
+    ...source, id: "shir-urchatz-miriams-cup-concise", sectionId: "urchatz", role: "source-reading", tiers: ["short"], locator: "PDF p. 15, Miriam’s cup (concise excerpt)",
+    text: "Miriam’s Cup rests on the table, welcoming Miriam the prophet, sister of Moses and Aaron. It is a symbol of the well of water that followed the people Israel through the wilderness.",
+    provenanceHash: "71ecd1a12f710b07981e7c68bdea34fc8beba862c104c567828569e66a10a68b",
+  },
+  {
+    ...source, id: "shir-karpas-labor", sectionId: "karpas", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 15, Karpas commentary",
     text: "Tonight, we enjoy a bounty of food set before us, but where did it come from? How did these vegetables we are now eating get to our table? How many hands did they pass through? Did those hands belong to workers who were treated and paid fairly? Tonight, when we celebrate our liberation from bondage, how can we fight for the freedom of others kept in virtual slavery so that we can eat?",
     provenanceHash: "cf9094def96cc422cd5e74ca84de1c38407b80a1a0e409f9af33fe4b5210acce",
   },
   {
-    ...source, id: "shir-yachatz-broken-bread", sectionId: "yachatz", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 16, Yaḥatz commentary",
+    ...source, id: "shir-karpas-labor-concise", sectionId: "karpas", role: "source-reading", tiers: ["short"], locator: "PDF p. 15, Karpas commentary (concise excerpt)",
+    text: "Did those hands belong to workers who were treated and paid fairly? Tonight, when we celebrate our liberation from bondage, how can we fight for the freedom of others kept in virtual slavery so that we can eat?",
+    provenanceHash: "7ec0f93cd79120553b6462bd8fb13da169e6f19cb08f34f63db26a44a7cd3355",
+  },
+  {
+    ...source, id: "shir-yachatz-broken-bread", sectionId: "yachatz", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 16, Yaḥatz commentary",
     text: "Why do we break a matzah in half? Why not put a whole matzah away for later? In the next paragraph, we will point to a plate with two complete matzot and one broken one and we will say, “This is the bread of oppression.” The bread of oppression is literally broken. When we are liberated, the bread will be whole.",
     provenanceHash: "d6174e14d0e790148fe590303c0894f9dfed7d8d69e0252ef1bfb96d3fbc295c",
   },
   {
-    ...source, id: "shir-maggid-invitation", sectionId: "maggid", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 16, Ha laḥma anya commentary",
+    ...source, id: "shir-yachatz-broken-bread-concise", sectionId: "yachatz", role: "source-reading", tiers: ["short"], locator: "PDF p. 16, Yaḥatz commentary (concise excerpt)",
+    text: "The bread of oppression is literally broken. When we are liberated, the bread will be whole.",
+    provenanceHash: "d68dc819844deb8681f867c9caac3ebc06c7b1a3a872c4b30516a4f777ede6bc",
+  },
+  {
+    ...source, id: "shir-maggid-invitation", sectionId: "maggid", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 16, Ha laḥma anya commentary",
     text: "The paragraph that begins the seder is in Aramaic, the everyday language of many Talmudic-era Jews. Here, it is also given in Ladino, the Romance language spoken by many Sefardi Jews. It is supposed to be understandable by everyone, because it is not a prayer, but an invitation. But are all who are hungry truly able to eat anywhere, let alone with us? How many of us would really invite a stranger into our house today? How can we fix the systemic problems that foster hunger, poverty, and oppression?",
     provenanceHash: "8d91849c433b170777a2888258b1418bc7ba8a636ddb6cb5786c257bb2a8bc95",
   },
   {
-    ...source, id: "shir-maggid-we-were-slaves", sectionId: "maggid", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 18, We were slaves",
+    ...source, id: "shir-maggid-we-were-slaves", sectionId: "maggid", role: "ritual-source", tiers: ["medium", "full"], locator: "PDF p. 18, We were slaves",
     text: "We were slaves to Pharaoh in Egypt, but YHWH our God took us out of there with a mighty hand and with an outstretched arm. And if the Holy One had not taken our ancestors out of Egypt, then we and all of our descendants might still be enslaved to Pharaoh in Egypt. And even if all of us were scholars, even if all of us were sages, even if all of us were elders, even if all of us were thoroughly learned in Torah, we would still be obligated to tell the story of the exodus from Egypt. Moreover, whoever elaborates upon the story of the exodus from Egypt is deserving of praise.",
     provenanceHash: "79ac4259be15d3a4887d82a4aceebfacbf1813a07bb4a0e9147364ef752fe56a",
+  },
+  {
+    ...source, id: "shir-maggid-we-were-slaves-concise", sectionId: "maggid", role: "ritual-source", tiers: ["short"], locator: "PDF p. 18, We were slaves (concise excerpt)",
+    text: "We were slaves to Pharaoh in Egypt, but YHWH our God took us out of there with a mighty hand and with an outstretched arm. And if the Holy One had not taken our ancestors out of Egypt, then we and all of our descendants might still be enslaved to Pharaoh in Egypt.",
+    provenanceHash: "2bf0d5d59a04e6daa4a871b29377095baa736117d60bf46b569853ced8105ae7",
   },
   {
     ...source, id: "shir-maggid-own-voices", sectionId: "maggid", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 18, We were slaves commentary",
@@ -72,7 +97,7 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     provenanceHash: "a4afc1eefcb2670a05d6886e72cf3e82ac7cdc7cf4dc8c6590ac97f7a4965b41",
   },
   {
-    ...source, id: "shir-maggid-exodus-verses", sectionId: "maggid", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 24, The exodus from Egypt",
+    ...source, id: "shir-maggid-exodus-verses", sectionId: "maggid", role: "ritual-source", tiers: ["medium", "full"], locator: "PDF p. 24, The exodus from Egypt",
     text: "My father was a wandering Aramean, and he went down to Egypt. He sojourned there with just a few people, and there he became a great nation, mighty and numerous. The Egyptians dealt harshly with us and oppressed us, and imposed hard labor upon us. We cried out to YHWH, the God of our ancestors, and YHWH heard our voice, and saw our oppression, and beheld our labor and our struggle. Then YHWH took us out of Egypt with a mighty hand and an outstretched arm, with awesome power, with signs and with wonders.",
     sourcePresentedAttribution: "Deuteronomy 26:5b–8", provenanceHash: "3675bd78bbb29710eaf2e9b33cab52720ac6ca1ee9ce62532571ab09c676909a",
   },
@@ -82,7 +107,7 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     provenanceHash: "32077cdd84d3dad6e35756ace4674010c554258c6ed142c859e89fd5e8dbd206",
   },
   {
-    ...source, id: "shir-maggid-plague-compassion", sectionId: "maggid", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 25, The ten plagues commentary",
+    ...source, id: "shir-maggid-plague-compassion", sectionId: "maggid", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 25, The ten plagues commentary",
     text: "A famous midrash tells how the angels rejoiced as God split the sea and led Israel through, but God rebuked the angels: “My handiwork is drowning in the sea, and you wish to sing praises?!” We learn, “Do not rejoice when your enemies fall, and do not be happy as they stumble.” Is tonight’s celebration justified? Who suffered as a result of the Israelites’ victory? Is spilling a few drops of wine sufficient to recognize the human cost of our victory?",
     sourcePresentedAttribution: "Babylonian Talmud, Megillah 10b; Proverbs 24:17", provenanceHash: "c0cf02b5c91e2e7c6670a736d38dee05789934f1df8ddd3343ead067d33fb295",
   },
@@ -102,9 +127,14 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     sourcePresentedAttribution: "Traditional blessings; English translation as printed in Haggadah Shir Ge’ulah", provenanceHash: "72ff3cdbfc0fb2d61fc778fcc5ad7d5b92bdaf8d266fc6d9eacd748ef0b03439",
   },
   {
-    ...source, id: "shir-maror-charoset", sectionId: "maror", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 34, Maror commentary",
+    ...source, id: "shir-maror-charoset", sectionId: "maror", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 34, Maror commentary",
     text: "The usual constituents of ḥaroset are sweet and hearty nuts and fruits, particularly apples, dates, or figs, blended together with wine to make a paste. One of the many explanations for its presence in the seder is to remind us of the mortar employed in construction. But aside from its symbolic meaning, it simply serves to make the bitterness of the maror more palatable, which in itself is a reminder that even in the darkest of times there may still be sweetness to be found somewhere.",
     provenanceHash: "0e09fe210c00298dabd90d94477d11df16e3e9ffcdce85bb674a63d0fd5bce91",
+  },
+  {
+    ...source, id: "shir-maror-charoset-concise", sectionId: "maror", role: "source-reading", tiers: ["short"], locator: "PDF p. 34, Maror commentary (concise excerpt)",
+    text: "The usual constituents of ḥaroset are sweet and hearty nuts and fruits, particularly apples, dates, or figs, blended together with wine to make a paste. One of the many explanations for its presence in the seder is to remind us of the mortar employed in construction.",
+    provenanceHash: "3ee81451a1f2d0d3ae9566c512e16e9c6b7e7b1bbf6b92fa0d7f28704487459c",
   },
   {
     ...source, id: "shir-korech-hillel", sectionId: "korech", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 35, Koreich — The Hillel sandwich",
@@ -117,14 +147,24 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     provenanceHash: "2560f2a1360daa4564051261e39c56fd700d1d5b2ffea8e982d14154a4e15c3c",
   },
   {
-    ...source, id: "shir-meal-celebration", sectionId: "shulchan-orech", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 36, Shul’ḥan oreich commentary",
+    ...source, id: "shir-meal-celebration", sectionId: "shulchan-orech", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 36, Shul’ḥan oreich commentary",
     text: "So far, everything we have eaten in the course of the seder has had some ritual or symbolic significance. But one of the mitzvot of the holiday is to celebrate, and one of the traditional things we do to celebrate is partake of a festive meal. The ritual nature of the food of the meal is simply that it is there to be enjoyed, which itself is a mitzvah.",
     provenanceHash: "15a40da98af65f877942a72e635d7778626f3a8a77c98813963b66060631fc39",
   },
   {
-    ...source, id: "shir-tzafun-full-circle", sectionId: "tzafun", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 36, Tzafun commentary",
+    ...source, id: "shir-meal-celebration-concise", sectionId: "shulchan-orech", role: "source-reading", tiers: ["short"], locator: "PDF p. 36, Shul’ḥan oreich commentary (concise excerpt)",
+    text: "So far, everything we have eaten in the course of the seder has had some ritual or symbolic significance. But one of the mitzvot of the holiday is to celebrate, and one of the traditional things we do to celebrate is partake of a festive meal.",
+    provenanceHash: "5143eec4464e8095d75712d15dacb88d3abe88d1d90ef88bd847dac91b210464",
+  },
+  {
+    ...source, id: "shir-tzafun-full-circle", sectionId: "tzafun", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 36, Tzafun commentary",
     text: "The word afikoman probably derives from the Greek epi komos, meaning “that which comes after”. It seems strange to end the meal with bare, unadorned matzah, but the rabbis wanted the taste of the matzah alone to linger in the mouth, thus bringing the seder back full circle: we began our meal with the bread of oppression, and we end it with the same bread, no matter what temporal expressions of wealth might have come in the middle.",
     provenanceHash: "79d4b0cfc6efc2ffb5e09e997d590522fdea66e2530ed330e3dd46d4207a325d",
+  },
+  {
+    ...source, id: "shir-tzafun-full-circle-concise", sectionId: "tzafun", role: "source-reading", tiers: ["short"], locator: "PDF p. 36, Tzafun commentary (concise excerpt)",
+    text: "The word afikoman probably derives from the Greek epi komos, meaning “that which comes after”.",
+    provenanceHash: "861779283e157bb2df571c9d9b86f4487094909b048a9453bb3694aeb15a8555",
   },
   {
     ...source, id: "shir-tzafun-children", sectionId: "tzafun", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 36, Tzafun commentary",
@@ -132,7 +172,7 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     sourcePresentedAttribution: "Babylonian Talmud, Pesaḥim 109a", provenanceHash: "4c724a5fba47747b2fb8bd8e14f1511189028c35aff9de25178a408f95260ca6",
   },
   {
-    ...source, id: "shir-barech-psalm-126", sectionId: "barech", role: "ritual-source", tiers: ["short", "medium", "full"], locator: "PDF p. 37, Psalm 126",
+    ...source, id: "shir-barech-psalm-126", sectionId: "barech", role: "ritual-source", tiers: ["medium", "full"], locator: "PDF p. 37, Psalm 126",
     text: "When God returned Zion’s exiles, it was as if we were dreaming. Our mouths were filled with laughter and our tongues with song. They declared among the nations, “God has done greatness with these!” God has indeed done greatness with us; we have become happy. Return, O God, our captives like springs in the desert. Those who sow in tears shall reap in joy. One who carries seeds weeps, but will return in exultation, bearing sheaves.",
     sourcePresentedAttribution: "Psalm 126", provenanceHash: "e9d3d95de05c00838c5480e9f34fa2d9867dfc51ad992d5d1d355f82daf00176",
   },
@@ -147,7 +187,7 @@ export const shirSourcePassages: ShirSourcePassage[] = [
     provenanceHash: "e8e0e7ffda3290d9b6ed1d96f33dd8855354aec7671ceffa5cc7799edabbfd57",
   },
   {
-    ...source, id: "shir-hallel-remembrance", sectionId: "hallel", role: "source-reading", tiers: ["short", "medium", "full"], locator: "PDF p. 48, Remembrance",
+    ...source, id: "shir-hallel-remembrance", sectionId: "hallel", role: "source-reading", tiers: ["medium", "full"], locator: "PDF p. 48, Remembrance",
     text: "Oppression is not something that happened long ago such that now we are completely free of it. Our seder turns somber for a moment. Who is not at our seder tonight? Why aren’t they here? We hope for a better future when all may be able to celebrate with us, but we must do more than hope: we must commit to working together to make that future a reality.",
     provenanceHash: "25f8f3a30954626651df627261c981f3161efba4b317d294e2889448ec2c969f",
   },

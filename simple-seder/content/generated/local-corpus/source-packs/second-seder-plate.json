@@ -1,0 +1,801 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "second-seder-plate",
+  "sourceTitle": "A Second Passover Seder Plate with Seven Additions",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer",
+      "Keep each object with its complete explanation",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=24587"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-second-plate-miriams-fish",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Miriam's fish",
+      "exactText": "Items for the Second Seder Plate Miriam's Fish לְמִרְיָ דָּג ם––––––––––––––––––––– To be inserted after discussing the Pesaḥ offering. A millennium-old tradition, recorded by Rav Sherira Gaon in 10th-century Iraq. He would always have three cooked foods on the seder plate. The egg, a product of the birds of the sky, a sign of renewal and rebirth, represented Moses, the law, the heavens, and the revelational aspects of faith. The shankbone, a product of the animals of the field, a commemoration of the original Pesaḥ sacrifice, represented Aaron, the priesthood, the earth, and the ritual aspects of faith. And the fish, representing the constant flowing nature of water, represented Miriam, prophecy, the waters, and the spiritual aspects of faith. We read, as Rav Sherira suggested, Micah 6:4: \"For I brought you from the land of Egypt, and from the house of bondage redeemed you; and I sent before you Moses, Aaron, and Miriam.\"\n\nכִּ֤י הֶעֱלִתִ֙יךָ֙ מֵאֶ֣רֶץ מִצְרַ֔יִם וּמִבֵּ֥ית עֲבָדִ֖ים פְּדִיתִ֑יךָ וָאֶשְׁלַ֣ח לְפָנֶ֔יךָ אֶת־מֹשֶׁ֖ה אַהֲרֹ֥ן וּמִרְיָֽם׃ And we read Psalm 8:8-10: The flock and the oxen all, as well as the animals of the field. The birds of the skies and the fish of the seas, traveling the path of the sea. Oh Adonai Adoneinu, how awesome is Your name throughout the earth! צֹנֶ֣ה וַאֲלָפִ֣ים כֻּלָּ֑ם וְ֝גַ֗ם בַּהֲמ֥ שָׂדָֽי׃ צִפּ֣ שָׁ֭מַיִם וּדְגֵ֣י הַיָּ֑ם עֹ֝בֵ֗ר אׇרְח֥ יַמִּֽים׃ יְה אֲדֹנֵ֑ינוּ מָה־אַדִּ֥יר שִׁ֝מְךָ֗ בְּכׇל־הָאָֽרֶץ׃ And we read from the Talmud (Sotah 11b): Taught Rav Avira: \"In the merit of the righteous women of that generation Israel was redeemed from Egypt. When they would go out to draw water, the Holy Blessed One would make for them small fishes in their pails, and they would draw half water and half fishes and would come home and pour two pots – one of boiling water and one of fish.\" :עֲוִירָא רַב דָּרָשׁ ” שֶׁהָיוּ צִדְקָנִיּוֹת נָשִׁים בִּשְׁכַר יִשְׂרָאֵ נִגְאֲלוּ הַדּוֹר בְּאוֹתוֹ .מִמִּצְרַיִם ל בְּשָׁעָה מְזַמֵּן הוּא בָּרוּ הַקָּדוֹשׁ , מַיִם לִשְׁאוֹב שֶׁהוֹלְכוֹת ,בְּכַדֵּיהֶן קְטַנִים דָּגִים לָהֶם מַיִם מֶחֱצָה וְשׁוֹאֲבוֹת דָּגִים וּמֶחֶצָה , , קְדֵירוֹת שְׁתֵּי וְשׁוֹפְתוֹת וּבָאוֹת .דָּגִים שֶׁל וְאַחַת חַמִּין שֶׁל אַחַת “",
+      "segmentIds": [
+        "research-second-seder-plate-y-8d4691395a92",
+        "research-second-seder-plate-qz-26748e027d06"
+      ],
+      "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-y-8d4691395a92",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 34,
+            "normalizedEndOffset": 970
+          },
+          {
+            "id": "research-second-seder-plate-qz-26748e027d06",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 971,
+            "normalizedEndOffset": 2247
+          }
+        ]
+      },
+      "provenanceHash": "4a25e86ea187ea0cfdff0ae947c58c73ed5656ba0b0c93da9989e71c4a394536",
+      "componentProvenanceHashes": [
+        "8d4691395a92bf104fa1e58ab30465a0ad086bbde08cdf4b1fc6a8921bc51035",
+        "26748e027d064572fd120cf3b0e02045a8604bc6723e85f28825ff1dca33a571"
+      ],
+      "wordCount": 348,
+      "characterCount": 2214,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "feminist",
+        "environment",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "After explaining the traditional Passover offering, identify the fish as an optional addition honoring Miriam, water, prophecy, and women's role in the Exodus; provide a non-food or plant-based symbol if needed.",
+      "rationale": "The two passages form the source's complete fish unit, moving from Rav Sherira Gaon's three foods through Micah, Psalm 8, and the Talmudic account of women drawing water and fish.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify Micah 6:4, Psalm 8:8-10, and Sotah 11b on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "define-rav-sherira-gaon-prophecy-and-talmud-for-beginners",
+        "fish-allergy-and-vegetarian-alternative-required",
+        "optional-plate-addition-only",
+        "preserve-micah-psalm-and-sotah-attributions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-second-plate-dayenu-leeks",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Leeks before Dayenu",
+      "exactText": "Items for the Second Seder Plate Leeks כְּרֵשׁוֹת ––––––––––––––––––––––––––––– To be inserted before reciting Dayenu. An old Persian tradition involves hitting each other with leeks during the recitation of Dayenu. Nowadays this is replaced with a gentle tap with a scallion for safety reasons. What does this represent? In Numbers chapter 11, the Israelites complain about missing the food they \"used to at freely in Egypt – the cucumbers, the melons, the leeks, the onions, and the garlic.\" Let us remember that our leeks were not free – they were paid for in the slavedrivers' whips. Sifrei Bamidbar 87 says: This is like if a king of flesh and blood entrusts his son to a pedagogue. He would sit on the throne and command him thus: \"Please see that he does not eat any bad food nor drinks any bad drink!\"\n\nAnd with all this, the son would grow angry at his father, saying, \"It's not because he loves me, but because he makes it impossible for me to eat!\" לְמֶלֶ מָשָׁל וְהָיָה , לְפֵדָגוֹג בְּנוֹ שֶׁמָּסַר וָדָם בָּשָׂר : לוֹ וְאוֹמֵר וּמְפַקֵּדוֹ יוֹשֵׁב ” יֹאכַל שֶׁ הֲנִרְאֶה !רָע מַשְׁקֶה יִשְׁתֶּה וְ , רַ מַאֲכָל “ הָיָה כָּ וּבְכָל , לוֹמַר , אָבִיו עַל מִתְרָאֵם הָהוּא הַבֵּן ” מִפְּנֵי N שֶׁ אֶלָּא שֶׁאוֹהֲבֵנִי !שֶׁאֹכַל לוֹ אֶפְשַׁר אִי “ May we avoid letting nostalgia filter our past, and remember that there's no such thing as a free lunch. May we be satiated rather than gluttonous, and may that be enough for us. To remind us what's really important, we read the final verses of Song of Songs 8:11–14. \"Solomon had a vineyard in the Town of Plenty, he put guards at the vineyard; each man would bring from its fruit a thousand silver coins. My vineyard is my own; have your thousands, Solomon, your two hundred guardians of fruit!\" \"O dweller in the gardens, friends are listening for your voice – let me hear it!\" \"Hurry, my love, and be as a gazelle or a fawn of the deer, upon the mountains of spices.\" כֶּ֣רֶם הָיָ֤ה לִשְׁ לֹמֹה֙ בְּבַ֣עַל הָמ֔ נָתַ֥ן אֶת־ הַכֶּ֖רֶם לַנֹּטְרִ֑ים אִ֛ישׁ יָבִ֥א בְּפִרְי֖ אֶ֥לֶף כָּֽסֶף׃ כַּרְמִ֥י שֶׁלִּ֖י לְפָנָ֑י הָאֶ֤לֶף לְךָ֙ שְׁלֹמֹ֔ה וּמָאתַ֖יִם לְנֹטְרִ֥ים אֶת־פִּרְיֽ הַיּ בַּגַּנִּ֗ים חֲבֵרִ֛ים מַקְשִׁיבִ֥ים לְק הַשְׁמִיעִֽנִי׃ בְּרַ֣ח ׀ דּ וּֽדְמֵה־לְךָ֤ לִצְבִי֙ א֚ לְעֹ֣פֶר הָֽאַיָּלִ֔ים עַ֖ל הָרֵ֥י בְשָׂמִֽים׃",
+      "segmentIds": [
+        "research-second-seder-plate-1qg-a09b044ddf69",
+        "research-second-seder-plate-2cy-ed6f18d8d53a"
+      ],
+      "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-1qg-a09b044ddf69",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 2248,
+            "normalizedEndOffset": 3057
+          },
+          {
+            "id": "research-second-seder-plate-2cy-ed6f18d8d53a",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 3058,
+            "normalizedEndOffset": 4532
+          }
+        ]
+      },
+      "provenanceHash": "9fed564d68f59c9a1f3538a39698c017d05d01549ba5a4f2999f89095cba31ab",
+      "componentProvenanceHashes": [
+        "a09b044ddf693f1be8207ea326088e7638233b5676e32fb3a24ad8b1e37bd329",
+        "ed6f18d8d53adbf0fc2a6baaca2a2ab68cddfca97d803d6ee33cf7f67c506eb4"
+      ],
+      "wordCount": 384,
+      "characterCount": 2285,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Before Dayenu, explain the Persian Jewish custom and ask consent before any gentle scallion tap; guests may hold or wave a leek instead, and no one should be struck or pressured.",
+      "rationale": "The pair contains the full custom, its warning against nostalgia for slavery, a rabbinic parable, and its closing wish for enoughness before the Song of Songs reading.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer, Sifrei Bamidbar 87, and Song of Songs 8:11-14 on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "explicit-consent-and-no-hitting-rule",
+        "food-allergy-and-mobility-alternative-required",
+        "optional-ritual-only",
+        "preserve-numbers-sifrei-and-song-of-songs-attributions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-second-plate-rav-huna-beets",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Rav Huna's beets before washing",
+      "exactText": "Items for the Second Seder Plate Rav Huna's beetsסִילְקָא הוּנָ דְּרָב א––––––––––––– To be inserted right before the second washing, as we prepare for the meal. We read from the Talmud (Pesachim 114b): What are two cooked foods [that fulfill the Passover obligation]? Rav Huna said, 'beets and rice.' Rava would always look for beets and rice, since this ruling came from the mouth of Rav Huna. מַאי שְׁנֵי תַּבְשִׁילִין ? אֲמַר רַב הוּנָא, ”סִילְקָא וַאֲרוּזָא .“ רָבָא הֲוָה מְהַדַּר אַסִּלְקָא וַאֲרוּזָא , הוֹאִיל וּנְפַק מִפּוּמֵיהּ דְּרַב הוּנָא. Current Ashkenazi practice no longer eats rice on Pesaḥ. But beets, here represented with red khreyn (ground horseradish and beet puree) are still a standard part of many a Seder meal. The color of beets, which never leaves our hands, symbolizes the teachings of the sages, which are still passed down.\n\nAnd the redness symbolizes the blood of the covenant, still there after all these years. So we quote, just as does the traditional text of the Haggadah, Ezekiel 16:6, whose repeated final phrase is said to represent the blood of the Pesaḥ sacrifice and the blood of the covenant with Abraham. And I passed over you and I saw you soiled in your blood And I said to you, \"Through your blood you will live,\" and I said to you, \"Through your blood you will live!\" וָאֶעֱבֹ֤ר עָלַ֨יִךְ֙ וָֽאֶרְאֵ֔ךְ מִתְבּ בְּדָמָ֑יִךְ וָאֹ֤מַר לָךְ֙ בְּדָמַ֣יִךְ חֲיִ֔י וָאֹ֥מַר לָ֖ךְ בְּדָמַ֥יִךְ חֲיִֽי׃ And we will also read another Talmudic passage, not for any symbolic reason, but because you deserve to hear it. (Berakhot 39a) Rav Ḥisda said, \"Cooked beets are great for the heart, good for the eyes, and, all the more so, good for the intestines.\" Abaye said, \"That's when the dish sits bubbling on the stove and going tukh tukh.\" אָ מַ ר רַ ב חִ סְ דָּ א, ” תַּ בְ שִׁ יל שֶׁ ל תְּ רָ דִ ין יָ פֶה לַ לֵּ ב וָ טוֹ ב לְ עֵ ינַ יִם וְכָל שְׁ כֵּן לִ בְ נֵ י מֵ עַ יִם.“ אָ מַ ר אַ בַּ יֵּ י, ” וְ הוּא דּ יָ תִ יב אַ בֵּי תְּ פִ י וְ עָ בִ יד תּוּC תוּC“!",
+      "segmentIds": [
+        "research-second-seder-plate-3hx-5e1813827d72",
+        "research-second-seder-plate-45q-66c805dce44e"
+      ],
+      "sourceLocation": "PDF p. 4, segment 1 through PDF p. 4, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 4, segment 1 through PDF p. 4, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-3hx-5e1813827d72",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 4533,
+            "normalizedEndOffset": 5389
+          },
+          {
+            "id": "research-second-seder-plate-45q-66c805dce44e",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 5390,
+            "normalizedEndOffset": 6532
+          }
+        ]
+      },
+      "provenanceHash": "541d2d0000dd003e7d6607c4e7a284ad550e3103c0bf903a1ca1761c927396ce",
+      "componentProvenanceHashes": [
+        "5e1813827d729e04079536d75157967ab8d54dfcbe6bb0e4b57c5fcd21ce4e7d",
+        "66c805dce44e13881234658de80c3a4ea6b2fa1a29b51874316e33c649345aa0"
+      ],
+      "wordCount": 365,
+      "characterCount": 2000,
+      "sectionIds": [
+        "rachtzah"
+      ],
+      "sourceSectionIds": [
+        "rachtzah"
+      ],
+      "insertionSectionId": "rachtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Before the second handwashing, identify beets as an optional Ashkenazi food and explain that the text uses their lasting red color to discuss inherited teaching and covenant.",
+      "rationale": "These are the complete beet passages, joining Pesachim, Ezekiel, and a humorous Berakhot teaching while retaining one object and one ritual location.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify Pesachim 114b, Ezekiel 16:6, and Berakhot 39a on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-talmudic-beet-health-claims-as-medical-advice",
+        "optional-plate-addition-only",
+        "preserve-pesachim-ezekiel-and-berakhot-attributions",
+        "protect-clothing-and-offer-nonstaining-alternative"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-second-plate-orange-inclusion",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Orange segments and belonging",
+      "exactText": "Items for the Second Seder Plate Orange segmentsתָפּוּ׳׳ז פִּלְחֵי –––––––––––––––– To be inserted near the end of the meal. In the early 1980s, while speaking at Oberlin College Hillel, Susannah Heschel was introduced to an early feminist haggadah that suggested adding a crust of bread on the seder plate, as a sign of solidarity with Jewish lesbians (suggesting that there's as much room for a lesbian in Judaism as there is for a crust of bread on the seder plate). Heschel felt that to put bread on the seder plate would be to accept that Jewish lesbians and gay men violate Judaism like ḥametz violates Passover. So, at her next seder, she chose an orange as a symbol of inclusion of gays and lesbians and others who are marginalized within the Jewish community.\n\nShe offered the orange as a symbol of the fruitfulness for all Jews when lesbians and gay men are contributing and active members of Jewish life. In addition, each orange segment had a few seeds that had to be spit out—a gesture of spitting out, repudiating the homophobia of Judaism. While lecturing, Heschel often mentioned her custom as one of many feminist rituals that have been developed in the last twenty years. She writes, \"Somehow, though, the typical patriarchal maneuver occurred: my idea of an orange and my intention of affirming lesbians and gay men were transformed. Now the story circulates that a man said to me that a woman belongs on the bimah as an orange on the seder plate. A woman's words are attributed to a man, and the affirmation of lesbians and gay men is erased.\n\nIsn't that precisely what's happened over the centuries to women's ideas?\" (from Ritualwell – https://www.ritualwell.org/ritual/orange-seder-plate) We began our story by saying \"Let all who are hungry come and eat.\" The term \"all\" has no exceptions. The Book of Isaiah (56:7-8) said this loud and clear over two thousand years ago. \"And I will bring them to My Holy Mountain, and cause them to rejoice in My House of Prayer; their offerings and sacrifices I desire on My altar. For My house will be called a House of Prayer for all peoples.\" Thus says Adonai Elohim, gathering the remnants of Israel: \"Yet more I will gather upon to the gathered.\" וַהֲבִיא אֶל־הַ֣ר קׇדְשִׁ֗י וְשִׂמַּחְתִּים֙ בְּבֵ֣ית תְּפִלָּתִ֔ ע וְזִבְחֵיהֶ֛ם לְרָצ֖ עַֽל־מִזְבְּחִ֑י כִּ֣י בֵיתִ֔י בֵּית־ תְּפִלָּ֥ה יִקָּרֵ֖א לְכׇל־הָעַמִּֽים׃ נְאֻם֙ אֲדֹנָ֣י יֱה מְקַבֵּ֖ץ נִדְחֵ֣י יִשְׂרָאֵ֑ל ע֛ אֲקַבֵּ֥ץ עָלָ֖יו לְנִקְבָּצָֽיו׃",
+      "segmentIds": [
+        "research-second-seder-plate-51h-87bb6a22d789",
+        "research-second-seder-plate-5mu-6478b983c06d",
+        "research-second-seder-plate-68v-423938723875"
+      ],
+      "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-51h-87bb6a22d789",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 6533,
+            "normalizedEndOffset": 7301
+          },
+          {
+            "id": "research-second-seder-plate-5mu-6478b983c06d",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 7302,
+            "normalizedEndOffset": 8094
+          },
+          {
+            "id": "research-second-seder-plate-68v-423938723875",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 8095,
+            "normalizedEndOffset": 8996
+          }
+        ]
+      },
+      "provenanceHash": "e9047f9605970dbe0d7c7baa52a0f481dfd62e178af4218f1f60b2ac754f1fd4",
+      "componentProvenanceHashes": [
+        "87bb6a22d7893fe16aca4776d59105d21e89823836e593daca7341d42d810271",
+        "6478b983c06ddb83e51bb550bc3c51461b15710cea355801848116d17d545f23",
+        "423938723875986a2d26c7093aa077cd6c54eb31379295386c1e96cd26600804"
+      ],
+      "wordCount": 407,
+      "characterCount": 2465,
+      "sectionIds": [
+        "shulchan-orech",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "shulchan-orech",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "lgbtq",
+        "feminist",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Near the end of the meal, explain that the orange is an optional symbol created by Susannah Heschel to affirm lesbians and gay men and, more broadly, people marginalized in Jewish community; distinguish this documented account from the common false legend about a man and a bimah.",
+      "rationale": "The three passages preserve Heschel's full explanation, correct the patriarchal retelling she criticized, and close with a scriptural image of a house of prayer open to all peoples.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer, Susannah Heschel, Ritualwell, and Isaiah 56:7-8 on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "citrus-allergy-alternative-required",
+        "do-not-repeat-false-woman-on-bimah-origin-story-as-fact",
+        "lgbtq-feminist-or-orange-plate-selection-only",
+        "preserve-susannah-heschel-ritualwell-and-isaiah-credits"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-second-plate-maxwell-house-coffee",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Maxwell House and Diaspora satire",
+      "exactText": "Items for the Second Seder Plate Maxwell House coffeeמַכְּסְוֶיל בֵּית קָפֶה –––––––– To be inserted directly before tsafon. Why is this coffee different from all other coffees? Because Maxwell House coffee is a deeply spiritual representation of the Diaspora experience. Wait – let me explain! I'll use the classic PaRDeS method of exegesis, explaining the literal pshat, the deeper drash, the allegorical remez, and the metaphysical sod. Of course, pshat-wise the Maxwell House Haggadah is a classic piece of Jewish Americana – one of the first, and most successful, publicity campaigns targeted at a Jewish demographic. But for a deeper drash meaning, we should consider why it is that you know you're part of American society when ads start targeting you. We celebrate the Maxwell House Haggadah as an icon of \"acceptance,\" but it's really an icon of exploitation.\n\nAnd should we accept that, gulping it down like terrible, terrible coffee? And for a remez let us continue down that path. The below is an allegory adapted from a Talmudic discussion on the use of two-year bitter lettuce as maror: (Pesachim 39a): Why are the Egyptians likened to maror? To tell you, just as maror starts out sweet but ends up harsh, so too the Egyptians started out sweet and ended up harsh. לָמָּה נִמְשְׁלוּ מִצְרִיִּים כְּמָרוֹר ? לוֹמַר לָ , מַה מָרוֹר זֶה שֶׁתְּחִלָּתוֹ רַ וְסוֹפוֹ קָשֶׁה , אַף מִצְרִיִּים תְּחִלָּתָן רַכָּה וְסוֹפָן קָשֶׁה . Although Ashkenazi communities don't use bitter lettuce for maror anymore, we can continue this logic. Maxwell House takes something as delicious as coffee and destroys it by making it harsh and bitter – teaching us never to take our safety and prosperity for granted! And finally, for the sod, we shall go to the old classic – an acrostic. What is Maxwell House? The house of Mem-Kaf-Samekh-Vav-Yod-Lamed. This is an acronym for some of the places most notorious for bitterness and hatred. May we avoid a house of hatred, just as we avoid cheap coffee! For each place listed, let's spill out a sip of whatever after-dinner drink we're enjoying. M itzrayim Egypt צְרַיִם מִ K ittim Rome תִּים כִּ S 'dom Sodom דֹם סְ V a-Amorah and Gomorrah ﬠֲמֹרָה וַ Y avan Greece וָן יָ L ot Moab and Ammon וֹט ל",
+      "segmentIds": [
+        "research-second-seder-plate-6xx-8f95654b5b05",
+        "research-second-seder-plate-7m2-09a72734b204"
+      ],
+      "sourceLocation": "PDF p. 6, segment 1 through PDF p. 6, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 6, segment 1 through PDF p. 6, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-6xx-8f95654b5b05",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 8997,
+            "normalizedEndOffset": 9865
+          },
+          {
+            "id": "research-second-seder-plate-7m2-09a72734b204",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 9866,
+            "normalizedEndOffset": 11231
+          }
+        ]
+      },
+      "provenanceHash": "78433abd4332793e93a3b97add9dfabcd247f72b8662d261dbcce6be8be944bf",
+      "componentProvenanceHashes": [
+        "8f95654b5b05a7b545930f6d40fc40adf65b1da5f9857ecd79c62293a9398396",
+        "09a72734b2044fb0ac97cd730adfbdc249b315a223f5f9283af7abf107369cfa"
+      ],
+      "wordCount": 379,
+      "characterCount": 2235,
+      "sectionIds": [
+        "tzafun"
+      ],
+      "sourceSectionIds": [
+        "tzafun"
+      ],
+      "insertionSectionId": "tzafun",
+      "themes": [
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Before Tzafun, identify this as an optional comic reading about Jewish advertising history and the Maxwell House Haggadah; explain the PaRDeS method and make all coffee or after-dinner drinks optional and caffeine-free if desired.",
+      "rationale": "The two passages preserve the entire joke from literal advertising history through rabbinic analogy and acrostic, rather than extracting a punchline without its setup.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer, the Maxwell House Haggadah historical reference, and Pesachim 39a on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "caffeine-and-beverage-alternative-required",
+        "do-not-treat-ancient-place-list-as-collective-blame-of-modern-peoples",
+        "explicit-playful-diaspora-satire-opt-in",
+        "preserve-pesachim-attribution"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-second-plate-turnip-matzah",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Turnip matzah in Bergen-Belsen",
+      "exactText": "Items for the Second Seder Plate Turnip peels לֶפֶת קְלִפּוֹת –––––––––––––––––––– To be inserted with the door open, upon pouring the Cup of Elijah We read the text below. Pearl Benisch... remembers Passover in the Bergen-Belsen concentration camp in Germany in the spring of 1945, just days before her liberation. “We had nothing to eat but watery soup, with bread once a week,” she told me in a very quiet voice. “But I was one of the lucky ones. I was working in a place where we peeled potatoes and turnips. I cut three turnips in narrow rounds, covered them up with a piece of brown paper and hid them in my shoes. “When we had our Seder in the peeling room with one woman keeping watch for the guards, the other women moaned that there was no matzo.\n\nI said, ‘they are here, they are under the cover.’ They opened the brown paper and there were the three round turnip matzos.” Then, Mrs. Benisch, now in her late 80’s, paused and said in a whisper, “Only God can make matzo from turnips.” (Joan Nathan, 'Bread of Freedom in Times of Despair,' the New York Times, 16 April 2008) The rabbis say that Pesaḥ, the time of the redemption from Egypt, will eventually be the time of the redemption of the earth upon the arrival of the messianic age. When a society as cruel as Pharaoh arose and sought to destroy our people, when the ultimate redemption seemed as far off as ever, we remembered this. Let us remember them as well. Traditional Haggadot include the next three verses. The fourth has been added to end on a more positive, hopeful note.",
+      "segmentIds": [
+        "research-second-seder-plate-8o0-0963f2baf97d",
+        "research-second-seder-plate-991-911d09cdb416"
+      ],
+      "sourceLocation": "PDF p. 7, segment 1 through PDF p. 7, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 7, segment 1 through PDF p. 7, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-8o0-0963f2baf97d",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 11232,
+            "normalizedEndOffset": 11988
+          },
+          {
+            "id": "research-second-seder-plate-991-911d09cdb416",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 11989,
+            "normalizedEndOffset": 12779
+          }
+        ]
+      },
+      "provenanceHash": "8a9ad016a66ce440fe0df897c91f16fa820f5dbd2d0cce76e42e04a22cd5c47f",
+      "componentProvenanceHashes": [
+        "0963f2baf97df89c2d8d3a6bbcd8201341071ab217891d047ec8b7461ed99723",
+        "911d09cdb41689c9b748f216f0a49b5aaa56c12f3db4bdf62c7c5f03a2b68879"
+      ],
+      "wordCount": 282,
+      "characterCount": 1548,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "When opening the door for Elijah, offer a Holocaust content note and a pass option, then explain that Pearl Benisch remembered making three symbolic matzot from turnip slices shortly before liberation.",
+      "rationale": "The two passages contain the complete survivor account and a hopeful explanation of remembering redemption; stopping here deliberately avoids the following collective-destruction verses.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer, Pearl Benisch, Joan Nathan, and the New York Times article dated April 16, 2008 on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "explicit-holocaust-testimony-opt-in",
+        "never-append-excluded-anger-psalms",
+        "preserve-pearl-benisch-joan-nathan-and-new-york-times-credits",
+        "trauma-content-note-and-pass-option"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-second-plate-miriams-cup",
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "title": "Miriam's Cup after Elijah",
+      "exactText": "Items for the Second Seder Plate Miriam's Cup כּוֹס לְמִרְיָ ם––––––––––––––––––– To be inserted after Elijah's Cup, while the door remains open We read from the Talmud (Taanit 9a): Rabbi Yosi son of Rabbi Yehuda says: \"Three good sustainers arose for Israel. These are they: Moses and Aaron and Miriam. And three good gifts were given because of them, and these are they: well, and cloud, and manna. The well was given in merit of Miriam… Miriam died and the well ceased, as it is written (Numbers 20:1-2) \"And Miriam died there,\" and it says right afterwards \"and there was no water for the community.\" : אוֹמֵר יְהוּדָה בֶּן־רַבִּי יוֹסִי רַבִּי ” שְׁ אֵ . לְיִשְׂרָאֵל עָמְדוּ טוֹבִים פַּרְנַסִים , מֹשֶׁה : הֵן לּוּ עַל נִיתְּנוּ טוֹבוֹת מַּתָּנוֹת וְשָׁלוֹשׁ . וּמִרְיָם , וְאַהֲרֹן בִּזְכוּת בּאֵר .\n\nוּמָן , וְעָנָן , בְּאֵר : הֵן וְאֵלּוּ , יָדָם ...מִרְיָם שֶׁנֶאֶמַר , הַבּאֵר נִסְתַּלֵּק מִריָם מֵתָה וַ תָּ֤מׇ ת שָׁ ם֙ מִרְ יָ֔ ם בַּתְרֵיהּ וּכְתִיב וְלֹא־הָ֥יָה מַ֖יִם לָעֵדָ֑ה .“ We fill Miriam's Cup with water, and recite together: ZOT KOS MIRYAM HA-N'VIAH. Z'KHURAH L-TOVAH! הַנְּבִיאָה מִרְיָם כּוֹס זֹאת. לְטוֹבָה זְכוּרָה ! This is the cup of Miriam the Prophet. May she be remembered for goodness! Miriam the Prophet She who sang \"Triumph, triumph!\" In her merit we drew water From the wellsprings of salvation. As it was, on that day, She will dance with us And bring us tidings of redemption, New and complete. Miryam ha-N'viah Az tashir ki ga'oh ga'ah Bi-zkhutah sha'avnu mayim Mi-ma'aynei ha-y'shuah. Kshe-hayah ba-yom ha-hu T'ḥolel imanu U-t'vaser lanu g'ulah Ḥadashah u-sh'leimah הַנְּבִיאָה מִרְיָם גָּאָה גָאֹה כִּי תָּשִׁיר אַז מַיִם שָׁאַבְנוּ בִּזְכוּתָהּ הַיְשׁוּעָה מִמַּעַיְנֵי הָהוּא בַּיּוֹם כְּשֶׁהָיָה עִמָּנוּ תְּחוֹלֵל גְאֻלָּה לָנוּ וּתְבַשֵּׂר וּשְׁלֵמָה חֲדָשָׁה",
+      "segmentIds": [
+        "research-second-seder-plate-agz-97d5f5002762",
+        "research-second-seder-plate-b3e-7df51f38cdee"
+      ],
+      "sourceLocation": "PDF p. 8, segment 1 through PDF p. 8, segment 2",
+      "locator": {
+        "edition": "A Second Passover Seder Plate with Seven Additions",
+        "sourceLocation": "PDF p. 8, segment 1 through PDF p. 8, segment 2",
+        "localExtract": "research/source-extracts/second-seder-plate.txt",
+        "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "componentLocators": [
+          {
+            "id": "research-second-seder-plate-agz-97d5f5002762",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 13571,
+            "normalizedEndOffset": 14377
+          },
+          {
+            "id": "research-second-seder-plate-b3e-7df51f38cdee",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+            "normalizedStartOffset": 14378,
+            "normalizedEndOffset": 15377
+          }
+        ]
+      },
+      "provenanceHash": "c36ae8f0785d11aa097bdf94756a9cecd4908e51fa08e1da099108e9889d8166",
+      "componentProvenanceHashes": [
+        "97d5f50027621c9a2f3fc27d51f6214428473b526ea60b7c485a6b1242d4dcc4",
+        "7df51f38cdeef2e6091e26e0000e2900aa148a89454564c44d348f66d58a4faa"
+      ],
+      "wordCount": 286,
+      "characterCount": 1807,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "traditional",
+        "environment"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "After Elijah's Cup, fill a separate cup with water and explain that Miriam's Cup honors the prophet Miriam and the sustaining well associated with her in rabbinic tradition.",
+      "rationale": "The passages preserve the full unit from the Talmudic source through the spoken declaration and closing bilingual song, with a clear action and placement.",
+      "creditNotes": "Credit Isaac Gantwerk Mayer and identify Taanit 9a on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "A Second Passover Seder Plate with Seven Additions",
+        "sourcePresented": null,
+        "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "define-miriam-prophet-and-rabbinic-well-tradition",
+        "optional-ritual-only",
+        "preserve-taanit-attribution-and-song-wording",
+        "water-cup-must-not-be-confused-with-four-wine-or-grape-juice-cups"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

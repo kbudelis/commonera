@@ -89,7 +89,7 @@ test("validator rejects incomplete order and sections without primary prose", ()
   assert.match(errors, /karpas must contain primary-source prose/);
 });
 
-test("secondary-source mixing is closed until a seam is specifically approved", () => {
+test("procedural-backbone assembly rejects inline mixing before the reviewed runtime layer", () => {
   const assembly = assemblyFor("shir-geulah-primary", 20);
   const other = architecture.sourceSpines
     .find((spine) => spine.id === "velveteen-rabbi-primary")
@@ -120,7 +120,7 @@ test("metrics separate source, house, traditional, and per-source words", () => 
   assert.ok(metrics.borrowedWords > metrics.houseWords);
   assert.ok(metrics.borrowedWordShare > 0.9);
   assert.ok(metrics.traditionalWords > 0);
-  assert.ok(metrics.bySource["shir-geulah"].words > 1_100);
+  assert.ok(metrics.bySource["shir-geulah"].words > 500);
   assert.equal(metrics.bySource["velveteen-rabbi"], undefined);
 });
 

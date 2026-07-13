@@ -1,0 +1,586 @@
+{
+  "schemaVersion": "1.0.0",
+  "sequences": [
+    {
+      "id": "shir-geulah--traditional-core",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "traditional-core",
+      "compatibleSupportingSourceIds": [
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--wandering-is-over",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "wandering-is-over",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "inner-seder",
+        "velveteen-rabbi",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--inner-seder",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "inner-seder",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "freedom-seder-earth",
+        "velveteen-rabbi",
+        "feinstein-haggadah"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--other-side-of-sea",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "other-side-of-sea",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "freedom-seder-earth",
+        "seder-in-the-streets",
+        "feinstein-haggadah",
+        "mlk-freedom-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--freedom-seder-earth",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "freedom-seder-earth",
+      "compatibleSupportingSourceIds": [
+        "inner-seder",
+        "other-side-of-sea",
+        "velveteen-rabbi",
+        "seder-in-the-streets",
+        "feinstein-haggadah",
+        "mlk-freedom-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--shir-geulah",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "shir-geulah",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "wandering-is-over",
+        "inner-seder",
+        "other-side-of-sea",
+        "freedom-seder-earth",
+        "velveteen-rabbi",
+        "nusach-eretz-yisrael",
+        "seder-in-the-streets",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "socialist-hagode",
+        "mlk-freedom-seder",
+        "second-seder-plate",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto",
+        "battlestar-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--velveteen-rabbi",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "velveteen-rabbi",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "inner-seder",
+        "freedom-seder-earth",
+        "feinstein-haggadah"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--nusach-eretz-yisrael",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "nusach-eretz-yisrael",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--seder-in-the-streets",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "seder-in-the-streets",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "other-side-of-sea",
+        "feinstein-haggadah",
+        "mlk-freedom-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--tropified-haggadah",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "tropified-haggadah",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--feinstein-haggadah",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "feinstein-haggadah",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "wandering-is-over",
+        "inner-seder",
+        "velveteen-rabbi",
+        "tropified-haggadah",
+        "mayer-ashkenaz",
+        "battlestar-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--socialist-hagode",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "socialist-hagode",
+      "compatibleSupportingSourceIds": [
+        "other-side-of-sea",
+        "nusach-eretz-yisrael",
+        "seder-in-the-streets",
+        "feinstein-haggadah",
+        "mlk-freedom-seder",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--mlk-freedom-seder",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "mlk-freedom-seder",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "other-side-of-sea",
+        "freedom-seder-earth",
+        "seder-in-the-streets",
+        "feinstein-haggadah"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--second-seder-plate",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "second-seder-plate",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "other-side-of-sea",
+        "freedom-seder-earth",
+        "seder-in-the-streets",
+        "feinstein-haggadah",
+        "mlk-freedom-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--mayer-ashkenaz",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "mayer-ashkenaz",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--english-jews-seder",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "english-jews-seder",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "longerFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--rittangel-latin",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "rittangel-latin",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "levy-home-service",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "longerFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--levy-home-service",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "levy-home-service",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "barros-basto"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        2
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--barros-basto",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "barros-basto",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "nusach-eretz-yisrael",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "longerFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "shir-geulah--battlestar-seder",
+      "proceduralBackboneSourceId": "shir-geulah",
+      "featuredSourceId": "battlestar-seder",
+      "compatibleSupportingSourceIds": [
+        "feinstein-haggadah"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "longerFeaturedPassageTarget": [
+        1,
+        1
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "velveteen-rabbi--wandering-is-over",
+      "proceduralBackboneSourceId": "velveteen-rabbi",
+      "featuredSourceId": "wandering-is-over",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "inner-seder",
+        "shir-geulah",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "mayer-ashkenaz"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "velveteen-rabbi--freedom-seder-earth",
+      "proceduralBackboneSourceId": "velveteen-rabbi",
+      "featuredSourceId": "freedom-seder-earth",
+      "compatibleSupportingSourceIds": [
+        "inner-seder",
+        "other-side-of-sea",
+        "shir-geulah",
+        "seder-in-the-streets",
+        "feinstein-haggadah",
+        "mlk-freedom-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "velveteen-rabbi--shir-geulah",
+      "proceduralBackboneSourceId": "velveteen-rabbi",
+      "featuredSourceId": "shir-geulah",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "wandering-is-over",
+        "inner-seder",
+        "other-side-of-sea",
+        "freedom-seder-earth",
+        "nusach-eretz-yisrael",
+        "seder-in-the-streets",
+        "tropified-haggadah",
+        "feinstein-haggadah",
+        "socialist-hagode",
+        "mlk-freedom-seder",
+        "second-seder-plate",
+        "mayer-ashkenaz",
+        "english-jews-seder",
+        "rittangel-latin",
+        "levy-home-service",
+        "barros-basto",
+        "battlestar-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "velveteen-rabbi--velveteen-rabbi",
+      "proceduralBackboneSourceId": "velveteen-rabbi",
+      "featuredSourceId": "velveteen-rabbi",
+      "compatibleSupportingSourceIds": [
+        "wandering-is-over",
+        "inner-seder",
+        "freedom-seder-earth",
+        "shir-geulah",
+        "feinstein-haggadah"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    },
+    {
+      "id": "velveteen-rabbi--feinstein-haggadah",
+      "proceduralBackboneSourceId": "velveteen-rabbi",
+      "featuredSourceId": "feinstein-haggadah",
+      "compatibleSupportingSourceIds": [
+        "traditional-core",
+        "wandering-is-over",
+        "inner-seder",
+        "shir-geulah",
+        "tropified-haggadah",
+        "mayer-ashkenaz",
+        "battlestar-seder"
+      ],
+      "conciseFeaturedPassageTarget": [
+        1,
+        2
+      ],
+      "longerFeaturedPassageTarget": [
+        2,
+        3
+      ],
+      "maximumSupportingPassages": 1
+    }
+  ]
+}

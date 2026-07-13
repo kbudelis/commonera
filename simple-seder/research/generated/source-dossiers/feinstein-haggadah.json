@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "feinstein-haggadah",
+  "title": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+  "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+  "family": "beginner-accessible",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A complete traditional Haggadah with a modern English translation and useful stage-by-stage ritual structure; it can support a source-led liturgical backbone after visual OCR review, while its severe Four Children and plague language needs context and its appended software license must never enter ritual content.",
+  "sourceAssessment": {
+    "voice": "Formal, text-centered, traditional, bilingual, and compact, with a relatively modern English translation embedded in dense Hebrew-English page layouts.",
+    "bestUses": [
+      "A coherent traditional sequence from preparation through Maggid and symbolic eating",
+      "Direct English translations of core blessings and scriptural exposition",
+      "A concise source-led option for guests who want more liturgy and less contemporary commentary"
+    ],
+    "beginnerRisks": [
+      "The extraction merges Hebrew, transliteration, footnotes, and English columns and must be checked against rendered pages.",
+      "Traditional Four Children, plague, firstborn, land, and Temple language can be harsh or opaque without framing.",
+      "The final third of the extracted file is a software-license appendix and is not Haggadah content."
+    ],
+    "politicalContext": "The source's Israel, land, Temple, and Jerusalem language is inherited liturgy rather than a modern policy argument. It still requires the project's traditional-only and non-exclusive framing rules, especially where Dayenu or grace language could sound like contemporary entitlement.",
+    "creditContext": "Credit Eve Levavi Feinstein and Efraim Feinstein, identify the Haggadah for the Passover Seder / Haggadat Mah Zot, link CC BY-SA 4.0, indicate changes, and preserve ShareAlike terms. Embedded materials require item-level review."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 108,
+    "segmentCount": 139,
+    "exactCharacterCount": 179506,
+    "exactWordCount": 24492,
+    "reconstructionSha256": "d101086934d40c753ded2f629a2719bdc85af5f924f13aa69ac7b1eac08e4bf7",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Eve Levavi Feinstein and Efraim Feinstein",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=6207"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 66,
+      "segmentIds": [
+        "research-feinstein-haggadah-0-8b0cc586a858",
+        "research-feinstein-haggadah-64-2b36225e1e56",
+        "research-feinstein-haggadah-t7-bda6c8162f28",
+        "research-feinstein-haggadah-1tq-c17eecf5f176",
+        "research-feinstein-haggadah-2kh-d596eb791429",
+        "research-feinstein-haggadah-3f1-0d9e2c12e724",
+        "research-feinstein-haggadah-49n-5563f86ab94b",
+        "research-feinstein-haggadah-4y2-1410c2ac92c0",
+        "research-feinstein-haggadah-671-cb71aa39e085",
+        "research-feinstein-haggadah-6wa-dde451c62640",
+        "research-feinstein-haggadah-7kp-9161d179c49f",
+        "research-feinstein-haggadah-1a3m-580763f596ff",
+        "research-feinstein-haggadah-1r5c-5f856ff1ce63",
+        "research-feinstein-haggadah-2ml2-5342432babdb",
+        "research-feinstein-haggadah-2oml-e8606dcf39dd",
+        "research-feinstein-haggadah-2pq1-531451c06870",
+        "research-feinstein-haggadah-2qjv-0e46cebab1ff",
+        "research-feinstein-haggadah-2rdl-c189a2f6f679",
+        "research-feinstein-haggadah-2saq-e27866391c3f",
+        "research-feinstein-haggadah-2tfb-5f65756877fb",
+        "research-feinstein-haggadah-2uh0-7854314092c7",
+        "research-feinstein-haggadah-2vi1-d904bba6f424",
+        "research-feinstein-haggadah-2wk8-b3f6fba822ae",
+        "research-feinstein-haggadah-2xmu-0b1c79ee57c3",
+        "research-feinstein-haggadah-2yno-a3505118eab8",
+        "research-feinstein-haggadah-2zs1-973ab7839216",
+        "research-feinstein-haggadah-30y1-80af1f3460e4",
+        "research-feinstein-haggadah-323x-c38eb6a72dee",
+        "research-feinstein-haggadah-33cw-3c23bf6c39ca",
+        "research-feinstein-haggadah-33zh-752e9c47d651",
+        "research-feinstein-haggadah-34jl-b9ef8212aa9d",
+        "research-feinstein-haggadah-35ag-edfbbd3aafae",
+        "research-feinstein-haggadah-35yh-2c6c99f82061",
+        "research-feinstein-haggadah-36p0-b86a95b8f80f",
+        "research-feinstein-haggadah-37g1-6492fcf936ee",
+        "research-feinstein-haggadah-384s-253fc778e9b1",
+        "research-feinstein-haggadah-38tv-67dc09693323",
+        "research-feinstein-haggadah-39uu-1990184d9448",
+        "research-feinstein-haggadah-3ajd-d9d07ce66527",
+        "research-feinstein-haggadah-3b8x-117b4ae2e206",
+        "research-feinstein-haggadah-3c5d-7e447df3d218",
+        "research-feinstein-haggadah-3cwu-e9c115ae67f3",
+        "research-feinstein-haggadah-3dce-9d350dadc030",
+        "research-feinstein-haggadah-3dyi-450b2abd7111",
+        "research-feinstein-haggadah-3eo4-cfb9cbbe3790",
+        "research-feinstein-haggadah-3fcq-60645fd39832",
+        "research-feinstein-haggadah-3g2s-f15ab7398f3b",
+        "research-feinstein-haggadah-3h4s-1e6330a9785a",
+        "research-feinstein-haggadah-3hsm-ee19e3eadabe",
+        "research-feinstein-haggadah-3iiz-0f6a332d7eff",
+        "research-feinstein-haggadah-3jbf-20c46e6cc4be",
+        "research-feinstein-haggadah-3k0l-25964a99acc3",
+        "research-feinstein-haggadah-3kpa-5391fe178cec",
+        "research-feinstein-haggadah-3ln1-52c981a50ac2",
+        "research-feinstein-haggadah-3mcy-3542179b229e",
+        "research-feinstein-haggadah-3n56-8f77199794c1",
+        "research-feinstein-haggadah-3o4d-59464cc0b1b2",
+        "research-feinstein-haggadah-3oqf-ca5adb70bbe0",
+        "research-feinstein-haggadah-3p9z-d055f213d434",
+        "research-feinstein-haggadah-3pxb-96c58371aa48",
+        "research-feinstein-haggadah-3qpd-d4b1a0fd8762",
+        "research-feinstein-haggadah-3rc1-05eaed774b5e",
+        "research-feinstein-haggadah-3rrf-f2673a4a9047",
+        "research-feinstein-haggadah-3siw-01fc1d57af89",
+        "research-feinstein-haggadah-3syd-0d269dc5d5a5",
+        "research-feinstein-haggadah-3tlm-4743f8168b2b"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd"
+      ]
+    },
+    "maggid": {
+      "segmentCount": 37,
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-9it-fe4702a6adc9",
+        "research-feinstein-haggadah-aot-ef2a518cb905",
+        "research-feinstein-haggadah-c7e-1d9c77b561a6",
+        "research-feinstein-haggadah-ddp-eee72f169f5b",
+        "research-feinstein-haggadah-eos-6b00a975b43c",
+        "research-feinstein-haggadah-fwp-da524afdb679",
+        "research-feinstein-haggadah-gwl-3a59455ab1b8",
+        "research-feinstein-haggadah-icj-c9eb79111eff",
+        "research-feinstein-haggadah-jr8-36d28562553c",
+        "research-feinstein-haggadah-l1w-434bcb321cac",
+        "research-feinstein-haggadah-mhm-928cfd72587e",
+        "research-feinstein-haggadah-nx9-3a31ce09c6ba",
+        "research-feinstein-haggadah-pb6-3c9c2bdac99f",
+        "research-feinstein-haggadah-qoe-365aef2c0e50",
+        "research-feinstein-haggadah-rte-328d5a77e167",
+        "research-feinstein-haggadah-ssl-734e330b01b1",
+        "research-feinstein-haggadah-u8x-d7f3e727b60b",
+        "research-feinstein-haggadah-va9-2671b60a946d",
+        "research-feinstein-haggadah-wlq-c28d8022d33c",
+        "research-feinstein-haggadah-y4i-eca295033bf0",
+        "research-feinstein-haggadah-z8q-5a10aef546c1",
+        "research-feinstein-haggadah-10hg-a9e3bc431d73",
+        "research-feinstein-haggadah-11oy-093ea077e5b1",
+        "research-feinstein-haggadah-130s-9c2f717ba7fb",
+        "research-feinstein-haggadah-145w-137f594e1e1e",
+        "research-feinstein-haggadah-15at-a9a930c54606",
+        "research-feinstein-haggadah-16rn-688cff34e57a",
+        "research-feinstein-haggadah-17xe-828085903097",
+        "research-feinstein-haggadah-190k-06729a9bee38",
+        "research-feinstein-haggadah-1a3m-580763f596ff",
+        "research-feinstein-haggadah-1b62-30cb82877c2c",
+        "research-feinstein-haggadah-24i0-7be48d654aea",
+        "research-feinstein-haggadah-25it-c9766e04f385",
+        "research-feinstein-haggadah-26nu-652de53bfd9b",
+        "research-feinstein-haggadah-27y3-819305a8cba8",
+        "research-feinstein-haggadah-298z-12884562e65d"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-feinstein-haggadah-190k-06729a9bee38",
+        "research-feinstein-haggadah-1ee4-64546382f98a"
+      ]
+    },
+    "maror": {
+      "segmentCount": 6,
+      "segmentIds": [
+        "research-feinstein-haggadah-9it-fe4702a6adc9",
+        "research-feinstein-haggadah-fwp-da524afdb679",
+        "research-feinstein-haggadah-130s-9c2f717ba7fb",
+        "research-feinstein-haggadah-145w-137f594e1e1e",
+        "research-feinstein-haggadah-15at-a9a930c54606",
+        "research-feinstein-haggadah-1c7k-646b956418f8"
+      ]
+    },
+    "korech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-feinstein-haggadah-1c7k-646b956418f8"
+      ]
+    },
+    "shulchan-orech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-feinstein-haggadah-1dch-1120ef3b8143"
+      ]
+    },
+    "tzafun": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-1dch-1120ef3b8143"
+      ]
+    },
+    "barech": {
+      "segmentCount": 12,
+      "segmentIds": [
+        "research-feinstein-haggadah-1dch-1120ef3b8143",
+        "research-feinstein-haggadah-1ee4-64546382f98a",
+        "research-feinstein-haggadah-1fe0-05d0bf77130e",
+        "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+        "research-feinstein-haggadah-1htp-e3b94299332d",
+        "research-feinstein-haggadah-1j4u-278279cc68a9",
+        "research-feinstein-haggadah-1jvc-e39e3e607cc1",
+        "research-feinstein-haggadah-1knm-54e3a9708bfb",
+        "research-feinstein-haggadah-1lya-b34d482ad32a",
+        "research-feinstein-haggadah-1nc8-f5070951553f",
+        "research-feinstein-haggadah-1ok2-95eb110c4c38",
+        "research-feinstein-haggadah-1pub-356350e6f039"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 29,
+      "segmentIds": [
+        "research-feinstein-haggadah-wlq-c28d8022d33c",
+        "research-feinstein-haggadah-16rn-688cff34e57a",
+        "research-feinstein-haggadah-17xe-828085903097",
+        "research-feinstein-haggadah-1dch-1120ef3b8143",
+        "research-feinstein-haggadah-1pub-356350e6f039",
+        "research-feinstein-haggadah-1r5c-5f856ff1ce63",
+        "research-feinstein-haggadah-1sei-4c01aa97fb74",
+        "research-feinstein-haggadah-1tns-6743d04ebfa1",
+        "research-feinstein-haggadah-1us9-bd3f06494c33",
+        "research-feinstein-haggadah-1vzz-e1dcb7e711be",
+        "research-feinstein-haggadah-1x3y-e76344f12169",
+        "research-feinstein-haggadah-1y5o-e4ab319a17a0",
+        "research-feinstein-haggadah-1zd5-b0ce9d86c0c6",
+        "research-feinstein-haggadah-20i9-60ce06487946",
+        "research-feinstein-haggadah-21p1-455fad78c015",
+        "research-feinstein-haggadah-22cd-533a5e429527",
+        "research-feinstein-haggadah-23if-b55466ea8458",
+        "research-feinstein-haggadah-2aj9-420469721809",
+        "research-feinstein-haggadah-2bw0-e2371965ea0d",
+        "research-feinstein-haggadah-2cpb-49ee01fef4ae",
+        "research-feinstein-haggadah-2e09-fccc6e04effd",
+        "research-feinstein-haggadah-2ez0-4a090cc291c6",
+        "research-feinstein-haggadah-2fy6-0f1567babbb0",
+        "research-feinstein-haggadah-2gw1-a657a16482ff",
+        "research-feinstein-haggadah-2hta-8ef8d1a9b5af",
+        "research-feinstein-haggadah-2ist-057a9c75b835",
+        "research-feinstein-haggadah-2jwa-e376f59e0d7d",
+        "research-feinstein-haggadah-2kup-c36a94c04439",
+        "research-feinstein-haggadah-2lpt-1be7eff17f75"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 3,
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-2ml2-5342432babdb",
+        "research-feinstein-haggadah-2ncv-5c39a4c24f62"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 17,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 19
+  },
+  "recommendedSequences": [
+    {
+      "id": "feinstein-removing-leaven",
+      "title": "Preparing by removing leaven",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-64-2b36225e1e56",
+        "research-feinstein-haggadah-t7-bda6c8162f28"
+      ],
+      "beginnerContext": "Explain that searching for and nullifying hametz is a pre-Passover practice, not something guests must improvise at the table. Give a short practical definition of leaven and clearly mark this as optional preparation.",
+      "rationale": "The adjacent opening records preserve a complete preparatory ritual and its meaning, useful for a host guide or traditional appendix rather than an unexplained first page.",
+      "themes": [
+        "traditional",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-preparation-opt-in",
+        "plain-language-hametz-definition",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and preserve CC BY-SA 4.0 attribution and ShareAlike terms.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 2, segment 1",
+        "end": "PDF p. 2, segment 2",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-64-2b36225e1e56",
+            "sourceLocation": "PDF p. 2, segment 1",
+            "locator": {
+              "label": "PDF p. 2",
+              "pageNumber": 2,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 220,
+              "normalizedEndOffset": 1050
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-t7-bda6c8162f28",
+            "sourceLocation": "PDF p. 2, segment 2",
+            "locator": {
+              "label": "PDF p. 2",
+              "pageNumber": 2,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 1051,
+              "normalizedEndOffset": 2365
+            }
+          }
+        ]
+      },
+      "totalWords": 322,
+      "exactTextSequenceSha256": "4a6638089a0dbe55c3875f40c1ad289370bd045070a20fa81c7852d09559fec9",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-questions-and-story-opening",
+      "title": "Four Questions into Maggid",
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-9it-fe4702a6adc9",
+        "research-feinstein-haggadah-aot-ef2a518cb905"
+      ],
+      "beginnerContext": "Explain the salt water and broken matzah actions before the youngest willing person or another guest asks the Four Questions. Define Maggid and state that the questions lead into the Exodus story.",
+      "rationale": "The three adjacent segments connect preliminary ritual actions with the formal questions and story opening, retaining the intended order rather than detaching the blessing text.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "visible-object-cues-required",
+        "no-child-forced-to-read",
+        "plain-language-maggid-definition",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and indicate any cuts to the bilingual text.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 8, segment 1",
+        "end": "PDF p. 10, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-8dk-237512d608cd",
+            "sourceLocation": "PDF p. 8, segment 1",
+            "locator": {
+              "label": "PDF p. 8",
+              "pageNumber": 8,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 10856,
+              "normalizedEndOffset": 12340
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-9it-fe4702a6adc9",
+            "sourceLocation": "PDF p. 9, segment 1",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 12341,
+              "normalizedEndOffset": 13852
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-aot-ef2a518cb905",
+            "sourceLocation": "PDF p. 10, segment 1",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 13853,
+              "normalizedEndOffset": 15817
+            }
+          }
+        ]
+      },
+      "totalWords": 628,
+      "exactTextSequenceSha256": "7ba7a406754d9645a7f01eefc3f688d730f8467a5108acf14c4cebde71976459",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-four-children",
+      "title": "The traditional Four Children",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-ddp-eee72f169f5b",
+        "research-feinstein-haggadah-eos-6b00a975b43c"
+      ],
+      "beginnerContext": "Introduce the figures as inherited teaching types, not judgments about actual children or guests. Explain the historical language, avoid assigning labels around the table, and give a gentler discussion prompt.",
+      "rationale": "The two adjacent records preserve the traditional Four Children unit and its responses, stopping at a complete sentence before the source turns to a new scriptural exposition. Keeping the figures together is safer and more intelligible than extracting only the severe description of one child.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "nonlabeling-introduction-required",
+        "harsh-language-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; identify this as a traditional teaching in their translation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 12, segment 1",
+        "end": "PDF p. 13, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-ddp-eee72f169f5b",
+            "sourceLocation": "PDF p. 12, segment 1",
+            "locator": {
+              "label": "PDF p. 12",
+              "pageNumber": 12,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 17341,
+              "normalizedEndOffset": 19035
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-eos-6b00a975b43c",
+            "sourceLocation": "PDF p. 13, segment 1",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 19036,
+              "normalizedEndOffset": 20616
+            }
+          }
+        ]
+      },
+      "totalWords": 442,
+      "exactTextSequenceSha256": "64ac6586f5090aa7783fe3f62ce0b7fecbdef95431fa71307434c3d98a132334",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-ancestry-to-oppression",
+      "title": "From ancestry to oppression",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-gwl-3a59455ab1b8",
+        "research-feinstein-haggadah-icj-c9eb79111eff",
+        "research-feinstein-haggadah-jr8-36d28562553c",
+        "research-feinstein-haggadah-l1w-434bcb321cac",
+        "research-feinstein-haggadah-mhm-928cfd72587e"
+      ],
+      "beginnerContext": "State the narrative arc before the detailed verses: the family went to Egypt, became a people, and was enslaved and harmed. Explain that the people's cry and liberation continue in the following part of Maggid. Introduce each scriptural quotation with one sentence of plain-language meaning.",
+      "rationale": "Five source-order segments preserve the traditional verse-by-verse movement from ancestry through oppression and stop after a complete scriptural sentence. The later page records were removed because their extracted text ends mid-exposition.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-narrative-bridges-required",
+        "age-appropriate-harm-context",
+        "rendered-page-ocr-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and preserve CC BY-SA 4.0 and any embedded source note.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 15, segment 1",
+        "end": "PDF p. 19, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-gwl-3a59455ab1b8",
+            "sourceLocation": "PDF p. 15, segment 1",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 21909,
+              "normalizedEndOffset": 23778
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-icj-c9eb79111eff",
+            "sourceLocation": "PDF p. 16, segment 1",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 23779,
+              "normalizedEndOffset": 25603
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-jr8-36d28562553c",
+            "sourceLocation": "PDF p. 17, segment 1",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 25604,
+              "normalizedEndOffset": 27283
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-l1w-434bcb321cac",
+            "sourceLocation": "PDF p. 18, segment 1",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 27284,
+              "normalizedEndOffset": 29145
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-mhm-928cfd72587e",
+            "sourceLocation": "PDF p. 19, segment 1",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 29146,
+              "normalizedEndOffset": 31004
+            }
+          }
+        ]
+      },
+      "totalWords": 1065,
+      "exactTextSequenceSha256": "367e59599e7e362c57e02104b70f495231c4ec0ff7e919548823ce1af8a3513e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-plagues-and-compassion",
+      "title": "Plagues with diminished joy",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-qoe-365aef2c0e50",
+        "research-feinstein-haggadah-rte-328d5a77e167",
+        "research-feinstein-haggadah-ssl-734e330b01b1",
+        "research-feinstein-haggadah-u8x-d7f3e727b60b"
+      ],
+      "beginnerContext": "Explain that the plagues are catastrophes within the liberation story, name the cup-diminishing custom, and say explicitly that the table does not celebrate civilian suffering. Use wine or grape juice and give one action cue before the list.",
+      "rationale": "The adjacent passages retain the narrative and ritual treatment of the plagues while stopping before the most elaborate numerical multiplication, making a more usable adult or mixed-age unit.",
+      "themes": [
+        "traditional",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "nontriumphalist-plague-framing",
+        "wine-or-grape-juice-explicit",
+        "cup-diminishing-action-cue",
+        "age-appropriate-harm-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and indicate any abridgment of the traditional plague exposition.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 22, segment 1",
+        "end": "PDF p. 25, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-qoe-365aef2c0e50",
+            "sourceLocation": "PDF p. 22, segment 1",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 34574,
+              "normalizedEndOffset": 36049
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-rte-328d5a77e167",
+            "sourceLocation": "PDF p. 23, segment 1",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 36050,
+              "normalizedEndOffset": 37316
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-ssl-734e330b01b1",
+            "sourceLocation": "PDF p. 24, segment 1",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 37317,
+              "normalizedEndOffset": 39200
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-u8x-d7f3e727b60b",
+            "sourceLocation": "PDF p. 25, segment 1",
+            "locator": {
+              "label": "PDF p. 25",
+              "pageNumber": 25,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 39201,
+              "normalizedEndOffset": 40544
+            }
+          }
+        ]
+      },
+      "totalWords": 739,
+      "exactTextSequenceSha256": "e42c3f6eb0dd29f0f18e0f74436b7952a7fc2e300fb2a019e92be67011f3c2ce",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-dayenu-symbols-and-praise",
+      "title": "Gratitude, symbols, and the turn to praise",
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-z8q-5a10aef546c1",
+        "research-feinstein-haggadah-10hg-a9e3bc431d73",
+        "research-feinstein-haggadah-11oy-093ea077e5b1",
+        "research-feinstein-haggadah-130s-9c2f717ba7fb",
+        "research-feinstein-haggadah-145w-137f594e1e1e",
+        "research-feinstein-haggadah-15at-a9a930c54606",
+        "research-feinstein-haggadah-16rn-688cff34e57a"
+      ],
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song, then point to the traditional symbols and explain each one before the every-generation teaching. Signal the transition from telling into praise.",
+      "rationale": "Seven consecutive passages preserve the source's complete theological and ritual turn from gratitude through Pesach, matzah, maror, lived memory, and Hallel.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "traditional-theme-only",
+        "nontriumphalist-firstborn-and-land-framing",
+        "visible-object-cues-required",
+        "temple-language-context",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins, preserve ShareAlike terms, and identify omitted Dayenu verses if abridged.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 29, segment 1",
+        "end": "PDF p. 35, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-z8q-5a10aef546c1",
+            "sourceLocation": "PDF p. 29, segment 1",
+            "locator": {
+              "label": "PDF p. 29",
+              "pageNumber": 29,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 45674,
+              "normalizedEndOffset": 47283
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-10hg-a9e3bc431d73",
+            "sourceLocation": "PDF p. 30, segment 1",
+            "locator": {
+              "label": "PDF p. 30",
+              "pageNumber": 30,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 47284,
+              "normalizedEndOffset": 48849
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-11oy-093ea077e5b1",
+            "sourceLocation": "PDF p. 31, segment 1",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 48850,
+              "normalizedEndOffset": 50571
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-130s-9c2f717ba7fb",
+            "sourceLocation": "PDF p. 32, segment 1",
+            "locator": {
+              "label": "PDF p. 32",
+              "pageNumber": 32,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 50572,
+              "normalizedEndOffset": 52051
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-145w-137f594e1e1e",
+            "sourceLocation": "PDF p. 33, segment 1",
+            "locator": {
+              "label": "PDF p. 33",
+              "pageNumber": 33,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 52052,
+              "normalizedEndOffset": 53524
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-15at-a9a930c54606",
+            "sourceLocation": "PDF p. 34, segment 1",
+            "locator": {
+              "label": "PDF p. 34",
+              "pageNumber": 34,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 53525,
+              "normalizedEndOffset": 55426
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-16rn-688cff34e57a",
+            "sourceLocation": "PDF p. 35, segment 1",
+            "locator": {
+              "label": "PDF p. 35",
+              "pageNumber": 35,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 55427,
+              "normalizedEndOffset": 56929
+            }
+          }
+        ]
+      },
+      "totalWords": 1414,
+      "exactTextSequenceSha256": "94f99a2a69f77273f8f4adfbaccb8eb6717407cbc5d7e18ad14cada9059850e9",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-washing-and-symbolic-foods",
+      "title": "Washing, matzah, and bitter herb",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-1b62-30cb82877c2c",
+        "research-feinstein-haggadah-1c7k-646b956418f8",
+        "research-feinstein-haggadah-1dch-1120ef3b8143"
+      ],
+      "beginnerContext": "Give practical instructions before the liturgy: wash hands individually or by pouring for one another, eat matzah, then bitter herb with haroset and the sandwich. Define haroset and provide allergy-safe substitutions.",
+      "rationale": "The three adjacent source records hold the table rituals in their proper order and can serve as a concise traditional block when paired with accessible host directions.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions",
+        "allergy-safe-alternatives",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; distinguish project-authored action cues from source text.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 39, segment 1",
+        "end": "PDF p. 41, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-1b62-30cb82877c2c",
+            "sourceLocation": "PDF p. 39, segment 1",
+            "locator": {
+              "label": "PDF p. 39",
+              "pageNumber": 39,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 61130,
+              "normalizedEndOffset": 62479
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-1c7k-646b956418f8",
+            "sourceLocation": "PDF p. 40, segment 1",
+            "locator": {
+              "label": "PDF p. 40",
+              "pageNumber": 40,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 62480,
+              "normalizedEndOffset": 63952
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-1dch-1120ef3b8143",
+            "sourceLocation": "PDF p. 41, segment 1",
+            "locator": {
+              "label": "PDF p. 41",
+              "pageNumber": 41,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 63953,
+              "normalizedEndOffset": 65307
+            }
+          }
+        ]
+      },
+      "totalWords": 557,
+      "exactTextSequenceSha256": "7b79eaeb4d167adecb191ec4e6dc4081438bb8bbe6e30a89aed292ad228bb15f",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "feinstein-grace-after-meals",
+      "title": "Opening grace after the meal",
+      "sectionIds": [
+        "barech"
+      ],
+      "segmentIds": [
+        "research-feinstein-haggadah-1ee4-64546382f98a",
+        "research-feinstein-haggadah-1fe0-05d0bf77130e",
+        "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+        "research-feinstein-haggadah-1htp-e3b94299332d"
+      ],
+      "beginnerContext": "Explain that Barech is the gratitude said after eating and tell guests whether the leader will read or everyone will respond. Offer a shortened path without implying that a mixed-belief guest must affirm every theological line.",
+      "rationale": "The four source-order records provide a coherent entrance into grace and communal response, retaining the liturgical progression instead of using a blessing fragment out of context.",
+      "themes": [
+        "traditional",
+        "mindfulness",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mixed-belief-introduction-required",
+        "responsive-reading-cues",
+        "traditional-land-language-review",
+        "rendered-page-ocr-check"
+      ],
+      "creditNotes": "Credit the Feinsteins and preserve the CC BY-SA 4.0 notice and change statement.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 42, segment 1",
+        "end": "PDF p. 45, segment 1",
+        "locators": [
+          {
+            "id": "research-feinstein-haggadah-1ee4-64546382f98a",
+            "sourceLocation": "PDF p. 42, segment 1",
+            "locator": {
+              "label": "PDF p. 42",
+              "pageNumber": 42,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 65308,
+              "normalizedEndOffset": 66599
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-1fe0-05d0bf77130e",
+            "sourceLocation": "PDF p. 43, segment 1",
+            "locator": {
+              "label": "PDF p. 43",
+              "pageNumber": 43,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 66600,
+              "normalizedEndOffset": 67896
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+            "sourceLocation": "PDF p. 44, segment 1",
+            "locator": {
+              "label": "PDF p. 44",
+              "pageNumber": 44,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 67897,
+              "normalizedEndOffset": 69756
+            }
+          },
+          {
+            "id": "research-feinstein-haggadah-1htp-e3b94299332d",
+            "sourceLocation": "PDF p. 45, segment 1",
+            "locator": {
+              "label": "PDF p. 45",
+              "pageNumber": 45,
+              "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+              "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+              "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+              "normalizedStartOffset": 69757,
+              "normalizedEndOffset": 71453
+            }
+          }
+        ]
+      },
+      "totalWords": 819,
+      "exactTextSequenceSha256": "72ffaa4a9f2d3df7150f5878d02e212d93b30b44d41f9dbfa2dd69ddf03159d6",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-feinstein-haggadah-1sei-4c01aa97fb74",
+      "sourceLocation": "PDF p. 53, segment 1",
+      "reasons": [
+        "corrupt-control-glyphs"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-33cw-3c23bf6c39ca",
+      "sourceLocation": "PDF p. 97, segment 1",
+      "reasons": [
+        "license-boilerplate",
+        "This begins the appended GNU software-license text, not the Haggadah ritual content."
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-33zh-752e9c47d651",
+      "sourceLocation": "PDF p. 97, segment 2",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-35ag-edfbbd3aafae",
+      "sourceLocation": "PDF p. 98, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-35yh-2c6c99f82061",
+      "sourceLocation": "PDF p. 98, segment 2",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-37g1-6492fcf936ee",
+      "sourceLocation": "PDF p. 99, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-39uu-1990184d9448",
+      "sourceLocation": "PDF p. 100, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3c5d-7e447df3d218",
+      "sourceLocation": "PDF p. 101, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3eo4-cfb9cbbe3790",
+      "sourceLocation": "PDF p. 102, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3h4s-1e6330a9785a",
+      "sourceLocation": "PDF p. 103, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3jbf-20c46e6cc4be",
+      "sourceLocation": "PDF p. 104, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3ln1-52c981a50ac2",
+      "sourceLocation": "PDF p. 105, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3o4d-59464cc0b1b2",
+      "sourceLocation": "PDF p. 106, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3pxb-96c58371aa48",
+      "sourceLocation": "PDF p. 106, segment 4",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3qpd-d4b1a0fd8762",
+      "sourceLocation": "PDF p. 107, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3syd-0d269dc5d5a5",
+      "sourceLocation": "PDF p. 108, segment 1",
+      "reasons": [
+        "license-boilerplate"
+      ]
+    },
+    {
+      "id": "research-feinstein-haggadah-3tlm-4743f8168b2b",
+      "sourceLocation": "PDF p. 108, segment 2",
+      "reasons": [
+        "license-boilerplate",
+        "This remains part of the software-license appendix and must never enter the ritual candidate pool."
+      ]
+    }
+  ],
+  "notes": [
+    "Every segment from source order 101 through 138 is an appended software-license or related non-Haggadah record and is excluded from content assembly.",
+    "The bilingual extraction needs rendered-page comparison before exact text can be approved.",
+    "The source's CC BY-SA license permits substantial reuse with attribution, modifications identified, and ShareAlike compliance.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}
