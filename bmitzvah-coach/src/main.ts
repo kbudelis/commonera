@@ -265,8 +265,8 @@ function startScrollArc(shared: AppShared) {
     g.fillRect((u0 - pad) * cw, (1 - v1 - pad) * ch, (u1 - u0 + 2 * pad) * cw, (v1 - v0 + 2 * pad) * ch);
     col.visitedTexture.needsUpdate = true;
   };
-  // Restore the tint for everything read in earlier sessions.
-  for (const col of columns) for (const id of touched) markVisited(col, id);
+  // (Deliberately NOT restored from saved progress — the read-tint starts
+  // fresh each visit; leaving the scroll always goes through a page reload.)
 
   const wordAnchor = (col: Column, w: BakedWord) => {
     const cu = (w.uvRect.u0 + w.uvRect.u1) / 2;
