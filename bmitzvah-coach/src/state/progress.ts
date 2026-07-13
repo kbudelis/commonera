@@ -31,6 +31,11 @@ export function loadProgress(): Progress {
   }
 }
 
+/** Dev/reset: wipe the save — every level re-locks on next boot. */
+export function clearProgress() {
+  localStorage.removeItem(KEY);
+}
+
 export function saveProgress(p: Progress) {
   localStorage.setItem(KEY, JSON.stringify(p));
 }

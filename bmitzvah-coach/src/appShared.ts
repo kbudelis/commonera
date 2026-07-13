@@ -14,6 +14,12 @@ export interface DevHooks {
   touched: () => string[];
   camSettled: () => boolean;
   gotoLevel?: (n: number) => void;
+  /** Test-only: jump the playing karaoke to a word (skips the 102s p2 wait). */
+  karaokeSeek?: (pid: string, wordId: string) => void;
+  /** Wipe the save and reload — every level re-locks. */
+  resetProgress?: () => void;
+  /** Jump straight to the quiz (scroll level only). */
+  gotoQuiz?: () => void;
 }
 
 /**

@@ -19,9 +19,6 @@ export const copy = {
     close: 'Got it',
   },
   tutorial: {
-    hint1: 'That glowing word? Touch it with your pointer.',
-    hint2: 'Now drag slowly along the line. The scroll knows the tune.',
-    rtl: 'Hebrew reads this way ⟵',
   },
   baruchShem: {
     caption:
@@ -98,6 +95,9 @@ export const copy = {
           ['?unlockAll=1', 'open every era on the timeline'],
           ['?debugRects=1', 'draw the baked ink and hit boxes'],
           ['?forceWebGL=1', 'force the WebGL2 renderer (skip WebGPU)'],
+          ['?reset=1', 'reset the game — clears progress, re-locks every level'],
+          ['?level=6&quiz=1', 'jump straight to the quiz on the scroll'],
+          ['__shema.gotoQuiz()', 'console: jump to the quiz mid-scroll'],
         ],
       },
     ],
@@ -216,7 +216,7 @@ export const levelCopy: Record<string, LevelCopy> = {
     introBody:
       'This is the Shema the way the first printed prayer books set it: sofer-style ' +
       'letters, no vowels on the page. “Hear, O Israel: the Eternal is our God, the ' +
-      'Eternal is One.” Hover a word when you want its sounds back.',
+      'Eternal is One.” Press a word when you want its sounds back.',
     introChallenge:
       'The vowels vanish from the page — sofer letters only, like a real ' +
       'scroll. Press a word and the strip shows its pointed form.',
