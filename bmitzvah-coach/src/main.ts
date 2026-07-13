@@ -1,4 +1,4 @@
-import { TextureLoader, SRGBColorSpace, Vector3, type Mesh } from 'three/webgpu';
+import { CanvasTexture, TextureLoader, SRGBColorSpace, Vector3, type Mesh } from 'three/webgpu';
 import { AudioEngine } from './audio/engine';
 import { KaraokePlayer } from './audio/karaoke';
 import { ScrubPlayer } from './audio/scrub';
@@ -16,7 +16,7 @@ import { createRollers } from './scene/rollers';
 import { createScrollColumn, surfacePoint, type ScrollColumnOptions } from './scene/scroll';
 import { Yad } from './scene/yad';
 import { Machine } from './state/machine';
-import { daysUntil, loadProgress, saveProgress } from './state/progress';
+import { clearProgress, daysUntil, loadProgress, saveProgress } from './state/progress';
 import { bakeColumn, type BakedWord } from './text/bake';
 import { loadFonts } from './text/fonts';
 import { WordIndex } from './text/wordIndex';
@@ -41,6 +41,8 @@ interface Column {
   karaoke: KaraokePlayer;
   centerX: number;
   opts: ScrollColumnOptions;
+  visitedCanvas: HTMLCanvasElement;
+  visitedTexture: CanvasTexture;
 }
 
 async function loadTexture(loader: TextureLoader, url: string, srgb = false) {
@@ -51,6 +53,8 @@ async function loadTexture(loader: TextureLoader, url: string, srgb = false) {
 
 async function bootShared(): Promise<AppShared> {
   const params = new URLSearchParams(location.search);
+  // ?reset=1 — wipe the save: every level re-locks, the landing starts fresh.
+  if (params.has('reset')) clearProgress();
   const canvas = document.querySelector<HTMLCanvasElement>('#app-canvas')!;
   const loader = new TextureLoader();
   const [ctx, , albedo, normal, rough] = await Promise.all([
@@ -99,6 +103,10 @@ async function bootShared(): Promise<AppShared> {
     state: () => machine.state,
     touched: () => [],
     camSettled: () => camera.position.distanceTo(camTarget) < 0.01,
+    resetProgress: () => {
+      clearProgress();
+      location.href = location.pathname;
+    },
   };
   if (import.meta.env.DEV) Object.assign(window as object, { __shema: dev });
 
@@ -178,7 +186,15 @@ function startScrollArc(shared: AppShared) {
       height: columnH,
       spread: { u0: su0, u1: su1 },
     };
-    const parchment = createParchmentMaterial(baked.texture, { albedo, normal, rough });
+    // Already-read words tint like the mini levels (rubrication red).
+    const visitedCanvas = document.createElement('canvas');
+    visitedCanvas.width = visitedCanvas.height = 512;
+    const visitedTexture = new CanvasTexture(visitedCanvas);
+    const parchment = createParchmentMaterial(
+      baked.texture,
+      { albedo, normal, rough },
+      { visited: { map: visitedTexture, tint: [0.5, 0.14, 0.1], strength: 0.6 } },
+    );
     const mesh = createScrollColumn(parchment.material, opts);
     mesh.position.x = centerX;
     scene.add(mesh);
@@ -194,6 +210,8 @@ function startScrollArc(shared: AppShared) {
       karaoke: new KaraokePlayer(engine, paragraph.id),
       centerX,
       opts,
+      visitedCanvas,
+      visitedTexture,
     };
   });
   const byPid = new Map(columns.map((c) => [c.pid, c]));
@@ -219,9 +237,14 @@ function startScrollArc(shared: AppShared) {
   scene.add(yad.group);
 
   // --- State.
-  const touched = new Set(progress.touchedWords);
-  const versesDone = new Set(progress.versesCompleted);
-  const paragraphsDone = new Set(progress.paragraphsCompleted);
+  // Session state starts FRESH each visit (deliberately NOT restored from the
+  // save): restoring `touched` deadlocked the tutorial — verse completion
+  // fires on a word's FIRST touch, and a returning player's words were never
+  // "first". The ladder made the arc a replayable level; only `celebrated`
+  // (explore mode) and `levelsCompleted` survive across visits.
+  const touched = new Set<string>();
+  const versesDone = new Set<string>();
+  const paragraphsDone = new Set<string>();
   const shownFacts = new Set<string>();
   const totalVerses = shema.paragraphs.reduce((a, p) => a + p.verses.length, 0);
   let lastTouchAt = performance.now();
@@ -235,6 +258,20 @@ function startScrollArc(shared: AppShared) {
     progress.paragraphsCompleted = [...paragraphsDone];
     saveProgress(progress);
   };
+
+  const markVisited = (col: Column, id: string) => {
+    const w = col.wordById.get(id);
+    if (!w) return;
+    const g = col.visitedCanvas.getContext('2d')!;
+    const { width: cw, height: ch } = col.visitedCanvas;
+    const { u0, v0, u1, v1 } = w.uvRect;
+    const pad = 0.003;
+    g.fillStyle = '#fff';
+    g.fillRect((u0 - pad) * cw, (1 - v1 - pad) * ch, (u1 - u0 + 2 * pad) * cw, (v1 - v0 + 2 * pad) * ch);
+    col.visitedTexture.needsUpdate = true;
+  };
+  // (Deliberately NOT restored from saved progress — the read-tint starts
+  // fresh each visit; leaving the scroll always goes through a page reload.)
 
   const wordAnchor = (col: Column, w: BakedWord) => {
     const cu = (w.uvRect.u0 + w.uvRect.u1) / 2;
@@ -344,8 +381,6 @@ function startScrollArc(shared: AppShared) {
           const bs = shema.asides[0];
           screens.baruchShem(bs.hePointed, bs.translit, bs.english, () => {
             machine.go({ name: 'trace', paragraph: 'p1' });
-            screens.hint(copy.tutorial.hint2);
-            setTimeout(() => screens.hint(null), 5000);
           });
         }, 'The most famous sentence in the Torah');
       }, 700);
@@ -483,10 +518,13 @@ function startScrollArc(shared: AppShared) {
     canvas,
     camera,
     columns.map((c) => ({ mesh: c.mesh, index: c.index, pid: c.pid })),
+    // Same interaction grammar as the mini levels: words (and the follow-mode
+    // grab) activate on press/drag; the yad still glides on hover.
+    { requirePress: true },
   );
 
   pointer
-    .on('surfacemove', ({ point, pid }) => {
+    .on('surfacemove', ({ point, pid, pressed }) => {
       if (!interactive()) return;
       const active = activeSessionPid();
       if (active && pid !== active) {
@@ -494,8 +532,8 @@ function startScrollArc(shared: AppShared) {
         if (machine.is('follow') && followGrabbed) resumeFollow();
         return;
       }
-      // In follow mode, touching the surface takes the yad back from autoplay.
-      if (machine.is('follow') && pid === 'p2' && anyKaraokePlaying()) {
+      // In follow mode, PRESSING the surface takes the yad back from autoplay.
+      if (machine.is('follow') && pid === 'p2' && anyKaraokePlaying() && pressed) {
         const col = byPid.get('p2')!;
         followResumeFrom = col.karaoke.currentWordId;
         followGrabbed = true;
@@ -503,9 +541,13 @@ function startScrollArc(shared: AppShared) {
       }
       if (!anyKaraokePlaying()) yad.setTarget(point);
     })
+    .on('release', () => {
+      // Let go of the button: autoplay resumes where the kid left off.
+      if (machine.is('follow') && followGrabbed && !anyKaraokePlaying()) resumeFollow();
+    })
     .on('surfaceleave', () => {
       if (machine.is('follow') && followGrabbed && !anyKaraokePlaying()) {
-        // Released the yad: autoplay resumes where the kid left off.
+        // Wandered off the parchment while holding: same release.
         resumeFollow();
         return;
       }
@@ -532,11 +574,9 @@ function startScrollArc(shared: AppShared) {
 
       const first = !touched.has(word.id);
       touched.add(word.id);
+      markVisited(col, word.id);
 
-      if (machine.is('tutorial') && word.id === 'p1v4w1') {
-        col.parchment.aux.hide();
-        screens.hint(copy.tutorial.hint2 + '  ' + copy.tutorial.rtl);
-      }
+      if (machine.is('tutorial') && word.id === 'p1v4w1') col.parchment.aux.hide();
 
       // The tekhelet moment: the sky-blue thread glows blue.
       if (word.id === 'p3v38w19' && first) {
@@ -579,6 +619,7 @@ function startScrollArc(shared: AppShared) {
       if (!w) return;
       showWord(col, w);
       touched.add(id);
+      markVisited(col, id);
       const a = wordAnchor(col, w);
       yad.setTarget({ x: a.x, y: a.y + 0.01, z: a.z });
     });
@@ -592,7 +633,10 @@ function startScrollArc(shared: AppShared) {
       // Follow mode completes by listening even if a few words were skipped.
       if (machine.is('follow') && col.pid === 'p2') {
         for (const v of col.paragraph.verses) versesDone.add(v.id);
-        col.words.forEach((w) => touched.add(w.id));
+        col.words.forEach((w) => {
+          touched.add(w.id);
+          markVisited(col, w.id);
+        });
         screens.lamp(lampLevel());
         onParagraphDone(col);
       }
@@ -640,6 +684,20 @@ function startScrollArc(shared: AppShared) {
     },
     wordIds: () => columns.flatMap((c) => c.words.map((w) => w.id)),
     touched: () => [...touched],
+    karaokeSeek: (pid: string, wordId: string) => {
+      const col = byPid.get(pid as Pid);
+      if (!col) return;
+      col.karaoke.stop();
+      col.karaoke.play(wordId);
+    },
+    gotoQuiz: () => {
+      stopAllAudio();
+      hideAllGlow();
+      strip.hide();
+      yad.hide();
+      screens.hint(null);
+      startQuiz(0);
+    },
   } satisfies Partial<DevHooks>);
 
   shared.frameHooks.add((t, dt) => {
@@ -663,9 +721,10 @@ function startScrollArc(shared: AppShared) {
       }
       machine.go({ name: 'tutorial' });
       focusColumn('p1');
+      // The pulsing first word is the only nudge — tutorial tooltips are gone
+      // now that the scroll is the final, expert level.
       const first = byPid.get('p1')!.wordById.get('p1v4w1');
       if (first) byPid.get('p1')!.parchment.aux.show(first.uvRect);
-      setTimeout(() => screens.hint(copy.tutorial.hint1), 1600);
     },
   };
 }
@@ -710,6 +769,8 @@ async function boot() {
       shared.persist();
       shared.engine.unlock();
       arc.begin();
+      // ?quiz=1 — jump straight to the quiz (dev/test).
+      if (shared.params.has('quiz')) shared.dev.gotoQuiz?.();
     });
     return;
   }
