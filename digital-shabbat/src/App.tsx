@@ -32,6 +32,7 @@ function RoutedApp() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/welcome" element={<Landing />} />
+          <Route path="/app" element={<Landing />} />
           <Route path="/design" element={<Design />} />
           <Route path="/pledge" element={<Pledge />} />
           <Route path="/candle" element={<Candle />} />
@@ -54,8 +55,10 @@ function RoutedApp() {
 }
 
 export default function App() {
+  // Root deploys leave BASE_URL at '/'; the sprint-site deploy serves us from
+  // /<repo>/<project>/, and the router must strip that prefix before matching.
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <RoutedApp />
     </BrowserRouter>
   );
