@@ -71,4 +71,3 @@ from it.
   `humanReviewClaimed: false`.
 - Public-release copy must not claim that every source passage received human
   editorial or legal review.
-
