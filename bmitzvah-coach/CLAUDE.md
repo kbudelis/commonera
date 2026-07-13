@@ -59,7 +59,11 @@ devices are dressed by `src/scene/eras/deviceKit.ts`: cached CC0 PBR maps
 (wood/plastic/leather/metal, see assets-src/licenses), RoundedBoxGeometry
 silhouettes, per-era `makeEnvTexture` palettes. Mini levels add a subtle
 pointer-steered camera **orbit** (session frame hook; teardown resets the
-camera quaternion — the arc assumes -z).
+camera quaternion — the arc assumes -z). Interaction is PRESS-gated
+everywhere (minis AND the arc — `ScrollPointer requirePress`): words, quiz
+taps, and the follow-mode grab activate on press/drag; release resumes
+follow autoplay; the pointer visual still glides on hover. Test drivers
+hold the mouse button through traces.
 
 Key rules: mini-level Hebrew is **synthesized at runtime** from the corpus
 (`src/levels/synth.ts` — letters by codepoint with an English name table,
@@ -197,8 +201,16 @@ node tools/mobile-test.mjs <shot-prefix>             # 390x844 touch viewport ag
 
 - Debug/routing params: `?level=1..5` jumps into a mini level, `?level=6` is
   the stable test route into the full arc (routing is kind-driven off the
-  LEVELS table), `?unlockAll=1` opens every era on the map, `?debugRects=1`
-  draws ink+hit boxes (mini levels too).
+  LEVELS table), `?level=6&quiz=1` jumps straight to the quiz,
+  `?unlockAll=1` opens every era on the map, `?reset=1` wipes the save
+  (re-locks everything), `?debugRects=1` draws ink+hit boxes (mini levels
+  too). Console: `__shema.gotoQuiz()`, `__shema.resetProgress()`,
+  `__shema.karaokeSeek(pid, wordId)`.
+- **Test cadence (Spencer)**: cheap gate per change (tsc + the one affected
+  smoke); the FULL sweep only before a push. The playthrough runs ~90-120s
+  now (karaokeSeek skips the 102s p2 listen; 5-min watchdog). After killing
+  any playwright run, `pkill -f headless_shell` — leaked headless Chromiums
+  stack up and thrash the Deck into fake hangs (this cost us an hour).
 - **Restart the dev server before any test gate.** Vite's file watcher has
   silently gone stale here at least once (served pre-edit modules while
   playthrough "passed") — verify with
