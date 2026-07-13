@@ -15,6 +15,8 @@
   background shows through if an image ever fails to load.
 */
 
+import { asset } from './asset';
+
 type Variant = 'day' | 'dawn' | 'dusk' | 'dusk-deep' | 'night';
 
 const PLATE: Record<Variant, string> = {
@@ -39,7 +41,7 @@ export function Atmosphere({
   return (
     <div
       className={`atmosphere atmosphere--${variant}${className ? ` ${className}` : ''}`}
-      style={{ backgroundImage: `url(${plate ?? PLATE[variant]})` }}
+      style={{ backgroundImage: `url(${asset(plate ?? PLATE[variant])})` }}
       aria-hidden="true"
     />
   );

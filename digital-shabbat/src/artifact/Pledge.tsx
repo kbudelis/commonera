@@ -4,6 +4,7 @@ import './Pledge.css';
 import { getPledge, type Pledge } from '../shared/store';
 import { PRODUCT_NAME } from '../shared/brand';
 import { Atmosphere } from '../shared/Atmosphere';
+import { asset } from '../shared/asset';
 
 const CARD_WIDTH = 1200;
 const CARD_HEIGHT = 1600;
@@ -198,8 +199,8 @@ async function getEmbeddedFontCss(): Promise<string> {
   if (embeddedFontCss !== null) return embeddedFontCss;
 
   const [newsreader, noCigar] = await Promise.all([
-    fontToDataUri('/fonts/newsreader-latin.woff2', 'font/woff2'),
-    fontToDataUri('/fonts/OTRNoCigarRegular.woff', 'font/woff'),
+    fontToDataUri(asset('/fonts/newsreader-latin.woff2'), 'font/woff2'),
+    fontToDataUri(asset('/fonts/OTRNoCigarRegular.woff'), 'font/woff'),
   ]);
 
   const rules: string[] = [];
