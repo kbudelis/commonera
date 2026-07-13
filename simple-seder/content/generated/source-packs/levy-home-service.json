@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "levy-home-service",
+  "sourceTitle": "Haggadah or Home Service for the Festival of Passover",
+  "modules": [
+    {
+      "id": "levy-maggid-forced-labor",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "exactText": "They were made slaves, to labor without hope of reward, to toil without opportunity for rest.",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 7, Maggid",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "story-core",
+      "treatment": "verbatim-normalized",
+      "wordCount": 16,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "provenanceHash": "bb057945667c2c2cc0e81f7985a921da68b54607ff42073b509c79b1934b6a50",
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      }
+    },
+    {
+      "id": "levy-nirtzah-fellow-people",
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "exactText": "May we employ our days on earth wisely, devoting ourselves to all causes that tend to better the conditions of our fellow-men. Loving one another, aiding one another, and trusting faithfully in Thee, may we peacefully spend our allotted days on earth and look forward fearlessly to the eternal beyond.",
+      "locator": {
+        "edition": "Haggadah or Home Service for the Festival of Passover",
+        "sourceLocation": "PDF p. 44, Nirtzah",
+        "localExtract": "research/source-extracts/levy-home-service.txt",
+        "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c"
+      },
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "themes": [
+        "interfaith",
+        "social-justice",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "closing-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 50,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ]
+      },
+      "provenanceHash": "e4117cc82f32c4887bcd9e8c3726b42026f026ac73c7df0aa82ae5f7a6a37f81",
+      "attribution": {
+        "creator": "J. Leonard Levy",
+        "containingSource": "Haggadah or Home Service for the Festival of Passover",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+      }
+    }
+  ]
+}

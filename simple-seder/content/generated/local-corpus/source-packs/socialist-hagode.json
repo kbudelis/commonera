@@ -1,0 +1,732 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "socialist-hagode",
+  "sourceTitle": "Hagode shel Peysekh: in a Socialist Mode",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit original authors and Shlomo Enkin Lewis's translation",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=61621"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-socialist-translator-critical-frame",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "title": "Translator's critical historical frame",
+      "exactText": "– 2 – — This brochure was first released in America. In 1900 it was published, slightly modified, by the “Bund.” In 1910 it was published by the publishing house “Social Democrat.” And now, it is being republished by the same publishing house with minor modifications, suitable for the present state of affairs. [This bilingual digital version was translated and formatted by Shlomo Jack Enkin Lewis in 2025.] — Translator’s Introduction (2025) Dear readers, This parodic commentary on the traditional Passover Hagode , which was written from a place of pain and struggle as a way of teaching and promoting socialism by radically re-reading the Passover story, is a brilliant and moving piece of our Jewish heritage. This translation does not censor or alter the original text; rather it attempts to convey this text in its entirety.\n\nAs such, I have a warning for the reader: read critically!! This text is powerful, and is rightly a source of inspiration for contemporary socialist and leftist Jewish people. Nevertheless, it also rather naively endorses some concepts that are inaccurate and harmful. I will single out, as examples worthy of attention: 1. An antiquated socialist understanding of the progress of history , which characterises modern slavery as somehow less brutal than pre-modern slavery, and would consider most indigenous peoples as “backwards.” Such an understanding of history has racist implications which I believe were unintentional, but which cannot be ignored. 2. A simplistically reactive anti-religious stance , which does not acknowledge that “religious” practices, such as midrashic storytelling, bris milah , and holiday observance, hold value even for non-religious Jews as vehicles of our culture and civilization.\n\nThe writers of this Hagode display clear investment in the survival of the Jewish nation among all nations of the world, but fail to see how their anti-religious stance sometimes aligns them with anti-Jewish attempts to erase and assimilate the Jewish people. This Hagode’ s complete rejection of religion is likely due to rabbis who aligned themselves with Capital’s dominance against the needs of their own communities. Contemporary rabbis must be careful not to do the same. 3. An endorsement of revolutionary violence as preferable to a peaceful socialist revolution . The authors of this Hagode saw no way to defeat capitalist exploitation besides through armed struggle. This is understandable, because the poor were not being given any peaceful path to freedom. The example of this Hagode can be taken as a sobering reminder to those in power that, when the masses are denied the means to effect change peacefully, they will resort to violence. Nevertheless, it is my hope that oppressed people today will be enabled to implement necessary social change peacefully. Revolutionary violence should be viewed as a last resort, not glorified as a necessity. The glorification of violence brings only destruction. I wish to thank the Foundation for Yiddish Culture in Honour of Jacob Zipper and Shloime Wiseman for their support in making this translation possible. I hope this translation (and the original Yiddish work that is here digitised for the first time) will be read with an inquisitive mind and an open heart.",
+      "segmentIds": [
+        "research-socialist-hagode-2wo-29c8ba2a3162",
+        "research-socialist-hagode-3ju-f4af202b0dd3",
+        "research-socialist-hagode-49a-e23593b0b30c"
+      ],
+      "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "componentLocators": [
+          {
+            "id": "research-socialist-hagode-2wo-29c8ba2a3162",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 3768,
+            "normalizedEndOffset": 4601
+          },
+          {
+            "id": "research-socialist-hagode-3ju-f4af202b0dd3",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 4602,
+            "normalizedEndOffset": 5517
+          },
+          {
+            "id": "research-socialist-hagode-49a-e23593b0b30c",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 5518,
+            "normalizedEndOffset": 7040
+          }
+        ]
+      },
+      "provenanceHash": "16c40e02f535099e6145b1bdf54275f8651f89c518acce0d09fb0d1a186575b7",
+      "componentProvenanceHashes": [
+        "29c8ba2a3162d0c8973605cb2b955ad0903e6fd9449c5840f77e4d28d483d908",
+        "f4af202b0dd3f590f227dbbd10fe8cd4681359309a9b7818bad475a240c47351",
+        "e23593b0b30ceb1fb91e15e07f2c1b1f4cd4c389255d5e577c1c75fed7bb88ab"
+      ],
+      "wordCount": 520,
+      "characterCount": 3274,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "Identify this as the 2025 translator's introduction to a 1919 socialist parody, not part of the original ritual; tell guests that the warning is required before any other excerpt from this source.",
+      "rationale": "The three passages form a complete responsible-use frame, naming the work's power while directly warning about racist historical ideas, anti-religious reduction, and revolutionary violence.",
+      "creditNotes": "Credit Shlomo Jack Enkin Lewis as the 2025 translator and preserve the Foundation for Yiddish Culture support acknowledgment contained in the passage.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-only",
+        "explicit-historical-socialist-source-opt-in",
+        "must-precede-all-other-source-sequences",
+        "preserve-translator-credit-and-warning-in-full"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-socialist-hunger-four-questions-exodus",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "title": "Hunger, Four Questions, and self-liberation",
+      "exactText": "– 3 – Clearing Out The Khomets. You come home from work at night, you kindle a bit of light, and you search on the table, in the oven and under the oven, on the shelves and under the shelves and in every corner, maybe somewhere there's hidden a bit of khomets [leavened food]... to drive out your hunger. If you don't find any - you wave your hands in exasperation, and go lie down to sleep. But if you do happen to find some, you say \" Kol khamiro v'khamiyo d'iko virshusi ,\" [all leaven or anything leavened that is in my possession], and you eat it up in one breath, like the ten sons of Haman, so not one piece is left, and then you say: \"Ho Lakhmo Anyo.\" [This is the bread of affliction.]\n\nThus do we eat, and thus is our life made difficult in the world. Break your back the whole day, and when you come home at night, there's not one bite to eat. Your wife sleeps. Your children sleep! Have they eaten?? Who knows. If you find something in the oven - it's cold and old leftovers - only a stomach ache. Akh! Akh! Hashato hokho [now we are here] - it's already so bad... L'shono habo'o [next year] - devil knows how it'll be … The Four Questions. Tateh , [father,] I want to ask you four questions. The first question is: Ma nishtano [what is the difference], in what way are we worse than Shmuel the factory owner, than Meir the banker, than Zerach the lender, than Shabse the profiteer, than Reb Tudros the rabbi?\n\n– 4 – They do nothing, and have enough to eat and to drink, both day and night, at least a hundred times over – And we labour with all our might the whole day long, and at night we don't have enough to eat, even once over? The second question is: They have big mansions, fashionable and furnished with every furnishing. They have many beautiful rooms just sitting empty - And we lie squished together in a hole in the ground and they want to evict us from here, too? The third question is: They do nothing, and wear expensive clothes - And we labour like oxen and don't have a shirt on our backs?\n\nThe fourth question is: They eat up a fine dinner, drink a glass of good wine, and lie down to sleep in a soft, warm bed – And we are \" kulanu m'subin \" [all leaned over] – we just lean over, crammed into a tight corner on a sack of straw, only so we can all too soon pick ourselves up again for work. Tateh, please give me a good explanation for all four questions! (The father thinks it over for a while, scratches his head.... then he answers:) The explanation, my child, is this: \" Avodim Hoyinu L'Faroy B'Mitsroyim, \" we were servants – slaves – to Pharaoh in ancient Egypt, and we kneaded clay, baked bricks, built cities, and laboured like oxen. But in those times, we believed in a God, who has solidarity with the unfortunate and the enslaved and would through his servant Moses redeem us from Pharaoh's service. Today, however, we see how God's servants, the rabbis and holy men, stand by the rich bloodsuckers and\n\n– 5 – oppressors, defending their \"order\" of exploitation and oppression. Today there awakes in us the knowledge that we have no-one in whom to hope except for ourselves. With our own power, organized and united with all the oppressed and exploited, with tireless and well-directed struggle, we will free ourselves and bring the g’uloh [redemption] for suffering, bleeding humanity. We must now remind ourselves with love and yearning of the sweeping away of Mitsrayim , the slave-house. Day and night we must tell our children and our children's children the great and holy Idea of self-liberation. And whoever speaks of it frequently is praiseworthy. Ma’aseh b'Rabi Shmuel , [a story of Rabbi Shmuel] the factory owner, of Rabbi Meir the banker, of Rabbi Zerach the lender, of Rabbi Tudros the rabbi. How all these fine little men sit down together, drink a glass of good wine...\n\nAnd they too contemplate \" Yetsias Mitsroyim \" [the Exodus from Egypt]. But the story with its simple meaning, they can't stand. What's this! - they say - Slaves unite and free themselves! How can it be fair to simply unionize, just like that! What would then become of us in the world? No, the simple meaning doesn’t work for us at all, we must find other interpretations; we must not leave them any time to understand this simple meaning. With that, Rabbi Shmuel sits back and expounds: \" Kol y’mey khayekho – haleyloys \" [All the days of your life – the nights] - your whole life should only be by night; by day however you should be mine, my servant, my slave. You should work for me in the factory and be downtrodden. Reb Tudros the rabbi takes his seat, lifts\n\n– 6 – his eyes towards heaven and pronounces: \" kol y’mey khayekho – l'hovi limoys hamoshiakh \" [all the days of your life – to bring in the days of the Messiah] – work, little fool; struggle, be downtrodden; so that when the Messiah comes, everything will go your way. You'll have your own bright Garden of Eden. However, \" v'khakhomim oymrim ,\" the truly wise people come and say: \" y’mey khayekho - ho'oylom hazeh .\" Your life is only in this world, and as long as you live, you should glory in this world and in life, and know that it is free. \" L'ma’an tizkor es yoym tseys’kho mey'erets Mitsroyim kol y’mey khayekho \" [so you may remember the day you departed from Egypt all the days of your life] – you should remember that you must free yourself from servitude and you must lead a mentshlekhe [human] life.",
+      "segmentIds": [
+        "research-socialist-hagode-6e9-b84a5a17ad9c",
+        "research-socialist-hagode-6xk-04302d65c714",
+        "research-socialist-hagode-8n2-4bd971ae6d37",
+        "research-socialist-hagode-93n-d1772dcc3629",
+        "research-socialist-hagode-b13-572e36434f24",
+        "research-socialist-hagode-bpl-05d39f7a6539",
+        "research-socialist-hagode-dgc-6aeeca7d6538"
+      ],
+      "sourceLocation": "PDF p. 7, segment 1 through PDF p. 13, segment 1",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 7, segment 1 through PDF p. 13, segment 1",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "componentLocators": [
+          {
+            "id": "research-socialist-hagode-6e9-b84a5a17ad9c",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 8289,
+            "normalizedEndOffset": 8983
+          },
+          {
+            "id": "research-socialist-hagode-6xk-04302d65c714",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 8984,
+            "normalizedEndOffset": 9709
+          },
+          {
+            "id": "research-socialist-hagode-8n2-4bd971ae6d37",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 11198,
+            "normalizedEndOffset": 11794
+          },
+          {
+            "id": "research-socialist-hagode-93n-d1772dcc3629",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 11795,
+            "normalizedEndOffset": 12719
+          },
+          {
+            "id": "research-socialist-hagode-b13-572e36434f24",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 14295,
+            "normalizedEndOffset": 15176
+          },
+          {
+            "id": "research-socialist-hagode-bpl-05d39f7a6539",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 15177,
+            "normalizedEndOffset": 15942
+          },
+          {
+            "id": "research-socialist-hagode-dgc-6aeeca7d6538",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 17436,
+            "normalizedEndOffset": 18250
+          }
+        ]
+      },
+      "provenanceHash": "856dd6122023d36b2d8f1644664804d46cbf5a6780cff7d15250cdea10b5230d",
+      "componentProvenanceHashes": [
+        "b84a5a17ad9c20c133097dbbaf9cfba42843126660efc6fb7feaea66c2ed401b",
+        "04302d65c7143b35d2ea9d71b9b3b83340fb5e3b8dbde6d45ee71b161d29c83e",
+        "4bd971ae6d378e37ca638ee9d7cf70d79539c9c54ccd16b79a9ca64ab2a0c744",
+        "d1772dcc3629b04d4bb77138ca2232ac9bc2c429bb2bd44a24c69617f5c786b5",
+        "572e36434f247e6f1562a0b194390c8a6844b2f59e0941055205d6a1d58c5590",
+        "05d39f7a65391854b191dd528d04b7396bf94281be22fa1171cc92be081c5812",
+        "6aeeca7d6538555f33e9abe20ab136ad7f809dff074178f032ad382e962ed859"
+      ],
+      "wordCount": 1005,
+      "characterCount": 5411,
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "After the translator's warning, explain that this is a 1919 class-parody of searching for chametz, Ha Lachma Anya, the Four Questions, Avadim Hayinu, and the command to remember the Exodus.",
+      "rationale": "Skipping only the intervening Yiddish counterparts, these English passages preserve the source's continuous argument from hunger at home through four class questions to its secular reading of liberation in this life.",
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis's translation on the final sources page; note that intervening Yiddish counterparts are omitted, not reordered.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-only",
+        "do-not-convert-hostile-class-labels-into-app-narration",
+        "explicit-historical-socialist-source-opt-in",
+        "label-anti-rabbinic-rhetoric-as-1919-source-voice",
+        "translator-warning-must-appear-first"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-socialist-labor-built-world",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "title": "Workers who built the world",
+      "exactText": "– 10 – masters would take and would live it up by way of their (the slaves’) bitter toil. The masters used to take care to prevent their slaves from dying of hunger or of cold, because when a slave dies, his master suffers financial damages. Pharaoh only decreed against the males … But how are things now? The decree is now against all of us: we workers who must sell ourselves, our wives, and our children for starvation wages to the masters; and what’s more, our situation is even more arbitrary and more uncertain than that of the long-ago slaves. We can only still our hunger when the rich hire us to work for them – when their work is finished up they don’t care about us anymore. For all they care, we can all croak from hunger – what they need, we’ve made for them.\n\nWe have built houses, and we lie in the streets. We have harvested and prepared food, and we go hungry. We have finished clothing, and we are “ eyroym v’eryoh ,” [naked and barren] – torn up and worn down, naked and barefoot. Vayorey’u oysonu, [and they treated us badly] – Our current masters have treated us and still treat us – under the mask of equality and freedom that the “ khayo ro’oh ” [wild beast], slavery, has ostensibly taken on – far worse than the long-ago masters. V’hoyoh ki sikrenoh milkhomoh , when a war happens, they send us off to be murdered. When they need money, they set up “ sorey misim ” [work-tax masters] who tear from us tolls, taxes, tariffs, community funds … When our masters require fortresses, armories, palaces – we build the orey misk’noys [garrison cities].\n\n– 11 – Vayitnu oleynu avoydoh koshoh , [and they put hard work upon us]. Akh, the hard work, the hard work! Do we then still have a drop of blood that hasn’t been poisoned, still have a limb that hasn’t been weakened and numbed by this hard body-and-soul-killing unnatural forced labour? Vanitsak el Hashem, [and we cried out to God]. Until now we have cried out to God, but has that made things any better for us? Has our misery become more bearable? We just keep crying, sighing, from this work. Has anyone heard our voice? Has anyone seen “ es oneynu v’es amoleynu v’es lakhatseynu ” [our plight, our miserable toil, and the pressure on us]? – The answer is obvious to us all, as we kill ourselves for our piece of daily bread.",
+      "segmentIds": [
+        "research-socialist-hagode-njt-3062fb662b81",
+        "research-socialist-hagode-o5b-4d87673b7244",
+        "research-socialist-hagode-pv8-6facdd422293"
+      ],
+      "sourceLocation": "PDF p. 21, segment 1 through PDF p. 23, segment 1",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 21, segment 1 through PDF p. 23, segment 1",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "componentLocators": [
+          {
+            "id": "research-socialist-hagode-njt-3062fb662b81",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 30521,
+            "normalizedEndOffset": 31294
+          },
+          {
+            "id": "research-socialist-hagode-o5b-4d87673b7244",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 31295,
+            "normalizedEndOffset": 32091
+          },
+          {
+            "id": "research-socialist-hagode-pv8-6facdd422293",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 33524,
+            "normalizedEndOffset": 34254
+          }
+        ]
+      },
+      "provenanceHash": "ad37d8b0b1391d57d9bccf9c17ee8ae5cfec8bec45afa86838f1f3ac427fc08b",
+      "componentProvenanceHashes": [
+        "3062fb662b81e271b978215857cda9eb506960bf79d31e58dd0f58f6a55e55d9",
+        "4d87673b72449cde06f35b5117401508a72662deaee2f767aa23695dbc55e8f0",
+        "6facdd42229389c8fc735f6b17f3683be7ec1e2870047bc511503822e355ae7f"
+      ],
+      "wordCount": 426,
+      "characterCount": 2303,
+      "sectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "secular"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Frame this as a period labor lament written after the First World War; explain the source's contrast between what workers produce and what they are able to keep, and offer a pass option for its harsh imagery.",
+      "rationale": "The English passages form a sustained account of starvation wages, housing and food insecurity, war, forced work, and bodily exhaustion, ending on the complete question of whether anyone hears the worker's cry.",
+      "creditNotes": "Credit the 1919 authors and Shlomo Jack Enkin Lewis's 2025 English translation on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-only",
+        "do-not-present-period-economic-comparisons-as-fact",
+        "explicit-historical-labor-polemic-opt-in",
+        "historical-violence-and-deprivation-content-note",
+        "translator-warning-must-appear-first"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-socialist-maror-freedom-equality",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "title": "Maror, freedom, and equality",
+      "exactText": "Moroyr zeh she’onu oykhlim [This bitterness that we are eating] – al shum mah? [why is it?] And this bitterness that we take in before we are eaten up, do you know why it is? It’s because we are required to carry out beyond-human work. Es kol avoydosom asher ovdu vohem b’forekh [All their hard work, that they pressed on them to crush them] all the work the people are doing is beyond-human, too much all at once, and such work exhausts both the body and the soul. B’khol doyr vodoyr in every generation there have been smart and honest people who saw and understood all of this, and explained that khayov odom liroys es-atsmoy k’ilu hu , [a person is obligated to view himself as if he himself] – each person must think of himself as “he himself,” as a person, a human being just like everyone else, with every right to the benefits of life just like everyone else, and as being born by nature free to live and to enjoy – and no one may rob\n\n– 14 – that freedom from him. With each generation, this holy Idea (blessed be he) gets stronger and more widespread. And we hope now that it will lead us loseys lonu es ho’orets asher nishoba la’avoyseynu [to give us the land that was sworn to our ancestors] – that it will teach us to organise the world that it already led our ancestors to foresee. It will save us, and we will introduce a societal order of true happiness and freedom for all working people.\n\n(Cover up the “ maso” [burden] along with the “moroyr” [bitterness] when you think of the future, and say): L’fikhakh anakhnu khayovim - therefore we are obligated to discuss, to explain, and to spread the great human Idea of Freedom and of Equality and of living by and enjoying general rights, because it alone is capable of pulling us out mey’avdus l’kheyrus , from slavery to freedom, mi’yogoyn l’simkho , from sadness to joy, umey’eyvel l’yom-toyv , from laments to good days, umey’afeyloh l’oyr godoyl, from darkness to a great light, umishi’bud lig’uloh [from servitude to redemption], and from subjugation to autonomy; v’noymar l’fonov shiroh khadoshoh , and we will sing for it a new song, a magnificent song: hal’luhu ! Hal’luhu! – Praise him, you honest people. Honour his name – \"Freedom!\" This name should be blessed from now until eternity! From east to west extol the name \"Freedom!\" Over all peoples she has raised herself up, up to the heavens she has reached. She has reached the heavens and driven out the gods, has lowered herself down to earth and broken the chains! She raises up the lonely from the dust, the poor from\n\n– 15 – the filth she tears away! And she sets them equal with the nobles, with the notables of the nation. The housewife, the mother, the slavewoman, she sets equal with the sons. She revels in human happiness and rejoices – Hal’luhu ! B’tseys ho'am mimitsrayim, when a people escapes the constraints and fights for its liberation, when its rights are sacred to it, and awareness of humanity rules it, then it roars forth like the sea, it floods forth like wild streams, mountains leap in fright, swelling waves shrink away. Why are you roaring, o sea? Why are you flooding, o wild streams? Why are you leaping, o mountains, and why are you shrinking, o swelling waves? From before the ruler of the world: from before the strong might of the people.\n\nWhich impacts and creates and blasts, and builds palaces from stones and from the earth draws out bread. Borukh ato, Blessed are you, holy Idea, which has never stopped awakening humanity, inspiring them to wake up and cast off the chains of disgrace, of pain, and of degradation, and which will at last bring us l’moyadim v’lir’golim akheyrim habo’im likroseynu l’sholoym [to other times and holidays that are coming to greet us in peace], to good and happy times, and we will thank it al g’uloseynu v’al p’dus nafsheynu, for our bodily and spiritual redemption. Borukh ato , Blessed are you, Socialism, saviour of humanity! Shfoykh khamos’kho [pour out your blazing heat] pour out your warmth over the peoples who do not yet know you and over the nations who have not called your name. They devour one another and devastate themselves. Pour out\n\n– 16 – over them your light, and may your rays reach them. Drive away the darkness and annihilate servitude! Loy lonu, loy lonu , such thoughts are not for us! That's what a certain class says: 'We have a god in heaven and he does what he wants. He rules the world, and we must live by his rulings.' Atsabeyhem kesef v’zohov, ma'asey y’dey odom . But their idols are gold and silver, made by human hands. These people have eyes and do not see, as the elderly are crushed under their false gods. They have ears and do not hear, as the stormwind [of revolution] blows; have minds and do not understand that these gods must fall, just like all previous created gods, and along with them will fall all those who rely on them – all those, for whom gold and militarism is the only help and security.\n\nMin hameytsar – from the constraints, from the oppression, peoples raise themselves up; they fight and become free. As long as they are united, they have no fear. What can anyone do to them? When they help their own selves, despots tremble! It is better to rely on one's own self, than to rely on demagogues. It is better to support one's own self, than to rely on aristocrats. This is what the peoples are now learning, and they are fighting for freedom, their protection and their stronghold. Their mighty hand is raised high, the hand of the peoples works wonders. We do not want to die; we want to live and enjoy the fruits of our labour! Open quickly for us the gates of happiness, let us too tarry there! We have been tormented enough. There must at last come salvation!",
+      "segmentIds": [
+        "research-socialist-hagode-v7v-ae5eefd8acf0",
+        "research-socialist-hagode-x5r-6b67babf6010",
+        "research-socialist-hagode-xil-7620ee3b81ae",
+        "research-socialist-hagode-zk7-b610db8ec0a6",
+        "research-socialist-hagode-1051-b6019e5a4ba8",
+        "research-socialist-hagode-121v-bc6987e616e2",
+        "research-socialist-hagode-12nx-c4435f47da8a"
+      ],
+      "sourceLocation": "PDF p. 27, segment 2 through PDF p. 33, segment 2",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 27, segment 2 through PDF p. 33, segment 2",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "componentLocators": [
+          {
+            "id": "research-socialist-hagode-v7v-ae5eefd8acf0",
+            "label": "PDF p. 27",
+            "pageNumber": 27,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 40459,
+            "normalizedEndOffset": 41401
+          },
+          {
+            "id": "research-socialist-hagode-x5r-6b67babf6010",
+            "label": "PDF p. 29",
+            "pageNumber": 29,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 42975,
+            "normalizedEndOffset": 43436
+          },
+          {
+            "id": "research-socialist-hagode-xil-7620ee3b81ae",
+            "label": "PDF p. 29",
+            "pageNumber": 29,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 43437,
+            "normalizedEndOffset": 44578
+          },
+          {
+            "id": "research-socialist-hagode-zk7-b610db8ec0a6",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 46087,
+            "normalizedEndOffset": 46836
+          },
+          {
+            "id": "research-socialist-hagode-1051-b6019e5a4ba8",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 46837,
+            "normalizedEndOffset": 47683
+          },
+          {
+            "id": "research-socialist-hagode-121v-bc6987e616e2",
+            "label": "PDF p. 33",
+            "pageNumber": 33,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 49315,
+            "normalizedEndOffset": 50108
+          },
+          {
+            "id": "research-socialist-hagode-12nx-c4435f47da8a",
+            "label": "PDF p. 33",
+            "pageNumber": 33,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 50109,
+            "normalizedEndOffset": 50885
+          }
+        ]
+      },
+      "provenanceHash": "a469d02cbd3f2218344ab242bb52fb1865f2436e6602032fc5ba0e800a8a7e57",
+      "componentProvenanceHashes": [
+        "ae5eefd8acf0d7ca101f2557bce48b243bffdd85f2ddaf6d4292df124c7f4378",
+        "6b67babf6010e6a98eb601c11a3f25366d55c163363e39e5c4655d723ab6caa6",
+        "7620ee3b81ae57244f2e703dc94c6ba3f94c1c21a5e03887f4f31dd5d85856a2",
+        "b610db8ec0a6933151d5220e272a6430693b3fa7c26d16a5bf1716724695ed71",
+        "b6019e5a4ba84bd667f166fd1d2575c3a8a012b7cb9ff465abe361fa60ecb8b8",
+        "bc6987e616e2c4394aca46db4c639d73afe539d4822dd76c48427650362b3cdf",
+        "c4435f47da8a9caec80083e9c318e8d5fababa26fcb95302b512c73caa5e4b0b"
+      ],
+      "wordCount": 1032,
+      "characterCount": 5720,
+      "sectionIds": [
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maror",
+        "hallel"
+      ],
+      "insertionSectionId": "maror",
+      "themes": [
+        "secular",
+        "social-justice",
+        "feminist"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Explain that the text substitutes Freedom, Equality, and Socialism into familiar Maror and Hallel formulas; distinguish this historical parody from a blessing or creed endorsed by the app.",
+      "rationale": "Across alternating bilingual pages, the English sequence completes one liturgical arc from bodily bitterness to freedom, equality, women's dignity, liberation imagery, and collective self-reliance.",
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis; identify this as a translated parody of traditional Haggadah and Hallel formulas.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-only",
+        "do-not-present-attacks-on-religion-as-project-voice",
+        "explicit-historical-socialist-and-anti-religious-rhetoric-opt-in",
+        "preserve-english-page-order-across-bilingual-source",
+        "translator-warning-must-appear-first"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-socialist-progress-and-public-good",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "title": "Progress and the public good",
+      "exactText": "– 17 – Workers, awake! Workers, awake! Proletariat, forward! Proletariat, forward! Borukh Habo , welcome is anyone, in the name of liberation, who lends a hand to this good cause. Advance with Progress, he is good! His impact endures forever. He works very rare wonders His impact endures forever. He brings light in the darkness His impact endures forever. He breaks the iron bars His impact endures forever. He crushes the despots His impact endures forever. And liberates from them the lands His impact endures forever. And distributes the land to the peoples His impact endures forever. To peoples who have long suffered His impact endures forever. And gives sustenance to everyone equally His impact endures forever. Praise the saviour: Progress. His impact endures forever. Nishmas Kol Khay V’ruakh Kol Bosor, you are the soul of everything that lives, and the measure of all bodies! Through you everything is maintained in constant evolution, in progressive change, in an eternal course on the path to\n\n– 18 – perfection. You have no beginning and you have no end; you rule over nature; the world follows only your laws; all creatures advance towards you! You are always present and you never cease! You awaken from slumber dead atoms, you combine them into living machines, you let them grow and flourish, and then unravel themselves again into unconscious atoms in the universe. If our mouths were full of speech as the sea with water, our tongue with words as the sea with waves, and if our eyes could see all like the sun and the moon, we would still not be able to work out even a millionth of all the various forms and changes and evolutions that you, almighty Progress, bring forth! Thus say all the limbs in our bodies, thus says the reason of our minds, and the tongues in our mouths.\n\nAnd it is you, great Progress, who has led people to the correct Idea: that humanity does not need to fight and hurt one another; rather, with her powers combined, she can seek her happiness in the rich treasures of nature. Matsil oni meykhozok mimenu v'oni v'evyoyn migozloy , you save the weak from the thieving of the strong, and the Proletariat from Capital, that robs them! Uv’kheyn Vay’hi B’kheshkhas Layloh [And So it Was in the Darkness of Night] (The revolutionary works did not cease in the dark night.) Az royv nisim hifleyso balayloh [As you worked most wonders at night], many wonders have you worked, great Progress, through the dark night; through the\n\n– 19 – night of toyhu-vovoyhu [primordial chaos], you conjured forth a world. Through the night that reigned in the heads of primeval humanity, you conjured forth reason and light; through the night of antiquity, you brought forth civilisation and science; through the nights of slavery and genocide you called forth the saviour, the revolution! Koreyv yoym asher hu loy yoym v’loy layloh [there draws close the day which is neither day nor night], now there is drawing close a day, a terrible day, on which day and night will fight terrifyingly, and from the current capitalist slavery, tireless Progress will create the freedom of the working masses! Uv’kheyn Va’amartem Shovas Rotsakh [And So You Shall Say: Cease to Murder] And then, after the social revolution, all will say, that the back-and-forth of human murder has ceased.\n\nOymets G’vuroysov [the boldness of his strength] – their own lordship will the working people spread over everything that makes life worth living. Ki Loy No’eh, Ki Loy Yo’eh [Since to him it is pleasant, since for him it is fitting] Because for him it is fitting, it belongs to him. Adir bimlukhoh [mighty in rulership] , mighty in the management of the collective prosperity; bokhur kahalokho [properly chosen], appropriately elected, through the collective will of the people, the correct representatives of the people will regulate all the dealings of the people; g’dudov yoymru loy [his multitudes will say to him], the great masses will say to this management l’kho ki l’kho, l’kho af l’kho, l’kho hamemsholoh, ki loy no’eh ki loy yo’eh! [Yours since it is yours, yours and only yours, yours is the governance; since to him it is pleasant, since for him it is fitting]! It belongs to the people, it is fitting for the people!",
+      "segmentIds": [
+        "research-socialist-hagode-1434-3023f967f5c0",
+        "research-socialist-hagode-161l-b34fabee2487",
+        "research-socialist-hagode-16nk-3dd619565b90",
+        "research-socialist-hagode-187x-82a6edf0b324",
+        "research-socialist-hagode-18v2-6b3e42ce41eb"
+      ],
+      "sourceLocation": "PDF p. 35, segment 1 through PDF p. 39, segment 2",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 35, segment 1 through PDF p. 39, segment 2",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "componentLocators": [
+          {
+            "id": "research-socialist-hagode-1434-3023f967f5c0",
+            "label": "PDF p. 35",
+            "pageNumber": 35,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 51952,
+            "normalizedEndOffset": 52960
+          },
+          {
+            "id": "research-socialist-hagode-161l-b34fabee2487",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 54489,
+            "normalizedEndOffset": 55279
+          },
+          {
+            "id": "research-socialist-hagode-16nk-3dd619565b90",
+            "label": "PDF p. 37",
+            "pageNumber": 37,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 55280,
+            "normalizedEndOffset": 55946
+          },
+          {
+            "id": "research-socialist-hagode-187x-82a6edf0b324",
+            "label": "PDF p. 39",
+            "pageNumber": 39,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 57309,
+            "normalizedEndOffset": 58141
+          },
+          {
+            "id": "research-socialist-hagode-18v2-6b3e42ce41eb",
+            "label": "PDF p. 39",
+            "pageNumber": 39,
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+            "normalizedStartOffset": 58142,
+            "normalizedEndOffset": 59072
+          }
+        ]
+      },
+      "provenanceHash": "9888c5977b054cf911de5ab670eee0bc8043d214670e21662f56ecd7ce62bb77",
+      "componentProvenanceHashes": [
+        "3023f967f5c0d1ab37da74ca87b47da03c69041ca4f85230e8c12084a92b2cfc",
+        "b34fabee24872174f946be1085ba6ad0fe3f2bdcb3153c8ab2b22eba3ba84932",
+        "3dd619565b90732ad400e277167d45661b866437ee88dc67173e4775b5ae5b3e",
+        "82a6edf0b3246fc48af2f6e3aa1fa8e3b4a4e7e4e7c590cbc8d21368f5a5d53f",
+        "6b3e42ce41eb4f677b4fd2c8642ae77b7c1ffddcd8a632e6954bf3de7473aae5"
+      ],
+      "wordCount": 722,
+      "characterCount": 4234,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "secular",
+        "social-justice"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Describe this as a historical secular hymn that places faith in Progress and democratic control of shared prosperity; remind guests that the translator critiques the source's theory of progress.",
+      "rationale": "The English passages continue across the alternating Yiddish pages as one sustained closing hymn, ending with collective governance rather than an incomplete page fragment.",
+      "creditNotes": "Credit the original authors and Shlomo Jack Enkin Lewis's translation, noting that the sequence follows the English pages of a bilingual edition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-only",
+        "do-not-endorse-revolutionary-violence",
+        "explicit-historical-socialist-source-opt-in",
+        "label-progress-theology-as-period-ideology-not-fact",
+        "translator-warning-must-appear-first"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

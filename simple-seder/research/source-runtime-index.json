@@ -1,0 +1,3576 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpusVersion": "2026-07-11",
+  "compiledAt": "2026-07-11",
+  "localMaterialPolicy": "Original source files and searchable extracts are gitignored. This tracked index contains verifiable hashes, locators, exact approved excerpts, rights metadata, and matching constraints.",
+  "cohesionPolicy": {
+    "dominantSourceCount": 1,
+    "maximumSecondaryFamilies": 2,
+    "maximumSecondarySources": 2,
+    "compatibilityDirection": "dominant-to-secondary",
+    "rules": [
+      "Choose one dominant source family before selecting passages.",
+      "A dominant source must have runtimeSpineAvailable=true; primarySpineEligible alone is editorial potential, not an implemented spine.",
+      "The dominant source's compatibleFamilies must include each secondary source family; compatibility is directional, not mutual.",
+      "A source with requiresExplicitOptIn is eligible only when the profile explicitly contains one of those phrases; theme similarity is insufficient.",
+      "Never insert a passage solely because a theme keyword matches.",
+      "Only passages with approvalStatus=approved and rights.runtimeEligible=true may reach generation.",
+      "Never rewrite exactText; write separate bridges when needed."
+    ]
+  },
+  "passageSchema": {
+    "required": [
+      "id",
+      "sourceId",
+      "family",
+      "exactText",
+      "locator",
+      "sectionIds",
+      "themes",
+      "audience",
+      "tones",
+      "lengthTiers",
+      "seam",
+      "treatment",
+      "wordCount",
+      "approvalStatus",
+      "rights",
+      "provenanceHash",
+      "attribution"
+    ],
+    "sectionIds": [
+      "kadesh",
+      "urchatz",
+      "karpas",
+      "yachatz",
+      "maggid",
+      "rachtzah",
+      "motzi-matzah",
+      "maror",
+      "korech",
+      "shulchan-orech",
+      "tzafun",
+      "barech",
+      "hallel",
+      "nirtzah"
+    ],
+    "lengthTiers": [
+      "20",
+      "45",
+      "90"
+    ],
+    "seams": [
+      "section-opening",
+      "ritual-setup",
+      "ritual-explanation",
+      "story-core",
+      "story-reflection",
+      "discussion-prompt",
+      "before-blessing",
+      "after-blessing",
+      "meal-transition",
+      "song-introduction",
+      "closing-reflection",
+      "historical-sidebar",
+      "plate-option",
+      "optional-insert"
+    ],
+    "approvalStatuses": [
+      "approved",
+      "candidate-review",
+      "quarantined"
+    ],
+    "treatments": [
+      "verbatim",
+      "verbatim-normalized",
+      "excerpted",
+      "lightly-adapted",
+      "adapted"
+    ],
+    "provenanceHashBasis": "lowercase hex SHA-256 of NFC(exactText), after replacing every whitespace run with one ASCII space and trimming; UTF-8 encoded",
+    "locatorShape": {
+      "edition": "string",
+      "sourceLocation": "string",
+      "localExtract": "string",
+      "sourceSha256": "64-char lowercase hex",
+      "extractSha256": "64-char lowercase hex"
+    },
+    "rightsShape": {
+      "runtimeEligible": "boolean",
+      "license": "string",
+      "materialKind": "creator-authored | traditional-liturgy | public-domain | embedded-third-party",
+      "sourcePresentedAttributionRequired": "boolean",
+      "conditions": "string[]"
+    },
+    "attributionShape": {
+      "creator": "string",
+      "containingSource": "string",
+      "sourcePresented": "string | null",
+      "readerCredit": "string"
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "traditional-core",
+      "title": "Seder Haggadah Shel Pesaḥ",
+      "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+      "primaryUrl": "https://opensiddur.org/?p=28052",
+      "authoritativeFileUrl": "https://archive.org/details/sederhaggadahshelpesahpaltielbirnbaum1953",
+      "family": "traditional-liturgical",
+      "voiceTags": [
+        "formal",
+        "traditional",
+        "mid-century",
+        "annotated"
+      ],
+      "audienceTags": [
+        "adult",
+        "mixed-ages",
+        "ritually-familiar"
+      ],
+      "themeTags": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "historical",
+        "nonpartisan",
+        "traditional"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Public-domain edition dedicated CC0 after documented non-renewal",
+        "license": "CC0-1.0",
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Paltiel Birnbaum Haggadah 1953.pdf",
+        "sha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "pageCount": 118,
+        "extractFile": "research/source-extracts/traditional-core.txt",
+        "extractMode": "internet-archive-djvu-ocr+audited-transcription",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "extractCharacters": 163221,
+        "officialSnapshotSha256": "1c8294ac7a38945406d265f1f78dc10d7a33b1c7cae44eae52f21e206ce2a4ae",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "traditional-kadesh-four-cups",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "exactText": "A CUP OF WINE IS PLACED BEFORE EACH PERSON AT THE TABLE. EVERYONE IS TO DRINK FOUR CUPS OF WINE DURING THE SEDER.",
+          "locator": {
+            "edition": "Seder Haggadah Shel Pesaḥ",
+            "sourceLocation": "PDF p. 15 (printed p. 13), Kadesh setup; visually verified",
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC0-1.0",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+              "Record access date and modifications"
+            ]
+          },
+          "provenanceHash": "d85572f1b9415a2b78647cc6512aa0844ace3326df372c1fe0c7f07fabbb0189",
+          "attribution": {
+            "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+            "containingSource": "Seder Haggadah Shel Pesaḥ",
+            "sourcePresented": null,
+            "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+          }
+        },
+        {
+          "id": "traditional-maggid-slaves",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "exactText": "We were once the slaves of Pharaoh in Egypt, but the Lord our God brought us out from there with a mighty hand and an outstretched arm. Had not God brought our fathers out of Egypt, our children and grandchildren would still be enslaved to a Pharaoh in Egypt. Even if we all were wise and intelligent, learned and versed in the Torah, it would nevertheless be our duty to tell about the exodus from Egypt. The more anyone discusses the exodus from Egypt, the more praise he deserves.",
+          "locator": {
+            "edition": "Seder Haggadah Shel Pesaḥ",
+            "sourceLocation": "PDF p. 25 (printed p. 21), Maggid; visually verified",
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "treatment": "verbatim-normalized",
+          "wordCount": 89,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC0-1.0",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+              "Record access date and modifications"
+            ]
+          },
+          "provenanceHash": "38e1a887a5e6a77d3a4dc45040bfcb18671f7b2530fe3460e9f28d5d794d7fe9",
+          "attribution": {
+            "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+            "containingSource": "Seder Haggadah Shel Pesaḥ",
+            "sourcePresented": null,
+            "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "wandering-is-over",
+      "title": "The Wandering Is Over Haggadah: Including Women's Voices",
+      "creator": "JewishBoston and Jewish Women's Archive",
+      "primaryUrl": "https://opensiddur.org/?p=19085",
+      "authoritativeFileUrl": "https://archive.org/details/TheWanderingIsOverHaggadahIncludingWomensVoices",
+      "family": "family-feminist",
+      "voiceTags": [
+        "contemporary",
+        "accessible",
+        "story-centered",
+        "welcoming"
+      ],
+      "audienceTags": [
+        "beginner",
+        "mixed-ages",
+        "interfaith"
+      ],
+      "themeTags": [
+        "feminist",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "pluralistic",
+        "inclusive",
+        "social-history"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical",
+        "contemplative"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-3.0",
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Wandering Is Over Including Womens Voices 2011.pdf",
+        "sha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "pageCount": 33,
+        "extractFile": "research/source-extracts/wandering-is-over.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55",
+        "extractCharacters": 62136,
+        "officialSnapshotSha256": "357c3eda4f55b8e219826539ba1e2faaaf116b78e963e085dab553c2b33e3e93",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "wandering-opening-orientation",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "exactText": "Tonight we gather together to celebrate Passover, our holiday of freedom. We will eat a great meal together, enjoy four glasses (at least!) of wine, and tell the story of our ancestors’ liberation from slavery in Egypt. We welcome our friends and family members from other backgrounds to reflect with us on the meaning of freedom in all our lives and histories. We will consider the blessings in our lives, pledge to work harder at freeing those who still suffer, and begin to cast off the things in our own lives that oppress us.",
+          "locator": {
+            "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+            "sourceLocation": "PDF p. 2, opening orientation",
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "family-storytelling",
+            "interfaith",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "treatment": "verbatim-normalized",
+          "wordCount": 94,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-3.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Preserve attribution and ShareAlike notice",
+              "Review separately credited embedded material item by item"
+            ]
+          },
+          "provenanceHash": "b69e17b45818d15ac501d3c19cf3646e2ed3ec4ddd280c9e25d5e4304876f50b",
+          "attribution": {
+            "creator": "JewishBoston and Jewish Women's Archive",
+            "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+            "sourcePresented": null,
+            "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+          }
+        },
+        {
+          "id": "wandering-urchatz-pitcher-bowl",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "exactText": "To wash your hands, you don’t need soap, but you do need a cup to pour water over your hands. Pour water on each of your hands three times, alternating between your hands. If the people around your table don’t want to get up to walk all the way over to the sink, you could pass a pitcher and a bowl around so everyone can wash at their seats… just be careful not to spill!",
+          "locator": {
+            "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+            "sourceLocation": "PDF p. 5, Urchatz",
+            "localExtract": "research/source-extracts/wandering-is-over.txt",
+            "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+            "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55"
+          },
+          "sectionIds": [
+            "urchatz"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 75,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-3.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Preserve attribution and ShareAlike notice",
+              "Review separately credited embedded material item by item"
+            ]
+          },
+          "provenanceHash": "f0802beb629eb64507175524213d3bf4abacfbaa65aa50c9e17cea7337223290",
+          "attribution": {
+            "creator": "JewishBoston and Jewish Women's Archive",
+            "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+            "sourcePresented": null,
+            "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "inner-seder",
+      "title": "Haggadah of the Inner Seder",
+      "creator": "Rabbi David Seidenberg / neohasid.org",
+      "primaryUrl": "https://neohasid.org/zman/pesach/InnerSeder/",
+      "authoritativeFileUrl": "https://archive.org/details/HaggadahOfTheInnerSeder",
+      "family": "contemplative",
+      "voiceTags": [
+        "contemplative",
+        "neo-Hasidic",
+        "interpretive",
+        "ecological"
+      ],
+      "audienceTags": [
+        "adult",
+        "older-teen",
+        "reflective"
+      ],
+      "themeTags": [
+        "mindfulness",
+        "environment",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "peace-focused",
+        "shared-humanity",
+        "non-exclusivist"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "eco-justice",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Haggadah of the Inner Seder 2026.pdf",
+        "sha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "pageCount": 22,
+        "extractFile": "research/source-extracts/inner-seder.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "extractCharacters": 107140,
+        "officialSnapshotSha256": "6bf031c54400d1ad42fb932a9baa61c79378479cf10d6247ea33ea037cab11e8",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "inner-opening-transformation",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "exactText": "The seder (which means “order”) is literally an ordering of symbols so that they progress from slavery to freedom. So, for example, matsah can symbolize slavery, leaving Egypt, coming into the land, and messianic redemption. But on seder night, we first experience it as the bread of slavery (lachma anya), and end by experiencing it as the bread of redemption (afikoman). This transformation is the essence of the seder.",
+          "locator": {
+            "edition": "Haggadah of the Inner Seder",
+            "sourceLocation": "PDF p. 2, opening essay",
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "mindfulness",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "treatment": "verbatim-normalized",
+          "wordCount": 69,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Attribute David Seidenberg and link the license",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "f6870c766a78405143bf6a5f56967fad3e30798be3b075a10d848114bf2ee0ba",
+          "attribution": {
+            "creator": "Rabbi David Seidenberg / neohasid.org",
+            "containingSource": "Haggadah of the Inner Seder",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+          }
+        },
+        {
+          "id": "inner-karpas-hyssop",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "exactText": "Add hyssop, known as eizov in Hebrew and za’atar in Arabic, to your karpas or seder plate, to remember the blood on the lintel that protected the firstborn, to remember that Palestinian and Israelite culture are rooted in the same land, and to hope for a future where no children are sacrificed to terror or to war. (You can also use a sprig of oregano or thyme if you cannot find hyssop.)",
+          "locator": {
+            "edition": "Haggadah of the Inner Seder",
+            "sourceLocation": "PDF p. 4, Karpas",
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3"
+          },
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "environment",
+            "social-justice",
+            "interfaith",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "treatment": "verbatim-normalized",
+          "wordCount": 72,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Attribute David Seidenberg and link the license",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "9d99cf7be9af3d1b9575ab9bf19ab2931718eb02833bc1f3afb9f6c67394a559",
+          "attribution": {
+            "creator": "Rabbi David Seidenberg / neohasid.org",
+            "containingSource": "Haggadah of the Inner Seder",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "other-side-of-sea",
+      "title": "The Other Side of the River, The Other Side of the Sea",
+      "creator": "T'ruah: The Rabbinic Call for Human Rights",
+      "primaryUrl": "https://truah.org/resources/the-other-side-of-the-river-the-other-side-of-the-sea/",
+      "authoritativeFileUrl": "https://www.truah.org/wp-content/uploads/2020/03/Print-at-Home-PDF.pdf",
+      "family": "justice-human-rights",
+      "voiceTags": [
+        "urgent",
+        "educational",
+        "human-rights",
+        "action-oriented"
+      ],
+      "audienceTags": [
+        "adult",
+        "older-teen",
+        "community"
+      ],
+      "themeTags": [
+        "social-justice",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "anti-trafficking",
+        "worker-led",
+        "anti-racist",
+        "shared-humanity"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Open Siddur archived edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit T'ruah",
+          "Preserve printed contributor credits",
+          "Review embedded artwork and quotations item by item"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Truah Human Rights Haggadah 2020.pdf",
+        "sha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+        "pageCount": 38,
+        "extractFile": "research/source-extracts/other-side-of-sea.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37",
+        "extractCharacters": 129857,
+        "officialSnapshotSha256": "4f295f7ffae95a42ac37a6d07646a144001800d1e2f9b74d35940d75696b832e",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "truah-maggid-fulcrum",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "exactText": "This is the seder’s fulcrum, the turning point that leverages our collective memories of slavery and turns them into collective obligation.",
+          "locator": {
+            "edition": "The Other Side of the River, The Other Side of the Sea",
+            "sourceLocation": "PDF sheet p. 6 (printed p. 15), In Every Generation",
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 21,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit T'ruah",
+              "Preserve printed contributor credits",
+              "Review embedded artwork and quotations item by item"
+            ]
+          },
+          "provenanceHash": "73ec38643e9b8e34ac3cd1ef8e3948ee57fbc1744b241791904ba63dc3cf0682",
+          "attribution": {
+            "creator": "T'ruah: The Rabbinic Call for Human Rights",
+            "containingSource": "The Other Side of the River, The Other Side of the Sea",
+            "sourcePresented": null,
+            "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+          }
+        },
+        {
+          "id": "truah-maggid-tomato",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "exactText": "Lift up the tomato on the seder plate and say: “This tomato on our seder plate: What does it mean?” It represents the workers who picked it and the organizing that has changed their lives.",
+          "locator": {
+            "edition": "The Other Side of the River, The Other Side of the Sea",
+            "sourceLocation": "PDF sheet p. 4 (printed p. 41), Rabban Gamliel Says",
+            "localExtract": "research/source-extracts/other-side-of-sea.txt",
+            "sourceSha256": "c475ad8a2fc6545bbdff986a53ac71cba1ef85d4b33222b1c1546100a703c406",
+            "extractSha256": "e0e0fb9c198b86e96a7d2fa0fb4092a578188a5a0aa82942d3086e9377e0cc37"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "treatment": "verbatim-normalized",
+          "wordCount": 35,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit T'ruah",
+              "Preserve printed contributor credits",
+              "Review embedded artwork and quotations item by item"
+            ]
+          },
+          "provenanceHash": "2764fc55cff6c4863307ffab144ee797ac03c31ca90ada0dc28b4fee4c262e16",
+          "attribution": {
+            "creator": "T'ruah: The Rabbinic Call for Human Rights",
+            "containingSource": "The Other Side of the River, The Other Side of the Sea",
+            "sourcePresented": null,
+            "readerCredit": "From The Other Side of the River, The Other Side of the Sea by T'ruah: The Rabbinic Call for Human Rights."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "freedom-seder-earth",
+      "title": "The Freedom Seder for the Earth",
+      "creator": "Rabbi Arthur Waskow and The Shalom Center",
+      "primaryUrl": "https://opensiddur.org/?p=8852",
+      "authoritativeFileUrl": "https://archive.org/details/FreedomSederForTheEarthPassoverHaggadahTheShalomCenter2009",
+      "family": "eco-justice",
+      "voiceTags": [
+        "prophetic",
+        "expansive",
+        "activist",
+        "eco-Jewish"
+      ],
+      "audienceTags": [
+        "adult",
+        "community",
+        "interfaith"
+      ],
+      "themeTags": [
+        "environment",
+        "social-justice",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "climate-justice",
+        "peace-focused",
+        "shared-humanity"
+      ],
+      "compatibleFamilies": [
+        "contemplative",
+        "beginner-accessible",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Open Siddur archived edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Freedom Seder for the Earth 2009.pdf",
+        "sha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "pageCount": 25,
+        "extractFile": "research/source-extracts/freedom-seder-earth.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "extractCharacters": 62693,
+        "officialSnapshotSha256": "0f7da1ee166efae1690f5c6c3b1cb636bea83e29b6e707c34ee643bc6d5ed202",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "freedom-maggid-earth-oppression",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "exactText": "Oppression of human beings and destruction of the earth go hand in hand. Our ancient forebears could see that there was a connection.",
+          "locator": {
+            "edition": "The Freedom Seder for the Earth",
+            "sourceLocation": "PDF p. 4, introductory Maggid reflection",
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "environment",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Attribute Waskow and The Shalom Center",
+              "Preserve source-presented credits and ShareAlike notice"
+            ]
+          },
+          "provenanceHash": "04117ad988fec540be5d21c2ac6dfffbf5eaa56c52f08b64140266b3ad9b05cc",
+          "attribution": {
+            "creator": "Rabbi Arthur Waskow and The Shalom Center",
+            "containingSource": "The Freedom Seder for the Earth",
+            "sourcePresented": null,
+            "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+          }
+        },
+        {
+          "id": "freedom-yachatz-share-bread",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "exactText": "Why do we break this bread in two? Because if we hold on to the whole loaf for ourselves, it remains the bread of oppression. If we break it in order to share it, it becomes the bread of freedom.",
+          "locator": {
+            "edition": "The Freedom Seder for the Earth",
+            "sourceLocation": "PDF p. 8 (printed p. 7), Yachatz",
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007"
+          },
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "social-justice",
+            "environment",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "treatment": "verbatim-normalized",
+          "wordCount": 40,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Attribute Waskow and The Shalom Center",
+              "Preserve source-presented credits and ShareAlike notice"
+            ]
+          },
+          "provenanceHash": "ee989ba205879efaf40588c664ed1502dded10c742bd267ad8071178d732c7c1",
+          "attribution": {
+            "creator": "Rabbi Arthur Waskow and The Shalom Center",
+            "containingSource": "The Freedom Seder for the Earth",
+            "sourcePresented": null,
+            "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "shir-geulah",
+      "title": "Haggadah Shir Ge'ulah / Song of Liberation",
+      "creator": "Emily Aviva Kapor-Mater",
+      "primaryUrl": "https://opensiddur.org/?p=8819",
+      "authoritativeFileUrl": "https://archive.org/details/HaggadahShirGeulahEmilyAvivaKapor2ndEd.2015",
+      "family": "beginner-accessible",
+      "voiceTags": [
+        "direct",
+        "contemporary",
+        "liberation-centered",
+        "procedural"
+      ],
+      "audienceTags": [
+        "beginner",
+        "adult",
+        "mixed-ages"
+      ],
+      "themeTags": [
+        "traditional",
+        "social-justice",
+        "lgbtq"
+      ],
+      "politicalFramingTags": [
+        "inclusive",
+        "peace-focused",
+        "non-exclusivist"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "contemplative",
+        "justice-human-rights",
+        "eco-justice",
+        "traditional-liturgical",
+        "labor-secular",
+        "ritual-innovation",
+        "historical-cultural",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-4.0",
+        "conditions": [
+          "Credit Emily Aviva Kapor-Mater",
+          "Link the license and identify modifications"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": true,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Haggadah Shir Geulah v2.1.pdf",
+        "sha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+        "pageCount": 74,
+        "extractFile": "research/source-extracts/shir-geulah.txt",
+        "extractMode": "pdf-text-layer+audited-transcription",
+        "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff",
+        "extractCharacters": 174563,
+        "officialSnapshotSha256": "b9c17425e85a8200d584da121fa09b299b634527c2b2be2615bebf72017ec65b",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "shir-maggid-own-voices-runtime",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "exactText": "We elaborate upon our story because there is nobody else to do it for us. This is our story to tell; therefore let us raise up our own voices. And when the story is not ours but that of other people, let us remember to lift up their voices so that they may tell their own stories. Let us not silence them, but let us let them speak for themselves.",
+          "locator": {
+            "edition": "Haggadah Shir Ge'ulah / Song of Liberation",
+            "sourceLocation": "PDF p. 18, Maggid commentary",
+            "localExtract": "research/source-extracts/shir-geulah.txt",
+            "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+            "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 70,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Emily Aviva Kapor-Mater",
+              "Link the license and identify modifications"
+            ]
+          },
+          "provenanceHash": "a4afc1eefcb2670a05d6886e72cf3e82ac7cdc7cf4dc8c6590ac97f7a4965b41",
+          "attribution": {
+            "creator": "Emily Aviva Kapor-Mater",
+            "containingSource": "Haggadah Shir Ge'ulah / Song of Liberation",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah Shir Ge'ulah / Song of Liberation by Emily Aviva Kapor-Mater."
+          }
+        },
+        {
+          "id": "shir-meal-celebration-runtime",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "exactText": "So far, everything we have eaten in the course of the seder has had some ritual or symbolic significance. But one of the mitzvot of the holiday is to celebrate, and one of the traditional things we do to celebrate is partake of a festive meal. The ritual nature of the food of the meal is simply that it is there to be enjoyed, which itself is a mitzvah.",
+          "locator": {
+            "edition": "Haggadah Shir Ge'ulah / Song of Liberation",
+            "sourceLocation": "PDF p. 36, Shulchan Orech",
+            "localExtract": "research/source-extracts/shir-geulah.txt",
+            "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+            "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff"
+          },
+          "sectionIds": [
+            "shulchan-orech"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "meal-transition",
+          "treatment": "verbatim-normalized",
+          "wordCount": 69,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Emily Aviva Kapor-Mater",
+              "Link the license and identify modifications"
+            ]
+          },
+          "provenanceHash": "15a40da98af65f877942a72e635d7778626f3a8a77c98813963b66060631fc39",
+          "attribution": {
+            "creator": "Emily Aviva Kapor-Mater",
+            "containingSource": "Haggadah Shir Ge'ulah / Song of Liberation",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah Shir Ge'ulah / Song of Liberation by Emily Aviva Kapor-Mater."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "velveteen-rabbi",
+      "title": "The Velveteen Rabbi's Haggadah for Pesach",
+      "creator": "Rabbi Rachel Barenblat",
+      "primaryUrl": "https://velveteenrabbi.com/2025/04/04/new-edition-of-the-vr-haggadah/",
+      "authoritativeFileUrl": "https://velveteenrabbi.com/2025/04/04/new-edition-of-the-vr-haggadah/",
+      "family": "contemplative",
+      "voiceTags": [
+        "warm",
+        "poetic",
+        "accessible",
+        "progressive"
+      ],
+      "audienceTags": [
+        "adult",
+        "mixed-ages",
+        "interfaith",
+        "beginner"
+      ],
+      "themeTags": [
+        "mindfulness",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "peace-focused",
+        "liberation-oriented",
+        "non-exclusivist"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Creator's explicit reuse permission",
+        "license": "custom-owner-permission",
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": true,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Velveteen Rabbi Haggadah v9.pdf",
+        "sha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "pageCount": 84,
+        "extractFile": "research/source-extracts/velveteen-rabbi.txt",
+        "extractMode": "pdf-text-layer+audited-transcription",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab",
+        "extractCharacters": 132046,
+        "officialSnapshotSha256": null,
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "vr-runtime-maggid-opening",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "exactText": "Maggid, the Hebrew word for “story,” is at the root of the word haggadah. In re-telling the story of the Exodus, we speak ourselves into our communal past.",
+          "locator": {
+            "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+            "sourceLocation": "PDF p. 18, Maggid opening",
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "mindfulness",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "treatment": "verbatim-normalized",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "custom-owner-permission",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Rachel Barenblat",
+              "Share freely and do not sell",
+              "Preserve printed credits for embedded material"
+            ]
+          },
+          "provenanceHash": "31127afb9826373e974d038d3b94258b9cce7763d9e884b06ed73a37843fb268",
+          "attribution": {
+            "creator": "Rabbi Rachel Barenblat",
+            "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+            "sourcePresented": null,
+            "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+          }
+        },
+        {
+          "id": "vr-runtime-rachtzah-hands",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "exactText": "What does washing our hands tell us? That bodies are sacred and deserving of care. It is our hands that plant and write, that caress and create—and also our hands that strike and poison and smash. We wash our hands not to absolve ourselves of responsibility, but to affirm the need to make our hands holy. At this season of freedom and rebirth, we consecrate our hands to the task of building freedom for all who suffer.",
+          "locator": {
+            "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+            "sourceLocation": "PDF p. 47, Rachtzah",
+            "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+            "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+            "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab"
+          },
+          "sectionIds": [
+            "rachtzah"
+          ],
+          "themes": [
+            "mindfulness",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "treatment": "verbatim-normalized",
+          "wordCount": 77,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "custom-owner-permission",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Rachel Barenblat",
+              "Share freely and do not sell",
+              "Preserve printed credits for embedded material"
+            ]
+          },
+          "provenanceHash": "3d55632d9c7d07e2fb3e19a5a8f5a2d4f9ff4ef7c107faaf11b68aaee680f14f",
+          "attribution": {
+            "creator": "Rabbi Rachel Barenblat",
+            "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+            "sourcePresented": null,
+            "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "nusach-eretz-yisrael",
+      "title": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+      "creator": "Isaac Gantwerk Mayer",
+      "primaryUrl": "https://opensiddur.org/?p=30641",
+      "authoritativeFileUrl": "https://github.com/aharonium/opensiddur.org/blob/master/posts/compilations/table-guides-and-haggadot/passover-seder/pesah-haggadah-nusah-erets-yisrael-based-on-multiple-cairo-geniza-manuscripts-compiled-and-translated-by-isaac-gantwerk-mayer_(30641).json",
+      "family": "historical-cultural",
+      "voiceTags": [
+        "scholarly",
+        "reconstructed",
+        "liturgical",
+        "historical-Palestinian-Jewish"
+      ],
+      "audienceTags": [
+        "adult",
+        "specialist",
+        "historical"
+      ],
+      "themeTags": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "historical",
+        "nonpartisan",
+        "non-nationalist"
+      ],
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Open Siddur complete source-data edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "official-source-snapshot",
+        "localFile": "research/source-materials/official-json/nusach-eretz-yisrael.opensiddur.json",
+        "sha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "pageCount": null,
+        "extractFile": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "extractMode": "official-opensiddur-snapshot",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+        "extractCharacters": 55373,
+        "officialSnapshotSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "nusach-maggid-flatbread",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "exactText": "Flatbread on account of that we were redeemed, as it is said (Exodus 12:39) — And they baked from the dough that they had taken out of Egypt flatbread cakes, for they were not leavened, for they had fled from Egypt and could not dilly-dally, and had not made any provisions for them.",
+          "locator": {
+            "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+            "sourceLocation": "Official Open Siddur snapshot post 30641, Rabban Gamliel / Flatbread",
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "treatment": "verbatim-normalized",
+          "wordCount": 53,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "traditional-liturgy",
+            "sourcePresentedAttributionRequired": true,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer and Open Siddur",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "2f13beceab3cc6bc31d37f0a18be62b77ecc1541c206a0272cf210764b13405a",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+            "sourcePresented": "Exodus 12:39",
+            "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+          }
+        },
+        {
+          "id": "nusach-maggid-each-generation",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "exactText": "In each and every generation a person is required to see himself as if he left Egypt as it is said (Exodus 13:8) — And tell your child on this day, saying, for this the Cause did for me when I left Egypt.",
+          "locator": {
+            "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+            "sourceLocation": "Official Open Siddur snapshot post 30641, In Each Generation",
+            "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+            "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+            "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 43,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "traditional-liturgy",
+            "sourcePresentedAttributionRequired": true,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer and Open Siddur",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "9b6ac5d83461cbdab5d31b8695660dfe8ae3b0f42188299b6d3308465581e36b",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+            "sourcePresented": "Exodus 13:8",
+            "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "seder-in-the-streets",
+      "title": "Seder in the Streets Passover Haggadah",
+      "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+      "primaryUrl": "https://opensiddur.org/?p=10879",
+      "authoritativeFileUrl": "https://github.com/aharonium/opensiddur.org/blob/master/posts/compilations/table-guides-and-haggadot/passover-seder/seder-in-the-streets-haggadah-compiled-by-danielle-gershkoff-rachel-lerman-rachel-beck-and-margot-seigle_(10879).json",
+      "family": "justice-human-rights",
+      "voiceTags": [
+        "participatory",
+        "public-facing",
+        "activist",
+        "discussion-led"
+      ],
+      "audienceTags": [
+        "adult",
+        "community",
+        "participatory"
+      ],
+      "themeTags": [
+        "social-justice",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "protest",
+        "immigrant-justice",
+        "peace-focused"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Open Siddur complete source-data edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "official-source-snapshot",
+        "localFile": "research/source-materials/official-json/seder-in-the-streets.opensiddur.json",
+        "sha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "pageCount": null,
+        "extractFile": "research/source-extracts/seder-in-the-streets.txt",
+        "extractMode": "official-opensiddur-snapshot",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9",
+        "extractCharacters": 28890,
+        "officialSnapshotSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "streets-opening-read-circle",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "exactText": "For the rest of the seder, we read in a circle, each person reading as many lines as they desired, with leaders adding additional commentary and explanation throughout.",
+          "locator": {
+            "edition": "Seder in the Streets Passover Haggadah",
+            "sourceLocation": "Official Open Siddur snapshot post 10879, after A Stand Against All Forms Of Oppression",
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "family-storytelling",
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "treatment": "verbatim-normalized",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit all compilers and Open Siddur",
+              "Preserve source-presented credits and ShareAlike notice"
+            ]
+          },
+          "provenanceHash": "69d97913fb065cdc58a537dee8ff63dac5f2f9e64b44f3704a5845b288c07ed2",
+          "attribution": {
+            "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+            "containingSource": "Seder in the Streets Passover Haggadah",
+            "sourcePresented": null,
+            "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+          }
+        },
+        {
+          "id": "streets-maggid-questions",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "exactText": "Passover has a strong tradition of asking questions. We encourage you to use this as an opportunity to ask the questions you are usually afraid to ask. No questions are off the table. Let this be a tool to facilitate deeper understanding between us, leaving us with a deeper commitment to each other’s struggle.",
+          "locator": {
+            "edition": "Seder in the Streets Passover Haggadah",
+            "sourceLocation": "Official Open Siddur snapshot post 10879, opening instructions",
+            "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+            "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+            "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "treatment": "verbatim-normalized",
+          "wordCount": 54,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit all compilers and Open Siddur",
+              "Preserve source-presented credits and ShareAlike notice"
+            ]
+          },
+          "provenanceHash": "e98b12db27de2505fa1b395a7e4e825c8f3166314c3f0764045f806a06e3a531",
+          "attribution": {
+            "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+            "containingSource": "Seder in the Streets Passover Haggadah",
+            "sourcePresented": null,
+            "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "tropified-haggadah",
+      "title": "The Passover Seder Haggadah, Tropified",
+      "creator": "Isaac Gantwerk Mayer",
+      "primaryUrl": "https://opensiddur.org/?p=24582",
+      "authoritativeFileUrl": "https://archive.org/details/ThePassoverSederHaggadahTropifiedIsaacGantwerkMayer2019",
+      "family": "traditional-liturgical",
+      "voiceTags": [
+        "liturgically-precise",
+        "chant-oriented",
+        "traditional",
+        "multilingual"
+      ],
+      "audienceTags": [
+        "adult",
+        "ritually-familiar",
+        "facilitator"
+      ],
+      "themeTags": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "nonpartisan",
+        "traditional",
+        "historical"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Passover Seder Haggadah Tropified.pdf",
+        "sha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+        "pageCount": 37,
+        "extractFile": "research/source-extracts/tropified-haggadah.txt",
+        "extractMode": "pdf-text-layer+authoritative-odt",
+        "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67",
+        "extractCharacters": 109377,
+        "officialSnapshotSha256": "fe488af8d395c032eefc311627f2a8b52de11fb3362f13fcdb33c4399352d9ee",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "tropified-karpas-chant",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "exactText": "כַּרְפַּ֣ס טוֹבְלִ֔ין כַּרְפַּ֥ס פָּח֖וֹת מִכְזַ֑יִת בְּמֵ֥י מֶ֖לַח וּמְבָרְכִֽין׃",
+          "locator": {
+            "edition": "The Passover Seder Haggadah, Tropified",
+            "sourceLocation": "Authoritative ODT paragraph 22; corresponds to PDF p. 2",
+            "localExtract": "research/source-extracts/tropified-haggadah.txt",
+            "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+            "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67"
+          },
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "ritually-familiar"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 8,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "traditional-liturgy",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "5aae3bb90e488cda963197e5d0300c9bd8be2b1d3639ad220b3efc89cfc13b25",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "The Passover Seder Haggadah, Tropified",
+            "sourcePresented": null,
+            "readerCredit": "From The Passover Seder Haggadah, Tropified by Isaac Gantwerk Mayer."
+          }
+        },
+        {
+          "id": "tropified-yachatz-chant",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "exactText": "יַחַ֔ץ בַּ֨עַל הַבַּ֧יִת יִבְצַ֛ע אֶת־הַמַּצָּ֥ה הָאֶמְצָעִ֖ית לִשְׁתַּ֑יִם וּמַצְפִּ֕ין אֶת־הַחֵצִ֥י הַגָּד֖וֹל לַאֲפִיקֽוֹמָן׃",
+          "locator": {
+            "edition": "The Passover Seder Haggadah, Tropified",
+            "sourceLocation": "Authoritative ODT paragraph 24; corresponds to PDF p. 2",
+            "localExtract": "research/source-extracts/tropified-haggadah.txt",
+            "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+            "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67"
+          },
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "ritually-familiar"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 11,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "traditional-liturgy",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "ba294ac7d6c5c15d109c287087aff708281e2235ae12fb93f1a2591ceea020fc",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "The Passover Seder Haggadah, Tropified",
+            "sourcePresented": null,
+            "readerCredit": "From The Passover Seder Haggadah, Tropified by Isaac Gantwerk Mayer."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "feinstein-haggadah",
+      "title": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+      "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+      "primaryUrl": "https://opensiddur.org/?p=6207",
+      "authoritativeFileUrl": "https://archive.org/details/haggadatmahzotjewishliturgyproject2009",
+      "family": "beginner-accessible",
+      "voiceTags": [
+        "clear",
+        "translation-forward",
+        "text-centered",
+        "pluralistic"
+      ],
+      "audienceTags": [
+        "adult",
+        "mixed-ages",
+        "interfaith",
+        "beginner"
+      ],
+      "themeTags": [
+        "traditional",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "nonpartisan",
+        "pluralistic"
+      ],
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "family-feminist",
+        "contemplative",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Feinstein Haggadat Mah Zot 2009.pdf",
+        "sha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "pageCount": 108,
+        "extractFile": "research/source-extracts/feinstein-haggadah.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "extractCharacters": 189037,
+        "officialSnapshotSha256": "36814885d0e487d1865722fba575f50a8a8dd845202405421b263c591ba174b7",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "feinstein-kadesh-poured-by-another",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "exactText": "Kiddush is recited over the first cup of wine. Red wine is preferred, although white wine fulfils the obligation. One should not pour one's own wine; Instead, it should be poured by another, as a sign of freedom and prosperity.",
+          "locator": {
+            "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+            "sourceLocation": "PDF p. 4 (printed p. 3), instruction iv",
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 40,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Eve Levavi Feinstein and Efraim Feinstein",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "f0f300b28cce8a56f5b93140f150b8a7369f5c262d7e737e896aa5ce21469896",
+          "attribution": {
+            "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+            "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+          }
+        },
+        {
+          "id": "feinstein-yachatz-afikoman",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "exactText": "Break the middle matzah in two pieces, setting the larger one aside to be used later as the afikoman, and returning the other.",
+          "locator": {
+            "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+            "sourceLocation": "PDF p. 8 (printed p. 7), Yachatz",
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d"
+          },
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Eve Levavi Feinstein and Efraim Feinstein",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "05b0e9e0daee81b843bbec8b296efcef6f4fdc6f56cb3b0153e55a688cba733f",
+          "attribution": {
+            "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+            "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "socialist-hagode",
+      "title": "Hagode shel Peysekh: in a Socialist Mode",
+      "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+      "primaryUrl": "https://opensiddur.org/?p=61621",
+      "authoritativeFileUrl": "https://archive.org/details/hagode-shel-peysekh-in-a-socialist-mode",
+      "family": "labor-secular",
+      "voiceTags": [
+        "historical",
+        "Yiddish-socialist",
+        "movement-oriented",
+        "secular"
+      ],
+      "audienceTags": [
+        "adult",
+        "history-oriented",
+        "secular"
+      ],
+      "themeTags": [
+        "secular",
+        "social-justice"
+      ],
+      "politicalFramingTags": [
+        "socialist",
+        "labor-justice",
+        "historical"
+      ],
+      "compatibleFamilies": [
+        "historical-cultural",
+        "justice-human-rights",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "traditional-liturgical",
+        "playful-fandom"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Open bilingual edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Socialist Hagode 2025.pdf",
+        "sha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "pageCount": 47,
+        "extractFile": "research/source-extracts/socialist-hagode.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4",
+        "extractCharacters": 76632,
+        "officialSnapshotSha256": "26db78f99ddcb3c0f86ba84fe50462519a144909862548a0b8335c32fac1b874",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "socialist-maggid-organized-power",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "exactText": "With our own power, organized and united with all the oppressed and exploited, with tireless and well-directed struggle, we will free ourselves and bring the g’uloh [redemption] for suffering, bleeding humanity.",
+          "locator": {
+            "edition": "Hagode shel Peysekh: in a Socialist Mode",
+            "sourceLocation": "PDF p. 11 (printed p. 5), Maggid",
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "secular"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 31,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit original authors and Shlomo Enkin Lewis's translation",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "e9824f805ef7e98248fad05ce84724e4880ea6d6bfca42573e277d49f95f41c2",
+          "attribution": {
+            "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+            "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+            "sourcePresented": null,
+            "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+          }
+        },
+        {
+          "id": "socialist-maggid-self-liberation-story",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "exactText": "Day and night we must tell our children and our children's children the great and holy Idea of self-liberation. And whoever speaks of it frequently is praiseworthy.",
+          "locator": {
+            "edition": "Hagode shel Peysekh: in a Socialist Mode",
+            "sourceLocation": "PDF p. 11 (printed p. 5), Maggid",
+            "localExtract": "research/source-extracts/socialist-hagode.txt",
+            "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+            "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 27,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit original authors and Shlomo Enkin Lewis's translation",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "6441e4ad63bbcf6566d5f3fc0abda9f5bf8e7a7206105ec1d8fee7a5ae799944",
+          "attribution": {
+            "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+            "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+            "sourcePresented": null,
+            "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "mlk-freedom-seder",
+      "title": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+      "creator": "Rabbi Arthur Waskow and The Shalom Center",
+      "primaryUrl": "https://opensiddur.org/?p=19204",
+      "authoritativeFileUrl": "https://archive.org/details/MLK50InterfaithFreedomSeder",
+      "family": "justice-human-rights",
+      "voiceTags": [
+        "oratorical",
+        "interfaith",
+        "labor-justice",
+        "prophetic"
+      ],
+      "audienceTags": [
+        "adult",
+        "community",
+        "interfaith"
+      ],
+      "themeTags": [
+        "social-justice",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "racial-justice",
+        "economic-justice",
+        "peace-focused"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 3,
+      "rights": {
+        "basis": "Source's unattributed passages shared openly",
+        "license": "CC-BY-4.0",
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/MLK50 Interfaith Freedom Seder 2018.pdf",
+        "sha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "pageCount": 24,
+        "extractFile": "research/source-extracts/mlk-freedom-seder.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "extractCharacters": 46504,
+        "officialSnapshotSha256": "48fbade5ce70ff124dc4160bdb7bd062fcef9bf51064f56921cedf2c347e514d",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "mlk-kadesh-light-see-each-other",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "exactText": "It is our task to make from fire Not an all-consuming blaze But the light in which we see each other— Each of us different, All of us made in One Image, glowing with One Spark.",
+          "locator": {
+            "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+            "sourceLocation": "PDF p. 7 (printed p. 6), candle lighting",
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "treatment": "verbatim-normalized",
+          "wordCount": 36,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Waskow and The Shalom Center",
+              "Use only unattributed creator material unless embedded permission is separately verified",
+              "Preserve printed credits"
+            ]
+          },
+          "provenanceHash": "f15f87f80bcca3bc195cea212a6f1b76aa43dc0c8082af25c232ea2be6c2b604",
+          "attribution": {
+            "creator": "Rabbi Arthur Waskow and The Shalom Center",
+            "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+            "sourcePresented": null,
+            "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+          }
+        },
+        {
+          "id": "mlk-nirtzah-grapes-community",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "exactText": "Because grapes grow not alone but in clusters, and we must work not separately for freedom and justice, peace and healing—not each a lonely, isolated ‘I’—but in clusters of community. WE. “Together, we take on the task of Elijah.”",
+          "locator": {
+            "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+            "sourceLocation": "PDF p. 23 (printed p. 22), concluding cup",
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9"
+          },
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "closing-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 39,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Waskow and The Shalom Center",
+              "Use only unattributed creator material unless embedded permission is separately verified",
+              "Preserve printed credits"
+            ]
+          },
+          "provenanceHash": "e91f9c76ed403492eead0bbad32724376e1971d5ce223918ebdb74233a483e29",
+          "attribution": {
+            "creator": "Rabbi Arthur Waskow and The Shalom Center",
+            "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+            "sourcePresented": null,
+            "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "second-seder-plate",
+      "title": "A Second Passover Seder Plate with Seven Additions",
+      "creator": "Isaac Gantwerk Mayer",
+      "primaryUrl": "https://opensiddur.org/?p=24587",
+      "authoritativeFileUrl": "https://archive.org/details/ItemsForTheSecondSederPlateIsaacGantwerkMayer2019",
+      "family": "ritual-innovation",
+      "voiceTags": [
+        "modular",
+        "symbolic",
+        "explanatory",
+        "pluralistic"
+      ],
+      "audienceTags": [
+        "adult",
+        "mixed-ages",
+        "participatory"
+      ],
+      "themeTags": [
+        "feminist",
+        "lgbtq",
+        "environment",
+        "social-justice"
+      ],
+      "politicalFramingTags": [
+        "issue-specific",
+        "inclusive",
+        "pluralistic"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "historical-cultural"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Keep each object with its complete explanation",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": false
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Second Seder Plate 2019.pdf",
+        "sha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+        "pageCount": 8,
+        "extractFile": "research/source-extracts/second-seder-plate.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f",
+        "extractCharacters": 15594,
+        "officialSnapshotSha256": "e297d2e3592b5cfc69512fe63042ab209af5eaad3339275dfdac5a38e28a7c10",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "second-plate-miriam-fish",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "exactText": "And the fish, representing the constant flowing nature of water, represented Miriam, prophecy, the waters, and the spiritual aspects of faith.",
+          "locator": {
+            "edition": "A Second Passover Seder Plate with Seven Additions",
+            "sourceLocation": "PDF p. 2, Miriam’s Fish",
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "feminist",
+            "traditional",
+            "mindfulness",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "treatment": "verbatim-normalized",
+          "wordCount": 21,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Keep each object with its complete explanation",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "184764e11c18b80bd7bfb43c5c9db9a24f629a6d96305de7d24d24e3b22ad5f3",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "A Second Passover Seder Plate with Seven Additions",
+            "sourcePresented": null,
+            "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+          }
+        },
+        {
+          "id": "second-plate-leeks",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "exactText": "May we avoid letting nostalgia filter our past, and remember that there's no such thing as a free lunch. May we be satiated rather than gluttonous, and may that be enough for us.",
+          "locator": {
+            "edition": "A Second Passover Seder Plate with Seven Additions",
+            "sourceLocation": "PDF p. 3, Leeks",
+            "localExtract": "research/source-extracts/second-seder-plate.txt",
+            "sourceSha256": "11a3d8d96655923332d4ec3e3f659ebb7a5312a9bb9350b3f86b17604bb47720",
+            "extractSha256": "76fb338716416731b1957bba0ea97d96637c693c3712446ef96a4fcf6851a53f"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "mindfulness",
+            "secular"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "treatment": "verbatim-normalized",
+          "wordCount": 33,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Keep each object with its complete explanation",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "0f5b8088d7d0ddad04170f7072ecca824c9fd953d30b95485fa2194e5ec5252d",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "A Second Passover Seder Plate with Seven Additions",
+            "sourcePresented": null,
+            "readerCredit": "From A Second Passover Seder Plate with Seven Additions by Isaac Gantwerk Mayer."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "mayer-ashkenaz",
+      "title": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+      "creator": "Isaac Gantwerk Mayer",
+      "primaryUrl": "https://opensiddur.org/?p=61266",
+      "authoritativeFileUrl": "https://archive.org/details/haggadah-for-any-year-5786-isaac-gantwerk-mayer-2026",
+      "family": "traditional-liturgical",
+      "voiceTags": [
+        "comprehensive",
+        "liturgical",
+        "comparative",
+        "traditional"
+      ],
+      "audienceTags": [
+        "adult",
+        "family",
+        "ritually-familiar"
+      ],
+      "themeTags": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "traditional",
+        "nonpartisan",
+        "varied-inserts"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": true,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Creator-shared open edition",
+        "license": "CC-BY-SA-4.0",
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Mayer Ashkenaz Haggadah 2026.pdf",
+        "sha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "pageCount": 83,
+        "extractFile": "research/source-extracts/mayer-ashkenaz.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862",
+        "extractCharacters": 255595,
+        "officialSnapshotSha256": "fa6f41d96482c35a6ea2f49c847d43f5004e7e8e1822d16a46f144048ccbc3f6",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "mayer-maggid-take-turns",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "exactText": "For the next portion, we will go around the table, each person reading a paragraph in whichever language they prefer, up until the end of the normative four children text.",
+          "locator": {
+            "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+            "sourceLocation": "PDF p. 8 (printed Hebrew p. ח), Maggid",
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "treatment": "verbatim-normalized",
+          "wordCount": 30,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Review separately sourced additions item by item",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "155ff2285b8e50753b480701c67391003d86d97f4b4f719c6c10632969102329",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+          }
+        },
+        {
+          "id": "mayer-hallel-number-challenge",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "exactText": "Now the alternate challenge — We’re going to make our own! Going round the table, we will count up from one to thirteen, thinking of something else (preferably but not necessarily Jewish content) that fits that number. After each number, we will respond, together, singing everything we’ve come up with. By the end we’ll have to remember them all!",
+          "locator": {
+            "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+            "sourceLocation": "PDF p. 63, Hallel number challenge",
+            "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+            "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+            "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862"
+          },
+          "sectionIds": [
+            "hallel"
+          ],
+          "themes": [
+            "family-storytelling",
+            "traditional",
+            "secular"
+          ],
+          "audience": [
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "treatment": "verbatim-normalized",
+          "wordCount": 59,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Isaac Gantwerk Mayer",
+              "Review separately sourced additions item by item",
+              "Indicate changes and preserve ShareAlike terms"
+            ]
+          },
+          "provenanceHash": "16cf930dfd7d3436a723178cf0f46f4388b2efac5965d736a35a9ce07867e2a5",
+          "attribution": {
+            "creator": "Isaac Gantwerk Mayer",
+            "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "english-jews-seder",
+      "title": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+      "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+      "primaryUrl": "https://opensiddur.org/?p=4609",
+      "authoritativeFileUrl": "https://github.com/aharonium/opensiddur.org/blob/master/posts/miscellanea/traditions/ritual-of-the-seder-and-the-agada-of-the-english-jews-before-the-expulsion_(4609).json",
+      "family": "historical-cultural",
+      "voiceTags": [
+        "academic",
+        "medieval-history",
+        "documentary",
+        "formal"
+      ],
+      "audienceTags": [
+        "adult",
+        "specialist",
+        "historical"
+      ],
+      "themeTags": [
+        "traditional",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "historical",
+        "nonpartisan"
+      ],
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 1,
+      "rights": {
+        "basis": "Public-domain 1892 study with open transcription",
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": false
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "official-source-snapshot",
+        "localFile": "research/source-materials/official-json/english-jews-seder.opensiddur.json",
+        "sha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "pageCount": null,
+        "extractFile": "research/source-extracts/english-jews-seder.txt",
+        "extractMode": "official-opensiddur-snapshot",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "extractCharacters": 26103,
+        "officialSnapshotSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "english-jews-history-page",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "exactText": "Jacob b. Jehuda of London, the author of that valuable contribution to the literary side of Anglo-Jewish history, the Talmudical compendium Etz Chaim, so providentially rescued and preserved for us, never dreamt, when he noted down, in the year 1287, the Ritual and Agada of the Seder Nights according to English usage, that he was fixing a permanent picture of what was doomed to destruction, and was recording not a mere portion of the liturgy, but a page of Jewish history.",
+          "locator": {
+            "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+            "sourceLocation": "Official Open Siddur snapshot post 4609, opening historical essay",
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 81,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain + CC-BY-SA-4.0 transcription",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Dávid Kaufmann and Aharon N. Varady",
+              "Preserve transcription license and indicate changes"
+            ]
+          },
+          "provenanceHash": "8b4ddeaf0095c8a41d2ead7cdef5bad3521f7ab9ed2687134892ddca62bccc46",
+          "attribution": {
+            "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+            "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+            "sourcePresented": null,
+            "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+          }
+        },
+        {
+          "id": "english-jews-charoset",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "exactText": "In England, all the fruits named in the Song of Songs—dates, figs, pomegranates, nuts and apples—were crushed with almonds and moistened with vinegar.",
+          "locator": {
+            "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+            "sourceLocation": "Official Open Siddur snapshot post 4609, charoset custom",
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7"
+          },
+          "sectionIds": [
+            "maror"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain + CC-BY-SA-4.0 transcription",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Dávid Kaufmann and Aharon N. Varady",
+              "Preserve transcription license and indicate changes"
+            ]
+          },
+          "provenanceHash": "5a09174e711be3798a0594a031ae80aca541982c6a067f847ba355419eb5f502",
+          "attribution": {
+            "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+            "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+            "sourcePresented": null,
+            "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "rittangel-latin",
+      "title": "Liber Rituum Paschalium",
+      "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+      "primaryUrl": "https://opensiddur.org/?p=19649",
+      "authoritativeFileUrl": "https://commons.wikimedia.org/wiki/File:Liber_Rituum_Paschalium.pdf",
+      "family": "historical-cultural",
+      "voiceTags": [
+        "antiquarian",
+        "Latin",
+        "early-modern",
+        "scholarly"
+      ],
+      "audienceTags": [
+        "adult",
+        "specialist",
+        "historical"
+      ],
+      "themeTags": [
+        "traditional",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "historical",
+        "nonpartisan"
+      ],
+      "compatibleFamilies": [
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights",
+        "family-feminist"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 1,
+      "rights": {
+        "basis": "Public-domain 1644 work with open transcription",
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": false
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Rittangel Liber Rituum Paschalium 1644.pdf",
+        "sha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "pageCount": 78,
+        "extractFile": "research/source-extracts/rittangel-latin.txt",
+        "extractMode": "internet-archive-djvu-ocr+official-dayenu-transcription",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "extractCharacters": 110761,
+        "officialSnapshotSha256": "d526da44be08583b4bc645b4b9ba2b14b1074a467f3b6315d3e856db9606d202",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "rittangel-dayenu-latin",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "exactText": "Si enim eduxisset nos ex Ægypto Et non fecisset de eis judicia, sufficeret nobis:",
+          "locator": {
+            "edition": "Liber Rituum Paschalium",
+            "sourceLocation": "Open Siddur Dayenu transcription post 36451; visually cross-checked against scan PDF p. 27 (printed p. 19)",
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 14,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain + CC-BY-SA-4.0 transcription",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Johann Stephan Rittangel and Aharon N. Varady",
+              "Do not silently modernize OCR or translation"
+            ]
+          },
+          "provenanceHash": "49256ef6f543c5ca2c78b09d3e830980a7cdb0b9ff613885c4f35b907b9878d1",
+          "attribution": {
+            "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+            "containingSource": "Liber Rituum Paschalium",
+            "sourcePresented": null,
+            "readerCredit": "From Johann Stephan Rittangel’s 1644 Liber Rituum Paschalium; transcription by Aharon N. Varady for Open Siddur (CC BY-SA 4.0)."
+          }
+        },
+        {
+          "id": "rittangel-dayenu-hebrew",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "exactText": "אִלּוּ הוֹצִיאָנוּ מִמִּצְרַיִם. וְלֹא עָשָׂה בָהֶם שְׁפָטִים דַּיֵּנוּ׃",
+          "locator": {
+            "edition": "Liber Rituum Paschalium",
+            "sourceLocation": "Open Siddur Dayenu transcription post 36451; visually cross-checked against scan PDF p. 27 (printed p. 19)",
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 8,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain + CC-BY-SA-4.0 transcription",
+            "materialKind": "traditional-liturgy",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Johann Stephan Rittangel and Aharon N. Varady",
+              "Do not silently modernize OCR or translation"
+            ]
+          },
+          "provenanceHash": "ceb4a57d6e0653a2372f704aee88cfb5bf3a5b8d3f5e83f9bd40cf433dc63ff6",
+          "attribution": {
+            "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+            "containingSource": "Liber Rituum Paschalium",
+            "sourcePresented": null,
+            "readerCredit": "From Johann Stephan Rittangel’s 1644 Liber Rituum Paschalium; transcription by Aharon N. Varady for Open Siddur (CC BY-SA 4.0)."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "levy-home-service",
+      "title": "Haggadah or Home Service for the Festival of Passover",
+      "creator": "J. Leonard Levy",
+      "primaryUrl": "https://opensiddur.org/?p=62228",
+      "authoritativeFileUrl": "https://archive.org/details/haggadah-or-home-service-for-the-festival-of-passover-j-leonard-levy",
+      "family": "historical-cultural",
+      "voiceTags": [
+        "formal-English",
+        "historical-Reform",
+        "home-service",
+        "universalist"
+      ],
+      "audienceTags": [
+        "adult",
+        "family",
+        "historical"
+      ],
+      "themeTags": [
+        "traditional",
+        "secular",
+        "interfaith"
+      ],
+      "politicalFramingTags": [
+        "civic",
+        "universalist",
+        "historical"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 2,
+      "rights": {
+        "basis": "Public-domain 1896 edition",
+        "license": "public-domain",
+        "conditions": [
+          "Credit J. Leonard Levy and the digitization",
+          "Review dated assumptions before contemporary use"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": false
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Levy Home Service 1896.pdf",
+        "sha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+        "pageCount": 44,
+        "extractFile": "research/source-extracts/levy-home-service.txt",
+        "extractMode": "pdf-text-layer",
+        "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c",
+        "extractCharacters": 71406,
+        "officialSnapshotSha256": "4473ec5f0371a483339fe2babb7a14f5b073ef5f79e6327eb64e4e0d1cd4635f",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "levy-maggid-forced-labor",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "exactText": "They were made slaves, to labor without hope of reward, to toil without opportunity for rest.",
+          "locator": {
+            "edition": "Haggadah or Home Service for the Festival of Passover",
+            "sourceLocation": "PDF p. 7, Maggid",
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c"
+          },
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "treatment": "verbatim-normalized",
+          "wordCount": 16,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit J. Leonard Levy and the digitization",
+              "Review dated assumptions before contemporary use"
+            ]
+          },
+          "provenanceHash": "bb057945667c2c2cc0e81f7985a921da68b54607ff42073b509c79b1934b6a50",
+          "attribution": {
+            "creator": "J. Leonard Levy",
+            "containingSource": "Haggadah or Home Service for the Festival of Passover",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+          }
+        },
+        {
+          "id": "levy-nirtzah-fellow-people",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "exactText": "May we employ our days on earth wisely, devoting ourselves to all causes that tend to better the conditions of our fellow-men. Loving one another, aiding one another, and trusting faithfully in Thee, may we peacefully spend our allotted days on earth and look forward fearlessly to the eternal beyond.",
+          "locator": {
+            "edition": "Haggadah or Home Service for the Festival of Passover",
+            "sourceLocation": "PDF p. 44, Nirtzah",
+            "localExtract": "research/source-extracts/levy-home-service.txt",
+            "sourceSha256": "947d96250c26536f2aca41993875d2364078a2aefe3fdb6de7cef5884eb681b1",
+            "extractSha256": "aef8818f6add53c8cf570b87a9766b0cccf4f629556255e512ee40abee8b015c"
+          },
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "themes": [
+            "interfaith",
+            "social-justice",
+            "family-storytelling",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "closing-reflection",
+          "treatment": "verbatim-normalized",
+          "wordCount": 50,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "public-domain",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit J. Leonard Levy and the digitization",
+              "Review dated assumptions before contemporary use"
+            ]
+          },
+          "provenanceHash": "e4117cc82f32c4887bcd9e8c3726b42026f026ac73c7df0aa82ae5f7a6a37f81",
+          "attribution": {
+            "creator": "J. Leonard Levy",
+            "containingSource": "Haggadah or Home Service for the Festival of Passover",
+            "sourcePresented": null,
+            "readerCredit": "From Haggadah or Home Service for the Festival of Passover by J. Leonard Levy."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "barros-basto",
+      "title": "Hagadah shel Pessah",
+      "creator": "Artur Carlos de Barros Basto",
+      "primaryUrl": "https://opensiddur.org/?p=52004",
+      "authoritativeFileUrl": "https://archive.org/details/hagadah-shel-pessah-artur-carlos-de-barros-basto-1928",
+      "family": "historical-cultural",
+      "voiceTags": [
+        "Portuguese",
+        "historical",
+        "traditional",
+        "cultural"
+      ],
+      "audienceTags": [
+        "adult",
+        "Portuguese-reading",
+        "historical"
+      ],
+      "themeTags": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "historical",
+        "nonpartisan"
+      ],
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 1,
+      "rights": {
+        "basis": "Public-domain/CC0 edition",
+        "license": "CC0-1.0",
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": false
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "pdf",
+        "localFile": "research/source-materials/Barros Basto Hagadah 1928.pdf",
+        "sha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "pageCount": 44,
+        "extractFile": "research/source-extracts/barros-basto.txt",
+        "extractMode": "internet-archive-djvu-ocr",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "extractCharacters": 54698,
+        "officialSnapshotSha256": "fef864bd9e5df3669c24d499e6d82765265fc6919f8e1fae4ee7dc3946e681f0",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "barros-kadesh-mnemonic",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "exactText": "A ordem ou maneira de cumprir estas cerimonias está indicada nos seguintes versos mnemónicos: Kadesh Urh'ats: Karpas Yah'ats: Magid Rah'tsah: Motsi Matsah: Maror Korekh: Shulh'an Orekh: Tsafun Barekh: Hallel Nirtsah:",
+          "locator": {
+            "edition": "Hagadah shel Pessah",
+            "sourceLocation": "PDF p. 7 (printed p. 5), order of the Seder",
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3"
+          },
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 30,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC0-1.0",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Barros Basto and the digitization where practical",
+              "Treat OCR-only text as review-required"
+            ]
+          },
+          "provenanceHash": "697825a64674eed02e58a0b3e7abdc10eafbb6bcff3bd906fa7c6849dfc4e0c8",
+          "attribution": {
+            "creator": "Artur Carlos de Barros Basto",
+            "containingSource": "Hagadah shel Pessah",
+            "sourcePresented": null,
+            "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+          }
+        },
+        {
+          "id": "barros-karpas-greens",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "exactText": "Na terceira bandeja põe-se alface, salsa, ou folhas verdes de aipo.",
+          "locator": {
+            "edition": "Hagadah shel Pessah",
+            "sourceLocation": "PDF p. 7 (printed p. 5), plate preparation",
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3"
+          },
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "treatment": "verbatim-normalized",
+          "wordCount": 11,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC0-1.0",
+            "materialKind": "public-domain",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit Barros Basto and the digitization where practical",
+              "Treat OCR-only text as review-required"
+            ]
+          },
+          "provenanceHash": "b04e3f40707734f456a31f1855113977bcec72b9fae4ae2b993040d462457eae",
+          "attribution": {
+            "creator": "Artur Carlos de Barros Basto",
+            "containingSource": "Hagadah shel Pessah",
+            "sourcePresented": null,
+            "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+          }
+        }
+      ]
+    },
+    {
+      "sourceId": "battlestar-seder",
+      "title": "The First Battlestar Galactica Seder Haggadah",
+      "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+      "primaryUrl": "https://opensiddur.org/?p=19097",
+      "authoritativeFileUrl": "https://github.com/aharonium/opensiddur.org/blob/master/posts/compilations/table-guides-and-haggadot/passover-seder/the-first-battlestar-galactica-passover-seder-haggadah-2008_(19097).json",
+      "family": "playful-fandom",
+      "voiceTags": [
+        "playful",
+        "referential",
+        "fandom",
+        "secular-cultural"
+      ],
+      "audienceTags": [
+        "adult-fans",
+        "opt-in",
+        "participatory"
+      ],
+      "themeTags": [
+        "secular",
+        "family-storytelling"
+      ],
+      "politicalFramingTags": [
+        "allegorical",
+        "nonpartisan"
+      ],
+      "compatibleFamilies": [
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "contemplative",
+        "traditional-liturgical",
+        "historical-cultural",
+        "justice-human-rights"
+      ],
+      "primarySpineEligible": false,
+      "secondaryPassageCap": 1,
+      "requiresExplicitOptIn": [
+        "battlestar-galactica",
+        "bsg-seder",
+        "galactica-haggadah"
+      ],
+      "rights": {
+        "basis": "Open Siddur edition derived from GNU FDL work",
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ],
+        "runtimeEligible": true,
+        "embeddedMaterialRequiresItemReview": true
+      },
+      "runtimeSpineAvailable": false,
+      "acquisition": {
+        "status": "acquired-verified",
+        "kind": "official-source-snapshot",
+        "localFile": "research/source-materials/official-json/battlestar-seder.opensiddur.json",
+        "sha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "pageCount": null,
+        "extractFile": "research/source-extracts/battlestar-seder.txt",
+        "extractMode": "official-opensiddur-snapshot",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "extractCharacters": 13665,
+        "officialSnapshotSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "verifiedAt": "2026-07-11"
+      },
+      "passages": [
+        {
+          "id": "battlestar-karpas-algae",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "exactText": "The parsley represents the spring time, renewal, the lush verdancy of our home world, Ḳobol. Also, the algae slop we have been eating for the past three years.",
+          "locator": {
+            "edition": "The First Battlestar Galactica Seder Haggadah",
+            "sourceLocation": "Official Open Siddur snapshot post 19097, Seder Plate / The Green",
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684"
+          },
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "treatment": "verbatim-normalized",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0 + GFDL provenance",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit all compilers and Open Siddur",
+              "Use only with explicit fandom opt-in",
+              "Review franchise quotations and images separately"
+            ]
+          },
+          "provenanceHash": "e47614bf7208ec5277a76246feed627482d8a818cf265a3dd00b8afd5d2270b8",
+          "attribution": {
+            "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+            "containingSource": "The First Battlestar Galactica Seder Haggadah",
+            "sourcePresented": null,
+            "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+          }
+        },
+        {
+          "id": "battlestar-fourth-cup-fellowship",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "exactText": "The fourth cup is the cup of fellowship. We must always remember our responsibility to this fleet and to the survival of the human race.",
+          "locator": {
+            "edition": "The First Battlestar Galactica Seder Haggadah",
+            "sourceLocation": "Official Open Siddur snapshot post 19097, Fourth Cup",
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684"
+          },
+          "sectionIds": [
+            "hallel"
+          ],
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "treatment": "verbatim-normalized",
+          "wordCount": 25,
+          "approvalStatus": "approved",
+          "rights": {
+            "runtimeEligible": true,
+            "license": "CC-BY-SA-4.0 + GFDL provenance",
+            "materialKind": "creator-authored",
+            "sourcePresentedAttributionRequired": false,
+            "conditions": [
+              "Credit all compilers and Open Siddur",
+              "Use only with explicit fandom opt-in",
+              "Review franchise quotations and images separately"
+            ]
+          },
+          "provenanceHash": "bcb8a497c0e765fed6ed5fdd2b9fa70d822ff02bc7a502f21aab292e8ded288e",
+          "attribution": {
+            "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+            "containingSource": "The First Battlestar Galactica Seder Haggadah",
+            "sourcePresented": null,
+            "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+          }
+        }
+      ]
+    }
+  ]
+}

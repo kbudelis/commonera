@@ -1,0 +1,661 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "freedom-seder-earth",
+  "sourceTitle": "The Freedom Seder for the Earth",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Attribute Waskow and The Shalom Center",
+      "Preserve source-presented credits and ShareAlike notice"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=8852"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-freedom-earth-seder-history",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "title": "From spring festival to Freedom Seder",
+      "exactText": "Introductory Notes In every generation, Pharaoh. In every generation, Freedom. About three thousand years ago, ancient Israelites fused a shepherds’ spring celebration of the birthing of lambs and a farmers’ spring celebration of the sprouting of barley into a spring celebration of their liberation from slavery and the downfall of a tyrant at the hands of YHWH, the Breath of Life. They celebrated the overthrow of tyrants by gathering a million strong, bringing barley-bread and newborn lambs to the Temple in Jerusalem. About two thousand years ago, the Jewish people reshaped that celebration into a Seder, a story and meal that could be eaten and told at home. The Passover story and celebration entered the memory stream of Christianity as well, through the Palm Sunday demonstrations of a group of Jews who came to ancient Jerusalem one spring, part of the general Jewish ferment against the Roman Empire.\n\nThis particular group was led by Jesus, waving palm branches as a symbol of resistance. It entered Christianity more deeply still through the teachings of Jesus in the Last Supper, which seems to have been a Passover Seder. Still later, Islam welcomed Moses as a prophet, as it is written: “In the name of Allah, most benevolent, ever-merciful. These are the verses of the illuminating Book. We narrate to you from the history of Moses and Pharaoh in all verity, for those who believe. The Pharaoh became high and mighty in the land, and divided the people into different classes. He impoverished one class, slaying its males and sparing its women, for he was indeed a tyrant. We [God] wished him to favor those who were weak in the land and make them leaders and heirs and establish them in the country. ” (Al-Quran, 28: 1-6; Ahmed Ali translation) In modern times, the experience of slavery for African-Americans and their hope of liberation were crystallized into dozens of songs and thousands of sermons about the Exodus of ancient Israelites from slavery. In 1968, Dr. Martin Luther King was planning to take part in a Passover Seder with the family of Rabbi Abraham Joshua Heschel, who marched and prayed and struggled alongside him against racism and 1\n\nmilitarism in America. But ten days before the Seder, Dr. King was murdered, called across a different river to a different Land of Promise. His death called forth a Black uprising in many American cities, followed by the U.S. Army’s armed occupation of many inner-city communities, including my neighborhood in Washington DC. Walking past the troops as I prepared for that Passover 41 years ago, I was overwhelmed to find myself feeling and thinking, “This is Pharaoh’s Army!” That experience renewed and transformed my own understanding of the Seder. I felt myself called to write a Freedom Seder that would celebrate the freedom struggles of Black America and of other peoples alongside the Jewish tale of liberation. It was published in Ramparts magazine and as a tiny pocket-sized book in 1969, illustrated by Lloyd McNeill, a Black artist-activist.\n\nOn April 4, 1969, the first anniversary of Dr. King’s death and the third night of Passover that year, a group called Jews for Urban Justice sponsored the first Freedom Seder. It was held in the basement of Lincoln Congregational Temple, the oldest African American Congregational Church in Washington, DC. About 800 people—Blacks, Jews, white Christians—took part. The Seder was broadcast in New York by WBAI and across Canada by the CBC. In 1970, the Freedom Seder was published by Holt Rinehart Winston. It was celebrated by about 4,000 people in the Cornell University Fieldhouse, providing an opportunity for the brief liberation from underground of Father Daniel Berrigan, an anti-war resister who was being pursued by the FBI.",
+      "segmentIds": [
+        "research-freedom-seder-earth-p8-bd67d0af0147",
+        "research-freedom-seder-earth-1em-1de59ac0302c",
+        "research-freedom-seder-earth-2dm-05642e20595f",
+        "research-freedom-seder-earth-31d-5849ac5e2a52"
+      ],
+      "sourceLocation": "PDF p. 2, segment 2 through PDF p. 3, segment 2",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 2, segment 2 through PDF p. 3, segment 2",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "componentLocators": [
+          {
+            "id": "research-freedom-seder-earth-p8-bd67d0af0147",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 908,
+            "normalizedEndOffset": 1821
+          },
+          {
+            "id": "research-freedom-seder-earth-1em-1de59ac0302c",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 1822,
+            "normalizedEndOffset": 3081
+          },
+          {
+            "id": "research-freedom-seder-earth-2dm-05642e20595f",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 3082,
+            "normalizedEndOffset": 3936
+          },
+          {
+            "id": "research-freedom-seder-earth-31d-5849ac5e2a52",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 3937,
+            "normalizedEndOffset": 4670
+          }
+        ]
+      },
+      "provenanceHash": "351a7c07437a2d44768ced96a2601ca4979247d344c86289bad336d67fed1e41",
+      "componentProvenanceHashes": [
+        "bd67d0af01470335dbf0d43a9c03778e67caa3ef03fc2b35f09efe71736f83cb",
+        "1de59ac0302cc4a52221aef9078c78cd9687cb9aed0005e737402c76d643ba4c",
+        "05642e20595fe86611c610c6acaeaac7b5dddee30533351cca6281bca503b752",
+        "5849ac5e2a5254f1dc2f2c9917184143fe8fd257508b240ef1541acecfb80316"
+      ],
+      "wordCount": 620,
+      "characterCount": 3765,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "interfaith",
+        "social-justice",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce this as the source author's account of how Passover imagery traveled through Jewish, Christian, Muslim, and Black freedom traditions, and explain that the sequence ends with the first 1969 Freedom Seder.",
+      "rationale": "The four passages form one chronological narrative from ancient spring practices through Exodus traditions and the civil-rights era to the first Freedom Seder.",
+      "creditNotes": "Credit Rabbi Arthur Waskow and The Shalom Center; preserve the Ahmed Ali Qur'an translation attribution and the named historical figures.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-translation-attribution-review",
+        "interfaith-or-social-justice-theme-only",
+        "present-origin-claims-as-source-authors-framing"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-freedom-earth-miriam-water-creativity",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "title": "Miriam's water and creative freedom",
+      "exactText": "[All say together:] Barukh atah YHWH elohenu ruakh ha-olam boray p’ri hagafen. Blessed are You, Whose interwoven Breath of Life breathes forth the fruit of the vine. [We drink from the second cup, the cup of resistance.] Third cup, Creativity: envisioning the new world. [Pour Miriam’s Cup, a cup of water because waters birth new possibility.] African Americans come from a uniquely American culture rooted in the even more ancient traditions of West and Central Africa. Among the Yoruba people of Nigeria, Togo and Benin it is said, “Those who make themselves an enemy of water, make themselves an enemy of life. ” The African tradition honors the relationship between civilization and nature, between human beings and the earth.\n\nAfrican proverbial wisdom and traditional knowledge teach us not only to refrain from poisoning our water sources with pollution, but to let the land and seas rest on sacred days, to take only what is necessary and to honor the sources of our substance. Their descendants brought this sense of the sacred to America where they saw holiness when they went down to the river, sought the Spirit in the Wilderness, and used nature to gain their freedom from human hands. The environment has been our shelter, our home, and our refuge. Those who make themselves an enemy of God’s creation, make themselves an enemy of life. —Michael Twitty [Someone reads:] As a child, Miriam reached out to Pharaoh’s daughter to save the life of her baby brother Moses; together they crossed boundaries of class and race and nation to give a new birth to freedom.\n\nAs a grown woman, she led the women in rejoicing as the Red Sea waters broke and the birthing went forward. She had the courage to rebuke Moses; and she called forth the well of water that nourished the runaway slaves in the wilderness. Miriam: The Red Sea High above shores and times, I on the shore forever and ever. Moses my brother has crossed over to milk, honey, that holy land. Building Jerusalem. I sing forever on the seashore. I do remember horseman and horses, waves of passage poured into war, all poured into journey. My unseen brothers have gone over, chariots deep seas under. I alone stand here ankle-deep and I sing, I sing, until the lands sing to each other. —Muriel Rukeyser 15",
+      "segmentIds": [
+        "research-freedom-seder-earth-uek-3c2087bd497c",
+        "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+        "research-freedom-seder-earth-vmb-ce7c6531aa9e"
+      ],
+      "sourceLocation": "PDF p. 16, segment 1 through PDF p. 16, segment 3",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 16, segment 1 through PDF p. 16, segment 3",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "componentLocators": [
+          {
+            "id": "research-freedom-seder-earth-uek-3c2087bd497c",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 39404,
+            "normalizedEndOffset": 40135
+          },
+          {
+            "id": "research-freedom-seder-earth-uyw-ca5e2e6978e7",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 40136,
+            "normalizedEndOffset": 40978
+          },
+          {
+            "id": "research-freedom-seder-earth-vmb-ce7c6531aa9e",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 40979,
+            "normalizedEndOffset": 41676
+          }
+        ]
+      },
+      "provenanceHash": "4fcb84492af354e9c01d5175f9753274a4ef518d62d984458531853ee584b114",
+      "componentProvenanceHashes": [
+        "3c2087bd497c08e3ade3f9ec652f99d8f031371e0e458d2ac1fa212fca55bad8",
+        "ca5e2e6978e781d935b5d37a5f85d4cd08df18e51d156c37cacc417b156e0d8e",
+        "ce7c6531aa9e2a7cb811c9519cc2cc780179f2c88321070916bbe2e5b3ea982a"
+      ],
+      "wordCount": 391,
+      "characterCount": 2274,
+      "sectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "feminist",
+        "environment",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Miriam's Cup is filled with water in honor of Miriam, whose well sustained the Israelites in the wilderness; identify the passage as an interfaith and diasporic meditation on water.",
+      "rationale": "The sequence moves from a cup ritual to African diasporic water wisdom, then to Miriam's actions and a poem, maintaining water as the organizing image throughout.",
+      "creditNotes": "Credit The Shalom Center, Michael Twitty, and Muriel Rukeyser on the final sources page, preserving the source's placement of their contributions.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-universalize-distinct-african-traditions",
+        "embedded-poem-and-proverb-attribution-review",
+        "feminist-environment-or-interfaith-theme-only",
+        "preserve-michael-twitty-and-muriel-rukeyser-credits"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-freedom-earth-matzah-maror-charoset",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "title": "Three tastes of transformation",
+      "exactText": "Symbols Of Transformation, Old and New [Someone says/does each of the following. One participant lifts up the matzah, showing it to the celebrants, and says:] Why do we eat this flat, unleavened matzah? Because the decision to act came upon our forebears so quickly that their dough had not yet risen when You, the Breath of Life, bore them to freedom through a hurricane of transformation. [All say:] Blessed are You, Yah, Breath of Life, who makes us holy by connecting us with all of life, and has breathed into us the wisdom to transform this unleavened, pressed-down bread of the poor into the bread of liberation. Barukh atah YHWH elohenu ruakh ha-olam asher kidshanu b’mitzvotav vitzivanu al akhilat matzah. [Participant lifts up the bitter herbs, showing them to the celebrants.] These bitter herbs we eat, what is the reason for them?\n\nBecause being forced into tight and narrow places cramps the abundance and creativity of all of life and makes life bitter. [All say:] Blessed are You, YHWH our God, Breathing Spirit of the universe, who makes us holy by connecting us to the eating of herbs so bitter they take away our breath. Barukh atah YHWH elohenu ruakh ha-olam asher kidshanu b’mitzvotav vitzivanu al akhilat maror. [All eat the bitter herb.] Why this charoset? Because charoset embodies the Song of Songs, bringing nuts and raisins, apricots and apples, spice and juices, into a joyful celebration of the earth and springtime and each other. Why do we eat the bitter herbs and the charoset together? Because in times of freedom it is necessary to remember the bitterness of slavery and in times of slavery it is necessary to remember the sweetness of freedom.",
+      "segmentIds": [
+        "research-freedom-seder-earth-w5p-5fd6456ca882",
+        "research-freedom-seder-earth-wt5-ead8f4bf0802"
+      ],
+      "sourceLocation": "PDF p. 17, segment 1 through PDF p. 17, segment 2",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 17, segment 1 through PDF p. 17, segment 2",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "componentLocators": [
+          {
+            "id": "research-freedom-seder-earth-w5p-5fd6456ca882",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 41677,
+            "normalizedEndOffset": 42520
+          },
+          {
+            "id": "research-freedom-seder-earth-wt5-ead8f4bf0802",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 42521,
+            "normalizedEndOffset": 43354
+          }
+        ]
+      },
+      "provenanceHash": "0f361b541ac44279ea785076cfb41498c76959a3e2c23e6d193bf1efe579a180",
+      "componentProvenanceHashes": [
+        "5fd6456ca882262c019b92294071072cb21e994098a78c12b40201a0d4cfad1c",
+        "ead8f4bf0802cccad938179af7bcf737c5338fce6ba567c02f317aa83c934ea5"
+      ],
+      "wordCount": 284,
+      "characterCount": 1678,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "environment",
+        "traditional",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Place the matzah, bitter herb, and charoset where everyone can see them; tell guests when to lift and taste each item and define charoset as the sweet fruit-and-nut mixture on the Seder plate.",
+      "rationale": "These passages give a complete sensory progression from matzah to maror to charoset and explain how bitter memory and sweet possibility coexist at the table.",
+      "creditNotes": "Credit Rabbi Arthur Waskow, The Shalom Center, and The Freedom Seder for the Earth on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "confirm-allergy-safe-charoset-alternative-in-host-guide",
+        "do-not-rewrite-blessings-as-direct-quotations",
+        "retain-source-theology-with-plain-language-introduction"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-freedom-earth-dayenu-to-action",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "title": "An unfinished Dayenu and embodied action",
+      "exactText": "[All read:] How many and how hard are the tasks the Redeemer has set before us! If we were to free the peoples of the world, but not to beat the swords of every nation into plowshares, it would not be enough for us. If we were to beat the swords of every nation into plowshares, but not to share our food and end all hunger, it would not be enough for us. If we were to share our food and end all hunger, but not to cleanse our earth and air of poison, it would not be enough for us. If we were to cleanse our earth and air of poison, but not to turn to wind and sun for energy, it would not be enough for us. If we were to turn to wind and sun for energy, But not to set aside some time for love and laughter, it would not be enough for us Then how great, doubled and redoubled, are the claims the Breath of Life makes upon our effort! You call us to struggle, work, share, give, think, plan, organize, sit-in, speak out, dream, hope, and pray for the great Redemption: to end the oppression of all peoples, 20\n\nto prevent the extinction of a million species, to shape a planet joyful in our shared abundance, to turn to wind and sun for energy, and to set aside some time for love and laughter, All these! [Someone reads:] “Before entering…the Hajj [Pilgrimage to Mecca], which is the beginning of a great change and revolution, you must declare your intention. It is the intention of a ‘transferral’ from your house to the house of people, from life to love, from the self to Allah, from slavery to freedom, from racial discrimination to equality, sincerity and truth, from being clothed to being naked, from a daily life to an eternal life and from selfishness and aimlessness to devotion and responsibility. ” —Ali Shariati, Hajj “One of the most powerful, and deeply spiritual, ways to work for social change is for us to take action in the present that embodies—right now!—the future vision that we seek.\n\n“Forty years ago, the sit-in movement had a vision of the future: integrated restaurants. The sit-ins did not beg legislators to change the law. They did not attack the restaurant-owners. They went, Black and white together, to integrate them. “What happened next was up to the owners and the police. They could accept integration, they could beat people up, they could put them in jail, they could kill them, they could change the law. They did all those things, but mostly, ultimately, people changed the law. “The vision of new possibility was not left in the hands of visionaries, for it was embodied in defiant love. It made real the spiritual teaching that the means and the ends are indivisible, for it made the ends themselves into the means, not in a far-off future but in Now.\n\nAnd it gave actual faces to the ‘issue. ’ It was no longer a matter of courts and law books but of real live students, restaurant-owners, waitresses, police. So the public responded. The sit-ins seeded a fruitful Ame rican politics that is still nourishing us, even in days of Imperial War and Insatiable Wealth. ” —Rabbi Arthur Ocean Waskow [All sing:] O Freedom! O Freedom! O Freedom over me! And before I’d be a slave I’d be buried in my grave And go home to my Lord and be free! No more killing... No more hunger... No more pollution..., etc. [Someone says:] We join at the time of Passover to connect our separate stories in the telling of new freedom. Our telling cannot end tonight. We must name and number the different tribes to carry on the journey.\n\nWe have a wilderness of change to cross before we can enter a new time of greater justice, greater freedom, greater peace, and deeper healing. To begin this process, on this very night we will exchange our addresses and we will talk about the actions we feel drawn to take. [Hand around a paper for name, organization, address, phone, email. Seder hosts start the process by suggesting an action, inviting every person to write a letter to a designated Senator, Representative or newspaper letters editor, proposing some action in the spirit of the Seder for liberating human beings and the earth. Collect the letters and send them following the Seder to the designated recipient.] 21",
+      "segmentIds": [
+        "research-freedom-seder-earth-13sb-e62c1465e0e3",
+        "research-freedom-seder-earth-14kf-5d2564beb27e",
+        "research-freedom-seder-earth-159e-e37267cff759",
+        "research-freedom-seder-earth-15v9-4be9570a638a",
+        "research-freedom-seder-earth-16gd-d0385eb2170a"
+      ],
+      "sourceLocation": "PDF p. 21, segment 2 through PDF p. 22, segment 4",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 21, segment 2 through PDF p. 22, segment 4",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "componentLocators": [
+          {
+            "id": "research-freedom-seder-earth-13sb-e62c1465e0e3",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 51563,
+            "normalizedEndOffset": 52574
+          },
+          {
+            "id": "research-freedom-seder-earth-14kf-5d2564beb27e",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 52575,
+            "normalizedEndOffset": 53473
+          },
+          {
+            "id": "research-freedom-seder-earth-159e-e37267cff759",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 53474,
+            "normalizedEndOffset": 54260
+          },
+          {
+            "id": "research-freedom-seder-earth-15v9-4be9570a638a",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 54261,
+            "normalizedEndOffset": 55020
+          },
+          {
+            "id": "research-freedom-seder-earth-16gd-d0385eb2170a",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 55021,
+            "normalizedEndOffset": 55705
+          }
+        ]
+      },
+      "provenanceHash": "860a2c5ba8c6447c0894b018318316d161bcc50739c419f63340b57d8d0b8abd",
+      "componentProvenanceHashes": [
+        "e62c1465e0e3565c78768c5e8e505ec4c128185b21af9ba8fd0d68a08f17bcac",
+        "5d2564beb27e3731907604c6cd1914e77e6df827b450783e8a38bcb3b2c4421f",
+        "e37267cff7599175d29c9ad7877265ddc6b492bd6523b927acc1f320f9a658b7",
+        "4be9570a638a17da6bc9dc997ad49e4a4f54905405526be54adeda52842bdcfb",
+        "d0385eb2170aff9f3c49c812f845bed1fd83e16177a5183e40d4cde4d1568c91"
+      ],
+      "wordCount": 749,
+      "characterCount": 4146,
+      "sectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Explain Dayenu as a cumulative song meaning 'it would have been enough,' then tell guests that this adaptation deliberately answers that justice work is not complete after any single achievement.",
+      "rationale": "The sequence carries one argument from an ecological and social-justice Dayenu, through interfaith intention and civil-rights sit-ins, to choosing a concrete action after the Seder.",
+      "creditNotes": "Credit The Shalom Center, Ali Shariati, Rabbi Arthur Waskow, and the source-presented song writers or traditions on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-dated-lobbying-targets-as-current",
+        "embedded-hajj-translation-and-song-attribution-review",
+        "historical-2009-activist-workshop-opt-in",
+        "replace-address-collection-instruction-with-privacy-safe-voluntary-action"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-freedom-earth-elijah-afikoman-praise",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "title": "Elijah, the afikoman, and responsibility",
+      "exactText": "[At each table, someone pours juice from the Cup of Elijah, sitting untasted in the center of the table, into each person’s glass. [All say together:] I take responsibility to become the Prophet Elijah, “turning the hearts of the parents to the children and the hearts of the children to the parents, lest the earth be utterly destroyed. ” Barukh atah YHWH elohenu ruakh ha-olam boray p’ri hagafen. Blessed are You, YHWH our God, Who creates the fruit of the vine. [All drink the fourth cup, the cup of personal and communal commitment to action.] “God has allowed me to go up to the mountain. And I’ve looked over, and I’ve seen the Promised Land. I may not get there with you, but I want you to know tonight that we as a people will get to the Promised Land.\n\n—Dr. Martin Luther King, April 3,1968, the night before his death. [All sing:] My Rainbow Race (Chorus:) One blue sky above us One ocean lapping all our shore One earth so green and round Who could ask for more And because I love you I’ll give it one more try To show my rainbow race It’s too soon to die. Some folks want to be like an ostrich, Bury their heads in the sand. Some hope that plastic dreams Can unclench all those greedy hands. Some hope to take the easy way: Poisons, bombs. They think we need ‘em. Don’t you know you can’t kill all the unbelievers? There’s no shortcut to freedom. (Chorus) Go tell, go tell all the little children. Tell all the mothers and fathers too. Now’s our last chance to learn to share What’s been given to me and you. (Chorus) —Pete Seeger By Eating [If there is a full-scale meal at this New Freedom Seder, it is eaten now.] [At the end of the meal the children are invited to hunt for the Afikoman (the piece of matzah that was hidden earlier) and it is redeemed from the children who have found it, since it is necessary to have this taste 22\n\nof matzah as the last taste at the end of the meal. One way of redeeming it is to ask the children to name an organization that is working for social justice, freedom, peace, or healing of the earth, and the adults agree to contribute to that group in accordance with their own means.] [The Afikoman is distributed among the Seder company, and every one eats a bite of it.] By Praising [There are many different traditions of songs to sing, praising the Breath of Life Who brings freedom and justice to birth. Read together:] All living are one and holy, let us remember as we eat, as we work, as we walk and drive. All living are one and holy, we must make ourselves worthy We must act out justice and mercy and healing as the sun rises and as the sun sets, as the moon rises and the stars wheel above us: we must repair goodness.\n\nWe must praise the power of the one that joins us. Whether we plunge in or thrust ourselves far out finally we reach the face of glory too bright for our eyes and yet we burn and we give light. We will try to be holy, we will try to repair the world given to us to hand on. Precious is this treasure of words and knowledge and deeds that moves inside us. Holy is the hand that works for peace and for justice, holy is the mouth that speaks for goodness holy is the foot that walks toward mercy. Let us lift each other on our shoulders and carry each other along. Let holiness move in us. Let us pay attention to its small voice. Let us see the light in others and honor that light.",
+      "segmentIds": [
+        "research-freedom-seder-earth-16ze-df61934ad171",
+        "research-freedom-seder-earth-17kj-dea31e49f52f",
+        "research-freedom-seder-earth-18eq-eb550c0c98d7",
+        "research-freedom-seder-earth-191u-353478cfda34"
+      ],
+      "sourceLocation": "PDF p. 23, segment 1 through PDF p. 24, segment 2",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 23, segment 1 through PDF p. 24, segment 2",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+        "componentLocators": [
+          {
+            "id": "research-freedom-seder-earth-16ze-df61934ad171",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 55706,
+            "normalizedEndOffset": 56466
+          },
+          {
+            "id": "research-freedom-seder-earth-17kj-dea31e49f52f",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 56467,
+            "normalizedEndOffset": 57553
+          },
+          {
+            "id": "research-freedom-seder-earth-18eq-eb550c0c98d7",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 57554,
+            "normalizedEndOffset": 58385
+          },
+          {
+            "id": "research-freedom-seder-earth-191u-353478cfda34",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+            "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+            "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007",
+            "normalizedStartOffset": 58386,
+            "normalizedEndOffset": 59067
+          }
+        ]
+      },
+      "provenanceHash": "f1c55b7b08e7c9d4123994f53cd1e69cc1d384dd4e3da85b63d2fd0580520ce8",
+      "componentProvenanceHashes": [
+        "df61934ad17142d60fb154e77937872206cb28a941d462cfde7e911849339e39",
+        "dea31e49f52f66dca31851302bd1df436fbd4324b60a307ee06dabf50b46bd80",
+        "eb550c0c98d75635a880902b103708e41ff040874d12a445351519c4192c6114",
+        "353478cfda349a587dd017dee91ad0000fd224a035ac100bcb4e33b44a765b40"
+      ],
+      "wordCount": 642,
+      "characterCount": 3364,
+      "sectionIds": [
+        "tzafun",
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "tzafun",
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "social-justice",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain Elijah's Cup, tell children that the afikoman is the hidden matzah they may search for, and state in advance that any donation named in the activity is voluntary and chosen by the adults.",
+      "rationale": "The passages make a coherent closing movement from accepting responsibility, through song and the children's afikoman search, to a communal reading about carrying one another toward justice and mercy.",
+      "creditNotes": "Credit The Shalom Center, Dr. Martin Luther King Jr., Pete Seeger, and the source-presented author of the closing reading on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "children-may-search-but-adults-control-any-donation",
+        "content-note-for-historical-violence-references",
+        "embedded-mlk-pete-seeger-and-poem-attribution-review",
+        "preserve-peace-focused-closing"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

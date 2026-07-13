@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "levy-home-service",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "J. Leonard Levy’s 1896 Reform home service supplies unusually extensive English orientation, a continuous Exodus retelling, parent-child dialogue, freedom ethics, spring imagery, and prayers. Its strongest passages are intelligible and cohesive, but dated theology, gender, race, civic exceptionalism, and historical assumptions require visible contextual framing.",
+  "sourceAssessment": {
+    "voice": "Formal late-nineteenth-century English, historical Reform, domestic, didactic, universalist, dialogic, and often sermon-like.",
+    "bestUses": [
+      "Beginner orientation and a continuous English Exodus account",
+      "Long-form family dialogue about freedom, responsibility, and shared humanity",
+      "Historically framed spring, memory, prayer, and closing selections"
+    ],
+    "beginnerRisks": [
+      "Archaic diction, OCR errors, and long rhetorical paragraphs can tax contemporary readers.",
+      "Male-default language and nineteenth-century claims about religion, race, civilization, and America require review.",
+      "The service sometimes treats one historical Reform theology as a universal Jewish position."
+    ],
+    "politicalContext": "The source’s civic and universalist claims arise from 1896 American Reform Judaism. They must be presented as historical voices, not as contemporary consensus, and American exceptionalism or civilizational hierarchy must not enter default text.",
+    "creditContext": "The edition is public domain. Credit J. Leonard Levy and the digitization, preserve the source title, and disclose abridgment or modern contextual material."
+  },
+  "recommendedSequences": [
+    {
+      "id": "levy-home-service-opening-orientation",
+      "title": "Opening a home Seder",
+      "sectionIds": ["kadesh"],
+      "segmentIds": [
+        "research-levy-home-service-l0-4c02eb21eee9",
+        "research-levy-home-service-1h6-18471b781d00",
+        "research-levy-home-service-233-af2da9c11585",
+        "research-levy-home-service-2sh-0cca13d60720"
+      ],
+      "beginnerContext": "Tell guests that this is an 1896 Reform home service with period-specific gender roles and God language. Name the first cup as wine or grape juice, summarize the gathering’s purpose, and invite readers to substitute inclusive titles or pronouns before reading the historical prayer.",
+      "rationale": "These consecutive pages create a complete opening arc: gathering at home, gratitude for being together, questions about the night, and the parent blessing, stopping before an incomplete page-column transition.",
+      "themes": ["traditional", "family-storytelling", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "historical-gender-and-theology-context-required", "plain-language-action-cue-required"],
+      "creditNotes": "Credit J. Leonard Levy and the digitized 1896 public-domain edition; disclose any abridgment."
+    },
+    {
+      "id": "levy-home-service-exodus-story",
+      "title": "From migration to Moses's demand",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-levy-home-service-44i-f66d1cac9767",
+        "research-levy-home-service-4py-568d807d88e6",
+        "research-levy-home-service-5gg-feaf1ff074f1"
+      ],
+      "beginnerContext": "Introduce this as the opening of one historical retelling, define unfamiliar biblical names as needed, and make clear that this excerpt moves from a migrating family to enslavement and Moses's demand for freedom.",
+      "rationale": "Three adjacent segments answer a child’s request for the history and form a continuous arc through Pharaoh's forced labor and Moses's demand, stopping before a scrambled page-column seam.",
+      "themes": ["traditional", "family-storytelling", "social-justice"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "review-dated-theology-and-gender", "nontriumphalist-plague-framing"],
+      "creditNotes": "Credit J. Leonard Levy; identify the 1896 public-domain home service in the final source list."
+    },
+    {
+      "id": "levy-home-service-human-family",
+      "title": "The human family and brotherly love",
+      "sectionIds": ["maggid", "nirtzah"],
+      "segmentIds": [
+        "research-levy-home-service-9nu-07459f666f9d",
+        "research-levy-home-service-a5k-82aad278bfa5",
+        "research-levy-home-service-b22-cd0fb52b0797",
+        "research-levy-home-service-bm2-abc64193a33b",
+        "research-levy-home-service-cmq-efb8e8cf3053"
+      ],
+      "beginnerContext": "Frame this as a period parable about solidarity and shared human dignity, while noting that its gendered phrase ‘Brotherly Love’ reflects its era.",
+      "rationale": "The source’s question, mountain parable, resolution, and explicit teaching about one human family form a single sustained universalist argument.",
+      "themes": ["interfaith", "social-justice", "family-storytelling"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "review-dated-theology-and-gender", "label-period-universalism"],
+      "creditNotes": "Credit J. Leonard Levy and the public-domain 1896 edition; preserve the historical wording if quoted exactly."
+    },
+    {
+      "id": "levy-home-service-water-and-peace",
+      "title": "Scripture readings of water and peace",
+      "sectionIds": ["hallel", "nirtzah"],
+      "segmentIds": [
+        "research-levy-home-service-fe7-8f3caf749ef9",
+        "research-levy-home-service-fx7-c244313a374c",
+        "research-levy-home-service-gis-a7dbf9753120",
+        "research-levy-home-service-h1w-b1aff098ed98"
+      ],
+      "beginnerContext": "Explain that the source assembles biblical lines around rescue, water, learning, and peace; identify the source as a historical compilation rather than a single continuous biblical passage.",
+      "rationale": "Four consecutive records preserve the compiler’s designed movement from survival through water imagery to the prophetic hope of learning and weapons transformed into tools.",
+      "themes": ["traditional", "environment", "social-justice", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "verify-scriptural-attributions", "label-compiled-reading"],
+      "creditNotes": "Credit J. Leonard Levy and include source-level credit for the public-domain service."
+    },
+    {
+      "id": "levy-home-service-freedom-and-law",
+      "title": "Freedom joined to responsibility",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-levy-home-service-i1o-91662e5989df",
+        "research-levy-home-service-jyb-a3f4fccf0354",
+        "research-levy-home-service-ky8-8907519f671a",
+        "research-levy-home-service-lld-7d3455b30ae5",
+        "research-levy-home-service-mh9-fe2ec985d069"
+      ],
+      "beginnerContext": "Introduce this as a long 1896 meditation arguing that liberation carries social responsibility and needs just law; tell guests that dated passages have been omitted.",
+      "rationale": "The selected source-order passages sustain the work’s freedom-and-law argument while omitting pages whose racial terminology or broken column boundaries are unacceptable for guest-facing reuse.",
+      "themes": ["social-justice", "traditional", "secular"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "disclose-abridgment", "review-civic-and-civilizational-assumptions", "long-form-only"],
+      "creditNotes": "Credit J. Leonard Levy and disclose that the public-domain sequence has been abridged by segment selection."
+    },
+    {
+      "id": "levy-home-service-spring-and-renewal",
+      "title": "Spring, dry bones, and renewal",
+      "sectionIds": ["maggid", "nirtzah"],
+      "segmentIds": [
+        "research-levy-home-service-15i7-33c8edc487cd",
+        "research-levy-home-service-163o-be87450c686e",
+        "research-levy-home-service-16l7-177409c89ab8",
+        "research-levy-home-service-176g-3c723e5d35d2",
+        "research-levy-home-service-183n-b846c61161d5",
+        "research-levy-home-service-18ob-6aa307b4126a",
+        "research-levy-home-service-19mp-38cbce808c12"
+      ],
+      "beginnerContext": "Explain that Passover is also a spring festival and that this historical reading moves from seasonal renewal to Ezekiel’s dry-bones vision and questions about life after death.",
+      "rationale": "Seven consecutive segments preserve the source’s seasonal and theological development through the dry-bones vision and the source's introduction to immortality, ending at a complete thought.",
+      "themes": ["environment", "mindfulness", "traditional", "interfaith"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "long-form-only", "do-not-present-theology-as-consensus", "review-dated-science-and-religion-claims"],
+      "creditNotes": "Credit J. Leonard Levy and the public-domain 1896 source; retain exact wording if used as a historical reading."
+    },
+    {
+      "id": "levy-home-service-memory-and-legacy",
+      "title": "Memory, influence, and closing resolve",
+      "sectionIds": ["nirtzah"],
+      "segmentIds": [
+        "research-levy-home-service-1caz-f243f03ac454",
+        "research-levy-home-service-1cty-1c42f9e500e1",
+        "research-levy-home-service-1dji-280592d5790f",
+        "research-levy-home-service-1e4r-365ce2949367",
+        "research-levy-home-service-1f4e-0f63f153b28c",
+        "research-levy-home-service-1fy8-2a4bff7bb946",
+        "research-levy-home-service-1gih-2c6b5bde907f",
+        "research-levy-home-service-1h8i-5c92e89e3fee"
+      ],
+      "beginnerContext": "Name this as a historical closing meditation about how people live on through memory and influence, followed by scripture and a communal resolve.",
+      "rationale": "The final eight source segments move coherently from doubt and hope through ethical legacy into scripture and the service’s closing prayer.",
+      "themes": ["family-storytelling", "mindfulness", "interfaith", "traditional"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": ["historical-language-contextual-use", "long-form-only", "do-not-present-theology-as-consensus", "review-dated-theology-and-gender"],
+      "creditNotes": "Credit J. Leonard Levy and identify the public-domain Haggadah or Home Service for the Festival of Passover."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-levy-home-service-918-917c5d196840",
+      "reasons": ["Dated cultural stereotyping and essentializing language are unsuitable for contemporary guest-facing use."]
+    },
+    {
+      "segmentId": "research-levy-home-service-jew-8fcd9f89da2e",
+      "reasons": ["Obsolete racial terminology and civilizational hierarchy make this paragraph unsuitable for reuse."]
+    },
+    {
+      "segmentId": "research-levy-home-service-1065-29dcdafdf849",
+      "reasons": ["The patriotic song page is unrelated to the app’s Passover narrative and carries unneeded national framing."]
+    }
+  ],
+  "notes": [
+    "This substantial English source should not be dismissed; it contributes a cohesive narrative and several long readings when clearly labeled as historical.",
+    "The dossier favors whole arguments and narrative arcs over isolated quotable sentences.",
+    "All selected sequences remain candidate-only and require human review of dated language before runtime approval."
+  ]
+}

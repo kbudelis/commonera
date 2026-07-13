@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "english-jews-seder",
+  "sourceTitle": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+  "modules": [
+    {
+      "id": "english-jews-history-page",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "exactText": "Jacob b. Jehuda of London, the author of that valuable contribution to the literary side of Anglo-Jewish history, the Talmudical compendium Etz Chaim, so providentially rescued and preserved for us, never dreamt, when he noted down, in the year 1287, the Ritual and Agada of the Seder Nights according to English usage, that he was fixing a permanent picture of what was doomed to destruction, and was recording not a mere portion of the liturgy, but a page of Jewish history.",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "Official Open Siddur snapshot post 4609, opening historical essay",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 81,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "provenanceHash": "8b4ddeaf0095c8a41d2ead7cdef5bad3521f7ab9ed2687134892ddca62bccc46",
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      }
+    },
+    {
+      "id": "english-jews-charoset",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "exactText": "In England, all the fruits named in the Song of Songs—dates, figs, pomegranates, nuts and apples—were crushed with almonds and moistened with vinegar.",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "Official Open Siddur snapshot post 4609, charoset custom",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7"
+      },
+      "sectionIds": [
+        "maror"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "treatment": "verbatim-normalized",
+      "wordCount": 23,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "provenanceHash": "5a09174e711be3798a0594a031ae80aca541982c6a067f847ba355419eb5f502",
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      }
+    }
+  ]
+}

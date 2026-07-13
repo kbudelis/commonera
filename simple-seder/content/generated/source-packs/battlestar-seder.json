@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "battlestar-seder",
+  "sourceTitle": "The First Battlestar Galactica Seder Haggadah",
+  "modules": [
+    {
+      "id": "battlestar-karpas-algae",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "exactText": "The parsley represents the spring time, renewal, the lush verdancy of our home world, Ḳobol. Also, the algae slop we have been eating for the past three years.",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "Official Open Siddur snapshot post 19097, Seder Plate / The Green",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684"
+      },
+      "sectionIds": [
+        "karpas"
+      ],
+      "themes": [
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "optional-insert",
+      "treatment": "verbatim-normalized",
+      "wordCount": 28,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "provenanceHash": "e47614bf7208ec5277a76246feed627482d8a818cf265a3dd00b8afd5d2270b8",
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      }
+    },
+    {
+      "id": "battlestar-fourth-cup-fellowship",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "exactText": "The fourth cup is the cup of fellowship. We must always remember our responsibility to this fleet and to the survival of the human race.",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "Official Open Siddur snapshot post 19097, Fourth Cup",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684"
+      },
+      "sectionIds": [
+        "hallel"
+      ],
+      "themes": [
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "optional-insert",
+      "treatment": "verbatim-normalized",
+      "wordCount": 25,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "provenanceHash": "bcb8a497c0e765fed6ed5fdd2b9fa70d822ff02bc7a502f21aab292e8ded288e",
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      }
+    }
+  ]
+}

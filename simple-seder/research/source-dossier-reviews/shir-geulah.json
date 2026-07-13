@@ -1,0 +1,370 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "shir-geulah",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A full liberation-centered Haggadah that joins traditional structure, gender-expansive language, accessible explanation, and social-justice interpretation; its licensed text should be included as a substantial source, with separate gates for land refrains, dated examples, and embedded authors.",
+  "sourceAssessment": {
+    "voice": "Expansive, justice-centered, gender-conscious, liturgically engaged, and often conversational, with Hebrew, transliteration, historical notes, songs, and contemporary readings.",
+    "bestUses": [
+      "A liberation or LGBTQ-inclusive backbone built from complete source-order movements",
+      "Clear Maggid, Four Children, plague, Miriam, and symbol sequences with a distinctive authorial voice",
+      "Meal and peace passages that maintain the traditional order while broadening participation"
+    ],
+    "beginnerRisks": [
+      "The source is long and alternates among liturgy, commentary, songs, and appendices; extracts need visual and genre checks.",
+      "Some inherited land language and a final Jerusalem refrain are allowed only under the project's narrow traditional rule.",
+      "Several poems, songs, statistics, and contributed readings need separate credit, rights, or fact review."
+    ],
+    "politicalContext": "The source frames Passover as liberation and includes Jewish, feminist, queer, labor, and Palestinian references alongside traditional land language. Default use must remain peace-focused and non-exclusive; modern conflict passages and Jerusalem or Israel refrains require explicit editorial gates rather than blanket exclusion of the source.",
+    "creditContext": "Credit Emily Aviva Kapor-Mater and identify Haggadah Shir Ge'ulah / The Song of Liberation Haggadah under CC BY 4.0, link the license, and identify modifications. Preserve the source's printed credits and conduct item-level review for embedded authors, songs, and readings."
+  },
+  "recommendedSequences": [
+    {
+      "id": "shir-geulah-liberation-opening",
+      "title": "Why liberation is told",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-mt-b519d7747969",
+        "research-shir-geulah-2rv-13fdb0c8f0fd"
+      ],
+      "beginnerContext": "Introduce the Haggadah as a guide to a participatory Passover meal and explain that the story moves between ancient slavery and present responsibility. Invite guests to take turns reading and allow anyone to pass.",
+      "rationale": "The early source-order records establish the edition's liberation purpose and participatory method, giving later justice readings a clear authorial frame rather than presenting them as isolated inserts.",
+      "themes": [
+        "social-justice",
+        "lgbtq",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "turn-taking-invitation-required",
+        "right-to-pass-required",
+        "plain-language-passover-orientation",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Emily Aviva Kapor-Mater and the CC BY 4.0 edition; indicate any abridgment."
+    },
+    {
+      "id": "shir-geulah-questions-and-maggid",
+      "title": "Questions opening the telling",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-qbq-bcb452414033",
+        "research-shir-geulah-qzn-8f8019ff876d",
+        "research-shir-geulah-rqk-c80f50fe8250"
+      ],
+      "beginnerContext": "Explain that asking questions is a ritual act and that Maggid is the storytelling section. Give the Four Questions a clear reader cue, then say in plain language why the group turns from questions to the Exodus story.",
+      "rationale": "These adjacent records retain the question-and-response movement that launches Maggid without importing the preceding modern Israel refrain, so the sequence works in the default peace-focused edition.",
+      "themes": [
+        "family-storytelling",
+        "traditional",
+        "lgbtq"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "clear-reader-cues-required",
+        "plain-language-maggid-definition",
+        "hebrew-and-transliteration-render-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve any source-presented attribution for translations or songs."
+    },
+    {
+      "id": "shir-geulah-four-children",
+      "title": "Four children and four questions",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-u1v-eae2d1d7a0c7",
+        "research-shir-geulah-uqk-1306a4fd4e67",
+        "research-shir-geulah-vfo-52107c35d1ac",
+        "research-shir-geulah-w34-3b30f7da604e",
+        "research-shir-geulah-x4m-c2fa476eb7be",
+        "research-shir-geulah-xv2-62b156bafb74",
+        "research-shir-geulah-yfb-0d9788ece9ac"
+      ],
+      "beginnerContext": "Introduce the figures as four ways people may approach a difficult story, not labels for actual children. Translate unfamiliar terms, make reading roles optional, and give the table one strong follow-up question rather than asking guests to classify themselves.",
+      "rationale": "Seven consecutive records preserve the source's full reinterpretive arc and its internal balance; using the whole movement avoids a harsh or confusing child label appearing without response.",
+      "themes": [
+        "lgbtq",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nonlabeling-introduction-required",
+        "age-appropriate-language-review",
+        "one-contextual-discussion-prompt",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and retain any separately named contributor associated with the Four Children interpretation."
+    },
+    {
+      "id": "shir-geulah-exodus-and-plagues",
+      "title": "Oppression, departure, and diminished joy",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-139h-773ce344901a",
+        "research-shir-geulah-13zj-31b7924f3d3f",
+        "research-shir-geulah-14jk-e8ec44379911",
+        "research-shir-geulah-15iv-faa5e0ef1e92",
+        "research-shir-geulah-167k-b22372721ba8"
+      ],
+      "beginnerContext": "State the story arc before reading: the Israelites were enslaved, Moses confronted Pharaoh, plagues struck Egypt, and the people left. Explain the cup-diminishing action and say that freedom is not celebrated by ignoring Egyptian suffering.",
+      "rationale": "Five adjacent passages provide a continuous Exodus-and-plagues movement with ritual response, giving novices enough narrative to understand the action and its moral complexity.",
+      "themes": [
+        "social-justice",
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "wine-or-grape-juice-explicit",
+        "nontriumphalist-plague-framing",
+        "age-appropriate-harm-context",
+        "cup-diminishing-action-cue",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater under CC BY 4.0 and preserve any credited plague interpretation."
+    },
+    {
+      "id": "shir-geulah-sea-miriam-and-dayenu",
+      "title": "Crossing, Miriam, and gratitude",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1783-b2f5abe7a93e",
+        "research-shir-geulah-17xj-4a7f7da46a20",
+        "research-shir-geulah-18mj-33eeee66a6ec",
+        "research-shir-geulah-19fd-42efda625070",
+        "research-shir-geulah-1a3h-8f50e781db7a"
+      ],
+      "beginnerContext": "Explain that the story reaches the sea, where escape becomes possible and Miriam leads song. Give guests a singing or spoken-response option, then introduce Dayenu as a gratitude chain rather than a celebration of anyone's destruction.",
+      "rationale": "The five contiguous records preserve the narrative turn from danger through crossing and women's leadership into gratitude, a cohesive source-led emotional arc.",
+      "themes": [
+        "feminist",
+        "social-justice",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "nontriumphalist-sea-framing",
+        "participation-cue-required",
+        "traditional-land-lines-review",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve printed song, translation, and Miriam attributions."
+    },
+    {
+      "id": "shir-geulah-symbols-and-memory",
+      "title": "The three symbols and every generation",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1awz-5391a9d34e8f",
+        "research-shir-geulah-1bpj-167dbbc49e60",
+        "research-shir-geulah-1cdk-a76cf5896b56",
+        "research-shir-geulah-1d29-6fe278f850fd",
+        "research-shir-geulah-1dsd-ebc8093ca126",
+        "research-shir-geulah-1eds-578a79b4e366"
+      ],
+      "beginnerContext": "Point to each item and define it before the reading. Explain that the three symbols carry the story into the body and that 'every generation' asks what freedom requires now.",
+      "rationale": "Six consecutive records contain the complete symbol-and-memory unit, allowing the source's liberation framing to grow directly out of ritual objects rather than arrive as an unrelated theme paragraph.",
+      "themes": [
+        "social-justice",
+        "traditional",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "temple-offering-context",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and retain any source-presented attribution attached to the interpretations."
+    },
+    {
+      "id": "shir-geulah-table-rituals",
+      "title": "Matzah, sandwich, meal, and afikoman",
+      "sectionIds": [
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-1nd0-f17041dd4b6f",
+        "research-shir-geulah-1p72-5e144ef5e050",
+        "research-shir-geulah-1pwo-e28012ee01e1",
+        "research-shir-geulah-1qr9-dbecf4957114",
+        "research-shir-geulah-1rbc-223e8c5c6ce6",
+        "research-shir-geulah-1rxe-e9a297fedd35"
+      ],
+      "beginnerContext": "Move one action at a time: bless and eat matzah, explain the bitter herb and haroset before building the sandwich, eat the meal, then retrieve and share the afikoman. Define every food and include allergy alternatives; supply the missing maror action from a separately verified source module.",
+      "rationale": "Six source-order records preserve the usable table sequence from matzah through sandwich, meal, and afikoman while deliberately omitting a run-together OCR record that cannot yet provide exact maror text.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-food-definitions",
+        "allergy-safe-alternatives",
+        "host-pacing-cues-required",
+        "verified-maror-module-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Emily Aviva Kapor-Mater and preserve CC BY 4.0 attribution and change notice."
+    },
+    {
+      "id": "shir-geulah-gratitude-and-peace",
+      "title": "Gratitude turning toward peace",
+      "sectionIds": [
+        "barech",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-shir-geulah-26bh-a9805dff538e",
+        "research-shir-geulah-274k-2f08d07f8830",
+        "research-shir-geulah-27u1-839a505ef838",
+        "research-shir-geulah-28nh-bb2364c969c3",
+        "research-shir-geulah-29i6-c33b06a642c6",
+        "research-shir-geulah-2a8o-900127e0a962"
+      ],
+      "beginnerContext": "Explain that after the meal the table gives thanks and widens the wish for wellbeing to everyone. Identify responsive lines, make prayer language optional for mixed-belief groups, and end with a concrete wish for peace and shared dignity.",
+      "rationale": "The six source-order records build a coherent post-meal movement from gratitude through collective care into peace, fitting the project's required framing without an isolated political slogan.",
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "mixed-belief-introduction-required",
+        "peace-and-shared-humanity-check",
+        "responsive-reading-cues",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Kapor-Mater and preserve the attribution of any embedded prayer, poem, or translation."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-shir-geulah-n1h-4374b5e1ce54",
+      "reasons": [
+        "The modern Israel destination line is limited to an explicit traditional selection and cannot enter the generic candidate pool."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-nni-aea661b459a5",
+      "reasons": [
+        "The land refrain requires the project's traditional-without-social-justice gate."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-1ezb-d5f6c01484e2",
+      "reasons": [
+        "The farmworker and tomato estimate is dated and requires current verification."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2g78-eda646437e46",
+      "reasons": [
+        "The embedded reading requires item-level rights and attribution review before runtime use."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2gtb-1ae20d6ee0bb",
+      "reasons": [
+        "The contributed or embedded text needs separate creator, rights, and context verification."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2het-eefbe76c34a9",
+      "reasons": [
+        "This reading cannot enter the approved pool until its item-level credit and reuse status are recorded."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2hzm-04ff881ea4ed",
+      "reasons": [
+        "The historically or politically difficult embedded material requires adult context and rights review."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2ifu-150e29f732f2",
+      "reasons": [
+        "The embedded work requires separate permission or license verification and full attribution."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-2j28-97a80fa57658",
+      "reasons": [
+        "The Palestine-focused poem requires its own rights, attribution, date, and editorial-context review; it is not rejected merely for its subject."
+      ]
+    },
+    {
+      "segmentId": "research-shir-geulah-3r32-60b6999bf05f",
+      "reasons": [
+        "The Jerusalem closing refrain is allowed only for a traditional selection without a social-justice override."
+      ]
+    }
+  ],
+  "notes": [
+    "This source's CC BY 4.0 license explicitly supports reuse with attribution; it should be treated as a major source, not a marginal or excluded one.",
+    "A liberation or LGBTQ-inclusive version should draw several complete source-order movements from this Haggadah so its voice remains coherent.",
+    "Embedded works remain separately reviewable even though the containing Haggadah is licensed for reuse.",
+    "These recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

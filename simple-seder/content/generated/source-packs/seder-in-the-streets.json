@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "seder-in-the-streets",
+  "sourceTitle": "Seder in the Streets Passover Haggadah",
+  "modules": [
+    {
+      "id": "streets-opening-read-circle",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "exactText": "For the rest of the seder, we read in a circle, each person reading as many lines as they desired, with leaders adding additional commentary and explanation throughout.",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "Official Open Siddur snapshot post 10879, after A Stand Against All Forms Of Oppression",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "family-storytelling",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "treatment": "verbatim-normalized",
+      "wordCount": 28,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "provenanceHash": "69d97913fb065cdc58a537dee8ff63dac5f2f9e64b44f3704a5845b288c07ed2",
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      }
+    },
+    {
+      "id": "streets-maggid-questions",
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "exactText": "Passover has a strong tradition of asking questions. We encourage you to use this as an opportunity to ask the questions you are usually afraid to ask. No questions are off the table. Let this be a tool to facilitate deeper understanding between us, leaving us with a deeper commitment to each other’s struggle.",
+      "locator": {
+        "edition": "Seder in the Streets Passover Haggadah",
+        "sourceLocation": "Official Open Siddur snapshot post 10879, opening instructions",
+        "localExtract": "research/source-extracts/seder-in-the-streets.txt",
+        "sourceSha256": "11e69e001c8ce61d80e496b534a9fbca2c18417addec9c5c7c800abe04e2c709",
+        "extractSha256": "243d139a4eea7e96a58e9729416270a5d30a5e5d59295f4db72b67735d20c7a9"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "treatment": "verbatim-normalized",
+      "wordCount": 54,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "provenanceHash": "e98b12db27de2505fa1b395a7e4e825c8f3166314c3f0764045f806a06e3a531",
+      "attribution": {
+        "creator": "Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle",
+        "containingSource": "Seder in the Streets Passover Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From Seder in the Streets Passover Haggadah by Danielle Gershkoff, Rachel Lerman, Rachel Beck, and Margot Seigle."
+      }
+    }
+  ]
+}

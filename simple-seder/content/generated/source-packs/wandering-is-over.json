@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "wandering-is-over",
+  "sourceTitle": "The Wandering Is Over Haggadah: Including Women's Voices",
+  "modules": [
+    {
+      "id": "wandering-opening-orientation",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "exactText": "Tonight we gather together to celebrate Passover, our holiday of freedom. We will eat a great meal together, enjoy four glasses (at least!) of wine, and tell the story of our ancestors’ liberation from slavery in Egypt. We welcome our friends and family members from other backgrounds to reflect with us on the meaning of freedom in all our lives and histories. We will consider the blessings in our lives, pledge to work harder at freeing those who still suffer, and begin to cast off the things in our own lives that oppress us.",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 2, opening orientation",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "family-storytelling",
+        "interfaith",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "treatment": "verbatim-normalized",
+      "wordCount": 94,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "provenanceHash": "b69e17b45818d15ac501d3c19cf3646e2ed3ec4ddd280c9e25d5e4304876f50b",
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      }
+    },
+    {
+      "id": "wandering-urchatz-pitcher-bowl",
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "exactText": "To wash your hands, you don’t need soap, but you do need a cup to pour water over your hands. Pour water on each of your hands three times, alternating between your hands. If the people around your table don’t want to get up to walk all the way over to the sink, you could pass a pitcher and a bowl around so everyone can wash at their seats… just be careful not to spill!",
+      "locator": {
+        "edition": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourceLocation": "PDF p. 5, Urchatz",
+        "localExtract": "research/source-extracts/wandering-is-over.txt",
+        "sourceSha256": "170ac1ff88954ada3ecc83a1a84c193185813bb675542d11a26d5d26e2f1a442",
+        "extractSha256": "b19f1cfedcbd587da6eef2e9b07fc1faf352adb7e3ea3d8c7b59267791d10c55"
+      },
+      "sectionIds": [
+        "urchatz"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 75,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-3.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Preserve attribution and ShareAlike notice",
+          "Review separately credited embedded material item by item"
+        ]
+      },
+      "provenanceHash": "f0802beb629eb64507175524213d3bf4abacfbaa65aa50c9e17cea7337223290",
+      "attribution": {
+        "creator": "JewishBoston and Jewish Women's Archive",
+        "containingSource": "The Wandering Is Over Haggadah: Including Women's Voices",
+        "sourcePresented": null,
+        "readerCredit": "From The Wandering Is Over Haggadah: Including Women's Voices by JewishBoston and Jewish Women's Archive."
+      }
+    }
+  ]
+}

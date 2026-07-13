@@ -1,0 +1,679 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "traditional-core",
+  "sourceTitle": "Seder Haggadah Shel Pesaḥ",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company.",
+    "license": "CC0-1.0",
+    "conditions": [
+      "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+      "Record access date and modifications"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=28052"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-traditional-core-seder-roadmap",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "title": "A traditional Seder roadmap",
+      "exactText": "13 The Passover Haggadali A CUP OF WINE IS PLACED BEFORE EACH PERSON AT THE TABLE. EVERYONE IS TO DRINK FOUR CUPS OF WINE DURING THE SEDER. THE PASSOVER SEDER 1. Recite the Kiddush. 2. Wash the hands. 3. Eat the greens dipped in salt water.* 4. Break the middle matzah and keep half for the afikoman. 5. Recite the Haggadali. 6. Wasli the hands for the meal.* 7-8. Say Ilamolzi and a special blessing over the matzah. 9. Eat the bitter herb dipped in haroseth* 10. Eat the maror and matzah sandwich.* 11. Serve the Pesah meal. 12. Distribute parts of the afikoman to all present. 13. Say grace after the meal. 14. Chant the Hallel. 15. Recite the closing prayer. * After the pres* ribed benediction. Kiddush On Sabbath Eve: (There was evening and there was morning— The sixth day.\n\nThe parsley (0D*1D) is one of various vegetables which may be used for the purpose of the Seder. The Mishnah (Pesahim 10:3) speaks of vegetables dipped in vinegar and eaten. This custom is intended to stimulate the child’s curiosity. The breaking of the middle matzah in two and the hiding of the afikoman are likewise intended to awaken the children’s curiosity. It has been suggested that the afikoman is wrapped in a napkin as a symbol of the unleavened dough which, wrapped in their garments, the Israelites carried on their shoulders out of Egypt (Exodus 12:31). According to some, the afikoman is symbolically concealed between the cushions, upon which the leader of the Seder service reclines, in keeping with a literal rendering of Exodus 12:17 (“you shall watch the matzoth”). However, this practice may simply be designed to preserve the afikoman intact till it is distributed as the last thing eaten at (he Seder service in remembrance of the paschal lamb which, during Temple times, was eaten at the end of the Pcsah meal. The custom of encouraging the children to snatch the afikoman and make it disappear for a while is said to be based on a misinterpretation of the tal- mudic statement which reads: w” mpirnn V’atza dtiod ’Wn rnxa pDDin, “the matzoth are eaten hastily on the nights of Passover so that the children should not fall asleep” (Pesahim 109a).",
+      "segmentIds": [
+        "research-traditional-core-9h1-c1dbb3bffea2",
+        "research-traditional-core-f8u-8f918297218b"
+      ],
+      "sourceLocation": "PDF p. 15, segment 1 through PDF p. 19, segment 2",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 15, segment 1 through PDF p. 19, segment 2",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "componentLocators": [
+          {
+            "id": "research-traditional-core-9h1-c1dbb3bffea2",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 12277,
+            "normalizedEndOffset": 13057
+          },
+          {
+            "id": "research-traditional-core-f8u-8f918297218b",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 19758,
+            "normalizedEndOffset": 21129
+          }
+        ]
+      },
+      "provenanceHash": "adccc5a8ffd848825299f4e976a95e6099cefbb868b6dd6e19ef50de13bef861",
+      "componentProvenanceHashes": [
+        "c1dbb3bffea2867a29738867b309ccc5596232b776633e34ac5f79611e14384a",
+        "8f918297218bdde65c1a152af827f4a5a45a96d0f94a5baed95991215f0b15f7"
+      ],
+      "wordCount": 375,
+      "characterCount": 2153,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Before the first blessing, explain that the Seder follows fourteen named stages and that the host will announce each action. Define the wine or grape juice, greens, matzah, afikoman, bitter herb, meal, and closing songs when first mentioned.",
+      "rationale": "These two source-order records provide the clearest compact overview of the traditional sequence and the early ritual logic, making them suitable for an orientation page rather than scattering unexplained Hebrew stage names.",
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization in the final source page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "host-action-cues-required",
+        "ocr-and-page-layout-check",
+        "plain-language-object-definitions-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-traditional-core-exodus-arc",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "title": "From migration to liberation",
+      "exactText": "33 The Passover Haggadah With a small family, as it is written: “When your ancestors went down to Egypt they were only seventy persons, and now the Lord your God has made you as numerous as the stars in the sky .” 1 There he became a nation means that they became a distinct people in Egypt. Great, mighty, as it is written: “The people of Israel were fruit¬ ful and increased greatly; they grew exceedingly strong and the land was full of them .” 2 And numerous, as it is written: \"I made you thrive like a plant of the field; you grew up and became tall and beautiful; your breasts were formed and your hair grew long; but you were bare and naked .” 3 “The Egyptians treated us harshly and oppressed us; they imposed hard labor upon us .”\n\n4 The Egyptians treated us harshly, as it is written: “Let us deal with them shrewdly lest they multiply and, if we happen to be at war, they may join our enemies and fight against us and escape from the country .” 5 Like a plant that grows better after each cutting. The prophetic dcscri|>- tion refers to the Israelites in Egypt, who were greatly increased in numbers but were much distressed (“bare and naked”). The full quotation from Ezekiel 16:6 f|Wa nooianB qxnxt q’by nayxi ”n q'mn qb naxi ,”n you qb naxv is not included at all in the old Ilag- gadah texts. It was inserted here by the famous Kabbalist Rabbi Isaac Luria of the sixteenth century on account of the repeated expression ”n yn*n qb mxi midrashically interpreted as an allusion to the Passover offering and the precept of circumcision. Unix iyi’1 is the equivalent of lib ljn’l (Numbers 20:15). However, some commentators follow the suggestion of Heidcnhcim who renders limx lyTl D’lXDn the Egyptians suspected us of evil. Thus, Goldschmidt translates: “Die Xgypter verdachtigen uns als schlccht.” The verb inn is followed by the accusative sign rnx) in two more biblical passages (Numbers 16:15; I Samuel 25:34). 1 Deuteronomy 10:22. i Exodus 1:7. 3 Ezekicl 16:7. 4 Deuteronomy 26:6. 6 Exodus 1:10\n\n35 The Passover Haggadah And oppressed ns, as it is written: “They set taskmasters over them to oppress them with heavy labor; the people of Israel built Pithom and Raamses as treasure cities for Pharaoh .” 1 They imposed hard labor upon us, as it is written: “They imposed strenuous labor upon the people of Israel .” 2 \"We cried to the Lord God of our fathers; the Lord heard our ciy and saw our affliction, our trouble, and our oppression .” 3 We cried to the Lord God of our fathers, as it is written: “In the the course of those many days the king of Egypt died; the people of Israel moaned because of their servitude and cried for help; their cry out of bondage reached God .”\n\n4 The Lord heard our cry, as it is written: \"God heard their moaning; God remembered his covenant with Abraham, with Isaac, and with Jacob .” 5 And saw our affliction, that is, the enforced separation of hus¬ band and wife, as it is written: “God saw the people of Israel and God knew their plight .” 0 Our trouble refers to the drowning of the children, as it is written: \"Every son that is born to the Hebrews you shall throw into the Nile, but you shall let every daughter live .” 7 Our oppression means the persecution, as it is written: “I have seen how the Egyptians are persecuting them .” 8 by their leaders to stop propagating the race (Ginsberg, legends, V, 394). Eventually they followed Amram’s example and renewed their marital re¬ lations, both versions assert. D’lan lbx has the connotation of o’lan nn It (“the decree against the children”). The regular name of the Nile in Hebrew is *nx>. e *Exodus 1:11, 13. 3 Deuteronomy 26:7. 3< Exodus 2:23-25. '^Exodus 1:22: 3:9.\n\n37 The Passover Haggadah “The Lord brought us out of Egypt with a mighty hand and outstretched arm, with great awe, signal acts and wonders.” 1 The Lord brought us out of Egypt not by an angel, not by a seraph, not by a messenger, but by himself, as it is written: “I will pass through the land of Egypt that night; 1 will strike down all the firstborn in the land of Egypt, man and beast alike; on all the gods of Egypt I will execute judgments; 1 am the Lord.” 2 I will pass through the land of Egypt that night , myself and not an angel; I will strike down all the firstborn in the land of Egypt, myself and not a seraph; on all the gods of Egypt / will execute judgments, myself and not a messenger; / am the Lord, I and none else.",
+      "segmentIds": [
+        "research-traditional-core-16um-24a4ab7f2193",
+        "research-traditional-core-17f7-1d9f8d5fc7d7",
+        "research-traditional-core-198m-f4c0bfd7319f",
+        "research-traditional-core-19rl-abe466be58a5",
+        "research-traditional-core-1biw-ce2e6d379db2"
+      ],
+      "sourceLocation": "PDF p. 39, segment 1 through PDF p. 43, segment 1",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 39, segment 1 through PDF p. 43, segment 1",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "componentLocators": [
+          {
+            "id": "research-traditional-core-16um-24a4ab7f2193",
+            "label": "PDF p. 39",
+            "pageNumber": 39,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 55534,
+            "normalizedEndOffset": 56274
+          },
+          {
+            "id": "research-traditional-core-17f7-1d9f8d5fc7d7",
+            "label": "PDF p. 39",
+            "pageNumber": 39,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 56275,
+            "normalizedEndOffset": 57544
+          },
+          {
+            "id": "research-traditional-core-198m-f4c0bfd7319f",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 58630,
+            "normalizedEndOffset": 59312
+          },
+          {
+            "id": "research-traditional-core-19rl-abe466be58a5",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 59313,
+            "normalizedEndOffset": 60297
+          },
+          {
+            "id": "research-traditional-core-1biw-ce2e6d379db2",
+            "label": "PDF p. 43",
+            "pageNumber": 43,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 61592,
+            "normalizedEndOffset": 62327
+          }
+        ]
+      },
+      "provenanceHash": "daff118e56b8b4bc786853d8bb0c58b7feac582ff2e9cffecf7b3841a7529e1e",
+      "componentProvenanceHashes": [
+        "24a4ab7f2193c448c711d52d6937d95ec5bf097d235301bc6c2a374dc2a17698",
+        "1d9f8d5fc7d74de75cf12efc87cc6a4ad00c2e31812852503dc125a454607956",
+        "f4c0bfd7319f9809f0852c7337b6939d546fbb4d6e3da25b3050f8d281353430",
+        "abe466be58a5489d31b21d4b6405eb91869fe50a206ed03340d0280ddafc2944",
+        "ce2e6d379db2e05adfb2b60732b76771650cc4f0fc0768524c9a087e499f2044"
+      ],
+      "wordCount": 815,
+      "characterCount": 4418,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce the people in the story and state the arc plainly: Jacob's family went to Egypt, grew into a people, was enslaved and harmed, cried out, and was heard. Pause after oppression before describing liberation so the emotional movement is intelligible.",
+      "rationale": "These source-order passages create a usable traditional Exodus narrative across migration, population growth, forced labor, suffering, and divine response, giving a novice more than keywords without requiring the entire rabbinic exposition.",
+      "creditNotes": "Credit Birnbaum, Hebrew Publishing Company, and the Varady digitization; note cuts from the longer traditional exposition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "nontriumphalist-violence-framing",
+        "ocr-and-page-layout-check",
+        "plain-language-narrative-bridges-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-traditional-core-three-symbols",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "title": "Pesach, matzah, maror, and lived memory",
+      "exactText": "Rabban Gamaliel I, who lived shortly before the Second Temple was destroyed in the year 70, was the first to be known by the title Rabban (“great master”), given by way of eminence to the heads of the Sanhedrin, if of the house of Hillcl the Great. Like his grandfather Ilillel, Rabban Gamaliel I was also known by the title Zaken (“elder”). The Mishnah (Pcsaliim 10:5) quotes the statement of Rabban Gamaliel, including the following paragraphs down to Vxntf’ Vxa, with but several slight variations. Explaining the laws concerning the paschal lamb, which was eaten roasted and no parts of it could be sent from house to house, Maimonidcs writes: “Just as the Israelites were commanded to eat unleavened bread because they could prepare it hastily, so were they commanded for the sake of haste to roast the lamb, because there was not sufficient time to boil it or to prepare\n\nnoD bv nun 46 xin nos nor o0-]q^i na$p' ,n;ni5oa aavhax ,m-)ao nx isaaa miasma bxim na Tia by nos new * r : v :t : • r : * : •• t : • ••: •• t - - t v -: .niwn oyn non jb’asn irna nxi The leader points to the matzah: p’spn Kb® mo by .no m® by ,mbaix iax® ,ir nsa ■g'pa “b£ Diybg nbaap ny HPOO 1 ? wpias b® ops? ns aaxi iiaxa® ,abx;n ,xan qns oinpn ,maban ;ppn Kb ■? niasa nay ,D?n?aa wain ~\\m pasan .oqb vyy Kb nna cm ,rtpp»pnb ibm Kb} ,onaPP wna The leader points to the maror: ana® m® by .no mo by ,mbaix aax® ,nr nina :**v - t - • : it v v t ns anai naxa® ,D’n?a?\n\narpias b.O nx mpasan ;nnoa may baaa ,maabai nana ,no'p nnaya ann .nnsa ona nay n®x onnay ba nx * vi t : v t : t v t t t Kin abxa iaay nx nixnb onK an nini nin baa • : : - v : • t t t “ t t : naxb Kinn ova naab nnam naxa® ,onaaa xm .. - - •:*: t “ v:v v • n: • • tt ianiaK nx Kb .mnaaa nKaa 'b \" noy ni niaya i” v * it :.: t: t t v ,npay bxa aanix px xPk ,xan qna oinpn bxa napa ns.iab npb nanx x-gn iyab ,a®a Krasin aarrix] mass# .aanaxb yaoa nox f nxn other food; even the delay caused by breaking the bones . . . was prohibited ... so that none should be too late to leave Egypt with the main body of the people and be thus exposed to the attacks of the enemy. These temporary commands were then made permanent in order that we may remember what was done in those days . . . Each paschal lamb was eaten only by those who had previously agreed to consume it together, in order that people . . . should not rely on friends, relations, or on chance, without themselves taking any trouble about it before Passover” (Guide of the Perplexed, 3:46).\n\n47 The Passover Haggadah Egypt, as it is written: “You shall say: It is the Passover offering in honor of the Lord, who passed over the houses of the children of Israel in Egypt when he smote the Egyptians and spared our houses. The people bowed and worshiped.” 1 The leader points to the matzah: Why do we eat this matzah? Because the supreme King of kings, the Holy One, blessed be he, revealed himself to our fathers and redeemed them even before their dough had time to ferment, as it is written: “They baked matzoth of the unleavened dough which they had brought out of Egypt; they were thrust out of Egypt and could not wait, nor had they prepared any food for their journey.” 2 The leader points to the maror: Why do we eat this bitter herb?\n\nBecause the Egyptians embittered the lives of our fathers in Egypt, as it is written: “They made life bitter for them with hard labor, with mortar and bricks, and with all kinds of work in the fields; whatever work they im¬ posed on them was rigorous and harsh.”* In every generation it is man’s duty to regard himself as though he personally had come out of Egypt, as it is written: “You shall tell your son on that day: This is on account of what the Lord did for me when I came out of Egypt.” 4 It was not only our fathers whom God set free from slavery; along with them he freed us too, as it is written: “He brought us out from there that he might bring us home, to give us the land which he had pledged to our fathers.” 6 The matzah, rich in ethical symbolism, is a reminder of the joyous eager¬ ness which marked the departure from slavery into freedom, and also suggests purity of heart since leaven is a symbol of decay. In the Zohar, matzah is called celestial bread (nuV’y Hunt) in the sense that it is served as an antidote to Egyptian bondage and corruption. ^Exodus 12:27,39. ^Exodus 1:14; 13:8. 6 Deuteronomy 6:23.",
+      "segmentIds": [
+        "research-traditional-core-1nuu-9d906cfc8d5c",
+        "research-traditional-core-1oj7-e505139e4af6",
+        "research-traditional-core-1oyy-c34117f8546d",
+        "research-traditional-core-1prz-799a55151bef",
+        "research-traditional-core-1qcs-d38d2438ff81"
+      ],
+      "sourceLocation": "PDF p. 53, segment 3 through PDF p. 55, segment 2",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 53, segment 3 through PDF p. 55, segment 2",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "componentLocators": [
+          {
+            "id": "research-traditional-core-1nuu-9d906cfc8d5c",
+            "label": "PDF p. 53",
+            "pageNumber": 53,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 77574,
+            "normalizedEndOffset": 78450
+          },
+          {
+            "id": "research-traditional-core-1oj7-e505139e4af6",
+            "label": "PDF p. 54",
+            "pageNumber": 54,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 78451,
+            "normalizedEndOffset": 79017
+          },
+          {
+            "id": "research-traditional-core-1oyy-c34117f8546d",
+            "label": "PDF p. 54",
+            "pageNumber": 54,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 79018,
+            "normalizedEndOffset": 80062
+          },
+          {
+            "id": "research-traditional-core-1prz-799a55151bef",
+            "label": "PDF p. 55",
+            "pageNumber": 55,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 80063,
+            "normalizedEndOffset": 80811
+          },
+          {
+            "id": "research-traditional-core-1qcs-d38d2438ff81",
+            "label": "PDF p. 55",
+            "pageNumber": 55,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 80812,
+            "normalizedEndOffset": 81941
+          }
+        ]
+      },
+      "provenanceHash": "867ba3be56b8075472a8c18128e6f0b868e437ba34f5dfb7e60da3c1bc0a685e",
+      "componentProvenanceHashes": [
+        "9d906cfc8d5ca375b0365d821ecd92b419afecd8e3f1b4dff0ec12fdba1396ff",
+        "e505139e4af6044c024f54649ea4719aec7ed1534dafd273e40b699740c296f9",
+        "c34117f8546d8935abaf5c8cfe5f3e0603c702b6c53c36ed46ef3e4c5783a466",
+        "799a55151bef18bb3267f6e116b8582a2e92f78a589113295b8dee90dd57a4f8",
+        "d38d2438ff815af63d27931b909711ef0100351eb0dee98869e60e063b28f421"
+      ],
+      "wordCount": 869,
+      "characterCount": 4371,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Point to each object as it is named and explain it before asking anyone to read: the offering recalls deliverance, matzah recalls hurried departure, and maror recalls the bitterness of slavery. Then connect the symbols to the teaching that every generation enters the story personally.",
+      "rationale": "These consecutive records form the source's complete central teaching on the three required symbols and the every-generation obligation, a coherent unit that supplies both ritual meaning and personal connection.",
+      "creditNotes": "Credit Paltiel Birnbaum, Hebrew Publishing Company, and the Varady digitization; preserve the sequence as a single sourced unit.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "ocr-and-page-layout-check",
+        "plain-language-definitions-required",
+        "temple-offering-context",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-traditional-core-praise-transition",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "title": "From redemption to praise",
+      "exactText": "49 The Passover Haggadah The wine cup is raised: Therefore it is our duty to thank and praise, laud and glorify, extol and honor, exalt and adore him who performed all these miracles for our fathers and for us. He brought us out of slavery into freedom, out of grief into joy, out of mourning into festivity, out of darkness into great light, out of subjection into redemption. Let us recite a new song before him! Halleluyah, praise the Lord! The wine cup is put down. Psalm 113 Praise the Lord! Praise, you servants of the Lord, praise the name of the Lord. Blessed be the name of the Lord henceforth and forever. From the rising of the sun to its setting, the Lord’s name is to be praised. High above all nations is the Lord; above the heavens is his glory.\n\nWho is like the Lord our God, enthroned on high, looking down upon heaven and earth? He raises the poor out of the dust, and lifts the needy out of the dunghill, to scat them with princes, with the princes of his people. He turns the barren housewife into a happy mother of children. Praise the Lord! Psalm 114 When Israel went out of Egypt, Jacob’s household from a people of strange speech, Judah became God’s sanctuary, Israel his dominion. The sea beheld and fled; the Jordan turned backward; the mountains skipped like rams, and the hills like lambs. What ails j r ou, 0 sea, that thus you flee? Why, 0 Jordan, do you turn backward? You mountains, why do you skip like rams? You hills, why do you leap like lambs?\n\nTremble, 0 earth, at the Lord’s pres¬ ence, at the presence of the God of Jacob, who turns the rock into a pool of water, the flint into a flowing fountain. According to Mishnah Pesahim (5:7; 10:6), the Ilallcl was chanted in Temple times during the sacrifice of the paschal lamb and in the course of the Passover meal. Psalm 114, one of the finest lyrics in literature, alludes to the dividing of the Red Sea and the Jordan. The sea and the river arc personified and represented as awe-struck by the presence of the Lord. np“i onnn is a poet¬ ical description of the earthquake which accompanied the giving of the Torah. D’D D)K *mn alludes to the miraculous supply of water in the wilderness (Exodus 17:6).",
+      "segmentIds": [
+        "research-traditional-core-1s8u-79d1db5ea5e9",
+        "research-traditional-core-1stz-5f07f2d80c75",
+        "research-traditional-core-1tdy-a90cfab6eeea"
+      ],
+      "sourceLocation": "PDF p. 57, segment 1 through PDF p. 57, segment 3",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 57, segment 1 through PDF p. 57, segment 3",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "componentLocators": [
+          {
+            "id": "research-traditional-core-1s8u-79d1db5ea5e9",
+            "label": "PDF p. 57",
+            "pageNumber": 57,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 83262,
+            "normalizedEndOffset": 84022
+          },
+          {
+            "id": "research-traditional-core-1stz-5f07f2d80c75",
+            "label": "PDF p. 57",
+            "pageNumber": 57,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 84023,
+            "normalizedEndOffset": 84741
+          },
+          {
+            "id": "research-traditional-core-1tdy-a90cfab6eeea",
+            "label": "PDF p. 57",
+            "pageNumber": 57,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 84742,
+            "normalizedEndOffset": 85450
+          }
+        ]
+      },
+      "provenanceHash": "8c5d3d1cb9a53eb9a62cc01b49715433013f5f27653bb811a8b5286c41f7fae8",
+      "componentProvenanceHashes": [
+        "79d1db5ea5e9227d3be5e0d580016cfc55459e8ae7b460fbe25031639d144d2e",
+        "5f07f2d80c75c468b431cbc93f7a90665e7c11b6832d442b63208c3b84095cd0",
+        "a90cfab6eeea0d1ebad31160165f4e57d3f95447795debc5e69af3b9bf90ac4b"
+      ],
+      "wordCount": 403,
+      "characterCount": 2190,
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests that the story now turns into gratitude and song. State whether the group will read responsively, sing, or listen, and make participation optional.",
+      "rationale": "The adjacent passages preserve the transition out of the central telling and into praise, preventing a clipped psalm fragment from appearing without its narrative reason.",
+      "creditNotes": "Credit the Birnbaum edition and Varady digitization in the final credits.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "ocr-and-page-layout-check",
+        "participation-cue-required",
+        "plain-language-transition-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-traditional-core-table-actions",
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "title": "Washing and symbolic eating",
+      "exactText": "Wash the hands for the meal Upon washing the hands for the meal. Blessed art thou, Lord our God, King of the universe, who hast sanctified us with thy commandments, and commanded us concerning the washing of the hands. Hamotzi and a special blessing over the matzah Two blessings over the matzah: Blessed art thou, Lord our God, King of the universe, who bringest forth bread from the earth. Blessed art thou, Lord our God, King of the universe, who hast sanctified us with thy commandments, and commanded us concerning the eating of matzah. the Tosafoth. A marginal note in a medieval Haggadah to the effect that the Mishnah in the Talmud ('naff 'D3> has a variant reading was misunderstood by copyists or printers to mean on Saturday night (naff notina). This is why most printed texts of the Haggadah indicate here that on Saturday night one is to reverse the order of the phrase and say D’nain ]ai mnosn )a. In the meantime, varied ingenious explanations have been offered.\n\n53 The Passover IIaggadah The bitter herbs dipped in haroseth Over the maror: Blessed art thou, Lord our God, King of the universe, who hast sanctified us with thy commandments, and commanded us con¬ cerning the ealing of bitter herb. The maror and matzah sandwich Upon inserting the maror between two pieces of matzah: In memory of the Temple, we do as Hillel did in Temple times: he combined matzah and maror and ate them together, to fulfill what is written in the Torah: “They shall eat it with unleavened bread and bitter herbs.” 1 The pesah mead After the meal, the afikoman is distributed to all Grace after the meal Psalm 126 A Pilgrim Song. When the Lord brought the exiles back to Zion, we were like those who dream.",
+      "segmentIds": [
+        "research-traditional-core-1vdz-daf1db2cb673",
+        "research-traditional-core-1x3y-2f88959244e8"
+      ],
+      "sourceLocation": "PDF p. 59, segment 2 through PDF p. 63, segment 1",
+      "locator": {
+        "edition": "Seder Haggadah Shel Pesaḥ",
+        "sourceLocation": "PDF p. 59, segment 2 through PDF p. 63, segment 1",
+        "localExtract": "research/source-extracts/traditional-core.txt",
+        "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+        "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+        "componentLocators": [
+          {
+            "id": "research-traditional-core-1vdz-daf1db2cb673",
+            "label": "PDF p. 59",
+            "pageNumber": 59,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 87335,
+            "normalizedEndOffset": 88312
+          },
+          {
+            "id": "research-traditional-core-1x3y-2f88959244e8",
+            "label": "PDF p. 63",
+            "pageNumber": 63,
+            "localExtract": "research/source-extracts/traditional-core.txt",
+            "sourceSha256": "0bf3ac32a5a48b0918a68669c23cd717c421f5d3770abe9e3d1a8fd190c0e8d0",
+            "extractSha256": "e80e87df51add8b143ced21f8b9fef4c6653b39490b494143344a6818960e243",
+            "normalizedStartOffset": 89566,
+            "normalizedEndOffset": 90292
+          }
+        ]
+      },
+      "provenanceHash": "22da765fa34bf939e593ffee716c3136491006e47d156b1645bf37f4f4655d97",
+      "componentProvenanceHashes": [
+        "daf1db2cb673c500ab292e8d3b3c52dcb9296ecb87b1584006710678ca110709",
+        "2f88959244e8ca8bcd23c5691f0d7ceed74d9ce001003912d305f9f4adf9ea99"
+      ],
+      "wordCount": 301,
+      "characterCount": 1705,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "State exactly what happens: guests may wash their own hands or pour water for one another over a basin, then everyone eats matzah, bitter herb with haroset, and the matzah-maror sandwich as directed. Define each food and give allergy-safe alternatives.",
+      "rationale": "These source-order records contain the washing and symbolic-eating progression, but the project must supply accessible host instructions around the traditional blessings and compressed ritual prose.",
+      "creditNotes": "Credit the Birnbaum source and digitization; note that accessible action directions are project-authored bridges.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Paltiel Birnbaum; Hebrew Publishing Company",
+        "containingSource": "Seder Haggadah Shel Pesaḥ",
+        "sourcePresented": null,
+        "readerCredit": "From Seder Haggadah Shel Pesaḥ by Paltiel Birnbaum; Hebrew Publishing Company."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Birnbaum, Hebrew Publishing Company, and Aharon N. Varady's digitization",
+          "Record access date and modifications"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "food-definition-and-allergy-note",
+        "host-action-cues-required",
+        "mutual-handwashing-option-required",
+        "ocr-and-page-layout-check"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

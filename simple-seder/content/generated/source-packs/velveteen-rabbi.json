@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "velveteen-rabbi",
+  "sourceTitle": "The Velveteen Rabbi's Haggadah for Pesach",
+  "modules": [
+    {
+      "id": "vr-runtime-maggid-opening",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "exactText": "Maggid, the Hebrew word for “story,” is at the root of the word haggadah. In re-telling the story of the Exodus, we speak ourselves into our communal past.",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 18, Maggid opening",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "treatment": "verbatim-normalized",
+      "wordCount": 28,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "provenanceHash": "31127afb9826373e974d038d3b94258b9cce7763d9e884b06ed73a37843fb268",
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      }
+    },
+    {
+      "id": "vr-runtime-rachtzah-hands",
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "exactText": "What does washing our hands tell us? That bodies are sacred and deserving of care. It is our hands that plant and write, that caress and create—and also our hands that strike and poison and smash. We wash our hands not to absolve ourselves of responsibility, but to affirm the need to make our hands holy. At this season of freedom and rebirth, we consecrate our hands to the task of building freedom for all who suffer.",
+      "locator": {
+        "edition": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourceLocation": "PDF p. 47, Rachtzah",
+        "localExtract": "research/source-extracts/velveteen-rabbi.txt",
+        "sourceSha256": "20d0a3c496427c10dd7de0e05d82a5834faeaaa09effcdd12f3fe861fa6779f1",
+        "extractSha256": "8ce3bf7e34d26c8ffe8b1acc42ab44a582f3bfc40df8e314a606088e3e5c87ab"
+      },
+      "sectionIds": [
+        "rachtzah"
+      ],
+      "themes": [
+        "mindfulness",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "treatment": "verbatim-normalized",
+      "wordCount": 77,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "custom-owner-permission",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Rachel Barenblat",
+          "Share freely and do not sell",
+          "Preserve printed credits for embedded material"
+        ]
+      },
+      "provenanceHash": "3d55632d9c7d07e2fb3e19a5a8f5a2d4f9ff4ef7c107faaf11b68aaee680f14f",
+      "attribution": {
+        "creator": "Rabbi Rachel Barenblat",
+        "containingSource": "The Velveteen Rabbi's Haggadah for Pesach",
+        "sourcePresented": null,
+        "readerCredit": "From The Velveteen Rabbi's Haggadah for Pesach by Rabbi Rachel Barenblat."
+      }
+    }
+  ]
+}

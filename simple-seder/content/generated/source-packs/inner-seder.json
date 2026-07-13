@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "inner-seder",
+  "sourceTitle": "Haggadah of the Inner Seder",
+  "modules": [
+    {
+      "id": "inner-opening-transformation",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "exactText": "The seder (which means “order”) is literally an ordering of symbols so that they progress from slavery to freedom. So, for example, matsah can symbolize slavery, leaving Egypt, coming into the land, and messianic redemption. But on seder night, we first experience it as the bread of slavery (lachma anya), and end by experiencing it as the bread of redemption (afikoman). This transformation is the essence of the seder.",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 2, opening essay",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "mindfulness",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "treatment": "verbatim-normalized",
+      "wordCount": 69,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "f6870c766a78405143bf6a5f56967fad3e30798be3b075a10d848114bf2ee0ba",
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      }
+    },
+    {
+      "id": "inner-karpas-hyssop",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "exactText": "Add hyssop, known as eizov in Hebrew and za’atar in Arabic, to your karpas or seder plate, to remember the blood on the lintel that protected the firstborn, to remember that Palestinian and Israelite culture are rooted in the same land, and to hope for a future where no children are sacrificed to terror or to war. (You can also use a sprig of oregano or thyme if you cannot find hyssop.)",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 4, Karpas",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3"
+      },
+      "sectionIds": [
+        "karpas"
+      ],
+      "themes": [
+        "environment",
+        "social-justice",
+        "interfaith",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "plate-option",
+      "treatment": "verbatim-normalized",
+      "wordCount": 72,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "9d99cf7be9af3d1b9575ab9bf19ab2931718eb02833bc1f3afb9f6c67394a559",
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      }
+    }
+  ]
+}

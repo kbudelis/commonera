@@ -1,0 +1,733 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "english-jews-seder",
+  "title": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+  "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+  "family": "historical-cultural",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "Dávid Kaufmann’s 1892 documentary study reconstructs distinctive medieval English Jewish Seder customs from Jacob ben Judah’s 1287 manuscript. It is strongest as historical context, host-guide material, and carefully translated source notes rather than as uninterrupted beginner-facing liturgy.",
+  "sourceAssessment": {
+    "voice": "Academic, documentary, formal, text-critical, and multilingual, alternating English historical analysis with medieval Hebrew source excerpts.",
+    "bestUses": [
+      "Short historical sidebars on medieval English Jewish Seder practice",
+      "Host-guide context for haroset, early table customs, and the ritual order",
+      "Traditional long-form editions that can label manuscript variants and poetic additions"
+    ],
+    "beginnerRisks": [
+      "This is a scholarly article about a Haggadah, not a continuous modern Haggadah script.",
+      "Many primary excerpts are untranslated or embedded inside technical comparison and footnote discussion.",
+      "Names, abbreviations, manuscript variants, and page references require editorial explanation before use."
+    ],
+    "politicalContext": "Its references to pre-expulsion England, exile, and historical persecution belong to medieval and scholarly context. They must not be generalized into blame toward present-day national, religious, or ethnic groups.",
+    "creditContext": "Credit Dávid Kaufmann for the public-domain study and Aharon N. Varady for the CC BY-SA 4.0 transcription; preserve transcription licensing and indicate changes."
+  },
+  "corpus": {
+    "acquisitionKind": "official-source-snapshot",
+    "pageCount": null,
+    "segmentCount": 33,
+    "exactCharacterCount": 25566,
+    "exactWordCount": 4688,
+    "reconstructionSha256": "a1c135a5fde2acfdc347dc5bc37c220746df4bf1bd40857cd52d24ce4e45bc8a",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady.",
+    "license": "public-domain + CC-BY-SA-4.0 transcription",
+    "conditions": [
+      "Credit Dávid Kaufmann and Aharon N. Varady",
+      "Preserve transcription license and indicate changes"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=4609"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 11,
+      "segmentIds": [
+        "research-english-jews-seder-0-2b743cb55bac",
+        "research-english-jews-seder-ou-f0749b2b0890",
+        "research-english-jews-seder-1bk-021d4c1b201f",
+        "research-english-jews-seder-1vj-495e26e447b3",
+        "research-english-jews-seder-2h5-f7db7f5d3e0d",
+        "research-english-jews-seder-334-cc0cb11a571e",
+        "research-english-jews-seder-3qv-c275ca68efee",
+        "research-english-jews-seder-42i-d84c0c331987",
+        "research-english-jews-seder-4mr-47d913cd5173",
+        "research-english-jews-seder-59j-f26915b2aeb3",
+        "research-english-jews-seder-5x6-8c769899d700"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-english-jews-seder-6cl-01404a9201ff",
+        "research-english-jews-seder-6y1-58aaacd5440a",
+        "research-english-jews-seder-7hn-e58c03423c92",
+        "research-english-jews-seder-86d-9c3afa888029"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "hallel": {
+      "segmentCount": 18,
+      "segmentIds": [
+        "research-english-jews-seder-8ql-f4b17c832e48",
+        "research-english-jews-seder-9bu-a1c8a9d9b273",
+        "research-english-jews-seder-9u3-ae56dafcf0ab",
+        "research-english-jews-seder-aju-b328ab8b5880",
+        "research-english-jews-seder-bao-b789edc26787",
+        "research-english-jews-seder-byl-dc180914ecc6",
+        "research-english-jews-seder-cho-151fca8049d0",
+        "research-english-jews-seder-d48-42cb01dd7cb9",
+        "research-english-jews-seder-dp9-352251d34e47",
+        "research-english-jews-seder-eam-169851c4607f",
+        "research-english-jews-seder-eih-f3c4dba2e007",
+        "research-english-jews-seder-f26-abe32b3d380c",
+        "research-english-jews-seder-fy8-7adc59fa94c0",
+        "research-english-jews-seder-gja-d5c357ca8b3b",
+        "research-english-jews-seder-h1y-466556acfad3",
+        "research-english-jews-seder-hni-9db9e9c9134a",
+        "research-english-jews-seder-i98-ed2cdf4d1fee",
+        "research-english-jews-seder-iuj-34d99a69b031"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 5,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "english-jews-seder-manuscript-orientation",
+      "title": "A medieval English Seder survives",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-0-2b743cb55bac",
+        "research-english-jews-seder-ou-f0749b2b0890",
+        "research-english-jews-seder-1bk-021d4c1b201f"
+      ],
+      "beginnerContext": "Present this as a short historical note before the ritual begins: a 1287 English Jewish manuscript preserves local Seder customs from before the expulsion.",
+      "rationale": "The article’s opening three segments establish the manuscript, explain why the rite is distinctive, and introduce its linguistic setting as one coherent documentary frame.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-sidebar-only",
+        "distinguish-commentary-from-liturgy",
+        "plain-language-context-required"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; identify the public-domain study and CC BY-SA 4.0 transcription.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 1",
+        "end": "official source snapshot, segment 3",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-0-2b743cb55bac",
+            "sourceLocation": "official source snapshot, segment 1",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 0,
+              "normalizedEndOffset": 893
+            }
+          },
+          {
+            "id": "research-english-jews-seder-ou-f0749b2b0890",
+            "sourceLocation": "official source snapshot, segment 2",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 894,
+              "normalizedEndOffset": 1711
+            }
+          },
+          {
+            "id": "research-english-jews-seder-1bk-021d4c1b201f",
+            "sourceLocation": "official source snapshot, segment 3",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 1712,
+              "normalizedEndOffset": 2430
+            }
+          }
+        ]
+      },
+      "totalWords": 407,
+      "exactTextSequenceSha256": "78056fdda36a1733fb0dd57267371592c97f03e0cb4317e922127769cdb38a7a",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "english-jews-seder-haroset-history",
+      "title": "Medieval haroset ingredients and authority",
+      "sectionIds": [
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-1vj-495e26e447b3",
+        "research-english-jews-seder-2h5-f7db7f5d3e0d",
+        "research-english-jews-seder-334-cc0cb11a571e"
+      ],
+      "beginnerContext": "First explain that haroset is the fruit-and-nut mixture used with the bitter herb, then identify these paragraphs as historical evidence about regional recipes rather than the app’s cooking instructions.",
+      "rationale": "The three consecutive passages move from the manuscript’s recipe through comparative regional practice to the English rabbinic authority behind that practice.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-sidebar-only",
+        "ingredient-safety-and-modern-recipe-separate",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and retain the transcription’s ShareAlike conditions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 4",
+        "end": "official source snapshot, segment 6",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-1vj-495e26e447b3",
+            "sourceLocation": "official source snapshot, segment 4",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 2431,
+              "normalizedEndOffset": 3208
+            }
+          },
+          {
+            "id": "research-english-jews-seder-2h5-f7db7f5d3e0d",
+            "sourceLocation": "official source snapshot, segment 5",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 3209,
+              "normalizedEndOffset": 3999
+            }
+          },
+          {
+            "id": "research-english-jews-seder-334-cc0cb11a571e",
+            "sourceLocation": "official source snapshot, segment 6",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 4000,
+              "normalizedEndOffset": 4854
+            }
+          }
+        ]
+      },
+      "totalWords": 418,
+      "exactTextSequenceSha256": "c1637b8d54f5bbcabcc543229eccead09622b223c919d19c0019fa9fc9398ca3",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "english-jews-seder-table-and-questions",
+      "title": "Medieval table order and questions",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-3qv-c275ca68efee",
+        "research-english-jews-seder-42i-d84c0c331987",
+        "research-english-jews-seder-4mr-47d913cd5173",
+        "research-english-jews-seder-59j-f26915b2aeb3",
+        "research-english-jews-seder-5x6-8c769899d700"
+      ],
+      "beginnerContext": "Explain the modern action for each step independently; then use this sequence to show how medieval English Jews ordered the cups, vegetables, matzah, questions, and teaching roles.",
+      "rationale": "The records follow the manuscript’s own early-Seder order into the Four Questions and Four Children, making a coherent comparative sequence despite the scholarly commentary around it.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-sidebar-only",
+        "do-not-substitute-for-host-instructions",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve article and transcription attribution.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 7",
+        "end": "official source snapshot, segment 11",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-3qv-c275ca68efee",
+            "sourceLocation": "official source snapshot, segment 7",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 4855,
+              "normalizedEndOffset": 5273
+            }
+          },
+          {
+            "id": "research-english-jews-seder-42i-d84c0c331987",
+            "sourceLocation": "official source snapshot, segment 8",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 5274,
+              "normalizedEndOffset": 6002
+            }
+          },
+          {
+            "id": "research-english-jews-seder-4mr-47d913cd5173",
+            "sourceLocation": "official source snapshot, segment 9",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 6003,
+              "normalizedEndOffset": 6822
+            }
+          },
+          {
+            "id": "research-english-jews-seder-59j-f26915b2aeb3",
+            "sourceLocation": "official source snapshot, segment 10",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 6823,
+              "normalizedEndOffset": 7673
+            }
+          },
+          {
+            "id": "research-english-jews-seder-5x6-8c769899d700",
+            "sourceLocation": "official source snapshot, segment 11",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 7674,
+              "normalizedEndOffset": 8228
+            }
+          }
+        ]
+      },
+      "totalWords": 621,
+      "exactTextSequenceSha256": "95f4e50c2167d90c2d8dd791996c46a51e0776d6587eff01858912764a62cd2a",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "english-jews-seder-maggid-variants",
+      "title": "Distinctive medieval Maggid readings",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-6cl-01404a9201ff",
+        "research-english-jews-seder-6y1-58aaacd5440a",
+        "research-english-jews-seder-7hn-e58c03423c92",
+        "research-english-jews-seder-86d-9c3afa888029"
+      ],
+      "beginnerContext": "Label this explicitly as a scholar’s comparison of manuscript readings, and summarize the relevant difference before displaying any Hebrew excerpt.",
+      "rationale": "These consecutive paragraphs document one cluster of Maggid variants, including omissions, additions, and altered formulations, without detaching a single variant from its analysis.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "specialist-textual-note-only",
+        "distinguish-commentary-from-liturgy",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; changes to the transcription must be identified under CC BY-SA 4.0.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 12",
+        "end": "official source snapshot, segment 15",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-6cl-01404a9201ff",
+            "sourceLocation": "official source snapshot, segment 12",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 8229,
+              "normalizedEndOffset": 9000
+            }
+          },
+          {
+            "id": "research-english-jews-seder-6y1-58aaacd5440a",
+            "sourceLocation": "official source snapshot, segment 13",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 9001,
+              "normalizedEndOffset": 9706
+            }
+          },
+          {
+            "id": "research-english-jews-seder-7hn-e58c03423c92",
+            "sourceLocation": "official source snapshot, segment 14",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 9707,
+              "normalizedEndOffset": 10596
+            }
+          },
+          {
+            "id": "research-english-jews-seder-86d-9c3afa888029",
+            "sourceLocation": "official source snapshot, segment 15",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 10597,
+              "normalizedEndOffset": 11324
+            }
+          }
+        ]
+      },
+      "totalWords": 564,
+      "exactTextSequenceSha256": "c999e3ec85858c8b8dfad05cdc8258f1497fd28959c1ad19cfe5ae23855da8d1",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "english-jews-seder-later-table-practice",
+      "title": "Hallel, washing, eating, and afikoman practice",
+      "sectionIds": [
+        "hallel",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-8ql-f4b17c832e48",
+        "research-english-jews-seder-9bu-a1c8a9d9b273",
+        "research-english-jews-seder-9u3-ae56dafcf0ab",
+        "research-english-jews-seder-aju-b328ab8b5880"
+      ],
+      "beginnerContext": "Use a modern host cue for every action and identify this source only as evidence of how one medieval community handled Hallel, the second washing, ritual foods, and the afikoman.",
+      "rationale": "The sequence stays with the article’s later-Seder procedural discussion and preserves the relationship among washing, blessings, symbolic eating, and the end of the meal.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-sidebar-only",
+        "do-not-substitute-for-host-instructions",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and preserve the transcription license and change notice.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 16",
+        "end": "official source snapshot, segment 19",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-8ql-f4b17c832e48",
+            "sourceLocation": "official source snapshot, segment 16",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 11325,
+              "normalizedEndOffset": 12089
+            }
+          },
+          {
+            "id": "research-english-jews-seder-9bu-a1c8a9d9b273",
+            "sourceLocation": "official source snapshot, segment 17",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 12090,
+              "normalizedEndOffset": 12746
+            }
+          },
+          {
+            "id": "research-english-jews-seder-9u3-ae56dafcf0ab",
+            "sourceLocation": "official source snapshot, segment 18",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 12747,
+              "normalizedEndOffset": 13673
+            }
+          },
+          {
+            "id": "research-english-jews-seder-aju-b328ab8b5880",
+            "sourceLocation": "official source snapshot, segment 19",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 13674,
+              "normalizedEndOffset": 14639
+            }
+          }
+        ]
+      },
+      "totalWords": 627,
+      "exactTextSequenceSha256": "718ffa62355ccb0ccb78a972153bebae68a771920b60dafad03174766f14f219",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "english-jews-seder-closing-piyyut",
+      "title": "A preserved closing poem",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-english-jews-seder-fy8-7adc59fa94c0",
+        "research-english-jews-seder-gja-d5c357ca8b3b",
+        "research-english-jews-seder-h1y-466556acfad3"
+      ],
+      "beginnerContext": "Explain that the article preserves a medieval poetic addition sung near the end of the Seder, then provide an editorially checked translation or refrain guide.",
+      "rationale": "The three final article segments introduce the poem, discuss its textual form, and reproduce its conclusion as one self-contained historical unit.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-song-opt-in",
+        "translate-hebrew-excerpt-before-display",
+        "participation-cue-required"
+      ],
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve public-domain and CC BY-SA 4.0 source information.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 28",
+        "end": "official source snapshot, segment 30",
+        "locators": [
+          {
+            "id": "research-english-jews-seder-fy8-7adc59fa94c0",
+            "sourceLocation": "official source snapshot, segment 28",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 20672,
+              "normalizedEndOffset": 21429
+            }
+          },
+          {
+            "id": "research-english-jews-seder-gja-d5c357ca8b3b",
+            "sourceLocation": "official source snapshot, segment 29",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 21430,
+              "normalizedEndOffset": 22101
+            }
+          },
+          {
+            "id": "research-english-jews-seder-h1y-466556acfad3",
+            "sourceLocation": "official source snapshot, segment 30",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/english-jews-seder.txt",
+              "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+              "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+              "normalizedStartOffset": 22102,
+              "normalizedEndOffset": 22877
+            }
+          }
+        ]
+      },
+      "totalWords": 415,
+      "exactTextSequenceSha256": "368eb23650f0bc36d906b5c9da07121d4a755e3c3ebc9c831e71595403cb05b8",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-english-jews-seder-byl-dc180914ecc6",
+      "sourceLocation": "official source snapshot, segment 21",
+      "reasons": [
+        "Extended collective-vengeance verses are unsuitable for the peace-focused default and are not needed to document the source’s constructive contributions."
+      ]
+    },
+    {
+      "id": "research-english-jews-seder-cho-151fca8049d0",
+      "sourceLocation": "official source snapshot, segment 22",
+      "reasons": [
+        "This continuation catalogs additional collective-vengeance verses and should remain research-only."
+      ]
+    },
+    {
+      "id": "research-english-jews-seder-hni-9db9e9c9134a",
+      "sourceLocation": "official source snapshot, segment 31",
+      "reasons": [
+        "Modern transcription-project note belongs in provenance documentation rather than the Haggadah reading stream."
+      ]
+    },
+    {
+      "id": "research-english-jews-seder-i98-ed2cdf4d1fee",
+      "sourceLocation": "official source snapshot, segment 32",
+      "reasons": [
+        "Transcription request and project notes are metadata, not source liturgy or historical explanation for guests."
+      ]
+    },
+    {
+      "id": "research-english-jews-seder-iuj-34d99a69b031",
+      "sourceLocation": "official source snapshot, segment 33",
+      "reasons": [
+        "Detached scholarly endnotes are research apparatus and should not be inserted as a reading."
+      ]
+    }
+  ],
+  "notes": [
+    "This source remains included as documentary and contextual material; its scholarly form is a reason to label it, not to discard it.",
+    "Quoted Hebrew must not be presented to beginners without a checked translation and an explanation of whether it is liturgy, a manuscript variant, or scholarly commentary.",
+    "All recommended sequences remain candidate-only pending human editorial review."
+  ]
+}

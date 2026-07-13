@@ -233,6 +233,80 @@ export function validateContent(pack, options = {}) {
   };
 }
 
+export function validateRuntimeSourceCorpus(index, sourceCatalog = []) {
+  const errors = [];
+  const addError = (condition, message) => { if (!condition) errors.push(message); };
+  const sources = Array.isArray(index?.sources) ? index.sources : [];
+  addError(index?.schemaVersion === "1.0.0", `Unsupported runtime source schema: ${index?.schemaVersion ?? "missing"}.`);
+  addError(sources.length === 20, `Expected 20 runtime sources; found ${sources.length}.`);
+  addError(index?.cohesionPolicy?.dominantSourceCount === 1, "Runtime corpus must require exactly one dominant source.");
+  addError(index?.cohesionPolicy?.maximumSecondarySources <= 2, "Runtime corpus may use no more than two secondary sources.");
+  addError(index?.cohesionPolicy?.compatibilityDirection === "dominant-to-secondary", "Runtime source compatibility must be dominant-to-secondary.");
+
+  const sourceIds = sources.map((source) => source.sourceId);
+  const catalogIds = sourceCatalog.map((source) => source.id);
+  addError(duplicateValues(sourceIds).length === 0, "Runtime source IDs must be unique.");
+  addError(
+    JSON.stringify([...sourceIds].sort()) === JSON.stringify([...catalogIds].sort()),
+    "Runtime source IDs must exactly match the reader-credit source catalog.",
+  );
+  const sourceFamilies = new Set(sources.map((source) => source.family));
+  const passageIds = [];
+  let passageCount = 0;
+
+  for (const source of sources) {
+    const label = source.sourceId ?? "(unknown source)";
+    addError(source.acquisition?.status === "acquired-verified", `${label} has not been acquired and verified.`);
+    addError(/^[a-f0-9]{64}$/.test(source.acquisition?.sha256 ?? ""), `${label} has an invalid source-file hash.`);
+    addError(/^[a-f0-9]{64}$/.test(source.acquisition?.extractSha256 ?? ""), `${label} has an invalid extract hash.`);
+    addError(source.rights?.runtimeEligible === true, `${label} is not runtime-eligible at the source level.`);
+    addError(
+      Array.isArray(source.compatibleFamilies) && source.compatibleFamilies.every((family) => sourceFamilies.has(family)),
+      `${label} references an unknown compatible source family.`,
+    );
+    addError(
+      Array.isArray(source.incompatibleFamilies) && source.incompatibleFamilies.every((family) => sourceFamilies.has(family)),
+      `${label} references an unknown incompatible source family.`,
+    );
+    const passages = Array.isArray(source.passages) ? source.passages : [];
+    passageCount += passages.length;
+    for (const passage of passages) {
+      passageIds.push(passage.id);
+      const passageLabel = passage.id ?? `(passage in ${label})`;
+      addError(passage.sourceId === label, `${passageLabel} has the wrong sourceId.`);
+      addError(passage.family === source.family, `${passageLabel} has the wrong source family.`);
+      addError(passage.approvalStatus === "approved", `${passageLabel} is not approved for the compiled runtime index.`);
+      addError(passage.rights?.runtimeEligible === true, `${passageLabel} is not runtime-eligible.`);
+      addError(nonempty(passage.exactText), `${passageLabel} has no exact text.`);
+      addError(
+        passage.provenanceHash === provenanceHash(passage.exactText ?? ""),
+        `${passageLabel} has a stale or invalid exact-text provenance hash.`,
+      );
+      addError(
+        passage.wordCount === (passage.exactText ?? "").normalize("NFC").replace(/\s+/g, " ").trim().split(" ").filter(Boolean).length,
+        `${passageLabel} has a stale word count.`,
+      );
+      addError(passage.locator?.sourceSha256 === source.acquisition?.sha256, `${passageLabel} does not resolve to its acquired source file.`);
+      addError(passage.locator?.extractSha256 === source.acquisition?.extractSha256, `${passageLabel} does not resolve to its searchable extract.`);
+      addError(nonempty(passage.locator?.sourceLocation), `${passageLabel} has no source locator.`);
+      addError(nonempty(passage.attribution?.readerCredit), `${passageLabel} has no reader credit.`);
+      if (passage.rights?.sourcePresentedAttributionRequired) {
+        addError(nonempty(passage.attribution?.sourcePresented), `${passageLabel} is missing required source-presented attribution.`);
+      }
+    }
+  }
+  addError(duplicateValues(passageIds).length === 0, "Runtime passage IDs must be unique.");
+  // Zero passages is tolerated while the independently audited curation job is
+  // still running. Once compilation begins, every source must be represented.
+  if (passageCount > 0) {
+    addError(passageCount >= 40, `Expected at least 40 approved runtime passages; found ${passageCount}.`);
+    for (const source of sources) {
+      addError(source.passages.length >= 2, `${source.sourceId} needs at least two approved compiled runtime passages.`);
+    }
+  }
+  return { errors: [...new Set(errors)], passageCount };
+}
+
 async function loadRuntimeContent() {
   const source = await readFile(path.join(projectRoot, "content/pack.ts"), "utf8");
   const output = ts.transpileModule(source, {
@@ -275,6 +349,11 @@ async function loadRuntimeContent() {
 export async function runValidation() {
   const { pack, architecture } = await loadRuntimeContent();
   const result = validateContent(pack);
+  const runtimeIndex = JSON.parse(
+    await readFile(path.join(projectRoot, "research/source-runtime-index.json"), "utf8"),
+  );
+  const runtimeCorpus = validateRuntimeSourceCorpus(runtimeIndex, pack.sourceCatalog);
+  result.errors.push(...runtimeCorpus.errors);
   result.errors.push(...architecture.validateSourceSpines());
   for (const passage of architecture.reviewedSourcePassages) {
     if (passage.provenanceHash !== provenanceHash(passage.text)) {

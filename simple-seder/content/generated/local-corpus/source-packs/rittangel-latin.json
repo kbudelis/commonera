@@ -1,0 +1,905 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "rittangel-latin",
+  "sourceTitle": "Liber Rituum Paschalium",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady.",
+    "license": "public-domain + CC-BY-SA-4.0 transcription",
+    "conditions": [
+      "Credit Johann Stephan Rittangel and Aharon N. Varady",
+      "Do not silently modernize OCR or translation"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=19649"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-rittangel-latin-preparing-the-home",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "Preparing for the Seder night",
+      "exactText": "*£ $& m % £& m « ,Um jam ipfa nox ante Diem profeftum Pafcha- tos, qux cft 15. Mentis NiOan (Martii noftri) in¬ greditur, Paterfamilias accipit paropfidem &pen- nitergium ( vulgo jpc&ectoifclj) cereumque accen¬ dens dicit: enedidus tu,Domine Deus er, Rex Seculi,quifandifi- i?it .nos p rxccpt is fu is& man¬ davit nobis fermenti expurga¬ tionem . urlp D*?iyn nijra by uiyi wbSi _ • ;von , Fada benedidione omnes angulos xdium , fi quoscunque hominum pedes tetigiffe fufpicatus fuit, et purgare incipit, vo¬ ce prorfus, dum hoc agit, ad facrum Cientium compotita - } quo o fic fari incipit: jsfl| •: >be k. iAl I m X & -a ^ a — ^ j _^B^L. _ p ^ m m jB-T A «f A ji * ^BBA m A I f 7 4 \" 1 i va r a i «ji» !\n\nfili : Mroni K^Dn Ha ;■ jjjpjrt Yiwi 3 riYFDrc Mnsyj nn^i ^3 b ) _ , Omne fermentum quod in ' mea poteftate eft , quod non jyidi, & quod non removi ( expurgavi) irritum (annihila- ' tum ) Gt, id eft (pro remoto ^Velexpurgato habebitur ) inicar pulveris terrae. i ’ A jA It - A Poftea in fcrinio quisquiliis iflis per eam nodem reconditis*, vel in loco quodam aereo , qu6 ne mures pertingere poflint, fufpenfis, fequenti mane parafceves , qux eft decima quarta Mentis Niffan » hora quinta poft Solis ortum , fermento illo feu quifquiliis receptis, facruroquendam, huic ufui peculiarem, ftruit ignem, & comburit his additis. Omne fermentum quo.d eft 1 mea poteftate , quodque idi & quod non vidi, quod NTDn bp nw A temo? f > Digftized by Googie\n\n/emovi & quod non removi, irritum (annihilatum) fu & in- ftar pulveris terrae. t*rn rrrrnm rwt iwnraft rrn> ^n'?i Sen'7 rrm Huc ufque de fermenti expurgatione. Efpera jam Pafchatos, Dicsefti4-. Niflan, i< Martii, dum in Synagoga Vcfpertinae preces guntur, domeftici interim , ob partam ea ex iEgyptiaca fervitutc libertatem , quafi HHH| quodam gaudioagitnti, fplendidam in ft ruunt fam, requifitis&elecUs ad hanc (aeram Ccenam certis nece: cibis. Apponitur prseterca paroptis , oblongo Linteolo fti ■cui (bperimponitur armus ovi! Ius fumatus, ovum toftum, her¬ bae quaedam amarae (intellige Nafturtium, aut Apium, vel in e- jusdefedtu Petrofelinum j Raphanum majorem, aut litnilequii & tres denique pladentae azymae, quarum inferior tribus cl '^tpribus inlignita, Ifraelitas; mediaduobus. Levitas; fuperior uno charadtere fignata , Sacerdotes repmefentat; ad indigi dum omnibus elfe praeceptum, ut facro hoc fefto comedant p»- nem azymorum: tquae omnia polimoduno reliqua praedidti /coli parte obteguntur.\n\nPera&is in Synagoga precibus, quilibet domum luam repetit, & mox ubi , ipsa jam nodle ingrelii, ad menfam paratam ventum e fi:, eluuntur pocula, cumqueprfr'- cibus & certisfolemnitatibus lingulis , etiam.minhnisinfantibus- infunduntur quaterna; ex quibus omnibus quilibetadminimum dimidii ovi quantitatem .bibere tenetur , finiftro quotiescu bibit innixus brachio. Quae confuetudo apud ipfos in tanto ha-: •betur honore & pretio , ut qui toto illo facrae Ccenx tetnport ita recubueric, eum vulgo credant fandliflimum efle, adeoque maxime revereantur. Poculum denique unum pro Eliahu Pro¬ pheta funditur j cui ebibendo certus quidam Conviva defti- tiatuf. - - • : i Notandum, quod has noftras regiones inhabitantes Judaei er juglandibus, ]pomis Qc meile , & diis colorem horum referen¬ tibus , Orientales vero & qui in Italia, ex da&ylis & ficubus arefacis, vel uvis pallis & Gm ilibus, maffim conficiunt, & viriis condimentis condiunt , fumuntque apium, eoque in ma:fro ■' . vino « Digfctized by Google",
+      "segmentIds": [
+        "research-rittangel-latin-56s-954df8257811",
+        "research-rittangel-latin-5qc-f0b4ef413860",
+        "research-rittangel-latin-6az-d7651e922344",
+        "research-rittangel-latin-72x-32bc00a85d4a"
+      ],
+      "sourceLocation": "PDF p. 10, segment 1 through PDF p. 11, segment 2",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "PDF p. 10, segment 1 through PDF p. 11, segment 2",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-56s-954df8257811",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 6724,
+            "normalizedEndOffset": 7427
+          },
+          {
+            "id": "research-rittangel-latin-5qc-f0b4ef413860",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 7428,
+            "normalizedEndOffset": 8170
+          },
+          {
+            "id": "research-rittangel-latin-6az-d7651e922344",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 8171,
+            "normalizedEndOffset": 9176
+          },
+          {
+            "id": "research-rittangel-latin-72x-32bc00a85d4a",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 9177,
+            "normalizedEndOffset": 10179
+          }
+        ]
+      },
+      "provenanceHash": "f19632dd5595840c413f415ed85d207fbd5a0bcccedaa09aec582e6e697983b0",
+      "componentProvenanceHashes": [
+        "954df8257811c645a604888ed8b3b085dcac477d0f7a916e5dd9fd43a49ed43f",
+        "f0b4ef413860c1f011cee36467572545625e9b29cb3b56e710598e8dd0846799",
+        "d7651e92234492b1e842352e3cffcef113b5718bbc60aab4f36298b555e0654a",
+        "32bc00a85d4a3a6fe6ec2087b4af7b5555b36ba706b7efdca05dc0e013f00145"
+      ],
+      "wordCount": 576,
+      "characterCount": 3458,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Summarize in modern English that the source begins with removing leaven, evening prayers, returning home, and approaching the prepared table.",
+      "rationale": "These consecutive pages form the work’s complete transition from pre-Passover preparation into the household Seder rather than isolating a single antiquarian instruction.",
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the public-domain original and open transcription.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "facsimile-visual-check-required",
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-rittangel-latin-first-cup-to-questions",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "First cup through the questions",
+      "exactText": "r 5 intin ioo vel squa ita dilutam , ut fiat aliquo modo fluxilis , prcemifla bcnediftione Patcr-fitmilias| eam primus quafi ftat, eandcmque Bcnedidtionem exteris propria voce re- E cntibus conflmiliter comedendam porrigit. Quo ipfo a<ftu :ris, quid hoc ipfum fignificet , interrogantibus refpondet': Hsec quam ex rebus flavis conflatam cernitis maflam , iignifr- t at limum, quem in Aigypto patres noftri olim difficili labore pedum Aiorum calcaverunt; Apium vero quod vidiftis nos il¬ li msffaeintingere, ftramentum denotat, quod Patresnoftrosun- diquaqueex omni terra bine Scinde oportuit conquirere, ut eo limum confolidarent. . - . Hifce omnibus paratis affident menfae , & unicuique infun- \"i dirur poculum fuum: quo elevato Patcr-tamilias fequentia ver¬ ba quafi canrillando profatur: -• • * cnedi&us lis tu, Domine S nofter, creans fructum \\rnVa Benedi&us Tu , Domine | nofter, Rex Seculi, qui jt nos prae omni Popu- j £:\n\nevexit nos prse omni gua , & lanftificavit nos cis fuis,&dediftinobis, ineDeus nofter, cutndi- leftione fefta (annua) in gau¬ dium, feftivicates & tempora in laetitiam, diem feltiazymorum hunc, tempus liberationis no- ftrm,convocationem fandtam, memoriam -exitus jEgypti: quoniam nos elegifti , & nos fandificafti prae omnibus po¬ pulis, Ferta ( annua) fandtira- tis tuae cum gaudio & laetitia haereditare nos feciftiiBenedi- ftus tu , Domine lanftificans Ifrael & tempora.- mm * nna '■pn % - | I ' L \" - 1 4 ? I * ? m - jk i rjf?* nm 12 ■ w « •¥ m m w m t twb Sdd vanni oy nm rnwQ3 nDnto irn 1 ?» 'v u? nnDw*? cnyiD jn pv» ns* d'jdn irnnn jdt mn nwon n3T «mp mpo umai mna iiz'D tr»o 'Hym dwi n«nj? fwra rraa ntinp '?> nn« *]nz ;un7n:n : eyjoim vnpo B enediet us tu, Domine Deus irn>N nnn nna nofter, Rex feculi, qui vivi- ijjyWU^nnW oVl3?H ficavit dos , & fuperftites fecit « I A n©$ Digitized by Google\n\nros, & attingere fecit nos prac- fcns tempus hoc. 4* rvn mi m ■ 4 Poft haec quilibet ex calice luo bibit, menfatn reponit. jm i \" jgL A ril » & w 0 ^ m £| jL Deinde adfertur pelvis cum mantili, & Pater-familias lavat manus, ac 1’equcntcm pronuntiat benedidionem: Benedidus fis tu , Domine Deus nofter, Rex Seculi, qui fandificavi: nos praeceptis' fuis, & praecepit nobis lotionem manuum. irnVx nnx nm uwjp o^iyn Finita Benedidione fumitapium, vel in illius defedu felinum , intingitque in aquam fallam vei acetum. Hac didione fada comedit, tali modo & caeteris diftribuens, dem Benedidionem repetentibus; w Benedidus fis tu, Domine HHN Deus nofter, creans frudum terra;. D 1 ?\n\nPorro linteolo paularim elevato, mediam, quam Levitas tehac dcfignare diximus , promens placentam , in duas fran partes, quarum unam lub mappa recondit, ut fit panis recor nonis, in memoriam.nimirum, quod Parentesiplorumma\" farinaceam linteis involutam ex jEgypto extrufi exportari hsecqufc ad finem ccense fervatur, & loco agni pafchalis o . ultimb comeditur: Alteram vero partem inter duas adhuc tceras reponens placentas, praefenti ufui refervat. Sumens fuper armum ovillum fumatum ovumqueroftum , ex parop in menfam deponit, & folam azymis certo, ut fupra diximus, ordine repletam paropfidem amoabus manibus elevat,clara vo» ce dicens: ViaS ^Hic (effc) panis afflidionis, quem comederunt patres no- fi-ri in terra /Egypti: omnis eiuriens accedat & edat, qui¬ vis opus habens pafchate, ac*» Cedat, & pafchatizet. Prtefen- u anno hic j anno vero futura tax n x&n 1 ? xn a * xjnx:» Njnna# 'rO VlD'l m P&n t 1 I i<mn RD in w \"pn tortas nxan iW? wn - m Kf\". 5\n\n« in terra Ifrael: Anno Prxfenti p3y fervi ( fumus; ) anno vero fu turo filii libertatis (erimus.) ™nri nxib Hoc dido armum ovillum fumatum & ovum tentum in pa- ropiidem reponit % & fecunda vice pocula infunduntur , additis iis, quae iequuntur. 'Vn Vdsp % ■ * risa nin Quid diferepat nox hxc ab «-omnibus ( aliis ) nodhbus ? Quod in ( reliquis ) r bus nodibus fermentatum fi- J—ISQ1 VOH TOH# 1JK djmul - mus ^ omnino non fermentatum, lod irem in omnibus nodti- reliquas (omnes fine diferi- pnne ) comedamus herbas , r-nS^n hD2V/ hac vero nodte non nifi ama¬ ras. Quod in omnibus nodti- , T bus non intingamus nec unica idem vice, hac vero node nin n^Vn riin n^n nn« uabus vicibus.\n\nQuod in om¬ nibus nodtibus (pro lubitu ) fivefcdcntes fiveaccumbentesj c vero node omnes fomm bn D' pni crrmr p nin r&HV paoa comedamus !?n P3ca Servi fuimus Pharaonis in b $gypto , & eduxit nos Do¬ minus Deus nofter inde ma¬ nu forti & brachio extenfo : Si enim (Deus) Sandus, be- % nedidus fit ille, noneduxifiet patres noftros ex vEgypto , I: ' adhuc & nos Sf filiinoltri, & filii filiorum noftrorum manci- 1 oia eflemus Pharaonis in JE- Etfi enim omnes fumus i y^a 1 ? irti ;C*niy rniVHonyo» ymai f T3 WD wnisfc n» Kin 1^31 m u\"n tf-dywo irj 3 \\nT gypw fapien r ynw k apientes, omnes prudentes , omnes Legis periti , praece¬ ptum tamen nobis eft, ut enar¬ remus ( poderis noftris ) eg;tet- fymjEgypti. Quicunque iwiaa 1^3 erosn rhinn n« crjnr iltrya ^ti 1 ? uvy mra nanori A 3 fcdu’$ Digitized by Googi©",
+      "segmentIds": [
+        "research-rittangel-latin-7us-f9b4c72b86a5",
+        "research-rittangel-latin-8km-2524f91c1c74",
+        "research-rittangel-latin-99r-aabd96761e05",
+        "research-rittangel-latin-9sk-03d0e52af030",
+        "research-rittangel-latin-aj7-c1fd6f888108",
+        "research-rittangel-latin-b24-6ef313682102"
+      ],
+      "sourceLocation": "PDF p. 12, segment 1 through PDF p. 14, segment 2",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "PDF p. 12, segment 1 through PDF p. 14, segment 2",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-7us-f9b4c72b86a5",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 10180,
+            "normalizedEndOffset": 11109
+          },
+          {
+            "id": "research-rittangel-latin-8km-2524f91c1c74",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 11110,
+            "normalizedEndOffset": 12014
+          },
+          {
+            "id": "research-rittangel-latin-99r-aabd96761e05",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 12015,
+            "normalizedEndOffset": 12691
+          },
+          {
+            "id": "research-rittangel-latin-9sk-03d0e52af030",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 12692,
+            "normalizedEndOffset": 13650
+          },
+          {
+            "id": "research-rittangel-latin-aj7-c1fd6f888108",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 13651,
+            "normalizedEndOffset": 14331
+          },
+          {
+            "id": "research-rittangel-latin-b24-6ef313682102",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 14332,
+            "normalizedEndOffset": 15139
+          }
+        ]
+      },
+      "provenanceHash": "29c8b8a8a9928ee48c43dffd2c40af05fd0d648482656757bf7201c80dc728af",
+      "componentProvenanceHashes": [
+        "f9b4c72b86a57838b0df1d42d82f7f99edd85560d9d3009c3257bc00d3524714",
+        "2524f91c1c747fdaa975e4fdcbfa67dd900555e36d198a665ed1c129c71dc7cd",
+        "aabd96761e05d2d741f4b0e6bac718d682fb5c016cb35fc26b7b29e39a4b0de9",
+        "03d0e52af030159c39d7e7597f893d75fc66837886bd2a2f41d17ea97fe6d4b4",
+        "c1fd6f888108e9d98ce06ab4ea0103cc6d4fd4094b31caf33e89735b209a4a51",
+        "6ef313682102f7b5434c9eb026847af993872336ad396e9216fa1edafe2edae0"
+      ],
+      "wordCount": 871,
+      "characterCount": 4964,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Use the app’s ordinary action cues first, then label this as a seventeenth-century Latin account of Kiddush, washing, breaking matzah, invitation, questions, and the first answer.",
+      "rationale": "Six source-order segments preserve the continuous early ritual sequence and its handoff into the freedom story.",
+      "creditNotes": "Credit Rittangel and Varady; do not silently correct the historical transcription or OCR.",
+      "sourcePresentedAttribution": [
+        "©$ Digitized by Google",
+        "©"
+      ],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": "©$ Digitized by Google; ©",
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-substitute-for-host-instructions",
+        "facsimile-visual-check-required",
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-rittangel-latin-duty-and-four-children",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "The duty to tell and the Four Children",
+      "exactText": "feduia enarraverit exitum /E- ci , is laude digaus merito ebitar. * T% 6. Exemplum ( habemus ) de Rabbi Eleafaro , & Rabbi Jofua, & Rabbi Eleafaro filio Afar-jah, & Rabbi Akiba, & Rabbi Tarphonj ‘qui accum¬ bentes in (Civitate jBerje Be- rak narrabant^dc exitu >Egypu tota illa nodte, donec vene¬ runt difcipuli eorum & dixe¬ runt illis: Magiftrinoftri, ap¬ propinquavit tempus ad legen¬ dum rra (id eft orationem) matutinam: Dixit Rabbi Elcafcarus fr ius Axariah : Ecce ego jam fere feptuagefimumago annum, &c nunquam dignus habitus Ium fcire5 quam obcaufam enarran¬ dus fit exitus ex Algypro no- <ftu > donec de illo conciona^ tus eft: filius Somae > ficuci dici¬ tur Deui. c. id. f. 5. Pr opter e a re cordh is diem exitus tui de ter¬ ra JEgypti omnibus diebus vita tua: 'Per dies vita tua , dies; per omnes vero dies vita tua > etian^no&es intelliguntur.\n\nSa¬ pientes vero dicunt ; per dies vita tua y intelligi feculum hoc prsefcns : per omnes vero dies yita tua > dies Meffije. *Benedi<ftus LOCUS, [a. ] qui benedi&us eft j Benedi¬ cius qui dedit legem popu¬ lo fuo Ifraeli (benediftus fit ille.) RefpeCtu (enim ) quatuor filiorum (hominum ) locuta eft ! : ny\\m ni * * iu iry^K '313 ncryo fa iiy 1 ?# ''nm ytyin' 'ani iu «a'py •‘an miy D' 3 DD ww na 13 '311 « cnsDO rni pia 'jaa inia ^2 D'iyQ nt< s r'3 .laaw ly ; 'i''™ •* \\ 4 LC DI 1 ? 11DK1 DrVTD^n i rurip [dt y'jn umm f \\ « :mni? /W yow VX liy^M. '31 1DK •i w M'Dr m n'ii.y nVi rj ♦ nv?^a d 'ivo n«' “'DNJP MD1* \\2 1 1 'D' Ho cnro Sa 0'D'n tti 'D' -pt *i v n ix i^n 'D' D'i t?Dn> T*n ' 3 ' ^3 : riTon ina nnn Kin ius rmi o»\n\nt Le* j (id eftj qilatuor filios • hominum reipicic lex: ) Quo¬ rum unus lapiensj alter im¬ pius: unus fimplex, alter ve- Z ro plane interrogare nefeiens • (eftr :) . imi cjsn *inx min inxi nn nnxi jwS sbixwV jnr iriw [ai Per LOCUM Hebraeis inrelligitur DEUS ; propterea i quod, uri&SacraNoviTeftamentiScripturaloquitur, A&.ij. v v. a8. Omnes in eo vivamus, moveamur, & fipus. *Wf‘ *. • •• «* '+ • '^^JSapiens' quid dicit ? Quae- PTD QDn \" nam illa fune teftimonia, ita — tuta & judicia, qux prsece-’ pit Dominus Deus noder vo- bis ? Tum tu quoque dicas ip- \" fi , juxta conftitutiones Pa- fchatos: Non dimittunt (cce- *; tum comedentium) poft efum ( agni ) Pafchalis cum bella- ’* riis. (Hoceft» nonfinuntcce- ,.*■ tum comedentium poft efum agni pafchalis» comedere fe- !<\"; eundarum menfarum deiitias.)\n\ntu o*p nm nnyn no m* nm D^s^aro nnx t)xi : oanx irrfrx nofin fr max noan nnx p tcosjd px * i wFf ^ • * * * r 0% • Impius quid dicit ? Quis wi (eft) hiccultusvefter? )Exod.c. i r n. v. 3.6. VESTER ( dicit) JmSc non SUUS( cultus: )& '* quoniam fe ipfum excludit a i\" communione, abnSgat funda- • mentum: Tunc tu quoque he- I beta ipfi dentes & dic ipli : pro- fterea fecit MIHI hoc DEUSirt \" egreffu MEO ex /Egjpto : Exod. f, c. 13! v. 8. M l Ht (fecit hoc X>eas) & non IPSI: «St quam¬ vis fuitleteniamibi, nontanien : redemptus fuifiet.' pd Sdix xin no y vn dd 1 ? dd*? nx?n miayn nx iV x*i n:on p loyy nnpn nnx t)x ’ np^yn niDya )> naxi pjw nx 'nx?n r* ,v * rwy m v?xi y? n 1 ?! 'V n^ybd : Vxjo rrn n 1 ? ptt rrn r 4 «f 4 4 « f f \" , ' 4 ; Simplex quid ! dicit ? hoc (fibi vult? ) Exod. c. 13. v. X*. Et dicas itf JWira» /<*••; na naix xin na an nxr 0 I ■ Digitized by Google\n\n8 . ii eduxit mt Deus ex Mgjpto ji Q^DD \" UMWln domo fervorum» Et ille qui nefcic interroga¬ re j ei aperias ; quemadmodum fcriptura dicit Exod.c. 13. v. ,8. Et annuntiabis filio tuo in die illo dicendo : propter e a fecit mihi hoc Deus 5 in eyrejfu meo ex JE* gypto. Poteritne (hoc fieri) ab i- iiiitio menfis ? ( Non;) Scri¬ ptura (enim) ait, 1 I\\ T DIE ILLO : (Ergo) Si IN DIE /LLO, poffum (dicere) dum adhuc dies (eft?) Non: Scriptu¬ ra enim addit PROPTEREA: Quod (Propterea ; ) in nullum alium fenfum dixit 7 nifi de ea hora 3 qua panis non /ermcn- tatus & herbae amarae propoli- tae fuerint tibi. Primd parentes noftri cul¬ tores fuerunt cultus alieni, nunc ,vero fecit nos appropinqua¬ re (a) LOCUS ad cultum fuum 3 ficuti fcriptura dicit: jofu<e.",
+      "segmentIds": [
+        "research-rittangel-latin-bok-8d1f9c1e4896",
+        "research-rittangel-latin-ccf-4c4038fd2df4",
+        "research-rittangel-latin-cwj-58db9ea74155",
+        "research-rittangel-latin-diw-59dd2fedbd99",
+        "research-rittangel-latin-e78-759e1334092a"
+      ],
+      "sourceLocation": "PDF p. 15, segment 1 through PDF p. 17, segment 1",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "PDF p. 15, segment 1 through PDF p. 17, segment 1",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-bok-8d1f9c1e4896",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 15140,
+            "normalizedEndOffset": 15998
+          },
+          {
+            "id": "research-rittangel-latin-ccf-4c4038fd2df4",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 15999,
+            "normalizedEndOffset": 16722
+          },
+          {
+            "id": "research-rittangel-latin-cwj-58db9ea74155",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 16723,
+            "normalizedEndOffset": 17527
+          },
+          {
+            "id": "research-rittangel-latin-diw-59dd2fedbd99",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 17528,
+            "normalizedEndOffset": 18403
+          },
+          {
+            "id": "research-rittangel-latin-e78-759e1334092a",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 18404,
+            "normalizedEndOffset": 19158
+          }
+        ]
+      },
+      "provenanceHash": "bf76a6c85badd24dd03d5b613bcb402bb3b56e653fa158f38cff3ef80b4f5e73",
+      "componentProvenanceHashes": [
+        "8d1f9c1e489634d5a309304ee745b6e6fa91ff053c3f7fb5cd6ce28ce33a6a16",
+        "4c4038fd2df4a6c84860c58e1bd275e5d534df78f1a463704e357f72e96be488",
+        "58db9ea7415532039933dee8b90a49a9227cb18d06664c5b8dfe00ca3225cf57",
+        "59dd2fedbd99a16083f5af1f76cac8710b4bfe65c19491568f3a3574be74767e",
+        "759e1334092ac28a2c23724ec05b29fcb55868c997112259497ab2f3a808f410"
+      ],
+      "wordCount": 806,
+      "characterCount": 4022,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain that the text moves from the obligation to retell the Exodus into four different learning postures; use inclusive modern labels outside the exact source excerpt.",
+      "rationale": "These adjacent records contain one coherent pedagogical movement from the sages’ all-night telling through the four archetypal children and the instruction to begin for someone who cannot ask.",
+      "creditNotes": "Credit Rittangel and Varady and retain both public-domain and transcription-license information.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "facsimile-visual-check-required",
+        "historical-latin-specialist-opt-in",
+        "inclusive-modern-framing-required",
+        "modern-english-summary-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-rittangel-latin-oppression-and-redemption",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "Oppression, cry, and redemption",
+      "exactText": "rron naso njn ■'3Vii *pysn U1D3 0'Ttf criy :myi EDny rui noy «B „ * Et malefecerunt nobis ' , \" * 1 “ * * - # .Egyptii • ficuti dicitur Exa*/. o^yDn cuu r^an ■jotfitf im 1. ver/. 10. Agedum fapien- tiam intendemus (ingenii nervos * intendemus ) in illum , »<? forte ,r multiplicetur y & fit cumevene- * rit bellum , addatur etiam f ip!e fu per inimicis noflris, & , pugnet contra nos 7 <& ajcendat de terra . IU TOT {•) 1*7 Q 4 U n.:Kipn \"o rrj*n t<in dj fpui nonbo ua crfoi uww '-?y :pNn |0 nVjn Et affixerunt nos: ficuti dicitur Em/, cap.i.verf* Ii, Ut affigerent eum oneribus fiis, aedificavit ( Ifrael) ur¬ bes armamentariorum Pharaoni & fW. 'Sithonium & Rahamfefum . ► - - Ii Jk 1 (W <a 1DD U1J1T1 •p'i Drn*73D3 • lrniy jyab nyw nusDD ny jDDDyn rw oria B 2 Et Digitized by Google\n\nEt iropolu 12 J rmv um * fctvitutem duram : ficuti 'ni3Tl 1DD rwp fcriptura dicit, E*W. cap. i. ver/ 13. E* /erv/re fecerunt ( coegerunt fervire ) /Egyptiifi- lies ifrael per f&viti&w* u ?N*wr' n« o^sd clamavimus ad Do nV« * Sk pot minum 5 Deum patrum ypgn jjVTbK I noftrorum , & audivit: Deus & nw Uram : * :! inem - j noftram. Et clamavi mus ad Do- NC 'H/N \" \\T1 nafcUW 1P3 UVW* u nnn a^in airs imsn enyp “f?D npi minum, Deum patrum noftrorum: ^ lCUt * < * 1C ‘ t:ur, Excel, cap. 2. ver/. 23. Et fuit poft multos illos dies & mortuus tjl Rex JEgypti , & Jufpirarunt \\0 D 3 wtlii Ifrael dejervitute & voci' ferati Jient» & ajcendit clamor eorum ad Deum de Jervituie. 'nn onyw ipyn ;muyn p 'rpwi Et audivit Deus vo- uVlD ntf cem noftram: quemadmo- ypun tokj» dum dicitur > Exod. c. 2. ver/. O- Ar Et audivit Deus clamorem (lamesstabilem ) eorum , & re ~ (ordatus ejl Deus fcederis fui cum ylbrabamo» cum Ifaaco & cum Jacobo. uva na “iinni npw snr na pmriK mt ; 3 P 3 P nw Et vidit afflictionem It noftram: Hoceftj difper- «p-j j— tjpaetP p?r omnem viara.tetya^ T , mm \"* % Digilizsd by Qoogiei\n\nquemadmodum dicitur Exod. c. 2 \"Jfirf 25. Et vidit Deus fi¬ lios Ijrael & cognovit Deus. 5 m crnVtf nti : onbN y-n btfvfr -»33 \\r T II* ■|T IV I* 9 i i * r * w W Et rmimnas noftras: CDDDH 1 S N IJ^By nKI pn ‘jy nojew idd D 01 inn^n n'*wn ■rf* •jrnn ran pmn 1 ? irynb n«i fune filii; flcuti dicitur J Exod. cap* I* verfl 22, Omnem fiuum , qui nafcetur 5 in fluvium projicietis , ^ omnem filiam re~ linquetis vivam. Et opprefliones no- f^2\"3S ; Hae funt anguftiae , quemadmodum feriptura dicit Exod. cap 3 verj' 9. etiam ruidi opprejjionem , JEgypti* opprimunt eos . croi 1D3 enso iwyrftn n» :oniK a^m 1 ? Et edux’t nos Deus ex c ODS*DE yE mbj ynm nprn brachio extenib , & ti- niniNDI SllJ M-NDai more magno, & lignis, & portentis.\n\n: oyiuimi ■ Et eduxit nos Deus N 1 ? JZjDyDD ^ lJK'3fD ex ^^P to: Non per ?, a \" ^y kVi ■•t* ^y nus Angeli > nec per manus oe- * 1 *** raphini, nec per manus Lega¬ ti,* Sed Deus , ( Benediftus fit ille ) gloria fud& ILLE iPSE 3 quemadmodum feriptura dicit Exod. cap . 12. verfl 12. -*t' Sy tpty ina wnpri rr^ri * ¥ ’ 1 Jpu \"*m ~\\ M ^ ;L A IDyy^l m3D3 XlfT } tranf f^° P er tcrr ^ 11 ^ a p «3 vnayf idjow j syptt in hac ■ nofte 3 & 1 gypti in hac nodte 3 & toercutiam omnem pri¬ mogenitum in terra y£- gypti ab homine 3 &uf- ejue ac! jumentum j 6tin iui nin * * m * Q pK3 HDD ^3 wni CU ny) CHND CDDJO oomeg § Digilized by Google\n\nL omnes Deos ./Egyptio- 0*1*0 ffrfc 7321 nona i rum faciam judicia , E- ;'v> ijj$ CTOSHP piTPyK GO Tetragrammaton: 'i Et tranfibo per ter¬ ram yEgypti: ego &no» . Angelus. Et percutiam omnem primogenitum : ego & non Seraphinus. |P Et in omnes Deos JE- gyptiorum faciam Judi¬ cia: EGO & non Legatus. $ EGO TETRAGRAM¬ MATON: EGO IPSE & non fiw. • Manu forti: Haeceftpe- ftis, ficuti dicitur Exod.cap. 9: verj, 3. Ecce manus Domini fu - tura efl in pecus tuum * quod erit hi agro y in equos* ajinos & ca¬ melos y in armentum & gregem , P e fte gravi valde . Et brachio extenfb: Intelligegladium j quemadmo¬ dum Scriptura dicit. 1.Par.ii. verf. 1 6. Et gladius ejus evagi¬ natus in manu ejus y extenfusfu- fra Jerufalem . ><* 3 *J*AJ* . \"* .\n\ntis, quemadmodum Scriptura dicit; Deut . cap. 4. verf. 34» Aut num tentaverti Deus ( ul¬ lus ) venire & accipere fibi gen¬ tem e medio gentis y tentationi- busy fignis portentis , bello - jue & manu forti, & brachio extenfo , <£r tt motibus magnis , ficut omne 5 quod fecit vobis Do¬ minus Deas ve fler in JEgypto ad oculos tuos . . nnr^ an*? n^nVs* niDDu na 33; ica o^naioni 5 na i 1 ? mniw O' npin T3i non^oni .noa ynisi pwy ^33 er*m CQS 03 ^/« *« as'? ••Yry'? crnyoa Er fignis : Haec funt ba¬ culus, quemadmodum dicitur Exod. cap. 4 verf. 17. Er £<*- culum bunc accipies in manum tuam , quo facies ftgna: 1D3 nC 2 DH IT mniK31 mrr nasn nw idjw nwyn yjk “]Y3 npn : rnnwrr nx 13 Et Portentis: Hsec funt quemadmodum Scri- it: Joel, cap.\n\n3 ■ verf. 3. Et dabo portenta in coelo ] h terra (anguinem , & ignem • & afcenfonem fumi. 1Q3,CTin U C3'n3TD3T c o^naio Tinji m\\ m pwi pwa • rfpy nnbm Alius fenfus : Manu forti duo; & brachio extenfo duo: Timore magno duo; & fignis duo: & port/ntis duo; mira¬ cula fecit: St haec funt decem ifti idus, quos adduxit Deus, fandus ( benrdidus fit ille ) fu- pra iEgyptios in AEgypto, & fi funt: SANGUIS,RAN/E, PEDICULI , INSECTO¬ RUM MIXTURA, PE¬ STIS, ULCERA,GRAN¬ DO , LOCUSTAS , TE¬ NEBRAE , PERCUSSIO PRIMOGENITORU M. npin no nn« m m maj yntal ow a Sna M“iiD3i o rjrrcr oyi3id 31 ow ktfanfe m3D nc/y V?» a Sy nn3 «nnprr p o' i \"iyD3 onyo- -ny D\"J3 jmfiy ot rvn* ti3 frip \"jst . :nni33 hdd nwrr Cum hucufque pervenerunt, ut decem plagarum iEgyptiis inflictarum mentionem faciant : unufquifquepoculofuoiibipro^- pius",
+      "segmentIds": [
+        "research-rittangel-latin-ic7-5df6d89be2f7",
+        "research-rittangel-latin-iy0-aaad6bebfbb0",
+        "research-rittangel-latin-jse-9c99375e0c77",
+        "research-rittangel-latin-kco-e6b2e1826329",
+        "research-rittangel-latin-ku4-61e3888ec2e5",
+        "research-rittangel-latin-lrl-84e493ccdfbf",
+        "research-rittangel-latin-mc2-ac6d14b2fbf1"
+      ],
+      "sourceLocation": "PDF p. 20, segment 2 through PDF p. 24, segment 2",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "PDF p. 20, segment 2 through PDF p. 24, segment 2",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-ic7-5df6d89be2f7",
+            "label": "PDF p. 20",
+            "pageNumber": 20,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 23767,
+            "normalizedEndOffset": 24551
+          },
+          {
+            "id": "research-rittangel-latin-iy0-aaad6bebfbb0",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 24552,
+            "normalizedEndOffset": 25645
+          },
+          {
+            "id": "research-rittangel-latin-jse-9c99375e0c77",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 25646,
+            "normalizedEndOffset": 26375
+          },
+          {
+            "id": "research-rittangel-latin-kco-e6b2e1826329",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 26376,
+            "normalizedEndOffset": 27003
+          },
+          {
+            "id": "research-rittangel-latin-ku4-61e3888ec2e5",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 27004,
+            "normalizedEndOffset": 27741
+          },
+          {
+            "id": "research-rittangel-latin-lrl-84e493ccdfbf",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 28209,
+            "normalizedEndOffset": 28945
+          },
+          {
+            "id": "research-rittangel-latin-mc2-ac6d14b2fbf1",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 28946,
+            "normalizedEndOffset": 29761
+          }
+        ]
+      },
+      "provenanceHash": "c32891411dbd08439fef974b6fdba1ceeb0dd8aa022abf641aca9736e099d189",
+      "componentProvenanceHashes": [
+        "5df6d89be2f77161c4c6b649703d1c0ce1b045081a4578479ce796541e9cc635",
+        "aaad6bebfbb0d8ea4831ff8b62db991e88fd9b6bc4f73be2a8f9053af569e11e",
+        "9c99375e0c77de5f9fc9630227a11565c6ccacc8798db59c1dbcf2dcfe3012f6",
+        "e6b2e18263292626cedd34bee96a45d1ae7ce2b52c667944ae27f5e4ba59c382",
+        "61e3888ec2e50079c27b779fd8b13ac911a91acbc5e9547665f3bd6e7fccee83",
+        "84e493ccdfbf86f0ad506acd547717fd8cbfb0ba0fc80c344ece8d12d1ccbe8d",
+        "ac6d14b2fbf1b1dc1ccbbe624cb4bab27645acbc3cab29e67dd19d0fbe8ad77b"
+      ],
+      "wordCount": 1115,
+      "characterCount": 5533,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "social-justice",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Provide a concise English story first: forced labor intensified, the people cried out, their suffering was seen, and the text turns toward deliverance.",
+      "rationale": "Seven source-order segments maintain the causal story from oppression through the cry and response, ending with the traditional exposition of signs and wonders while omitting one locally quarantined OCR fragment.",
+      "creditNotes": "Credit Rittangel and Varady; visually verify every OCR-derived line against the cited pages.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "disclose-abridgment",
+        "facsimile-visual-check-required",
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required",
+        "nontriumphalist-plague-framing"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-rittangel-latin-three-symbols",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "Passover, matzah, maror, and lived memory",
+      "exactText": "jj , u; • . tctur manibus debitorum fuo- HDS3 ru en: E e hxc fu nt ^ PASCHA» i« in^tn wiiv^ PANIS AZYMUS & HER- i n ™ in3in T . *** ByS AMARiE. HVTD1 TOD nDD Qui enim Verba haec non habuerit in ore ; ca ncc habebit in mente , & per conicquens Paicha non rite fcu fanite cele¬ brabit. P ASCH A>quod ederunt pa¬ tres noltri in tempore y quo domus fan&uarii itetic, qua decauia? hacdecaufa; Quia tranfiliit (Deus } Sandtus (be- nedi&us litille)sedes parentum noftrorum in ALgypto > ficuti dicitur» Exod. cap. 12. verf 27. Viitirn* PafehatoshtecDeo y qut tranfiliit domos filiorum 1/rael tn jEgfpto cum caderet JEg]- ptios j & domos nojlras eripuit ; & inclinavit populus verticem & incurvaverunt Je .\n\nMic mirat* vm wh unpun nw tom 0731 « dw by no dw v -?y 'D\"p Min ira wnpn npfc® o-ny dd irnuM vo yy- nos roi ooTfDm.TpKi«j by noa y? Min nnyoa birw' \\n tq c n«i d'-i y d n# isjjs oyn npn b'xn irna. i iinnari Hic placentam azymam c paropfide fumptam accumbentibus oftendens dicit: . AZYMUS hic PANIS, quem nosedimus: quadecau- fa ? quia non fufficiebat tempus,' ut mafla parentum noftrorum fermentaretur, donec revelatus eft fuper illos Rex Regum Re¬ gum, (Deus) San&us(benedi- dtusfit ille) & liberavit eos, ficuti Scriptura dicit; Exod. tap. 11. verf. 39. Et coxerunt ex majfa illa , quam eduxerunt ex JEgjpto , placentas azymas , quia non erat fermentata : ex- pulfi enim erant ex JEgypto , & non potuerunt tunUari , etiam viaticum non HH BU cr^pi» mw n hvd di«/ by no ow by bv fipya p^cn kw der iy r°nn^ urna» ’ -pD on^y nyj:w u “jna «mpn cracn idhi iDtutfr «in i^ym pyun n» ^ myo my onroD ffnyDD W014 id yon tv? as\\ nanenn*? v?t te?\\ : an'? wv hV mr c 3 Cia» Dlgitized by GoogSe\n\n11 . Quo diVT-o eandem placentam in patinam reponit , Rapha¬ num.jue majorem inde defumptum, accumbentibus monftrans, sic r # < HERBAE AMARAE HaE> quas nos edimus,* qua de cau- fa? eamob cauiam, quod ama¬ ritudine affecerunt^EgyptiiJvi- tam parentum noftrorum in iEgypto ; ficut dicitur Exod. cap . i. verfi 14*. £r amaritudine affecerunt vitam eorum fervitu - /<? <afe;v* , i» luto , /# lateribus , fervitute agri , w? fervierunt eis per fievitiam. uw m ito ii dic? no cnc? .r 1 * \"n n» er iyon 1 t»o w: 11 \"»dkw D^yoa irnuK 1 * * fntaya orrn n» iiid , i 0'ja?:n iniro bo n» rrrco mny b Dna nay w» om ► *..\n\ni *\" ' r *■ ,j j ^ h r t _ , a t r 1 — His diotis Raphanum in patinam reponens, pergit: In omni generatione & ge¬ neratione quivis tenetur fe ip- fiim confiderare» ac G ipfe ex- iviffet cx iEgypto, quemad¬ modum Scriptura dicit: Exod, cap. 1 ver fi 8. Et annuntiabis filio tuo in die ifio dicendo: pro - fterea fecit mihi DEUStnegreff Ju meo ex JEgypto; di» a*n ini in b ioyy n» ni** id w Q^iyDD «y Kinn ara vd? rrj rwv m iinyn idk^ : onrDD YtMsra ■*> *« Non tantum parentes no- ftros redemit (Deus) Sandtus (benediftus fit ille;) fedetiam nos redemit cum ei$, quem¬ admodum Scriptura dicit: Deut . cap . 6 . ver/. 23, Er eduxit inde , ut deduceret nos dd dan¬ dum nobis terrani , quam jura¬ vit patribm mfirtSi Snj uinia» n» m 1 ? rtQ UDI» t)K u un«i idkjw onoy jrnn ryo 7 owd wttnif tfifcn m tf? : nn? uni» 9 - • * * * § % t • nrmak? ya^J iw» 5 Cutt’ Wdifqdtf ptftverteruwt, quilibet fuam recipit poculum, imnibufijue tam diu tenet, donec Pater-familias ablolutis requen^ tibus hymnis, \" —utt 4 -* 4 -- 1 - ‘ ?L J Pro- f t ubi t^in *inn trnprr r i Digilized by GqqqI m.'A fipt\n\n-nnV Don*? intenta rvvyv 'ti? tirth i aj. Proptere a nos obligati fumus O^yp? UfUfct id laudandum, celebrandum, 113 laudibus efferendum , glprm- candum, exaltandum , deco¬ randum , benedicendum, ex¬ tollendum , & vi£torem eum praedicandum , qui fecit patri- l7frtn O bus nollris & nobis omnia fi- gna haec: Eduxit nos e iervi- tute in libertatem 3 e moerore ad gaudium, e lu£tu ad diem feftum , e caligine ad lucem magnam , & e mancipatu in redemptionem : & dicemus coram eo canticum novum, Hallelu-jah: niTrV? nrnya u: .^aia rwnn wt f r i ir 5 ? tl a i 4 «>' ) i 9 i t • ■ 5 Hallelu-jah, Laudate fervi Domini, laudate nomen Do¬ mini: Sit nomen Domini be¬ nedictum, ex hoc nunc &uf- que in feculum : A Solis ortu ufque ad occafumejus, lauda¬ tum eft nomen Domini: Ex- celfus fuper omnes gentes Do¬ minus , fuper ccclos gloria ejus.",
+      "segmentIds": [
+        "research-rittangel-latin-ss7-5de2fb2f40a6",
+        "research-rittangel-latin-tbl-01a9917b974e",
+        "research-rittangel-latin-u2v-df71c5c02a39",
+        "research-rittangel-latin-ujr-0da97571749d",
+        "research-rittangel-latin-vdq-8aa4d457f399"
+      ],
+      "sourceLocation": "PDF p. 30, segment 1 through PDF p. 32, segment 1",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "PDF p. 30, segment 1 through PDF p. 32, segment 1",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-ss7-5de2fb2f40a6",
+            "label": "PDF p. 30",
+            "pageNumber": 30,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 37303,
+            "normalizedEndOffset": 38000
+          },
+          {
+            "id": "research-rittangel-latin-tbl-01a9917b974e",
+            "label": "PDF p. 30",
+            "pageNumber": 30,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 38001,
+            "normalizedEndOffset": 38982
+          },
+          {
+            "id": "research-rittangel-latin-u2v-df71c5c02a39",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 38983,
+            "normalizedEndOffset": 39590
+          },
+          {
+            "id": "research-rittangel-latin-ujr-0da97571749d",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 39591,
+            "normalizedEndOffset": 40669
+          },
+          {
+            "id": "research-rittangel-latin-vdq-8aa4d457f399",
+            "label": "PDF p. 32",
+            "pageNumber": 32,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 40670,
+            "normalizedEndOffset": 41501
+          }
+        ]
+      },
+      "provenanceHash": "d8f67c4dd2e8f7223fed1ae4138bdfc9599133692938f912b84ddf96217c02ad",
+      "componentProvenanceHashes": [
+        "5de2fb2f40a6f5c94dba7c4035a9a75e95f5b45b6095f290f02cd832404e018a",
+        "01a9917b974e970278319a163d126e1bafe6273732a2f43b87a282b4153538cb",
+        "df71c5c02a39fbce1de4204978d28d0afcc16bd888d021d21c7e5bd6fdf82649",
+        "0da97571749d36a5b56252c27f1826d20111728257b4484da64c103cdf56ba81",
+        "8aa4d457f399bb4c610f0273791d302cdf574ab9e221f3ddf126b17e0afdda55"
+      ],
+      "wordCount": 817,
+      "characterCount": 4202,
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Point to each ritual food and explain its meaning in contemporary English before showing the Latin witness; then explain the move from memory into praise.",
+      "rationale": "The source sequence contains the three core symbol explanations, the every-generation teaching, and the transition into Hallel as a single ritual argument.",
+      "creditNotes": "Credit Rittangel and Varady; retain exact source wording and disclose any separate modern translation.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": null,
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "facsimile-visual-check-required",
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-rittangel-latin-dayenu-transcription",
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "title": "Hebrew-Latin Dayenu witness",
+      "exactText": "Source (Hebrew) Translation (Latin) כַּמָּה מַעֲלוֹת טוֹבוֹת לַמָּקוֹם עָלֵינוּ Quam multas dignitates (immunitates) bonas contulis nobis LOCUS. (Scilicet Deus.) אִלּוּ הוֹצִיאָנוּ מִמִּצְרַיִם. וְלֹא עָשָׂה בָהֶם שְׁפָטִים דַּיֵּנוּ׃ Si enim eduxisset nos ex Ægypto Et non fecisset de eis judicia, sufficeret nobis: אִלּוּ עָשָׂה בָהֶם שְׁפָטִים. וְלֹא עָשָׂה בֵּאלֹהֵיהֶם דַּיֵּנוּ׃ Si fecisset de eis Judicia Et non fecisset de Diis eorum, sufficeret nobis: אִלּוּ עָשָׂה בֵאלֹהֵיהֶם. וְלֹא הָרַג בְּכוֹרֵיהֶם דַּיֵּנוּ׃ Si fecisset de Diis eorum Et non occidisset primogenita eorum, sufficeret nobis: אִלּוּ הָרַג בְּכוֹרֵיהֶם. וְלֹא נָתָן לָנוּ אֶת מָמוֹנָם דַּיֵּנוּ׃ Si occidisset primogenita eorum, Et non dedisset nobis divitas ipsorum, sufficeret nobis: אִלּוּ נָתָן לָנוּ אֶת מָמוֹנָם. וְלֹא קָרַע לָנוּ אֶת הַיָּם דַּיֵּנוּ׃ Si dedisset nobis divitas ipsorum, Et non divisisset nobis mare, sufficeret nobis: אִלּוּ קָרַע לָנוּ אֶת הַיָּם. וְלֹא הֶעֱבִירָנוּ בְתוֹכוֹ בֶּחָרָבָה דַּיֵּנוּ׃\n\nSi divisisset nobis mare, Et non traduxisset nos per medium ejus in arida, sufficeret nobis: אִלּוּ הֶעֱבִירָנוּ בְתוֹכוֹ בֶּחָרָבָה. וְלֹא שִׁקָּע צָרֵינוּ בְּתוֹכוֹ דַּיֵּנוּ׃ Si traduxisset nos per medium ejus in arida, Et non submersisset affligentes nos in medio ejus, sufficeret nobis: אִלּוּ שִׁקָּע צָרֵינוּ בְּתוֹכוֹ וְלֹא סִפֵּק צָׇרְכֵּנוּ בַּמִּדְבָּר אַרְבָּעִים שָׁנָה. דַּיֵּנוּ׃ Si submersisset affligentes nos in medio ejus, Et non procurasset nobis necessaria ad sufficientiam nostram, quadraginta annis in deserto, sufficeret nobis: אִלּוּ סִפֵּק צָׇרְכֵּנוּ בַּמִּדְבָּר אַרְבָּעִים שָׁנָה. וְלֹא הֶאֱכִילָנוּ אֶת הַמָּן דַּיֵּנוּ׃ Si procurasset nobis necessaria ad sufficientiam nostram, quadraginta annis in deserto, Et non fecisset nos comedere Manna, sufficeret nobis: אִלּוּ הֶאֱכִילָנוּ אֶת הַמָּן. וְלֹא נָתַן לָנוּ אֶת הַשַּׁבָּת דַּיֵּנוּ׃ Si fecisset nos comedere Manna, Et non dedisset nobis Sabbathum, sufficeret nobis: אִלּוּ נָתַן לָנוּ אֶת הַשַּׁבָּת. וְלֹא קֵרְבָנוּ לִפְנֵי הַר סִינָי דַּיֵּנוּ׃\n\nSi dedisset nobis Sabbathum Et non secisset nos accedere ad montem Sinai, sufficeret nobis: אִלּוּ קֵרְבָנוּ לִפְנֵי הַר סִינָי. וְלֹא נָתַן לָנוּ אֶת הַתּוֹרָה דַּיֵּנוּ׃ Si secisset nos accedere ad montem Sinai, Et non dedisset nobis Legem, sufficeret nobis: אִלּוּ נָתַן לָנוּ אֶת הַתּוֹרָה. וְלֹא הִכְנִסָנוּ לְאֶרֶץ יִשְׂרָאֵל דַּיֵּנוּ׃ Si dedisset nobis Legem, Et non congregasset nos in terra Israel, sufficeret nobis: אִלּוּ הִכְנִסָנוּ לְאֶרֶץ יִשְׂרָאֵל. וְלֹא בָנָה לָנוּ אֶת בֵּית הַבְּחִירָה דַּיֵּנוּ׃ Si congregasset nos in terra Israel, Et non ædificasset nobis dumum electionis, sufficeret nobis: עַל אַחַת כַּמָּה וְכַמָּה טוֹבָה וּמְכֻפֶּלֶת לַמָּקוֹם עָלֵינוּ. שֶׁהוֹצִיאָנוּ מִמִּצְרַיִם. וְעָשָׂה בָהֶם שְׁפָטִים. וְעָשָׂה בֵּאלֹהֵיהֶם. וְהָרַג בְּכוֹרֵיהֶם. וְנָתַן לָנוּ אֶת מָמוֹנָם. וְקָרַע לָנוּ אֶת הַיָּם. וְהֶעֱבִירָנוּ בְתוֹכוֹ בֶּחָרָבָה. וְשִׁקַּע צָרֵינוּ בְּתוֹכוֹ. וְסִפֵּק צָׇרְכֵּנוּ בַּמִּדְבָּר אַרְבָּעִים שָׁנָה. וְהֶאֱכִילָנוּ אֶת הַמָּן. וְנָתַן לָנוּ אֶת הַשַּׁבָּת. וְקֵרְבָנוּ לִפְנֵי הַר סִינָי. וְנָתַן לָנוּ אֶת הַתּוֹרָה. וְהִכְנִסָנוּ לְאֶרֶץ יִשְׂרָאֵל.\n\nוּבָנָה לָנוּ אֶת בֵּית הַבְּחִירָה לְכַפֵּר עַל כָׇּל עוֹנוֹתֵינוּ׃ Ita post unum (beneficium) multiplicavit, (& multiplicia hæc sua beneficia rursus) duplicando duplicavit LOCUS (id est Deus) nobis, educens nos ex Ægypt, & faciens de eis judicia, & etiam de Diis eorum, & occidens primogenita ipsorum, & dans nobis divitias eorum, & dividens nobis mare, & traducens nos per medium ejus in arida: et submergens affligentes nos in medio eus. Et necessaria nobis procurans ad sufficientam quadraginta annis in deserto, & commendere nos faciens MANNA: Et dans (instituens) nobis Sabbathum; Et accendere nos faciens ad monem Sinai, & dans nobis Legem; Et congregans nos in terra Israël, & ædificans nobis domum electionis, ut redderemus nobis (ibi DEUM) propitium siper omnes iniquitates nostras. This is the piyyut, Dayenu, in its Latin translation by Johann Stephan Rittangel as found in his translation of the Pesaḥ seder haggadah, Liber Rituum Paschalium (1644). Transcription of the Latin by Isaac Gantwerk Mayer, and of the Hebrew by Aharon Varady. Unfortunately, my Latin is not sufficient for completing a secondary translation. If you can make one, please contact us. Source(s)",
+      "segmentIds": [
+        "research-rittangel-latin-286b-7ae27264c23a",
+        "research-rittangel-latin-28y4-2fb5ebbe79f1",
+        "research-rittangel-latin-29qu-3413dafaa9e8",
+        "research-rittangel-latin-2alm-bf2a0f194da8"
+      ],
+      "sourceLocation": "official open siddur dayenu transcription, segment 1 through official open siddur dayenu transcription, segment 4",
+      "locator": {
+        "edition": "Liber Rituum Paschalium",
+        "sourceLocation": "official open siddur dayenu transcription, segment 1 through official open siddur dayenu transcription, segment 4",
+        "localExtract": "research/source-extracts/rittangel-latin.txt",
+        "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+        "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+        "componentLocators": [
+          {
+            "id": "research-rittangel-latin-286b-7ae27264c23a",
+            "label": "official open siddur dayenu transcription",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 103907,
+            "normalizedEndOffset": 104907
+          },
+          {
+            "id": "research-rittangel-latin-28y4-2fb5ebbe79f1",
+            "label": "official open siddur dayenu transcription",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 104908,
+            "normalizedEndOffset": 105941
+          },
+          {
+            "id": "research-rittangel-latin-29qu-3413dafaa9e8",
+            "label": "official open siddur dayenu transcription",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 105942,
+            "normalizedEndOffset": 107049
+          },
+          {
+            "id": "research-rittangel-latin-2alm-bf2a0f194da8",
+            "label": "official open siddur dayenu transcription",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/rittangel-latin.txt",
+            "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+            "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+            "normalizedStartOffset": 107050,
+            "normalizedEndOffset": 108233
+          }
+        ]
+      },
+      "provenanceHash": "1d22e62c5365b4112823d36fec40f183d8ee5ee9f91afbfd3dc935d74e6b10dd",
+      "componentProvenanceHashes": [
+        "7ae27264c23a2357df7304e620f4c93cd359fedeb63d3ea31dc656d1c767acac",
+        "2fb5ebbe79f17bcdaf5eca2c9385f5d2ffd29366e7b30e73f3fbb7df1e17eb39",
+        "3413dafaa9e8333ee61bb7ba06b2b008009e909744f12ef7db9da8ba3c2b4a91",
+        "bf2a0f194da8a44bca04ccf55668ef5ec6101ea4ddf1929b965e01bc15cf3f42"
+      ],
+      "wordCount": 596,
+      "characterCount": 4329,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song and make clear that this selection is a historical Hebrew-Latin transcription, not the app’s English sing-along version.",
+      "rationale": "The four official transcription records preserve the complete Dayenu progression in source order and are more reliable than reconstructing it from scattered OCR pages.",
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the official open transcription and its CC BY-SA 4.0 conditions.",
+      "sourcePresentedAttribution": [
+        "translation by Johann Stephan Rittangel as found in his translation of the Pesaḥ seder haggadah, Liber Rituum Paschalium (1644)"
+      ],
+      "attribution": {
+        "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+        "containingSource": "Liber Rituum Paschalium",
+        "sourcePresented": "translation by Johann Stephan Rittangel as found in his translation of the Pesaḥ seder haggadah, Liber Rituum Paschalium (1644)",
+        "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Johann Stephan Rittangel and Aharon N. Varady",
+          "Do not silently modernize OCR or translation"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required",
+        "traditional-land-language-context"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

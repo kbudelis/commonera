@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "nusach-eretz-yisrael",
+  "sourceTitle": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+  "modules": [
+    {
+      "id": "nusach-maggid-flatbread",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "exactText": "Flatbread on account of that we were redeemed, as it is said (Exodus 12:39) — And they baked from the dough that they had taken out of Egypt flatbread cakes, for they were not leavened, for they had fled from Egypt and could not dilly-dally, and had not made any provisions for them.",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "Official Open Siddur snapshot post 30641, Rabban Gamliel / Flatbread",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-core",
+      "treatment": "verbatim-normalized",
+      "wordCount": 53,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "2f13beceab3cc6bc31d37f0a18be62b77ecc1541c206a0272cf210764b13405a",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": "Exodus 12:39",
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      }
+    },
+    {
+      "id": "nusach-maggid-each-generation",
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "exactText": "In each and every generation a person is required to see himself as if he left Egypt as it is said (Exodus 13:8) — And tell your child on this day, saying, for this the Cause did for me when I left Egypt.",
+      "locator": {
+        "edition": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourceLocation": "Official Open Siddur snapshot post 30641, In Each Generation",
+        "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+        "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+        "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 43,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer and Open Siddur",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "9b6ac5d83461cbdab5d31b8695660dfe8ae3b0f42188299b6d3308465581e36b",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+        "sourcePresented": "Exodus 13:8",
+        "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer."
+      }
+    }
+  ]
+}

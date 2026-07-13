@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "barros-basto",
+  "sourceTitle": "Hagadah shel Pessah",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto.",
+    "license": "CC0-1.0",
+    "conditions": [
+      "Credit Barros Basto and the digitization where practical",
+      "Treat OCR-only text as review-required"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=52004"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-barros-basto-table-and-order",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Table setup and the Seder order",
+      "exactText": "Hagadah shel Pessah' (Ritual da ceia Pascal) Nas duas primeiras noites de Pascoa colocam-se em cima da mesa de jantar três bandejas: uma con- tendo três pães azimos (matsoth ou semorim); na se- gunda põe-se um osso de espadua de carneiro e um ovo, ambos assados nas brazas, o primeiro em come- moração do anho pascal e o segundo como lembrança da oferenda festiva (H'agigah) antigamente levada ao templo. Na terceira bandeja põe-se alface, salsa, ou folhas verdes de aipo. Tambem aí se põe uma taça com vinagre ou agua salgada, e H'aroset (o qual se compõe de amendoa, maçã e outros frutos, para nos lembrar a cal e argamassa com as quais os nossos antepassados eram obrigados a trabalhar no Egipto. Cada pessoa é obrigada, nestas noites,a beber 4 copos de vinho indicados no ritual: 1.º — Pelo Kidush, 2.º — para a benção pela libertação da escravidão egipcia, 3.º-—pelas graças e o 4.º pela benção depois do Hallel. A ordem ou maneira de cumprir estas cerimonias está indicada nos seguintes versos mnemónicos: Kadesh Urh'ats: Karpas Yah'ats: Magid Rah'tsah: Motsi Matsah: Maror Korekh: Shulh'an Orekh: Tsafun Barekh: Hallel Nirtsah: Kadesh (diz-se a oração da santificação); Urháts (lava-mãos) no qual se diz a benção usual; Karpas\n\n(toma-se alface); Yah'ats, parte-se o pão ázimo do meio; Magid (relato) lê-se a Hagadah; Roh'tsah, lava-se as mãos e diz-se a benção: Motsi Matsah, diz-se a benção Hamotsi sobre a Matsah ou pães ázimos e a benção sobre os semorim; Maror, come-se hervas amargas; Korekh, embrulha-se hervas amargas e matsah com Hºaroset; Shulhan Orekh, prepara-se a mêsa para a ceia; Tsafun, pega-se num bocado de matsah e guarda-se debaixo da toalha; Barekh, diz-se as graças depois da refeição; Hallel, diz-se o Hallel ou salmos de louvor; Nirtsah, depois de concluido o ritual pede-se que a nossa cerimonia seja bem aceite pelo Altíssimo. Dois termos nos falta explicar, são eles: Hagadah e Semorim, Hagadah significa narrativa e tem por fim comemorar as passagens da libertação do jugo egipcio, narrando os seus casos maravilhosos opera- dos pelo Altissimo e Unico a nosso favor; Semorim são pães ázimos, fabricados com uns certos cuidados na manhã da vespera de pascoa para Serem usados na cerimonia das duas primeiras noites desta festa.",
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e",
+        "research-barros-basto-1ix-5edc8d027362"
+      ],
+      "sourceLocation": "PDF p. 7, segment 1 through PDF p. 8, segment 1",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 7, segment 1 through PDF p. 8, segment 1",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-kn-773b92746e9e",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 743,
+            "normalizedEndOffset": 1976
+          },
+          {
+            "id": "research-barros-basto-1ix-5edc8d027362",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 1977,
+            "normalizedEndOffset": 3002
+          }
+        ]
+      },
+      "provenanceHash": "11f4285a489f9c0e779b431c50e0a042ce8f2bc0da04769eb19bde19d3b86102",
+      "componentProvenanceHashes": [
+        "773b92746e9ed876d649361569d14933947efa995d0a2d9345d7bea93eaf8d8d",
+        "5edc8d0273625fccc7788228994f45ac6f3e988312c4174447135dbf8f2bbc97"
+      ],
+      "wordCount": 373,
+      "characterCount": 2260,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain in English that these pages inventory the table and summarize all ritual steps; use the app’s illustrated plate guide for the actual instructions.",
+      "rationale": "The two consecutive records form a compact, source-authored overview of preparation and the complete Seder sequence.",
+      "creditNotes": "Credit Artur Carlos de Barros Basto and the digitization where practical; identify the CC0 1.0 edition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "do-not-substitute-for-host-instructions",
+        "facsimile-visual-check-required",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-barros-basto-first-rituals-and-questions",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "First cup through the questions",
+      "exactText": "Kidush (Santificação) Se é noite de Shabbath, diz-se: — Era o sexto dia. O ceu e a terra e tudo o que eles encerram foram terminados. Deus tinha terminado no sétimo dia a sua obra, repousou no Sétimo dia de todas as obras que tinha feito. Deus abençoou o sétimo dia e santificou-o, porque nele repousou de todas as obras que tinha creado. Quando a 1.º noite de Pascoa não é noite de Shab- bath, começa-se aqui: — Bendito sejas tu, Adonai, nosso Deus, Rei do Universo, que creaste o fruto da vinha. Bendito sejas tu, Adonai, nosso Deus, rei do Uni- verso, que nos escolheste entre todos os povos, que nos elevaste acima de todas as nações e nos santifi- caste pelos teus mandamentos. Tu nos deste, Adonai, nosso Deus, com amor, (sabados para repouso) epocas para a alegria, festas e solenidades para a satisfação (este dia de shabbath) este dia da festa dos pães ázimos, epoca do nosso livramento (que lembra o teu amor), santa convocação em lembrança da saida do Egipto. Porque tu nos escolheste e santificaste entre todos os povos e tu nos fizeste gosar (o shabbath) e as tuas festas com amor e satisfação, com felicidade e alegria. Bendito sejas tu, Adonai, que santificas (o shabbath) Israel e as suas festas.\n\nSe começa a Pasooa na noite de sabado para domingo, acrescenta-se : — (Bendito sejas tu, Adonai, nosso Deus, rei do Universo que distinguiste o sagrado do profano, a luz das trevas, Israel das outras nações, o sétimo dia dos seus dias de trabalho. E como distinguiste o Shabbath das outras festas e santificaste o sétimo dia mais que os dias de trabalho, da mesma forma distinguiste e santificaste o teu povo de Israel. Bendito sejas tu, Adonai, que distinguiste uma santidade doutra). — Bendito sejas tu, Adonai, nosso Deus, Rei do Universo, que nos conservaste a vida e a saude, e que nos fizeste chegar a esta época. E, reclinando-se, bebe-se então o primeiro copo de vinho; lava-se as mãos não proferindo a benção.\n\nO chefe da familia poga em salsa ou cerefolio e mo- lha-a em vinagre ou agua salgada; e tendo dado um bocado a cada pessoa que está á mesa, todos dizem a seguinte benção antos de comerem Isto: — Bendito sejas tu, Adonai, nosso Deus, rei do Universo, que creaste o fruto da terra. O chefe da familia parte então o pão ázimo do meio, dos três que estão na bandeja, deixa metade entre os dois restantes e coloca a outra metade debaixo da toalha, ató ao findar da ceia, para Aficomen (ultimo bocado). Então enche de novo os copos com vinho, pega no osso de carneiro, e no ovo, levanta a bandeja que con- tem as matsoth (paes ázimos) e diz: — Eis o pão de aflição que os nossos antepassa- dos comeram no Egipto. Aquele que tem fome venha comer; aquele que é necessitado venha celebrar a Pascoa. Este ano estamos aqui, no ano que vem esta-\n\nremos na terra de Israel; este ano somos escravos, nó ano que vem seremos livres. Tira-se a bandeja da mesa e o mais novo dos pre- sentes pergunta então: — Porque é que esta noite se distingue de todas as outras noites ? Nas outras noites podemos comer pão levedado ou não levedado, nesta noite comêmos só pão ázimo. Nas outras noites podemos comer todas as especies de hervas, nesta noite comêmos só hervas amargas. Nas outras noites molhamos uma só vez os alimentos, nesta noite fazê-mo-lo duas vezes. Nas outras noites comêmos quer sentados direitos, quer apoiados sobre o cotovelo: nesta noite só reclinados apoiando-nos no cotovelo. Torna-se a colocar a bandeja sobre a mesa 6 o chefe da familia diz: — E\" porque fomos escravos de Faraó no Egipto e Adonai, nosso Deus, nos fez sair desse paiz com mão poderosa e braço estendido.",
+      "segmentIds": [
+        "research-barros-basto-2bf-8a997af80918",
+        "research-barros-basto-394-f3c1858d34a8",
+        "research-barros-basto-3t3-50a93a2caa7d",
+        "research-barros-basto-4g9-b79af8b4485e"
+      ],
+      "sourceLocation": "PDF p. 9, segment 1 through PDF p. 11, segment 1",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 9, segment 1 through PDF p. 11, segment 1",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-2bf-8a997af80918",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 3003,
+            "normalizedEndOffset": 4215
+          },
+          {
+            "id": "research-barros-basto-394-f3c1858d34a8",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 4216,
+            "normalizedEndOffset": 4934
+          },
+          {
+            "id": "research-barros-basto-3t3-50a93a2caa7d",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 4935,
+            "normalizedEndOffset": 5768
+          },
+          {
+            "id": "research-barros-basto-4g9-b79af8b4485e",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 5769,
+            "normalizedEndOffset": 6602
+          }
+        ]
+      },
+      "provenanceHash": "5ce116978e949fcd8ad856b5c595edeb8daa00721736d9d9a791be22ff3de906",
+      "componentProvenanceHashes": [
+        "8a997af80918e330200765073612e23a178aecffc7da0435bbf59c08262e61f1",
+        "f3c1858d34a83ad4efd96faa754383a832aab8cf27610fa9c4f23d6b82564b27",
+        "50a93a2caa7d28523fbdd9cd8e6e1ec7cba988439449f927418aac9768fb82e6",
+        "b79af8b4485e8da5c591ce3ebe645bb8319a7659acaef7ffe2f4ed69af9cf850"
+      ],
+      "wordCount": 646,
+      "characterCount": 3602,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Use clear English action cues for the wine or grape juice, parsley, salt water, and matzah, then identify the Portuguese question-and-answer text as an optional historical reading.",
+      "rationale": "Four consecutive source passages carry the ritual from Kiddush through karpas and yachatz into the invitation, Four Questions, and opening answer, ending at a complete sentence boundary.",
+      "creditNotes": "Credit Barros Basto and identify the CC0 1.0 Portuguese edition; disclose any abridgment.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "historical-liturgical-land-language-context",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-barros-basto-four-children-and-ancestry",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Teaching styles and ancestral memory",
+      "exactText": "E se o Santo, ben- dito seja Ele, não nos tivesse feito sair do Egipto, nós seriamos ainda, nós, nossos filhos e nossos netos, escravos dos Faraós no Egipto. Mesmo que fossemos todos homens sabios, inteligentes, experimentados e todos instruidos na lei divina, seria nosso dever contar a saida do Egipto; e tanto mais falarmos da saida do Egipto, tanto mais merecemos elogios. ' Aconteceu uma vez que Rabi Eliézer, Rabi Josué, Rabi Eleazar filho de Azariá, Rabi Aquibá e Rabi Tar- fon estavam reunidos em Bené-Berak e falaram toda a noite de Pascoa da saida do Egipto até que vieram os seus discipulos e lhes disseram: — Mestres, é tempo já de recitar o Shemá da manhã. Rabi Eleazar filho de Azariá disse: Tenho quasi 70 anos e nunca consegui que se falasse, toda a noite,\n\n10 da saida do Egipto até que Ben-Zomá deduziu disso a obrigação desta passagem: A fim de te lembrares da tua saida do Egipto, todos os dias da tua vida. Os dias da tua vida designa o tempo do dia; todos os dias da tua vida acrescenta-lhe o tempo da noite. Outros doutores dizem: Os dias da tua vida significa este mundo; todos os dias da tua vida, compreende época do Messias. Bendito seja Deus, bendito seja Ele. Bendito seja o que deu a Lei ao seu povo de Israel, bendito seja Ele. A Thoral fala de quatro filhos: dum sabio, dum perverso, dum simples e dum quarto que não sabe perguntar. Que diz o filho sabio? O que significam estas leis, estes estatutos e estas cerimonias que Adonai, nosso Deus, vos impoz?\n\nPor tua vez tu lhe ensinarás todos os preceitos da Pascoa até ao ultimo; que se não deve comerinenhuma sobremêsa depois do anho pascal. Que diz o mau? Que significa esta cerimonia para vós? Para vós! Não é ela então para ele? Porque se exclue assim da comunidade, e nega o seu principio. E tambem, pela tua resposta mostra-lhe o teu despre- zo: — «Eº desta forma que Adonai actuou em meu favor quando saí do Egipto.» Em meu favor e não no seu; se ele lá estivesse, não teria sido libertado. Que diz o simples? -O que é isto? A este lhe res- ponderás: — Adonai nos fez sair do Egipto, da casa da escravidão, pelo poder da sua mão. Com aquele que não sabe perguntar, deves tomar a iniciativa, porque foi dito: «tu contarás a teu filho: foi desta maneira que Adonai actuou em meu favor quando saí do Egipto.» Poder-se ia julgar que é preciso começar desde o primeiro dia do mês, porque foi dito Neste dia (15). Se ali houvesse só neste dia porder-se ia julgar que é em pleno dia, é porque foi dito: Em vista disto, o que só é aplicavel na ocasião em que ha matsoth e hervas amargas colocadas deante de ti.\n\nnu No principio os nossos antepassados eram idóla- rias; mas depois, Deus iniciou-os no seu culto. Com feito nós lêmos: «Josué disse a todo o povo: Assim aila Adonai, Deus de Israel: Os vossos antepassados moraram outróra do lado de lá do rio (Eufrates), como [erah”, pae de Abraham e de Nah'or e serviam deuses strangeiros. «Peguei em vosso pae Abraham e levei-o dali para | terra de Canaan. Multipliquei a sua posteridade, fi-lo ae de Isaac, dei a Isaac Jacob e Esav; dei a Esav a mon- anha de Seir, e Jacob e seus filhos desceram ao Egipto.» Bendito seja Deus que guarda a sua promessa a srael; bendito seja Ele. Porque o Santo, bendito seja Ele, marcou o termo cla escravidão) para cumprir o que tinha dito a nosso »ae Abraham quando da aliança feita com ele:\n\n«Fica sabendo que os teus descendentes serão estrangeiros uum paiz que não será o seu, serão reduzidos á escravi- ilão e oprimidos, durante quatrocentos anos; mas tam- »em julgarei o povo que os tiver escravisado e eles sairão em seguida com grandes riquezas.» - (Levanta-se o copo com a mão e diz-se em voz mais alta :) E” esta promessa que nos sustentou a nós e a nos- os paes; porque não foi um só inimigo que se levantou contra nós para nos extreminar: em todos os seculos se levantaram contra nós novos perseguidores. Mas o Santo, bendito seja Ele, salva-nos constantemente das suas mãos. (Pouza-se o copo) Vêde o que tambem Laban, o arameu, reservava m nosso pae Jacob! Faraó só pretendia os filhos va- rões, mas Zaban pretendia aniquilar tudo, como foi di- tto: «O arameu queria perder o meu pae; este desceu mo Egipto, ali morou como uma pequena familia que ali se tornou uma grande, poderosa e numerosa nação».",
+      "segmentIds": [
+        "research-barros-basto-53f-3eba1113da5d",
+        "research-barros-basto-5ow-707eae83dac0",
+        "research-barros-basto-68p-4270a2b38ed5",
+        "research-barros-basto-73c-b30b2b1a7505",
+        "research-barros-basto-7ok-ba21fdc26b78"
+      ],
+      "sourceLocation": "PDF p. 11, segment 2 through PDF p. 13, segment 2",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 11, segment 2 through PDF p. 13, segment 2",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-53f-3eba1113da5d",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 6603,
+            "normalizedEndOffset": 7375
+          },
+          {
+            "id": "research-barros-basto-5ow-707eae83dac0",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 7376,
+            "normalizedEndOffset": 8088
+          },
+          {
+            "id": "research-barros-basto-68p-4270a2b38ed5",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 8089,
+            "normalizedEndOffset": 9191
+          },
+          {
+            "id": "research-barros-basto-73c-b30b2b1a7505",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 9192,
+            "normalizedEndOffset": 9955
+          },
+          {
+            "id": "research-barros-basto-7ok-ba21fdc26b78",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 9956,
+            "normalizedEndOffset": 10875
+          }
+        ]
+      },
+      "provenanceHash": "ff465d455c574eb93898f74ab15431003ecf7e27a47c1e939bbb02f6c096df4f",
+      "componentProvenanceHashes": [
+        "3eba1113da5d44dc3e6d7593f3f7c79948bf4b246e83565901abfaa897e93465",
+        "707eae83dac02ea66b527c9314f58d313d6a869b310e0908d52df817cecfe450",
+        "4270a2b38ed5ce20b7d2933ca5985c18d43d321c0754675a1935486fe0e79252",
+        "b30b2b1a7505a25fea8723c9c869246ecab2d409e2ce503295bd83a9844705ae",
+        "ba21fdc26b785735f67b60e472665926839f951c6a913ce14d6e7e169ce1e509"
+      ],
+      "wordCount": 782,
+      "characterCount": 4276,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain the Four Children as different ways of engaging, use inclusive modern labels outside the exact source, and then introduce the move backward into ancestral history.",
+      "rationale": "The selected pages finish the obligation-to-retell teaching, complete the Four Children dialogue, and flow directly into the source’s account of the ancestors and the promise preceding enslavement.",
+      "creditNotes": "Credit Barros Basto and the digitization where practical; retain the source title and CC0 1.0 status.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "inclusive-modern-framing-required",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-barros-basto-exodus-core",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Migration, oppression, cry, and deliverance",
+      "exactText": "js Desceir ao Egipto, por ordem expressa de Deus. Ali morou, isto nos ensina que Jacob, nosso pae, não foi para o Egipto para ali se fixar, mas SÓ para ali morar. Assim nós lêmos: «Eles disseram a Faraó: nós viemos para morar no paiz, porque não há pasta- gens para os rebanhos dos teus servos pois que a fome é grande na terra de Canaan; permite pois aos teus ser- vos que morem na terra de Gessen. Com uma pequena famila, como foi dito: «Os teus antepassados desceram ao Egipto em numero de 70 pessoas, e agora Adonai, teu Deus, te multiplicou como as estrelas do ceu.» Ali se tornou uma grande nação, isto nos ensina que os israelitas ali ficaram como uma nação distinta. Poderosa, como foi dito: os filhos de Israel frutifi- caram; multiplicaram-se, tornaram-se muito numerosos, e a terra foi cheia deles.\n\nE numerosa, como foi dito: «multipliquei-te como a herva dos campos, crescias cheia de encantos, mas eras ainda nua (sem instrução religiosa) » f «Os Egipcios nos maltrataram, nos oprimiram e nos impozeram uma dura servidão.» Os Egipcios nos maltrataram, como foi dito: Vamos previnamo-nos contra ele para que se não multiplique mais; porque se houver uma guerra, ele pode-se juntar aos nossos inimigos, combater-nos e sair do paiz.» Oprimiram-nos, como foi dito: «deram-lhes chefes de serviço para o acabrunhar com trabalhos, e eles construíram para Faraó cidades de reabastecimentos, Pithom e Raamsés.» Nos impuzeram uma dura servidão, como foi dito: «Os egípcios fizeram trabalhar os filhos de Israel com rigor.» «Imploramos Adonai, Deus dos nossos antepas- sados; Adonai escutou a nossa voz, viu as nossas pê- nas, a nossa aflição e nossa angustia.» Imploramos Adonai, Deus dos nossos antepassados, como foi dito: «Aconteceu. muito tempo depois. que O rei do Egipto morreu, e os filhos de Israel lamenta-\n\n13 ram-se da escravidão, gemeram, e os seus gemidos subiram para Deus.» Adonai escutou a nossa voz, como foi dito: «Deus escutou os seus suspiros, e lembrou-se da aliança de Abraham, de Isaac e de Jacob.» Viu as nossas pênas, é a reparação dos esposos, como foi dito: «Deus viu os filhos de Israel e soube (o que devia fazer).» E a nossa aflição, são os filhos, dos quais foi dito: «Lançareis ao Nilo todo o filho varão e só deixareis viver as filhas.> E a nossa angustia, é a opressão, como foi dito; «Vi a opressão que os egipcios vos fizeram sofrer.\n\nAdonai nos fez sair do Egipto com uma mão poderosa e um braço estendido, com terriveis prodigios e mila- gres.» Adonai nos fez sair do Egipto, nem por um anjo, nem por um serafim, nem por um enviado, mas ele mesmo, o Santo, bendito seja Ele, em toda a sua glo- ria, como foi dito: «Percorrei esta noite a terra do Egipto, e ferirei todos os primogenitos do Egipto, desde o homem até ao animal e executarei os meus juizos sobre todos os deuses do Egipto. Eu sou Ado- nat.» Percorrerei a terra do Egipto, eu e não um anjo. Ferirei todos os primogenitos do Egipto, eu e não um serafim. E sobre todos os deuses do Egipto executarei os meus juizus, eu e não um enviado; eu Adonai, e ne- nhum outro com uma mão poderosa, é a mortalidade, como foi dito: «Eis que a mão de Adonai vai pesar sobre os rebanhos nos campos: cavalos, burros, came- los, gado meudo e graúdo, e será uma grande morta- lidade.» E um braço estendido, é a espada, como foi dito :; “À espada nua na mão estendida para Jerusalem.» Com terríveis prodígios, é a manifestação da ma- gestade divina, como foi dito: «Ha um Deus que te- nha vindo tomar um povo do meio dum outro com\n\npe signais e milagres, combates, uma mão poderosa, um braço estendido e acções terríveis, como Adonai, vossos Deus, o fez no Egipto .á vossa vista ?» Por sinais, é a vara (de Moisés); como foi dito: «Eu farei milagres no ceu e na terra; haverá sangue, fogo e turbilhões de fumo.» Outra explicação: Por uma mão poderosa, são duas coisas; um braço estendido, duas; prodígios terri- veis, dois; sinais, dois; e milagres, dois: O que forma as dez pragas que o Santo, bendito seja Ele, suscitou aos egipcios no Egipto; a saber: O sangue, as rãs, os insectos, os animais ferozes, a mor- talidade dos animais, as úlceras, a saraiva, os gafa- nhotos, as trevas e a morte dos primogénitos. Rabi Yehudah resumiu-as nesta formula: Detsakh A'dash Beah'ab Rabi Yossé, o galileu, disse: donde se pode con- cluir que os egipcios foram punidos no Egipto com dez pragas e no mar com cincoenta?\n\nA proposito do Egipto, disse: «Os adivinhos disseram a Faraó: eis aqui o dêdo de Deus.» E a proposito do mar disse: «Os israelitas viram a mão poderosa que Adonai tinha estendida sobre o Egipto, e o povo temeu Adonai e teve fé em Adonai e em Moisés, seu servo.» Ora com quantas pragas foram punidos com o dêdo? dez pragas; pois, se no Egipto foram punidos com dez pragas, foram-no com cincoenta no mar.» Rabi Eliezer disse: Donde se póde concluir que cada praga enviada pelo Santo, bendito seja Ele, sobre os egipcios no Egipto, se compunha de quatro pragas? Desta passagem: «Ele lançou contra eles o ardor da cólera, a indignação, o furor, a desolação, anjos d desgraça.» ; A indignação, uma; o furor, duas; desolação, três; anjos da desgraça, quatro, Pois no Egipto eles foram punidos com quarenta pragas e no mar duzentas.» Rabi Akibá disse: como está provado que cada\n\n— od uma das pragas enviadas pelo Santo, bendito seja Ele, sobre os egipcios no Egipto, se compunha de cinco pragas? Porque foi dito: Ele lançou contra eles o ardor da sua cólera, a indignação, o furor, a desolação, anjos da desgraça. «O ardor da sua cólera, um; a indignação, dois; o furor, três; a desolação, quatro; anjos da desgra- ça, cinco. Pois no Egipto foram punidos com cincoenta pragas, e no mar duzentas e cincoenta.» Quantos favores Deus nos concedeu! Se nos tives- se feito sair do Egipto sem executar os seus juizos sobre os egipcios, isso nos bastaria, Se tivesse executado os seus juizos sobre os egipcios e não sobre os seus deuzes, isso nos bastaria. Se tivesse executado os seus juizos sobre os seus deuzes, sem ferir mortalmente os seus primogenitos, isso nos bastaria.",
+      "segmentIds": [
+        "research-barros-basto-8e4-75063be2256f",
+        "research-barros-basto-90m-9321c25f1b03",
+        "research-barros-basto-9sn-d6c64001e5fd",
+        "research-barros-basto-a80-d65546c68d63",
+        "research-barros-basto-b3o-2ebc831f1aba",
+        "research-barros-basto-bs1-f9613740a8be",
+        "research-barros-basto-cg9-4ac8e0bd7462"
+      ],
+      "sourceLocation": "PDF p. 14, segment 1 through PDF p. 17, segment 1",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 14, segment 1 through PDF p. 17, segment 1",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-8e4-75063be2256f",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 10876,
+            "normalizedEndOffset": 11685
+          },
+          {
+            "id": "research-barros-basto-90m-9321c25f1b03",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 11686,
+            "normalizedEndOffset": 12694
+          },
+          {
+            "id": "research-barros-basto-9sn-d6c64001e5fd",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 12695,
+            "normalizedEndOffset": 13247
+          },
+          {
+            "id": "research-barros-basto-a80-d65546c68d63",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 13248,
+            "normalizedEndOffset": 14387
+          },
+          {
+            "id": "research-barros-basto-b3o-2ebc831f1aba",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 14388,
+            "normalizedEndOffset": 15264
+          },
+          {
+            "id": "research-barros-basto-bs1-f9613740a8be",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 15265,
+            "normalizedEndOffset": 16136
+          },
+          {
+            "id": "research-barros-basto-cg9-4ac8e0bd7462",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 16137,
+            "normalizedEndOffset": 16927
+          }
+        ]
+      },
+      "provenanceHash": "2fec9d0e605e2b519f0545b3202f45c36e96b132ebd0dae84fae95776b4559d3",
+      "componentProvenanceHashes": [
+        "75063be2256f40c3f50fac3e53822f7a422a851b9dc4bc75d98b889002c03f52",
+        "9321c25f1b0397d3e765127ddd6bca06e6394e849af5fb7ef96ed65da036520a",
+        "d6c64001e5fd757ddcbcd3670d3555be233a9fde117f8dda18dbbb80514f66f2",
+        "d65546c68d635d453f5520e6d1d33bd9cb7b723f142e57dac19c5bdeb733c637",
+        "2ebc831f1aba7c7f9ba3fa90f825fd5da1c89451d1d01864f6195aa1c8d057d6",
+        "f9613740a8be5968e81e6fbc78319c21f1d74c8e94df9b4bb7827ff5bfb10d77",
+        "4ac8e0bd7462de3e0e7141e057f8db20deaf52e9a1905f9ef68224161943198d"
+      ],
+      "wordCount": 1069,
+      "characterCount": 6057,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Before reading, give the story in one English sentence: Jacob’s family migrated to Egypt, grew, was enslaved, cried out, was heard, and moved toward freedom through signs and plagues.",
+      "rationale": "Seven consecutive pages provide a complete causal Exodus arc rather than a list of disconnected names or symbols.",
+      "creditNotes": "Credit Artur Carlos de Barros Basto; identify the CC0 1.0 historical edition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "nontriumphalist-plague-framing",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-barros-basto-dayenu-and-symbols",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Dayenu and the three symbols",
+      "exactText": "Se tivesse ferido mortalmente os seus primogenitos, sem nos dar os seus bens, isso nos bastaria. Se nos tivesse dado. os seus bens sem dividir o mar para nós, isso nos bastaria. Se tivesse dividido o mar para nós, sem nos fazer atravessa-lo a pé enxuto, isso nos bastaria. Se nos fizesse atravessa-lo a pé enxuto sem lá submergir os nossos inimigos, isso nos bastaria. Se tivesse submergido os nossos inimígos sem prover ás nossas necessidades no deserto durante quaren- ta anos, isso nos bastaria. Se tivesse provido ás nossas necessidades no deserto durante quarenta anos sem nos dar de comer o maná, isso nos bastaria. Se nos tivesse dado a comer o maná sem nos con- ceder o repouso do Shabbath, isso nos bastaria. Se nos tivesse concedido o repouso do Shabbath sem nos conduzir ao pé do monte Sinai, isso nos bastaria. Se nos tivesse conduzido ao pé do monte Sinai, sem nos dar a Lei, isso nos bastaria. Se nos tivesse dado a Lei sem nos fazer entrar na Terra de Israel, isso nos bastaria. Se nos tivesse feito entrar na Terra de Israel, sem\n\n16 levantar para nós a Casa Santa (templo), isso nos bas- taria. Quanto pois devemos ser reconhecidos por todos os beneficios que Deus nos concedeu Fez-nos sair do Egipto, executou os seus juizos sobre os egipcios e sobre os seus idolos, fez morrer os seus primogénitos, deu-nos os seus bens, dividiu para nós o mar, fez-nos atravessa-lo a pé enxuto, sub- mergiu ali os nossos inimigos, proveu as nossas ne- cessidades durante quarenta anos no deserto, deu-nos a comer o maná, concedeu-nos o repouso do Shab- bath, conduziu-nos ao pé do monte Sinai, deu-nos a Lei, fez-nos entrar na Terra de Israel, levantou para nós a Casa Santa, para ali obtermos a expiação dos nossos pecados. Raban Gamaliel disse: Aquele que não menciona as três coisas seguintes na festa da Pascoa, não cum- priu o seu dever, quero dizer: o anho pascal, o pão ázimo e as hervas amargas.\n\n(Aponta para o osso de anho e diz:) O anho pascal, que os nossos antepassados come- ram, enquanto existia o templo, qual é a sua origem? E” porque o Santo, bendito seja Ele, poupou as casas dos nossos antepassados no Egipto, assim como Ele disse: «Vós direis: é o sacrificio da Pascoa em honra de Adonai, que poupou as casas dos filhos de Israel no Egipto, enquanto Ele feria os egipcios. E o povo incli- nou-se e prostrou-se,» (Péga na matsah (pão ázimo) da bandeja, mostra-a à assistencia, e diz :) Este pão ázimo que comêmos, qual é a sua signi- ficação ? E\" porque a massa dos nossos antepassados não tinha tido tempo para levedar, quando o Rei dos reis, o Santo, bendito seja Ele, lhes apareceu e os li-\n\nADE bertou, assim como Ele disse: «fizeram coser em bô- los sem levedura a massa que tinham trazido do Egipto, porque ela não estava fermentada; tendo par- tido precipitadamente do Egipto, eles não tinham po- dido esperar e não se tinham munido de provisões,» (Pêga na alface, ou folhas verdes de aipo, mos- tra-a à assistencia, e diz:) / Estas hervas amargas porque as comêmos? E” porque os egipcios tornavam a vida amarga aos nos- sos antepassados no Egipto, assim como Ele disse: «Eles lhes tornaram a vida amarga por uma dura es- cravidão, pelo trabalho do barro e do tijolo. pelas ta- refas nos campos, por toda a especie de obras com que os acabrunhavam.» Em todos os seculos cada israelita se deve consi- derar como se ele proprio tivesse saido do Egipto, assim como Ele disse:\n\n«Tu contarás a teu filho, nesse dia, o que se segue: Foi por esta forma que Adonai agiu por mim quando sai do Egipto...» Não foi só aos nossos antepassados que o Santo, bendito seja Ele, libertou; libertou-nos a nós mesmos com eles, assim como Ele disse: «E Ele nos fez sair de lá, a fim de nos levar para a terra que prometeu dar aos nossos antepassados.» Pega no copo de vinho e diz em voz alta: E' por isso que devemos agradecer, louvar, glori- ficar, exaltar, celebrar e bendizer Aquele que fez para os nossos paes e para nós todos estes milagres; que nos tirou da escravidão para a liberdade, da dôr para a alegria, do luto para a festa, das trevas para a luz, da opressão para o livramento. Cantemos em sua honra um cantico novo, Halleluiah |",
+      "segmentIds": [
+        "research-barros-basto-d28-1107d0fa7f4f",
+        "research-barros-basto-dva-2d6bdde9cc0e",
+        "research-barros-basto-ej6-dab3f6f30fd7",
+        "research-barros-basto-f2v-2210a468d13c",
+        "research-barros-basto-foo-12b729d5c242"
+      ],
+      "sourceLocation": "PDF p. 17, segment 2 through PDF p. 19, segment 2",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 17, segment 2 through PDF p. 19, segment 2",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-d28-1107d0fa7f4f",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 16928,
+            "normalizedEndOffset": 17973
+          },
+          {
+            "id": "research-barros-basto-dva-2d6bdde9cc0e",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 17974,
+            "normalizedEndOffset": 18833
+          },
+          {
+            "id": "research-barros-basto-ej6-dab3f6f30fd7",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 18834,
+            "normalizedEndOffset": 19542
+          },
+          {
+            "id": "research-barros-basto-f2v-2210a468d13c",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 19543,
+            "normalizedEndOffset": 20327
+          },
+          {
+            "id": "research-barros-basto-foo-12b729d5c242",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 20328,
+            "normalizedEndOffset": 21076
+          }
+        ]
+      },
+      "provenanceHash": "e863fe0f01eb2e4f301d8839a4448e45e254529b4f3c081cfaf1637c47fdba8d",
+      "componentProvenanceHashes": [
+        "1107d0fa7f4f67c664058d240085c333ddaf40d51925ca73bd162123e798456c",
+        "2d6bdde9cc0e1e8d3aec5bb9e0dac271971443210c849fb2e78eee685a8ee881",
+        "dab3f6f30fd7aa41c082d6f3c3da20bf8de7c4ebd0695d6d8c09dd4ddfc783ca",
+        "2210a468d13c7c0faead1ea089484f6e3ab1cda655c8571d9dd04a986f86613b",
+        "12b729d5c2426576a4ffa32654bc622f7992f8c3d035d7b706c54d3ca0007c6f"
+      ],
+      "wordCount": 747,
+      "characterCount": 4152,
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain Dayenu as cumulative gratitude, then point to the shank bone or substitute, matzah, and bitter herb as the source explains each symbol.",
+      "rationale": "The sequence preserves the end of Dayenu, its summation, and the complete turn into the central Passover, matzah, maror, and every-generation teachings.",
+      "creditNotes": "Credit Barros Basto and identify the CC0 1.0 source; preserve the source order if excerpted.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "portuguese-language-opt-in",
+        "traditional-land-language-context",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-barros-basto-eating-and-grace",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Second cup, ritual foods, and grace",
+      "exactText": "19. sacrifícios pacificos e das vitimas pascaes cujo sangue, recebido por ti, terá tingido os cantos do teu altar, e nós cantaremos um cantico novo, para celebrar a nossa libertação e o nosso livramento. Bendito sejas tu, Ado- naí, libertador de Israel. Então bebe-se o segundo copo de vinho, reclinados sobre o cotovelo esquerdo, depois de ter dito a benção seguinte: — Bendito sejas tu, Adonai, nosso Deus, rei do Universo, que creaste o fruto da vinha. Lava-se as mãos, dizendo: — Bendito sejas tu, Adonai, nosso Deus, rei do Universo, que nos santificaste pelos teus mandamentos e nos ordenaste o lava-mãos. Então o chefe da familia pega no pão ázimo supe- rior dizendo : — Bendito sejas tu, Adonai, nosso Deus, rei do Universo, que fazes brotar o pão da terra. Em seguida pega na metade restante do pão ázimo do meio e parte um bocado de cada um destes dois, é come depois da benção seguinte: — Bendito sejas tu, Adonai, nosso Deus, rei do Universo que nos santificaste pelos teus mandamentos e nos ordenaste que comessemos pão ázimo. O chefe da familia dá um bocado destes dois pães a cada um dos assistontes, os quaes dizem as bençãos já citadas, e comem os dois bocados (Motsi e Matsáh) juntos. Então o chefe da familia pega em alface, salsa ou aipo, molha isto no H'aróset, e diz:\n\n20 — Bendito sejas tu, Adonai, nosso Deus, rei do Universo, que nos santificaste pelos teus mandamentos e nos ordenaste que comêssemos hervas amargas. Então o chefo da familia come isto, dá a cada assistente tambem, os quaes devem dizer a benção antes de o comorem. Então o chefe da familia pega no tercoiro pão ázimo (o de baixo), parte um bocado, e juntamente com alface e salsa, molha-os no H'aróset, e diz: Em lembrança do Templo, como Hillel o ancião, porque foi dito: Deve-se come-lo com pão ázimo e hervas amargas. Assim fez Hillel quando o Templo existia: ele envolvia a carne do anho pascal com pão ázimo e hervas amargas e comi-as juntamente para cumprir este preceito : «Deve-se come-lo com pão ázimo e hervas amar- gas», * * * Nalguns locaes é costume comer um ovo cosido em lembrança da destruição do Templo. | Em seguida tira-se a bandeja que serviu para a cerimonia e serve-se a ceia. No fim da ceia o chefe da familia pega na metade de pão ázimo que se guardou no começa da cerimonia e dá um bocado a cada assistente. Come-se isto em memoria do anho pascal, e nada mais se come depois disto. Este bocado chama-se aficomen. Então enche-se o terceiro copo de vinho, lava-se as mãos, e diz-se a acção de graças.\n\nAcção de graças Er Quando ha pelo menos 3 homens à mêsa, um deles e a oração em voz alta e os outros repetem em voz aixa, O oficiante diz: —Senhores, bemdigamos Aquele a quem devemos os mantimentos. Os assistentes respondem: - —Bendito seja Aquele a quem devemos os man- tiimentos e que pela sua grande bondade nos faz viver. O oficiante responde: —Bendito seja Aquele a quem devemos os manti- mentos e que pela sua grande bondade nos faz viver. Bendito seja Ele. Bendito seja o seu nome e a sua memoria agora e sempre. Se ha menos de 3 homens à mesa, começa-se aqui: | —Bendito sejas tu, Alonai, nosso Deus, rei do Ulniverso que nos alimentas, e não é pelas nossas das acções que nos mantens, não é pelo nosso mere- “timento, mas por efeito da tua bondade. Tu multiplicas os teus beneficios e nos alimentas,\n\nara assim como ao mundo inteiro, com favor, com graça é com misericordia; porque a tua bondade é eterna. Pela tua graça infinita, o alimento nunca nos faltou e nunca nos faltará, porque a tua mêsa está sempre posta para todos os sêres vivos e, pela tua graça inexgotavel, tu garantes a alimentação a todos os que creaste. Assim como foi dito: Tu abres a mão e sacias todos os sêres vivos por efeito da tua benevolencia. —Bendito sejas tu, Adonai, que alimentas todas as creaturas. —Nós te damos graças, Senhor, nosso Deus, pelo paiz afortunado de que fizeste herdar nossos pais; pela aliança, pela Lei, pela vida e pelo alimento com que nos gratificaste; por nos teres livrado do Egipto, da mansão da escravidão, pela aliança que selaste na nossa carne, pelos preceitos que nos deste a conhecer; pela vida e pela subsistencia que tu nos concedes.\n\n—pPor tudo isto, Adonai, nosso Deus, nós te da- mos graças e bemdizemos o teu Nome; assim como foi dito: «Quando tiveres comido e estiveres saciado, bemdirás Adonai, teu Deus, pelo excelente paiz que te tiver dado. Bendito sejas tu, Adonai, pelo paiz e pelo alimento. : - Tem piedade de nós, Adonai, nosso Deus. Tem piedade de Israel, teu povo; de Jerusalem, tua cidade, da montanha de Sion, morada da tua gloria, desse Templo grande e santo sobre o qual repousava o teu nome. O\" nosso pae, nosso pastor, digna-te alimentar- nos, sustentar-nos, dar-nos o conforto e livrar-nos prontamente de todos os nossos males. Não nos faças depender, Adonai, nosso Deus, dos dons dos homens, nem dos seus emprestimos, porque os seus dons são pequenos e as afrontas, ás quais se está exposto, são grandes; mas faz-nos depender uni- camente da tua mão beneficente, sempre plena, inexgo- tavel, a fim de que não sejamos vergonhosos neste mundo, nem confusos no outro. E possa a casa de David, o teu ungido, ser prontamente, e nos nossos dias, restabelecida no seu explendor.",
+      "segmentIds": [
+        "research-barros-basto-hfj-98f2b885bb78",
+        "research-barros-basto-ifd-ca333e8ba96f",
+        "research-barros-basto-jde-1f32a10bbde2",
+        "research-barros-basto-jzv-5fa42130d4e3",
+        "research-barros-basto-kne-c2c618597d9f"
+      ],
+      "sourceLocation": "PDF p. 21, segment 1 through PDF p. 24, segment 2",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 21, segment 1 through PDF p. 24, segment 2",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-hfj-98f2b885bb78",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 22591,
+            "normalizedEndOffset": 23880
+          },
+          {
+            "id": "research-barros-basto-ifd-ca333e8ba96f",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 23881,
+            "normalizedEndOffset": 25105
+          },
+          {
+            "id": "research-barros-basto-jde-1f32a10bbde2",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 25106,
+            "normalizedEndOffset": 25914
+          },
+          {
+            "id": "research-barros-basto-jzv-5fa42130d4e3",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 25915,
+            "normalizedEndOffset": 26761
+          },
+          {
+            "id": "research-barros-basto-kne-c2c618597d9f",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 26762,
+            "normalizedEndOffset": 27821
+          }
+        ]
+      },
+      "provenanceHash": "5d65a3c50d4b27b5c5e3dd00eb60b668418f485c273d92496c26ef22f9ac7842",
+      "componentProvenanceHashes": [
+        "98f2b885bb78127e166f17c21ac22baca32bcd5c6eac0152fda3842cff1ca027",
+        "ca333e8ba96f48c8b1eba8e4bc4787a1dda253bfa80f753cdcc6a707c2f5f3bd",
+        "1f32a10bbde25cd3ed80f311f2357aa5345c63d7329b72b37fe8f648e0340fd8",
+        "5fa42130d4e3094261c867b5a5caafc020ac8f21383ece8bf88bf46c90063f9e",
+        "c2c618597d9f1dc9f207b7b218ecbfa58c781ad325e10790aa5e6a5f744332b3"
+      ],
+      "wordCount": 930,
+      "characterCount": 5234,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Give the practical English action first for washing, eating matzah and maror, making the sandwich, dining, and beginning grace; the Portuguese remains an optional liturgical witness.",
+      "rationale": "These source-order pages preserve the table’s full transition from the second cup through symbolic eating and the meal into communal grace.",
+      "creditNotes": "Credit Artur Carlos de Barros Basto and the digitization; identify the CC0 1.0 source.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "do-not-substitute-for-host-instructions",
+        "facsimile-visual-check-required",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-barros-basto-closing-chain-songs",
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "title": "Portuguese cumulative closing songs",
+      "exactText": "38 —Seis, quem sabe? Seis, sei eu, seis são as partes de Mishnah, cinco são os livros da Lei, etc. — Sete, quem sabe? Sete, sei eu, sete são os dias de Shabbath, seis são as partes de Mishnah, etc. — Oito, quem sabe? Oito, sei eu, oito são os dias da circumcisão, sete são os dias de Shabbath, etc. —Nove, quem sabe? Nove, sei eu, nove são os mezes de gravidez, oito são os dias da circumcisão, etc. — Dez, quem sabe? Dez, sei eu, dez são os man- damentos, nove são etc. — Onze, quem sabe? Onze sei eu, onze são as onze estrelas, dez são os mandamentos, etc. - — Doze, quem sabe? Doze, sei eu, doze são as tribus dos filhos de Israel, onze são as, estrelas, etc. — Treze, quem sabe? Treze, sei eu, treze são os artigos da Fé, doze são as tribus etc., etc.\n\nH'ad-Gadiah Um cabrito, um cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito. E veio o gato e comeu o cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito. E veio o cão e mordeu o gato, que comeu o cabri- to, gue meu pai comprou a dois zuzitas. Um cabrito, um cabrito. E veio o pau e bateu no cão, que mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zu- zitas. Um cabrito, um cabrito. E veio o fogo e queimou o pau, que bateu no cão, que mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito. E veio a agua e apagou o fogo, que queimou o pau, que bateu no cão, que mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zuzitas.\n\nUm cabrito, um cabrito. E veio o boi e bebeu a agua, que apagou o foRO; que queimou o pau, que bateu no cão, que mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito- E veio o degolador e matou o boi, que bebeu a agua, que apagou o fogo, que queimou o pau, que batou no cão, que mordeu o gato, que comeu o cabri- to, que meu pai comprou a dois zuzitas, Um cabrito, um cabrito. E veio o mensageiro da morte e matou o dego- lador, que matou o boi, que bebeu a agua, que apagou o fogo, que queimou o pau, que bateu no ção, que\n\n40 mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito. E veio o Santo, bendito seja Ele, e matcu o men- sageiro da morte, que matou o degolador, que matou o boi, que bebeu a agua, que apagou o fogo, que quei- mou o pau, que bateu no cão, que mordeu o gato, que comeu o cabrito, que meu pai comprou a dois zuzitas. Um cabrito, um cabrito.",
+      "segmentIds": [
+        "research-barros-basto-136t-326ccc216bf1",
+        "research-barros-basto-13rt-991d3cf8cef1",
+        "research-barros-basto-14bz-42affd1547ab",
+        "research-barros-basto-14rp-2c4b97ef27f8"
+      ],
+      "sourceLocation": "PDF p. 40, segment 1 through PDF p. 42, segment 1",
+      "locator": {
+        "edition": "Hagadah shel Pessah",
+        "sourceLocation": "PDF p. 40, segment 1 through PDF p. 42, segment 1",
+        "localExtract": "research/source-extracts/barros-basto.txt",
+        "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+        "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+        "componentLocators": [
+          {
+            "id": "research-barros-basto-136t-326ccc216bf1",
+            "label": "PDF p. 40",
+            "pageNumber": 40,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 50789,
+            "normalizedEndOffset": 51544
+          },
+          {
+            "id": "research-barros-basto-13rt-991d3cf8cef1",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 51545,
+            "normalizedEndOffset": 52270
+          },
+          {
+            "id": "research-barros-basto-14bz-42affd1547ab",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 52271,
+            "normalizedEndOffset": 52836
+          },
+          {
+            "id": "research-barros-basto-14rp-2c4b97ef27f8",
+            "label": "PDF p. 42",
+            "pageNumber": 42,
+            "localExtract": "research/source-extracts/barros-basto.txt",
+            "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+            "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+            "normalizedStartOffset": 52837,
+            "normalizedEndOffset": 53218
+          }
+        ]
+      },
+      "provenanceHash": "e3cee05d54e2289e13ae0bc33da3a2d62dcecadca4a325ab415df7b9ad6377c4",
+      "componentProvenanceHashes": [
+        "326ccc216bf1a220dd7fe6f90bfad57adb16e33e62a219c0ba789f8d6fc66117",
+        "991d3cf8cef1c48e02b227b8686a789775bdb3f207f8c1e67afb0b090bf2d179",
+        "42affd1547aba7c6cd607696e72f67cda40e5f0ca0a1a21505c3e62bd35ccbcd",
+        "2c4b97ef27f8806d1ecf59b01e7300be62b57668de43356553c73b986c6d05a8"
+      ],
+      "wordCount": 496,
+      "characterCount": 2432,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Tell guests that these are cumulative end-of-Seder songs, provide a simple refrain and an English synopsis, and make Portuguese participation optional.",
+      "rationale": "Four consecutive end pages preserve the rising count of Echad Mi Yodea and the complete narrative chain of Chad Gadya.",
+      "creditNotes": "Credit Artur Carlos de Barros Basto and identify the CC0 1.0 historical source.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Artur Carlos de Barros Basto",
+        "containingSource": "Hagadah shel Pessah",
+        "sourcePresented": null,
+        "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC0-1.0",
+        "materialKind": "public-domain",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Barros Basto and the digitization where practical",
+          "Treat OCR-only text as review-required"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "participation-cue-required",
+        "portuguese-language-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

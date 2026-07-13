@@ -1,0 +1,891 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mlk-freedom-seder",
+  "sourceTitle": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center.",
+    "license": "CC-BY-4.0",
+    "conditions": [
+      "Credit Waskow and The Shalom Center",
+      "Use only unattributed creator material unless embedded permission is separately verified",
+      "Preserve printed credits"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=19204"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-mlk50-wisdom-and-four-cups",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Wisdom for the journey and four cups",
+      "exactText": "MLK+50 Labor-Justice Freedom Seder 2 WISDOM FOR THE JOURNEY “In every generation, a Pharaoh arises to enslave us and destroy us. In every generation we must all free ourselves: It is we who must go forth from slavery to freedom, not our forebears only.” [From the traditional Passover Haggadah] “I felt as if my legs were praying.” (Rabbi Abraham Joshua Heschel, returning home from the voting-rights March in Selma, Alabama, 1965) “Prayer is meaningless unless it is subversive, unless it seeks to overthrow and to ruin the pyramids of callousness, hatred, opportunism, falsehoods.” (Rabbi Abraham Joshua Heschel, 1970) “We as a nation must undergo a radical revolution of values. We must rapidly begin the shift from a ‘thing-oriented’ society to a ‘person-oriented’ society. When machines and computers, profit motives and property rights are considered more important than people, the giant triplets of racism, materialism, and militarism are incapable of being conquered.“ (Dr. Martin Luther King, \"Beyond Vietnam: A Time to Break Silence,” April 4, 1967)\n\nMLK+50 Labor-Justice Freedom Seder 3 PREPARING FOR THE JOURNEY For the Passover Seder, the ancient Rabbis for many years debated whether to drink four Cups of Liberation or five. They finally decided to prepare a fifth cup but set it aside, waiting for Elijah the Prophet to come to herald the Great Turning-point of history. Elijah would decide whether we should drink the fifth cup. So we will drink four cups of wine or grape juice, dedicating these four cups to facing the deadly triplets Dr. King named (Racism, Materialism, and Militarism), and one more. What distinguishes “triplets” from any other triad, any other group of three? Triplets share a great deal of DNA. What DNA do these triplets share? The DNA of subjugation by the powerful of those who have been disempowered.\n\nSo today we add a fourth–-a quadruplet—that is more apparent to us now than it was 50 years ago: sexism, the subjugation of women. Our four cups will address (1) Racial and Economic Justice and Justice for Workers and Organized Labor, (2) Hyper-materialism, devastating Mother Earth for the sake of corporate profit; (3) Militarism abroad and at home; and (4) Sexism. As we address these deadly quadruplets, we will also lift up the vision of a transformed society. We will drink a fifth cup, the Cup of Elijah, dedicating the cup and ourselves to activism to bring about the Beloved Community that Dr. King worked toward. In the Seder room there should be a large inflatable Globe of Earth. Besides wine and/or grape juice on the table, there should be wine cups—one for each participant and one in the center of the table; a bowl of salt water, a bowl of clear fresh water, a plate of matzot, and a Seder plate with sprigs of parsley or dill, chunks of horseradish root, chunks of a red beet, an orange, and charoset. (Charoset is a delicious paste made of chopped fruit, chopped nuts, wine or grape juice, and spices such as cinnamon, and nutmeg. There are many variations and recipes beyond this basic formula.)",
+      "segmentIds": [
+        "research-mlk-freedom-seder-10f-b5e1d5590767",
+        "research-mlk-freedom-seder-1tw-d7618223115f",
+        "research-mlk-freedom-seder-2fp-958b89a9a0f3"
+      ],
+      "sourceLocation": "PDF p. 3, segment 1 through PDF p. 4, segment 2",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 3, segment 1 through PDF p. 4, segment 2",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-10f-b5e1d5590767",
+            "label": "PDF p. 3",
+            "pageNumber": 3,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 1311,
+            "normalizedEndOffset": 2371
+          },
+          {
+            "id": "research-mlk-freedom-seder-1tw-d7618223115f",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 2372,
+            "normalizedEndOffset": 3156
+          },
+          {
+            "id": "research-mlk-freedom-seder-2fp-958b89a9a0f3",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 3157,
+            "normalizedEndOffset": 4372
+          }
+        ]
+      },
+      "provenanceHash": "686becab10b569198c4fed794b997896d9b655d0cfd6f670a3217e6b42fe1f8f",
+      "componentProvenanceHashes": [
+        "b5e1d55907676c466d9e12516aec2755e853d6b3c222ec58a91d4cc9334d9833",
+        "d7618223115f7ff8a5d2bac20cb31f2b72debdc83392b5fd3852a66020695e9d",
+        "958b89a9a0f3848160e28322c04921d3f1835fea5f66d98b019eca1a48b90880"
+      ],
+      "wordCount": 511,
+      "characterCount": 3063,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "environment",
+        "feminist"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that the traditional Seder has four cups and an additional cup for Elijah; this source dedicates the cups to four connected social problems and the Elijah cup to building Dr. King's Beloved Community.",
+      "rationale": "The sequence moves from three concise statements of purpose to a clear four-cup structure and then gives the host the physical setup needed to lead it.",
+      "creditNotes": "Credit The Shalom Center, Dr. Martin Luther King Jr., Rabbi Abraham Joshua Heschel, and the traditional Haggadah as presented by the source.",
+      "sourcePresentedAttribution": [
+        "(Rabbi Abraham Joshua Heschel, returning home from the voting-rights March in Selma, Alabama, 1965)",
+        "(Rabbi Abraham Joshua Heschel, 1970)",
+        "(Dr. Martin Luther King, \"Beyond Vietnam: A Time to Break Silence,” April 4, 1967)"
+      ],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": "(Rabbi Abraham Joshua Heschel, returning home from the voting-rights March in Selma, Alabama, 1965); (Rabbi Abraham Joshua Heschel, 1970); (Dr. Martin Luther King, \"Beyond Vietnam: A Time to Break Silence,” April 4, 1967)",
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "define-beloved-community",
+        "do-not-present-quadruplet-framework-as-traditional-liturgy",
+        "embedded-mlk-and-heschel-quotation-review",
+        "explicit-historical-2018-activist-framing"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mlk50-candles-between-fires",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Candles between the fires",
+      "exactText": "One pair of hands can’t heal our Mother Earth; Two pairs of hands can’t heal our Mother Earth; But when two and two and fifty make a million, We’ll see that day come round; We’ll see that day come round! [We light up the path of the Seder and our lives All say together:] We are the generation That lives between the fires. Behind us is the flame and smoke From Black and blackened bodies Burned and hanging from a myriad lynching trees And the flames of burning crosses lit by hate To choke our people in the smoke of terror; Flame and smoke that rose from Auschwitz and from Hiroshima, From the burning forests of the Amazon, From the glare of gun fire exploding in our children. From the hottest years of human history that bring upon us Melted ice fields. Flooded cities. Scorching droughts. Murderous wildfires. Before us is the nightmare of a Flood of Fire, The heat and smoke that could consume all Earth. Lit by the deadly triplets named by the Prophet Martin: Racism, hyper-materialism, militarism: The scorching of our planet From a flood of burning fossils, Or the blazing of our cities In thermonuclear fire.\n\nMLK+50 Labor-Justice Freedom Seder 6 It is our task to make from fire Not an all-consuming blaze But the light in which we see each other— Each of us different, All of us made in One Image, glowing with One Spark. [Kindling the candles of commitment:] We light this fire to see more clearly That the earth, the human race, are not for burning. We light this fire to see more clearly The rainbow in our many-colored faces. Blessed are the Many in the One; Blessed is the One within the Many. Blessed are you, Yahh our God, Creative Interbreathing Spirit of the Universe, who makes us holy through connections with each other, and connects us through the kindling of these candles so that we may light up the path toward peace and freedom, justice and healing, for all peoples and our planet.\n\nBlessed are You, Creative Interbreathing Spirit of the world, who fills us with life, lifts us up, and carries us to this moment. [Light candles.] [We take into ourselves the foods and meanings of the Seder.] The First Cup: We drink to Ending Racism and Poverty, and Birthing Racial and Economic Justice [Someone reads:] We begin with the teaching of Dr. Martin Luther King 50 years ago, on the evening before his death. He came to Memphis, Tennessee to support the strking sanitatation workers of the city, and he spoke to a gathered crowd: “The issue is the refusal of Memphis to be fair and honest in its dealings with its public servants, who happen to be sanitation workers. One thousand, three hundred sanitation workers are on strike. Now we're going to march again, and force everybody to see that there are thirteen hundred of God's children here suffering, sometimes going hungry, going through dark and dreary nights wondering how this thing is going to come out. And we've got to say to the nation: We know how it's coming out. For when people get caught up with that which is right and they are willing to sacrifice for it, there is no stopping point short of victory.”",
+      "segmentIds": [
+        "research-mlk-freedom-seder-51e-6b8d6d91762d",
+        "research-mlk-freedom-seder-5wj-6203c6f53a01",
+        "research-mlk-freedom-seder-6ii-ac1eca0fd1a8"
+      ],
+      "sourceLocation": "PDF p. 6, segment 2 through PDF p. 7, segment 2",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 6, segment 2 through PDF p. 7, segment 2",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-51e-6b8d6d91762d",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 6530,
+            "normalizedEndOffset": 7650
+          },
+          {
+            "id": "research-mlk-freedom-seder-5wj-6203c6f53a01",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 7651,
+            "normalizedEndOffset": 8441
+          },
+          {
+            "id": "research-mlk-freedom-seder-6ii-ac1eca0fd1a8",
+            "label": "PDF p. 7",
+            "pageNumber": 7,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 8442,
+            "normalizedEndOffset": 9624
+          }
+        ]
+      },
+      "provenanceHash": "f5280bad7573ae6e53bec126e18beb12f871051018368ec41e646e481710d776",
+      "componentProvenanceHashes": [
+        "6b8d6d91762da2bf573565b2d6f3f80415794cf5abacae40532213149e901b47",
+        "6203c6f53a01760d8c710ba15092fd9caec82d3910b59b743d4a3b3840890c0b",
+        "ac1eca0fd1a8a1cafb69be79765726a1ce1f559ef51b8169273a8da2949aac75"
+      ],
+      "wordCount": 551,
+      "characterCount": 3096,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "social-justice",
+        "environment",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Before lighting candles, warn that the reading names lynching, Auschwitz, Hiroshima, gun violence, and climate disaster; invite anyone to step out, pass, or join only for the final candle blessing.",
+      "rationale": "The source-order arc transforms destructive fire into candlelight, names difference without hierarchy, and arrives at the first cup and a historically grounded labor-justice reading.",
+      "creditNotes": "Credit The Shalom Center and Dr. Martin Luther King Jr.; preserve the Memphis sanitation-workers speech context and date.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-only",
+        "embedded-mlk-speech-attribution-review",
+        "explicit-trauma-content-opt-in",
+        "historical-violence-content-note-and-pass-option"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-mlk50-shared-matzah-structural-compassion",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Shared matzah and structural compassion",
+      "exactText": "MLK+50 Labor-Justice Freedom Seder 10 And the poverty is bound to become still more bitter if the proposed new Federal budget is adopted: [Everyone gets “sheet” of matzah. Someone reads:] “Why do we eat this pressed-down bread? “Because it begins as the bread of affliction, the bread of a pressed-down people—but becomes the bread of Freedom when we hasten toward our freedom. Hasten to bake it without time for the bread to rise, For then we lived and now we live, as Dr. King taught, in the “fierce urgency of NOW!”—swiftly moving toward our liberation.” “Unleavened bread is the leveler that raises us all to the same lofty height. Outside, the battle rages between the haves and have-nots, between those who have more and those who have less. Too often the struggle for daily bread is attended by feverish competition, tension and trauma.\n\nBut at this most egalitarian of banquets, bread of the most unpretentious kind is a common denominator that makes all people one.” (Jewish Labor Committee) [Each person breaks the matzah and hands one piece to a neighbor.] “Why do we break and share the matzah?” “Because if we do not share it, it remains the bread of affliction; when we share it, it becomes the bread of freedom.” Together say: “Blessed are You, Breathing-Spirit of the world, who through sun and soil, seed and human sweat, brings forth this bread from the Earth.” [All eat the matzah given them by someone else.] “A true revolution of values will soon look uneasily on the glaring contrast of poverty and wealth.” “We are called to play the good Samaritan on life's roadside; but that will be only an initial act.\n\nOne day we must come to see that the whole Jericho road must be transformed. True compassion is more than flinging a coin to a beggar. It comes to see that an edifice which produces beggars needs restructuring. “Our only hope today lies in our ability to recapture the revolutionary spirit and go out into a sometimes hostile world declaring eternal hostility to poverty, racism, and militarism. With this powerful commitment we shall boldly challenge the status quo and unjust mores and thereby speed the day when \"every valley shall be exalted, and every mountain and hill shall be made low, and the crooked shall be made straight and the rough places plain.\" [Dr. King, “Beyond Vietnam,” April 4, 1967] [Pour each person a cup of wine or grape juice, but do not yet drink. Everyone pours a drop of wine or juice into the Cup of Elijah, which for now is left sitting full but untasted in the center of the table. Someone reads:]",
+      "segmentIds": [
+        "research-mlk-freedom-seder-ch0-c2198781cc1f",
+        "research-mlk-freedom-seder-d4g-b5b8ab0a9a3a",
+        "research-mlk-freedom-seder-dq9-a4bb5683338f"
+      ],
+      "sourceLocation": "PDF p. 11, segment 1 through PDF p. 11, segment 3",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 11, segment 1 through PDF p. 11, segment 3",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-ch0-c2198781cc1f",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 16164,
+            "normalizedEndOffset": 17007
+          },
+          {
+            "id": "research-mlk-freedom-seder-d4g-b5b8ab0a9a3a",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 17008,
+            "normalizedEndOffset": 17792
+          },
+          {
+            "id": "research-mlk-freedom-seder-dq9-a4bb5683338f",
+            "label": "PDF p. 11",
+            "pageNumber": 11,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 17793,
+            "normalizedEndOffset": 18723
+          }
+        ]
+      },
+      "provenanceHash": "fa67a9e5745231a0bfc1ba2b0ee24d84ceeac999b7dea84c07742f53bb360e68",
+      "componentProvenanceHashes": [
+        "c2198781cc1f4ddc428631d6d5c9fb5291ab0bfbfd5f25575b9b25df3c2ab540",
+        "b5b8ab0a9a3a5a2573545c02c848350a9333c7806d17d44a7b454af67b89ff39",
+        "a4bb5683338ff39e7f6a36cd0b1aa50d04a8710a258a6c758c5325dfdd84c401"
+      ],
+      "wordCount": 446,
+      "characterCount": 2561,
+      "sectionIds": [
+        "motzi-matzah",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "motzi-matzah",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Tell each person to break off a piece of matzah and hand it to a neighbor; identify the opening federal-budget sentence as 2018 context before moving to the enduring ritual about sharing bread.",
+      "rationale": "The passages turn matzah from affliction into shared freedom and then connect immediate generosity with Dr. King's call to change the structures that produce poverty.",
+      "creditNotes": "Credit The Shalom Center, the Jewish Labor Committee, and Dr. Martin Luther King Jr. on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-dated-budget-claim-as-current",
+        "embedded-jewish-labor-committee-and-mlk-quotation-review",
+        "explicit-historical-2018-budget-context",
+        "preserve-neighbor-sharing-instruction"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-mlk50-second-cup-carbon-pharaohs",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Second cup and ecological power",
+      "exactText": "MLK+50 Labor-Justice Freedom Seder 11 “Why do we drink this fruit of the vine?” “Because in the joy we take from this fruit of the vine we recognize the joy of honest work of sowing, nourishing, and bringing us the juice of the grape—when that work is done with fair income, livable leisure, and decent dignity. [All join in saying:] Blessed are You, Yahhh, Breathing Spirit of the world, Who breathes our out-breath into the grapevine and breathes the fruit of the vine into our bodies. [Then each person drinks from her/his own cup.] The Second Cup: We drink to ending Materialism and to celebrating Earth and Spirit through Empathy and Justice [Someone reads:] One of the most dangerous and immoral forms of Materialism was little understood when Dr. King spoke in 1967.\n\nThat was the insistence of major world corporations on meeting the needs of the world’s human communities for energy by burning fossil fuels without limits for the sake of their enormous profits. It became clear that this unbridled burning was damaging the sacred Interbreathing of all life, scorching and wounding humankind and many other species by suffusing the Earth with more CO2 than all the planet’s vegetation could absorb and transmute to oxygen. But even then, the Carbon Pharaohs refused to stop. They lied to the public and purchased politicians to support their obsession with their profits. Why do we call them Carbon Pharaohs? Because like the ancient Pharaoh, they subjugated Humanity to serfdom and Mother Earth to planetary plagues. [THE PLAGUES: Someone reads:] “The ten plagues of the Exodus story were all ecological disasters.\n\nThe Plagues were not lightning-bolts of punishment flung by a Super-Pharaoh in the sky, but eco-disasters brought about by Hyper-Materialism—consequences of the arrogance, greed, and stubbornness of a top-down, unaccountable ruler, Pharaoh. “In the ancient past, the Plagues interrupted the flow of food and drink to human beings and other life-forms. In the present as well, there are Plagues that disrupt the flow of food and drink from species to species, Earth to human earthlings. And so today we mark our Plagues by interrupting the food and drink that embody our Seder. “As the community recites the Plagues, we grieve for the Earth and human beings who have suffered from these Plagues by diminishing our pleasure in the fruit of the vine.",
+      "segmentIds": [
+        "research-mlk-freedom-seder-eg4-cc2809a0b06f",
+        "research-mlk-freedom-seder-f1m-1931b52da17c",
+        "research-mlk-freedom-seder-fp7-1cd978f255c3"
+      ],
+      "sourceLocation": "PDF p. 12, segment 1 through PDF p. 12, segment 3",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 12, segment 1 through PDF p. 12, segment 3",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-eg4-cc2809a0b06f",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 18724,
+            "normalizedEndOffset": 19497
+          },
+          {
+            "id": "research-mlk-freedom-seder-f1m-1931b52da17c",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 19498,
+            "normalizedEndOffset": 20346
+          },
+          {
+            "id": "research-mlk-freedom-seder-fp7-1cd978f255c3",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 20347,
+            "normalizedEndOffset": 21094
+          }
+        ]
+      },
+      "provenanceHash": "5360f12b26734522766e96d3a2c56736f01c42223b978180de06e7972ee2f184",
+      "componentProvenanceHashes": [
+        "cc2809a0b06f9988c1097b2a60afee2b94223533171d596f3147b8980c81fb28",
+        "1931b52da17c368d85cd318563522bcb4c5919efc7486fdf23a9554ef041c8a4",
+        "1cd978f255c37b565dd48dc3ebdc8ba4c514ea3d7f4e881cb9a5a128305a4633"
+      ],
+      "wordCount": 390,
+      "characterCount": 2372,
+      "sectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Introduce the second cup as this source's environmental cup and identify 'Carbon Pharaohs' as an activist metaphor for fossil-fuel corporations, not a neutral factual label.",
+      "rationale": "The sequence begins with dignity in agricultural work, names the source's ecological critique, and completes its interpretive reading of the plagues before the source's dated plague list begins.",
+      "creditNotes": "Credit Rabbi Arthur Waskow and The Shalom Center on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-append-dated-2018-plague-statistics",
+        "explicit-environmental-activist-framing",
+        "label-carbon-pharaohs-as-source-metaphor",
+        "label-ecological-plague-reading-as-interpretive-midrash"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-mlk50-karpas-charoset-earth-rest",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Karpas, charoset, and the earth's rest",
+      "exactText": "MLK+50 Labor-Justice Freedom Seder 13 “Because in the spring the Earth sprouts green and fertile, and in the salt seas life began.” Blessed are you, Yahh our God, Breathing Spirit of the Universe, who creates the fruit of the earth. [Everyone then eats this sprig of parsley.] [Share a spoon of charoset to each person around the tables.] Why do we eat charoset? — “Because by mixing apples, apricots, and raisins, nuts and cinnamon, wine and cloves, we embody the tastes and smells of the Song of Songs, the earthy poem of love and Eros—the springtime when flowers rise up against winter, the juices of love arise from the depths of depression, and the night-time of history gives way to the sunlight of Eden, the garden of delight; the Earth and humans at loving peace with one another.\n\n“Come with me, my love, come away,/ For the long wet months are past, /The rains have fed the earth /And left it bright with blossoms. /Birds wing in the low sky, /Dove and songbird singing /In the open air above, /Earth nourishing tree and vine,/ Green fig and tender grape, /Green and tender fragrance. Come with me, my love, come away. [All sing:] Kamti ani, liftoakh l’dodi (2) I will open to you, my beloved; Will you open, open to me? Will you open, open to me? (Chant by Rabbi Shefa Gold) [Eat some charoset.] “What in our past traditions can teach our own generation how to heal ourselves and our wounded Earth?” “The seventh year shall be a Sabbath of joyful rest for the land, a Sabbath to Yahh, the Breath of life; you shall neither sow your field, nor prune your vineyard. Your harvest you shall not reap, and the grapes of your undressed vine you shall not gather; it shall be a year of joyful rest for the land. For the land is Mine; you are but strangers and visitors with Me.” (Leviticus 25) ”At the end of every seven years you shall grant a Release. Every creditor shall Release what s/he has lent to a neighbor; s/he shall not exact it of the neighbors, because Yahhh, the Interbreathing of all life, has proclaimed a Release from debt.” (Deut 15; 1-2) [Someone reads each of these passages:]",
+      "segmentIds": [
+        "research-mlk-freedom-seder-hs5-3d374defb840",
+        "research-mlk-freedom-seder-ie2-c5197807d324"
+      ],
+      "sourceLocation": "PDF p. 14, segment 1 through PDF p. 14, segment 2",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 14, segment 1 through PDF p. 14, segment 2",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-hs5-3d374defb840",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 23045,
+            "normalizedEndOffset": 23833
+          },
+          {
+            "id": "research-mlk-freedom-seder-ie2-c5197807d324",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 23834,
+            "normalizedEndOffset": 25145
+          }
+        ]
+      },
+      "provenanceHash": "02e37a2664e3be91b0387be042b5464389fa6038f4cc25cf75a35649e8a2db76",
+      "componentProvenanceHashes": [
+        "3d374defb84074c0406ccb22ef59e438a899cde4963dedebe855db42aa72edc8",
+        "c5197807d324a01e1345a99846ffb04af6ae9a8e663adc5ee4f5e2529c26773c"
+      ],
+      "wordCount": 379,
+      "characterCount": 2101,
+      "sectionIds": [
+        "karpas",
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "karpas",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "mindfulness",
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Place parsley, salt water, and charoset where everyone can reach them; explain that charoset is a sweet fruit-and-nut mixture and that the source connects it to spring, love poetry, land rest, and debt release.",
+      "rationale": "These passages supply sensory ritual instructions and sustain one environmental theme from spring greens through charoset to the sabbatical release of land and debt.",
+      "creditNotes": "Credit The Shalom Center and Rabbi Shefa Gold, and identify the Leviticus 25 and Deuteronomy 15 passages on the final sources page.",
+      "sourcePresentedAttribution": [
+        "(Chant by Rabbi Shefa Gold)"
+      ],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": "(Chant by Rabbi Shefa Gold)",
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-4.0",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "allergy-safe-charoset-guidance-required",
+        "embedded-song-of-songs-and-shefa-gold-chant-review",
+        "identify-biblical-land-and-debt-release-as-source-text"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-mlk50-dayenu-ten-healings",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Dayenu and ten ecological healings",
+      "exactText": "MLK+50 Labor-Justice Freedom Seder 14 DAYENU: THE PATH OF MANY STEPS TOWARD FREEDOM What are the Ten Healings that can begin to make our world a Beloved Community? [For each of the Ten Healings, we drink some wine or grape-juice and then say L’Chaim!—To Life!] • Create organic farms in countrysides and cities. • Purchase home and company electric power from wind-based suppliers. • Families buy hybrid or electric cars; convince cities, government agencies, and businesses to switch their auto fleets. • Use public transportation. • Families and congregations, at Bat/Bar Mitzvah time and teen-age confirmations, study together how to address the climate crisis so as to “turn the hearts of children and parents to each other, lest the Earth be utterly destroyed.”\n\n(From last passage of Malachi, last of the classical Hebrew Prophets) • Move Our Money, Protect Our Planet (MOM/POP) : Colleges, congregations, pension funds, and others shift their investments from fossil-fuel companies to renewable, sustainable energy. • Vigil, picket, do civil disobedience at sites of mountaintop destruction by coal companies. • End fracking: Insist on moratoriums or prohibitions. • Lobby Congress for laws to put prices on carbon-fuel production and pay dividends from the incoming fees to American families. • Organize neighborhood solar-energy coops where many households band together to stop burning coal for their electricity and generate it from the sun instead. • Research and choose among proposals not only to end CO2 and methane emissions that are scorching our planet, but restoring for our children and grandchildren the healthy climate that our parents and grandparents lived in, amidst more justice than most of our forebears knew.\n\n[Pour each person a cup of wine or grape juice:] “Why do we drink this fruit of the vine?” — “Because the juice begins in sweetness, ferments to sour, and then turns sweet again, this time as wine that can change and lift our consciousness. “In the same way, our struggle to heal our Mother Earth and all her human earthlings begins in sweetness, turns sour as the Earth and we are wounded, and then becomes a higher sweetness through our activism. This fuller sweetness comes when we act with higher consciousness to heal what has been sorely wounded.” [All join in saying:] Blessed are You, Yahhh, Breathing Spirit of the world, Who breathes our out-breath into the grapevine and breathes the fruit of the vine into our bodies. [Then each person drinks from her/ his own cup.]",
+      "segmentIds": [
+        "research-mlk-freedom-seder-jei-aecba0d11556",
+        "research-mlk-freedom-seder-jzt-5a8266956972",
+        "research-mlk-freedom-seder-kqr-3b517a1367ec"
+      ],
+      "sourceLocation": "PDF p. 15, segment 1 through PDF p. 15, segment 3",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 15, segment 1 through PDF p. 15, segment 3",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-jei-aecba0d11556",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 25146,
+            "normalizedEndOffset": 25912
+          },
+          {
+            "id": "research-mlk-freedom-seder-jzt-5a8266956972",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 25913,
+            "normalizedEndOffset": 26882
+          },
+          {
+            "id": "research-mlk-freedom-seder-kqr-3b517a1367ec",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 26883,
+            "normalizedEndOffset": 27661
+          }
+        ]
+      },
+      "provenanceHash": "d60d013b1163f4cb49172d76ac58d8a939fb8855b7b87abaf5f5110f9e2ce0fe",
+      "componentProvenanceHashes": [
+        "aecba0d11556d841916caca97d74586025b735b97d4bf62ee31810ccfe49f245",
+        "5a8266956972b5dd54543454434b1696bd47976983cf9f2e8345f2a50adbdb6e",
+        "3b517a1367ec293772af2bce47bf9b60fd5e0dac3438504366a747356a4940fc"
+      ],
+      "wordCount": 409,
+      "characterCount": 2517,
+      "sectionIds": [
+        "maggid",
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "kadesh"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "environment",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Explain Dayenu as a step-by-step song of gratitude, then label the listed technologies, investment campaigns, and lobbying strategies as examples proposed in 2018 rather than a current action checklist.",
+      "rationale": "The sequence keeps the source's full ten-healings activity together and ends with the cup ritual that interprets environmental action as movement from sweetness through difficulty to deeper sweetness.",
+      "creditNotes": "Credit Rabbi Arthur Waskow, The Shalom Center, and the MLK+50 Freedom Seder on the final sources page.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-present-technology-or-policy-list-as-current-advice",
+        "explicit-historical-2018-environmental-action-opt-in",
+        "offer-open-ended-current-action-prompt-after-exact-reading",
+        "source-date-visible"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-mlk50-elijah-beloved-community",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "title": "Elijah and the Beloved Community",
+      "exactText": "“Before the coming of the great and awesome day when the Breath of Life may become a Hurricane of Change, I will send the Prophet Elijah, to turn the hearts of the parents to the children and the hearts of the children to the parents, lest the earth be utterly destroyed.” [The community goes to open a door to the outside, to welcome Elijah, and they say together:] “As we open our door to the winds and the air of the world, so we open our hearts to the future, to the hearts of our children and their children. We open ourselves, each one of us, to take on the task of Elijah, to heal the world from its suffering. “ (All sing) Ain't gonna let nobody turn me around Turn me around, turn me around Ain't gonna let nobody turn me around I'm gonna keep on a-walkin', keep on a-talkin' Marchin' up to freedom's land Ain't gonna let no hatred turn me around Turn me around, turn me around Ain't gonna let no hatred turn me around I'm gonna keep on a-walkin', keep on a-talkin' Marchin' up to freedom's land Ain't gonna let low wages turn me around Turn me around, turn me around Ain't gonna let low wages gturn me around I'm gonna keep on a-walkin', keep on a-talkin' Marchin' up to freedom's land Ain't gonna let injustice turn me around Turn me around, turn me around\n\nMLK+50 Labor-Justice Freedom Seder 21 Ain't gonna let injustice turn me around I'm gonna keep on a-walkin', keep on a-talkin' Marchin' up to freedom's land” “Gathering the mixed multitudes in my soul I rummage through my belongings In preparation for leave-taking What aspects of myself Do I need to make the journey What can I leave behind To memory in the narrow places “Maybe this year, we will go out together In broad daylight Not in the still of the night In no haste Soul in Soul Holding each other in loving compassion Knowing we will cross together Finding home at last In the depth of Divine waters That part willingly On the shores of a wilderness “ What if no one drowned this year And You need not weep For any of Your lost children In the sea of poverty, gun violence, Ecological disaster and environmental injustice, Prejudice, sexism, homophobia, Racial profiling and mass incarceration Islamophobia, Anti-Semitism, And oppressions of any person or people or planet None of us is free until all of us are free “So, let's not leave in haste this year But see the blessings that even The narrow places have offered us “For no place is without You Freedom is in Your arms Wherever we may be On the journey.”\n\n(Rabbi Shawn Israel Zevit) “We join with the Prophet Martin (April 4, 1967) in calling on the Spirit to move us into action: “A genuine revolution of values means in the final analysis that our loyalties must become ecumenical rather than sectional. Every nation must now develop\n\nMLK+50 Labor-Justice Freedom Seder 22 an overriding loyalty to humankind as a whole in order to preserve the best in their individual societies. “This call for a world-wide fellowship that lifts neighborly concern beyond one's tribe, race, class and nation is in reality a call for an all-embracing and unconditional love for all life. “Love has now become an absolute necessity for the survival of humanity. “We can no longer afford to worship the god of hate or bow before the altar of retaliation. History is cluttered with the wreckage of nations and individuals that pursued this self-defeating path of hate. “We are confronted with the fierce urgency of now.” [The Cup of Elijah is passed around and each person pours some wine or grape juice from the Cup of Elijah into her/his own cup.\n\nAll say together:] “Why do we drink this fruit of the vine?” — “Because grapes grow not alone but in clusters, and we must work not separately for freedom and justice, peace and healing—not each a lonely, isolated ‘I’—but in clusters of community. WE. “Together, we take on the task of Elijah.” [Each person turns to a neighbor and each tells the other one action s/he pledges to take to bring nearer the Beloved Community.] Blessed are You, Yahhh, Breathing Spirit of the world, Who breathes our out-breath into the grapevine and breathes the fruit of the vine into our bodies. [Everyone drinks from her/his own cup, which now includes some of the wine or grape-juice from Elijah’s cup.] [Sing this translation of Psalm 148 to the tune of “Michael Row the Boat Ashore.”)] Praise God, sun and moon, Hallelu-YAH. Praise Yah, you stars of light, Hallelu-YAH. Praise God, you high heavens, Hallelu-YAH. All that flows in all the world, Hallelu-YAH. Let them all praise God’s Name, Hallelu-YAH. For God spoke and they appeared, Hallelu-YAH. With God they take their stand, Hallelu-YAH. God’s rhythm none must break, Hallelu-YAH. Praise Yah from the Earth, Hallelu-YAH. You sea-monsters and all deeps, Hallelu-YAH. Fire, hail, snow, and steam, Hallelu-YAH.",
+      "segmentIds": [
+        "research-mlk-freedom-seder-uh6-c51b2ccbeea5",
+        "research-mlk-freedom-seder-vge-cb7b1c06377d",
+        "research-mlk-freedom-seder-web-5fcaaa88d78a",
+        "research-mlk-freedom-seder-wm3-3ea6a9cb1647",
+        "research-mlk-freedom-seder-x85-d2a09901cb66"
+      ],
+      "sourceLocation": "PDF p. 21, segment 2 through PDF p. 23, segment 2",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 21, segment 2 through PDF p. 23, segment 2",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+        "componentLocators": [
+          {
+            "id": "research-mlk-freedom-seder-uh6-c51b2ccbeea5",
+            "label": "PDF p. 21",
+            "pageNumber": 21,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 39498,
+            "normalizedEndOffset": 40765
+          },
+          {
+            "id": "research-mlk-freedom-seder-vge-cb7b1c06377d",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 40766,
+            "normalizedEndOffset": 41986
+          },
+          {
+            "id": "research-mlk-freedom-seder-web-5fcaaa88d78a",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 41987,
+            "normalizedEndOffset": 42266
+          },
+          {
+            "id": "research-mlk-freedom-seder-wm3-3ea6a9cb1647",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 42267,
+            "normalizedEndOffset": 43060
+          },
+          {
+            "id": "research-mlk-freedom-seder-x85-d2a09901cb66",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+            "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+            "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9",
+            "normalizedStartOffset": 43061,
+            "normalizedEndOffset": 44312
+          }
+        ]
+      },
+      "provenanceHash": "4a733c3c7f857e1e7b73d4934a13d61f812d8a349eae6c7b89db80425e21c8a3",
+      "componentProvenanceHashes": [
+        "c51b2ccbeea507de5dcc9c3f2a29b969a99d47d1a1b3c7789b61ae38fa52813f",
+        "cb7b1c06377dabaf95e1e23961a062a7de074a297cc6c86cb9349bb4829e69ed",
+        "5fcaaa88d78a81ab93ca482042ea586338089c2093ca63c10dc4dd50f65c966d",
+        "3ea6a9cb164768df41a55c4b2d1caca082edbe3eecfd17a142b43154b8b21a83",
+        "d2a09901cb6643102ab003f5330111e2ef58c5ed3d0ac90b85047b348291bcf5"
+      ],
+      "wordCount": 843,
+      "characterCount": 4818,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "environment",
+        "feminist",
+        "lgbtq"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain the custom of opening the door for Elijah and define the Beloved Community as Dr. King's vision of a just society; tell guests they will be invited to name one voluntary action before drinking.",
+      "rationale": "The sequence preserves a complete closing arc: open the door, sing against being turned around, imagine a crossing where no one drowns, hear King's call to universal love, share Elijah's cup, and pledge action together.",
+      "creditNotes": "Credit The Shalom Center, Rabbi Shawn Israel Zevit, Dr. Martin Luther King Jr., and the source-presented freedom-song tradition on the final sources page.",
+      "sourcePresentedAttribution": [
+        "(Rabbi Shawn Israel Zevit)"
+      ],
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": "(Rabbi Shawn Israel Zevit)",
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-4.0",
+        "materialKind": "embedded-third-party",
+        "sourcePresentedAttributionRequired": true,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "action-pledge-voluntary-and-specific",
+        "do-not-truncate-split-mlk-quotation",
+        "embedded-spiritual-song-rabbi-zevit-and-mlk-rights-review",
+        "preserve-no-one-left-to-drown-peace-framing"
+      ],
+      "containsThirdPartyAttribution": true,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

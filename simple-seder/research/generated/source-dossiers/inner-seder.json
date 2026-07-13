@@ -1,0 +1,1148 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "inner-seder",
+  "title": "Haggadah of the Inner Seder",
+  "creator": "Rabbi David Seidenberg / neohasid.org",
+  "family": "contemplative",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local source-dossier review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A dense, contemplative, eco-spiritual Haggadah with powerful inner-work interpretations and a full traditional structure; its enduring ritual and ethical sequences are valuable, while numerous 2026 political passages must remain research-only or explicitly contextualized.",
+  "sourceAssessment": {
+    "voice": "Meditative, mystical, eco-spiritual, justice-oriented, textually learned, and often written for adults already comfortable with Jewish liturgy and contemporary activism.",
+    "bestUses": [
+      "Mindfulness and spiritual-depth interpretations woven into traditional ritual moments",
+      "A concise ethical Exodus telling focused on oppression, cry, and responsibility",
+      "Meal and blessing passages that connect bodily action, gratitude, ecology, and peace"
+    ],
+    "beginnerRisks": [
+      "The source frequently assumes knowledge of Hebrew, rabbinic concepts, mystical vocabulary, and the traditional Seder sequence.",
+      "Many passages address specific 2026 political events and can become outdated or partisan when detached from their source context.",
+      "Long interpretive units can overwhelm a short or mixed-age Seder unless paired with concrete action cues and trimmed as complete movements."
+    ],
+    "politicalContext": "The edition openly advocates Palestinian dignity, opposes settler violence and war, and also affirms Jewish and Israeli actors working for safety and peace. Those commitments align with shared humanity, but event-specific allegations, party or government references, and contemporary conflict claims must not enter default modules without current sourcing and an explicit opt-in.",
+    "creditContext": "Credit Rabbi David Seidenberg and neohasid.org, link the CC BY-SA 4.0 license, identify modifications, and preserve ShareAlike terms. The source contains many embedded readings, translations, and poems that require their own credit and rights review."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 22,
+    "segmentCount": 119,
+    "exactCharacterCount": 108567,
+    "exactWordCount": 17575,
+    "reconstructionSha256": "5b33e87efcdb468a30623072ca7d8bb1c955f572094a64404efad86c3262e2dd",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Attribute David Seidenberg and link the license",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://neohasid.org/zman/pesach/InnerSeder/"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 9,
+      "segmentIds": [
+        "research-inner-seder-0-67bcd2e5c63c",
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-4qp-1ce07fa28e65",
+        "research-inner-seder-5l0-0bb51ee77882",
+        "research-inner-seder-6as-1fe9e022a991",
+        "research-inner-seder-71r-42068dcddffe",
+        "research-inner-seder-7s5-c2e0b58ce172",
+        "research-inner-seder-8i7-315b7327b9e2",
+        "research-inner-seder-973-8e4268db6cbd"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-inner-seder-j1-8382e147aa4a",
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-973-8e4268db6cbd",
+        "research-inner-seder-9qf-ea1df87fdf95"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 54,
+      "segmentIds": [
+        "research-inner-seder-1ci-b4e73274fee6",
+        "research-inner-seder-20v-e69d6dcfde6e",
+        "research-inner-seder-2p8-a5ea76a8773c",
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-8i7-315b7327b9e2",
+        "research-inner-seder-b52-3b6739cedf40",
+        "research-inner-seder-cg8-8138d51ee01b",
+        "research-inner-seder-e1l-2b9cfae39d65",
+        "research-inner-seder-et1-33d9edb805f7",
+        "research-inner-seder-fhs-763fc3a33503",
+        "research-inner-seder-g6l-757d4a17ab49",
+        "research-inner-seder-gqy-14b7b182fed3",
+        "research-inner-seder-h86-4892eba19ebf",
+        "research-inner-seder-i9d-d7f56867965c",
+        "research-inner-seder-jlp-cb11d3448c43",
+        "research-inner-seder-k8u-00309386ad48",
+        "research-inner-seder-ku4-34aaaa2ce7be",
+        "research-inner-seder-ler-0524ca4d9f76",
+        "research-inner-seder-rae-46936b810bff",
+        "research-inner-seder-rw9-dd64106c4b80",
+        "research-inner-seder-six-232c3f590396",
+        "research-inner-seder-t70-43714891ea45",
+        "research-inner-seder-tty-91149f90f341",
+        "research-inner-seder-ug7-8753557bd0c4",
+        "research-inner-seder-v72-759474eb1365",
+        "research-inner-seder-vud-df0bd7cf7399",
+        "research-inner-seder-wcz-1d0ca35ac57e",
+        "research-inner-seder-x18-64320e1f6615",
+        "research-inner-seder-xqd-07d9ef292594",
+        "research-inner-seder-ybu-9bac97851de9",
+        "research-inner-seder-z1s-1954344a1e50",
+        "research-inner-seder-zmh-c24de1615778",
+        "research-inner-seder-10es-0e2a8c3c32da",
+        "research-inner-seder-111e-f7a22680d2db",
+        "research-inner-seder-11t3-fbda89dd7ce3",
+        "research-inner-seder-12fy-9133ceca9823",
+        "research-inner-seder-131o-63b8aca9aa8a",
+        "research-inner-seder-13ro-a9b8a13e5d6f",
+        "research-inner-seder-14gc-4de62ae7c661",
+        "research-inner-seder-155x-a0480fa68c44",
+        "research-inner-seder-15tp-bc24bdc484ca",
+        "research-inner-seder-16ik-26489358edd3",
+        "research-inner-seder-1779-e1b05f2f60a5",
+        "research-inner-seder-1dpp-4ff49838b5e4",
+        "research-inner-seder-1ede-79ae281ed179",
+        "research-inner-seder-1g6y-f8855467cf54",
+        "research-inner-seder-1gqo-ebf5d7d13d9d",
+        "research-inner-seder-1hqq-e658f3895b75",
+        "research-inner-seder-1lsb-f0d6669c4bbc",
+        "research-inner-seder-1mju-e3fdca07c154",
+        "research-inner-seder-1n6r-df7562c98a40",
+        "research-inner-seder-1yfm-be855b59cae7",
+        "research-inner-seder-1zus-4e9cce60eddd",
+        "research-inner-seder-2449-99204c1c517a"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 17,
+      "segmentIds": [
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-b52-3b6739cedf40",
+        "research-inner-seder-d1y-9016c98a1f37",
+        "research-inner-seder-m2m-533e514620c9",
+        "research-inner-seder-mq3-152a1cedac09",
+        "research-inner-seder-niq-4132f5494a6b",
+        "research-inner-seder-o8k-f7a553ebf751",
+        "research-inner-seder-ora-03efc05c39d4",
+        "research-inner-seder-pxu-366984ca3612",
+        "research-inner-seder-qlw-05489ada2f42",
+        "research-inner-seder-1d4n-f3bd4d5cb453",
+        "research-inner-seder-1evg-2f885502f640",
+        "research-inner-seder-1fjp-fd3030ed8653",
+        "research-inner-seder-1l5y-fd706feafa12",
+        "research-inner-seder-1nsy-066b7bbdf0b4",
+        "research-inner-seder-1oyx-3ed699816ec8",
+        "research-inner-seder-1pnz-a87ea803a49e"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 9,
+      "segmentIds": [
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-1s84-1b83222e024c",
+        "research-inner-seder-1tce-a9e3cd77a28e",
+        "research-inner-seder-1u3z-ad41f88aea77",
+        "research-inner-seder-1v2d-58e41b2bd406",
+        "research-inner-seder-1vor-16a676bfb400",
+        "research-inner-seder-1w82-b937c3e15789",
+        "research-inner-seder-1wwa-c695061140d6",
+        "research-inner-seder-1xn0-4a2c8061fdbe"
+      ]
+    },
+    "tzafun": {
+      "segmentCount": 6,
+      "segmentIds": [
+        "research-inner-seder-3de-7ab6524dc2a6",
+        "research-inner-seder-ahl-fc3cb7bc7e03",
+        "research-inner-seder-b52-3b6739cedf40",
+        "research-inner-seder-ixc-d2c70ad4faba",
+        "research-inner-seder-1q92-f6ed4216d0bd",
+        "research-inner-seder-1quf-e36f9970fd5d"
+      ]
+    },
+    "barech": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-inner-seder-1quf-e36f9970fd5d",
+        "research-inner-seder-1rgc-dbb4a5ef8cfd"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 28,
+      "segmentIds": [
+        "research-inner-seder-41e-4f4aef55bf49",
+        "research-inner-seder-8i7-315b7327b9e2",
+        "research-inner-seder-17tk-2e4824c43b1b",
+        "research-inner-seder-18gi-37d867b9ee19",
+        "research-inner-seder-19dt-e7cee38ac3e4",
+        "research-inner-seder-19yo-7954c6675e84",
+        "research-inner-seder-1agg-0deb2683f8a0",
+        "research-inner-seder-1b3c-ee18a1670743",
+        "research-inner-seder-1bt0-ab79622952b1",
+        "research-inner-seder-1ck9-a7a13018d229",
+        "research-inner-seder-1ii7-c863ce4470b4",
+        "research-inner-seder-1j7a-552aff53d3bb",
+        "research-inner-seder-1jsz-a050ab053611",
+        "research-inner-seder-1ki3-822420aef5dd",
+        "research-inner-seder-1yfm-be855b59cae7",
+        "research-inner-seder-1z7o-b880c0ac1d4a",
+        "research-inner-seder-20ft-292d0c465520",
+        "research-inner-seder-211a-f3a66da1e774",
+        "research-inner-seder-21t4-275b87d40144",
+        "research-inner-seder-22pm-a8cf4ff97b27",
+        "research-inner-seder-23ds-1e177e933914",
+        "research-inner-seder-2449-99204c1c517a",
+        "research-inner-seder-24x2-248328576578",
+        "research-inner-seder-260c-a0ea842d4ad5",
+        "research-inner-seder-26ps-68716ccbd552",
+        "research-inner-seder-27k7-ff1d0cee6fc8",
+        "research-inner-seder-28ax-c3896d938cca",
+        "research-inner-seder-294d-c3b66069ba85"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-inner-seder-br0-c51c7040ed1f",
+        "research-inner-seder-294d-c3b66069ba85",
+        "research-inner-seder-2a49-abdd8397686c",
+        "research-inner-seder-2au1-87ca43c21b9d"
+      ]
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 14,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 7,
+    "jerusalemGateCount": 1,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "inner-seder-brokenness-and-transformation",
+      "title": "Broken matzah and inner transformation",
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-3de-7ab6524dc2a6",
+        "research-inner-seder-ahl-fc3cb7bc7e03"
+      ],
+      "beginnerContext": "First identify the middle matzah, explain that the larger half becomes the afikoman, and state how it will be hidden and returned. Then invite guests to treat the break as an optional reflection on what is unfinished and what might become whole.",
+      "rationale": "These source-order passages connect the physical act of breaking matzah with the source's central inner-Seder method, offering spiritual depth grounded in a visible ritual rather than an abstract meditation.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-action-cues-required",
+        "afikoman-search-and-return-explained",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; preserve CC BY-SA 4.0 attribution, change notice, and ShareAlike terms.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 2, segment 3",
+        "end": "PDF p. 4, segment 2",
+        "locators": [
+          {
+            "id": "research-inner-seder-3de-7ab6524dc2a6",
+            "sourceLocation": "PDF p. 2, segment 3",
+            "locator": {
+              "label": "PDF p. 2",
+              "pageNumber": 2,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 4370,
+              "normalizedEndOffset": 5233
+            }
+          },
+          {
+            "id": "research-inner-seder-ahl-fc3cb7bc7e03",
+            "sourceLocation": "PDF p. 4, segment 2",
+            "locator": {
+              "label": "PDF p. 4",
+              "pageNumber": 4,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 13593,
+              "normalizedEndOffset": 14437
+            }
+          }
+        ]
+      },
+      "totalWords": 287,
+      "exactTextSequenceSha256": "56d329425fbe1a5d1c9b8364ad1c8520bbefcd1bb4dec196de7e7d19a1023bbe",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-retelling-obligation",
+      "title": "Why this story is retold",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-e1l-2b9cfae39d65",
+        "research-inner-seder-et1-33d9edb805f7",
+        "research-inner-seder-fhs-763fc3a33503"
+      ],
+      "beginnerContext": "Tell guests that Maggid is the storytelling section and that the story belongs to the whole table. Invite people to take turns reading, while allowing anyone to pass.",
+      "rationale": "The three adjacent records establish the obligation to tell, expand it into active participation, and frame the narrative as lived rather than merely historical, a coherent orientation to Maggid.",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "turn-taking-invitation-required",
+        "right-to-pass-required",
+        "plain-language-maggid-definition",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org and indicate any abridgment.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 5, segment 1",
+        "end": "PDF p. 5, segment 3",
+        "locators": [
+          {
+            "id": "research-inner-seder-e1l-2b9cfae39d65",
+            "sourceLocation": "PDF p. 5, segment 1",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 18201,
+              "normalizedEndOffset": 19188
+            }
+          },
+          {
+            "id": "research-inner-seder-et1-33d9edb805f7",
+            "sourceLocation": "PDF p. 5, segment 2",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 19189,
+              "normalizedEndOffset": 20079
+            }
+          },
+          {
+            "id": "research-inner-seder-fhs-763fc3a33503",
+            "sourceLocation": "PDF p. 5, segment 3",
+            "locator": {
+              "label": "PDF p. 5",
+              "pageNumber": 5,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 20080,
+              "normalizedEndOffset": 20972
+            }
+          }
+        ]
+      },
+      "totalWords": 450,
+      "exactTextSequenceSha256": "4453f54dc078f7c9238adecb33ca116ac165b79c901ba413c94eda94880408ee",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-four-children",
+      "title": "Four ways of approaching the story",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-ixc-d2c70ad4faba",
+        "research-inner-seder-jlp-cb11d3448c43",
+        "research-inner-seder-k8u-00309386ad48",
+        "research-inner-seder-ku4-34aaaa2ce7be",
+        "research-inner-seder-ler-0524ca4d9f76"
+      ],
+      "beginnerContext": "Introduce these as four modes that can exist within any person, not fixed labels for actual children. Explain unfamiliar spiritual vocabulary and do not ask guests to identify one another.",
+      "rationale": "Five consecutive records preserve the source's contemplative reinterpretation as a complete psychological movement, avoiding the harm of extracting a single label without its balancing perspectives.",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "nonlabeling-introduction-required",
+        "plain-language-spiritual-vocabulary",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and preserve any attribution attached to adapted Four Children material.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 6, segment 2",
+        "end": "PDF p. 6, segment 6",
+        "locators": [
+          {
+            "id": "research-inner-seder-ixc-d2c70ad4faba",
+            "sourceLocation": "PDF p. 6, segment 2",
+            "locator": {
+              "label": "PDF p. 6",
+              "pageNumber": 6,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 24528,
+              "normalizedEndOffset": 25404
+            }
+          },
+          {
+            "id": "research-inner-seder-jlp-cb11d3448c43",
+            "sourceLocation": "PDF p. 6, segment 3",
+            "locator": {
+              "label": "PDF p. 6",
+              "pageNumber": 6,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 25405,
+              "normalizedEndOffset": 26237
+            }
+          },
+          {
+            "id": "research-inner-seder-k8u-00309386ad48",
+            "sourceLocation": "PDF p. 6, segment 4",
+            "locator": {
+              "label": "PDF p. 6",
+              "pageNumber": 6,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 26238,
+              "normalizedEndOffset": 27003
+            }
+          },
+          {
+            "id": "research-inner-seder-ku4-34aaaa2ce7be",
+            "sourceLocation": "PDF p. 6, segment 5",
+            "locator": {
+              "label": "PDF p. 6",
+              "pageNumber": 6,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 27004,
+              "normalizedEndOffset": 27746
+            }
+          },
+          {
+            "id": "research-inner-seder-ler-0524ca4d9f76",
+            "sourceLocation": "PDF p. 6, segment 6",
+            "locator": {
+              "label": "PDF p. 6",
+              "pageNumber": 6,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 27747,
+              "normalizedEndOffset": 28605
+            }
+          }
+        ]
+      },
+      "totalWords": 703,
+      "exactTextSequenceSha256": "45829674eefd7aced7bae3defed1c9c2395fdcd1539f3084f6f7813d8ae3bed4",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-compact-torah-arc",
+      "title": "A compact Torah story",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-pxu-366984ca3612",
+        "research-inner-seder-qlw-05489ada2f42"
+      ],
+      "beginnerContext": "Introduce the main people and sequence before reading: ancestors migrate, descendants are enslaved, oppression intensifies, the people cry out, and liberation begins. Clarify that the text is a compact scriptural retelling rather than the whole story.",
+      "rationale": "The adjacent records condense the biblical and rabbinic arc into a source-led narrative unit that can support a shorter Haggadah without reducing Exodus to isolated terms.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "plain-language-character-introductions",
+        "nontriumphalist-violence-framing",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0; indicate any cuts.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 8, segment 1",
+        "end": "PDF p. 8, segment 2",
+        "locators": [
+          {
+            "id": "research-inner-seder-pxu-366984ca3612",
+            "sourceLocation": "PDF p. 8, segment 1",
+            "locator": {
+              "label": "PDF p. 8",
+              "pageNumber": 8,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 33618,
+              "normalizedEndOffset": 34483
+            }
+          },
+          {
+            "id": "research-inner-seder-qlw-05489ada2f42",
+            "sourceLocation": "PDF p. 8, segment 2",
+            "locator": {
+              "label": "PDF p. 8",
+              "pageNumber": 8,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 34484,
+              "normalizedEndOffset": 35365
+            }
+          }
+        ]
+      },
+      "totalWords": 291,
+      "exactTextSequenceSha256": "fc01c181480151d9f5c136c540ccb1f7420c6d1b8aae931e37fc8556aa96d179",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-oppression-cry-and-refuge",
+      "title": "Oppression, cry, and responsibility",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-inner-seder-wcz-1d0ca35ac57e",
+        "research-inner-seder-x18-64320e1f6615",
+        "research-inner-seder-xqd-07d9ef292594",
+        "research-inner-seder-ybu-9bac97851de9",
+        "research-inner-seder-z1s-1954344a1e50",
+        "research-inner-seder-zmh-c24de1615778"
+      ],
+      "beginnerContext": "Explain that the traditional verses linger over what oppression does to families and how a cry becomes heard. Invite one concrete question about whose cries society notices today, without requiring personal disclosure or making unsupported current claims.",
+      "rationale": "Six adjacent records form a sustained ethical exposition from forced labor and family harm through the people's cry and the obligation to notice vulnerability, one of the source's strongest justice-centered movements.",
+      "themes": [
+        "social-justice",
+        "mindfulness",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "no-unsupported-current-claims",
+        "concrete-discussion-prompt",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; retain CC BY-SA 4.0 and any item-level credits.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 9, segment 4",
+        "end": "PDF p. 10, segment 4",
+        "locators": [
+          {
+            "id": "research-inner-seder-wcz-1d0ca35ac57e",
+            "sourceLocation": "PDF p. 9, segment 4",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 41939,
+              "normalizedEndOffset": 42811
+            }
+          },
+          {
+            "id": "research-inner-seder-x18-64320e1f6615",
+            "sourceLocation": "PDF p. 9, segment 5",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 42812,
+              "normalizedEndOffset": 43716
+            }
+          },
+          {
+            "id": "research-inner-seder-xqd-07d9ef292594",
+            "sourceLocation": "PDF p. 10, segment 1",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 43717,
+              "normalizedEndOffset": 44489
+            }
+          },
+          {
+            "id": "research-inner-seder-ybu-9bac97851de9",
+            "sourceLocation": "PDF p. 10, segment 2",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 44490,
+              "normalizedEndOffset": 45423
+            }
+          },
+          {
+            "id": "research-inner-seder-z1s-1954344a1e50",
+            "sourceLocation": "PDF p. 10, segment 3",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 45424,
+              "normalizedEndOffset": 46168
+            }
+          },
+          {
+            "id": "research-inner-seder-zmh-c24de1615778",
+            "sourceLocation": "PDF p. 10, segment 4",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 46169,
+              "normalizedEndOffset": 47187
+            }
+          }
+        ]
+      },
+      "totalWords": 845,
+      "exactTextSequenceSha256": "9b6db7115fbd4a342f96e75ad2bf64cf7bfc33a798e2abf18a3172964134b69e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-symbols-and-every-generation",
+      "title": "Symbols becoming lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1d4n-f3bd4d5cb453",
+        "research-inner-seder-1dpp-4ff49838b5e4",
+        "research-inner-seder-1ede-79ae281ed179",
+        "research-inner-seder-1evg-2f885502f640",
+        "research-inner-seder-1fjp-fd3030ed8653",
+        "research-inner-seder-1g6y-f8855467cf54",
+        "research-inner-seder-1gqo-ebf5d7d13d9d"
+      ],
+      "beginnerContext": "Point to the matzah and maror and define them before moving into meditation. Explain that 'in every generation' asks guests to connect memory to present responsibility, not to pretend they literally lived in ancient Egypt.",
+      "rationale": "The seven consecutive source records keep ritual objects, embodied interpretation, and the every-generation teaching in one complete movement, making the contemplative layer legible and grounded.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "visible-object-cues-required",
+        "plain-language-definitions-required",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org and preserve source-presented attributions for any embedded interpretation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 14, segment 1",
+        "end": "PDF p. 14, segment 7",
+        "locators": [
+          {
+            "id": "research-inner-seder-1d4n-f3bd4d5cb453",
+            "sourceLocation": "PDF p. 14, segment 1",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 63671,
+              "normalizedEndOffset": 64428
+            }
+          },
+          {
+            "id": "research-inner-seder-1dpp-4ff49838b5e4",
+            "sourceLocation": "PDF p. 14, segment 2",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 64429,
+              "normalizedEndOffset": 65281
+            }
+          },
+          {
+            "id": "research-inner-seder-1ede-79ae281ed179",
+            "sourceLocation": "PDF p. 14, segment 3",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 65282,
+              "normalizedEndOffset": 65931
+            }
+          },
+          {
+            "id": "research-inner-seder-1evg-2f885502f640",
+            "sourceLocation": "PDF p. 14, segment 4",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 65932,
+              "normalizedEndOffset": 66804
+            }
+          },
+          {
+            "id": "research-inner-seder-1fjp-fd3030ed8653",
+            "sourceLocation": "PDF p. 14, segment 5",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 66805,
+              "normalizedEndOffset": 67641
+            }
+          },
+          {
+            "id": "research-inner-seder-1g6y-f8855467cf54",
+            "sourceLocation": "PDF p. 14, segment 6",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 67642,
+              "normalizedEndOffset": 68351
+            }
+          },
+          {
+            "id": "research-inner-seder-1gqo-ebf5d7d13d9d",
+            "sourceLocation": "PDF p. 14, segment 7",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 68352,
+              "normalizedEndOffset": 69649
+            }
+          }
+        ]
+      },
+      "totalWords": 987,
+      "exactTextSequenceSha256": "cbdf1ad0ffcd0758a556e1b58f04c227095822d7ffefcfaf63823ccd1442f4b9",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-mindful-table-rituals",
+      "title": "Mindful washing and symbolic eating",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1n6r-df7562c98a40",
+        "research-inner-seder-1nsy-066b7bbdf0b4",
+        "research-inner-seder-1oyx-3ed699816ec8",
+        "research-inner-seder-1pnz-a87ea803a49e"
+      ],
+      "beginnerContext": "Give the practical instructions before reflection: guests may wash their own hands or pour for one another over a basin, then eat matzah, bitter herb with haroset, and the sandwich. Keep any silence or visualization optional.",
+      "rationale": "The four adjacent passages bring the source's contemplative voice into the actual table sequence while preserving the correct ritual order, so meaning follows an understandable action.",
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "environment"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "mutual-handwashing-option-required",
+        "food-definition-and-allergy-note",
+        "do-not-replace-host-instructions",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; identify project-authored action bridges separately.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 16, segment 4",
+        "end": "PDF p. 17, segment 2",
+        "locators": [
+          {
+            "id": "research-inner-seder-1n6r-df7562c98a40",
+            "sourceLocation": "PDF p. 16, segment 4",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 76707,
+              "normalizedEndOffset": 77505
+            }
+          },
+          {
+            "id": "research-inner-seder-1nsy-066b7bbdf0b4",
+            "sourceLocation": "PDF p. 16, segment 5",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 77506,
+              "normalizedEndOffset": 79016
+            }
+          },
+          {
+            "id": "research-inner-seder-1oyx-3ed699816ec8",
+            "sourceLocation": "PDF p. 17, segment 1",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 79017,
+              "normalizedEndOffset": 79918
+            }
+          },
+          {
+            "id": "research-inner-seder-1pnz-a87ea803a49e",
+            "sourceLocation": "PDF p. 17, segment 2",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 79919,
+              "normalizedEndOffset": 80677
+            }
+          }
+        ]
+      },
+      "totalWords": 638,
+      "exactTextSequenceSha256": "3345fc288a991218958262988e8cb217242f7ee286e9dc19780105c131aa964a",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "inner-seder-gratitude-and-peace",
+      "title": "Grace, enoughness, and peace",
+      "sectionIds": [
+        "barech"
+      ],
+      "segmentIds": [
+        "research-inner-seder-1v2d-58e41b2bd406",
+        "research-inner-seder-1vor-16a676bfb400",
+        "research-inner-seder-1w82-b937c3e15789",
+        "research-inner-seder-1xn0-4a2c8061fdbe"
+      ],
+      "beginnerContext": "Explain that Barech is gratitude after eating and invite guests to notice sustenance, interdependence, and the wish for peace. State whether the table will read all four paragraphs or one selected portion.",
+      "rationale": "These source-order passages form an inward-to-outward arc from food and sufficiency to collective wellbeing and peace, giving the contemplative source a coherent closing table movement.",
+      "themes": [
+        "mindfulness",
+        "environment",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-barech-definition",
+        "peace-focused-language-check",
+        "embedded-credit-check"
+      ],
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0 and preserve embedded credits.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 18, segment 3",
+        "end": "PDF p. 18, segment 7",
+        "locators": [
+          {
+            "id": "research-inner-seder-1v2d-58e41b2bd406",
+            "sourceLocation": "PDF p. 18, segment 3",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 86917,
+              "normalizedEndOffset": 87722
+            }
+          },
+          {
+            "id": "research-inner-seder-1vor-16a676bfb400",
+            "sourceLocation": "PDF p. 18, segment 4",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 87723,
+              "normalizedEndOffset": 88417
+            }
+          },
+          {
+            "id": "research-inner-seder-1w82-b937c3e15789",
+            "sourceLocation": "PDF p. 18, segment 5",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 88418,
+              "normalizedEndOffset": 89289
+            }
+          },
+          {
+            "id": "research-inner-seder-1xn0-4a2c8061fdbe",
+            "sourceLocation": "PDF p. 18, segment 7",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/inner-seder.txt",
+              "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+              "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+              "normalizedStartOffset": 90252,
+              "normalizedEndOffset": 91281
+            }
+          }
+        ]
+      },
+      "totalWords": 605,
+      "exactTextSequenceSha256": "7120ffc113fe4ca00c8ace39cff6fc8192fd735a6f3953c80fad59efb9b8a5d6",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-inner-seder-0-67bcd2e5c63c",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "contemporary-partisan-assertion",
+        "The 2026 activist dedication names a current killing and political actors; keep it in source research, not default runtime text."
+      ]
+    },
+    {
+      "id": "research-inner-seder-j1-8382e147aa4a",
+      "sourceLocation": "PDF p. 1, segment 2",
+      "reasons": [
+        "The opening combines difficult extraction, political setup, and specialized ritual additions that require separate contextual review."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1ci-b4e73274fee6",
+      "sourceLocation": "PDF p. 1, segment 3",
+      "reasons": [
+        "contemporary-partisan-assertion",
+        "Event-specific claims about current Israeli and Palestinian politics require external current sourcing and explicit editorial review."
+      ]
+    },
+    {
+      "id": "research-inner-seder-cg8-8138d51ee01b",
+      "sourceLocation": "PDF p. 4, segment 5",
+      "reasons": [
+        "contemporary-partisan-assertion",
+        "The Ukraine and Gaza references are date-specific and should not be treated as evergreen ritual text."
+      ]
+    },
+    {
+      "id": "research-inner-seder-g6l-757d4a17ab49",
+      "sourceLocation": "PDF p. 5, segment 4",
+      "reasons": [
+        "contemporary-partisan-assertion",
+        "The prompt depends on current wars and requires a deliberately contemporary, fact-checked edition."
+      ]
+    },
+    {
+      "id": "research-inner-seder-rae-46936b810bff",
+      "sourceLocation": "PDF p. 8, segment 3",
+      "reasons": [
+        "The contemporary state and redemption assertion is not appropriate for default peace-focused generation."
+      ]
+    },
+    {
+      "id": "research-inner-seder-tty-91149f90f341",
+      "sourceLocation": "PDF p. 8, segment 7",
+      "reasons": [
+        "The ICE reference is current and partisan; it requires a dated social-justice opt-in and verified context."
+      ]
+    },
+    {
+      "id": "research-inner-seder-10es-0e2a8c3c32da",
+      "sourceLocation": "PDF p. 10, segment 5",
+      "reasons": [
+        "contemporary-partisan-assertion",
+        "Current West Bank allegations require current primary-source verification before reuse."
+      ]
+    },
+    {
+      "id": "research-inner-seder-131o-63b8aca9aa8a",
+      "sourceLocation": "PDF p. 11, segment 3",
+      "reasons": [
+        "The contemporary political passage is not suitable for the evergreen candidate pool."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1bt0-ab79622952b1",
+      "sourceLocation": "PDF p. 13, segment 5",
+      "reasons": [
+        "References to current Israeli and United States administrations will date quickly and require explicit contemporary framing."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1q92-f6ed4216d0bd",
+      "sourceLocation": "PDF p. 17, segment 3",
+      "reasons": [
+        "Modern sovereignty claims require political-context review and are outside default ritual assembly."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1yfm-be855b59cae7",
+      "sourceLocation": "PDF p. 19, segment 1",
+      "reasons": [
+        "The passage invokes current anger and conflict and requires a current-events opt-in."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1z7o-b880c0ac1d4a",
+      "sourceLocation": "PDF p. 19, segment 2",
+      "reasons": [
+        "The hostages reference is event-specific and must remain in research until current verification."
+      ]
+    },
+    {
+      "id": "research-inner-seder-1zus-4e9cce60eddd",
+      "sourceLocation": "PDF p. 19, segment 3",
+      "reasons": [
+        "The current-conflict continuation cannot be used as evergreen ritual text."
+      ]
+    }
+  ],
+  "notes": [
+    "This source is not rejected for its politics; enduring contemplative and ethical movements are included, while dated claims are separated so the app does not present them without current verification.",
+    "The source's CC BY-SA license supports substantial reuse with attribution, change notice, and ShareAlike compliance.",
+    "A cohesive mindfulness version should use several whole sequences from this source rather than sprinkle isolated mystical sentences into an otherwise unrelated Haggadah.",
+    "All recommendations are local-agent-reviewed candidates only and do not grant runtime eligibility."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "comprehensiveApproval": false,
+  "reviewedAt": null,
+  "reviewedBy": [],
+  "minimumApprovedModules": 600,
+  "minimumApprovedExactCharacters": 500000,
+  "requireAllSources": true,
+  "maximumPendingContextReviewSegments": 0,
+  "requiredRuntimeLoadingMode": "per-source-dynamic",
+  "criteria": [
+    "All 20 acquired source texts have been segmented and classified.",
+    "OCR-corrupt and context-fragment records remain quarantined.",
+    "Every runtime module has section, audience, tone, theme, seam, rights, and exact attribution review.",
+    "Precomposed featured-source sequences have passed narrative and ritual coherence review.",
+    "Representative generated Haggadahs have passed political, beginner-accessibility, print, and mobile QA."
+  ],
+  "note": "Keep comprehensiveApproval false while the 40-record set is only a smoke-test fixture. Set it true only after the full segmented corpus and precomposed sequences pass the listed review."
+}

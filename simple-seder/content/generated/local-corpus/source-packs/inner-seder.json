@@ -1,0 +1,1081 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "inner-seder",
+  "sourceTitle": "Haggadah of the Inner Seder",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Attribute David Seidenberg and link the license",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://neohasid.org/zman/pesach/InnerSeder/"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-inner-seder-brokenness-and-transformation",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Broken matzah and inner transformation",
+      "exactText": "But on seder night, we first experience it as the bread of slavery (lachma anya), and end by experiencing it as the bread of redemption (afikoman). This transformation is the essence of the seder. Bedikat Chamets After the search for Chamets the night before Passover, say the following formula. You may also add this Earth prayer from neohasid.org. “All the chamets that is in my possession/r’shut, which I [did see or] did not see and which I [did remove or] did not remove, let it be nullified and let it become like the dirt of the earth/afra d’ar’a.” Kol chamira v’chami`a d’ika bir’shuti [d’chaziteih u]d’la chaziteih, [d’vi`arteih u]d’la vi`arteih liv’til v’lehevei (hefker) k`afra d`ar`a. (Add the words in brackets in the morning, when you burn the chamets.) >May we remember on this day that just as we do not own this chamets, we do not own this Earth.\n\n(You can also use a sprig of oregano or thyme if you cannot find hyssop.) The explanation for hyssop is found on p.5 and p.14 (after Rabban Gamliel’s three things); it can also be recited here. Yachats Break the middle matsah into unequal halves The bigger half is the afikoman; the smaller half is the lechem `oni or poverty bread. The afikoman is wrapped in a cloth. In the Syrian custom, each person takes a turn holding the afikoman in their right hand over their left shoulder. Then they say in Hebrew or English: מֹשֶׁה כִּדְבַר עָשׂוּ יִשְׂרָאֵל בְנֵי שִׁכְמָם עַל בְּשִׂמְלֹתָם צְרֻרֹת מִשְׁאֲרֹתָם Mish`arotam ts’rurot b’simlotan `al shekhmam. Uv’nei Yisrael `asu kid’var Moshe… “Their kneading bowls/ leftover things (were) tied up in their cloaks on their shoulder. And the children of Israel did according to Moshe’s word...” (Exod.",
+      "segmentIds": [
+        "research-inner-seder-3de-7ab6524dc2a6",
+        "research-inner-seder-ahl-fc3cb7bc7e03"
+      ],
+      "sourceLocation": "PDF p. 2, segment 3 through PDF p. 4, segment 2",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 2, segment 3 through PDF p. 4, segment 2",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-3de-7ab6524dc2a6",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 4370,
+            "normalizedEndOffset": 5233
+          },
+          {
+            "id": "research-inner-seder-ahl-fc3cb7bc7e03",
+            "label": "PDF p. 4",
+            "pageNumber": 4,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 13593,
+            "normalizedEndOffset": 14437
+          }
+        ]
+      },
+      "provenanceHash": "56d329425fbe1a5d1c9b8364ad1c8520bbefcd1bb4dec196de7e7d19a1023bbe",
+      "componentProvenanceHashes": [
+        "7ab6524dc2a656b9d21bc5b0b90553376e58041195e9e2a61bbe919c5d333c84",
+        "fc3cb7bc7e0346cc4ce4461b8f078953e982c0d5abd18ec6303046c1fb9a9e34"
+      ],
+      "wordCount": 287,
+      "characterCount": 1709,
+      "sectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "First identify the middle matzah, explain that the larger half becomes the afikoman, and state how it will be hidden and returned. Then invite guests to treat the break as an optional reflection on what is unfinished and what might become whole.",
+      "rationale": "These source-order passages connect the physical act of breaking matzah with the source's central inner-Seder method, offering spiritual depth grounded in a visible ritual rather than an abstract meditation.",
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; preserve CC BY-SA 4.0 attribution, change notice, and ShareAlike terms.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "afikoman-search-and-return-explained",
+        "embedded-credit-check",
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-action-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-inner-seder-retelling-obligation",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Why this story is retold",
+      "exactText": "Page 5 Please supplement this haggadah with other haggadot, songs, interpretations, discussions of freedom, etc. Rabbi David Seidenberg, neohasid.org (cc) 2026 v.18.0 The Answer – 2nd beginning of the story: Slaves we were to Pharaoh in Egypt, and YHVH our God brought us out from there with a strong hand and a stretched out arm. (Deut. 6:21) And were it not for the Holy One bringing our ancestors out from Egypt, still would we and our children and our children’s children be enslaved to Pharaoh in Egypt. ״ה וַיּוֹצִיאֵנוּ , בְּמִצְרָיִם לְפַרְעֹה הָיִינוּ עֲבָדִים ׳ אֱלֹהֵינוּ נְטוּיָה וּבִזְרֹעַ חֲזָקָה בְּיָד מִשָּׁם ״ כ:ו דברים)א( לֹא וְאִלּוּ , מִמִּצְרָיִם אֲבוֹתֵינוּ אֶת הוּא בָּרוּךְ הַקָּדוֹשׁ הוֹצִיא הֲרֵי לְפַרְעֹה הָיִינוּ מְשֻׁעְבָּדִים בָנֵינוּ וּבְנֵי וּבָנֵינוּ אָנוּ.בְּמִצְרָיִם People often sing “Avadim Hayinu, Hayinu, Atah B’nei Chorin, B’nei Chorin” here, meaing “We were slaves, now we are free”, but in fact we are not yet free at this point in the seder.\n\nI save the song til after Dayeinu. The mitsvah of Pesach: And even if all of us are wise, all of us understanding, all of us knowing the Torah, it would be a mitsvah for us to be telling about going out from Egypt. And all who increase telling about going out from Egypt – behold this is praised. וַאֲפִילוּ כֻּלָּנוּ חֲכָמִים כֻּלָּנוּ נְבוֹנִים כֻּלָּנוּ זְקֵנִים כֻּלָּנוּ יוֹדְעִים אֶת הַתּוֹרָה מִצְוָה עָלֵינוּ לְסַפֵּר בִּיצִיאַת מִצְרָיִם . וְכָל הַמַּרְבֶּה לְסַפֵּר בִּיצִיאַת מִצְרַיִם הֲרֵי זֶה מְשֻׁבָּח . The word for Passover, Pesach, can be resolved into two words: Peh sach – meaning, “talking mouth”. Some teach that this means the beginning of liberation is telling one’s story. Stories about telling the story: A story about Rebbe Eliezer and Rebbe Yehoshua and Rebbe El`azar ben Azaryah and Rebbe Akiva and Rebbe Tarfon – they were all reclining (m’subin) in Bnei Brak.\n\nAnd they were telling about going out from Egypt all that night – until their students came and said to them: Our rebbes! The time of reading the Sh’ma of Shacharit (the morning prayer) has arrived! מַעֲשֶׂה בְּרִבִּי אֱלִיעֶזֶר וְרִבִּי יְהוֹשׁוּעַ וְרִבִּי אֶלְעָזָר בֶּן עֲזַרְיָה וְרִבִּי עֲקִיבָה וְרִבִּי טַרְפוֹן , שֶׁהָיוּ מְסֻבִּין בִּבְנֵי בְרָק ; וְהָיוּ מְסַפְּרִין בִּיצִיאַת מִצְרַיִם כָּל אוֹתוֹ הַלַּיְלָה , עַד שֶׁבָּ אוּ תַּלְמִידֵיהֶם וְאָמְרוּ לָהֶם : רִבּוֹתֵינוּ , הִגִּיעַ זְמָן קִרְיַת שְׁמַע שֶׁלְּ שַׁחְרִית . > There is a theory that the rabbis were planning a revolt against Rome. Though there isn’t a lot of evidence to support this, there is still an opportunity to ask: How does the seder prepare you to fight for freedom? What stories do you have about seders you’ve been part of? You can share them here along with these rabbinic stories, or in place of them.",
+      "segmentIds": [
+        "research-inner-seder-e1l-2b9cfae39d65",
+        "research-inner-seder-et1-33d9edb805f7",
+        "research-inner-seder-fhs-763fc3a33503"
+      ],
+      "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-e1l-2b9cfae39d65",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 18201,
+            "normalizedEndOffset": 19188
+          },
+          {
+            "id": "research-inner-seder-et1-33d9edb805f7",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 19189,
+            "normalizedEndOffset": 20079
+          },
+          {
+            "id": "research-inner-seder-fhs-763fc3a33503",
+            "label": "PDF p. 5",
+            "pageNumber": 5,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 20080,
+            "normalizedEndOffset": 20972
+          }
+        ]
+      },
+      "provenanceHash": "4453f54dc078f7c9238adecb33ca116ac165b79c901ba413c94eda94880408ee",
+      "componentProvenanceHashes": [
+        "2b9cfae39d6594df6e5c501c7492362a23598a0578b31a3f8e711a191becd315",
+        "33d9edb805f783404b3125d2b373156b3e8ea24f0c82709358844c08e62b5564",
+        "763fc3a33503debd90135ba89ea5cf230c50ee2bb86e29ee04390d58cb4d8fb1"
+      ],
+      "wordCount": 450,
+      "characterCount": 2773,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Tell guests that Maggid is the storytelling section and that the story belongs to the whole table. Invite people to take turns reading, while allowing anyone to pass.",
+      "rationale": "The three adjacent records establish the obligation to tell, expand it into active participation, and frame the narrative as lived rather than merely historical, a coherent orientation to Maggid.",
+      "creditNotes": "Credit Seidenberg and neohasid.org and indicate any abridgment.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "plain-language-maggid-definition",
+        "right-to-pass-required",
+        "turn-taking-invitation-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-inner-seder-four-children",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Four ways of approaching the story",
+      "exactText": "כְּנֶגֶד אַרְבָּעָה בָּנִים דִּבְּרָה תּוֹרָה -אֶחָד חָכָם , וְאֶחָד וְאֶחָד רָשָׁע , וְאֶחָד תָּם , וְאֶחָד שְׁאֵינוּ יוֹדֵעַ לִשְׁאֹ ל. There are four verses in the Torah about retelling the story of leaving Egypt. The rabbis turned them into four types of children. Chakham/Wise: In the Torah, the answer to this question is “Avadim Hayinu” – see p.4. A wise one (chakham) – what does that one say? What are the testimonies and statutes and just laws which YHVH our God commanded you-all? (Deut. 6:20) Even so should you be saying to them: according to the laws of the Pesach offering: they don’t add (maftir) after the Pesach any afikoman. חָכָם , מַה הוּא אוֹמֵר ? ״מָה הָעֵדֹת , וְהַחֻקִּים וְהַמִּשְׁפָּטִים אֲשֶׁר צִוָּה יְהוָה אֱלֹהֵינוּ , אֶתְכֶם ?״ )דברים ו:כ( אַף אַתָּה אֱמֹר לוֹ כְּהִלְכַּת | כְּהִלְכ וֹת הַפֶּסַח , אֵין מַפְטִירִין אַחַר הַפֶּסַח אֲפִיקוֹ מָן.\n\nThe “wise one” receives information, not meaning, not revelation. At least the “wicked one” takes a position. The children go up in levels of purity, presence, openness. The wise one, Chakham, is not having an experience of leaving Egypt. The response to them is similarly disembodied: not “we don’t add”, but “they don’t…” Rasha/Wicked: 1st use of the phrase Ba`avur zeh: In the Torah, the Rasha’s question comes just before the tenth plague. A wicked one (rasha) – what does that one say? What is this service/servitude to you-all? (Exod. 12:26) To you all and not to this one. And just as they have brought themself out of the whole – they have denied the root. And even you, knock their teeth, and go say to them: “Because of this YHVH acted for me in my going out from Egypt / Ba`avur zeh `asah li Adonai b’tseiti mimitsrayim.”\n\n(Exod. 13:8) For me and not for them. If they were there, they were not (would not be) redeemed. רָשָׁע , מַה הוּא אוֹמֵר ? ״מָה הָעֲבֹדָה הַזֹּאת לָכֶם ?״ )שמות יב,כו( ״לָכֶם ״, וְלֹא לוֹ. וּלְפִי שֶׁהוֹצִיא אֶת עַצְמוֹ מִן הַכְּלָל וְכָפַר בָּעִיקָר , אַף אַתָּה הַקְהֶה אֶת שִׁנָּיו וֶאֱמֹר לוֹ: ״בַּעֲבוּר זֶה עָשָׂה יְהוָה לִי בְּצֵאתִי מִמִּצְרָיִם ״. )שמות יג:ח( –״לִי ״, וְלֹא לוֹ; אִלּוּ הָיָה שָׁם , לֹא הָיָה נִגְאָל. The Torah’s answer is not this verse, but a verse about God skipping over the houses of the Israelites – see “Pesach”, p.13. “Knock his teeth (hak’heh et shinav)” – this is what Adam and Eve experienced when they ate the fruit from the tree of knowing. The Rasha may be irreverent, but they are ready to be engaged, knocked off balance.\n\nThis is the first time we mention the verse “Ba`avur zeh”, and it’s used to exclude someone else. The teacher has not learned the lesson. Tam/Simple: An innocent/simple/whole one (tam) – what does that one say? What’s this? (Exod. 13:14) And you will say unto him: by a strong hand YHVH brought us out from Egypt, from the house of slaves. (Exod. 13:14) תָּם , מַה הוּא אוֹמֵר ? ״מַה -זֹּאת ?״ )שמות יג:יד( ״ וְאָמַרְתָּ אֵלָיו -בְּחֹזֶק יָד הוֹצִיאָנוּ יְהוָה מִמִּצְרַיִם , מִבֵּית עֲבָדִים ״ )שמות יג:יד( The Tam is present and open, but the one who doesn’t know to ask is the one who is ready for the deepest opening and transformation. Eino Yode`a /Not Knowing: 2nd Ba`avur zeh: And one who doesn’t know to ask (she’eino yode`a lish’ol)?\n\nYou open for them, as it is says: And you will tell your child in that day: Because of this YHVH acted for me in my going out from Egypt / Ba`avur zeh… (Exod. 13:8) “You open.” Open what? Open yourself. The word for you, “aht”, is the feminine form in Hebrew. So this has also been interpreted, enter/open up to the feminine part of oneself. וּשְׁאֵינוּ יוֹדֵעַ לִשְׁא ֹל, אַתְּ פְּתַח לוֹ, שֶׁנֶּאֱמָר ״ וְהִגַּדְתָּ לְבִנְךָ בַּיּוֹם הַהוּא לֵאמֹר : בַּעֲבוּר זֶה עָשָׂה יְהוָה לִי בְּצֵאתִי מִמִּצְרָיִם ״ )שמות יג:ח( The beginning of redemption is including the other. This alsorequires including diversity, including the stranger, including the minority, including the Palestinian people. This is the second mention of the verse “Ba`avur zeh”, and the first step in transforming the verse, from using it to exclude others to using it to include oneself.",
+      "segmentIds": [
+        "research-inner-seder-ixc-d2c70ad4faba",
+        "research-inner-seder-jlp-cb11d3448c43",
+        "research-inner-seder-k8u-00309386ad48",
+        "research-inner-seder-ku4-34aaaa2ce7be",
+        "research-inner-seder-ler-0524ca4d9f76"
+      ],
+      "sourceLocation": "PDF p. 6, segment 2 through PDF p. 6, segment 6",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 6, segment 2 through PDF p. 6, segment 6",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-ixc-d2c70ad4faba",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 24528,
+            "normalizedEndOffset": 25404
+          },
+          {
+            "id": "research-inner-seder-jlp-cb11d3448c43",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 25405,
+            "normalizedEndOffset": 26237
+          },
+          {
+            "id": "research-inner-seder-k8u-00309386ad48",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 26238,
+            "normalizedEndOffset": 27003
+          },
+          {
+            "id": "research-inner-seder-ku4-34aaaa2ce7be",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 27004,
+            "normalizedEndOffset": 27746
+          },
+          {
+            "id": "research-inner-seder-ler-0524ca4d9f76",
+            "label": "PDF p. 6",
+            "pageNumber": 6,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 27747,
+            "normalizedEndOffset": 28605
+          }
+        ]
+      },
+      "provenanceHash": "45829674eefd7aced7bae3defed1c9c2395fdcd1539f3084f6f7813d8ae3bed4",
+      "componentProvenanceHashes": [
+        "d2c70ad4faba2fd93c8a3d06e80fc296756cb2588e3478dd1617018879f6d906",
+        "cb11d3448c435f7b6ce479c1ffc5102969def1994e82717701b9936564b1d33b",
+        "00309386ad4875db0a5281f17574ca66a3263c1ba0ff719fd796dbfbc50676b6",
+        "34aaaa2ce7be02e2f4d9519f2d0709ba431e7a0d05cb88f462cbb0a8157a113b",
+        "0524ca4d9f76aea73a1048813c1f60abca15f09be714dbd67037bdd112a0a228"
+      ],
+      "wordCount": 703,
+      "characterCount": 4081,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "mindfulness",
+        "family-storytelling",
+        "traditional"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Introduce these as four modes that can exist within any person, not fixed labels for actual children. Explain unfamiliar spiritual vocabulary and do not ask guests to identify one another.",
+      "rationale": "Five consecutive records preserve the source's contemplative reinterpretation as a complete psychological movement, avoiding the harm of extracting a single label without its balancing perspectives.",
+      "creditNotes": "Credit Rabbi David Seidenberg and preserve any attribution attached to adapted Four Children material.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "embedded-credit-check",
+        "nonlabeling-introduction-required",
+        "plain-language-spiritual-vocabulary"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-inner-seder-compact-torah-arc",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "A compact Torah story",
+      "exactText": "Page 8 Please supplement this haggadah with other haggadot, songs, interpretations, discussions of freedom, etc. Rabbi David Seidenberg, neohasid.org (cc) 2026 v.18.0 The next two blocks are not part of the traditional haggadah but will help you understand the haggadah’s structure. These verses are the basis of the Haggadah. In Temple times, they were recited on Shavuot by farmers when they brought their first-fruit offerings to the priest. An Aramean who wanders (was) my father, and he went down Egyptward, and he sojourned there in few numbers, and he became there a nation, great, mighty and many. And they did evil to us / made us out to be evil, and they oppressed us, and they put on us heavy service. And we cried out unto YHVH God of our ancestors, and YHVH heard our voice and saw our oppression/ humiliation, and our laboring, and our being squeezed.\n\nAnd YHVH brought us out from Egypt with a strong hand and arm outstretched, with great fear and with signs and with wonders. And brought us unto this place, and gave to us this land, a land dripping milk and honey. And now, here, I have brought the first of the fruit of the earth that YHVH gave to me. (Deut. 26:5-10) ה אֲרַמִּ י אֹבֵד אָבִי , וַיֵּרֶד מִצְרַיְמָה , וַיָּגָר שָׁם בִּמְתֵי מְעָט ; וַיְהִי שָׁם לְגוֹי גָּדוֹל עָצוּם וָרָב . ו וַיָּרֵעוּ אֹתָנוּ הַמִּצְרִים וַיְעַנּוּנוּ; וַיִּתְּנוּ עָלֵינוּ עֲבֹדָה קָשָׁה . ז וַנִּצְעַק אֶל יְהוָה אֱלֹהֵי אֲבֹתֵינוּ ; וַיִּשְׁמַע יְהוָ ה אֶת קֹלֵנוּ , וַיַּרְא אֶת עָנְיֵנוּ וְאֶת עֲמָלֵנוּ וְאֶת לַחֲצֵנוּ. ח וַיּוֹצִאֵנוּ יְהוָה מִמִּצְרַיִם , בְּיָד חֲזָקָה וּבִזְרֹעַ נְטוּיָה, וּבְמֹרָא גָּדֹל וּבְאֹתוֹת וּבְמֹפְתִים . ט וַיְבִאֵנוּ אֶל הַמָּקוֹם הַזֶּה; וַיִּתֶּן לָנוּ אֶת הָאָרֶץ הַזֹּ את אֶרֶץ זָבַת חָלָב וּדְבָשׁ .",
+      "segmentIds": [
+        "research-inner-seder-pxu-366984ca3612",
+        "research-inner-seder-qlw-05489ada2f42"
+      ],
+      "sourceLocation": "PDF p. 8, segment 1 through PDF p. 8, segment 2",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 8, segment 1 through PDF p. 8, segment 2",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-pxu-366984ca3612",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 33618,
+            "normalizedEndOffset": 34483
+          },
+          {
+            "id": "research-inner-seder-qlw-05489ada2f42",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 34484,
+            "normalizedEndOffset": 35365
+          }
+        ]
+      },
+      "provenanceHash": "fc01c181480151d9f5c136c540ccb1f7420c6d1b8aae931e37fc8556aa96d179",
+      "componentProvenanceHashes": [
+        "366984ca3612190435476fd5e1c352a0d26296fda1a6e1b7cf411812ca474ae2",
+        "05489ada2f42bc9e68f1ce380a1f945dfaffdfe35dc65e79e40237400926a18a"
+      ],
+      "wordCount": 291,
+      "characterCount": 1748,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "Introduce the main people and sequence before reading: ancestors migrate, descendants are enslaved, oppression intensifies, the people cry out, and liberation begins. Clarify that the text is a compact scriptural retelling rather than the whole story.",
+      "rationale": "The adjacent records condense the biblical and rabbinic arc into a source-led narrative unit that can support a shorter Haggadah without reducing Exodus to isolated terms.",
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0; indicate any cuts.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "nontriumphalist-violence-framing",
+        "plain-language-character-introductions"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-inner-seder-oppression-cry-and-refuge",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Oppression, cry, and responsibility",
+      "exactText": "And the Egyptians eviled us (v’yarei`u otanu) – as it is said: Come, we will be wise with him lest he increase, and it will be, when war meets, and he will be added on top of our haters, and he will go up from the land. (Exod. 1:10) וַיָּרֵעוּ אֹתָנוּ הַמִּצְרִים ~כְּמוֹ שֶׁנֶּאֱמָר ״הָבָה נִתְחַכְּמָה לוֹ, פֶּן יִרְבֶּה וְהָיָה כִּי תִקְ רֶאנָה מִלְחָמָה וְנוֹסַף גַּם הוּא עַל שֹׂנְאֵינוּ וְנִלְחַם בָּנוּ, וְעָלָה מִן הָאָרֶץ ״ )שמות א:י( They eviled us” – can mean they did evil to us, or, they saw us as evil. >Do we do this to enemies? Has Israel done this to African asylum seekers? Bedouin? All Gazans? 2. and impoverished/oppressed/humiliated us (v’ya`anunu) – like what is said: and they put over him (the people of Israel) officers of the burdens, in order to oppress him (`anoto) with their burdens, and he built store cities for Pharaoh, Pitom and Ra’amses.\n\n(Exod. 1:11) וַיְעַנּוּנוּ ~כְּמוֹ שֶׁנֶּאֱמָר ״וַיָּשִׂימוּ עָלָיו שָׂרֵי מִסִּים , לְמַעַן עַנֹּתוֹ בְּסִבְלֹתָם ; וַיִּבֶן עָרֵי מִסְכְּנוֹת לְפַרְעֹה , אֶת פִּתֹם וְאֶת רַעַמְסֵס ״ )שמות יא:א( >You shall not detain/deliver a slave to his lord/master whom he has escaped… With you he will dwell, in your midst, in the place he chooses…where it is good for him. (Deut. 23:16-17) The Torah assumes that anyone fleeing their overlord is being oppressed and must be given both asylum and freedom of movement. 3. and they put on us heavy service – as it is said: And Egypt made Israel serve b’farekh, with force. (Exod. 1:13) “B’farekh” – Hasidic midrash reads this “b’feh rakh”, “with a soft mouth” – deceiving with gentleness. וַיִּתְּנוּ עָלֵינוּ עֲבֹדָה קָשָׁה ~כְּמוֹ שֶׁנֶּאֱמָר ״וַיַּעֲבִדוּ מִצְרַיִם אֶת בְּנֵי יִשְׂרָאֵל בְּפָרֶךְ ״ )שמות יג:א( Birdshead Haggadah, Matsah Baking, B’khol Dor vaDor\n\nPage 10 Please supplement this haggadah with other haggadot, songs, interpretations, discussions of freedom, etc. Rabbi David Seidenberg, neohasid.org (cc) 2026 v.18.0 3rd verse: Deut. 26:7 And we cried out unto YHVH God of our ancestors, and YHVH heard our voice and saw our oppression, and our laboring, and our being squeezed. וַנִּצְעַק , אֶל יְהוָה אֱלֹהֵי אֲבֹתֵינוּ ; וַיִּשְׁמַע יְהוָה אֶת קֹלֵנוּ , וַיַּרְא אֶת עָנְיֵנוּ וְאֶת עֲמָלֵנוּ וְאֶת לַחֲצֵנוּ >You shall not mistreat or oppress/squeeze/t’lacheits a stranger/ refugee, for you were strangers in the land of Egypt… If you afflict him, and when he does cry out to Me, I will surely hear his cry. (Exod. 22:20, 22) When Israel “squeezes” the other peoples in the land, they violate this solemn covenant. 1.\n\nAnd we cried out unto YHVH God of our ancestors – like what is said: And it was in those many days, and the king of Egypt died, and Israel’s children were tortured from the servitude/service (`avodah), and they screamed, and their pleading rose up unto Elohim (God) from (because of) the service/slavery. (Exod. 2:23) וַנִּצְעַק , אֶל יְהוָה אֱלֹהֵי אֲבֹתֵינוּ ~כְּמוֹ שֶׁנֶּאֱמָר ״וַיְהִי בַיָּמִים הָרַבִּים הָהֵם , וַיָּמָת מֶלֶךְ מִצְרַיִם , וַיֵּאָנְחוּ בְנֵי-יִשְׂרָאֵל מִן הָעֲבֹדָה וַיִּזְעָקוּ, וַתַּעַל שַׁוְעָתָם אֶל - הָאֱלֹהִים מִן הָ עֲבֹדָה ״ )שמות כג:ב( 2. and YHVH heard our voice – like what is said: And Elohim heard their anguish, and Elohim remembered God’s coven-ant with Avraham, with Yits’chak, and with Yaakov. (Exod. 2:24) קֹלֵנוּ אֶת יְהוָה וַיִּשְׁמַע ~ שֶׁנֶּאֱמָר כְּמוֹ ״ וַיִּשְׁמַע אֶת , בְּרִיתוֹ אֶת אֱלֹהִים וַיִּזְכֹּר ; נַאֲקָתָם אֶת אֱלֹהִים יַעֲקֹב וְאֶת יִצְחָק אֶת אַבְרָהָם ״ )שמות ב:כד( 3.\n\nand saw our oppression/humiliation (`onyeinu) – this is separation of “the way of the land”, like what is said: And Elohim saw Israel’s children, and Elohim knew. (Exod. 2:25) “Separation” means sexual abstinence; “way of the land” means sexuality. וַיַּרְא אֶת עָנְיֵנוּ ~זוֹ פְּרִישׁוּת דֶּרֶךְ אֶרֶץ , כְּמוֹ שֶׁנֶּאֱמָר ״וַיַּרְא אֱלֹהִים אֶת -בְּנֵי יִשְׂרָאֵל ; וַיֵּדַע אֱלֹהִי ם״ )שמות ב:כה( The men said, why should we make love when our sons will be killed. But the women seduced them, saying, if you act thus, you kill them all. 4. and our laboring (`amaleinu) – these are the sons (that the women labored to give birth to), like what is said: Any son born, you will throw him Nile-ward, and any daughter you will keep living. (Exod.\n\n1:22) וְאֶת עֲמָלֵנוּ ~אֵלּוּ הַבָּנִים, כְּמוֹ שֶׁנֶּאֱמָר ״כָּל -הַבֵּן הַיִּלּוֹד הַיְאֹרָה תַּשְׁלִיכֻהוּ , וְכָל -הַבַּת תְּחַיּוּן ״ )שמות א:כב( Midwives Shifrah and Puah defied Pharaoh by saving the boys. Pharoah responded by commanding the Egyptians to throw boys into the Nile. 5. “Squeezed” can mean, not allowed to expand their dwell-ings when their families grew. and our being squeezed (lachatseinu) – this is the pressure (had’chak), like what is said: And also I saw the pressure (halachats) with which Egypt is oppressing them. (Exod. 3:9) > Zoning is used in East Jerusalem, takeovers and expulsions are happening in Silwan, recognition in withheld from Bedouin villages in the Negev, to “squeeze” the inhabitants. For a list of threatened villages, see: btselem.org/settler_violence_updates וְ אֶת לַחֲצֵנוּ ~זֶה הַדְּ חַק , כְּמוֹ שֶׁנֶּאֱמָר ״וְגַם רָאִיתִי אֶת הַלַּחַץ אֲשֶׁר מִצְרַיִם לֹחֲצִים אֹתָם ״ )שמות ט:ג( > This fall, Awdah al-Hathaleen was shot dead by settler Yinon Levi, y’mach sh’mo.",
+      "segmentIds": [
+        "research-inner-seder-wcz-1d0ca35ac57e",
+        "research-inner-seder-x18-64320e1f6615",
+        "research-inner-seder-xqd-07d9ef292594",
+        "research-inner-seder-ybu-9bac97851de9",
+        "research-inner-seder-z1s-1954344a1e50",
+        "research-inner-seder-zmh-c24de1615778"
+      ],
+      "sourceLocation": "PDF p. 9, segment 4 through PDF p. 10, segment 4",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 9, segment 4 through PDF p. 10, segment 4",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-wcz-1d0ca35ac57e",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 41939,
+            "normalizedEndOffset": 42811
+          },
+          {
+            "id": "research-inner-seder-x18-64320e1f6615",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 42812,
+            "normalizedEndOffset": 43716
+          },
+          {
+            "id": "research-inner-seder-xqd-07d9ef292594",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 43717,
+            "normalizedEndOffset": 44489
+          },
+          {
+            "id": "research-inner-seder-ybu-9bac97851de9",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 44490,
+            "normalizedEndOffset": 45423
+          },
+          {
+            "id": "research-inner-seder-z1s-1954344a1e50",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 45424,
+            "normalizedEndOffset": 46168
+          },
+          {
+            "id": "research-inner-seder-zmh-c24de1615778",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 46169,
+            "normalizedEndOffset": 47187
+          }
+        ]
+      },
+      "provenanceHash": "9b6db7115fbd4a342f96e75ad2bf64cf7bfc33a798e2abf18a3172964134b69e",
+      "componentProvenanceHashes": [
+        "1d0ca35ac57e51dd9999d42d326632753ba358c44062eeecf0eccfb2d0846e8e",
+        "64320e1f66153dfd921eb343e00e8301d41ae8826f4008bd86810edca15c1bb4",
+        "07d9ef29259475c4ad321ebe42769efb61da66d35a60b0ee22e0246effe7bdbc",
+        "9bac97851de9cc9b521442c4f46354e377c9aabc4b95caa2fdab1c93b3554c92",
+        "1954344a1e50f7d42ced04ed977d2b8d889cb7b2eb430aff77e28674b70583bd",
+        "c24de161577876bf3751745d7484c25b3d0b1f032ab5a3a4a057ba1f6d23cd50"
+      ],
+      "wordCount": 845,
+      "characterCount": 5253,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "social-justice",
+        "mindfulness",
+        "interfaith"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Explain that the traditional verses linger over what oppression does to families and how a cry becomes heard. Invite one concrete question about whose cries society notices today, without requiring personal disclosure or making unsupported current claims.",
+      "rationale": "Six adjacent records form a sustained ethical exposition from forced labor and family harm through the people's cry and the obligation to notice vulnerability, one of the source's strongest justice-centered movements.",
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; retain CC BY-SA 4.0 and any item-level credits.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "concrete-discussion-prompt",
+        "embedded-credit-check",
+        "no-unsupported-current-claims"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-inner-seder-symbols-and-every-generation",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Symbols becoming lived memory",
+      "exactText": "Page 14 Please supplement this haggadah with other haggadot, songs, interpretations, discussions of freedom, etc. Rabbi David Seidenberg, neohasid.org (cc) 2026 v.18.0 The three things that must be explained: Rabban Gamliel would say: Anyone who did not say these three things on Pesach has not gone out from the grip of their obligation: Pesach, Matsah, and Maror/bitters. רַבַּן גַּמְלִיאֵל אוֹמֵר , כָּל שֶׁלֹּא אָמַר שְׁלוֹשָׁה דְּבָרִים אֵלּוּ בַּפֶּסַח , לֹא יָצָא יְדֵי חוֹבָתוֹ: פֶּסַח , מַצָּה , וּמָרוֹר . Pointing out these three things is enough to fulfill the mitsvah of the seder according to Rabban Gamliel. 1) Pesach Pesach that our ancestors were eating in the time when the House of the Sanctuary (Temple) was standing, is because of what?\n\nBecause the Holy One skipped over the houses of our ancestors in Egypt, as it is said: And you all will say: it is a sacrifice of Pesach for YHVH, who skipped (pasach-ed) over the houses of the children of Israel in Egypt in God’s plaguing Egypt, and our houses the One rescued. And the people bowed and prostrated. (Exod. 12:27) פֶּסַח שֶׁהָיוּ אֲבוֹתֵינוּ אוֹכְלִין בִּזְמָן שֶׁבֵּית הַמִּקְדָּשׁ קַיָּם , עַל שׁוּם מָה ?-עַל שׁוּם שֶׁפָּסַח הַמָּקוֹם עַל בָּתֵּי אֲבוֹתֵינוּ בְּמִצְרַיִם , שֶׁנֶּאֱמָר ״וַאֲמַרְתֶּם זֶבַח פֶּסַח הוּא לַיהוָה אֲשֶׁר פָּסַח עַל בָּתֵּי בְנֵי יִשְׂרָאֵל בְּ מִצְרַיִם , בְּנָגְפּוֹ אֶת מִצְרַיִם , וְאֶת בָּתֵּינוּ הִצִּיל; וַיִּקֹּד הָעָם וַיִּשְׁתַּחֲווּ ״ )שמות יב:כז( The verse “And you all will say” comes before the last plague, though some say it came when the people first learned God was going to redeem them.\n\nIf so, they were still innocent about the plagues and terror they would soon witness. 2) Matsah: 2nd explanation of matsah ~ Point to the broken matsah This matsah that we are eating, is because of what? Because their dough did not stop to rise/become chamets beforethere was revealed over them the Ruler over the kings of kings, the Holy One blessed be, and then redeemed them immediately, as it’s said: And they baked the dough which they brought out from Egypt, cakes of matsot, for it didn’t rise/ become chamets, for they were driven from Egypt, and they couldn’t linger/hesitate, and also provision/hunt they didn’t make for themselves. (Exod.\n\n12:39) מַצָּה זוֹ שֶׁאֲנַחְנוּ אוֹכְלִין, עַל שׁוּם מָה ?-עַל שׁוּם שֶׁלֹּא הִסְפִּיק בְּצֵקָם שֶׁלַּאֲבוֹתֵינוּ לְ הַחְמִיץ עַד שֶׁנִּגְלָה עֲלֵיהֶם מֶלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדוֹשׁ בָּרוּךְ הוּא וּגְאָלָם מִיָּד , שֶׁנֶּאֱמָר ״וַיֹּאפוּ אֶת הַבָּצֵק אֲשֶׁר הוֹצִיאוּ מִמִּצְרַיִם עֻגֹת מַצּוֹת כִּי לֹא חָמֵץ : כִּי גֹרְשׁוּ מִמִּצְרַיִם וְלֹא יָכְלוּ לְהִתְמַהְמֵהַּ , וְגַם-צֵדָה לֹא-עָשׂוּ לָהֶם ״ )שמות יב:לט( This is the matsah of leaving Egypt. It is the first transformation of matsah from symbol of slavery to freedom. “The Holy One was revealed” – earlier the haggadah points to “the revelation of the Shekhinah”. In Kabbalah, the Holy One is masculine and Shekhinah feminine. The two dimensions must come together to bring liberation. 3) Maror: Lift up the maror Explain other symbols on your seder plate This maror that we are eating, is because of what?\n\nBecause the Egyptians made bitter the lives of our ancestors in Egypt, as it is said: And they made bitter their lives with stiff/hard servitude/service (`avodah kashah), with mortar and bricks and with all `avodah in the field, all their` avodah with which they served them b’farekh, with force. (Exod. 1:14) מָרוֹר זֶה שֶׁאֲנַחְנוּ אוֹכְלִין, עַל שׁוּם מָה ?-עַל שׁוּם שֶׁמֵּרְרוּ הַמִּצְרִיִּים אֶת חַיֵּי אֲבוֹתֵינוּ בְּמִצְרַיִם , שֶׁנֶּאֱמָר ״וַיְמָרְרוּ אֶת חַיֵּיהֶם בַּעֲבֹדָה קָשָׁה , בְּחֹמֶר וּבִלְבֵנִים וּבְכָל -עֲבֹדָה בַּשָּׂדֶה , אֵת כָּל עֲבֹדָתָם , אֲשֶׁר עָבְדוּ בָהֶם בְּפָרֶךְ ״ )שמות א:יד( Some say charoset represents the mortar or the mud for the bricks, but see other explanations below under Maror (after Motsi). The symbolism of the charoset is never explained in the text of the haggadah. Why might that be?\n\nOn answer may be that charoset represents the parts of slavery, of trauma, that we are not yet ready to put “in order” – see page 16, bottom. For hyssop: Eizov zo al shum mah? This is because of the blood painted with hyssop onto the doorpost that saved the Israelites in Egypt from the the plague of the firstborn, and because we share this symbol with the Palestinian people, for whom it represents being steadfast, since it can grow out of cracks in a wall. We imagine a time when none of our children will die because of terror or war, and the whole land will be filled with peace and justice. 4th Ba`avur zeh: The climax of the seder! This section completes the transformation of the verse “Ba`avur zeh”.\n\nIn each and every generation, a person is obligated to see (to show) themself as if they went out from Egypt, as it is said: And you will tell to your child in that day, Because of this YHVH acted for me in my going out from Egypt / Ba`avur zeh `asah li YHVH b’tseiti mimitsrayim. (Exod. 12:26) For not only our ancestors alone did the Holy One redeem, blessed be. Rather, even us the One redeemed, as it is said: And us God brought from there, in order to bring us, to give to us the land that was sworn to our ancestors. (Deut. 6:23) וּבְכָל דּוֹר וָדוֹר, חַיָּב אָדָם לִ )רְאוֹת לְהַרְ אוֹת( אֶת עַצְמוֹ כְּאִלּוּ הוּא יָצָא מִמִּצְרַיִם , שֶׁנֶּאֱמָר ״ וְהִגַּדְתָּ לְבִנְךָ בַּיּוֹם הַהוּא לֵאמֹר : ״בַּעֲבוּר זֶה עָשָׂה יְהוָה לִי בְּצֵאתִי מִמִּצְרָיִם ״ )שמות יג:ח(, שֶׁלֹּא אֶת אֲבוֹתֵינוּ בִּלְבָד גָּאַל, אֵלָא אַף אוֹתָנוּ גָּאַל, שֶׁנֶּ אֱמָר ״וְאוֹתָנוּ הוֹצִיא מִשָּׁם לְמַעַן הָבִיא אֹתָנוּ לָתֶת לָנוּ אֶת הָאָרֶץ אֲשֶׁר נִשְׁבַּע לַאֲבֹתֵינוּ ״ )דברים ו:כג( Hopefully when we get to this point of the seder we have understood the lesson: We cannot include ourselves in the story by excluding anyone. Excluding others can only happen when we are telling a story about others, about the past. Here, we are called to be fully present, inviting the child to become part of our story.",
+      "segmentIds": [
+        "research-inner-seder-1d4n-f3bd4d5cb453",
+        "research-inner-seder-1dpp-4ff49838b5e4",
+        "research-inner-seder-1ede-79ae281ed179",
+        "research-inner-seder-1evg-2f885502f640",
+        "research-inner-seder-1fjp-fd3030ed8653",
+        "research-inner-seder-1g6y-f8855467cf54",
+        "research-inner-seder-1gqo-ebf5d7d13d9d"
+      ],
+      "sourceLocation": "PDF p. 14, segment 1 through PDF p. 14, segment 7",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 14, segment 1 through PDF p. 14, segment 7",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-1d4n-f3bd4d5cb453",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 63671,
+            "normalizedEndOffset": 64428
+          },
+          {
+            "id": "research-inner-seder-1dpp-4ff49838b5e4",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 64429,
+            "normalizedEndOffset": 65281
+          },
+          {
+            "id": "research-inner-seder-1ede-79ae281ed179",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 65282,
+            "normalizedEndOffset": 65931
+          },
+          {
+            "id": "research-inner-seder-1evg-2f885502f640",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 65932,
+            "normalizedEndOffset": 66804
+          },
+          {
+            "id": "research-inner-seder-1fjp-fd3030ed8653",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 66805,
+            "normalizedEndOffset": 67641
+          },
+          {
+            "id": "research-inner-seder-1g6y-f8855467cf54",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 67642,
+            "normalizedEndOffset": 68351
+          },
+          {
+            "id": "research-inner-seder-1gqo-ebf5d7d13d9d",
+            "label": "PDF p. 14",
+            "pageNumber": 14,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 68352,
+            "normalizedEndOffset": 69649
+          }
+        ]
+      },
+      "provenanceHash": "cbdf1ad0ffcd0758a556e1b58f04c227095822d7ffefcfaf63823ccd1442f4b9",
+      "componentProvenanceHashes": [
+        "f3bd4d5cb453ee462faf3323d55e0029c2ddda4fbb783604f7d244a0d5a62c45",
+        "4ff49838b5e42429dcf203263d2342173302155bd30ac74364157d2efc73a4a3",
+        "79ae281ed179ecad555649604499e6342f16e376f1a812bf8b3a74bc3d77052b",
+        "2f885502f64042572719a9c75df426054caa6b634e0986825029f6c709fe9ff1",
+        "fd3030ed8653ca0118b453d67ce9e5c0049fcb057239075871d0c440de86e624",
+        "f8855467cf542ac6ebc3477bc4c28edba3cb5f9ce151323858d001ca0c11216a",
+        "ebf5d7d13d9dfe1ab8c07021f4c6092537116f3d8a7fd0edfba69cd79d879de1"
+      ],
+      "wordCount": 987,
+      "characterCount": 5984,
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "social-justice"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Point to the matzah and maror and define them before moving into meditation. Explain that 'in every generation' asks guests to connect memory to present responsibility, not to pretend they literally lived in ancient Egypt.",
+      "rationale": "The seven consecutive source records keep ritual objects, embodied interpretation, and the every-generation teaching in one complete movement, making the contemplative layer legible and grounded.",
+      "creditNotes": "Credit Seidenberg and neohasid.org and preserve source-presented attributions for any embedded interpretation.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "mindfulness-or-spiritual-depth-selected",
+        "plain-language-definitions-required",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-inner-seder-mindful-table-rituals",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Mindful washing and symbolic eating",
+      "exactText": "After the blessings, everyone should get some of the broken piece of matsah – the bread of slavery, and some of the top piece – the bread of leaving Egypt. It is customary to chew the first matsah in silence, to meditate on the taste and the experience. One is traditionally required to eat a substantial amount of matsah, “an egg’s volume”, so pieces of matsah from the top two matsot are usually supplemented with extra matsah. Motsi Barukh Atah Adonai Eloheinu melekh Ha`olam hamotsi lechem min ha’arets. Blessed be You…who brings out bread from the land. בָּרוּ אַתָּה , יְהוָה אֱלֹהֵינוּ , מֶלֶךְ הָעוֹלָם , הַמּוֹצִיא לֶחֶם מִן הָאָרֶץ . It is a custom to not talk between washing, the blessings for motsi and for matsah, and the first taste of matsah, in order to unite all three as one act.\n\nMatsah Recline while eating Barukh Atah Adonai Eloheinu melekh Ha`olam asher kid’shanu b’mitsvotav v’tsivanu `al akhilat matsah. Blessed be You…who commanded us about eating matsah. בָּרוּ אַתָּ ה, יְהוָה אֱלֹהֵינוּ , מֶלֶךְ הָעוֹלָם , אֲשֶׁר קִדְּשָׁנוּ בְּמִצְווֹתָיו , וְצִוָּנוּ עַל אֲכִילַת מַצָּה . Maror 2nd dipping: Dip the maror in the charoset Barukh Atah Adonai Eloheinu melekh Ha`olam asher kid’shanu b’mitsvotav v’tsivanu `al akhilat maror Blessed be You…who commanded us about eating maror. There are many different plants one can use for maror: horseradish (most Ashkenazim), romaine lettuce (many Sefardim), chickory. One is required to eat an “olive’s worth” in volume, though many in Europe had the cutsom to eat a smaller amount of horseradish. I like to use dandelion greens. אֲשֶׁר , הָעוֹלָם מֶלֶךְ , אֱלֹהֵינוּ יְהוָה, אַתָּה בָּרוּךְ.מָרוֹר אֲכִילַת עַל וְצִוָּנוּ, בְּמִצְווֹתָיו קִדְּשָׁנוּ Don’t recline – it’s the taste of slavery! The charoset is used to lessen the bitterness or burning, or, to remember the apple (tapuach), where the Israelite women seduced the men and where they gave birth, or to remember the mud, which used to make bricks, or to remember the blood. Charoset can represent eros, see Rabbi Arthur Waskow, opensiddur.org/haggadot/passover-seder/the-seders-innermost-secret. Charoset may also represent all the unresolved parts of our lives that don’t fit into the seder’s orderly progression from slavery to freedom. See: neohasid.org/torah/mystery_of_charoset/\n\nPage 17 Please supplement this haggadah with other haggadot, songs, interpretations, discussions of freedom, etc. Rabbi David Seidenberg, neohasid.org (cc) 2026 v.18.0 Korekh 3rd explanation of matsah: Everyone should get some of the bottom matsah for their sandwich. A remembrance of the Mikdash/ Holy Place/Sanctuary, according to Hillel. So did Hillel in the time that the House of the Sanctuary/ Beit Hamikdash (Temple) was standing. He would sandwich matsah and maror together to uphold what is said: On matsot and bitters you will eat it (the Pesach lamb). (Exod. 12:8) זֵכֶר לְמִקְדָּשׁ כְּהִלֵּל . כֵּן עָשָׂה הִלֵּל בִּזְמַן שֶׁבֵּית הַמִּקְדָּשׁ הָיָה קַיָּם . הָיָה כּוֹרֵךְ מַצָּה וּמָרוֹר וְאוֹכֵל בְּיַחַד , לְקַיֵּם מַה שֶּׁנֶּ אֱמַר : ״עַל מַצּוֹת וּמְרוֹרִים יֹאכְלֻהוּ ״ )שמות יב:ח( Hillel quotes the verse describing the first Pesach in Egypt, as the Israelites were being redeemed.\n\nKorekh is the matsah of the Temple, the redemption of the past, which didn’t last. It is sweet and bitter, and so we eat it with maror, and with charoset. Everyone should get a piece of the bottom matsah for Korekh. Shulkhan `Orekh Enjoy the meal, sing, discuss, make it a symposium on freedom – freedom then and freedom now. How can we bring freedom into this world? How can we release people who are enslaved? How can we protect refugees? How are we still enslaved? >The One does justice for the orphan and the widow, and loves the stranger by giving them bread and clothing (lechem v’simlah). So you will love the stranger, for you were strangers in the land of Egypt. (Deut. 10:18-19) >We live in a time very different from when the haggadah was written.",
+      "segmentIds": [
+        "research-inner-seder-1n6r-df7562c98a40",
+        "research-inner-seder-1nsy-066b7bbdf0b4",
+        "research-inner-seder-1oyx-3ed699816ec8",
+        "research-inner-seder-1pnz-a87ea803a49e"
+      ],
+      "sourceLocation": "PDF p. 16, segment 4 through PDF p. 17, segment 2",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 16, segment 4 through PDF p. 17, segment 2",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-1n6r-df7562c98a40",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 76707,
+            "normalizedEndOffset": 77505
+          },
+          {
+            "id": "research-inner-seder-1nsy-066b7bbdf0b4",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 77506,
+            "normalizedEndOffset": 79016
+          },
+          {
+            "id": "research-inner-seder-1oyx-3ed699816ec8",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 79017,
+            "normalizedEndOffset": 79918
+          },
+          {
+            "id": "research-inner-seder-1pnz-a87ea803a49e",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 79919,
+            "normalizedEndOffset": 80677
+          }
+        ]
+      },
+      "provenanceHash": "3345fc288a991218958262988e8cb217242f7ee286e9dc19780105c131aa964a",
+      "componentProvenanceHashes": [
+        "df7562c98a4096a84658374fc9c8d32d56f2ca4c33eb384c83909f52fd2a28c9",
+        "066b7bbdf0b430935131d29f83ed3825188a553ac49ab797a8ebfa9ffef2132c",
+        "3ed699816ec8fe8ff5b5bf2de519c547ff89328084f7ad6123ca160739ae2177",
+        "a87ea803a49e6ec83c27625e250a772f6aa2f1f193b6a23cf05071da3ee5e728"
+      ],
+      "wordCount": 638,
+      "characterCount": 3973,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "mindfulness",
+        "traditional",
+        "environment"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Give the practical instructions before reflection: guests may wash their own hands or pour for one another over a basin, then eat matzah, bitter herb with haroset, and the sandwich. Keep any silence or visualization optional.",
+      "rationale": "The four adjacent passages bring the source's contemplative voice into the actual table sequence while preserving the correct ritual order, so meaning follows an understandable action.",
+      "creditNotes": "Credit Rabbi David Seidenberg and neohasid.org; identify project-authored action bridges separately.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-replace-host-instructions",
+        "embedded-credit-check",
+        "food-definition-and-allergy-note",
+        "mindfulness-or-spiritual-depth-selected",
+        "mutual-handwashing-option-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-inner-seder-gratitude-and-peace",
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "title": "Grace, enoughness, and peace",
+      "exactText": "2) We give thanks to You YHVH our God for giving our ancestors a good wide land, and for bringing us out of Egypt and redeeming us from a domain of slaves, and for Your covenant and Your Torah, and for the life and food you have granted us – and for all, YHVH our God we thank You and bless You, as it says, “You will eat and be full/satisfied and bless YHVH Your God for the good land that the One gave to you”. Blessed be You YHVH for the land and for the food. 3) Have compassion/mercy please YHVH our God on Israel Your people and on Jerusalem Your city and on Mt. Zion, that may it become the dwelling place of Your glory, and have compassion on all Your world, our healer, our provider and our sustainer, and protect all Your creatures, our relations, and sustain them, make abundance for all of us.\n\nRenew the face of the earth, please, and make Your land bloom with peace and Your reign with justice – soon and in our days. (add on Shabbat:) Accept and strengthen us on this Sabbath day and allow us to see, YHVH our God, the comforting of Zion Your city, for You are the master of saving and comforting. (for the holiday:) Our God and God of our ancestors, may our remembrance arise and come and reach and be seen and desired and be heard and recalled and remembered, and the remembrance of our ancestors and of all Your people, before You for good life and peace, on this holy day of matsot, to fill it with compassion and to save us. Blessed be You YHVH, who builds Jerusalem through peace.\n\n4) Blessed be You YHVH our God, ruler of all space-and-time, our Father, our Mother, who nourishes us, who creates us, who redeems us, our Holy One, Jacob’s Holy One, our shepherd, Israel’s shepherd, the good ruler who does good to all – in every day the One did good, does good, will do good for us, the One will return to us blessings of grace and love, abundance and mercy and rescue, and all goodness. These petitions are a compendium of Harachaman prayers. Here and above “our fathers” is replaced with either “our fathers and our mothers” or “our parents”. Harachaman hu yimlokh `aleinu viyshtabach banu viy’farn’seinu b’khavod v’yishlach b’rakhah m’rubah b’khol ma`aseh yadeinu. Harachaman hu yirpa’einu viy’tein shalom beineinu v’yishbor `oleinu viyta` torato b’libeinu v’yolikheinu kom’miyut la’arets Harachaman hu yivaser lanu b’sorot tovot y’shu`ot v’nechamot.\n\nHarachaman, let us inherit (on shabbat: a day that is all shabbat,) a day that is all good, and bring us alive to Messianic days and the coming world. The One who makes peace in the heights will make peace for us and all Israel and all who inhabit the world and say, Amen! YHVH will give the people strength; YHVH will bless the people with peace. > For Shmitah year (next one is in 2029): * May the merciful One turn our hearts toward the land, so that we may dwell together with her in her sabbath-rest during the whole Shmitah year. ה הָרַחֲמָן וּ לִ יָשִיב א בֵּ אֶל ינו יָחַד נֵשֵב לְמַעַן הָאָרֶץ הַשְמִיטָה שְנַת כָל בְשָבְתה עִמָה Learn a nigun/melody for this prayer: neohasid.org/resources/shmita-harachaman/ 3rd cup – for Birkat Hamazon Drink the 3rd cup at the end of the blessings! Sefardim and Ashkenazim both bless over the 3rd cup. בָּ רוּךְ אַתָּה , יְהוָה אֱלֹהֵינוּ , מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן . Don’t forget to recline! Barukh Atah Adonai Eloheinu melekh ha`olam borei’ p’ri [hagafen] (hagefen).",
+      "segmentIds": [
+        "research-inner-seder-1v2d-58e41b2bd406",
+        "research-inner-seder-1vor-16a676bfb400",
+        "research-inner-seder-1w82-b937c3e15789",
+        "research-inner-seder-1xn0-4a2c8061fdbe"
+      ],
+      "sourceLocation": "PDF p. 18, segment 3 through PDF p. 18, segment 7",
+      "locator": {
+        "edition": "Haggadah of the Inner Seder",
+        "sourceLocation": "PDF p. 18, segment 3 through PDF p. 18, segment 7",
+        "localExtract": "research/source-extracts/inner-seder.txt",
+        "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+        "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+        "componentLocators": [
+          {
+            "id": "research-inner-seder-1v2d-58e41b2bd406",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 86917,
+            "normalizedEndOffset": 87722
+          },
+          {
+            "id": "research-inner-seder-1vor-16a676bfb400",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 87723,
+            "normalizedEndOffset": 88417
+          },
+          {
+            "id": "research-inner-seder-1w82-b937c3e15789",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 88418,
+            "normalizedEndOffset": 89289
+          },
+          {
+            "id": "research-inner-seder-1xn0-4a2c8061fdbe",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/inner-seder.txt",
+            "sourceSha256": "bf75471e543f06299f4a4194cde17d05aeea60a58fb49ccd037b9a1fcbc9afd1",
+            "extractSha256": "dc28eff2b002cfc517a7459671def6f82d787e4c1f319547da12f33b5d9dbbb3",
+            "normalizedStartOffset": 90252,
+            "normalizedEndOffset": 91281
+          }
+        ]
+      },
+      "provenanceHash": "7120ffc113fe4ca00c8ace39cff6fc8192fd735a6f3953c80fad59efb9b8a5d6",
+      "componentProvenanceHashes": [
+        "58e41b2bd4062ff4b3ed453f6d4c6e6e158e94c93fcc1bd9bc41d8aba704e66b",
+        "16a676bfb4006c7a66a77930dd5ee261b1ba9e8982a5861ede84aab17d6432f0",
+        "b937c3e15789320acb6245d0c78127af9eee34e95910c8a63067eae067450657",
+        "4a2c8061fdbe3dc267e95d87ae1d16a018866cdb20d9947d637754b7c0618cfb"
+      ],
+      "wordCount": 605,
+      "characterCount": 3405,
+      "sectionIds": [
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "barech"
+      ],
+      "insertionSectionId": "barech",
+      "themes": [
+        "mindfulness",
+        "environment",
+        "social-justice"
+      ],
+      "audience": [
+        "adults"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain that Barech is gratitude after eating and invite guests to notice sustenance, interdependence, and the wish for peace. State whether the table will read all four paragraphs or one selected portion.",
+      "rationale": "These source-order passages form an inward-to-outward arc from food and sufficiency to collective wellbeing and peace, giving the contemplative source a coherent closing table movement.",
+      "creditNotes": "Credit Seidenberg and neohasid.org under CC BY-SA 4.0 and preserve embedded credits.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Rabbi David Seidenberg / neohasid.org",
+        "containingSource": "Haggadah of the Inner Seder",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah of the Inner Seder by Rabbi David Seidenberg / neohasid.org."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute David Seidenberg and link the license",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-credit-check",
+        "mindfulness-or-spiritual-depth-selected",
+        "peace-focused-language-check",
+        "plain-language-barech-definition"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

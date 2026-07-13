@@ -1,0 +1,873 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "nusach-eretz-yisrael",
+  "title": "Pesaḥ Haggadah (Nusaḥ Erets Yisrael)",
+  "creator": "Isaac Gantwerk Mayer",
+  "family": "historical-cultural",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A substantial reconstruction of the ancient Land of Israel rite whose distinctive liturgical order, gender-neutral Hebrew, and recurring translation of the divine name as ‘the Cause’ make it valuable as a clearly labeled historical alternative rather than an invisible default spine.",
+  "sourceAssessment": {
+    "voice": "Reconstructed, scholarly, bilingual, prayerful, and textually dense, with a deliberately distinctive English translation vocabulary.",
+    "bestUses": [
+      "Historically grounded alternatives for Kadesh, Maggid, ritual-symbol explanations, and Hallel",
+      "A traditional-theme sidebar on the diversity of ancient Jewish Passover rites",
+      "Long-form adult or facilitator editions that can provide adequate historical context"
+    ],
+    "beginnerRisks": [
+      "The translation’s use of ‘the Cause’ for the divine name will surprise readers unless it is explained first.",
+      "Long bilingual passages and reconstructed ritual variants can obscure the practical action for first-time hosts.",
+      "Some source-specific instructions presume liturgical fluency and should not replace the project’s plain-language host directions."
+    ],
+    "politicalContext": "This is a historical Palestinian-Jewish liturgical reconstruction, not a statement about modern nationalism. Biblical Israel, Jerusalem, and land language must be labeled as historical or liturgical and must never be turned into an exclusive contemporary territorial claim.",
+    "creditContext": "Credit Isaac Gantwerk Mayer and Open Siddur, identify the CC BY-SA 4.0 source, indicate any changes, and preserve the applicable ShareAlike terms. Embedded source material still requires item-level review."
+  },
+  "corpus": {
+    "acquisitionKind": "official-source-snapshot",
+    "pageCount": null,
+    "segmentCount": 57,
+    "exactCharacterCount": 54048,
+    "exactWordCount": 7912,
+    "reconstructionSha256": "2b78ab2390d79cd0540677cca91bf22bf5e5140c71f8007dc8540f8479ed9b43",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Pesaḥ Haggadah (Nusaḥ Erets Yisrael) by Isaac Gantwerk Mayer.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Isaac Gantwerk Mayer and Open Siddur",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=30641"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 10,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-0-f5579b41a429",
+        "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+        "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+        "research-nusach-eretz-yisrael-28g-67e9267f2572",
+        "research-nusach-eretz-yisrael-hu6-217bcf089d61",
+        "research-nusach-eretz-yisrael-m20-058487c5e603",
+        "research-nusach-eretz-yisrael-mu5-319544e847e0",
+        "research-nusach-eretz-yisrael-nmh-67e7d56417bc",
+        "research-nusach-eretz-yisrael-148g-566770d480f3",
+        "research-nusach-eretz-yisrael-152g-a9442da0177c"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 14,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-5ov-524f24981157",
+        "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+        "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+        "research-nusach-eretz-yisrael-a4w-ba5c1aded43a",
+        "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+        "research-nusach-eretz-yisrael-bmv-bd2fbe9d31b2",
+        "research-nusach-eretz-yisrael-ccy-f04204446450",
+        "research-nusach-eretz-yisrael-frc-4f1e8ca266cd",
+        "research-nusach-eretz-yisrael-ge4-0ba5fab7e048",
+        "research-nusach-eretz-yisrael-h1c-4b1282c47060",
+        "research-nusach-eretz-yisrael-lg9-be4dec1bbdbe",
+        "research-nusach-eretz-yisrael-v82-66d1d66358f4",
+        "research-nusach-eretz-yisrael-y5e-f4cd753ca4fc",
+        "research-nusach-eretz-yisrael-113r-5c1eb1d29fd7"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 4,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-303-f500bfaab370",
+        "research-nusach-eretz-yisrael-3ol-ec9d78b00a08",
+        "research-nusach-eretz-yisrael-4ec-06ef35f1a4d0",
+        "research-nusach-eretz-yisrael-50b-13ab1491e7f3"
+      ]
+    },
+    "motzi-matzah": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-if4-bd0f37d09b5d"
+      ]
+    },
+    "maror": {
+      "segmentCount": 7,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-6gm-d0afc27efc29",
+        "research-nusach-eretz-yisrael-76x-d7863e18b969",
+        "research-nusach-eretz-yisrael-7xv-786afb475928",
+        "research-nusach-eretz-yisrael-a4w-ba5c1aded43a",
+        "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+        "research-nusach-eretz-yisrael-hu6-217bcf089d61",
+        "research-nusach-eretz-yisrael-if4-bd0f37d09b5d"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-j73-832f6aeafc03"
+      ]
+    },
+    "hallel": {
+      "segmentCount": 25,
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+        "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+        "research-nusach-eretz-yisrael-eqy-a2d9204c7e31",
+        "research-nusach-eretz-yisrael-jz7-037fea372ca0",
+        "research-nusach-eretz-yisrael-koa-8977fe01b485",
+        "research-nusach-eretz-yisrael-lg9-be4dec1bbdbe",
+        "research-nusach-eretz-yisrael-o7i-7e8cdc231870",
+        "research-nusach-eretz-yisrael-p9t-27361345a123",
+        "research-nusach-eretz-yisrael-pu4-e33618c6d4b6",
+        "research-nusach-eretz-yisrael-qg3-08e04d0f5d99",
+        "research-nusach-eretz-yisrael-riv-b487c11767fc",
+        "research-nusach-eretz-yisrael-s93-c7792c5f1f7e",
+        "research-nusach-eretz-yisrael-sta-22175255fe7e",
+        "research-nusach-eretz-yisrael-tbc-046c90856aa3",
+        "research-nusach-eretz-yisrael-u4q-cbddf1de8e6e",
+        "research-nusach-eretz-yisrael-vt1-3d55b054e47e",
+        "research-nusach-eretz-yisrael-wh9-ac9cb1d96dfb",
+        "research-nusach-eretz-yisrael-xk7-defdf5040132",
+        "research-nusach-eretz-yisrael-ypj-0cd7631b028c",
+        "research-nusach-eretz-yisrael-zrm-937e9609164d",
+        "research-nusach-eretz-yisrael-10of-268bfa4af79f",
+        "research-nusach-eretz-yisrael-11nd-904184a1a6b1",
+        "research-nusach-eretz-yisrael-126n-50fe42d512d7",
+        "research-nusach-eretz-yisrael-12r3-583112949cc3",
+        "research-nusach-eretz-yisrael-13h1-5aa766dfffb2"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 1,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "nusach-eretz-yisrael-first-cup",
+      "title": "First cup in the reconstructed rite",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+        "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+        "research-nusach-eretz-yisrael-28g-67e9267f2572"
+      ],
+      "beginnerContext": "Explain that this is a reconstructed ancient Land of Israel form of the first-cup blessing, then tell guests whether to read the English, Hebrew, or both.",
+      "rationale": "These adjacent passages complete the first-cup blessing and its seasonal additions without jumping to a different ritual moment.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; identify the CC BY-SA 4.0 edition and any adaptation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 2",
+        "end": "official source snapshot, segment 4",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+            "sourceLocation": "official source snapshot, segment 2",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 1010,
+              "normalizedEndOffset": 2072
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+            "sourceLocation": "official source snapshot, segment 3",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 2073,
+              "normalizedEndOffset": 2895
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-28g-67e9267f2572",
+            "sourceLocation": "official source snapshot, segment 4",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 2896,
+              "normalizedEndOffset": 3890
+            }
+          }
+        ]
+      },
+      "totalWords": 433,
+      "exactTextSequenceSha256": "530188eec00645869f796a545ff65ad827934ab2edf77b7629e2a66448aade38",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-questions-and-servitude",
+      "title": "Questions leading into servitude",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-50b-13ab1491e7f3",
+        "research-nusach-eretz-yisrael-5ov-524f24981157",
+        "research-nusach-eretz-yisrael-6gm-d0afc27efc29"
+      ],
+      "beginnerContext": "Introduce the Four Questions as observations about what makes this night different, and explain that the response begins the story of oppression and the cry for freedom.",
+      "rationale": "The source moves directly from the questions into its compact account of forced labor, prayer, and deliverance, preserving the question-and-answer logic of Maggid.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; retain source attribution on the final credits page.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 8",
+        "end": "official source snapshot, segment 10",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-50b-13ab1491e7f3",
+            "sourceLocation": "official source snapshot, segment 8",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 6491,
+              "normalizedEndOffset": 7374
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-5ov-524f24981157",
+            "sourceLocation": "official source snapshot, segment 9",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 7375,
+              "normalizedEndOffset": 8373
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-6gm-d0afc27efc29",
+            "sourceLocation": "official source snapshot, segment 10",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 8374,
+              "normalizedEndOffset": 9320
+            }
+          }
+        ]
+      },
+      "totalWords": 415,
+      "exactTextSequenceSha256": "ab33774942ca35a31f19450ace5f78d7eab7202d68532bd997fa9bcb1088bb04",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-exodus-recitations",
+      "title": "From ancestral beginnings to the plagues",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-76x-d7863e18b969",
+        "research-nusach-eretz-yisrael-7xv-786afb475928",
+        "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+        "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+        "research-nusach-eretz-yisrael-a4w-ba5c1aded43a"
+      ],
+      "beginnerContext": "Before reading, give a short spoken bridge: the Haggadah widens the Exodus story by tracing the family’s earlier migrations, enslavement, cry, and divine response.",
+      "rationale": "Five consecutive passages carry one sustained biblical exposition from ancestral history through oppression and deliverance to the naming of the ten plagues.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "nontriumphalist-plague-framing",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur and preserve CC BY-SA 4.0 attribution and ShareAlike conditions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 11",
+        "end": "official source snapshot, segment 15",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-76x-d7863e18b969",
+            "sourceLocation": "official source snapshot, segment 11",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 9321,
+              "normalizedEndOffset": 10290
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-7xv-786afb475928",
+            "sourceLocation": "official source snapshot, segment 12",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 10291,
+              "normalizedEndOffset": 11312
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+            "sourceLocation": "official source snapshot, segment 13",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 11313,
+              "normalizedEndOffset": 12339
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+            "sourceLocation": "official source snapshot, segment 14",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 12340,
+              "normalizedEndOffset": 13135
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-a4w-ba5c1aded43a",
+            "sourceLocation": "official source snapshot, segment 15",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 13136,
+              "normalizedEndOffset": 14202
+            }
+          }
+        ]
+      },
+      "totalWords": 708,
+      "exactTextSequenceSha256": "cf0caba6f043fa3e73a14f4649be5f2df890189763eb7cec303ba8c89120e29e",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-three-symbols",
+      "title": "Passover, matzah, and maror explained",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+        "research-nusach-eretz-yisrael-bmv-bd2fbe9d31b2",
+        "research-nusach-eretz-yisrael-ccy-f04204446450"
+      ],
+      "beginnerContext": "Point to each ritual food as it is named and explain that these passages connect what guests can see and taste to the remembered movement from bondage toward freedom.",
+      "rationale": "The three adjacent records give the source’s complete explanation of the central symbols and then turn naturally from explanation toward gratitude and song.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "visible-object-cues-required",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; indicate any abridgment while retaining the CC BY-SA 4.0 terms.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 16",
+        "end": "official source snapshot, segment 18",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-ayj-e7d9192e92df",
+            "sourceLocation": "official source snapshot, segment 16",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 14203,
+              "normalizedEndOffset": 15078
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-bmv-bd2fbe9d31b2",
+            "sourceLocation": "official source snapshot, segment 17",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 15079,
+              "normalizedEndOffset": 16017
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-ccy-f04204446450",
+            "sourceLocation": "official source snapshot, segment 18",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 16018,
+              "normalizedEndOffset": 17120
+            }
+          }
+        ]
+      },
+      "totalWords": 414,
+      "exactTextSequenceSha256": "90e55946ca48a027f420f747f67d845e6237c06d3ff7b7dc05bbc3773ab47cae",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-first-hallel",
+      "title": "Praise after the freedom story",
+      "sectionIds": [
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+        "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+        "research-nusach-eretz-yisrael-eqy-a2d9204c7e31"
+      ],
+      "beginnerContext": "Tell guests that the story now shifts into poetry: the table responds to liberation with Psalms and a historical liturgical composition.",
+      "rationale": "These source-adjacent passages preserve the movement from Psalm 113 into the sea imagery of Psalm 114 and the rite’s added poetic retelling.",
+      "themes": [
+        "traditional",
+        "environment",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "identify-genre-shift",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur and retain any passage-level attributions resolved from the canonical source.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 19",
+        "end": "official source snapshot, segment 21",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+            "sourceLocation": "official source snapshot, segment 19",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 17121,
+              "normalizedEndOffset": 18137
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+            "sourceLocation": "official source snapshot, segment 20",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 18138,
+              "normalizedEndOffset": 19113
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-eqy-a2d9204c7e31",
+            "sourceLocation": "official source snapshot, segment 21",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 19114,
+              "normalizedEndOffset": 20423
+            }
+          }
+        ]
+      },
+      "totalWords": 420,
+      "exactTextSequenceSha256": "edcea2d7797acb16413fc09bcfea8288716a2892c038a589dee43a8df9fc52ba",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-eating-and-grace",
+      "title": "Matzah, meal, and table blessing",
+      "sectionIds": [
+        "motzi-matzah",
+        "maror",
+        "shulchan-orech",
+        "barech"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-if4-bd0f37d09b5d",
+        "research-nusach-eretz-yisrael-j73-832f6aeafc03",
+        "research-nusach-eretz-yisrael-jz7-037fea372ca0",
+        "research-nusach-eretz-yisrael-koa-8977fe01b485"
+      ],
+      "beginnerContext": "Separate the practical actions from the source reading: first explain what everyone eats and when, then identify the transition from the meal to the third cup and grace.",
+      "rationale": "The sequence follows the source’s own order from eating matzah and maror through the meal into the opening movements of blessing after food.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "plain-language-action-cue-required",
+        "do-not-substitute-for-host-instructions"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; adaptations remain subject to CC BY-SA 4.0.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 26",
+        "end": "official source snapshot, segment 29",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-if4-bd0f37d09b5d",
+            "sourceLocation": "official source snapshot, segment 26",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 23872,
+              "normalizedEndOffset": 24878
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-j73-832f6aeafc03",
+            "sourceLocation": "official source snapshot, segment 27",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 24879,
+              "normalizedEndOffset": 25890
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-jz7-037fea372ca0",
+            "sourceLocation": "official source snapshot, segment 28",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 25891,
+              "normalizedEndOffset": 26793
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-koa-8977fe01b485",
+            "sourceLocation": "official source snapshot, segment 29",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 26794,
+              "normalizedEndOffset": 27800
+            }
+          }
+        ]
+      },
+      "totalWords": 561,
+      "exactTextSequenceSha256": "db5bcecfa4f2b56f42ce9d4bfa54525ed351542e8719ea4aacaaaf0c873db61a",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "nusach-eretz-yisrael-nishmat-praise",
+      "title": "Nishmat and embodied praise",
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-nusach-eretz-yisrael-ypj-0cd7631b028c",
+        "research-nusach-eretz-yisrael-zrm-937e9609164d",
+        "research-nusach-eretz-yisrael-10of-268bfa4af79f",
+        "research-nusach-eretz-yisrael-113r-5c1eb1d29fd7",
+        "research-nusach-eretz-yisrael-11nd-904184a1a6b1",
+        "research-nusach-eretz-yisrael-126n-50fe42d512d7",
+        "research-nusach-eretz-yisrael-12r3-583112949cc3",
+        "research-nusach-eretz-yisrael-13h1-5aa766dfffb2"
+      ],
+      "beginnerContext": "Introduce this as an extended closing poem in which breath, body, language, and community become instruments of gratitude; it belongs only in a spacious edition.",
+      "rationale": "Eight consecutive segments preserve a complete long-form arc of Nishmat rather than extracting isolated devotional sentences from the middle of the prayer.",
+      "themes": [
+        "traditional",
+        "mindfulness",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-reconstruction-context",
+        "long-form-only",
+        "preserve-distinctive-translation"
+      ],
+      "creditNotes": "Credit Isaac Gantwerk Mayer and Open Siddur; preserve CC BY-SA 4.0 attribution, change notice, and ShareAlike requirements.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official source snapshot, segment 48",
+        "end": "official source snapshot, segment 55",
+        "locators": [
+          {
+            "id": "research-nusach-eretz-yisrael-ypj-0cd7631b028c",
+            "sourceLocation": "official source snapshot, segment 48",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 44983,
+              "normalizedEndOffset": 46353
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-zrm-937e9609164d",
+            "sourceLocation": "official source snapshot, segment 49",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 46354,
+              "normalizedEndOffset": 47534
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-10of-268bfa4af79f",
+            "sourceLocation": "official source snapshot, segment 50",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 47535,
+              "normalizedEndOffset": 48086
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-113r-5c1eb1d29fd7",
+            "sourceLocation": "official source snapshot, segment 51",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 48087,
+              "normalizedEndOffset": 48792
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-11nd-904184a1a6b1",
+            "sourceLocation": "official source snapshot, segment 52",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 48793,
+              "normalizedEndOffset": 49486
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-126n-50fe42d512d7",
+            "sourceLocation": "official source snapshot, segment 53",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 49487,
+              "normalizedEndOffset": 50222
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-12r3-583112949cc3",
+            "sourceLocation": "official source snapshot, segment 54",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 50223,
+              "normalizedEndOffset": 51156
+            }
+          },
+          {
+            "id": "research-nusach-eretz-yisrael-13h1-5aa766dfffb2",
+            "sourceLocation": "official source snapshot, segment 55",
+            "locator": {
+              "label": "official source snapshot",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/nusach-eretz-yisrael.txt",
+              "sourceSha256": "ace72799d1416c055f213a9d04d67d1762a7d3bbc5429541bf548049f2404348",
+              "extractSha256": "a930fd8cff34b333be84362ead46d7b88ea4587aad0db5edd2e3a904aa81506d",
+              "normalizedStartOffset": 51157,
+              "normalizedEndOffset": 52143
+            }
+          }
+        ]
+      },
+      "totalWords": 1040,
+      "exactTextSequenceSha256": "127849232261204e4404fe036f2bc098050a2f75e59cdd82952daf8728097cdb",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-nusach-eretz-yisrael-0-f5579b41a429",
+      "sourceLocation": "official source snapshot, segment 1",
+      "reasons": [
+        "Source and reconstruction metadata should appear in credits or editorial notes, not as an unannounced liturgical reading."
+      ]
+    }
+  ],
+  "notes": [
+    "All recommended material remains candidate-only and requires a separate human editorial decision before runtime approval.",
+    "This source is included as a historically specific, opt-in layer; it is not excluded merely because its rite or divine-name translation differs from the default.",
+    "Do not modernize or silently normalize the translation. A bridge may explain it, but exact source wording must remain exact."
+  ]
+}

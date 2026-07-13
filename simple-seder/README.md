@@ -14,7 +14,7 @@ npm run dev
 
 Open `http://localhost:3000`. Projects are stored in `data/demo.sqlite` by default; set `DATABASE_URL=:memory:` for ephemeral storage or another local path to move the database.
 
-`OPENAI_API_KEY` is optional. With a key, `/api/match` may ask OpenAI to select only from approved quote, cover, and section IDs. With no key—or if matching times out, fails, or returns invalid data—the same request succeeds using deterministic local selection. Set `OPENAI_MODEL` to override the default matching model.
+`OPENAI_API_KEY` is optional. With a key, `/api/match` may ask OpenAI to rerank only the approved source-passage, quote, cover, and section IDs supplied by deterministic code. Unknown, unapproved, or incompatible IDs are rejected. With no key—or if matching times out, fails, or returns invalid data—the same request succeeds using the complete deterministic local draft. Set `OPENAI_MODEL` to override the default matching model.
 
 ## Public demo
 
@@ -31,24 +31,30 @@ The current content pack contains:
 - 9 themes, each with 12 approved inserts (108 inserts total)
 - 14 seder sections in traditional order, with short, medium, and full copy
 - 3 tone families with 3 opening options each
-- 53 approved, section-mapped quotation records; modern copyrighted candidates remain excluded until permission is verified
-- 20 source records, including Shir Ge’ulah and The Velveteen Rabbi’s Haggadah
-- 2 complete reviewed primary source spines, each covering all 14 sections at 20, 45, and 90 minutes
+- 56 approved, section-mapped quotation records; modern copyrighted candidates remain excluded until permission is verified
+- A 20/20 locally acquired and reproducible Haggadah corpus, with tracked source/extract hashes, rights decisions, exact passage locators, and source-level credits
+- 2 complete beginner procedural backbones—Shir Ge’ulah and The Velveteen Rabbi’s Haggadah—each covering all 14 sections at the three content-length tiers
+- Full-corpus featured-source matching, with a small number of exact approved passages from one featured work and at most one compatible supporting work
 - 8 genuinely distinct original cover artworks; one gallery choice per composition
 
-Dates entered by a host are ordinary Common Era calendar dates. The generated deliverables are a screen reading view, a print layout, and client-side PDF export; all 20-, 45-, and 90-minute formats retain all 14 sections.
+The 20 acquired full-text extracts feed a local-only organization and precomposition pipeline; no source collection is uploaded to an external model API. The tracked research library reconstructs approximately 1.846 million normalized source characters in source order across all 20 works, including 867 PDF pages plus four complete official-source snapshots, as 1,999 coherent segments. Each source receives a local editorial dossier describing its voice, best uses, beginner risks, political context, credits, exclusions, and coherent same-source passage sequences. The complete exact library is split into lazy per-source packs, while only reviewed source-order sequences can be selected for automatic insertion.
 
-At generation time, the app selects exactly one primary voice—`shir-geulah-primary` or `velveteen-rabbi-primary`—for the complete Haggadah. Concise original copy supplies beginner directions, transitions, accessibility notes, and discussion prompts. Structural validation requires exact reviewed passage blocks in every section and at least 50% reviewed-source wording overall. Secondary-source mixing is currently disabled.
+Dates entered by a host are ordinary Common Era calendar dates. The generated deliverables are a screen reading view, a print layout, and client-side PDF export; all three content tiers retain all 14 sections. The 20-, 45-, and 90-minute choices describe script length, while the app displays honest live group estimates of roughly 32–36, 55–65, and 95–110 minutes before dinner. In the concise tier, table questions are visibly optional and are not included in the core live estimate.
+
+At generation time, the app first selects `shir-geulah-primary` or `velveteen-rabbi-primary` as a complete procedural backbone so a first-time host always receives a coherent 14-step ritual. Separately, the full 20-source matcher chooses a first-class featured editorial source by profile. The concise tier prefers 1–2 compatible passages from that work; the longer tiers prefer 2–3 across distinct sections and may add at most one passage from one compatible supporting source. Exact approved passage text, locator, provenance hash, rights state, and source ID remain immutable. Concise house copy supplies beginner directions, transitions, accessibility notes, and discussion prompts, while structural validation keeps reviewed wording in the majority.
+
+The deterministic matcher assembles the finished document without a network call. If enabled at runtime, the small optional matching call receives only a compact allowlist of already reviewed IDs and may rerank those IDs or write short bridges; it never receives the 20-source collection and cannot rewrite source passages, foundational ritual text, or quotations. A timeout or invalid response leaves the deterministic draft unchanged.
 
 ## Validate and test
 
 ```bash
 npm run content:validate
+npm run sources:local:build
 npm test
 npm run build
 ```
 
-The validator checks pack shape, IDs, HTTPS citations, cover assets, and attribution metadata. Permission-specific or embedded-work issues print provenance reminders instead of incorrectly excluding an otherwise reusable source.
+The validator checks pack shape, IDs, HTTPS citations, cover assets, the 20-source acquisition manifest, exact-text hashes, source compatibility, runtime eligibility, and attribution metadata. Permission-specific or embedded-work issues print provenance reminders instead of incorrectly excluding an otherwise reusable source.
 
 ## PDF and printing
 
@@ -64,4 +70,4 @@ The GitHub Pages build is a public, noncommercial demo. Generated drafts remain 
 
 ## Editorial and rights notes
 
-This is a free, noncommercial demo, not a blanket relicensing of source material. It accepts both standardized open licenses and explicit reuse or borrowing permission when attribution and stated constraints are followed. The runtime uses one of two complete reviewed primary spines and enforces a majority-source floor while keeping original beginner directions separate. Exact page locators, printed attributions, treatments, and hashes remain internal; the final PDF lists the selected Haggadah once in a compact source-level credit. See [`research/content-provenance-audit.md`](research/content-provenance-audit.md), [`research/cohesion-architecture.md`](research/cohesion-architecture.md), [`research/editorial-policy.md`](research/editorial-policy.md), [`research/quotation-policy.md`](research/quotation-policy.md), [`research/source-permission-evidence.md`](research/source-permission-evidence.md), and [`public/covers/README.md`](public/covers/README.md).
+This is a free, noncommercial demo, not a blanket relicensing of source material. It accepts both standardized open licenses and explicit reuse or borrowing permission when attribution and stated constraints are followed. Two complete reviewed procedural backbones protect beginner coherence; the featured-source layer draws from locally reviewed source-order sequences and enforces strict source, section, compatibility, and passage-count limits. Exact page locators, printed attributions, treatments, and hashes remain internal; the final PDF lists each Haggadah actually used once in a compact source-level credit. See [`research/corpus-pregeneration-pipeline.md`](research/corpus-pregeneration-pipeline.md), [`research/corpus-editorial-acceptance.md`](research/corpus-editorial-acceptance.md), [`research/content-provenance-audit.md`](research/content-provenance-audit.md), [`research/cohesion-architecture.md`](research/cohesion-architecture.md), [`research/editorial-policy.md`](research/editorial-policy.md), [`research/quotation-policy.md`](research/quotation-policy.md), [`research/source-permission-evidence.md`](research/source-permission-evidence.md), and [`public/covers/README.md`](public/covers/README.md).

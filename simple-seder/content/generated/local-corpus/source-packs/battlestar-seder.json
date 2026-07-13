@@ -1,0 +1,582 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "battlestar-seder",
+  "sourceTitle": "The First Battlestar Galactica Seder Haggadah",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady.",
+    "license": "CC-BY-SA-4.0 + GFDL provenance",
+    "conditions": [
+      "Credit all compilers and Open Siddur",
+      "Use only with explicit fandom opt-in",
+      "Review franchise quotations and images separately"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=19097"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-battlestar-seder-cycle-and-opening-prayer",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "title": "Cyclical history and an interfaith opening",
+      "exactText": "“All of this has happened before and all of this will happen again.” o ״מַה־שֶּׁהָיָה הוּא שֶׁיִּהְיֶה וּמַה־שֶׁנַּעֲשָׂה הוּא שֶׁיֵּעָשֶׂה״ קהלת א:ט חלק “All of this has happened before and all of this will happen again.”[1] Alternately, “Only that shall happen that has happened; only that will occur that has occurred.” (Ecclesiastes 1:9 partial) H/T Judd Maltin. (Kohelet 1:9 part) संस्कृतम् Source (English) Now in the presence of loved ones and friends, before us the emblems of festive rejoicing, we gather for our sacred celebration. With the households of the Lords of Ḳobol, our elders and young ones, linking and bonding the past with the future, we heed again the divine call to service. Living our story that is told for all peoples, whose shining conclusion has yet to unfold, we gather to observe this Battlestar Seder.\n\nLet us all chant the opening (credits) prayer: ॐ भूर्भुवः स्वः । तत्स॑वि॒तुर्वरेण्यं॒ भर्गो॑ दे॒वस्य॑धीमहि । धियो॒ यो नः॑ प्रचो॒दया॑त् ॥ oṃ bhūr bhuvaḥ svaḥ tatsaviturvareṇyaṃ bhargo devasyadhīmahi dhiyo yo naḥ prachodayāt[2] This prayer is the Gâyatrî Mantra, from the Rigveda 3.62.10. Refer here for possible translations/interpretations of this prayer. [translation] O Earth, atmosphere, heaven: May we attain that excellent glory Of the gods:[3] Crypto-cylons substitute: “the One True God.” So they may stimulate our prayers.[4] A non-literal translation of the Gâyatrî Mantra. So say we all! First Cup We raise our cups of Ambrosia and recite together: Praised are you O Gods, Lords of Ḳobol, who have kept us in life, and sustained us to this day. [Crypto-Cylons say: Blessed are you, the One True God, Cosmic Majesty, who has kept us in life, and sustained us to this day.]",
+      "segmentIds": [
+        "research-battlestar-seder-0-447aaced8456",
+        "research-battlestar-seder-n7-1d918a86d20b"
+      ],
+      "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 2",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 2",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "componentLocators": [
+          {
+            "id": "research-battlestar-seder-0-447aaced8456",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 0,
+            "normalizedEndOffset": 834
+          },
+          {
+            "id": "research-battlestar-seder-n7-1d918a86d20b",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 835,
+            "normalizedEndOffset": 1716
+          }
+        ]
+      },
+      "provenanceHash": "4d8d5f61556f95a8ad7276f357f657e7360dc380b5d2041a73a7f9fcb64bee4c",
+      "componentProvenanceHashes": [
+        "447aaced8456426ac1d3eb0b6a8464743891c0437cdaa64679883f467320eba5",
+        "1d918a86d20b9cf2b9ca8cced70da736f76a28da971f8a454bfcd643e1ce384f"
+      ],
+      "wordCount": 278,
+      "characterCount": 1717,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "secular",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "State that this is an opt-in Battlestar fan adaptation, explain the cyclical-history premise, and label the Gâyatrî Mantra as a Hindu text rather than Jewish liturgy.",
+      "rationale": "The source’s first two records establish its recurring-history lens and complete the deliberately cross-cultural opening before the plate ritual begins.",
+      "creditNotes": "Credit all four compilers and Open Siddur; separately verify franchise quotation and Gâyatrî Mantra attribution.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-franchise-and-prayer-rights-review",
+        "explicit-battlestar-opt-in",
+        "label-interfaith-borrowing",
+        "no-contemporary-political-analogy"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-battlestar-seder-plate-and-invitation",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "title": "Fan-remapped plate and invitation",
+      "exactText": "So say we all. THE SEDER PLATE The Green We each take a sprig of parsley and dip it in salt water. The parsley represents the spring time, renewal, the lush verdancy of our home world, Ḳobol. Also, the algae slop we have been eating for the past three years. The saltwater signifies the tears we have shed for love ones lost in the destruction of our colonies. We say together: Praised are you O Gods, Lords of Ḳobol, for creating the bounty of the planets. [Crypto-Cylons say: Blessed are you, the One True God, Cosmic Majesty, for creating the bounty of the planets.] The Matzo Let us each take-up a piece of Matsoh and in keeping with our tradition, break off the four corners. We hold it aloft and say: This is the bread of affliction, the poor bread that our ancestors ate as they fled Ḳobol.\n\nLet all who are hungry come and eat. Let all who are in fear share the hope of our celebration. This year we celebrate on Galactica. Next year on Earth! This year we are running for our lives. Next year may we all be at peace. Praised are you O Gods, Lords of Ḳobol, for providing us with these now cornerless crackers. [Crypto-Cylons say: Blessed are you, the One True God, Cosmic Majesty, for providing us with these now cornerless crackers.] So say we all! The Bitter Herb Our ancient Scrolls teach that the bitter Chamalla root has healing properties, and allows us to see visions from the Gods. Our President, Laura Roslin, took Chamalla to combat her cancer and was granted a second life and visions that have guided us to Ḳobol and beyond towards the lost 13th Colony of Earth.",
+      "segmentIds": [
+        "research-battlestar-seder-1bp-fa382377365f",
+        "research-battlestar-seder-1xv-c065100998af"
+      ],
+      "sourceLocation": "official source snapshot, segment 3 through official source snapshot, segment 4",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "official source snapshot, segment 3 through official source snapshot, segment 4",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "componentLocators": [
+          {
+            "id": "research-battlestar-seder-1bp-fa382377365f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 1717,
+            "normalizedEndOffset": 2514
+          },
+          {
+            "id": "research-battlestar-seder-1xv-c065100998af",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 2515,
+            "normalizedEndOffset": 3299
+          }
+        ]
+      },
+      "provenanceHash": "8f3c0521841d5682990ec782f04d782635a2a51f4167a287fe323572bbf0576a",
+      "componentProvenanceHashes": [
+        "fa382377365fb44a916326300ae4626b267d83b6dd74a393c41f4c53e24d8fe9",
+        "c065100998af6c1a99336d1a1b1615d4d9d7a477412faf2c2d7cba14ba31e22a"
+      ],
+      "wordCount": 290,
+      "characterCount": 1583,
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain the ordinary parsley, salt water, matzah, and invitation first, then show how the fan text playfully remaps each element to fictional exile and survival.",
+      "rationale": "These adjacent records keep the plate symbolism, ritual eating, invitation to those in need, and wish for peace together as one adapted ritual movement.",
+      "creditNotes": "Credit Lieberman, Ogden, Bruch, Varady, and Open Siddur; preserve open-license provenance and review franchise references.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-substitute-for-host-instructions",
+        "embedded-franchise-and-prayer-rights-review",
+        "explicit-battlestar-opt-in",
+        "no-contemporary-political-analogy"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-battlestar-seder-second-cup-story",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "title": "Second cup and fictional migration story",
+      "exactText": "We eat of the Chamalla root and say: Praised are you O Gods, Lords of Ḳobol, for blessing us with the visions of your divine wills. [Crypto-Cylons say: Blessed are you, the One True God, Cosmic Majesty, for blessing us with the vision of your divine will.] Second Cup We raise our glasses of Ambrosia and recite: To Galactica! To the men and women of Galactica! To the Admiral who commands the men and women of Galactica! To our sweethearts, husbands and wives! To absent friends. We drink. Recounting of the Exodus All of this has happened before, and all of this will happen again. (Kohelet 1:9 part) Therefore we are obligated to recount the history of our people lest we forget that we were fugitives from Ḳobol, fugitives from the Colonies, fugitives from New Caprica.\n\nAt every turn, our foes have risen up against us, yet it is the will of the Gods that we survive to continue the fight. Our Sacred Scrolls begin with the words “life here began out there.” In the beginning our people lived in harmony with the Gods on Ḳobol. In the early days the 13th Tribe left Ḳobol and its sister tribes behind. They traveled far and made their home upon a planet called Earth which circled a distant and unknown star. When the thirteenth tribe landed on Earth, they looked up into the heavens and they saw their twelve brothers. Humanity did not remain in peace on Ḳobol. One jealous god began to desire that he be elevated above all the other gods, and the war on Ḳobol began. Goddess Athena threw herself off a cliff in despair, and the remaining Gods abandoned Ḳobol.\n\nThe people of Ḳobol soon followed suit and the blaze pursued them, and the people of Ḳobol had a choice: to board the great ship, or take the high road through the rocky ridge. And the body of each tribe’s leader was offered to the gods in the tomb of Athena. And the great ship was the galleon that departed from Ḳobol. And it took the founders of the Thirteen Colonies to their destiny. And the Lords anointed a leader to guide the caravan of the heavens to their new homeland. And unto the leader, they gave a vision of serpents, numbering two and ten, as a sign of things to come. And Zeus warned the leaders of the twelve tribes that any return to Ḳobol would exact a price in blood.",
+      "segmentIds": [
+        "research-battlestar-seder-2jo-34591ddcc2ec",
+        "research-battlestar-seder-356-6abe986effc4",
+        "research-battlestar-seder-3r6-40c9300feb86"
+      ],
+      "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 7",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 7",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "componentLocators": [
+          {
+            "id": "research-battlestar-seder-2jo-34591ddcc2ec",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 3300,
+            "normalizedEndOffset": 4073
+          },
+          {
+            "id": "research-battlestar-seder-356-6abe986effc4",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 4074,
+            "normalizedEndOffset": 4865
+          },
+          {
+            "id": "research-battlestar-seder-3r6-40c9300feb86",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 4866,
+            "normalizedEndOffset": 5554
+          }
+        ]
+      },
+      "provenanceHash": "4152cd7789271c92424ec90346182c62cdde131b480e0adb3f4484a85d9f8ae1",
+      "componentProvenanceHashes": [
+        "34591ddcc2ecd7d4b9bf2fd33ecfd1945778e700b6197da9bdc5072742f0d59a",
+        "6abe986effc4e5751e5608de3775e0e1f263dad63b36a5521dc26ee104b3efcd",
+        "40c9300feb8611b8ca6519fbe0c26ad9d82c0d96e6e17917ced8c84dcd269bd8"
+      ],
+      "wordCount": 414,
+      "characterCount": 2256,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Give the real Exodus story elsewhere in full; introduce this only as the fan Haggadah’s fictional second-cup story about exile, migration, danger, and searching for home.",
+      "rationale": "Three consecutive records preserve the second-cup toast and the full Battlestar migration narrative without confusing it with the project’s foundational Exodus account.",
+      "creditNotes": "Credit all compilers and Open Siddur; review quoted and paraphrased franchise story material separately.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-franchise-rights-review",
+        "explicit-battlestar-opt-in",
+        "fiction-label-required",
+        "foundational-exodus-story-must-remain",
+        "no-contemporary-political-analogy"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-battlestar-seder-third-cup-responsibility",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "title": "Third cup and responsibility for creation",
+      "exactText": "Opera House Ruins, City of the Gods, Ḳobol And humanity settled on the 12 Colonies and were at peace until the coming of the Cylon. The Cylons were created by man. They rebelled. They evolved. They look and feel human. Some are programmed to think they are human. There are many copies. Seven are known. Four live in secret. One will be revealed. And they have a plan. The Third Cup The third cup is the cup of guilt. When we fight the Cylons, we fight to save ourselves from extinction. But we never answered the question, why? Why are we as a people worth saving? We still commit murder because of greed, spite, jealousy. And we still visit all of our sins upon our children. We refuse to accept the responsibility for anything that we’ve done.\n\nLike we did with the Cylons. We decided to play God, create life. When that life turned against us, we comforted ourselves in the knowledge that it really wasn’t our fault, not really. You cannot play God then wash your hands of the things that you’ve created. Sooner or later, the day comes when you can’t hide from the things that you’ve done anymore. So say we all. We drink. The Cup of the Final Cylon Our hearts and bellies are full, O Lords of Ḳobol. And we now look towards the future in expectation of that day of days when all will be revealed. Let us open the hatch, and invite the spirit of the final cylon to visit our seder, to reveal its presence as it revealed itself to D’Anna. Know Your Enemy Who knows one? I know one.",
+      "segmentIds": [
+        "research-battlestar-seder-4ab-12150ecf1b54",
+        "research-battlestar-seder-4v2-208a2ebe2e21"
+      ],
+      "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 9",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 9",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "componentLocators": [
+          {
+            "id": "research-battlestar-seder-4ab-12150ecf1b54",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 5555,
+            "normalizedEndOffset": 6301
+          },
+          {
+            "id": "research-battlestar-seder-4v2-208a2ebe2e21",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 6302,
+            "normalizedEndOffset": 7038
+          }
+        ]
+      },
+      "provenanceHash": "97fa0c1ae4d37380a92865bea66ca5b4409f46eee11174c2531292313d16c6b2",
+      "componentProvenanceHashes": [
+        "12150ecf1b54b99489de9e67c44cfd754adb9909bed3935f3ec7f48ec4bc6a9a",
+        "208a2ebe2e213c64537618eb6eea06bbad9a66c1f2ffdaad4828d93dc60d790f"
+      ],
+      "wordCount": 278,
+      "characterCount": 1484,
+      "sectionIds": [
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "barech"
+      ],
+      "insertionSectionId": "barech",
+      "themes": [
+        "secular",
+        "mindfulness",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Introduce this as a fictional ethical meditation: the characters face responsibility for creating life and for the consequences they tried to disown.",
+      "rationale": "The paired records set up the third cup as guilt and complete the source’s argument about moral responsibility for what people create.",
+      "creditNotes": "Credit all compilers and Open Siddur and review any direct television dialogue before runtime approval.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-franchise-rights-review",
+        "explicit-battlestar-opt-in",
+        "fiction-label-required",
+        "no-contemporary-political-analogy"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-battlestar-seder-fellowship-and-closing",
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "title": "Fellowship and interfaith closing",
+      "exactText": "Five is Simon, scheming egg stealer. Four is Leoben, Starbuck’s stalker. Three is D’Anna, the warrior princess. Two is Kavil, the draconian priest. One is the final Cylon who will be revealed. The Fourth Cup The fourth cup is the cup of fellowship. We must always remember our responsibility to this fleet and to the survival of the human race. As it is written: Their enemies will divide them. Their colonies broken in the fiery chasm of space. Their shining days renounced by a multitude of dark sacrifices. Yet still they will remain always together. The Gods shall lift those who lift each other. So say we all. We drink. Let us all chant the closing prayer:[5] A short prayer that Priestess Elosha recites at the very beginning of the funeral scene near the end of the miniseries.\n\n–Aharon Varady अस्तो मा सद् गमय तमसो मा ज्योतिर्गमय मृत्योर् मा अमृतं गमय asato mā sad gamaya tamaso mā jyotir gamaya mṛtyor mā amṛtaṃ gamaya [translation] Lead us from Falsehood to Truth Lead us from Darkness to Light Lead us from Death to Immortality[6] This is a common Sanskrit prayer, found in Part I, Chapter III, Verse 28 of the Bṛhadāraṇyaka Upaniṣad. Next year on Earth! With gratitude to the One True God, and to the original creators, this is a derivation of the “Battlestar Seder Haggadah” prepared by David “Razor” Lieberman, Alison “Fat Six” Ogden, and Mary “Actual” Bruch, for “A Seder on Battlestar Galactica,” an event held on Saturday, 26 April 2008, on Earth. The seder was first posted to galacticahaggadah.com and later to battlestarseder.org under a GNU Free Document License.",
+      "segmentIds": [
+        "research-battlestar-seder-7z2-29c21f4ec708",
+        "research-battlestar-seder-8kw-0e5203ecf73e"
+      ],
+      "sourceLocation": "official source snapshot, segment 14 through official source snapshot, segment 15",
+      "locator": {
+        "edition": "The First Battlestar Galactica Seder Haggadah",
+        "sourceLocation": "official source snapshot, segment 14 through official source snapshot, segment 15",
+        "localExtract": "research/source-extracts/battlestar-seder.txt",
+        "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+        "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+        "componentLocators": [
+          {
+            "id": "research-battlestar-seder-7z2-29c21f4ec708",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 10334,
+            "normalizedEndOffset": 11119
+          },
+          {
+            "id": "research-battlestar-seder-8kw-0e5203ecf73e",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/battlestar-seder.txt",
+            "sourceSha256": "c5ee42b155b4b392da53a3c6b8e13a92d4c0240781235a67d676e868b3eb9d19",
+            "extractSha256": "06d7ef4490c5e17a0b5c136a99397eb16c589d513eed0d5ec69ebd48360db684",
+            "normalizedStartOffset": 11120,
+            "normalizedEndOffset": 11918
+          }
+        ]
+      },
+      "provenanceHash": "af5cf40e62373554a4ed293aef9de872445e0aa9089d451f094814dc3bae7784",
+      "componentProvenanceHashes": [
+        "29c21f4ec70894dceb85783e53cbbaa0998143f80e8df49d1c98461e58100b84",
+        "0e5203ecf73eb84b1121b6c52ac9dc86eccf452a5304875c67ae33391c83f476"
+      ],
+      "wordCount": 271,
+      "characterCount": 1585,
+      "sectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "nirtzah"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "secular",
+        "family-storytelling",
+        "interfaith",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Name the fourth cup as fellowship, identify the closing Sanskrit prayer as an Upanishadic text, and explain that the final destination is fictional Earth.",
+      "rationale": "The source’s final ritual records move from responsibility to the fleet into a prayer for truth, light, and life and then the fan adaptation’s closing refrain.",
+      "creditNotes": "Credit the compilers and Open Siddur; verify the Upanishadic prayer translation and franchise material separately.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady",
+        "containingSource": "The First Battlestar Galactica Seder Haggadah",
+        "sourcePresented": null,
+        "readerCredit": "From The First Battlestar Galactica Seder Haggadah by David Lieberman, Alison Ogden, Mary Bruch, and Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0 + GFDL provenance",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit all compilers and Open Siddur",
+          "Use only with explicit fandom opt-in",
+          "Review franchise quotations and images separately"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "embedded-franchise-and-prayer-rights-review",
+        "explicit-battlestar-opt-in",
+        "fiction-label-required",
+        "label-interfaith-borrowing",
+        "no-contemporary-political-analogy"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    }
+  ]
+}

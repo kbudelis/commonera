@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mlk-freedom-seder",
+  "sourceTitle": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+  "modules": [
+    {
+      "id": "mlk-kadesh-light-see-each-other",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "exactText": "It is our task to make from fire Not an all-consuming blaze But the light in which we see each other— Each of us different, All of us made in One Image, glowing with One Spark.",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 7 (printed p. 6), candle lighting",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9"
+      },
+      "sectionIds": [
+        "kadesh"
+      ],
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "environment"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "optional-insert",
+      "treatment": "verbatim-normalized",
+      "wordCount": 36,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "provenanceHash": "f15f87f80bcca3bc195cea212a6f1b76aa43dc0c8082af25c232ea2be6c2b604",
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      }
+    },
+    {
+      "id": "mlk-nirtzah-grapes-community",
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "exactText": "Because grapes grow not alone but in clusters, and we must work not separately for freedom and justice, peace and healing—not each a lonely, isolated ‘I’—but in clusters of community. WE. “Together, we take on the task of Elijah.”",
+      "locator": {
+        "edition": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourceLocation": "PDF p. 23 (printed p. 22), concluding cup",
+        "localExtract": "research/source-extracts/mlk-freedom-seder.txt",
+        "sourceSha256": "0e0a257e573583eecb3b0020feebce6949afa9a659ff004a1a5c10d4d3fc696a",
+        "extractSha256": "c8a8a4648ed22f2257d3589bedcc072b4b3da1686b7bb4212baca4e165aa05d9"
+      },
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "themes": [
+        "social-justice",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "closing-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 39,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Waskow and The Shalom Center",
+          "Use only unattributed creator material unless embedded permission is separately verified",
+          "Preserve printed credits"
+        ]
+      },
+      "provenanceHash": "e91f9c76ed403492eead0bbad32724376e1971d5ce223918ebdb74233a483e29",
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "MLK +50 Labor-Justice Interfaith Freedom Seder",
+        "sourcePresented": null,
+        "readerCredit": "From MLK +50 Labor-Justice Interfaith Freedom Seder by Rabbi Arthur Waskow and The Shalom Center."
+      }
+    }
+  ]
+}

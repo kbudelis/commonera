@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-11",
+  "distinction": {
+    "researchCorpus": "Exhaustive local extract segments. Never shipped to generation unless separately approved.",
+    "approvedRuntimePack": "Exact reviewed modules only, split per source and allowlisted by compact metadata."
+  },
+  "researchCorpus": {
+    "sourceCount": 20,
+    "segmentCount": 1999,
+    "characterCount": 1845812,
+    "approvedPrecomputeCount": 1962,
+    "quarantinedCount": 37,
+    "machineClassifiedCount": 1999,
+    "pendingContextReviewCount": 1999,
+    "allSourcesCoverageVerified": true,
+    "sourceSegmentManifest": "research/generated/source-segment-manifest.json"
+  },
+  "approvedRuntimePack": {
+    "sourceCount": 20,
+    "moduleCount": 40,
+    "exactCharacterCount": 9138,
+    "maturity": "smoke-test-fixtures",
+    "comprehensiveApproval": false,
+    "activeRuntimeLoadingMode": "embedded-smoke-index",
+    "availableComprehensiveLoadingMode": "per-source-dynamic",
+    "note": "The approved pack is not yet a comprehensive representation of the full research corpus."
+  },
+  "sequenceCount": 25
+}

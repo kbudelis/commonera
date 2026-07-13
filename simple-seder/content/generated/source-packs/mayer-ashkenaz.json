@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mayer-ashkenaz",
+  "sourceTitle": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+  "modules": [
+    {
+      "id": "mayer-maggid-take-turns",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "exactText": "For the next portion, we will go around the table, each person reading a paragraph in whichever language they prefer, up until the end of the normative four children text.",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 8 (printed Hebrew p. ח), Maggid",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "traditional",
+        "interfaith",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 30,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "155ff2285b8e50753b480701c67391003d86d97f4b4f719c6c10632969102329",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      }
+    },
+    {
+      "id": "mayer-hallel-number-challenge",
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "exactText": "Now the alternate challenge — We’re going to make our own! Going round the table, we will count up from one to thirteen, thinking of something else (preferably but not necessarily Jewish content) that fits that number. After each number, we will respond, together, singing everything we’ve come up with. By the end we’ll have to remember them all!",
+      "locator": {
+        "edition": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourceLocation": "PDF p. 63, Hallel number challenge",
+        "localExtract": "research/source-extracts/mayer-ashkenaz.txt",
+        "sourceSha256": "7cec96c2933e5caf100ac88bb368fef8fd3a255ad3688d682b03f873c20d5616",
+        "extractSha256": "2f2b01ab1ce77ffb7dbc3be33031f4495df33090d6510655b8722e0119796862"
+      },
+      "sectionIds": [
+        "hallel"
+      ],
+      "themes": [
+        "family-storytelling",
+        "traditional",
+        "secular"
+      ],
+      "audience": [
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "optional-insert",
+      "treatment": "verbatim-normalized",
+      "wordCount": 59,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Review separately sourced additions item by item",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "16cf930dfd7d3436a723178cf0f46f4388b2efac5965d736a35a9ce07867e2a5",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for Pesaḥ — Nusaḥ Ashkenaz with Additions by Isaac Gantwerk Mayer."
+      }
+    }
+  ]
+}

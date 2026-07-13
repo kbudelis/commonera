@@ -1,0 +1,17 @@
+[
+  {
+    "sourceId": "traditional-core",
+    "sourceLocation": "PDF p. 25 (printed p. 21), Maggid; visually checked against the scan to correct OCR ‘aim’ to ‘arm’",
+    "text": "We were once the slaves of Pharaoh in Egypt, but the Lord our God brought us out from there with a mighty hand and an outstretched arm. Had not God brought our fathers out of Egypt, our children and grandchildren would still be enslaved to a Pharaoh in Egypt. Even if we all were wise and intelligent, learned and versed in the Torah, it would nevertheless be our duty to tell about the exodus from Egypt. The more anyone discusses the exodus from Egypt, the more praise he deserves."
+  },
+  {
+    "sourceId": "shir-geulah",
+    "sourceLocation": "PDF p. 36, Shulchan Orech; visually checked and normalized from the PDF’s fi ligatures",
+    "text": "So far, everything we have eaten in the course of the seder has had some ritual or symbolic significance. But one of the mitzvot of the holiday is to celebrate, and one of the traditional things we do to celebrate is partake of a festive meal. The ritual nature of the food of the meal is simply that it is there to be enjoyed, which itself is a mitzvah."
+  },
+  {
+    "sourceId": "velveteen-rabbi",
+    "sourceLocation": "PDF p. 18, Maggid opening; visually checked and normalized from multi-column PDF extraction order",
+    "text": "Maggid, the Hebrew word for “story,” is at the root of the word haggadah. In re-telling the story of the Exodus, we speak ourselves into our communal past."
+  }
+]

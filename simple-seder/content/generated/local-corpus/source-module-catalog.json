@@ -1,0 +1,5016 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "formal",
+          "traditional",
+          "mid-century",
+          "annotated"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "ritually-familiar"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan",
+          "traditional"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-traditional-core-exodus-arc",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "title": "From migration to liberation",
+          "segmentIds": [
+            "research-traditional-core-16um-24a4ab7f2193",
+            "research-traditional-core-17f7-1d9f8d5fc7d7",
+            "research-traditional-core-198m-f4c0bfd7319f",
+            "research-traditional-core-19rl-abe466be58a5",
+            "research-traditional-core-1biw-ce2e6d379db2"
+          ],
+          "sourceLocation": "PDF p. 39, segment 1 through PDF p. 43, segment 1",
+          "provenanceHash": "daff118e56b8b4bc786853d8bb0c58b7feac582ff2e9cffecf7b3841a7529e1e",
+          "wordCount": 815,
+          "characterCount": 4418,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Introduce the people in the story and state the arc plainly: Jacob's family went to Egypt, grew into a people, was enslaved and harmed, cried out, and was heard. Pause after oppression before describing liberation so the emotional movement is intelligible.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "nontriumphalist-violence-framing",
+            "ocr-and-page-layout-check",
+            "plain-language-narrative-bridges-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-traditional-core-three-symbols",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "title": "Pesach, matzah, maror, and lived memory",
+          "segmentIds": [
+            "research-traditional-core-1nuu-9d906cfc8d5c",
+            "research-traditional-core-1oj7-e505139e4af6",
+            "research-traditional-core-1oyy-c34117f8546d",
+            "research-traditional-core-1prz-799a55151bef",
+            "research-traditional-core-1qcs-d38d2438ff81"
+          ],
+          "sourceLocation": "PDF p. 53, segment 3 through PDF p. 55, segment 2",
+          "provenanceHash": "867ba3be56b8075472a8c18128e6f0b868e437ba34f5dfb7e60da3c1bc0a685e",
+          "wordCount": 869,
+          "characterCount": 4371,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid",
+            "motzi-matzah",
+            "maror"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Point to each object as it is named and explain it before asking anyone to read: the offering recalls deliverance, matzah recalls hurried departure, and maror recalls the bitterness of slavery. Then connect the symbols to the teaching that every generation enters the story personally.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "ocr-and-page-layout-check",
+            "plain-language-definitions-required",
+            "temple-offering-context",
+            "visible-object-cues-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "sourceTags": {
+        "voice": [
+          "contemporary",
+          "accessible",
+          "story-centered",
+          "welcoming"
+        ],
+        "audience": [
+          "beginner",
+          "mixed-ages",
+          "interfaith"
+        ],
+        "themes": [
+          "feminist",
+          "family-storytelling",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "pluralistic",
+          "inclusive",
+          "social-history"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical",
+        "contemplative"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-wandering-is-over-questions-and-memory",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "title": "Questions, memory, and family history",
+          "segmentIds": [
+            "research-wandering-is-over-8rj-6580df166f6a",
+            "research-wandering-is-over-9yk-f33e753e04eb"
+          ],
+          "sourceLocation": "PDF p. 7, segment 3 through PDF p. 8, segment 2",
+          "provenanceHash": "63eb6f5db66d11fbcabc95a3ddfddc0d5c6c35e0d5900b3134277d54db809ae7",
+          "wordCount": 315,
+          "characterCount": 1816,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "family-storytelling",
+            "feminist",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Tell guests that asking is part of the ritual and that this Haggadah tells Exodus through songs, images, and discussion rather than a single continuous script. Invite each person to choose one concrete family or Passover memory and allow anyone to pass.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-specific-concrete-wording",
+            "clear-speaker-and-listener-cues",
+            "embedded-credit-check",
+            "right-to-pass-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-wandering-is-over-women-and-exodus",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "title": "Women's resistance and the Exodus",
+          "segmentIds": [
+            "research-wandering-is-over-gkv-7f6590d638a8",
+            "research-wandering-is-over-hyn-a8547bf1591d",
+            "research-wandering-is-over-ivd-09f510a27a39"
+          ],
+          "sourceLocation": "PDF p. 13, segment 2 through PDF p. 15, segment 1",
+          "provenanceHash": "b3e10c4ed63f5b83faab675b21511f4376ff90fa192601e919b11e799d9f2cd9",
+          "wordCount": 589,
+          "characterCount": 3444,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "feminist",
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Introduce the arc in plain language: the ancestors reached Egypt, a new ruler enslaved their descendants, Shifra and Puah resisted orders to kill newborn boys, Moses later confronted Pharaoh, plagues struck Egypt, and the people left. Acknowledge Egyptian suffering and explain the cup-diminishing action.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-infant-harm-context",
+            "cup-diminishing-action-cue",
+            "embedded-credit-check",
+            "nontriumphalist-plague-framing",
+            "plain-language-character-introductions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-wandering-is-over-closing-songs",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "title": "Cumulative closing songs",
+          "segmentIds": [
+            "research-wandering-is-over-15qj-75ff7702b038",
+            "research-wandering-is-over-174d-2b1a99169590",
+            "research-wandering-is-over-18nn-3e91c30579aa"
+          ],
+          "sourceLocation": "PDF p. 31, segment 2 through PDF p. 33, segment 2",
+          "provenanceHash": "c0a9ebcb7e5aa20fc8ed9d9b559a2973789a3bfb510adc0e5ae15ba93cc142e4",
+          "wordCount": 561,
+          "characterCount": 2874,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Tell guests that these are playful cumulative songs sung near the end. Teach one response before starting, make singing optional, and stop at a natural verse if the table is ready to close.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "optional-shortened-ending",
+            "participation-cue-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "sourceTags": {
+        "voice": [
+          "contemplative",
+          "neo-Hasidic",
+          "interpretive",
+          "ecological"
+        ],
+        "audience": [
+          "adult",
+          "older-teen",
+          "reflective"
+        ],
+        "themes": [
+          "mindfulness",
+          "environment",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "peace-focused",
+          "shared-humanity",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "eco-justice",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-inner-seder-retelling-obligation",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "title": "Why this story is retold",
+          "segmentIds": [
+            "research-inner-seder-e1l-2b9cfae39d65",
+            "research-inner-seder-et1-33d9edb805f7",
+            "research-inner-seder-fhs-763fc3a33503"
+          ],
+          "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+          "provenanceHash": "4453f54dc078f7c9238adecb33ca116ac165b79c901ba413c94eda94880408ee",
+          "wordCount": 450,
+          "characterCount": 2773,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "mindfulness",
+            "family-storytelling",
+            "traditional"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Tell guests that Maggid is the storytelling section and that the story belongs to the whole table. Invite people to take turns reading, while allowing anyone to pass.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "plain-language-maggid-definition",
+            "right-to-pass-required",
+            "turn-taking-invitation-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-inner-seder-four-children",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "title": "Four ways of approaching the story",
+          "segmentIds": [
+            "research-inner-seder-ixc-d2c70ad4faba",
+            "research-inner-seder-jlp-cb11d3448c43",
+            "research-inner-seder-k8u-00309386ad48",
+            "research-inner-seder-ku4-34aaaa2ce7be",
+            "research-inner-seder-ler-0524ca4d9f76"
+          ],
+          "sourceLocation": "PDF p. 6, segment 2 through PDF p. 6, segment 6",
+          "provenanceHash": "45829674eefd7aced7bae3defed1c9c2395fdcd1539f3084f6f7813d8ae3bed4",
+          "wordCount": 703,
+          "characterCount": 4081,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "mindfulness",
+            "family-storytelling",
+            "traditional"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Introduce these as four modes that can exist within any person, not fixed labels for actual children. Explain unfamiliar spiritual vocabulary and do not ask guests to identify one another.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-use",
+            "embedded-credit-check",
+            "nonlabeling-introduction-required",
+            "plain-language-spiritual-vocabulary"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-inner-seder-compact-torah-arc",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "title": "A compact Torah story",
+          "segmentIds": [
+            "research-inner-seder-pxu-366984ca3612",
+            "research-inner-seder-qlw-05489ada2f42"
+          ],
+          "sourceLocation": "PDF p. 8, segment 1 through PDF p. 8, segment 2",
+          "provenanceHash": "fc01c181480151d9f5c136c540ccb1f7420c6d1b8aae931e37fc8556aa96d179",
+          "wordCount": 291,
+          "characterCount": 1748,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "Introduce the main people and sequence before reading: ancestors migrate, descendants are enslaved, oppression intensifies, the people cry out, and liberation begins. Clarify that the text is a compact scriptural retelling rather than the whole story.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "nontriumphalist-violence-framing",
+            "plain-language-character-introductions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-inner-seder-oppression-cry-and-refuge",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "title": "Oppression, cry, and responsibility",
+          "segmentIds": [
+            "research-inner-seder-wcz-1d0ca35ac57e",
+            "research-inner-seder-x18-64320e1f6615",
+            "research-inner-seder-xqd-07d9ef292594",
+            "research-inner-seder-ybu-9bac97851de9",
+            "research-inner-seder-z1s-1954344a1e50",
+            "research-inner-seder-zmh-c24de1615778"
+          ],
+          "sourceLocation": "PDF p. 9, segment 4 through PDF p. 10, segment 4",
+          "provenanceHash": "9b6db7115fbd4a342f96e75ad2bf64cf7bfc33a798e2abf18a3172964134b69e",
+          "wordCount": 845,
+          "characterCount": 5253,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "social-justice",
+            "mindfulness",
+            "interfaith"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Explain that the traditional verses linger over what oppression does to families and how a cry becomes heard. Invite one concrete question about whose cries society notices today, without requiring personal disclosure or making unsupported current claims.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "concrete-discussion-prompt",
+            "embedded-credit-check",
+            "no-unsupported-current-claims"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-inner-seder-gratitude-and-peace",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "title": "Grace, enoughness, and peace",
+          "segmentIds": [
+            "research-inner-seder-1v2d-58e41b2bd406",
+            "research-inner-seder-1vor-16a676bfb400",
+            "research-inner-seder-1w82-b937c3e15789",
+            "research-inner-seder-1xn0-4a2c8061fdbe"
+          ],
+          "sourceLocation": "PDF p. 18, segment 3 through PDF p. 18, segment 7",
+          "provenanceHash": "7120ffc113fe4ca00c8ace39cff6fc8192fd735a6f3953c80fad59efb9b8a5d6",
+          "wordCount": 605,
+          "characterCount": 3405,
+          "sectionIds": [
+            "barech"
+          ],
+          "sourceSectionIds": [
+            "barech"
+          ],
+          "insertionSectionId": "barech",
+          "themes": [
+            "mindfulness",
+            "environment",
+            "social-justice"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Explain that Barech is gratitude after eating and invite guests to notice sustenance, interdependence, and the wish for peace. State whether the table will read all four paragraphs or one selected portion.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "mindfulness-or-spiritual-depth-selected",
+            "peace-focused-language-check",
+            "plain-language-barech-definition"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "urgent",
+          "educational",
+          "human-rights",
+          "action-oriented"
+        ],
+        "audience": [
+          "adult",
+          "older-teen",
+          "community"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "anti-trafficking",
+          "worker-led",
+          "anti-racist",
+          "shared-humanity"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-other-side-korekh-survivor-leadership",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "title": "Korekh and survivor-led liberation",
+          "segmentIds": [
+            "research-other-side-of-sea-136g-d840a011cd0a",
+            "research-other-side-of-sea-13s4-b5ac6912324d",
+            "research-other-side-of-sea-14d8-c10a55a333ce"
+          ],
+          "sourceLocation": "PDF p. 14, segment 3 through PDF p. 14, segment 5",
+          "provenanceHash": "36c325f59fec82f73b753faee4497cd17e5fec0d059a3cc4e2b2451f328764ce",
+          "wordCount": 400,
+          "characterCount": 2222,
+          "sectionIds": [
+            "korech"
+          ],
+          "sourceSectionIds": [
+            "korech"
+          ],
+          "insertionSectionId": "korech",
+          "themes": [
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Before making the Hillel sandwich, explain that Korekh combines bitter maror and sweet charoset; offer a content note for trafficking testimony and tell guests they may pass on the reading.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-testimony-attribution-review",
+            "preserve-contributor-credit",
+            "social-justice-theme-only",
+            "trafficking-content-note-and-pass-option"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-other-side-tzafun-hidden-to-action",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "title": "Tzafun: seek what is hidden",
+          "segmentIds": [
+            "research-other-side-of-sea-1fc3-b902b9190187",
+            "research-other-side-of-sea-1fzc-66b06a07b22b",
+            "research-other-side-of-sea-1goa-66568b57941e",
+            "research-other-side-of-sea-1hbg-51e53d0d88b7"
+          ],
+          "sourceLocation": "PDF p. 19, segment 1 through PDF p. 19, segment 4",
+          "provenanceHash": "753b20cedbd406f6ee6b255135bc5e43df4bc31369d73219128dd7d25f5671da",
+          "wordCount": 601,
+          "characterCount": 3525,
+          "sectionIds": [
+            "tzafun"
+          ],
+          "sourceSectionIds": [
+            "tzafun"
+          ],
+          "insertionSectionId": "tzafun",
+          "themes": [
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that Tzafun means hidden and is the moment when the afikoman returns; frame the school and restaurant campaign as dated examples of turning learning into action, not as instructions for a current campaign.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "do-not-present-dated-campaign-link-as-current",
+            "label-2013-campaign-as-historical",
+            "preserve-contributor-credit",
+            "social-justice-theme-only"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-other-side-barech-life-of-dignity",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "title": "Birkat Hamazon and a life of dignity",
+          "segmentIds": [
+            "research-other-side-of-sea-1k09-3ad8c187ae69",
+            "research-other-side-of-sea-1kmp-8ce8ac5d902d"
+          ],
+          "sourceLocation": "PDF p. 21, segment 1 through PDF p. 21, segment 2",
+          "provenanceHash": "233ad896082a0acc4b9870ee7a4c67c817d7461e1d3d1759975333d69d6e72d7",
+          "wordCount": 269,
+          "characterCount": 1562,
+          "sectionIds": [
+            "barech"
+          ],
+          "sourceSectionIds": [
+            "barech"
+          ],
+          "insertionSectionId": "barech",
+          "themes": [
+            "social-justice",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Introduce Barech as the blessing after the meal and explain that this reading interprets one traditional plea for sustenance and shelter through the lens of coerced labor.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "coerced-labor-content-note",
+            "preserve-contributor-credit",
+            "social-justice-theme-only"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-other-side-four-children-agency",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "title": "Four Children: from awareness to agency",
+          "segmentIds": [
+            "research-other-side-of-sea-1l7n-7b0df0e11d78",
+            "research-other-side-of-sea-1lrd-81d8bd6f1862"
+          ],
+          "sourceLocation": "PDF p. 21, segment 3 through PDF p. 21, segment 4",
+          "provenanceHash": "47eee6a6ec4dcb1b9a91183fcdc2ecdddfbe70951740b3ec0c2ff954abcb66c0",
+          "wordCount": 335,
+          "characterCount": 1872,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "First explain that the traditional Haggadah imagines four different kinds of questioners; this adaptation uses them as stages in learning about forced labor and finding a useful response.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "preserve-contributor-credit",
+            "replace-wicked-child-label-in-beginner-bridge-with-challenging-child",
+            "social-justice-theme-only"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-other-side-karpas-nourish-the-journey",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "title": "Karpas and nourishment for a long journey",
+          "segmentIds": [
+            "research-other-side-of-sea-21nj-8aff38327a9c",
+            "research-other-side-of-sea-22b2-9bf644f14584"
+          ],
+          "sourceLocation": "PDF p. 28, segment 1 through PDF p. 28, segment 2",
+          "provenanceHash": "d458d1ad4848c5d9cca815ab121b728042a16fd01fc5af4f522eb3d90eb70a33",
+          "wordCount": 283,
+          "characterCount": 1620,
+          "sectionIds": [
+            "karpas"
+          ],
+          "sourceSectionIds": [
+            "karpas"
+          ],
+          "insertionSectionId": "karpas",
+          "themes": [
+            "social-justice",
+            "environment",
+            "mindfulness",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Tell guests to take a green vegetable, dip it in salt water, and taste it; then explain that the source connects this first dipping to both tears and the Israelites' search for drinkable water after crossing the sea.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "explain-marah-reference-for-beginners",
+            "preserve-source-blessing-wording"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "sourceTags": {
+        "voice": [
+          "prophetic",
+          "expansive",
+          "activist",
+          "eco-Jewish"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "interfaith"
+        ],
+        "themes": [
+          "environment",
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "climate-justice",
+          "peace-focused",
+          "shared-humanity"
+        ]
+      },
+      "compatibleFamilies": [
+        "contemplative",
+        "beginner-accessible",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-freedom-earth-seder-history",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "title": "From spring festival to Freedom Seder",
+          "segmentIds": [
+            "research-freedom-seder-earth-p8-bd67d0af0147",
+            "research-freedom-seder-earth-1em-1de59ac0302c",
+            "research-freedom-seder-earth-2dm-05642e20595f",
+            "research-freedom-seder-earth-31d-5849ac5e2a52"
+          ],
+          "sourceLocation": "PDF p. 2, segment 2 through PDF p. 3, segment 2",
+          "provenanceHash": "351a7c07437a2d44768ced96a2601ca4979247d344c86289bad336d67fed1e41",
+          "wordCount": 620,
+          "characterCount": 3765,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh",
+            "maggid"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "interfaith",
+            "social-justice",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Introduce this as the source author's account of how Passover imagery traveled through Jewish, Christian, Muslim, and Black freedom traditions, and explain that the sequence ends with the first 1969 Freedom Seder.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-translation-attribution-review",
+            "interfaith-or-social-justice-theme-only",
+            "present-origin-claims-as-source-authors-framing"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-freedom-earth-matzah-maror-charoset",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "title": "Three tastes of transformation",
+          "segmentIds": [
+            "research-freedom-seder-earth-w5p-5fd6456ca882",
+            "research-freedom-seder-earth-wt5-ead8f4bf0802"
+          ],
+          "sourceLocation": "PDF p. 17, segment 1 through PDF p. 17, segment 2",
+          "provenanceHash": "0f361b541ac44279ea785076cfb41498c76959a3e2c23e6d193bf1efe579a180",
+          "wordCount": 284,
+          "characterCount": 1678,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid",
+            "motzi-matzah",
+            "maror",
+            "korech"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "environment",
+            "traditional",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Place the matzah, bitter herb, and charoset where everyone can see them; tell guests when to lift and taste each item and define charoset as the sweet fruit-and-nut mixture on the Seder plate.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "confirm-allergy-safe-charoset-alternative-in-host-guide",
+            "do-not-rewrite-blessings-as-direct-quotations",
+            "retain-source-theology-with-plain-language-introduction"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "shir-geulah",
+      "family": "beginner-accessible",
+      "sourceTags": {
+        "voice": [
+          "direct",
+          "contemporary",
+          "liberation-centered",
+          "procedural"
+        ],
+        "audience": [
+          "beginner",
+          "adult",
+          "mixed-ages"
+        ],
+        "themes": [
+          "traditional",
+          "social-justice",
+          "lgbtq"
+        ],
+        "politicalFraming": [
+          "inclusive",
+          "peace-focused",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "contemplative",
+        "justice-human-rights",
+        "eco-justice",
+        "traditional-liturgical",
+        "labor-secular",
+        "ritual-innovation",
+        "historical-cultural",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": true,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-shir-geulah-liberation-opening",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "title": "Why liberation is told",
+          "segmentIds": [
+            "research-shir-geulah-mt-b519d7747969",
+            "research-shir-geulah-2rv-13fdb0c8f0fd"
+          ],
+          "sourceLocation": "PDF p. 3, segment 1 through PDF p. 4, segment 1",
+          "provenanceHash": "7d8141d5c52956cb6db205a8be92637fa2960ced0819752faba4cfc6638ccd5e",
+          "wordCount": 183,
+          "characterCount": 4940,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "social-justice",
+            "lgbtq",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Introduce the Haggadah as a guide to a participatory Passover meal and explain that the story moves between ancient slavery and present responsibility. Invite guests to take turns reading and allow anyone to pass.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "plain-language-passover-orientation",
+            "right-to-pass-required",
+            "turn-taking-invitation-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-shir-geulah-questions-and-maggid",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "title": "Questions opening the telling",
+          "segmentIds": [
+            "research-shir-geulah-qbq-bcb452414033",
+            "research-shir-geulah-qzn-8f8019ff876d",
+            "research-shir-geulah-rqk-c80f50fe8250"
+          ],
+          "sourceLocation": "PDF p. 18, segment 1 through PDF p. 18, segment 3",
+          "provenanceHash": "b24a60d5dd860c4cc19e104b84c508bfc82537c5490c00cad068876d1a90215c",
+          "wordCount": 401,
+          "characterCount": 2487,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "family-storytelling",
+            "traditional",
+            "lgbtq"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that asking questions is a ritual act and that Maggid is the storytelling section. Give the Four Questions a clear reader cue, then say in plain language why the group turns from questions to the Exodus story.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "clear-reader-cues-required",
+            "embedded-credit-check",
+            "hebrew-and-transliteration-render-check",
+            "plain-language-maggid-definition"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-shir-geulah-four-children",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "title": "Four children and four questions",
+          "segmentIds": [
+            "research-shir-geulah-u1v-eae2d1d7a0c7",
+            "research-shir-geulah-uqk-1306a4fd4e67",
+            "research-shir-geulah-vfo-52107c35d1ac",
+            "research-shir-geulah-w34-3b30f7da604e",
+            "research-shir-geulah-x4m-c2fa476eb7be",
+            "research-shir-geulah-xv2-62b156bafb74",
+            "research-shir-geulah-yfb-0d9788ece9ac"
+          ],
+          "sourceLocation": "PDF p. 19, segment 3 through PDF p. 21, segment 3",
+          "provenanceHash": "bed51023d39fd1e990cc0733abbd3e1c4795d7267e88e02a4fb800e563350992",
+          "wordCount": 1096,
+          "characterCount": 6500,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "lgbtq",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Introduce the figures as four ways people may approach a difficult story, not labels for actual children. Translate unfamiliar terms, make reading roles optional, and give the table one strong follow-up question rather than asking guests to classify themselves.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-language-review",
+            "embedded-credit-check",
+            "nonlabeling-introduction-required",
+            "one-contextual-discussion-prompt"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-shir-geulah-exodus-and-plagues",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "title": "Oppression, departure, and diminished joy",
+          "segmentIds": [
+            "research-shir-geulah-139h-773ce344901a",
+            "research-shir-geulah-13zj-31b7924f3d3f",
+            "research-shir-geulah-14jk-e8ec44379911",
+            "research-shir-geulah-15iv-faa5e0ef1e92",
+            "research-shir-geulah-167k-b22372721ba8"
+          ],
+          "sourceLocation": "PDF p. 24, segment 1 through PDF p. 25, segment 2",
+          "provenanceHash": "dc9246bce74de95c8f4c16c947406d0cb0ad666b8fa06c09b62a1fea2ce48860",
+          "wordCount": 830,
+          "characterCount": 5137,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "social-justice",
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "State the story arc before reading: the Israelites were enslaved, Moses confronted Pharaoh, plagues struck Egypt, and the people left. Explain the cup-diminishing action and say that freedom is not celebrated by ignoring Egyptian suffering.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "cup-diminishing-action-cue",
+            "embedded-credit-check",
+            "nontriumphalist-plague-framing",
+            "wine-or-grape-juice-explicit"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-shir-geulah-sea-miriam-and-dayenu",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "title": "Crossing, Miriam, and gratitude",
+          "segmentIds": [
+            "research-shir-geulah-1783-b2f5abe7a93e",
+            "research-shir-geulah-17xj-4a7f7da46a20",
+            "research-shir-geulah-18mj-33eeee66a6ec",
+            "research-shir-geulah-19fd-42efda625070",
+            "research-shir-geulah-1a3h-8f50e781db7a"
+          ],
+          "sourceLocation": "PDF p. 26, segment 1 through PDF p. 27, segment 2",
+          "provenanceHash": "e52a13f0e8aba50073a87974bc28bc0bb77ec6c1765dabc301f9a8afba6cfe68",
+          "wordCount": 787,
+          "characterCount": 4787,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "feminist",
+            "social-justice",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Explain that the story reaches the sea, where escape becomes possible and Miriam leads song. Give guests a singing or spoken-response option, then introduce Dayenu as a gratitude chain rather than a celebration of anyone's destruction.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "nontriumphalist-sea-framing",
+            "participation-cue-required",
+            "traditional-land-lines-review"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "sourceTags": {
+        "voice": [
+          "warm",
+          "poetic",
+          "accessible",
+          "progressive"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "interfaith",
+          "beginner"
+        ],
+        "themes": [
+          "mindfulness",
+          "family-storytelling",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "peace-focused",
+          "liberation-oriented",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": true,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-velveteen-rabbi-preparing-the-table",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "title": "Preparing people, objects, and expectations",
+          "segmentIds": [
+            "research-velveteen-rabbi-zl-561e71343ef8",
+            "research-velveteen-rabbi-1mm-e77d133da47d",
+            "research-velveteen-rabbi-290-5f2cd0161e36"
+          ],
+          "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 3",
+          "provenanceHash": "4a65c5225acac8f0588636ed7735c5ac3358a7c2946fb530497c711c7908e28b",
+          "wordCount": 465,
+          "characterCount": 2716,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "mindfulness",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Use this before the Seder to explain what guests will read, eat, ask, and do. Add a simple checklist naming the plate, matzah, wine or grape juice, salt water, basin, towels, and optional additions.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "plain-language-object-checklist-required",
+            "turn-taking-invitation-required",
+            "wine-or-grape-juice-explicit"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-velveteen-rabbi-questions-and-telling",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "title": "Questions that open the story",
+          "segmentIds": [
+            "research-velveteen-rabbi-ig7-384a7cdd926a",
+            "research-velveteen-rabbi-jgy-fac0bf1178b5",
+            "research-velveteen-rabbi-khq-462aa47e42fc",
+            "research-velveteen-rabbi-lr0-bfa7e26e26cd",
+            "research-velveteen-rabbi-mqf-825349f5b7b5",
+            "research-velveteen-rabbi-nls-338340d21a88"
+          ],
+          "sourceLocation": "PDF p. 18, segment 1 through PDF p. 23, segment 1",
+          "provenanceHash": "98db4d7c3af1c6c8a86aa3d9fd9d3f700a542470f82587f89febd132ac75f077",
+          "wordCount": 1288,
+          "characterCount": 7696,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "family-storytelling",
+            "mindfulness",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "playful"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that Maggid is the section where the table tells the Exodus story and that questions are part of the ritual. Assign short readings around the table, let guests pass, and give younger participants concrete prompts.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-specific-concrete-prompts",
+            "embedded-credit-check",
+            "right-to-pass-required",
+            "turn-taking-invitation-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-velveteen-rabbi-exodus-narrative",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "title": "Slavery, courage, and the road out",
+          "segmentIds": [
+            "research-velveteen-rabbi-108p-10f7a20886ae",
+            "research-velveteen-rabbi-10sz-d123c5f849de",
+            "research-velveteen-rabbi-11e2-5cabd60c9783",
+            "research-velveteen-rabbi-1263-c8925163f76d",
+            "research-velveteen-rabbi-1357-ffd524f703f1",
+            "research-velveteen-rabbi-13pd-0cc19b47ed65",
+            "research-velveteen-rabbi-14ha-45ceef81c8bf",
+            "research-velveteen-rabbi-1536-8100779fff5f"
+          ],
+          "sourceLocation": "PDF p. 33, segment 1 through PDF p. 37, segment 2",
+          "provenanceHash": "cb51d7421bc8ca7765751d49861a71e33a1bf646c3f955e573aed7678b642656",
+          "wordCount": 1225,
+          "characterCount": 7116,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "family-storytelling",
+            "social-justice",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Introduce the main figures and state the full arc: a ruler enslaved the Israelites, resistance and courage kept hope alive, Moses confronted Pharaoh, plagues brought suffering, and the people escaped. Pause for compassion before celebrating freedom.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "embedded-credit-check",
+            "nontriumphalist-plague-framing",
+            "plain-language-character-introductions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-velveteen-rabbi-plate-and-inclusion",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "title": "Plate symbols and an inclusive table",
+          "segmentIds": [
+            "research-velveteen-rabbi-1bx9-a73757f480b3",
+            "research-velveteen-rabbi-1cnt-19c8a6006db9"
+          ],
+          "sourceLocation": "PDF p. 44, segment 1 through PDF p. 45, segment 1",
+          "provenanceHash": "995d8b09202fafe48044b6c625f90d1e9dff19484e5a77822d5cf988d93b4e0c",
+          "wordCount": 343,
+          "characterCount": 1975,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "lgbtq",
+            "family-storytelling",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "Point to each named plate object and explain its practical use before its symbolism. If an orange or other optional item appears, say why this table chose it and give an accurate history.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "optional-plate-item-selected",
+            "origin-story-fact-check",
+            "visible-object-cues-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-velveteen-rabbi-reflective-conclusion",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "title": "Carrying freedom beyond the table",
+          "segmentIds": [
+            "research-velveteen-rabbi-24d0-cdbd71190474",
+            "research-velveteen-rabbi-25dt-841c1c7b0019",
+            "research-velveteen-rabbi-25yw-e1b2401746b5",
+            "research-velveteen-rabbi-26ky-68cd419c949d"
+          ],
+          "sourceLocation": "PDF p. 69, segment 1 through PDF p. 70, segment 3",
+          "provenanceHash": "9ff34d39e49f9fc56b02246c6fa55d16a4c92f5c6bb5ed3bd6caeecd8c0235b1",
+          "wordCount": 652,
+          "characterCount": 3743,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "mindfulness",
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Tell guests that Nirtzah closes the formal order but sends the work of freedom into the year ahead. Offer one final shared line and one optional reflection rather than introducing a new discussion.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "peace-and-shared-humanity-check",
+            "single-closing-prompt"
+          ],
+          "containsThirdPartyAttribution": true,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "scholarly",
+          "reconstructed",
+          "liturgical",
+          "historical-Palestinian-Jewish"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan",
+          "non-nationalist"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-nusach-eretz-yisrael-first-cup",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "title": "First cup in the reconstructed rite",
+          "segmentIds": [
+            "research-nusach-eretz-yisrael-s2-970dd5f2162f",
+            "research-nusach-eretz-yisrael-1ll-9d30b5fa914f",
+            "research-nusach-eretz-yisrael-28g-67e9267f2572"
+          ],
+          "sourceLocation": "official source snapshot, segment 2 through official source snapshot, segment 4",
+          "provenanceHash": "530188eec00645869f796a545ff65ad827934ab2edf77b7629e2a66448aade38",
+          "wordCount": 433,
+          "characterCount": 2882,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "before-blessing",
+          "beginnerContext": "Explain that this is a reconstructed ancient Land of Israel form of the first-cup blessing, then tell guests whether to read the English, Hebrew, or both.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-reconstruction-context",
+            "plain-language-action-cue-required",
+            "preserve-distinctive-translation"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-nusach-eretz-yisrael-questions-and-servitude",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "title": "Questions leading into servitude",
+          "segmentIds": [
+            "research-nusach-eretz-yisrael-50b-13ab1491e7f3",
+            "research-nusach-eretz-yisrael-5ov-524f24981157",
+            "research-nusach-eretz-yisrael-6gm-d0afc27efc29"
+          ],
+          "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 10",
+          "provenanceHash": "ab33774942ca35a31f19450ace5f78d7eab7202d68532bd997fa9bcb1088bb04",
+          "wordCount": 415,
+          "characterCount": 2831,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Introduce the Four Questions as observations about what makes this night different, and explain that the response begins the story of oppression and the cry for freedom.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-reconstruction-context",
+            "plain-language-action-cue-required",
+            "preserve-distinctive-translation"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-nusach-eretz-yisrael-exodus-recitations",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "title": "From ancestral beginnings to the plagues",
+          "segmentIds": [
+            "research-nusach-eretz-yisrael-76x-d7863e18b969",
+            "research-nusach-eretz-yisrael-7xv-786afb475928",
+            "research-nusach-eretz-yisrael-8q9-1fad44ccdda4",
+            "research-nusach-eretz-yisrael-9is-d2c1e357ebb1",
+            "research-nusach-eretz-yisrael-a4w-ba5c1aded43a"
+          ],
+          "sourceLocation": "official source snapshot, segment 11 through official source snapshot, segment 15",
+          "provenanceHash": "cf0caba6f043fa3e73a14f4649be5f2df890189763eb7cec303ba8c89120e29e",
+          "wordCount": 708,
+          "characterCount": 4885,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Before reading, give a short spoken bridge: the Haggadah widens the Exodus story by tracing the family’s earlier migrations, enslavement, cry, and divine response.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-reconstruction-context",
+            "nontriumphalist-plague-framing",
+            "preserve-distinctive-translation"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-nusach-eretz-yisrael-first-hallel",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "title": "Praise after the freedom story",
+          "segmentIds": [
+            "research-nusach-eretz-yisrael-d7l-73e74f0fd0f3",
+            "research-nusach-eretz-yisrael-dzu-b694b9d855ec",
+            "research-nusach-eretz-yisrael-eqy-a2d9204c7e31"
+          ],
+          "sourceLocation": "official source snapshot, segment 19 through official source snapshot, segment 21",
+          "provenanceHash": "edcea2d7797acb16413fc09bcfea8288716a2892c038a589dee43a8df9fc52ba",
+          "wordCount": 420,
+          "characterCount": 3304,
+          "sectionIds": [
+            "hallel"
+          ],
+          "sourceSectionIds": [
+            "hallel"
+          ],
+          "insertionSectionId": "hallel",
+          "themes": [
+            "traditional",
+            "environment",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Tell guests that the story now shifts into poetry: the table responds to liberation with Psalms and a historical liturgical composition.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-reconstruction-context",
+            "identify-genre-shift",
+            "preserve-distinctive-translation"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "participatory",
+          "public-facing",
+          "activist",
+          "discussion-led"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "participatory"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "protest",
+          "immigrant-justice",
+          "peace-focused"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-streets-opening-place-at-table",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "title": "A place and a voice at the table",
+          "segmentIds": [
+            "research-seder-in-the-streets-2i7-2981df3e913e",
+            "research-seder-in-the-streets-33n-6c6e70a5c10e"
+          ],
+          "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 6",
+          "provenanceHash": "746ce64bdb86096aa2c2bbf7558662948048f1375d781a5bce864846a0fce4b2",
+          "wordCount": 265,
+          "characterCount": 1492,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "family-storytelling",
+            "interfaith",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Invite each guest to put one personally meaningful object near their place, and explain that people may take turns reading, ask questions, request slower speech, or pass.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adapt-public-fabric-activity-to-home-table-without-changing-quoted-text",
+            "retain-language-access-and-pass-options",
+            "social-justice-family-or-interfaith-theme-only"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-streets-four-questions-explained",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "title": "The Four Questions with answers",
+          "segmentIds": [
+            "research-seder-in-the-streets-8ce-cc28378a77ba",
+            "research-seder-in-the-streets-90b-135287ae03e4",
+            "research-seder-in-the-streets-9kx-aec8d28aafac"
+          ],
+          "sourceLocation": "official source snapshot, segment 14 through official source snapshot, segment 16",
+          "provenanceHash": "8641970e3e1ccac517167f58d0bc3d0a206ab814af60bb913c1cb5ee44445b7f",
+          "wordCount": 432,
+          "characterCount": 2471,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that the Four Questions are traditionally asked by the youngest willing participant but may be shared by anyone; point to the matzah, maror, dipping foods, and reclining as each is named.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "clarify-that-reclining-may-be-symbolic-or-adapted-for-accessibility",
+            "do-not-continue-into-unreviewed-alternative-faq",
+            "preserve-dc-avodah-and-joi-credits"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-streets-compact-exodus-story",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "title": "A compact Exodus narrative",
+          "segmentIds": [
+            "research-seder-in-the-streets-dxf-f1636ab80e9f",
+            "research-seder-in-the-streets-ej1-7d0c5cfa178a",
+            "research-seder-in-the-streets-f4a-6243c3f3e386"
+          ],
+          "sourceLocation": "official source snapshot, segment 23 through official source snapshot, segment 25",
+          "provenanceHash": "9389eace4486fa0af2a1db274d2f43327dee16c33eb851c65dfcf169ff5739b8",
+          "wordCount": 430,
+          "characterCount": 2310,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Before reading, briefly explain that Joseph had earlier helped Egypt survive a famine and that the Israelites' descendants remained there; this supplies the one missing setup before the source begins with the new Pharaoh.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "correct-pharaoh-spelling-only-in-bridge-not-in-exact-quotation",
+            "do-not-append-dated-campaign-plagues",
+            "preserve-compassion-for-egyptian-civilians",
+            "supply-joseph-and-famine-setup-before-source-text"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "tropified-haggadah",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "liturgically-precise",
+          "chant-oriented",
+          "traditional",
+          "multilingual"
+        ],
+        "audience": [
+          "adult",
+          "ritually-familiar",
+          "facilitator"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "nonpartisan",
+          "traditional",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-tropified-haggadah-ancestry-to-redemption",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "title": "Chanted ancestry, oppression, and cry",
+          "segmentIds": [
+            "research-tropified-haggadah-1d68-b6ee373f7800",
+            "research-tropified-haggadah-1ecn-cc12dd5ae485",
+            "research-tropified-haggadah-1fhb-2166a261338a"
+          ],
+          "sourceLocation": "authoritative odt text, segment 6 through authoritative odt text, segment 8",
+          "provenanceHash": "6bd38515ffa8d0b4e6ddd767a4997314c00add70c2334b3287ae7ea88c916913",
+          "wordCount": 424,
+          "characterCount": 4549,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Give guests the Exodus arc in clear English before this selection: the family migrated, grew, was enslaved, cried out, and was heard.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "cantillation-rendering-check",
+            "hebrew-chant-opt-in",
+            "paired-plain-language-meaning-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-tropified-haggadah-plagues-and-dayenu",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "title": "Plagues leading into Dayenu",
+          "segmentIds": [
+            "research-tropified-haggadah-1gok-f4b738001788",
+            "research-tropified-haggadah-1hvc-a7d3376159d0",
+            "research-tropified-haggadah-1ixo-17a13714d7ae",
+            "research-tropified-haggadah-1k16-57a8e11ccca6"
+          ],
+          "sourceLocation": "authoritative odt text, segment 9 through authoritative odt text, segment 12",
+          "provenanceHash": "3f9c6387c593f56ce791ee552a8acd84a8d500b31c472cedf124096bac4fd13a",
+          "wordCount": 568,
+          "characterCount": 5903,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Frame the plagues with sorrow for suffering, tell guests how to diminish the cup, and explain that Dayenu shifts from catastrophe toward gratitude.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "cantillation-rendering-check",
+            "hebrew-chant-opt-in",
+            "nontriumphalist-plague-framing",
+            "paired-plain-language-meaning-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-tropified-haggadah-closing-chain-songs",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "title": "Closing cumulative songs",
+          "segmentIds": [
+            "research-tropified-haggadah-2bjc-0e32a25c2a66",
+            "research-tropified-haggadah-2cih-cfbf94530cb2",
+            "research-tropified-haggadah-2dip-87248cc8c54e",
+            "research-tropified-haggadah-2ei9-d623c34659bb"
+          ],
+          "sourceLocation": "authoritative odt text, segment 37 through authoritative odt text, segment 40",
+          "provenanceHash": "9dd6e4c6f94a80344a35baa3c97b53e6603239c8ff09e1051fd21f5129a732ab",
+          "wordCount": 551,
+          "characterCount": 5294,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Tell guests that these are playful cumulative songs traditionally sung at the end; provide a refrain cue and make participation optional.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "cantillation-rendering-check",
+            "hebrew-chant-opt-in",
+            "paired-plain-language-meaning-required",
+            "participation-cue-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "sourceTags": {
+        "voice": [
+          "clear",
+          "translation-forward",
+          "text-centered",
+          "pluralistic"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "interfaith",
+          "beginner"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "nonpartisan",
+          "pluralistic"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "family-feminist",
+        "contemplative",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-feinstein-removing-leaven",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "title": "Preparing by removing leaven",
+          "segmentIds": [
+            "research-feinstein-haggadah-64-2b36225e1e56",
+            "research-feinstein-haggadah-t7-bda6c8162f28"
+          ],
+          "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+          "provenanceHash": "4a6638089a0dbe55c3875f40c1ad289370bd045070a20fa81c7852d09559fec9",
+          "wordCount": 322,
+          "characterCount": 2146,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Explain that searching for and nullifying hametz is a pre-Passover practice, not something guests must improvise at the table. Give a short practical definition of leaven and clearly mark this as optional preparation.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "plain-language-hametz-definition",
+            "rendered-page-ocr-check",
+            "traditional-preparation-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-feinstein-four-children",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "title": "The traditional Four Children",
+          "segmentIds": [
+            "research-feinstein-haggadah-ddp-eee72f169f5b",
+            "research-feinstein-haggadah-eos-6b00a975b43c"
+          ],
+          "sourceLocation": "PDF p. 12, segment 1 through PDF p. 13, segment 1",
+          "provenanceHash": "64ac6586f5090aa7783fe3f62ce0b7fecbdef95431fa71307434c3d98a132334",
+          "wordCount": 442,
+          "characterCount": 3276,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Introduce the figures as inherited teaching types, not judgments about actual children or guests. Explain the historical language, avoid assigning labels around the table, and give a gentler discussion prompt.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-use",
+            "harsh-language-context",
+            "nonlabeling-introduction-required",
+            "rendered-page-ocr-check"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-feinstein-ancestry-to-oppression",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "title": "From ancestry to oppression",
+          "segmentIds": [
+            "research-feinstein-haggadah-gwl-3a59455ab1b8",
+            "research-feinstein-haggadah-icj-c9eb79111eff",
+            "research-feinstein-haggadah-jr8-36d28562553c",
+            "research-feinstein-haggadah-l1w-434bcb321cac",
+            "research-feinstein-haggadah-mhm-928cfd72587e"
+          ],
+          "sourceLocation": "PDF p. 15, segment 1 through PDF p. 19, segment 1",
+          "provenanceHash": "367e59599e7e362c57e02104b70f495231c4ec0ff7e919548823ce1af8a3513e",
+          "wordCount": 1065,
+          "characterCount": 9099,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "State the narrative arc before the detailed verses: the family went to Egypt, became a people, and was enslaved and harmed. Explain that the people's cry and liberation continue in the following part of Maggid. Introduce each scriptural quotation with one sentence of plain-language meaning.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "embedded-credit-check",
+            "plain-language-narrative-bridges-required",
+            "rendered-page-ocr-check"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-feinstein-plagues-and-compassion",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "title": "Plagues with diminished joy",
+          "segmentIds": [
+            "research-feinstein-haggadah-qoe-365aef2c0e50",
+            "research-feinstein-haggadah-rte-328d5a77e167",
+            "research-feinstein-haggadah-ssl-734e330b01b1",
+            "research-feinstein-haggadah-u8x-d7f3e727b60b"
+          ],
+          "sourceLocation": "PDF p. 22, segment 1 through PDF p. 25, segment 1",
+          "provenanceHash": "e42c3f6eb0dd29f0f18e0f74436b7952a7fc2e300fb2a019e92be67011f3c2ce",
+          "wordCount": 739,
+          "characterCount": 5973,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Explain that the plagues are catastrophes within the liberation story, name the cup-diminishing custom, and say explicitly that the table does not celebrate civilian suffering. Use wine or grape juice and give one action cue before the list.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-harm-context",
+            "cup-diminishing-action-cue",
+            "nontriumphalist-plague-framing",
+            "rendered-page-ocr-check",
+            "wine-or-grape-juice-explicit"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-feinstein-grace-after-meals",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "title": "Opening grace after the meal",
+          "segmentIds": [
+            "research-feinstein-haggadah-1ee4-64546382f98a",
+            "research-feinstein-haggadah-1fe0-05d0bf77130e",
+            "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+            "research-feinstein-haggadah-1htp-e3b94299332d"
+          ],
+          "sourceLocation": "PDF p. 42, segment 1 through PDF p. 45, segment 1",
+          "provenanceHash": "72ffaa4a9f2d3df7150f5878d02e212d93b30b44d41f9dbfa2dd69ddf03159d6",
+          "wordCount": 819,
+          "characterCount": 6148,
+          "sectionIds": [
+            "barech"
+          ],
+          "sourceSectionIds": [
+            "barech"
+          ],
+          "insertionSectionId": "barech",
+          "themes": [
+            "traditional",
+            "mindfulness",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that Barech is the gratitude said after eating and tell guests whether the leader will read or everyone will respond. Offer a shortened path without implying that a mixed-belief guest must affirm every theological line.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "mixed-belief-introduction-required",
+            "rendered-page-ocr-check",
+            "responsive-reading-cues",
+            "traditional-land-language-review"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "sourceTags": {
+        "voice": [
+          "historical",
+          "Yiddish-socialist",
+          "movement-oriented",
+          "secular"
+        ],
+        "audience": [
+          "adult",
+          "history-oriented",
+          "secular"
+        ],
+        "themes": [
+          "secular",
+          "social-justice"
+        ],
+        "politicalFraming": [
+          "socialist",
+          "labor-justice",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "historical-cultural",
+        "justice-human-rights",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "traditional-liturgical",
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-socialist-translator-critical-frame",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "title": "Translator's critical historical frame",
+          "segmentIds": [
+            "research-socialist-hagode-2wo-29c8ba2a3162",
+            "research-socialist-hagode-3ju-f4af202b0dd3",
+            "research-socialist-hagode-49a-e23593b0b30c"
+          ],
+          "sourceLocation": "PDF p. 5, segment 1 through PDF p. 5, segment 3",
+          "provenanceHash": "16c40e02f535099e6145b1bdf54275f8651f89c518acce0d09fb0d1a186575b7",
+          "wordCount": 520,
+          "characterCount": 3274,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "secular",
+            "social-justice"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "Identify this as the 2025 translator's introduction to a 1919 socialist parody, not part of the original ritual; tell guests that the warning is required before any other excerpt from this source.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-only",
+            "explicit-historical-socialist-source-opt-in",
+            "must-precede-all-other-source-sequences",
+            "preserve-translator-credit-and-warning-in-full"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-socialist-maror-freedom-equality",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "title": "Maror, freedom, and equality",
+          "segmentIds": [
+            "research-socialist-hagode-v7v-ae5eefd8acf0",
+            "research-socialist-hagode-x5r-6b67babf6010",
+            "research-socialist-hagode-xil-7620ee3b81ae",
+            "research-socialist-hagode-zk7-b610db8ec0a6",
+            "research-socialist-hagode-1051-b6019e5a4ba8",
+            "research-socialist-hagode-121v-bc6987e616e2",
+            "research-socialist-hagode-12nx-c4435f47da8a"
+          ],
+          "sourceLocation": "PDF p. 27, segment 2 through PDF p. 33, segment 2",
+          "provenanceHash": "a469d02cbd3f2218344ab242bb52fb1865f2436e6602032fc5ba0e800a8a7e57",
+          "wordCount": 1032,
+          "characterCount": 5720,
+          "sectionIds": [
+            "maror"
+          ],
+          "sourceSectionIds": [
+            "maror",
+            "hallel"
+          ],
+          "insertionSectionId": "maror",
+          "themes": [
+            "secular",
+            "social-justice",
+            "feminist"
+          ],
+          "audience": [
+            "adults"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Explain that the text substitutes Freedom, Equality, and Socialism into familiar Maror and Hallel formulas; distinguish this historical parody from a blessing or creed endorsed by the app.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-only",
+            "do-not-present-attacks-on-religion-as-project-voice",
+            "explicit-historical-socialist-and-anti-religious-rhetoric-opt-in",
+            "preserve-english-page-order-across-bilingual-source",
+            "translator-warning-must-appear-first"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "oratorical",
+          "interfaith",
+          "labor-justice",
+          "prophetic"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "interfaith"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "racial-justice",
+          "economic-justice",
+          "peace-focused"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-mlk50-wisdom-and-four-cups",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "title": "Wisdom for the journey and four cups",
+          "segmentIds": [
+            "research-mlk-freedom-seder-10f-b5e1d5590767",
+            "research-mlk-freedom-seder-1tw-d7618223115f",
+            "research-mlk-freedom-seder-2fp-958b89a9a0f3"
+          ],
+          "sourceLocation": "PDF p. 3, segment 1 through PDF p. 4, segment 2",
+          "provenanceHash": "686becab10b569198c4fed794b997896d9b655d0cfd6f670a3217e6b42fe1f8f",
+          "wordCount": 511,
+          "characterCount": 3063,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh",
+            "maggid"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "social-justice",
+            "interfaith",
+            "environment",
+            "feminist"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that the traditional Seder has four cups and an additional cup for Elijah; this source dedicates the cups to four connected social problems and the Elijah cup to building Dr. King's Beloved Community.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "define-beloved-community",
+            "do-not-present-quadruplet-framework-as-traditional-liturgy",
+            "embedded-mlk-and-heschel-quotation-review",
+            "explicit-historical-2018-activist-framing"
+          ],
+          "containsThirdPartyAttribution": true,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mlk50-candles-between-fires",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "title": "Candles between the fires",
+          "segmentIds": [
+            "research-mlk-freedom-seder-51e-6b8d6d91762d",
+            "research-mlk-freedom-seder-5wj-6203c6f53a01",
+            "research-mlk-freedom-seder-6ii-ac1eca0fd1a8"
+          ],
+          "sourceLocation": "PDF p. 6, segment 2 through PDF p. 7, segment 2",
+          "provenanceHash": "f5280bad7573ae6e53bec126e18beb12f871051018368ec41e646e481710d776",
+          "wordCount": 551,
+          "characterCount": 3096,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "social-justice",
+            "environment",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Before lighting candles, warn that the reading names lynching, Auschwitz, Hiroshima, gun violence, and climate disaster; invite anyone to step out, pass, or join only for the final candle blessing.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-only",
+            "embedded-mlk-speech-attribution-review",
+            "explicit-trauma-content-opt-in",
+            "historical-violence-content-note-and-pass-option"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "sourceTags": {
+        "voice": [
+          "modular",
+          "symbolic",
+          "explanatory",
+          "pluralistic"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "participatory"
+        ],
+        "themes": [
+          "feminist",
+          "lgbtq",
+          "environment",
+          "social-justice"
+        ],
+        "politicalFraming": [
+          "issue-specific",
+          "inclusive",
+          "pluralistic"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-second-plate-miriams-fish",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "title": "Miriam's fish",
+          "segmentIds": [
+            "research-second-seder-plate-y-8d4691395a92",
+            "research-second-seder-plate-qz-26748e027d06"
+          ],
+          "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+          "provenanceHash": "4a25e86ea187ea0cfdff0ae947c58c73ed5656ba0b0c93da9989e71c4a394536",
+          "wordCount": 348,
+          "characterCount": 2214,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "feminist",
+            "environment",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "After explaining the traditional Passover offering, identify the fish as an optional addition honoring Miriam, water, prophecy, and women's role in the Exodus; provide a non-food or plant-based symbol if needed.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "define-rav-sherira-gaon-prophecy-and-talmud-for-beginners",
+            "fish-allergy-and-vegetarian-alternative-required",
+            "optional-plate-addition-only",
+            "preserve-micah-psalm-and-sotah-attributions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-second-plate-dayenu-leeks",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "title": "Leeks before Dayenu",
+          "segmentIds": [
+            "research-second-seder-plate-1qg-a09b044ddf69",
+            "research-second-seder-plate-2cy-ed6f18d8d53a"
+          ],
+          "sourceLocation": "PDF p. 3, segment 1 through PDF p. 3, segment 2",
+          "provenanceHash": "9fed564d68f59c9a1f3538a39698c017d05d01549ba5a4f2999f89095cba31ab",
+          "wordCount": 384,
+          "characterCount": 2285,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Before Dayenu, explain the Persian Jewish custom and ask consent before any gentle scallion tap; guests may hold or wave a leek instead, and no one should be struck or pressured.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "explicit-consent-and-no-hitting-rule",
+            "food-allergy-and-mobility-alternative-required",
+            "optional-ritual-only",
+            "preserve-numbers-sifrei-and-song-of-songs-attributions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-second-plate-rav-huna-beets",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "title": "Rav Huna's beets before washing",
+          "segmentIds": [
+            "research-second-seder-plate-3hx-5e1813827d72",
+            "research-second-seder-plate-45q-66c805dce44e"
+          ],
+          "sourceLocation": "PDF p. 4, segment 1 through PDF p. 4, segment 2",
+          "provenanceHash": "541d2d0000dd003e7d6607c4e7a284ad550e3103c0bf903a1ca1761c927396ce",
+          "wordCount": 365,
+          "characterCount": 2000,
+          "sectionIds": [
+            "rachtzah"
+          ],
+          "sourceSectionIds": [
+            "rachtzah"
+          ],
+          "insertionSectionId": "rachtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Before the second handwashing, identify beets as an optional Ashkenazi food and explain that the text uses their lasting red color to discuss inherited teaching and covenant.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": false,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "do-not-present-talmudic-beet-health-claims-as-medical-advice",
+            "optional-plate-addition-only",
+            "preserve-pesachim-ezekiel-and-berakhot-attributions",
+            "protect-clothing-and-offer-nonstaining-alternative"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-second-plate-maxwell-house-coffee",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "title": "Maxwell House and Diaspora satire",
+          "segmentIds": [
+            "research-second-seder-plate-6xx-8f95654b5b05",
+            "research-second-seder-plate-7m2-09a72734b204"
+          ],
+          "sourceLocation": "PDF p. 6, segment 1 through PDF p. 6, segment 2",
+          "provenanceHash": "78433abd4332793e93a3b97add9dfabcd247f72b8662d261dbcce6be8be944bf",
+          "wordCount": 379,
+          "characterCount": 2235,
+          "sectionIds": [
+            "tzafun"
+          ],
+          "sourceSectionIds": [
+            "tzafun"
+          ],
+          "insertionSectionId": "tzafun",
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Before Tzafun, identify this as an optional comic reading about Jewish advertising history and the Maxwell House Haggadah; explain the PaRDeS method and make all coffee or after-dinner drinks optional and caffeine-free if desired.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "caffeine-and-beverage-alternative-required",
+            "do-not-treat-ancient-place-list-as-collective-blame-of-modern-peoples",
+            "explicit-playful-diaspora-satire-opt-in",
+            "preserve-pesachim-attribution"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "comprehensive",
+          "liturgical",
+          "comparative",
+          "traditional"
+        ],
+        "audience": [
+          "adult",
+          "family",
+          "ritually-familiar"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "traditional",
+          "nonpartisan",
+          "varied-inserts"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-mayer-ashkenaz-festival-sanctification",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "Festival sanctification and Exodus memory",
+          "segmentIds": [
+            "research-mayer-ashkenaz-734-439d81669a56",
+            "research-mayer-ashkenaz-7ns-b31dd91fe9e2"
+          ],
+          "sourceLocation": "PDF p. 3, segment 7 through PDF p. 4, segment 1",
+          "provenanceHash": "f0da7eb1130368b6289e9f42f89de605a67e4cd61a00a40fb315905543bfd636",
+          "wordCount": 275,
+          "characterCount": 1512,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Explain that this is an extended traditional sanctification passage linking Passover to the Exodus and festival calendar. Offer it only to a table seeking substantial liturgy, define the sea and vengeance imagery, and follow with the simpler wine blessing from a separate verified module.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "multilingual-render-check",
+            "nontriumphalist-sea-and-vengeance-framing",
+            "separate-wine-blessing-module-required",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-abraham-and-nimrod",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "Abraham challenges the idols",
+          "segmentIds": [
+            "research-mayer-ashkenaz-weh-de7c22303f16",
+            "research-mayer-ashkenaz-zvx-14c4bfbd9640",
+            "research-mayer-ashkenaz-128o-55a3625113dc"
+          ],
+          "sourceLocation": "PDF p. 13, segment 7 through PDF p. 14, segment 8",
+          "provenanceHash": "614643f3b5f91345150552367079dd280dec8bf62b708189d339d8ca44155f7f",
+          "wordCount": 411,
+          "characterCount": 2334,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "interfaith",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Introduce this as a traditional expansion about young Abraham challenging his father's idols and the ruler Nimrod, not part of the basic Exodus outline. Name the characters, summarize the missing transitions, and use it only with an adult or well-facilitated table.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-use",
+            "embedded-credit-check",
+            "missing-transition-bridges-required",
+            "multilingual-render-check",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-exodus-piyyut",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "An Exodus poem from suffering to redemption",
+          "segmentIds": [
+            "research-mayer-ashkenaz-21z4-28cedb2aaec1",
+            "research-mayer-ashkenaz-22l2-f58c67a6f50b",
+            "research-mayer-ashkenaz-23st-976da6d2a99b"
+          ],
+          "sourceLocation": "PDF p. 31, segment 3 through PDF p. 31, segment 6",
+          "provenanceHash": "ef249dbf5f03c112d24b50ff5dbdc6914a855998fd844a2fec84a8d69d1db8f5",
+          "wordCount": 375,
+          "characterCount": 2103,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "State the narrative arc before the poem: the Israelites suffered slavery, liberation came through destructive plagues, they crossed the sea, and the liturgy turns toward future celebration. Frame firstborn and enemy-death imagery with sorrow and keep Temple hopes within inherited historical liturgy.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-use",
+            "embedded-credit-check",
+            "nontriumphalist-firstborn-and-sea-framing",
+            "temple-and-land-language-context",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-buber-closing-story",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "A Hasidic closing story",
+          "segmentIds": [
+            "research-mayer-ashkenaz-3gs4-317c4f0bd0a8",
+            "research-mayer-ashkenaz-3hd8-7092887beb15"
+          ],
+          "sourceLocation": "PDF p. 55, segment 1 through PDF p. 55, segment 2",
+          "provenanceHash": "d2d62d13fee909270766539625fb54d87b1e009338ccd0391e65a6121d3f1b90",
+          "wordCount": 279,
+          "characterCount": 1611,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Explain that Nirtzah closes the formal Seder and that this is a historical Hasidic story about longing and readiness. Define the military conscription context, identify the quoted Zion language as inherited in the story, and make the long reading optional.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "adult-or-facilitated-mixed-age-use",
+            "embedded-rights-and-credit-review",
+            "historical-zion-language-context",
+            "traditional-or-specialist-opt-in",
+            "traditional-without-social-justice-only"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-western-yiddish-closing-song",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "Western Yiddish build-well song",
+          "segmentIds": [
+            "research-mayer-ashkenaz-3ris-0c268db67dfe",
+            "research-mayer-ashkenaz-3s1m-6a57aba1f373"
+          ],
+          "sourceLocation": "PDF p. 60, segment 2 through PDF p. 60, segment 3",
+          "provenanceHash": "28d467d9f5148343fa254383157907a086318e3e2398f3c6a4ce5a55a636bf17",
+          "wordCount": 268,
+          "characterCount": 1620,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Introduce this as a Western Ashkenazi closing song whose traditional refrain hopes for the Temple's rebuilding. Give a transliteration and one repeated response, explain the historical liturgical meaning, and let guests listen instead of sing.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "multilingual-render-check",
+            "participation-cue-required",
+            "temple-language-context",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-echad-mi-yodea",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "Who knows one?",
+          "segmentIds": [
+            "research-mayer-ashkenaz-3uct-a6c5567d2bf8",
+            "research-mayer-ashkenaz-3uy4-6b36896af084",
+            "research-mayer-ashkenaz-3vkg-a4f092b9792a"
+          ],
+          "sourceLocation": "PDF p. 62, segment 1 through PDF p. 62, segment 3",
+          "provenanceHash": "801f0452f3a1087d1c790c0d07a8b0820b0747c70b8b213f9c1029b72cead286",
+          "wordCount": 407,
+          "characterCount": 2310,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Tell guests this is a cumulative number song near the end of the Seder. Teach the question-and-response pattern, clarify unfamiliar references only when they first appear, and stop at a natural number if time is short.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "multilingual-render-check",
+            "optional-shortened-ending",
+            "participation-cue-required",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-multilingual-chad-gadya-game",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "A multilingual Chad Gadya guessing game",
+          "segmentIds": [
+            "research-mayer-ashkenaz-3xmz-ceaa08384105",
+            "research-mayer-ashkenaz-3y97-55ce2a5a1792",
+            "research-mayer-ashkenaz-3yqh-59a48139de78",
+            "research-mayer-ashkenaz-3z1z-969ac85afd71"
+          ],
+          "sourceLocation": "PDF p. 64, segment 1 through PDF p. 64, segment 4",
+          "provenanceHash": "f88ba1c7f0b26bf2034506722dafdf03e34b3d7dfff56fdce737247259fb0369",
+          "wordCount": 468,
+          "characterCount": 2801,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "story-reflection",
+          "beginnerContext": "Explain that this is an optional language game based on the final Chad Gadya verse, not a required ritual. Read the ordinary English pattern first, divide guests into teams only if they want to play, and avoid assuming knowledge of any language.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-credit-check",
+            "multilingual-render-check",
+            "participation-optional",
+            "plain-language-chad-gadya-summary-required",
+            "specialist-language-game-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-mayer-ashkenaz-chad-gadya-call-and-response",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "title": "Chad Gadya call and response",
+          "segmentIds": [
+            "research-mayer-ashkenaz-4uzt-cc9f3be95df9",
+            "research-mayer-ashkenaz-4vsk-d5a4d27cf9dd",
+            "research-mayer-ashkenaz-4wdb-8d560939e426",
+            "research-mayer-ashkenaz-4xg5-81c8c68b4bca"
+          ],
+          "sourceLocation": "PDF p. 74, segment 3 through PDF p. 76, segment 1",
+          "provenanceHash": "667e4710cc856cbb7e972da67f2c1b6042e3607069e06f913659401dec4ec603",
+          "wordCount": 676,
+          "characterCount": 3864,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "closing-reflection",
+          "beginnerContext": "Tell guests that Chad Gadya is a playful cumulative end song and teach the repeated line before beginning. Make singing optional, explain that the chain becomes violent in a folktale-like way, and allow an early stop for children or time.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "age-appropriate-folktale-violence-context",
+            "multilingual-render-check",
+            "optional-shortened-ending",
+            "participation-cue-required",
+            "traditional-or-specialist-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "academic",
+          "medieval-history",
+          "documentary",
+          "formal"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-english-jews-seder-manuscript-orientation",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "title": "A medieval English Seder survives",
+          "segmentIds": [
+            "research-english-jews-seder-0-2b743cb55bac",
+            "research-english-jews-seder-ou-f0749b2b0890",
+            "research-english-jews-seder-1bk-021d4c1b201f"
+          ],
+          "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 3",
+          "provenanceHash": "78056fdda36a1733fb0dd57267371592c97f03e0cb4317e922127769cdb38a7a",
+          "wordCount": 407,
+          "characterCount": 2432,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "Present this as a short historical note before the ritual begins: a 1287 English Jewish manuscript preserves local Seder customs from before the expulsion.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "distinguish-commentary-from-liturgy",
+            "historical-sidebar-only",
+            "plain-language-context-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-english-jews-seder-maggid-variants",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "title": "Distinctive medieval Maggid readings",
+          "segmentIds": [
+            "research-english-jews-seder-6cl-01404a9201ff",
+            "research-english-jews-seder-6y1-58aaacd5440a",
+            "research-english-jews-seder-7hn-e58c03423c92",
+            "research-english-jews-seder-86d-9c3afa888029"
+          ],
+          "sourceLocation": "official source snapshot, segment 12 through official source snapshot, segment 15",
+          "provenanceHash": "c999e3ec85858c8b8dfad05cdc8258f1497fd28959c1ad19cfe5ae23855da8d1",
+          "wordCount": 564,
+          "characterCount": 3098,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Label this explicitly as a scholar’s comparison of manuscript readings, and summarize the relevant difference before displaying any Hebrew excerpt.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "distinguish-commentary-from-liturgy",
+            "specialist-textual-note-only",
+            "translate-hebrew-excerpt-before-display"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-english-jews-seder-closing-piyyut",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "title": "A preserved closing poem",
+          "segmentIds": [
+            "research-english-jews-seder-fy8-7adc59fa94c0",
+            "research-english-jews-seder-gja-d5c357ca8b3b",
+            "research-english-jews-seder-h1y-466556acfad3"
+          ],
+          "sourceLocation": "official source snapshot, segment 28 through official source snapshot, segment 30",
+          "provenanceHash": "368eb23650f0bc36d906b5c9da07121d4a755e3c3ebc9c831e71595403cb05b8",
+          "wordCount": 415,
+          "characterCount": 2207,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "beginnerContext": "Explain that the article preserves a medieval poetic addition sung near the end of the Seder, then provide an editorially checked translation or refrain guide.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-song-opt-in",
+            "participation-cue-required",
+            "translate-hebrew-excerpt-before-display"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "antiquarian",
+          "Latin",
+          "early-modern",
+          "scholarly"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights",
+        "family-feminist"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-rittangel-latin-preparing-the-home",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "title": "Preparing for the Seder night",
+          "segmentIds": [
+            "research-rittangel-latin-56s-954df8257811",
+            "research-rittangel-latin-5qc-f0b4ef413860",
+            "research-rittangel-latin-6az-d7651e922344",
+            "research-rittangel-latin-72x-32bc00a85d4a"
+          ],
+          "sourceLocation": "PDF p. 10, segment 1 through PDF p. 11, segment 2",
+          "provenanceHash": "f19632dd5595840c413f415ed85d207fbd5a0bcccedaa09aec582e6e697983b0",
+          "wordCount": 576,
+          "characterCount": 3458,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Summarize in modern English that the source begins with removing leaven, evening prayers, returning home, and approaching the prepared table.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "facsimile-visual-check-required",
+            "historical-latin-specialist-opt-in",
+            "modern-english-summary-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-rittangel-latin-duty-and-four-children",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "title": "The duty to tell and the Four Children",
+          "segmentIds": [
+            "research-rittangel-latin-bok-8d1f9c1e4896",
+            "research-rittangel-latin-ccf-4c4038fd2df4",
+            "research-rittangel-latin-cwj-58db9ea74155",
+            "research-rittangel-latin-diw-59dd2fedbd99",
+            "research-rittangel-latin-e78-759e1334092a"
+          ],
+          "sourceLocation": "PDF p. 15, segment 1 through PDF p. 17, segment 1",
+          "provenanceHash": "bf76a6c85badd24dd03d5b613bcb402bb3b56e653fa158f38cff3ef80b4f5e73",
+          "wordCount": 806,
+          "characterCount": 4022,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Explain that the text moves from the obligation to retell the Exodus into four different learning postures; use inclusive modern labels outside the exact source excerpt.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "facsimile-visual-check-required",
+            "historical-latin-specialist-opt-in",
+            "inclusive-modern-framing-required",
+            "modern-english-summary-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-rittangel-latin-oppression-and-redemption",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "title": "Oppression, cry, and redemption",
+          "segmentIds": [
+            "research-rittangel-latin-ic7-5df6d89be2f7",
+            "research-rittangel-latin-iy0-aaad6bebfbb0",
+            "research-rittangel-latin-jse-9c99375e0c77",
+            "research-rittangel-latin-kco-e6b2e1826329",
+            "research-rittangel-latin-ku4-61e3888ec2e5",
+            "research-rittangel-latin-lrl-84e493ccdfbf",
+            "research-rittangel-latin-mc2-ac6d14b2fbf1"
+          ],
+          "sourceLocation": "PDF p. 20, segment 2 through PDF p. 24, segment 2",
+          "provenanceHash": "c32891411dbd08439fef974b6fdba1ceeb0dd8aa022abf641aca9736e099d189",
+          "wordCount": 1115,
+          "characterCount": 5533,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Provide a concise English story first: forced labor intensified, the people cried out, their suffering was seen, and the text turns toward deliverance.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "disclose-abridgment",
+            "facsimile-visual-check-required",
+            "historical-latin-specialist-opt-in",
+            "modern-english-summary-required",
+            "nontriumphalist-plague-framing"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-rittangel-latin-dayenu-transcription",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "title": "Hebrew-Latin Dayenu witness",
+          "segmentIds": [
+            "research-rittangel-latin-286b-7ae27264c23a",
+            "research-rittangel-latin-28y4-2fb5ebbe79f1",
+            "research-rittangel-latin-29qu-3413dafaa9e8",
+            "research-rittangel-latin-2alm-bf2a0f194da8"
+          ],
+          "sourceLocation": "official open siddur dayenu transcription, segment 1 through official open siddur dayenu transcription, segment 4",
+          "provenanceHash": "1d22e62c5365b4112823d36fec40f183d8ee5ee9f91afbfd3dc935d74e6b10dd",
+          "wordCount": 596,
+          "characterCount": 4329,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Introduce Dayenu as a cumulative gratitude song and make clear that this selection is a historical Hebrew-Latin transcription, not the app’s English sing-along version.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-latin-specialist-opt-in",
+            "modern-english-summary-required",
+            "traditional-land-language-context"
+          ],
+          "containsThirdPartyAttribution": true,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "formal-English",
+          "historical-Reform",
+          "home-service",
+          "universalist"
+        ],
+        "audience": [
+          "adult",
+          "family",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "secular",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "civic",
+          "universalist",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-levy-home-service-opening-orientation",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "title": "Opening a home Seder",
+          "segmentIds": [
+            "research-levy-home-service-l0-4c02eb21eee9",
+            "research-levy-home-service-1h6-18471b781d00",
+            "research-levy-home-service-233-af2da9c11585",
+            "research-levy-home-service-2sh-0cca13d60720"
+          ],
+          "sourceLocation": "PDF p. 3, segment 1 through PDF p. 5, segment 1",
+          "provenanceHash": "30de9ea58a7e570c275c712d8ec8f7fb9362b9cf5966896ab95e03b853a47e8a",
+          "wordCount": 649,
+          "characterCount": 3490,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "beginnerContext": "Tell guests that this is an 1896 Reform home service with period-specific gender roles and God language. Name the first cup as wine or grape juice, summarize the gathering’s purpose, and invite readers to substitute inclusive titles or pronouns before reading the historical prayer.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-gender-and-theology-context-required",
+            "historical-language-contextual-use",
+            "plain-language-action-cue-required"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-levy-home-service-exodus-story",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "title": "From migration to Moses's demand",
+          "segmentIds": [
+            "research-levy-home-service-44i-f66d1cac9767",
+            "research-levy-home-service-4py-568d807d88e6",
+            "research-levy-home-service-5gg-feaf1ff074f1"
+          ],
+          "sourceLocation": "PDF p. 6, segment 1 through PDF p. 7, segment 1",
+          "provenanceHash": "0222ab490cb944e3dc59c348affb93e67d15b1ceea38ad5de437a3a14dc98de1",
+          "wordCount": 461,
+          "characterCount": 2537,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Introduce this as the opening of one historical retelling, define unfamiliar biblical names as needed, and make clear that this excerpt moves from a migrating family to enslavement and Moses's demand for freedom.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "historical-language-contextual-use",
+            "nontriumphalist-plague-framing",
+            "review-dated-theology-and-gender"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-levy-home-service-freedom-and-law",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "title": "Freedom joined to responsibility",
+          "segmentIds": [
+            "research-levy-home-service-i1o-91662e5989df",
+            "research-levy-home-service-jyb-a3f4fccf0354",
+            "research-levy-home-service-ky8-8907519f671a",
+            "research-levy-home-service-lld-7d3455b30ae5",
+            "research-levy-home-service-mh9-fe2ec985d069"
+          ],
+          "sourceLocation": "PDF p. 17, segment 1 through PDF p. 20, segment 1",
+          "provenanceHash": "3c05a5edf78e59964f8539b55d7c6bf190842e401d8700077660042dab5ef82f",
+          "wordCount": 849,
+          "characterCount": 4813,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "social-justice",
+            "traditional",
+            "secular"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Introduce this as a long 1896 meditation arguing that liberation carries social responsibility and needs just law; tell guests that dated passages have been omitted.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "disclose-abridgment",
+            "historical-language-contextual-use",
+            "long-form-only",
+            "review-civic-and-civilizational-assumptions"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-levy-home-service-memory-and-legacy",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "title": "Memory, influence, and closing resolve",
+          "segmentIds": [
+            "research-levy-home-service-1caz-f243f03ac454",
+            "research-levy-home-service-1cty-1c42f9e500e1",
+            "research-levy-home-service-1dji-280592d5790f",
+            "research-levy-home-service-1e4r-365ce2949367",
+            "research-levy-home-service-1f4e-0f63f153b28c",
+            "research-levy-home-service-1fy8-2a4bff7bb946",
+            "research-levy-home-service-1gih-2c6b5bde907f",
+            "research-levy-home-service-1h8i-5c92e89e3fee"
+          ],
+          "sourceLocation": "PDF p. 40, segment 1 through PDF p. 44, segment 1",
+          "provenanceHash": "f89b109d3a71b7f098faad5971fd9e1489da9e00364aa868fd7d35f5e92e3028",
+          "wordCount": 1426,
+          "characterCount": 7389,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "family-storytelling",
+            "mindfulness",
+            "interfaith",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "children",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "beginnerContext": "Name this as a historical closing meditation about how people live on through memory and influence, followed by scripture and a communal resolve.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "do-not-present-theology-as-consensus",
+            "historical-language-contextual-use",
+            "long-form-only",
+            "review-dated-theology-and-gender"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "Portuguese",
+          "historical",
+          "traditional",
+          "cultural"
+        ],
+        "audience": [
+          "adult",
+          "Portuguese-reading",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-barros-basto-four-children-and-ancestry",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "title": "Teaching styles and ancestral memory",
+          "segmentIds": [
+            "research-barros-basto-53f-3eba1113da5d",
+            "research-barros-basto-5ow-707eae83dac0",
+            "research-barros-basto-68p-4270a2b38ed5",
+            "research-barros-basto-73c-b30b2b1a7505",
+            "research-barros-basto-7ok-ba21fdc26b78"
+          ],
+          "sourceLocation": "PDF p. 11, segment 2 through PDF p. 13, segment 2",
+          "provenanceHash": "ff465d455c574eb93898f74ab15431003ecf7e27a47c1e939bbb02f6c096df4f",
+          "wordCount": 782,
+          "characterCount": 4276,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Explain the Four Children as different ways of engaging, use inclusive modern labels outside the exact source, and then introduce the move backward into ancestral history.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "checked-english-meaning-required",
+            "facsimile-visual-check-required",
+            "inclusive-modern-framing-required",
+            "portuguese-language-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-barros-basto-exodus-core",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "title": "Migration, oppression, cry, and deliverance",
+          "segmentIds": [
+            "research-barros-basto-8e4-75063be2256f",
+            "research-barros-basto-90m-9321c25f1b03",
+            "research-barros-basto-9sn-d6c64001e5fd",
+            "research-barros-basto-a80-d65546c68d63",
+            "research-barros-basto-b3o-2ebc831f1aba",
+            "research-barros-basto-bs1-f9613740a8be",
+            "research-barros-basto-cg9-4ac8e0bd7462"
+          ],
+          "sourceLocation": "PDF p. 14, segment 1 through PDF p. 17, segment 1",
+          "provenanceHash": "2fec9d0e605e2b519f0545b3202f45c36e96b132ebd0dae84fae95776b4559d3",
+          "wordCount": 1069,
+          "characterCount": 6057,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Before reading, give the story in one English sentence: Jacob’s family migrated to Egypt, grew, was enslaved, cried out, was heard, and moved toward freedom through signs and plagues.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "checked-english-meaning-required",
+            "facsimile-visual-check-required",
+            "nontriumphalist-plague-framing",
+            "portuguese-language-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-barros-basto-closing-chain-songs",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "title": "Portuguese cumulative closing songs",
+          "segmentIds": [
+            "research-barros-basto-136t-326ccc216bf1",
+            "research-barros-basto-13rt-991d3cf8cef1",
+            "research-barros-basto-14bz-42affd1547ab",
+            "research-barros-basto-14rp-2c4b97ef27f8"
+          ],
+          "sourceLocation": "PDF p. 40, segment 1 through PDF p. 42, segment 1",
+          "provenanceHash": "e3cee05d54e2289e13ae0bc33da3a2d62dcecadca4a325ab415df7b9ad6377c4",
+          "wordCount": 496,
+          "characterCount": 2432,
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "sourceSectionIds": [
+            "nirtzah"
+          ],
+          "insertionSectionId": "nirtzah",
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "Tell guests that these are cumulative end-of-Seder songs, provide a simple refrain and an English synopsis, and make Portuguese participation optional.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "checked-english-meaning-required",
+            "facsimile-visual-check-required",
+            "participation-cue-required",
+            "portuguese-language-opt-in"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    },
+    {
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "sourceTags": {
+        "voice": [
+          "playful",
+          "referential",
+          "fandom",
+          "secular-cultural"
+        ],
+        "audience": [
+          "adult-fans",
+          "opt-in",
+          "participatory"
+        ],
+        "themes": [
+          "secular",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "allegorical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "contemplative",
+        "traditional-liturgical",
+        "historical-cultural",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [
+        "battlestar-galactica",
+        "bsg-seder",
+        "galactica-haggadah"
+      ],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "local-sequence-battlestar-seder-cycle-and-opening-prayer",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "title": "Cyclical history and an interfaith opening",
+          "segmentIds": [
+            "research-battlestar-seder-0-447aaced8456",
+            "research-battlestar-seder-n7-1d918a86d20b"
+          ],
+          "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 2",
+          "provenanceHash": "4d8d5f61556f95a8ad7276f357f657e7360dc380b5d2041a73a7f9fcb64bee4c",
+          "wordCount": 278,
+          "characterCount": 1717,
+          "sectionIds": [
+            "kadesh"
+          ],
+          "sourceSectionIds": [
+            "kadesh"
+          ],
+          "insertionSectionId": "kadesh",
+          "themes": [
+            "secular",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "beginnerContext": "State that this is an opt-in Battlestar fan adaptation, explain the cyclical-history premise, and label the Gâyatrî Mantra as a Hindu text rather than Jewish liturgy.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-franchise-and-prayer-rights-review",
+            "explicit-battlestar-opt-in",
+            "label-interfaith-borrowing",
+            "no-contemporary-political-analogy"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-battlestar-seder-second-cup-story",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "title": "Second cup and fictional migration story",
+          "segmentIds": [
+            "research-battlestar-seder-2jo-34591ddcc2ec",
+            "research-battlestar-seder-356-6abe986effc4",
+            "research-battlestar-seder-3r6-40c9300feb86"
+          ],
+          "sourceLocation": "official source snapshot, segment 5 through official source snapshot, segment 7",
+          "provenanceHash": "4152cd7789271c92424ec90346182c62cdde131b480e0adb3f4484a85d9f8ae1",
+          "wordCount": 414,
+          "characterCount": 2256,
+          "sectionIds": [
+            "maggid"
+          ],
+          "sourceSectionIds": [
+            "maggid"
+          ],
+          "insertionSectionId": "maggid",
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Give the real Exodus story elsewhere in full; introduce this only as the fan Haggadah’s fictional second-cup story about exile, migration, danger, and searching for home.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-franchise-rights-review",
+            "explicit-battlestar-opt-in",
+            "fiction-label-required",
+            "foundational-exodus-story-must-remain",
+            "no-contemporary-political-analogy"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        },
+        {
+          "id": "local-sequence-battlestar-seder-third-cup-responsibility",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "title": "Third cup and responsibility for creation",
+          "segmentIds": [
+            "research-battlestar-seder-4ab-12150ecf1b54",
+            "research-battlestar-seder-4v2-208a2ebe2e21"
+          ],
+          "sourceLocation": "official source snapshot, segment 8 through official source snapshot, segment 9",
+          "provenanceHash": "97fa0c1ae4d37380a92865bea66ca5b4409f46eee11174c2531292313d16c6b2",
+          "wordCount": 278,
+          "characterCount": 1484,
+          "sectionIds": [
+            "barech"
+          ],
+          "sourceSectionIds": [
+            "barech"
+          ],
+          "insertionSectionId": "barech",
+          "themes": [
+            "secular",
+            "mindfulness",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "beginnerContext": "Introduce this as a fictional ethical meditation: the characters face responsibility for creating life and for the consequences they tried to disown.",
+          "approvalStatus": "approved",
+          "editorialReviewStatus": "local-agent-reviewed-demo",
+          "approvalBasis": "local-source-dossier-review",
+          "beginnerSuitable": true,
+          "requiresExplicitOptIn": true,
+          "politicalRisk": "context-sensitive",
+          "editorialGates": [
+            "embedded-franchise-rights-review",
+            "explicit-battlestar-opt-in",
+            "fiction-label-required",
+            "no-contemporary-political-analogy"
+          ],
+          "containsThirdPartyAttribution": false,
+          "evaluatorAttributionClear": true,
+          "runtimeEligible": true
+        }
+      ]
+    }
+  ]
+}

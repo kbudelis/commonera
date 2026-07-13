@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { runtimePassageBriefsForProfile } from "@/content/runtime-pack-adapter";
 import type { GenerationProfile } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -10,18 +11,23 @@ interface MatchRequest {
   candidateSectionIds?: unknown;
   quoteIds?: unknown;
   coverIds?: unknown;
+  passageIds?: unknown;
+  featuredSourceId?: unknown;
+  proceduralBackboneSourceId?: unknown;
 }
 
 interface RawEnhancement {
   quoteIds?: unknown;
   coverId?: unknown;
   bridges?: unknown;
+  passageIds?: unknown;
 }
 
 interface Enhancement {
   quoteIds?: string[];
   coverId?: string;
   bridges?: Record<string, string>;
+  passageIds?: string[];
 }
 
 function parseProfile(value: unknown): GenerationProfile | null {
@@ -85,6 +91,7 @@ function safeEnhancement(
   sectionIds: string[],
   quoteIds: string[],
   coverIds: string[],
+  passageIds: string[],
 ): Enhancement | null {
   const text = responseText(payload);
   if (!text) return null;
@@ -102,13 +109,21 @@ function safeEnhancement(
   const allowedSections = new Set(sectionIds);
   const allowedQuotes = new Set(quoteIds);
   const allowedCovers = new Set(coverIds);
+  const allowedPassages = new Set(passageIds);
   const enhancement: Enhancement = {};
 
   if (Array.isArray(raw.quoteIds)) {
-    const selected = parseIds(raw.quoteIds, 4).filter((id) => allowedQuotes.has(id));
+    const selected = parseIds(raw.quoteIds, 4);
+    if (selected.some((id) => !allowedQuotes.has(id))) return null;
     if (selected.length) enhancement.quoteIds = selected;
   }
-  if (typeof raw.coverId === "string" && allowedCovers.has(raw.coverId)) {
+  if (Array.isArray(raw.passageIds)) {
+    const selected = parseIds(raw.passageIds, 4);
+    if (selected.some((id) => !allowedPassages.has(id))) return null;
+    if (selected.length) enhancement.passageIds = selected;
+  }
+  if (typeof raw.coverId === "string") {
+    if (!allowedCovers.has(raw.coverId)) return null;
     enhancement.coverId = raw.coverId;
   }
   if (Array.isArray(raw.bridges)) {
@@ -121,7 +136,7 @@ function safeEnhancement(
         !allowedSections.has(bridge.sectionId) ||
         typeof bridge.text !== "string"
       ) {
-        continue;
+        return null;
       }
       const value = truncateWords(bridge.text, 45);
       if (value) bridges[bridge.sectionId] = value;
@@ -138,6 +153,9 @@ async function requestEnhancement(
   sectionIds: string[],
   quoteIds: string[],
   coverIds: string[],
+  passageIds: string[],
+  passageCandidates: unknown[],
+  featuredSourceId: string,
 ): Promise<{ enhancement: Enhancement; model: string } | null> {
   const model = process.env.OPENAI_MODEL?.trim() || "gpt-5-mini";
   const controller = new AbortController();
@@ -156,7 +174,7 @@ async function requestEnhancement(
           {
             role: "system",
             content:
-              "Enhance a Haggadah assembled by deterministic code. Select only IDs supplied by the user. Write optional transitions for only the supplied section IDs, no more than 45 words each. Be welcoming, concise, and avoid unsupported factual claims.",
+              "Enhance a Haggadah assembled by deterministic code. Select only IDs supplied by the user. Keep the named featured source central: for the concise tier choose 1–2 of its approved passages; for longer tiers choose 2–3, plus at most one passage from one compatible supporting source. Choose distinct approved Seder sections. Never rewrite exactText or move it outside its approved sectionIds. Write optional transitions for only the supplied section IDs, no more than 45 words each. Be welcoming, concrete, concise, and avoid canned contrasts or unsupported factual claims.",
           },
           {
             role: "user",
@@ -165,6 +183,8 @@ async function requestEnhancement(
               candidateSectionIds: sectionIds,
               quoteIds,
               coverIds,
+              passageCandidates,
+              featuredSourceId,
             }),
           },
         ],
@@ -184,6 +204,11 @@ async function requestEnhancement(
                       maxItems: 4,
                       items: { type: "string" },
                     },
+                    passageIds: {
+                      type: "array",
+                      maxItems: 4,
+                      items: { type: "string" },
+                    },
                     coverId: { type: "string" },
                     bridges: {
                       type: "array",
@@ -199,7 +224,7 @@ async function requestEnhancement(
                       },
                     },
                   },
-                  required: ["quoteIds", "coverId", "bridges"],
+                  required: ["quoteIds", "passageIds", "coverId", "bridges"],
                   additionalProperties: false,
                 },
               },
@@ -214,7 +239,7 @@ async function requestEnhancement(
     });
     if (!response.ok) return null;
     const payload: unknown = await response.json();
-    const enhancement = safeEnhancement(payload, sectionIds, quoteIds, coverIds);
+    const enhancement = safeEnhancement(payload, sectionIds, quoteIds, coverIds, passageIds);
     return enhancement ? { enhancement, model } : null;
   } catch {
     return null;
@@ -239,6 +264,20 @@ export async function POST(request: Request) {
   const sectionIds = parseIds(body.candidateSectionIds, 40);
   const quoteIds = parseIds(body.quoteIds, 100);
   const coverIds = parseIds(body.coverIds, 100);
+  const requestedPassageIds = parseIds(body.passageIds, 16);
+  const featuredSourceId = typeof body.featuredSourceId === "string"
+    ? body.featuredSourceId.trim().slice(0, 100)
+    : "";
+  const proceduralBackboneSourceId = body.proceduralBackboneSourceId === "velveteen-rabbi"
+    ? "velveteen-rabbi"
+    : "shir-geulah";
+  const passageCandidates = await runtimePassageBriefsForProfile(
+    profile,
+    proceduralBackboneSourceId,
+    featuredSourceId,
+    requestedPassageIds,
+  );
+  const passageIds = passageCandidates.map((passage) => passage.id);
   const apiKey = process.env.OPENAI_API_KEY?.trim();
 
   if (!apiKey) {
@@ -251,6 +290,9 @@ export async function POST(request: Request) {
     sectionIds,
     quoteIds,
     coverIds,
+    passageIds,
+    passageCandidates,
+    featuredSourceId,
   );
   if (!result) {
     return NextResponse.json({

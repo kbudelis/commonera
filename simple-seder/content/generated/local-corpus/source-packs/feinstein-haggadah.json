@@ -1,0 +1,1054 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "feinstein-haggadah",
+  "sourceTitle": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein.",
+    "license": "CC-BY-SA-4.0",
+    "conditions": [
+      "Credit Eve Levavi Feinstein and Efraim Feinstein",
+      "Indicate changes and preserve ShareAlike terms"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=6207"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-feinstein-removing-leaven",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Preparing by removing leaven",
+      "exactText": "בִּיעוּרחָמֵץ Elimination of Leaven 1בִּיעוּרחָמֵץ Elimination of Leaven 1בִּיעוּרחָמֵץ Elimination of Leaven 1 Search for Leaven:בְּדִיקַתחָמֵץ i On the night of 14 Nisan, one searches one's property for leaven by candlelight. The search should include all rooms of the house where leavened products may have been brought during the year; it should include all the rooms' corners and the pockets of clothing and pocketbooks. The search need not include rooms where no leaven was ever brought. If the 14th of Nisan is on Shabbat, the search is performed on the Thursday evening before Passover. The blessing is recited and the search is begun immediately afterward. Before the search, it is customary to leave pieces of leaven in rooms that will be searched, so that they will be found and the blessing will not have been in vain.\n\nAfter the search, the first nullification declaration is recited. The declaration may be recited in Aramaic, or in any other language that the declarer understands. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ōnāyבָּרוּ our God, Sovereign of ʾĕlōhênû melek̲ hāʿôlāmאֱ the universe, who sanc- ʾăšer qiddəšānû bəmiṣ-אֲשֶׁרקִדְּשָׁנוּבְּמִצְוֹתָיו tified us with Your com- wōt̲āyw wəṣiwwānû ʿalוְצִוָּנוּעַלבִּעוּרחָמֵץ mandments and com- biʿûr ḥāmēṣ manded us regard- ing the elimination of leaven. Let any fermentation or kol–ḥămîrāʾ waḥămîʿāʾכׇּל־חֲמִירָאוַחֲמִיעָא leaven in my posession d̲əʾikkāʾ b̲iršût̲î dəlāʾדְאִכָּאבִרְשׁוּתִידְּלָא that I have not noticed ḥămittēh ûd̲əlāʾ baʿărit-חֲמִתֵּהּוּדְלָאבַּעֲרִתֵּהּ and have not eliminated tēh lib̲ṭîl wəlehĕwêלִבְטִילוְלֶהֱוֵיכְּעַפְרָא be nullified and become kəʿap̲rāʾ d̲əʾarʿāʾדְאַרְעָא as the dust of the earth. Elimination of Leaven:בִּיעוּרחָמֵץ ii On the day of the 14th of Nisan ( erev Pesah), before the sixth variable hour, the hametz that was collected in the search the previous day is destroyed (usually by burning). After it is destroyed and before the sixth hour, the following declaration is recited. The declaration may be recited in Aramaic, or in any other language that the declarer understands. iSA OH 444 ;SA OH 431-433 iiSA OH 444 ;SA OH 434",
+      "segmentIds": [
+        "research-feinstein-haggadah-64-2b36225e1e56",
+        "research-feinstein-haggadah-t7-bda6c8162f28"
+      ],
+      "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 2, segment 1 through PDF p. 2, segment 2",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-64-2b36225e1e56",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 220,
+            "normalizedEndOffset": 1050
+          },
+          {
+            "id": "research-feinstein-haggadah-t7-bda6c8162f28",
+            "label": "PDF p. 2",
+            "pageNumber": 2,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 1051,
+            "normalizedEndOffset": 2365
+          }
+        ]
+      },
+      "provenanceHash": "4a6638089a0dbe55c3875f40c1ad289370bd045070a20fa81c7852d09559fec9",
+      "componentProvenanceHashes": [
+        "2b36225e1e560cab84cc2ffd61d2a8f6870736519c1653a241ccae8a01e1d598",
+        "bda6c8162f28387587237132352dde860c3c63dc6e2db654442bd4af1449ae39"
+      ],
+      "wordCount": 322,
+      "characterCount": 2146,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional",
+        "mindfulness"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain that searching for and nullifying hametz is a pre-Passover practice, not something guests must improvise at the table. Give a short practical definition of leaven and clearly mark this as optional preparation.",
+      "rationale": "The adjacent opening records preserve a complete preparatory ritual and its meaning, useful for a host guide or traditional appendix rather than an unexplained first page.",
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and preserve CC BY-SA 4.0 attribution and ShareAlike terms.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "plain-language-hametz-definition",
+        "rendered-page-ocr-check",
+        "traditional-preparation-opt-in"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-feinstein-questions-and-story-opening",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Four Questions into Maggid",
+      "exactText": "מַגִּיד Discussing the Exodus 7מַגִּיד Discussing the Exodus 7מַגִּיד Discussing the Exodus 7 Preliminary Washing of the Hands:וּרְחַץ v Everyone washes his/her hands without saying a blessing. Eating a Vegetable:כַּרְפַּס vi Take some green vegetable and dip it in salt water or vineagar. Recite the blessing, then eat. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ōnāyבָּרוּ our God, Sovereign of ʾĕlōhênû melek̲ hāʿôlāmאֱ the universe, creator of bôrēʾ pərî hāʾăd̲āmâבּ the fruit of the earth. Breaking the Middle Matzah:יַחַץ vii Break the middle matzah in two pieces, setting the larger one aside to be used later as the afikoman, and returning the other. Discussing the Exodus:מַגִּיד viii Uncover and raise the matzot. This is the bread of hāʾ laḥmāʾ ʿanyāʾ dîהָאלַחְמָאעַנְיָאדִּי poverty that our ances- ʾăk̲ālû ʾab̲hāt̲ānāʾ bəʾarʿāʾאֲכָלוּאַבְהָתָנָאבְּאַרְעָא tors ate in the land of d̲əmiṣrāyimדְמִצְרָיִם Egypt. Let all who are hungry kol dik̲p̲în yêt̲ê wəyēk̲ulכׇּלדִּכְפִיןיֵיתֵיוְיֵכֻל come and eat! Let all who are needy kol diṣrîk̲ yêt̲ê wəyip̲saḥכׇּלדִּצְרִי come and partake ofוְיִפְסַח the Passover offering! Now, we are here; hāšattāʾ hāk̲āʾהָשַׁתָּאהָכָא next year, may we be in ləšānâ habbāʾâ bəʾarʿāʾלְשָׁנָההַבָּאָהבְּאַרְעָא the land of Israel. d̲əyiśrāʾēlדְיִשְׂרָאֵל Now, we are slaves; hāšattāʾ ʿab̲d̲êהָשַׁתָּאעַבְדֵי next year, may we be ləšānâ habbāʾâ bənêלְשָׁנָההַבָּאָהבְּנֵי free. ḥôrînח vSA OH 473 viSA OH 473 viiMB OH 473:58 ;SA OH 473 viiiSA OH 473\n\nמַגִּיד Discussing the Exodus 8מַגִּיד Discussing the Exodus 8מַגִּיד Discussing the Exodus 8 ix Lower the matzot. x Pour the second cup of wine. How different this night mah ništannâ hallaylâמַהנִשְׁתַּנָּההַלַּיְלָה is from all other nights! hazzeh mikkol–hallêlôt̲הַזֶּהמִכׇּל־הַלֵּיל On all other nights, we šebbək̲ol–hallêlôt̲ ʾānûשֶׁבְּכׇל־הַלֵּיל eat both leavened bread ʾôk̲əlîn ḥāmēṣ ûmaṣṣâא and matzah; on this night, we eat hallaylâ hazzeh kullôהַלַּיְלָההַזֶּהכֻּלּ only matzah. maṣṣâ On all other nights, we šebbək̲ol–hallêlôt̲ ʾānûשֶׁבְּכׇל־הַלֵּיל eat all kinds of herbs; ʾôk̲əlîn šəʾār yərāqôt̲א on this night, we eat hallaylâ hazzeh mārûrהַלַּיְלָההַזֶּהמָרוּר bitter herbs. On all other nights, we šebbək̲ol–hallêlôt̲ ʾênשֶׁבְּכׇל־הַלֵּיל do not dip our food ʾānû maṭbîlîn ʾăp̲îlûמַטְבִּילִיןאֲפִילוּפַּעַם even once; paʿam ʾāḥāt̲אָחָת on this night, we dip hallaylâ hazzeh šətêהַלַּיְלָההַזֶּהשְׁתֵּי twice. p̲əʿāmîmפְעָמִים On all other nights, we šebbək̲ol–hallêlôt̲ ʾānûשֶׁבְּכׇל־הַלֵּיל eat either sitting or ʾôk̲əlîn bên yôšəb̲înא reclining; ûb̲ên məsubbînמְסֻבִּין on this night, we all hallaylâ hazzeh kullānûהַלַּיְלָההַזֶּהכֻּלָּנוּ recline. məsubbînמְסֻבִּין We were slaves to ʿăb̲ād̲îm hāyînû ləp̲arʿōhעֲבָדִיםהָיִינוּלְפַרְעֹה Pharaoh in Egypt, bəmiṣrāyimבְּמִצְרָיִם and Adonai our God wayyôṣîʾēnû ʾăd̲ōnāyוַיּ brought us out from ʾĕlōhênû miššām bəyād̲מִשָּׁםבְּיָדחֲזָקָה there with a strong ḥăzāqâ ûb̲izrôaʿ nəṭûyâוּבִזְר hand and an out- stretched arm. ixSA OH 473 xSA OH 473\n\nמַגִּיד Discussing the Exodus 9מַגִּיד Discussing the Exodus 9מַגִּיד Discussing the Exodus 9 If the Holy One Blessed wəʾillû lōʾ hôṣîʾוְאִלּוּלֹאה Be He had not brought haqqād̲ôš bārûk̲ hûʾהַקָּד our ancestors out of ʾet̲ ʾăb̲ôt̲ênû mim-אֶתאֲב Egypt, then we, our miṣrāyim hărê ʾānûהֲרֵיאָנוּוּבָנֵינוּוּבְנֵי children, and our chil- ûb̲ānênû ûb̲ənê b̲ānênûבָנֵינוּמְשֻׁעְבָּדִיםהָיִינוּ dren's children would məšuʿbād̲îm hāyînûלְפַרְעֹהבְּמִצְרָיִם still be enslaved to ləp̲arʿōh bəmiṣrāyim Pharaoh in Egypt. Therefore, even if we waʾăp̲îlû kullānûוַאֲפִילוּכֻּלָּנוּחֲכָמִים were all wise, ḥăk̲āmîm all insightful, kullānû nəb̲ônîmכֻּלָּנוּנְב all old, kullānû zəqēnîmכֻּלָּנוּזְקֵנִים and all knowledgeable kəllānû yôd̲əʿîm ʾet̲כְּלָּנוּי in the Torah, hattôrâהַתּ we would still be com- miṣwâ ʿālênû ləsappērמִצְוָהעָלֵינוּלְסַפֵּר manded to discuss the bîṣîʾat̲ miṣrāyimבִּיצִיאַתמִצְרָיִם exodus from Egypt. Moreover, one who wək̲ol hammarbeh ləs-וְכׇלהַמַּרְבֶּהלְסַפֵּר elaborates on the ex- appēr bîṣîʾat̲ miṣrāyimבִּיצִיאַתמִצְרָיִםהֲרֵי odus from Egypt is hărê zeh məšubbāḥזֶהמְשֻׁבָּח worthy of praise. A tale is told of maʿăśeh bərabbî ʾĕlîʿezerמַעֲשֶׂהבְּרַבִּיאֱלִיעֶזֶר Rabbi Eliezer, Rabbi wərabbî yəhôšuaʿוְרַבִּייְה Joshua, Rabbi Elazar wərabbî ʾelʿāzār benאֶלְעָזָרבֶּןעֲזַרְיָהוְרַבִּי son of Azariah, Rabbi ʿăzaryâ wərabbî ʿăqîb̲āʾעֲקִיבָאוְרַבִּיטַרְפ Akiva, and Rabbi Tarfon, wərabbî ṭarp̲ôn šehāyûשֶׁהָיוּמְסֻבִּיןבִּבְנֵי who held a seder [lit: məsubbîn bib̲nê b̲əraqבְרַק reclined] in Bnai Brak. They discussed the exo- wəhāyû məsappərîmוְהָיוּמְסַפְּרִיםבִּיצִיאַת dus from Egypt all that bîṣîʾat̲ miṣrayim kol ʾôt̲ôמִצְרַיִםכׇּלא night hallaylâהַלַּיְלָה until their students ʿad̲ šebbāʾû t̲almîd̲êhemעַדשֶׁבָּאוּתַלְמִידֵיהֶם came and said to wəʾāmərû lāhem rab-וְאָמְרוּלָהֶםרַבּ them,“Rabbis, the time bôt̲ênû higgîaʿ zəmanהִגִּיעַזְמַןקְרִיאַתשְׁמַע has come to recite the qərîʾat̲ šəmaʿ šel šaḥărît̲שֶׁלשַׁחֲרִית morning shema. ”",
+      "segmentIds": [
+        "research-feinstein-haggadah-8dk-237512d608cd",
+        "research-feinstein-haggadah-9it-fe4702a6adc9",
+        "research-feinstein-haggadah-aot-ef2a518cb905"
+      ],
+      "sourceLocation": "PDF p. 8, segment 1 through PDF p. 10, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 8, segment 1 through PDF p. 10, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-8dk-237512d608cd",
+            "label": "PDF p. 8",
+            "pageNumber": 8,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 10856,
+            "normalizedEndOffset": 12340
+          },
+          {
+            "id": "research-feinstein-haggadah-9it-fe4702a6adc9",
+            "label": "PDF p. 9",
+            "pageNumber": 9,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 12341,
+            "normalizedEndOffset": 13852
+          },
+          {
+            "id": "research-feinstein-haggadah-aot-ef2a518cb905",
+            "label": "PDF p. 10",
+            "pageNumber": 10,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 13853,
+            "normalizedEndOffset": 15817
+          }
+        ]
+      },
+      "provenanceHash": "7ba7a406754d9645a7f01eefc3f688d730f8467a5108acf14c4cebde71976459",
+      "componentProvenanceHashes": [
+        "237512d608cd6d7864245b3aacf6f740f35c947771199c842aaf41509777d419",
+        "fe4702a6adc9cde2c67d957cc3333e4a89a0aee6d697d97d4e50a0ffd321fa30",
+        "ef2a518cb905ccb4c78bf569bc6a0478849a3848d05aaf6764b2031f28451ef5"
+      ],
+      "wordCount": 628,
+      "characterCount": 4963,
+      "sectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain the salt water and broken matzah actions before the youngest willing person or another guest asks the Four Questions. Define Maggid and state that the questions lead into the Exodus story.",
+      "rationale": "The three adjacent segments connect preliminary ritual actions with the formal questions and story opening, retaining the intended order rather than detaching the blessing text.",
+      "creditNotes": "Credit the Feinsteins and indicate any cuts to the bilingual text.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "no-child-forced-to-read",
+        "plain-language-maggid-definition",
+        "rendered-page-ocr-check",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-feinstein-four-children",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "The traditional Four Children",
+      "exactText": "מַגִּיד Discussing the Exodus 11מַגִּיד Discussing the Exodus 11מַגִּיד Discussing the Exodus 11 Blessed be the One Who bārûk̲ šennāt̲an tôrâבָּרוּ gave the Torah to His ləʿammô yiśrāʾēl bārûk̲לְעַמּ people Israel; Blessed is hûʾהוּא He. The Torah teachies of kəneg̲ed̲ ʾarbāʿâ b̲ānîmכְּנֶגֶדאַרְבָּעָהבָנִים four children: dibbərâ t̲ôrâדִּבְּרָהת A wise one, ʾeḥād̲ ḥāk̲āmאֶחָדחָכָם a wicked one, wəʾeḥād̲ rāšāʿוְאֶחָדרָשָׁע a simple-minded one, wəʾeḥād̲ tāmוְאֶחָדתָּם and one who does not wəʾeḥād̲ šeʾênô yôd̲ēaʿוְאֶחָדשֶׁאֵינ know enough to ask. lišʾôlלִשְׁא What does the wise ḥāk̲ām mah hûʾחָכָםמַההוּאא one say? * Deut. 6:20“What are the ʾômēr * dəb̲ārîm wk̲mâ hāʿēd̲ōt̲מָ֣ההָעֵדֹ֗תוְהַֽחֻקִּים֙ Deuteronomy 6:20* testimonies, laws, and wəhaḥuqqîm wəham-וְהַמִּשְׁפָּטִ֔יםאֲשֶׁ֥רצִוָּ֛ה statutes that Adonai our mišpāṭîm ʾăšer ṣiwwâיְהוָ֥האֱ God commanded you?” ʾăd̲ōnāy ʾĕlōhênû ʾet̲k̲em You shall teach him wəʾap̲ ʾattâ ʾĕmor–lôוְאַףאַתָּהאֱמׇר־ל the laws of Passover kəhilk̲ôt̲ happesaḥ ʾênכְּהִלְכ [down to the very last map̲ṭîrîn ʾaḥar happesaḥמַפְטִירִיןאַחַרהַפֶּסַח law in the mishnah]:One ʾăp̲îqômēn .1אֲפִיק may not follow the Passover offering with entertainment. What does the wicked rāšāʿ mah hûʾ ʾômēr * šəmôt̲ yb̲k̲wmâרָשָׁעמַההוּאא one say? * Exod. 12:26“What is this hāʿăb̲ōd̲â hazzōt̲ lāk̲emמָ֛ההָעֲבֹדָ֥ההַזֹּ֖את Exodus 12:26* service to you?”לָכֶֽם He refers to “you” lāk̲em wəlōʾ lôלָכֶםוְלֹאל rather than to himself. Because he excludes ûləp̲î šehôṣîʾ ʾet̲ ʿaṣ-וּלְפִישֶׁה himself from the group, mô min hakkəlāl kāp̲arמִןהַכְּלָלכָּפַרבָּעִקָּר he rejects a fundamen- bāʿiqqār tal principle. 1אֵיןמַפְטִירִיןאַחַרהַפֶּסַחאֲפִיק .The final law in mishnah Pesachim .\n\nמַגִּיד Discussing the Exodus 12מַגִּיד Discussing the Exodus 12מַגִּיד Discussing the Exodus 12 You must set his teeth wəʾap̲ ʾattâ haqhēhוְאַףאַתָּההַקְהֵהאֶת on edge and say to ʾet̲ šinnāyw wəʾĕmor–lôבַּעֲב֣וּר Exodus 13:8*שִׁנָּיווְאֱמׇר־ל him:* Exod. 13:8“It is because of * šəmôt̲ yg̲ḥbaʿăb̲ûr zeh ʿāśâזֶ֗העָשָׂ֤היְהוָה֙לִ֔י what Adonai did for me ʾăd̲ōnāy lî bəṣēt̲îבְּצֵאתִ֖ימִמִּצְרָֽיִם when I went out from mimmiṣrāyim Egypt. ” You refer to yourself lî wəlōʾ lôלִיוְלֹאל to me”) rather than to him because if he had been ʾillû hāyâ šāmאִלּוּהָיָהשָׁם there, he would not have been lōʾ hāyâ nig̲ʾālלֹאהָיָהנִגְאָל redeemed. What does the simple- tām mah hûʾ ʾômērתָּםמַההוּאא minded one say? * Exod. 13:14“What * šəmôt̲ yg̲yd̲mah–zzōt̲מַה־זֹּ֑את Exodus 13:14* is this?” You shall say to him: wəʾāmartā ʾēlāywוְאָמַרְתָּאֵלָיובְּחֹזֶקיָד With a strong hand bəḥōzeq yād̲ hôṣîʾānûה Adonai brought us out ʾăd̲ōnāy mimmiṣrayimמִבֵּיתעֲבָדִים from Egypt, from the mibbêt̲ ʿăb̲ād̲îm house of bondage. ” As for the one who wəšeʾênô yôd̲ēaʿ lišʾôlוְשֶׁאֵינ does not know enough ʾattâ pət̲aḥ lôאַתָּהפְּתַחל to ask, you should open the discussion for him, as scripture says: * Exod. 13:8“It is šenneʾĕmar * šəmôt̲ yg̲ḥbaʿăb̲ûr zehבַּעֲב֣וּרזֶ֗ה Exodus 13:8*שֶׁנֶּאֱמַר because of what Adonai ʿāśâ ʾăd̲ōnāy lî bəṣēt̲îעָשָׂ֤היְהוָה֙לִ֔יבְּצֵאתִ֖י did for me when I went mimmiṣrāyimמִמִּצְרָֽיִם out from Egypt. ” One might have thought yāk̲ôl mērōš ḥōd̲ešיָכ that [the commandment to discuss the exodus could be fulfilled at any time] from the first of the month [of Nisan, onward].",
+      "segmentIds": [
+        "research-feinstein-haggadah-ddp-eee72f169f5b",
+        "research-feinstein-haggadah-eos-6b00a975b43c"
+      ],
+      "sourceLocation": "PDF p. 12, segment 1 through PDF p. 13, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 12, segment 1 through PDF p. 13, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-ddp-eee72f169f5b",
+            "label": "PDF p. 12",
+            "pageNumber": 12,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 17341,
+            "normalizedEndOffset": 19035
+          },
+          {
+            "id": "research-feinstein-haggadah-eos-6b00a975b43c",
+            "label": "PDF p. 13",
+            "pageNumber": 13,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 19036,
+            "normalizedEndOffset": 20616
+          }
+        ]
+      },
+      "provenanceHash": "64ac6586f5090aa7783fe3f62ce0b7fecbdef95431fa71307434c3d98a132334",
+      "componentProvenanceHashes": [
+        "eee72f169f5b7a95160c55ce1e097b6d37cf60b49ae6f0ce1ba3edc5ef1cbfff",
+        "6b00a975b43cf942fca7acf2541711bfc3ae1fbd7bcd807b0a84d0d45ca07b74"
+      ],
+      "wordCount": 442,
+      "characterCount": 3276,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "discussion-prompt",
+      "beginnerContext": "Introduce the figures as inherited teaching types, not judgments about actual children or guests. Explain the historical language, avoid assigning labels around the table, and give a gentler discussion prompt.",
+      "rationale": "The two adjacent records preserve the traditional Four Children unit and its responses, stopping at a complete sentence before the source turns to a new scriptural exposition. Keeping the figures together is safer and more intelligible than extracting only the severe description of one child.",
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; identify this as a traditional teaching in their translation.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "adult-or-facilitated-mixed-age-use",
+        "harsh-language-context",
+        "nonlabeling-introduction-required",
+        "rendered-page-ocr-check"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-feinstein-ancestry-to-oppression",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "From ancestry to oppression",
+      "exactText": "מַגִּיד Discussing the Exodus 14מַגִּיד Discussing the Exodus 14מַגִּיד Discussing the Exodus 14 “ And Joshua said to wayyōmer yəhôšuaʿוַיֹּ֨אמֶריְה Joshua 24:2-4* all the people, ‘Thus ʾel–kāl–hāʿām kōh–ʾāmarאֶל־כָּל־הָעָ֗םכֹּֽה־אָמַ֣ר said Adonai, the God ʾăd̲ōnāy ʾĕlōhê yiśrāʾēlיְהוָה֮אֱ of Israel: Your an- bəʿēb̲er hannāhārבְּעֵ֣בֶרהַנָּהָ֗ריָשְׁב֤וּ cestors dwelled beyond yāšəb̲û ʾăb̲ôt̲êk̲emאֲבֽ the river from time mēʿôlām teraḥ ʾăb̲îאֲבִ֥יאַבְרָהָ֖םוַאֲבִ֣י immemorial --- Terah, ʾab̲rāhām waʾăb̲î nāḥôrנָח֑ father of Abraham and wayyaʿab̲d̲û ʾĕlōhîmאֲחֵרִֽים father of Nahor --- and ʾăḥērîm they worshipped other gods. I took your father Abra- wāʾeqqaḥ ʾet̲–ʾăb̲îk̲emוָ֠אֶקַּחאֶת־אֲבִיכֶ֤ם ham from the other ʾet̲–ʾab̲rāhām mēʿēb̲erאֶת־אַבְרָהָם֙מֵעֵ֣בֶר side of the river and led hannāhār wāʾôlēk̲ ʾôt̲ôהַנָּהָ֔רוָא him through the whole bək̲āl–ʾereṣ kənāʿan wrb̲בְּכָל־אֶ֣רֶץכְּנָ֑עַן land of Canaan. I mul- wāʾarbeh ʾet̲–zarʿô wāʾet-אֶת־זַרְע֔ aוָאַרְבֶּה֙ tiplied his descendents ten–lô ʾet̲–yiṣḥāqוָֽאֶתֶּן־ל֖ and gave him Isaac. I gave Isaac Jacob and wāʾettēn ləyiṣḥāqוָאֶתֵּ֣ןלְיִצְחָ֔קאֶֽת־יַעֲקֹ֖ב Esau. I gave Esau ʾet̲–yaʿăqōb̲ wəʾet̲–ʿēśāwוְאֶת־עֵשָׂ֑ווָאֶתֵּ֨ןלְעֵשָׂ֜ו Mount Seir to inherit, wāʾettēn ləʿēśāw ʾet̲–harאֶת־הַ֤רשֵׂעִיר֙לָרֶ֣שֶׁת and Jacob and his sons śēʿîr lārešet̲ ʾôt̲ôא went down to Egypt. ” wəyaʿăqōb̲ ûb̲ānāywמִצְרָֽיִם yārəd̲û miṣrāyim Blessed be the One who bārûk̲ šômēr hab̲ṭāḥāt̲ôבָּרוּ keeps His promise to ləyiśrāʾēlלְיִשְׂרָאֵל Israel; blessed be He. bārûk̲ hûʾבָּרוּ For the Holy One šehaqqād̲ôš bārûk̲ hûʾשֶׁהַקָּד blessed be He pre- ḥiššēb̲ ʾet̲ haqqēṣחִשֵּׁבאֶתהַקֵּץ meditated the end [of Israel's enslavement], as He said to our laʿăśôt̲ kəmâ šeʾāmarלַעֲשׂ ancestor Abraham in ləʾab̲rāhām ʾāb̲înû bib̲rît̲לְאַבְרָהָםאָבִינוּ the covenant between bên habbət̲ārîmבִּבְרִיתבֵּיןהַבְּתָרִים the pieces, aכתיב–וארב\n\nמַגִּיד Discussing the Exodus 15מַגִּיד Discussing the Exodus 15מַגִּיד Discussing the Exodus 15 as scripture relates: šenneʾĕmarשֶׁנֶּאֱמַר He said to Abraham, wayyōmer ləʾab̲rāmוַיֹּ֣אמֶרלְאַבְרָ֗םיָדֹ֨עַ Genesis 15:13-14* ‘Know with certainty yād̲ōaʿ tēd̲aʿ kî–g̲ēr yi-תֵּדַ֜עכִּי־גֵ֣ר׀יִהְיֶ֣ה that your descendents hyeh zarʿăk̲ā bəʾereṣ lōʾזַרְעֲ will be strangers in a lāhem waʿăb̲ād̲ûm wəʿin-וַעֲבָד֖וּםוְעִנּ֣וּאֹתָ֑ם land not their own, nû ʾōt̲ām ʾarbaʿ mēʾôt̲אַרְבַּ֥עמֵא֖ and they will serve its šānâ inhabitants, who will afflict them for four hundred years. But I will also judge wəg̲am ʾet̲–haggôy ʾăšerוְגַ֧םאֶת־הַגּ֛ the nation that they yaʿăb̲ōd̲û dān ʾānōk̲îיַעֲבֹ֖דוּדָּ֣ןאָנֹ֑כִי serve, and afterward wəʾaḥărê–k̲ēn yēṣəʾûוְאַחֲרֵי־כֵ֥ןיֵצְא֖וּבִּרְכֻ֥שׁ they will leave with birk̲uš gād̲ôlגָּדֽ great wealth. ” That which stood for wəhîʾ šeʿāməd̲âוְהִיאשֶׁעָמְדָה our ancestors applies to laʾăb̲ôt̲ênû wəlānûלַאֲב us as well.￿ For it was not only one šellōʾ ʾeḥād̲ bilb̲ad̲ ʿāmad̲שֶׁלֹּאאֶחָדבִּלְבַדעָמַד individual who stood up ʿālênû lək̲allôt̲ēnûעָלֵינוּלְכַלּ against us to destroy us. Rather, in every gen- ʾellāʾ šebbək̲ol–dôrאֶלָּאשֶׁבְּכׇל־דּ eration they stand up wād̲ôr ʿôməd̲îm ʿālênûוָד against us to destroy us, lək̲allôt̲ênûלְכַלּ but the Holy One wəhaqqād̲ôš bārûk̲ hûʾוְהַקָּד blessed be He redeems maṣṣîlēnû miyyād̲āmמַצִּילֵנוּמִיָּדָם us from their hands. Go forth and learn ṣēʾ ûləmad̲צֵאוּלְמַד what Laban the mah biqqēš lāb̲ānמַהבִּקֵּשׁלָבָןהָאֲרַמִּי Aramean sought to do hāʾărammî laʿăśôt̲לַעֲשׂ to Jacob, our ancestor. ləyaʿăqōb̲ ʾāb̲înû While Pharaoh only de- šepparʿōh lōʾ g̲āzar ʾellāʾשֶׁפַּרְעֹהלֹאגָזַראֶלָּא creed [death] for the ʿal hazzək̲ārîm wəlāb̲ānעַלהַזְּכָרִיםוְלָבָןבִּקֵּשׁ [Israelite] males, La- biqqēš laʿăqôr ʾet̲ hakkōlלַעֲק ban sought to uproot everything,\n\nמַגִּיד Discussing the Exodus 16מַגִּיד Discussing the Exodus 16מַגִּיד Discussing the Exodus 16 as scripture relates: * Deut. 26:5“ An šenneʾĕmar * dəb̲ārîm k̲whʾărammîאֲרַמִּי֙אֹבֵ֣ד Deuteronomy 26:5*שֶׁנֶּאֱמַר Aramean [Laban] sought ʾōb̲ēd̲ ʾāb̲î wayyēred̲אָבִ֔יוַיֵּ֣ רֶדמִצְרַ֔יְמָה to destroy my father miṣraymâ wayyāg̲or šāmוַיָּ֥ גׇרשָׁ֖םבִּמְתֵ֣ימְעָ֑ט [Jacob]. He [Jacob] went bimt̲ê məʿāṭ wayhî–šāmוַֽיְהִי־שָׁ֕םלְג֥ down to Egypt and ləg̲ôy gād̲ôl ʿāṣûm wārāb̲עָצ֥וּםוָרָֽב sojourned there, few in number, and there he became a great, mighty , and populous nation. ” “He went down to wayyēred̲ miṣraymâוַיֵּ֣ רֶדמִצְרַ֔יְמָה Egypt:” He was compelled by ʾānûs ʿal pî haddibbûrאָנוּסעַלפִּיהַדִּבּוּר the word [of God]. “ And sojourned there:” wayyāg̲or šāmוַיָּ֥ גׇרשָׁ֖ם This teaches that he did məlammēd̲ šellōʾ yārād̲מְלַמֵּדשֶׁלֹּאיָרָד not go down to settle yaʿăqōb̲ ʾāb̲înû ləhiš-יַעֲקֹבאָבִינוּלְהִשְׁתַּקֵּעַ in Egypt, but rather to taqqēaʿ bəmiṣrayim ʾellāʾבְּמִצְרַיִםאֶלָּאלָגוּר sojourn there, lāg̲ûr šāmשָׁם as scripture šenneʾĕmar * bərēšît̲ mzd̲wayyōmərûוַיֹּאמְר֣וּ Genesis 47:4*שֶׁנֶּאֱמַר relates:* Genesis 47:4“They said to ʾel–parʿōh lāg̲ûr bāʾāreṣאֶל־פַּרְעֹ֗הלָג֣וּרבָּאָרֶץ֮ Pharaoh, ‘We have come bānû kî–ʾên mirʿehבָּאנוּ֒כִּי־אֵ֣יןמִרְעֶ֗ה to sojourn in the land, laṣṣōn ʾăšer laʿăb̲ād̲êk̲āלַצֹּאן֙אֲשֶׁ֣רלַעֲבָדֶ֔י for there is no pasture kî–k̲āb̲ēd̲ hārāʿāb̲כִּֽי־כָבֵ֥דהָרָעָ֖בבְּאֶ֣רֶץ for the flocks of your bəʾereṣ kənāʿan wəʿat-כְּנָ֑עַןוְעַתָּ֛היֵֽשְׁבוּ־נָ֥א servants, for the famine tâ yēšəb̲û–nāʾ ʿăb̲ād̲êk̲āעֲבָדֶ֖י is severe in the land of bəʾereṣ gōšen Canaan. Now, therefore, let your servants dwell in the land of Goshen. ’ ”\n\nמַגִּיד Discussing the Exodus 17מַגִּיד Discussing the Exodus 17מַגִּיד Discussing the Exodus 17 “Few in number:” bimt̲ê məʿāṭבִּמְתֵ֣ימְעָ֑ט As kəmâ šenneʾĕmarבְּשִׁבְעִ֣ים Deuteronomy 10:22 *כְּמָהשֶׁנֶּאֱמַר scripture relates: * Deut. 10:22“Your * dəb̲ārîm yk̲b̲bəšib̲ʿîm nep̲eš yārəd̲ûנֶ֔פֶשׁיָרְד֥וּאֲבֹתֶ֖י ancestors went down ʾăb̲ōt̲êk̲ā miṣrāyəmâמִצְרָ֑יְמָהוְעַתָּ֗השָֽׂמְ to Egypt with seventy wəʿattâ śāmək̲ā ʾăd̲ō-יְהוָ֣האֱ people, and now Adonai nāy ʾĕlōhêk̲ā kək̲ôk̲əb̲êהַשָּׁמַ֖יִםלָרֹֽב your God has made you haššāmayim lārōb̲ as numerous as the stars in the heavens. ” “ And there he became a wayhî–šām ləg̲ôy gād̲ôlוַֽיְהִי־שָׁ֕םלְג֥ nation:” This teaches that the məlammēd̲ šehāyûמְלַמֵּדשֶׁהָיוּיִשְׂרָאֵל Israelites were distinct yiśrāʾēl məṣuyyānîmמְצֻיָּנִיםשָׁם there [in Egypt]. šām “Mighty:” ʿāṣûmעָצ֥וּם As kəmâ šenneʾĕmarוּבְנֵ֣י Exodus 1:7*כְּמָהשֶׁנֶּאֱמַר scripture relates: * Exodus 1:7“The * šəmôt̲ ʾzûb̲ənê yiśrāʾēl pārûיִשְׂרָאֵ֗לפָּר֧וּוַֽ יִּשְׁרְצ֛וּ Israelites were fruit- wayyišrəṣû wayyirbûוַיִּרְבּ֥וּוַיַּֽעַצְמ֖וּבִּמְאֹ֣ד ful and swarmed and wayyaʿaṣmû bimʾōd̲מְאֹ֑דוַתִּמָּלֵ֥אהָאָ֖רֶץ multiplied and became məʾōd̲ wattimmālēʾאֹתָֽם exceedingly mighty , and hāʾāreṣ ʾōt̲ām the land was filled with them. ” “ And populous:” wārāb̲וָרָֽב As scripture relates: * Ezekiel 16:7“I kəmâ šenneʾĕmarרְבָבָ֗ה Ezekiel 16:7*כְּמָהשֶׁנֶּאֱמַר have made you abun- * yəḥezqəʾēl ṭzzrəb̲āb̲â kəṣemaḥכְּצֶ֤מַחהַשָּׂדֶה֙נְתַתִּ֔י dant as the growth of haśśād̲eh nət̲attîk̲ wat-וַתִּרְבִּי֙וַֽתִּגְדְּלִ֔יוַתָּבֹ֖אִי the field, and you have tirbî wattig̲dəlî wattāb̲ōʾîבַּעֲדִ֣יעֲדָיִ֑יםשָׁדַ֤יִם become plentiful and baʿăd̲î ʿăd̲āyîm šād̲ayimנָכֹ֨נוּ֙וּשְׂעָרֵ֣ grown and became very nāk̲ōnû ûśəʿārēk̲ ṣim-עֵרֹ֥םוְעֶרְיָֽה beautiful: your breasts mēaḥ wəʾatt ʿērōm formed and your hair wəʿeryâ sprouted, yet you were naked and bare. ”\n\nמַגִּיד Discussing the Exodus 18מַגִּיד Discussing the Exodus 18מַגִּיד Discussing the Exodus 18 * Deut. 26:6“ And the Egyptians * dəb̲ārîm k̲wwwayyārēʿû ʾōt̲ānû ham-וַיָּרֵ֧עוּאֹתָ֛נוּהַמִּצְרִ֖ים Deuteronomy 26:6* treated us harshly [or: miṣrîm wayʿannûnûוַיְעַנּ֑וּנוּוַיִּתְּנ֥וּעָלֵ֖ינוּ vilified us] and afflicted wayyittənû ʿālênûעֲבֹדָ֥הקָשָֽׁה us, and they set hard ʿăb̲ōd̲â qāšâ labor upon us. ” “ And the Egyptians vili- wayyārēʿû ʾōt̲ānûוַיָּרֵ֧עוּאֹתָ֛נוּהַמִּצְרִ֖ים fied us:” hammiṣrîm As scripture kəmâ šenneʾĕmarהָ֥בָה Exodus 1:10*כְּמָהשֶׁנֶּאֱמַר relates:* Exodos 1:10[Pharaoh said,] * šəmôt̲ ʾyhāb̲â nit̲ḥakkəmâ lôנִֽתְחַכְּמָ֖הל֑ Come, let us deal pen–yirbeh wəhāyâוְהָיָ֞הכִּֽי־תִקְרֶ֤אנָה wisely with them lest kî–t̲iqrenâ milḥāmâמִלְחָמָה֙וְנ they multiply , so that wənôsap̲ gam–hûʾעַל־שֹׂ֣נְאֵ֔ינוּוְנִלְחַם־בָּ֖נוּ when war comes they ʿal–śōnəʾênû wənil-וְעָלָ֥המִן־הָאָֽרֶץ join our enemies and ḥam–bānû wəʿālâ fight against us and go min–hāʾāreṣ up out of the land. ” “ And afflicted us:” wayʿannûnûוַיְעַנּ֑וּנוּ As kəmâ šenneʾĕmarוַיָּשִׂ֤ימוּ Exodus 1:11*כְּמָהשֶׁנֶּאֱמַר scripture relates: * Exodus 1:11“They * šəmôt̲ ʾywayyāśîmû ʿālāyw śārêעָלָיו֙שָׂרֵ֣ימִסִּ֔יםלְמַ֥עַן placed taskmasters over missîm ləmaʿan ʿan-עַנֹּת֖ them in order to af- nōt̲ô bəsib̲lōt̲ām wayy-עָרֵ֤ימִסְכְּנ flict them with their ib̲en ʿārê miskənôt̲אֶת־פִּתֹ֖םוְאֶת־רַעַמְסֵֽס burdens, and they ləp̲arʿōh ʾet̲–pit̲ōm built storage cities wəʾet̲–raʿamsēs for Pharaoh, [called] Pithom and Ramses. ” “ And they set hard wayyittənû ʿālênûוַיִּתְּנ֥וּעָלֵ֖ינוּעֲבֹדָ֥ה labor upon us:” ʿăb̲ōd̲â qāšâקָשָֽׁה As scripture kəmâ šenneʾĕmarוַיַּעֲבִ֧דוּ Exodus 1:13*כְּמָהשֶׁנֶּאֱמַר relates:* Exodus 1:13“The Egyptians * šəmôt̲ ʾyg̲wayyaʿăb̲id̲û miṣrayimמִצְרַ֛יִםאֶת־בְּנֵ֥ייִשְׂרָאֵ֖ל worked the Israelites ʾet̲–bənê yiśrāʾēl bəp̲ārek̲בְּפָֽרֶ severely . ”",
+      "segmentIds": [
+        "research-feinstein-haggadah-gwl-3a59455ab1b8",
+        "research-feinstein-haggadah-icj-c9eb79111eff",
+        "research-feinstein-haggadah-jr8-36d28562553c",
+        "research-feinstein-haggadah-l1w-434bcb321cac",
+        "research-feinstein-haggadah-mhm-928cfd72587e"
+      ],
+      "sourceLocation": "PDF p. 15, segment 1 through PDF p. 19, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 15, segment 1 through PDF p. 19, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-gwl-3a59455ab1b8",
+            "label": "PDF p. 15",
+            "pageNumber": 15,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 21909,
+            "normalizedEndOffset": 23778
+          },
+          {
+            "id": "research-feinstein-haggadah-icj-c9eb79111eff",
+            "label": "PDF p. 16",
+            "pageNumber": 16,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 23779,
+            "normalizedEndOffset": 25603
+          },
+          {
+            "id": "research-feinstein-haggadah-jr8-36d28562553c",
+            "label": "PDF p. 17",
+            "pageNumber": 17,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 25604,
+            "normalizedEndOffset": 27283
+          },
+          {
+            "id": "research-feinstein-haggadah-l1w-434bcb321cac",
+            "label": "PDF p. 18",
+            "pageNumber": 18,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 27284,
+            "normalizedEndOffset": 29145
+          },
+          {
+            "id": "research-feinstein-haggadah-mhm-928cfd72587e",
+            "label": "PDF p. 19",
+            "pageNumber": 19,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 29146,
+            "normalizedEndOffset": 31004
+          }
+        ]
+      },
+      "provenanceHash": "367e59599e7e362c57e02104b70f495231c4ec0ff7e919548823ce1af8a3513e",
+      "componentProvenanceHashes": [
+        "3a59455ab1b8210d71d0b5b752a863d769c0795b34f826f238bfded81c0bc6a3",
+        "c9eb79111eff35b4d8a1ed3fdd92c20bcea0386a2ace9882bc1fc35a8e9935ea",
+        "36d28562553cac9d946cea75eb246ecb2344c35418999d5c35de61c15728244f",
+        "434bcb321cac54c3199176e229229ea6cb070f57dff31980ed40d631ddff415d",
+        "928cfd72587e843db8af130fbdff3701f21652f94db8b410158074933606c88d"
+      ],
+      "wordCount": 1065,
+      "characterCount": 9099,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "State the narrative arc before the detailed verses: the family went to Egypt, became a people, and was enslaved and harmed. Explain that the people's cry and liberation continue in the following part of Maggid. Introduce each scriptural quotation with one sentence of plain-language meaning.",
+      "rationale": "Five source-order segments preserve the traditional verse-by-verse movement from ancestry through oppression and stop after a complete scriptural sentence. The later page records were removed because their extracted text ends mid-exposition.",
+      "creditNotes": "Credit the Feinsteins and preserve CC BY-SA 4.0 and any embedded source note.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "embedded-credit-check",
+        "plain-language-narrative-bridges-required",
+        "rendered-page-ocr-check"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-feinstein-plagues-and-compassion",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Plagues with diminished joy",
+      "exactText": "מַגִּיד Discussing the Exodus 21מַגִּיד Discussing the Exodus 21מַגִּיד Discussing the Exodus 21 as scripture šenneʾĕmar * šəmôt̲ yb̲yb̲wəʿāb̲artîוְעָבַרְתִּ֣י Exodus 12:12*שֶׁנֶּאֱמַר relates:* Exodus 12:12[God said,] “I b̲əʾereṣ–miṣrayim ballay-בְאֶֽרֶץ־מִצְרַיִם֮בַּלַּ֣יְלָה will pass through the lâ hazzeh wəhikkêt̲îהַזֶּה֒וְהִכֵּיתִ֤יכׇל־בְּכ land of Egypt tonight, k̲ol–bək̲ôr bəʾereṣ mis-בְּאֶ֣רֶץמִצְרַ֔יִם and I will smite every ̣rayimמֵאָדָ֖םוְעַד־בְּהֵמָ֑ה firstborn in the land mēʾād̲ām wəʿad̲–bəhēmâוּבְכׇל־אֱ of Egypt, from man to ûb̲ək̲ol–ʾĕlōhê miṣrayimאֶֽעֱשֶׂ֥השְׁפָטִ֖יםאֲנִ֥י beast. And I will ex- ʾeʿĕśeh šəp̲āṭîm ʾănîיְהוָֽה ecute judgment against ʾăd̲ōnāy all the gods of Egypt. I am Adonai. ” [This verse can be wəʿāb̲artîוְעָבַרְתִּ֣י explained as follows:] “I b̲əʾereṣ–miṣrayimבְאֶֽרֶץ־מִצְרַיִם֮ will pass through the land of Egypt:” I, and not an angel. ʾănî wəlōʾ malʾāk̲אֲנִיוְלֹאמַלְאָ and I will smite every wəhikkêt̲î k̲ol–bək̲ôrוְהִכֵּיתִ֤יכׇל־בְּכ firstborn:” I, and not a fiery angel. ʾănî wəlōʾ śārāp̲אֲנִיוְלֹאשָׂרָף And I will execute ûb̲ək̲ol–ʾĕlōhê miṣrayimוּבְכׇל־אֱ judgment against all the ʾeʿĕśeh šəp̲āṭîmאֶֽעֱשֶׂ֥השְׁפָטִ֖ים gods of Egypt:” I, and not the ʾanî wəlōʾ haššālîaḥאַנִיוְלֹאהַשָּׁלִיחַ messenger. “I am Adonai:” ʾănî ʾăd̲ōnāyאֲנִ֥ייְהוָֽה I am He, and no other. ʾănî hûʾ wəlōʾ ʾaḥērאֲנִיהוּאוְלֹאאַחֵר With a strong hand:” bəyād̲ ḥăzāqâבְּיָ֤דחֲזָקָה֙ This refers to the zû haddeb̲erזוּהַדֶּבֶר disease of livestock,\n\nמַגִּיד Discussing the Exodus 22מַגִּיד Discussing the Exodus 22מַגִּיד Discussing the Exodus 22 as kəmâ šenneʾĕmarהִנֵּ֨ה Exodus 9:3*כְּמָהשֶׁנֶּאֱמַר scripture relates: * Exodus 9:3[Moses * šəmôt̲ ṭg̲hinnēh yad̲–ʾăd̲ōnāyיַד־יְהוָ֜הה said to Pharaoh,] “Then hôyâ bəmiqnək̲ā ʾăšerאֲשֶׁ֣רבַּשָּׂדֶ֔הבַּסּוּסִ֤ים the hand of Adonai baśśād̲eh bassûsîmבַּֽחֲמֹרִים֙בַּגְּמַלִּ֔ים will strike your live- baḥămōrîm baggə-בַּבָּקָ֖רוּבַצֹּ֑אןדֶּ֖בֶר stock in the field—the mallîm babbāqārכָּבֵ֥דמְאֹֽד horses, the donkeys, the ûb̲aṣṣōn deb̲er kāb̲ēd̲ camels, the cattle, and məʾōd̲ the sheep—with a very severe disease. ” “ And an outstretched ûb̲izrōaʿ nəṭûyâ zûוּבִזְרֹ֣עַנְטוּיָ֔הזוּהַחֶרֶב arm:” This refers to the haḥereb̲ sword, as scripture kəmâ šenneʾĕmarוְחַרְבּ֤ 1 Chronicles 21:16*כְּמָהשֶׁנֶּאֱמַר relates:* I Chronicles 21:16[When God was * dib̲rê hayyāmîm ʾ k̲ṭz wəḥarbô šəlûp̲â bəyād̲ôשְׁלוּפָה֙בְּיָד֔ about to send a plague nəṭûyâ ʿal–yərûšālāimעַל־יְרוּשָׁלִָ֑ם against Jerusalem, an angel stood between earth and heaven,] “and his sword was un- sheathed in his hand, stretched out against Jerusalem. ” “with great ûb̲əmōrāʾ gād̲ōlוּבְמֹרָ֖אגָּדֹ֑ל fearsomeness:” This refers to the zû gillûy šək̲înâזוּגִּלּוּישְׁכִינָה revelation of the divine presence,\n\nמַגִּיד Discussing the Exodus 23מַגִּיד Discussing the Exodus 23מַגִּיד Discussing the Exodus 23 as kəmâ šenneʾĕmar * dəb̲ārîm d̲ld̲ʾôא֣ Deuteronomy 4:34*כְּמָהשֶׁנֶּאֱמַר scripture relates: * Deut. 4:34“Has hănissâ ʾĕlōhîm lāb̲ôʾהֲנִסָּ֣האֱ any god endeavored to lāqaḥat̲ lô g̲ôy miqqereb̲לָקַ֨חַתל֣ come and take a na- gôy bəmassōt̲ bəʾōt̲ōt̲גּ tion for himself from ûb̲əmôp̲ət̲îm ûb̲əmilḥā-וּבְמ within the midst of mâ ûb̲əyād̲ ḥăzāqâוּבְיָ֤דחֲזָקָה֙וּבִזְר֣ another nation, with ûb̲izrôaʿ nəṭûyâ ûb̲ə-נְטוּיָ֔הוּבְמ trials, with signs and môrāʾîm gəd̲ōlîm kək̲ōlגְּדֹלִ֑יםכְּ֠כֹלאֲשֶׁר־עָשָׂ֨ה wonders, with war, with ʾăšer–ʿāśâ lāk̲em ʾăd̲ōnāyלָכֶ֜םיְהוָ֧האֱ a strong hand and an ʾĕlōhêk̲em bəmiṣrayimבְּמִצְרַ֖יִםלְעֵינֶֽי outstretched arm, and ləʿênêk̲ā with displays of great fearsomeness, like all that Adonai your God did for you in Egypt before your eyes?” “ And with signs:” ûb̲əʾōt̲ôt̲וּבְאֹת֖ This refers to [Moses’] zeh hammaṭṭehזֶההַמַּטֶּה staff, as scrip- kəmâ šenneʾĕmarכְּמָהשֶׁנֶּאֱמַר ture relates: * Exodus 4:17[God said * šəmôt̲ d̲yzwəʾet̲–hammaṭṭehוְאֶת־הַמַּטֶּ֥ההַזֶּ֖התִּקַּ֣ח Exodus 4:17* to Moses,] “Take this hazzeh tiqqaḥ bəyād̲ek̲āבְּיָדֶ֑ staff, with which you ʾăšer taʿăśeh–bôאֶת־הָאֹתֹֽת will perform the signs. ” ʾet̲–hāʾōt̲ōt̲ “ And wonders:” This ûb̲əmōp̲ət̲îm zehוּבְמֹפְתִֽיםזֶההַדָּם refers to the [plague of] haddām blood, xi At each word mentioning a plague, use a finger to remove one drop of wine from your cup. as scripture relates: * Joel 3:3“I kəmâ šenneʾĕmarוְנָֽתַתִּי֙ Joel 3:3*כְּמָהשֶׁנֶּאֱמַר will put wonders * yôʾēl g̲g̲wənāt̲attî môp̲ət̲îmמֽ in the heavens and baššāmayim ûb̲āʾāreṣוּבָאָ֑רֶץדָּ֣םוָאֵ֔שׁ the earth:blood, fire, dām wāʾēšוְתִֽימֲר֖ and pillars of smoke. ” wət̲îmărôt̲ ʿāšān Another interpretation: dāb̲ār ʾaḥērדָּבָראַחֵר With a strong hand:” bəyād̲ ḥăzāqâ šətayimבְּיָדחֲזָקָהשְׁתַּיִם Two [plagues]. xiOH 473\n\nמַגִּיד Discussing the Exodus 24מַגִּיד Discussing the Exodus 24מַגִּיד Discussing the Exodus 24 “ And an outstretched ûb̲izrōaʿ nəṭûyâ šətayimוּבִזְרֹעַנְטוּיָהשְׁתַּיִם arm:” Two [plagues]. “With displays of ûb̲əmôrāʾ gād̲ōl šətayimוּבְמ great fearsomeness:” Two [plagues]. “ And with signs:” Two ûb̲əʾōt̲ôt̲ šətayimוּבְאֹת [plagues]. “ And wonders:” Two ûb̲əmōp̲ət̲îm šətayimוּבְמֹפְתִיםשְׁתַּיִם [plagues]. These are the ten ʾēllû ʿeśer makkôt̲ še-אֵלּוּעֶשֶׂרמַכּ plagues that the Holy hēb̲îʾ haqqād̲ôš bārûk̲שֶׁהֵבִיאהַקָּד One blessed be He hûʾ ʿal hammiṣriyyimהוּאעַלהַמִּצְרִיִּם brought against the bəmiṣrayimבְּמִצְרַיִם Egyptians in Egypt. And these are they: wəʾēllû hēnוְאֵלּוּהֵן xii At each word mentioning a plague, use a finger to remove one drop of wine from your cup. Blood, dāmדָּם frogs, ṣəp̲ardēaʿצְפַרְדֵּעַ lice, kinnîmכִּנִּים wild beasts, ʿārôb̲עָר disease of livestock, deb̲erדֶּבֶר boils, šəḥînשְׁחִין hail, bārād̲בָּרָד locusts, ʾarbehאַרְבֶּה darkness, ḥōšek̲חֹשֶׁ the death of the makkôt̲ bək̲ôrôt̲מַכּ firstborn. Rabbi Judah had an rabbî yəhûd̲â hāyâרַבִּייְהוּדָההָיָהנ acronym for them: nôt̲ēn bāhem simmānîmבָּהֶםסִמָּנִים xiii At each word mentioning a plague, use a finger to remove one drop of wine from your cup. DeTsaKh dəṣak̲əדְּצַ״ ADaSh ʿăd̲ašעֲדַ״שׁ BeAChaV . bəʾaaḥb̲בְּאַחַ״ב xiiOH 473 xiiiOH 473",
+      "segmentIds": [
+        "research-feinstein-haggadah-qoe-365aef2c0e50",
+        "research-feinstein-haggadah-rte-328d5a77e167",
+        "research-feinstein-haggadah-ssl-734e330b01b1",
+        "research-feinstein-haggadah-u8x-d7f3e727b60b"
+      ],
+      "sourceLocation": "PDF p. 22, segment 1 through PDF p. 25, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 22, segment 1 through PDF p. 25, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-qoe-365aef2c0e50",
+            "label": "PDF p. 22",
+            "pageNumber": 22,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 34574,
+            "normalizedEndOffset": 36049
+          },
+          {
+            "id": "research-feinstein-haggadah-rte-328d5a77e167",
+            "label": "PDF p. 23",
+            "pageNumber": 23,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 36050,
+            "normalizedEndOffset": 37316
+          },
+          {
+            "id": "research-feinstein-haggadah-ssl-734e330b01b1",
+            "label": "PDF p. 24",
+            "pageNumber": 24,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 37317,
+            "normalizedEndOffset": 39200
+          },
+          {
+            "id": "research-feinstein-haggadah-u8x-d7f3e727b60b",
+            "label": "PDF p. 25",
+            "pageNumber": 25,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 39201,
+            "normalizedEndOffset": 40544
+          }
+        ]
+      },
+      "provenanceHash": "e42c3f6eb0dd29f0f18e0f74436b7952a7fc2e300fb2a019e92be67011f3c2ce",
+      "componentProvenanceHashes": [
+        "365aef2c0e50795d8785a87a3c61de7f152586a09039503a71ee3f1f8f21f5ea",
+        "328d5a77e167af98fc00c7f0c5353bc6ad543d323e331f4e2b8c1b59191cd6bb",
+        "734e330b01b186c41f8cfc0faeac1c90bdf1a21847dc2824afc1cd8b5de65607",
+        "d7f3e727b60b77b617a71042962b7c09824941ccade60ad3a0d1e5d715f2dede"
+      ],
+      "wordCount": 739,
+      "characterCount": 5973,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Explain that the plagues are catastrophes within the liberation story, name the cup-diminishing custom, and say explicitly that the table does not celebrate civilian suffering. Use wine or grape juice and give one action cue before the list.",
+      "rationale": "The adjacent passages retain the narrative and ritual treatment of the plagues while stopping before the most elaborate numerical multiplication, making a more usable adult or mixed-age unit.",
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein and indicate any abridgment of the traditional plague exposition.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "age-appropriate-harm-context",
+        "cup-diminishing-action-cue",
+        "nontriumphalist-plague-framing",
+        "rendered-page-ocr-check",
+        "wine-or-grape-juice-explicit"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-feinstein-dayenu-symbols-and-praise",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Gratitude, symbols, and the turn to praise",
+      "exactText": "מַגִּיד Discussing the Exodus 28מַגִּיד Discussing the Exodus 28מַגִּיד Discussing the Exodus 28 If He had killed their ʾillû hārag̲ bək̲ôrêhemאִלּוּהָרַגבְּכ firstborn, but had not given us wəlōʾ nāt̲ān lānû ʾet̲וְלֹאנָתָןלָנוּאֶתמָמ their wealth, māmônām it would have been dayyēnûדַּיֵּנוּ enough for us! If He had given us their ʾillû nāt̲ān lānû ʾet̲אִלּוּנָתָןלָנוּאֶתמָמ wealth, māmônām but had not split the wəlōʾ qāraʿ lānû ʾet̲וְלֹאקָרַעלָנוּאֶתהַיָּם sea for us, hayyām it would have been dayyēnûדַּיֵּנוּ enough for us! If He had split the sea ʾillû qāraʿ lānû ʾet̲אִלּוּקָרַעלָנוּאֶתהַיָּם for us, hayyām but had not brought us wəlōʾ heʿĕb̲îrānû b̲ət̲ôk̲ôוְלֹאהֶעֱבִירָנוּבְת through it on dry land, beḥārāb̲âבֶּחָרָבָה it would have been dayyēnûדַּיֵּנוּ enough for us! If He had brought us ʾillû heʿĕb̲îrānû b̲ət̲ôk̲ôאִלּוּהֶעֱבִירָנוּבְת through it on dry land, beḥārāb̲âבֶּחָרָבָה but had not drowned wəlōʾ šiqqāʿ ṣārênûוְלֹאשִׁקָּעצָרֵינוּבְּת our oppressors within bət̲ôk̲ô it, it would have been dayyēnûדַּיֵּנוּ enough for us! If He had drowned our ʾillû šiqqāʿ ṣārênûאִלּוּשִׁקָּעצָרֵינוּבְּת oppressors within it, bət̲ôk̲ô but had not satisfied wəlōʾ sippēq ṣorkēnûוְלֹאסִפֵּקצׇרְכֵּנוּ our needs in the wilder- bammid̲bār ʾarbāʿîmבַּמִּדְבָּראַרְבָּעִיםשָׁנָה ness for forty years, šānâ it would have been dayyēnûדַּיֵּנוּ enough for us! If He had satisfied our ʾillû sippēq ṣorkēnûאִלּוּסִפֵּקצׇרְכֵּנוּ needs in the wilderness bammid̲bār ʾarbāʿîmבַּמִּדְבָּראַרְבָּעִיםשָׁנָה for forty years, šānâ but had not fed us the wəlōʾ heʾĕk̲îlānû ʾet̲וְלֹאהֶאֱכִילָנוּאֶתהַמָּן manna, hammān\n\nמַגִּיד Discussing the Exodus 29מַגִּיד Discussing the Exodus 29מַגִּיד Discussing the Exodus 29 it would have been dayyēnûדַּיֵּנוּ enough for us! If He had fed us the ʾillû heʾĕk̲îlānû ʾet̲אִלּוּהֶאֱכִילָנוּאֶתהַמָּן manna, hammān but had not given us wəlōʾ nāt̲ān lānû ʾet̲וְלֹאנָתָןלָנוּאֶתהַשַּׁבָּת the Sabbath, haššabbāt̲ it would have been dayyēnûדַּיֵּנוּ enough for us! If He had given us the ʾillû nāt̲ān lānû ʾet̲אִלּוּנָתָןלָנוּאֶתהַשַּׁבָּת Sabbath, haššabbāt̲ but had not brought us wəlōʾ qērəb̲ānû lip̲nêוְלֹאקֵרְבָנוּלִפְנֵיהַר before Mount Sinai, har sînāyסִינָי it would have been dayyēnûדַּיֵּנוּ enough for us! If He had brought us ʾillû qērəb̲ānû lip̲nê harאִלּוּקֵרְבָנוּלִפְנֵיהַר before Mount Sinai, sînāyסִינָי but had not given us wəlōʾ nāt̲ān lānû ʾet̲וְלֹאנָתָןלָנוּאֶת the Torah, hattôrâהַתּ it would have been dayyēnûדַּיֵּנוּ enough for us! If He had given us the ʾillû nāt̲ān lānû ʾet̲אִלּוּנָתָןלָנוּאֶת Torah, hattôrâהַתּ but had not brought us wəlōʾ hik̲nisānû ləʾereṣוְלֹאהִכְנִסָנוּלְאֶרֶץ into the land of Israel, yiśrāʾēlיִשְׂרָאֵל it would have been dayyēnûדַּיֵּנוּ enough for us! If He had brought us ʾillû hik̲nisānû ləʾereṣאִלּוּהִכְנִסָנוּלְאֶרֶץ into the land of Israel, yiśrāʾēlיִשְׂרָאֵל but had not built the wəlōʾ b̲ānâ lānû ʾet̲ bêt̲וְלֹאבָנָהלָנוּאֶתבֶּית temple for us, habbəḥîrâהַבְּחִירָה it would have been dayyēnûדַּיֵּנוּ enough for us! What abundant, mani- ʿal ʾaḥat̲ kam-עַלאַחַתכַּמָּהוְכַמָּה fold goodness the Om- mâ wək̲ammâ ṭôb̲âט nipresent has shown k̲əp̲ûlâ ûmək̲uppelet̲לַמָּק us! lammāqôm ʿālênû\n\nמַגִּיד Discussing the Exodus 30מַגִּיד Discussing the Exodus 30מַגִּיד Discussing the Exodus 30 He brought us out from šehôṣîʾānûשֶׁה Egypt, mimmiṣrayim and executed judgments wəʿāśâ b̲āhem šəp̲āṭîmוְעָשָׂהבָהֶםשְׁפָטִים against [the Egyptians], and acted against their wəʿāśâ bēlōhêhemוְעָשָׂהבֵּא gods, and killed their wəhārag̲ bək̲ôrêhemוְהָרַגבְּכ firstborn, and gave us their wənāt̲ān lānû ʾet̲וְנָתָןלָנוּאֶתמָמ wealth, māmônām and split the sea for us, wəqāraʿ lānû ʾet̲ hayyāmוְקָרַעלָנוּאֶתהַיָּם and brought us through wəheʿĕb̲îrānû b̲ət̲ôk̲ôוְהֶעֱבִירָנוּבְת it on dry land, beḥārāb̲âבֶּחָרָבָה and drowned our ene- wəšiqqāʿ ṣārênû bət̲ôk̲ôוְשִׁקָּעצָרֵינוּבְּת mies within it, and satisfied our needs wəsippēq ṣorkēnû bam-וְסִפֵּקצׇרְכֵּנוּבַּמִּדְבָּר in the desert for forty mid̲bār ʾarbāʿîm šānâאַרְבָּעִיםשָׁנָה years, and fed us the manna, wəheʾĕk̲îlānû ʾet̲וְהֶאֱכִילָנוּאֶתהַמָּן hammān and gave us the wənāt̲ān lānû ʾet̲וְנָתָןלָנוּאֶתהַשַּׁבָּת Sabbath, haššabbāt̲ and brought us before wəqērəb̲ānû lip̲nê harוְקֵרְבָנוּלִפְנֵיהַרסִינָי Mount Sinai, sînāy and gave us the Torah, wənāt̲ān lānû ʾet̲וְנָתָןלָנוּאֶתהַתּ hattôrâ and brought us into the wəhik̲nisānû ləʾereṣוְהִכְנִסָנוּלְאֶרֶץיִשְׂרָאֵל land of Israel, yiśrāʾēl and built the temple for ûb̲ānâ lānû ʾet̲ bêt̲וּבָנָהלָנוּאֶתבֶּית us to atone for all our habbəḥîrâ lək̲appēr ʿalהַבְּחִירָהלְכַפֵּרעַלכׇּל transgressions. kol ʿwōnôt̲ênûעוֹנ Rabban Gamliel would rabbān gamlîʾēl hāyâרַבָּןגַּמְלִיאֵלהָיָה say: ʾômērא Anyone who does not kol šellōʾ ʾāmar šəlōšâכׇּלשֶׁלֹּאאָמַרשְׁ mention these three d̲əb̲ārîm ʾēllû bappesaḥדְבָרִיםאֵלּוּבַּפֶּסַחלֹא things on Passover does lōʾ yāṣāʾ yəd̲ê ḥôb̲āt̲ôיָצָאיְדֵיח not fulfill his obligation,\n\nמַגִּיד Discussing the Exodus 31מַגִּיד Discussing the Exodus 31מַגִּיד Discussing the Exodus 31 and these are they: wəʾēllû hēnוְאֵלּוּהֵן the Passover offering, pesaḥפֶּסַח the matzah, maṣṣâמַצָּה and the bitter herbs. ûmārûrוּמָרוּר xiv Do not raise or point to the shank bone. The Passover offer- pesaḥ šehāyû ʾăb̲ôt̲ênûפֶּסַחשֶׁהָיוּאֲב ing that our ancestors ʾôk̲əlîm bazzəmanא would eat at the time šebbêt̲ hammiqdāšהַמִּקְדָּשׁקַיָּם that temple stood, qayyām what does it represent? ʿal šûm mâעַלשׁוּםמָה It recalls how the Holy ʿal šûm šeppāsaḥעַלשׁוּםשֶׁפָּסַחהַקָּד One Blessed Be He haqqād̲ôš bārûk̲ hûʾבָּרוּ passed over the houses ʿal battê ʾăb̲ôt̲ênûאֲב of our ancestors in bəmiṣrayim Egypt, as šenneʾĕmarוַאֲמַרְתֶּ֡ם Exodus 12:27*שֶׁנֶּאֱמַר scripture relates: * Exodus 12:27“You * šəmôt̲ yb̲k̲zwaʾămartem ze-זֶֽבַח־פֶּ֨סַחה֜וּאלַֽיהוָ֗ה shall say , ‘This is a b̲aḥ–pesaḥ hûʾ lad̲ō-אֲשֶׁ֣רפָּ֠סַחעַל־בָּתֵּ֤י Passover sacrifice to nāy ʾăšer pāsaḥבְנֵֽי־יִשְׂרָאֵל֙בְּמִצְרַ֔יִם Adonai, who passed ʿal–bāttê b̲ənê–yiśrāʾēlבְּ׆ׇגְפּ֥ over the houses of the bəmiṣrayimוְאֶת־בָּתֵּ֣ינוּהִצִּ֑ילוַיִּקֹּ֥ד Israelites in Egypt when bənog̲pô ʾet̲–miṣrayimהָעָ֖םוַיִּֽשְׁתַּחֲוּֽוּ he smote the Egyptians, wəʾet̲–bāttênû hiṣṣîl and saved our houses. ’ wayyiqqōd̲ hāʿām And the people bowed wayyištaḥăwwû low. ” xv Raise the matzot. The matzah that we eat, maṣṣâ zû šeʾānû ʾôk̲əlîmמַצָּהזוּשֶׁאָנוּא what does it represent? ʿal šûm mâעַלשׁוּםמָה xivSA OH 473 xvSA OH 473\n\nמַגִּיד Discussing the Exodus 32מַגִּיד Discussing the Exodus 32מַגִּיד Discussing the Exodus 32 It recalls that our an- ʿal šûm šellōʾ hispîqעַלשׁוּםשֶׁלֹּאהִסְפִּיק cestors' dough did not bəṣēqām šel ʾăb̲ôt̲ênûבְּצֵקָםשֶׁלאֲב have time to rise before ləhaḥămîṣ ʿad̲ šennig̲lâלְהַחֲמִיץעַדשֶׁנִּגְלָה Sovereign of Sovereigns, ʿălêhem melek̲ malk̲êעֲלֵיהֶםמֶלֶ the Holy One blessed hamməlāk̲îm haqqād̲ôšהַמְּלָכִיםהַקָּד be He, was revealed bārûk̲ hûʾ ûg̲əʾālāmהוּאוּגְאָלָם to them and redeemed them. As šenneʾĕmar * šəmôt̲ yb̲lṭwayyōp̲ûוַיֹּאפ֨וּ Exodus 12:39*שֶׁנֶּאֱמַר scripture relates: * Exodus 12:39“They ʾet̲–habbāṣēq ʾăšer hôṣîʾûאֶת־הַבָּצֵ֜קאֲשֶׁ֨ר baked the dough that mimmiṣrayim ʿug̲ōt̲ה they brought out of maṣṣôt̲ kî lōʾ ḥāmēṣמַצּ֖ Egypt into loaves of kî–g̲ōrəšû mimmiṣrayimחָמֵ֑ץכִּֽי־גֹרְשׁ֣וּמִמִּצְרַ֗יִם matzah because it did wəlōʾ yāk̲əlû ləhit̲mah-וְלֹ֤איָֽכְלוּ֙לְהִתְמַהְמֵ֔הַּ not rise, since they mēah wəg̲am–ṣēd̲âוְגַם־צֵדָ֖הלֹא־עָשׂ֥וּ were thrown out of lōʾ–ʿāśû lāhemלָהֶֽם Egypt and were not able to wait, and they had not prepared provisions for themselves. ” xvi Lower the matzot. xvii Raise the maror. The bitter herbs that mārûr zeh šeʾānûמָרוּרזֶהשֶׁאָנוּא we eat, what do they ʾôk̲əlîm ʿal šûm mâעַלשׁוּםמָה represent? They recall how the ʿal šûm šemmārərûעַלשׁוּםשֶׁמָּרְרוּ Egyptians embittered hammiṣriyyim ʾet̲ ḥayyêהַמִּצְרִיִּםאֶתחַיֵּי the lives of our an- ʾăb̲ôt̲ênû bəmiṣrayimאֲב cestors in Egypt, xviSA OH 473 xviiSA OH 473\n\nמַגִּיד Discussing the Exodus 33מַגִּיד Discussing the Exodus 33מַגִּיד Discussing the Exodus 33 as scripture šenneʾĕmar * šəmôt̲ ʾyd̲waymārərûוַיְמָרְר֨וּ Exodus 1:14*שֶׁנֶּאֱמַר relates:* Exodus 1:14“The Egyptians ʾet̲–ḥayyêhem baʿăb̲ōd̲âאֶת־חַיֵּיהֶ֜םבַּעֲבֹדָ֣ה embittered their lives qāšâ bəḥōmer ûb̲ilb̲ēnîmקָשָׁ֗הבְּחֹ֨מֶר֙וּבִלְבֵנִ֔ים with hard labor in mor- ûb̲ək̲ol–ʿăb̲ōd̲â baśśād̲ehוּבְכׇל־עֲבֹדָ֖הבַּשָּׂדֶ֑ה tar and bricks, and with ʾēt̲ kāl–ʿăb̲ōd̲āt̲āmאֵ֚תכָּל־עֲבֹ֣דָתָ֔ם all sorts of labor in the ʾăšer–ʿāb̲əd̲û b̲āhemאֲשֶׁר־עָבְד֥וּבָהֶ֖ם field. All the labor that bəp̲ārek̲בְּפָֽרֶ they set upon them was brutal. ” xviii Lower the maror. In every generation one bək̲ol dôr wād̲ôr ḥayyāb̲בְּכׇלדּ must view oneself as ʾād̲ām lirʾôt̲ ʾet̲ ʿaṣ-אָדָםלִרְא if one had personally mô kəʾillû hûʾ yāṣāʾעַצְמ gone out from Egypt, mimmiṣrayimמִמִּצְרַיִם as scrip- šenneʾĕmar * šəmôt̲ yg̲ḥwəhiggad̲tāוְהִגַּדְתָּ֣לְבִנְ Exodus 13:8*שֶׁנֶּאֱמַר ture instructs: * Exodus 13:8“ And you ləb̲ink̲ā bayyôm hahûʾבַּיּ֥ shall say to your child lēmōr baʿăb̲ûr zehבַּעֲב֣וּרזֶ֗העָשָׂ֤היְהוָה֙ on that day , ‘This is ʿāśâ ʾăd̲ōnāy lî bəṣēt̲îלִ֔יבְּצֵאתִ֖ימִמִּצְרָֽיִם because of what Adonai mimmiṣrāyim did for me when I went out from Egypt. ’ ” It was not only our lōʾ ʾet̲ ʾăb̲ôt̲ênû bilb̲ad̲לֹאאֶתאֲב ancestors that the Holy gāʾal haqqād̲ôš bārûk̲גָּאַלהַקָּד One blessed be He hûʾהוּא redeemed, but even we were ʾellāʾ ʾap̲ ʾôt̲ānû gāʾalאֶלָּאאַףא redeemed with them, ʿimmāhemעִמָּהֶם as scripture says: * Deut 6:23“ And šenneʾĕmar * dəb̲ārîm wk̲g̲wəʾôt̲ānûוְא Deuteronomy 6:23*שֶׁנֶּאֱמַר he brought us out from hôṣîʾ miššām ləmaʿanמִשָּׁ֑םלְמַ֙עַן֙הָבִ֣יאאֹתָ֔נוּ there in order to bring hāb̲îʾ ʾōt̲ānû lāt̲et̲ lānûלָ֤תֶתלָ֨נוּ֙אֶת־הָאָ֔רֶץ us to the land that ʾet̲–hāʾāreṣ ʾăšer nišbaʿאֲשֶׁ֥רנִשְׁבַּ֖עלַאֲבֹתֵֽינוּ he promised to our laʾăb̲ōt̲ênû ancestors and give it to us. ” xviiiSA OH 473\n\nמַגִּיד Discussing the Exodus 34מַגִּיד Discussing the Exodus 34מַגִּיד Discussing the Exodus 34 xix Raise the cup of wine. Therefore, we are obli- ləp̲îk̲āk̲ ʾănaḥnûלְפִיכָ gated to thank, praise, ḥayyāb̲îm ləhôd̲ôt̲לְה extol, honor, exalt, glo- ləhallēl ləšabbēaḥלְפָאֵרלְר rify , bless, laud, and ləp̲āʾēr lərômēm ləhad-לְבָרֵ worship dēr ləb̲ārēk̲ ləʿallēh ûləqallēs the One who performed ləmî šeʿāśâ laʾăb̲ôt̲ênûלְמִישֶׁעָשָׂהלַאֲב all these miracles for wəlanû ʾet̲ kol han-וְלַנוּאֶתכׇּל our ancestors and for nissîm hāʾēlleh hôṣîʾānûהַנִּסִּיםהָאֵלֶּהה us. He brought us mēʿab̲d̲ût̲ ləḥērût̲מֵעַבְדוּתלְחֵרוּת out from slavery to freedom, from anguish to joy , miyyāg̲ôn ləśimḥâמִיָּג from mourning to mēʾēb̲el ləyôm ṭôb̲מֵאֵבֶללְי festivity , from darkness to great ûmēʾăp̲ēlâ ləʾôr gād̲ôlוּמֵאֲפֵלָהלְא light, and from subjugation to ûmiššiʿbûd̲ liggəʾullâוּמִשִּׁעְבּוּדלִגְּאֻלָּה redemption. We shall therefore sing wənnōmar ləp̲ānāywוְנֹּאמַרלְפָנָיושִׁירָה before him a new šîrâ ḥăd̲āšâ halălûyāhחֲדָשָׁההַלֲלוּיָהּ song.Halleluyah! Praise Yah! haləlû yāhהַ֥לְלוּיָ֨הּ׀ Psalms 113* Praise, servants of haləlû ʿab̲d̲ê ʾăd̲ōnāyהַ֭לְלוּעַבְדֵ֣ייְהוָ֑ה Adonai, praise the name of haləlû ʾet̲–šēm ʾăd̲ōnāyהַֽ֝לְלוּאֶת־שֵׁ֥םיְהוָֽה Adonai. May the name of yəhî šēm ʾăd̲ōnāyיְהִ֤ישֵׁ֣םיְהוָ֣המְבֹרָ֑ Adonai be blessed məb̲ōrāk̲ forever and ever. mēʿattâ wəʿad̲–ʿôlāmמֵֽ֝עַתָּ֗הוְעַד־ע From the rising of the mimmizraḥ–šemešמִמִּזְרַח־שֶׁ֥מֶשׁ sun to its setting ʿad̲–məb̲ôʾôעַד־מְב xixSA OH 473",
+      "segmentIds": [
+        "research-feinstein-haggadah-z8q-5a10aef546c1",
+        "research-feinstein-haggadah-10hg-a9e3bc431d73",
+        "research-feinstein-haggadah-11oy-093ea077e5b1",
+        "research-feinstein-haggadah-130s-9c2f717ba7fb",
+        "research-feinstein-haggadah-145w-137f594e1e1e",
+        "research-feinstein-haggadah-15at-a9a930c54606",
+        "research-feinstein-haggadah-16rn-688cff34e57a"
+      ],
+      "sourceLocation": "PDF p. 29, segment 1 through PDF p. 35, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 29, segment 1 through PDF p. 35, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-z8q-5a10aef546c1",
+            "label": "PDF p. 29",
+            "pageNumber": 29,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 45674,
+            "normalizedEndOffset": 47283
+          },
+          {
+            "id": "research-feinstein-haggadah-10hg-a9e3bc431d73",
+            "label": "PDF p. 30",
+            "pageNumber": 30,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 47284,
+            "normalizedEndOffset": 48849
+          },
+          {
+            "id": "research-feinstein-haggadah-11oy-093ea077e5b1",
+            "label": "PDF p. 31",
+            "pageNumber": 31,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 48850,
+            "normalizedEndOffset": 50571
+          },
+          {
+            "id": "research-feinstein-haggadah-130s-9c2f717ba7fb",
+            "label": "PDF p. 32",
+            "pageNumber": 32,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 50572,
+            "normalizedEndOffset": 52051
+          },
+          {
+            "id": "research-feinstein-haggadah-145w-137f594e1e1e",
+            "label": "PDF p. 33",
+            "pageNumber": 33,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 52052,
+            "normalizedEndOffset": 53524
+          },
+          {
+            "id": "research-feinstein-haggadah-15at-a9a930c54606",
+            "label": "PDF p. 34",
+            "pageNumber": 34,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 53525,
+            "normalizedEndOffset": 55426
+          },
+          {
+            "id": "research-feinstein-haggadah-16rn-688cff34e57a",
+            "label": "PDF p. 35",
+            "pageNumber": 35,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 55427,
+            "normalizedEndOffset": 56929
+          }
+        ]
+      },
+      "provenanceHash": "94f99a2a69f77273f8f4adfbaccb8eb6717407cbc5d7e18ad14cada9059850e9",
+      "componentProvenanceHashes": [
+        "5a10aef546c1ec1fb5bfa86d54c9d6bb60217accdb38975df1e1f90136e11d56",
+        "a9e3bc431d731629ec87e603df6a862bb94e3cf28e0ceb5133c1243f2b56804e",
+        "093ea077e5b10f02389fe9410d8eea0a1f3d95efb14bf615abb1e19058e6fa4c",
+        "9c2f717ba7fbb2693cbe76bc04511699d78f2a3408850c5f31528cfaa65c3b32",
+        "137f594e1e1e0a73f81ae25eb705846e68124c9958fecbd7bc8f939b0b9c05f6",
+        "a9a930c54606377894a18c60015dc0e8113314768a3b535db3b5c85d41fe93b6",
+        "688cff34e57a1db090285d50d22a0ae4903d420f848d49715153ab155e1eb402"
+      ],
+      "wordCount": 1414,
+      "characterCount": 11261,
+      "sectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "sourceSectionIds": [
+        "maggid",
+        "hallel"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "story-reflection",
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song, then point to the traditional symbols and explain each one before the every-generation teaching. Signal the transition from telling into praise.",
+      "rationale": "Seven consecutive passages preserve the source's complete theological and ritual turn from gratitude through Pesach, matzah, maror, lived memory, and Hallel.",
+      "creditNotes": "Credit the Feinsteins, preserve ShareAlike terms, and identify omitted Dayenu verses if abridged.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "nontriumphalist-firstborn-and-land-framing",
+        "rendered-page-ocr-check",
+        "temple-language-context",
+        "traditional-theme-only",
+        "visible-object-cues-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-feinstein-washing-and-symbolic-foods",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Washing, matzah, and bitter herb",
+      "exactText": "מEating the Matzah 38מEating the Matzah 38מEating the Matzah 38 Hand-Washing before the Meal:רַחַץ Wash the hands and afterwards say the following blessing. One should not talk between saying the blessing and eating the matsa. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ō-בָּרוּ our God, Sovereign of nāy ʾĕlōhênû melek̲אֱ the universe, who sanc- hāʿôlām ʾăšer qid-אֲשֶׁרקִדְּשָֽׁנוּבְּמִצְוֹתָיו tified us with Your com- dəšānû bəmiṣwōt̲āywוְצִוָּֽנוּעַל־נְטִילַתיָדָֽיִם mandments and com- wəṣiwwānû ʿal–nəṭîlat̲ manded us regarding yād̲āyim hand-washing. Eating the Matzah:מ xxi Raise all three matzot and say both blessings. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ō-בָּרוּ our God, Sovereign nāy ʾĕlōhênû melek̲אֱ of the universe, who hāʿôlām hammôṣîʾהַמּ brings bread from the leḥem min–hāʾāreṣמִן־הָאָֽרֶץ earth. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ō-בָּרוּ our God, Sovereign of nāy ʾĕlōhênû melek̲אֱ the universe, who sanc- hāʿôlām ʾăšer qid-אֲשֶׁרקִדְּשָֽׁנוּבְּמִצְוֹתָיו tified us with Your com- dəšānû bəmiṣwōt̲āywוְצִוָּֽנוּעַל־אֲכִילַתמַצָּה mandments and com- wəṣiwwānû ʿal–ʾăk̲îlat̲ manded us regarding maṣṣâ the eating of matzah. xxii Pieces are broken from the top and broken middlematzot, and dipped in salt. Each partic- ipant eats pieces from the two matzot together, while reclining to the left. xxiSA OH 475 xxiiSA OH 475\n\nכּEating the “Hillel Sandwich\" 39כּEating the “Hillel Sandwich\" 39כּEating the “Hillel Sandwich\" 39 Eating the Bitter Herb:מָר xxiii Dip maror into haroset, then say the blessing. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ō-בָּרוּ our God, Sovereign of nāy ʾĕlōhênû melek̲אֱ the universe, who sanc- hāʿôlām ʾăšer qid-אֲשֶׁרקִדְּשָֽׁנוּבְּמִצְוֹתָיו tified us with Your com- dəšānû bəmiṣwōt̲āywוְצִוָּֽנוּעַל־אֲכִילַת mandments and com- wəṣiwwānû ʿal–ʾăk̲îlat̲מָר manded us regarding mārôr the eating of bitter herbs. xxiv Eat the maror without reclining. Eating the “Hillel Sandwich\":כּ xxv Take a piece of the bottom matzah and place maror on it. Recite the following: In memory of the zek̲er ləmiqdāš kəhillēlזֶכֶרלְמִקְדָּשׁכְּהִלֵּל temple, in accordance with the custom of Hillel: This is what Hillel used kēn ʿāśâ hillēl bazzə-כֵּןעָשָׂההִלֵּלבַּזְּמַן to do when the temple man šebbêt̲ hammiqdāšשֶׁבֵּיתהַמִּקְדָּשׁקַיָּם stood: qayyām He would make a sand- hāyâ kôrēk̲ pesaḥ maṣṣâהָיָהכּ wich of the Passover ûmārôr wəʾôk̲ēl bəyaḥad̲וּמָר sacrifice,the matzah, and the bitter herbs and eat them together, in order to fulfill liter- ləqayyēm mahלְקַיֵּםמַהשֶׁנֶּאֱמַר ally that which is writ- šenneʾĕmar * bəmid̲bār ṭyʿal–maṣṣôt̲עַל־מַצּ֥ Numbers 9:11* ten in scripture: * Numbers 9:11“They ûmərōrîm yōk̲əluhûיֹאכְלֻֽהוּ shall eat [the Passover offering] with matzah and maror. ” xxvi Eat the sandwich. xxiiiSA OH 475 xxivSA OH 475 xxvOH 475 ;SA OH 475 xxviSA OH 475\n\nבָּרֵ Grace After Meals 40בָּרֵ Grace After Meals 40בָּרֵ Grace After Meals 40 Eating a festive meal:שֻׁלְחָןע Eat the festive meal. Eating the Afikoman:צָפוּן Eat the Afikoman. Grace After Meals:בָּרֵ A song of ascents: šîr hammaʿălôt̲שִׁ֗ירהַֽמַּ֫עֲל֥ Psalms 126* When Adonai returned bəšûb̲ ʾăd̲ōnāy ʾet̲–šîb̲at̲בְּשׁ֣וּביְ֭הוָהאֶת־שִׁיבַ֣ת the remnant of Zion, ṣiyyônצִיּ֑ we were like dreamers. hāyînû kəḥōləmîmהָ֝יִ֗ינוּכְּחֹלְמִֽים At that time, our ʾāz yimmālēʾ śəḥôq pînûאָ֤זיִמָּלֵ֪אשְׂח֡ mouths were filled with ûləšônēnû rinnâ ʾāzוּלְשׁ laughter and cries of yōmərû b̲aggôyimבַגּ joy were on our tongues. The nations said: “ Adonai did great things hig̲dîl ʾăd̲ōnāy laʿăśôt̲הִגְדִּ֥יליְ֝הוָ֗הלַעֲשׂ֥ for these!\" ʿim–ʾēllehעִם־אֵֽלֶּה Adonai did great things hig̲dîl ʾăd̲ōnāy laʿăśôt̲הִגְדִּ֣יליְ֭הוָהלַעֲשׂ֥ for us, ʿimmānûעִמָּ֗נוּ and we were happy . hāyînû śəmēḥîmהָיִ֥ינוּשְׂמֵחִֽים Return, Adonai, our šûb̲â ʾăd̲ōnāyשׁוּבָ֣היְ֭הוָה remnant ʾet̲–šəb̲iwt̲ēnû šəb̲ît̲ēnû bאֶת־שְׁבִיתֵ֑נוּ like springs in the kaʾăp̲îqîm banneg̲eb̲כַּאֲפִיקִ֥יםבַּנֶּֽ גֶב Negev . Those who plant in hazzōrəʿîm bəd̲imʿâהַזֹּרְעִ֥יםבְּדִמְעָ֗ה tears will reap in joy . bərinnâ yiqṣōrûבְּרִנָּ֥היִקְצֹֽרוּ The one who carries hālôk̲ yēlēk̲ ûb̲āk̲ōhהָ֘ל֤ the trail of seed goes nōśēʾ mešek̲–hazzāraʿמֶֽשֶׁ weeping, bōʾ–yāb̲ôʾ b̲ərinnâבְרִנָּ֑ה bכתיב–שְׁבִותֵנוּ",
+      "segmentIds": [
+        "research-feinstein-haggadah-1b62-30cb82877c2c",
+        "research-feinstein-haggadah-1c7k-646b956418f8",
+        "research-feinstein-haggadah-1dch-1120ef3b8143"
+      ],
+      "sourceLocation": "PDF p. 39, segment 1 through PDF p. 41, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 39, segment 1 through PDF p. 41, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-1b62-30cb82877c2c",
+            "label": "PDF p. 39",
+            "pageNumber": 39,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 61130,
+            "normalizedEndOffset": 62479
+          },
+          {
+            "id": "research-feinstein-haggadah-1c7k-646b956418f8",
+            "label": "PDF p. 40",
+            "pageNumber": 40,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 62480,
+            "normalizedEndOffset": 63952
+          },
+          {
+            "id": "research-feinstein-haggadah-1dch-1120ef3b8143",
+            "label": "PDF p. 41",
+            "pageNumber": 41,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 63953,
+            "normalizedEndOffset": 65307
+          }
+        ]
+      },
+      "provenanceHash": "7b79eaeb4d167adecb191ec4e6dc4081438bb8bbe6e30a89aed292ad228bb15f",
+      "componentProvenanceHashes": [
+        "30cb82877c2c5c45cb51153ccd59dacb92795fc6825f9a31dfd14da65542036b",
+        "646b956418f8fc29009f72458c3e1c2435d19678534015aef25ab2905f4ce306",
+        "1120ef3b8143f5d2a379f1546a8e44ef6513cd0ef8f916ea39b10b80b101143f"
+      ],
+      "wordCount": 557,
+      "characterCount": 4179,
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "beginnerContext": "Give practical instructions before the liturgy: wash hands individually or by pouring for one another, eat matzah, then bitter herb with haroset and the sandwich. Define haroset and provide allergy-safe substitutions.",
+      "rationale": "The three adjacent source records hold the table rituals in their proper order and can serve as a concise traditional block when paired with accessible host directions.",
+      "creditNotes": "Credit Eve Levavi Feinstein and Efraim Feinstein; distinguish project-authored action cues from source text.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": false,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "allergy-safe-alternatives",
+        "mutual-handwashing-option-required",
+        "plain-language-food-definitions",
+        "rendered-page-ocr-check"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-feinstein-grace-after-meals",
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "title": "Opening grace after the meal",
+      "exactText": "בָּרֵ Grace After Meals 41בָּרֵ Grace After Meals 41בָּרֵ Grace After Meals 41 but the one who carries nōśēʾ ʾălummōt̲āywנֹ֝שֵׂ֗אאֲלֻמֹּתָֽיו his bundle of grain returns in joy . Leader: The leader may request permission to lead grace in any language: hb̲ ln wnb̲rk̲ Let us recite the rb̲wt̲y nb̲rk̲רבותינברך blessing. All others: May the name of yəhî šēm ʾăd̲ōnāyיְהִישֵׁםיְהוָהמְב Adonai be blessed for- məb̲ôrāk̲ mēʿattâ wəʿad̲מֵעַתָּהוְעַדע ever and ever! ʿôlām Leader: With the permission of biršût̲ nəb̲ārēk̲בִּרְשׁוּת...נְבָרֵ let us bless In the presence of a In the presence of a our God, minyan of ten ʾĕlōhênû minyan of ten. אֱ the One of whose šeʾāk̲alnû miššellôשֶׁאָכַֽלְנוּמִשֶּׁלּ [bounty] we have eaten. All others: bārûk̲ In the presence of a minyan of ten ʾĕlōhênû šeʾāk̲alnû miššellô ûb̲əṭûb̲ô ḥāyînû Leader: Blessed is bārûk̲בָּרוּך our God, In the presence of a In the presence of a the One of whose minyan of ten ʾĕlōhênû minyan of ten. אֱ [bounty] we have eaten, šeʾāk̲alnû miššellôשֶׁאָכַֽלְנוּמִשֶּׁלּ and by whose goodness ûb̲əṭûb̲ô ḥāyînûחָיִֽינוּ we live. One who did not eat matzah or is not saying grace with the group responds instead: May His name be b̲rwk̲ wmb̲wrk̲ mwשמוומבורך ברוך greatly blessed always, t̲myd̲ lʿwlm wʿd̲ .ועדלעולם תמיד forever and ever.\n\nבָּרֵ Grace After Meals 42בָּרֵ Grace After Meals 42בָּרֵ Grace After Meals 42 Everyone: Blessed be He and bārûk̲ hûʾ ûb̲ārûk̲ šəmôבָּרוּ blessed be His name. Blessed are You, Adonai bārûk̲ ʾattâ ʾăd̲ōnāyבָּרוּ our God, Sovereign of ʾĕlōhênû melek̲ hāʿôlāmאֱ the universe, who feeds hazzān ʾet̲–hāʿôlām kullôהַזָּןאֶת־הָע the whole world in bəṭûb̲ô bəḥēn bəḥesed̲בְּטוּב His goodness, in gra- ûb̲əraḥămîm hûʾ–nôt̲ēnוּבְרַחֲמִיםהוּא־נ ciousness, kindness, and leḥem lək̲ol–bāśār kîלֶֽחֶםלְכׇל־בָּשָׂרכִּי mercy . He gives food ləʿôlām ḥasdôלְע to all flesh, for His kindness is everlasting. Because of His abundant ûb̲əṭûb̲ô haggād̲ôl tāmîd̲וּבְטוּב goodness we have never lōʾ–ḥāsar lānû wəʾalלֹא־חָֽסַרלָֽנוּוְאַל lacked. May we never yeḥsar–lānû māzônיֶחְסַר־לָֽנוּמָז lack food in the future, ləʿôlām wāʿed̲וָעֶד for the sake of His great baʿăb̲ûr šəmô haggād̲ôlבַּעֲבוּרשְׁמ Name. For He is God ky hûʾ zān ûməp̲arnēsהוּאזָןוּמְפַרְנֵסלַכֹּל who feeds and provides lakkōl ûmēṭîb̲ lakkōlוּמֵטִיבלַכֹּלוּמֵכִיןמָז for everyone, brings ûmēk̲în māzônלְכׇל־בְּרִיּ goodness to everyone, lək̲ol–bəriyyôt̲āyw ʾăšerבָּרָאבָּרוּ and prepares food for bārāʾ bārûk̲ ʾattâ ʾăd̲ō-הַזָּןאֶת־הַכֹּל all His creations that He nāy hazzān ʾet̲–hakkōl created. Blessed are You, Adonai, who gives food to everyone.\n\nבָּרֵ Grace After Meals 43בָּרֵ Grace After Meals 43בָּרֵ Grace After Meals 43 We thank You, Adonai nôd̲eh llək̲ā ʾăd̲ōnāyנֽ our God, for granting ʾĕlōhênû ʿal šehinḥaltāעַלשֶׁהִנְחַֽלְתָּלַאֲב a good and boun- laʾăb̲ôt̲ênû ʾereṣ ḥem-אֶֽרֶץחֶמְדָּהט teous land to our an- dâ ṭôb̲â ûrəḥāb̲â wəʿalוּרְחָבָהוְעַלשֶׁה cestors; and because šehôṣēt̲ānû ʾăd̲ōnāyיְהוָהאֱ You, Adonai our God, ʾĕlōhênû mēʾereṣ mis-מִצְרַֽיִםוּפְדִיתָֽנוּמִבֵּית brought us out from ̣rayim ûp̲əd̲ît̲ānû mibbêt̲עֲבָדִיםוְעַלבְּרִיתְ Egypt and rescued us ʿăb̲ād̲îm wəʿal bərît̲ək̲āשֶׁחָתַֽמְתָּבִּבְשָׂרֵֽינוּוְעַל from the house of šeḥāt̲amtā bib̲śārênûתּ slavery; and for Your wəʿal tôrāt̲ək̲ā šellimad̲-חֻקֶּֽ covenant, which you tānû wəʿal ḥuqqek̲ā še-אֲכִילַתמָז sealed in our flesh; and hôd̲aʿtānû wəʿal ʾăk̲îlat̲וּמְפַרְנֵסא for Your Torah, which māzôn šāʾattâ zānבְּכׇל־י You taught us; and ûməp̲arnēs ʾôt̲ānû tāmîd̲וּבְכׇלשָׁעָה for Your laws, which bək̲ol–yôm ûb̲ək̲ol–ʿēt̲ You made known to ûb̲ək̲ol šāʿâ us; and for life, gra- ciousness, and kindness, which You granted to us; and for food, with which You sustain us and provide for us al- ways, every day and at every hour. For everything, Adonai wəʿal hakkōl ʾăd̲ō-וְעַלהַכֹּליְהוָה our God, we thank nāy ʾĕlōhênû ʾănaḥnûאֱ You and bless You. môd̲îm lāk̲ ûməb̲ārək̲îmלָ May Your name be ʾôt̲āk̲ yit̲bārak̲ šimk̲āיִתְבָּרַ blessed in the mouth bəp̲î kol–ḥay tāmîd̲כׇּל־חַיתָּמִידלְע of every living being ləʿôlām wāʿed̲וָעֶד always, forever and ever! As scripture says: * Deut. 8:10“You kakkāt̲ûb̲ * dəb̲ārîm ḥywəʾāk̲altāוְאָכַלְתָּ֖ Deuteronomy 8:10*כַּכָּתוּב will eat and be satisfied, wəśāb̲āʿətā ûb̲ērak̲tāוְשָׂבָ֑עְתָּוּבֵֽרַכְתָּ֙ and you will bless ʾet̲–ʾăd̲ōnāy ʾĕlōhêk̲āאֶת־יְהוָ֣האֱ Adonai your God for the ʿal–hāʾāreṣ haṭṭōb̲â ʾăšerעַל־הָאָ֥רֶץהַטֹּבָ֖האֲשֶׁ֥ר good land that He gave nāt̲an–lāk̲נָֽתַן־לָֽ you. ”\n\nבָּרֵ Grace After Meals 44בָּרֵ Grace After Meals 44בָּרֵ Grace After Meals 44 Blessed are You, Adonai, bārûk̲ ʾattâ ʾăd̲ō-בָּרוּ for the land and for the nāy ʿal–hāʾāreṣעַל־הָאָֽרֶץוְעַל־הַמָּז food. wəʿal–hammāzôn Have mercy , Adonai our raḥēm ʾăd̲ōnāy ʾĕlōhênûרַחֵםיְהוָהאֱ God, on Israel Your ʿal–yiśrāʾēl ʿammek̲āעַל־יִשְׂרָאֵלעַמֶּֽ people; on Jerusalem wəʿal yərûšālaimעִירֶֽ cיְרוּשָׁלַֽיִם Your city; on Zion, the yərûšālayim ʿîrek̲āצִיּ dwelling place of Your wəʿal ṣiyyôn miškanוְעַלמַלְכוּתבֵּית Glory; on the kingdom kəb̲ôd̲ek̲ā wəʿal malk̲ût̲דָּוִדמְשִׁיחֶֽ of the family of David, bêt̲ dāwid̲ məšîḥek̲āהַגָּד Your anointed one; and wəʿal–hābbayit̲ haggād̲ôlשִׁמְ on the great and holy wəhaqqād̲ôš šenniqrāʾ temple over which Your šimk̲ā ʿālāyw Name is proclaimed. Our God, our Father, ʾĕlōhênû ʾāb̲înû rəʿēnûאֱ our Shepherd, our zûnēnû parnəsēnûזוּנֵֽנוּפַּרְנְסֵֽנוּוְכַלְכְּלֵֽנוּ Feeder, our Provider, wək̲alkəlēnû wəhar-וְהַרְוִיחֵנוּוְהַרְוַח־לָנוּ our Sustainer, and our wîḥēnû wəhar-יְהוָהאֱ Deliverer: Deliver us, waḥ–lānû ʾăd̲ōnāyמִכׇּל־צָר Adonai our God, speed- ʾĕlōhênû məhērâאַל־תַּצְרִיכֵֽנוּיְהוָה ily from all our dis- mikkol–ṣārôt̲ênû wə-אֱ tresses. Please, do nāʾ ʾal–taṣrîk̲ēnû ʾăd̲ō-מַתְּנַתבָּשָׂרוָדָםוְלֹא not make us dependent nāy ʾĕlōhênû lōʾ lîd̲êלִידֵיהַלְוָאָתָםכִּי on the charity of flesh mattənat̲ bāśār wād̲āmאִםלְיָדְ and blood or on their wəlōʾ lîd̲ê halwāʾāt̲ām kîהַפְּתוּחָההַקְּד loans. For it is in Your ʾim ləyād̲ək̲ā hamməlēʾâוְהָרְחָבָהשֶׁלֹּאנֵב power of holiness and happət̲ûḥâ haqqəd̲ôšâוְלֹאנִכָּלֵםלְע generosity to see that wəhārəḥāb̲â šellōʾ nēb̲ôš we are never shamed or wəlōʾ nikkālēm ləʿôlām humiliated. wāʿed̲ cכתיב–יְרוּשָׁלִַֽם",
+      "segmentIds": [
+        "research-feinstein-haggadah-1ee4-64546382f98a",
+        "research-feinstein-haggadah-1fe0-05d0bf77130e",
+        "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+        "research-feinstein-haggadah-1htp-e3b94299332d"
+      ],
+      "sourceLocation": "PDF p. 42, segment 1 through PDF p. 45, segment 1",
+      "locator": {
+        "edition": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourceLocation": "PDF p. 42, segment 1 through PDF p. 45, segment 1",
+        "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+        "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+        "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+        "componentLocators": [
+          {
+            "id": "research-feinstein-haggadah-1ee4-64546382f98a",
+            "label": "PDF p. 42",
+            "pageNumber": 42,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 65308,
+            "normalizedEndOffset": 66599
+          },
+          {
+            "id": "research-feinstein-haggadah-1fe0-05d0bf77130e",
+            "label": "PDF p. 43",
+            "pageNumber": 43,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 66600,
+            "normalizedEndOffset": 67896
+          },
+          {
+            "id": "research-feinstein-haggadah-1ge1-29b23dc4f00a",
+            "label": "PDF p. 44",
+            "pageNumber": 44,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 67897,
+            "normalizedEndOffset": 69756
+          },
+          {
+            "id": "research-feinstein-haggadah-1htp-e3b94299332d",
+            "label": "PDF p. 45",
+            "pageNumber": 45,
+            "localExtract": "research/source-extracts/feinstein-haggadah.txt",
+            "sourceSha256": "f6208b01943f0be3f82e7e9589d83e1f543d6e6e46050091dd63544d5cbb4d62",
+            "extractSha256": "713a13655623e27e45e219b4785fb8da6e89ffa1f80186f8cc4be3e775cc396d",
+            "normalizedStartOffset": 69757,
+            "normalizedEndOffset": 71453
+          }
+        ]
+      },
+      "provenanceHash": "72ffaa4a9f2d3df7150f5878d02e212d93b30b44d41f9dbfa2dd69ddf03159d6",
+      "componentProvenanceHashes": [
+        "64546382f98a5ba56314af8a05b85a3664af3adf7d3ed29f95b5c32ffef2121e",
+        "05d0bf77130e6f95a5bd684497fe7e1369187f66f0029c72669c648d1d8bc882",
+        "29b23dc4f00a71a1947a4248b496df05e2d0e02a4813edaa881ca9d15dac5db6",
+        "e3b94299332db96c746436467760c0b142ff3244d8237e5c4cbf3323acc5cb75"
+      ],
+      "wordCount": 819,
+      "characterCount": 6148,
+      "sectionIds": [
+        "barech"
+      ],
+      "sourceSectionIds": [
+        "barech"
+      ],
+      "insertionSectionId": "barech",
+      "themes": [
+        "traditional",
+        "mindfulness",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages",
+        "children"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Explain that Barech is the gratitude said after eating and tell guests whether the leader will read or everyone will respond. Offer a shortened path without implying that a mixed-belief guest must affirm every theological line.",
+      "rationale": "The four source-order records provide a coherent entrance into grace and communal response, retaining the liturgical progression instead of using a blessing fragment out of context.",
+      "creditNotes": "Credit the Feinsteins and preserve the CC BY-SA 4.0 notice and change statement.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Eve Levavi Feinstein and Efraim Feinstein",
+        "containingSource": "Haggadah for the Passover Seder / Haggadat Mah Zot",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah for the Passover Seder / Haggadat Mah Zot by Eve Levavi Feinstein and Efraim Feinstein."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Eve Levavi Feinstein and Efraim Feinstein",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "mixed-belief-introduction-required",
+        "rendered-page-ocr-check",
+        "responsive-reading-cues",
+        "traditional-land-language-review"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

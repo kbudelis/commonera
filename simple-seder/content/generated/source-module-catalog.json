@@ -1,0 +1,2008 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "sourceId": "traditional-core",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "formal",
+          "traditional",
+          "mid-century",
+          "annotated"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "ritually-familiar"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan",
+          "traditional"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "traditional-kadesh-four-cups",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "d85572f1b9415a2b78647cc6512aa0844ace3326df372c1fe0c7f07fabbb0189"
+        },
+        {
+          "id": "traditional-maggid-slaves",
+          "sourceId": "traditional-core",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "wordCount": 89,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "38e1a887a5e6a77d3a4dc45040bfcb18671f7b2530fe3460e9f28d5d794d7fe9"
+        }
+      ]
+    },
+    {
+      "sourceId": "wandering-is-over",
+      "family": "family-feminist",
+      "sourceTags": {
+        "voice": [
+          "contemporary",
+          "accessible",
+          "story-centered",
+          "welcoming"
+        ],
+        "audience": [
+          "beginner",
+          "mixed-ages",
+          "interfaith"
+        ],
+        "themes": [
+          "feminist",
+          "family-storytelling",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "pluralistic",
+          "inclusive",
+          "social-history"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical",
+        "contemplative"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "wandering-opening-orientation",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "family-storytelling",
+            "interfaith",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "wordCount": 94,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "b69e17b45818d15ac501d3c19cf3646e2ed3ec4ddd280c9e25d5e4304876f50b"
+        },
+        {
+          "id": "wandering-urchatz-pitcher-bowl",
+          "sourceId": "wandering-is-over",
+          "family": "family-feminist",
+          "sectionIds": [
+            "urchatz"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 75,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "f0802beb629eb64507175524213d3bf4abacfbaa65aa50c9e17cea7337223290"
+        }
+      ]
+    },
+    {
+      "sourceId": "inner-seder",
+      "family": "contemplative",
+      "sourceTags": {
+        "voice": [
+          "contemplative",
+          "neo-Hasidic",
+          "interpretive",
+          "ecological"
+        ],
+        "audience": [
+          "adult",
+          "older-teen",
+          "reflective"
+        ],
+        "themes": [
+          "mindfulness",
+          "environment",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "peace-focused",
+          "shared-humanity",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "eco-justice",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "inner-opening-transformation",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "mindfulness",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "wordCount": 69,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "f6870c766a78405143bf6a5f56967fad3e30798be3b075a10d848114bf2ee0ba"
+        },
+        {
+          "id": "inner-karpas-hyssop",
+          "sourceId": "inner-seder",
+          "family": "contemplative",
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "environment",
+            "social-justice",
+            "interfaith",
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "wordCount": 72,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "9d99cf7be9af3d1b9575ab9bf19ab2931718eb02833bc1f3afb9f6c67394a559"
+        }
+      ]
+    },
+    {
+      "sourceId": "other-side-of-sea",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "urgent",
+          "educational",
+          "human-rights",
+          "action-oriented"
+        ],
+        "audience": [
+          "adult",
+          "older-teen",
+          "community"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "anti-trafficking",
+          "worker-led",
+          "anti-racist",
+          "shared-humanity"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "truah-maggid-fulcrum",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 21,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "73ec38643e9b8e34ac3cd1ef8e3948ee57fbc1744b241791904ba63dc3cf0682"
+        },
+        {
+          "id": "truah-maggid-tomato",
+          "sourceId": "other-side-of-sea",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "wordCount": 35,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "2764fc55cff6c4863307ffab144ee797ac03c31ca90ada0dc28b4fee4c262e16"
+        }
+      ]
+    },
+    {
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "sourceTags": {
+        "voice": [
+          "prophetic",
+          "expansive",
+          "activist",
+          "eco-Jewish"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "interfaith"
+        ],
+        "themes": [
+          "environment",
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "climate-justice",
+          "peace-focused",
+          "shared-humanity"
+        ]
+      },
+      "compatibleFamilies": [
+        "contemplative",
+        "beginner-accessible",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "freedom-maggid-earth-oppression",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "environment",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "04117ad988fec540be5d21c2ac6dfffbf5eaa56c52f08b64140266b3ad9b05cc"
+        },
+        {
+          "id": "freedom-yachatz-share-bread",
+          "sourceId": "freedom-seder-earth",
+          "family": "eco-justice",
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "social-justice",
+            "environment",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "wordCount": 40,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "ee989ba205879efaf40588c664ed1502dded10c742bd267ad8071178d732c7c1"
+        }
+      ]
+    },
+    {
+      "sourceId": "shir-geulah",
+      "family": "beginner-accessible",
+      "sourceTags": {
+        "voice": [
+          "direct",
+          "contemporary",
+          "liberation-centered",
+          "procedural"
+        ],
+        "audience": [
+          "beginner",
+          "adult",
+          "mixed-ages"
+        ],
+        "themes": [
+          "traditional",
+          "social-justice",
+          "lgbtq"
+        ],
+        "politicalFraming": [
+          "inclusive",
+          "peace-focused",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "contemplative",
+        "justice-human-rights",
+        "eco-justice",
+        "traditional-liturgical",
+        "labor-secular",
+        "ritual-innovation",
+        "historical-cultural",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": true,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "shir-maggid-own-voices-runtime",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 70,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "a4afc1eefcb2670a05d6886e72cf3e82ac7cdc7cf4dc8c6590ac97f7a4965b41"
+        },
+        {
+          "id": "shir-meal-celebration-runtime",
+          "sourceId": "shir-geulah",
+          "family": "beginner-accessible",
+          "sectionIds": [
+            "shulchan-orech"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "meal-transition",
+          "wordCount": 69,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "15a40da98af65f877942a72e635d7778626f3a8a77c98813963b66060631fc39"
+        }
+      ]
+    },
+    {
+      "sourceId": "velveteen-rabbi",
+      "family": "contemplative",
+      "sourceTags": {
+        "voice": [
+          "warm",
+          "poetic",
+          "accessible",
+          "progressive"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "interfaith",
+          "beginner"
+        ],
+        "themes": [
+          "mindfulness",
+          "family-storytelling",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "peace-focused",
+          "liberation-oriented",
+          "non-exclusivist"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": true,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "vr-runtime-maggid-opening",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "mindfulness",
+            "family-storytelling",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "31127afb9826373e974d038d3b94258b9cce7763d9e884b06ed73a37843fb268"
+        },
+        {
+          "id": "vr-runtime-rachtzah-hands",
+          "sourceId": "velveteen-rabbi",
+          "family": "contemplative",
+          "sectionIds": [
+            "rachtzah"
+          ],
+          "themes": [
+            "mindfulness",
+            "social-justice"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "ritual-explanation",
+          "wordCount": 77,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "3d55632d9c7d07e2fb3e19a5a8f5a2d4f9ff4ef7c107faaf11b68aaee680f14f"
+        }
+      ]
+    },
+    {
+      "sourceId": "nusach-eretz-yisrael",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "scholarly",
+          "reconstructed",
+          "liturgical",
+          "historical-Palestinian-Jewish"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan",
+          "non-nationalist"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "nusach-maggid-flatbread",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "wordCount": 53,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "2f13beceab3cc6bc31d37f0a18be62b77ecc1541c206a0272cf210764b13405a"
+        },
+        {
+          "id": "nusach-maggid-each-generation",
+          "sourceId": "nusach-eretz-yisrael",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 43,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "9b6ac5d83461cbdab5d31b8695660dfe8ae3b0f42188299b6d3308465581e36b"
+        }
+      ]
+    },
+    {
+      "sourceId": "seder-in-the-streets",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "participatory",
+          "public-facing",
+          "activist",
+          "discussion-led"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "participatory"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "protest",
+          "immigrant-justice",
+          "peace-focused"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "streets-opening-read-circle",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "family-storytelling",
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "section-opening",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "69d97913fb065cdc58a537dee8ff63dac5f2f9e64b44f3704a5845b288c07ed2"
+        },
+        {
+          "id": "streets-maggid-questions",
+          "sourceId": "seder-in-the-streets",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "discussion-prompt",
+          "wordCount": 54,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "e98b12db27de2505fa1b395a7e4e825c8f3166314c3f0764045f806a06e3a531"
+        }
+      ]
+    },
+    {
+      "sourceId": "tropified-haggadah",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "liturgically-precise",
+          "chant-oriented",
+          "traditional",
+          "multilingual"
+        ],
+        "audience": [
+          "adult",
+          "ritually-familiar",
+          "facilitator"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "nonpartisan",
+          "traditional",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "tropified-karpas-chant",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "ritually-familiar"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 8,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "5aae3bb90e488cda963197e5d0300c9bd8be2b1d3639ad220b3efc89cfc13b25"
+        },
+        {
+          "id": "tropified-yachatz-chant",
+          "sourceId": "tropified-haggadah",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "traditional"
+          ],
+          "audience": [
+            "adults",
+            "ritually-familiar"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 11,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "ba294ac7d6c5c15d109c287087aff708281e2235ae12fb93f1a2591ceea020fc"
+        }
+      ]
+    },
+    {
+      "sourceId": "feinstein-haggadah",
+      "family": "beginner-accessible",
+      "sourceTags": {
+        "voice": [
+          "clear",
+          "translation-forward",
+          "text-centered",
+          "pluralistic"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "interfaith",
+          "beginner"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "nonpartisan",
+          "pluralistic"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "family-feminist",
+        "contemplative",
+        "playful-fandom"
+      ],
+      "incompatibleFamilies": [],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "feinstein-kadesh-poured-by-another",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 40,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "f0f300b28cce8a56f5b93140f150b8a7369f5c262d7e737e896aa5ce21469896"
+        },
+        {
+          "id": "feinstein-yachatz-afikoman",
+          "sourceId": "feinstein-haggadah",
+          "family": "beginner-accessible",
+          "sectionIds": [
+            "yachatz"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "05b0e9e0daee81b843bbec8b296efcef6f4fdc6f56cb3b0153e55a688cba733f"
+        }
+      ]
+    },
+    {
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "sourceTags": {
+        "voice": [
+          "historical",
+          "Yiddish-socialist",
+          "movement-oriented",
+          "secular"
+        ],
+        "audience": [
+          "adult",
+          "history-oriented",
+          "secular"
+        ],
+        "themes": [
+          "secular",
+          "social-justice"
+        ],
+        "politicalFraming": [
+          "socialist",
+          "labor-justice",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "historical-cultural",
+        "justice-human-rights",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "traditional-liturgical",
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "socialist-maggid-organized-power",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "secular"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 31,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "e9824f805ef7e98248fad05ce84724e4880ea6d6bfca42573e277d49f95f41c2"
+        },
+        {
+          "id": "socialist-maggid-self-liberation-story",
+          "sourceId": "socialist-hagode",
+          "family": "labor-secular",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "story-reflection",
+          "wordCount": 27,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "6441e4ad63bbcf6566d5f3fc0abda9f5bf8e7a7206105ec1d8fee7a5ae799944"
+        }
+      ]
+    },
+    {
+      "sourceId": "mlk-freedom-seder",
+      "family": "justice-human-rights",
+      "sourceTags": {
+        "voice": [
+          "oratorical",
+          "interfaith",
+          "labor-justice",
+          "prophetic"
+        ],
+        "audience": [
+          "adult",
+          "community",
+          "interfaith"
+        ],
+        "themes": [
+          "social-justice",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "racial-justice",
+          "economic-justice",
+          "peace-focused"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 3,
+      "modules": [
+        {
+          "id": "mlk-kadesh-light-see-each-other",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "wordCount": 36,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "f15f87f80bcca3bc195cea212a6f1b76aa43dc0c8082af25c232ea2be6c2b604"
+        },
+        {
+          "id": "mlk-nirtzah-grapes-community",
+          "sourceId": "mlk-freedom-seder",
+          "family": "justice-human-rights",
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "themes": [
+            "social-justice",
+            "interfaith",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "closing-reflection",
+          "wordCount": 39,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "e91f9c76ed403492eead0bbad32724376e1971d5ce223918ebdb74233a483e29"
+        }
+      ]
+    },
+    {
+      "sourceId": "second-seder-plate",
+      "family": "ritual-innovation",
+      "sourceTags": {
+        "voice": [
+          "modular",
+          "symbolic",
+          "explanatory",
+          "pluralistic"
+        ],
+        "audience": [
+          "adult",
+          "mixed-ages",
+          "participatory"
+        ],
+        "themes": [
+          "feminist",
+          "lgbtq",
+          "environment",
+          "social-justice"
+        ],
+        "politicalFraming": [
+          "issue-specific",
+          "inclusive",
+          "pluralistic"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "family-feminist",
+        "eco-justice",
+        "justice-human-rights"
+      ],
+      "incompatibleFamilies": [
+        "historical-cultural"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "second-plate-miriam-fish",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "feminist",
+            "traditional",
+            "mindfulness",
+            "environment"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "wordCount": 21,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "184764e11c18b80bd7bfb43c5c9db9a24f629a6d96305de7d24d24e3b22ad5f3"
+        },
+        {
+          "id": "second-plate-leeks",
+          "sourceId": "second-seder-plate",
+          "family": "ritual-innovation",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "social-justice",
+            "mindfulness",
+            "secular"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "plate-option",
+          "wordCount": 33,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "0f5b8088d7d0ddad04170f7072ecca824c9fd953d30b95485fa2194e5ec5252d"
+        }
+      ]
+    },
+    {
+      "sourceId": "mayer-ashkenaz",
+      "family": "traditional-liturgical",
+      "sourceTags": {
+        "voice": [
+          "comprehensive",
+          "liturgical",
+          "comparative",
+          "traditional"
+        ],
+        "audience": [
+          "adult",
+          "family",
+          "ritually-familiar"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "traditional",
+          "nonpartisan",
+          "varied-inserts"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "historical-cultural"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": true,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "mayer-maggid-take-turns",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "ritual-setup",
+          "wordCount": 30,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "155ff2285b8e50753b480701c67391003d86d97f4b4f719c6c10632969102329"
+        },
+        {
+          "id": "mayer-hallel-number-challenge",
+          "sourceId": "mayer-ashkenaz",
+          "family": "traditional-liturgical",
+          "sectionIds": [
+            "hallel"
+          ],
+          "themes": [
+            "family-storytelling",
+            "traditional",
+            "secular"
+          ],
+          "audience": [
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful",
+            "balanced"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "wordCount": 59,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "16cf930dfd7d3436a723178cf0f46f4388b2efac5965d736a35a9ce07867e2a5"
+        }
+      ]
+    },
+    {
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "academic",
+          "medieval-history",
+          "documentary",
+          "formal"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 1,
+      "modules": [
+        {
+          "id": "english-jews-history-page",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 81,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "8b4ddeaf0095c8a41d2ead7cdef5bad3521f7ab9ed2687134892ddca62bccc46"
+        },
+        {
+          "id": "english-jews-charoset",
+          "sourceId": "english-jews-seder",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maror"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 23,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "5a09174e711be3798a0594a031ae80aca541982c6a067f847ba355419eb5f502"
+        }
+      ]
+    },
+    {
+      "sourceId": "rittangel-latin",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "antiquarian",
+          "Latin",
+          "early-modern",
+          "scholarly"
+        ],
+        "audience": [
+          "adult",
+          "specialist",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights",
+        "family-feminist"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 1,
+      "modules": [
+        {
+          "id": "rittangel-dayenu-latin",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 14,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "49256ef6f543c5ca2c78b09d3e830980a7cdb0b9ff613885c4f35b907b9878d1"
+        },
+        {
+          "id": "rittangel-dayenu-hebrew",
+          "sourceId": "rittangel-latin",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "interfaith"
+          ],
+          "audience": [
+            "adults",
+            "specialist"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 8,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "ceb4a57d6e0653a2372f704aee88cfb5bf3a5b8d3f5e83f9bd40cf433dc63ff6"
+        }
+      ]
+    },
+    {
+      "sourceId": "levy-home-service",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "formal-English",
+          "historical-Reform",
+          "home-service",
+          "universalist"
+        ],
+        "audience": [
+          "adult",
+          "family",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "secular",
+          "interfaith"
+        ],
+        "politicalFraming": [
+          "civic",
+          "universalist",
+          "historical"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible",
+        "traditional-liturgical"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 2,
+      "modules": [
+        {
+          "id": "levy-maggid-forced-labor",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "maggid"
+          ],
+          "themes": [
+            "traditional",
+            "social-justice",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "20",
+            "45",
+            "90"
+          ],
+          "seam": "story-core",
+          "wordCount": 16,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "bb057945667c2c2cc0e81f7985a921da68b54607ff42073b509c79b1934b6a50"
+        },
+        {
+          "id": "levy-nirtzah-fellow-people",
+          "sourceId": "levy-home-service",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "nirtzah"
+          ],
+          "themes": [
+            "interfaith",
+            "social-justice",
+            "family-storytelling",
+            "mindfulness"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "closing-reflection",
+          "wordCount": 50,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "e4117cc82f32c4887bcd9e8c3726b42026f026ac73c7df0aa82ae5f7a6a37f81"
+        }
+      ]
+    },
+    {
+      "sourceId": "barros-basto",
+      "family": "historical-cultural",
+      "sourceTags": {
+        "voice": [
+          "Portuguese",
+          "historical",
+          "traditional",
+          "cultural"
+        ],
+        "audience": [
+          "adult",
+          "Portuguese-reading",
+          "historical"
+        ],
+        "themes": [
+          "traditional",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "historical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "traditional-liturgical",
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "playful-fandom",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 1,
+      "modules": [
+        {
+          "id": "barros-kadesh-mnemonic",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "kadesh"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 30,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "697825a64674eed02e58a0b3e7abdc10eafbb6bcff3bd906fa7c6849dfc4e0c8"
+        },
+        {
+          "id": "barros-karpas-greens",
+          "sourceId": "barros-basto",
+          "family": "historical-cultural",
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "traditional",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "children",
+            "mixed-ages"
+          ],
+          "tones": [
+            "balanced",
+            "reverent"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "historical-sidebar",
+          "wordCount": 11,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "b04e3f40707734f456a31f1855113977bcec72b9fae4ae2b993040d462457eae"
+        }
+      ]
+    },
+    {
+      "sourceId": "battlestar-seder",
+      "family": "playful-fandom",
+      "sourceTags": {
+        "voice": [
+          "playful",
+          "referential",
+          "fandom",
+          "secular-cultural"
+        ],
+        "audience": [
+          "adult-fans",
+          "opt-in",
+          "participatory"
+        ],
+        "themes": [
+          "secular",
+          "family-storytelling"
+        ],
+        "politicalFraming": [
+          "allegorical",
+          "nonpartisan"
+        ]
+      },
+      "compatibleFamilies": [
+        "beginner-accessible"
+      ],
+      "incompatibleFamilies": [
+        "contemplative",
+        "traditional-liturgical",
+        "historical-cultural",
+        "justice-human-rights"
+      ],
+      "requiresExplicitOptIn": [
+        "battlestar-galactica",
+        "bsg-seder",
+        "galactica-haggadah"
+      ],
+      "primarySpineEligible": false,
+      "runtimeSpineAvailable": false,
+      "secondaryPassageCap": 1,
+      "modules": [
+        {
+          "id": "battlestar-karpas-algae",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "sectionIds": [
+            "karpas"
+          ],
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "wordCount": 28,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "e47614bf7208ec5277a76246feed627482d8a818cf265a3dd00b8afd5d2270b8"
+        },
+        {
+          "id": "battlestar-fourth-cup-fellowship",
+          "sourceId": "battlestar-seder",
+          "family": "playful-fandom",
+          "sectionIds": [
+            "hallel"
+          ],
+          "themes": [
+            "secular",
+            "family-storytelling"
+          ],
+          "audience": [
+            "adults",
+            "mixed-ages"
+          ],
+          "tones": [
+            "playful"
+          ],
+          "lengthTiers": [
+            "45",
+            "90"
+          ],
+          "seam": "optional-insert",
+          "wordCount": 25,
+          "approvalStatus": "approved",
+          "runtimeEligible": true,
+          "provenanceHash": "bcb8a497c0e765fed6ed5fdd2b9fa70d822ff02bc7a502f21aab292e8ded288e"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "mlk-freedom-seder",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A 2018 interfaith Freedom Seder organized around Dr. Martin Luther King Jr.'s critique of racism, materialism, and militarism, with sexism added as a fourth concern. It offers coherent cup rituals, environmental readings, shared-matzah practice, and a powerful communal close, but it is a historically situated activist work with extensive embedded speeches, songs, and quotations.",
+  "sourceAssessment": {
+    "voice": "Prophetic, interfaith, movement-centered, lyrical, and participatory, combining source-authored ritual with civil-rights speeches, labor history, song, and ecological theology.",
+    "bestUses": [
+      "Social-justice and interfaith theme paths",
+      "Labor dignity and shared-matzah rituals",
+      "Environmentally focused cups, karpas, charoset, and Dayenu",
+      "A peace-focused Nirtzah built around collective responsibility and the Beloved Community"
+    ],
+    "beginnerRisks": [
+      "Many readings assume knowledge of Dr. King's speeches, the labor movement, interfaith history, and 2018 U.S. politics.",
+      "Descriptions of lynching, genocide, gun violence, militarism, poverty, and ecological disaster need content notes and a pass option.",
+      "The source uses distinctive Breath-of-Life theology that should be introduced, not silently treated as universal Jewish wording.",
+      "Most major sequences contain embedded works requiring author-level attribution and rights review."
+    ],
+    "politicalContext": "The source is forthrightly activist and reflects a 2018 U.S. political context. Use its universal commitments to love, labor dignity, justice, peace, and shared humanity, but label named policies, technologies, statistics, public officials, and campaign tactics as historical. Do not convert its political metaphors into unsourced current claims, and do not use its rhetoric to demean any people collectively.",
+    "creditContext": "Credit Rabbi Arthur Waskow, The Shalom Center, and the MLK+50 Labor-Justice Interfaith Freedom Seder on the final sources page. Preserve every source-presented credit for Dr. King, Heschel, the Jewish Labor Committee, poets, translators, song traditions, and other contributors; the CC license applies only as stated by the source."
+  },
+  "recommendedSequences": [
+    {
+      "id": "mlk50-wisdom-and-four-cups",
+      "title": "Wisdom for the journey and four cups",
+      "sectionIds": ["kadesh", "maggid"],
+      "insertionSectionId": "kadesh",
+      "segmentIds": [
+        "research-mlk-freedom-seder-10f-b5e1d5590767",
+        "research-mlk-freedom-seder-1tw-d7618223115f",
+        "research-mlk-freedom-seder-2fp-958b89a9a0f3"
+      ],
+      "beginnerContext": "Explain that the traditional Seder has four cups and an additional cup for Elijah; this source dedicates the cups to four connected social problems and the Elijah cup to building Dr. King's Beloved Community.",
+      "rationale": "The sequence moves from three concise statements of purpose to a clear four-cup structure and then gives the host the physical setup needed to lead it.",
+      "themes": ["social-justice", "interfaith", "environment", "feminist"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-2018-activist-framing",
+        "embedded-mlk-and-heschel-quotation-review",
+        "define-beloved-community",
+        "do-not-present-quadruplet-framework-as-traditional-liturgy"
+      ],
+      "creditNotes": "Credit The Shalom Center, Dr. Martin Luther King Jr., Rabbi Abraham Joshua Heschel, and the traditional Haggadah as presented by the source."
+    },
+    {
+      "id": "mlk50-candles-between-fires",
+      "title": "Candles between the fires",
+      "sectionIds": ["kadesh"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-51e-6b8d6d91762d",
+        "research-mlk-freedom-seder-5wj-6203c6f53a01",
+        "research-mlk-freedom-seder-6ii-ac1eca0fd1a8"
+      ],
+      "beginnerContext": "Before lighting candles, warn that the reading names lynching, Auschwitz, Hiroshima, gun violence, and climate disaster; invite anyone to step out, pass, or join only for the final candle blessing.",
+      "rationale": "The source-order arc transforms destructive fire into candlelight, names difference without hierarchy, and arrives at the first cup and a historically grounded labor-justice reading.",
+      "themes": ["social-justice", "environment", "interfaith"],
+      "tones": ["reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-trauma-content-opt-in",
+        "historical-violence-content-note-and-pass-option",
+        "embedded-mlk-speech-attribution-review",
+        "adult-or-facilitated-mixed-age-only"
+      ],
+      "creditNotes": "Credit The Shalom Center and Dr. Martin Luther King Jr.; preserve the Memphis sanitation-workers speech context and date."
+    },
+    {
+      "id": "mlk50-shared-matzah-structural-compassion",
+      "title": "Shared matzah and structural compassion",
+      "sectionIds": ["motzi-matzah", "maggid"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-ch0-c2198781cc1f",
+        "research-mlk-freedom-seder-d4g-b5b8ab0a9a3a",
+        "research-mlk-freedom-seder-dq9-a4bb5683338f"
+      ],
+      "beginnerContext": "Tell each person to break off a piece of matzah and hand it to a neighbor; identify the opening federal-budget sentence as 2018 context before moving to the enduring ritual about sharing bread.",
+      "rationale": "The passages turn matzah from affliction into shared freedom and then connect immediate generosity with Dr. King's call to change the structures that produce poverty.",
+      "themes": ["social-justice", "traditional"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-2018-budget-context",
+        "embedded-jewish-labor-committee-and-mlk-quotation-review",
+        "do-not-present-dated-budget-claim-as-current",
+        "preserve-neighbor-sharing-instruction"
+      ],
+      "creditNotes": "Credit The Shalom Center, the Jewish Labor Committee, and Dr. Martin Luther King Jr. on the final sources page."
+    },
+    {
+      "id": "mlk50-second-cup-carbon-pharaohs",
+      "title": "Second cup and ecological power",
+      "sectionIds": ["kadesh", "maggid"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-eg4-cc2809a0b06f",
+        "research-mlk-freedom-seder-f1m-1931b52da17c",
+        "research-mlk-freedom-seder-fp7-1cd978f255c3"
+      ],
+      "beginnerContext": "Introduce the second cup as this source's environmental cup and identify 'Carbon Pharaohs' as an activist metaphor for fossil-fuel corporations, not a neutral factual label.",
+      "rationale": "The sequence begins with dignity in agricultural work, names the source's ecological critique, and completes its interpretive reading of the plagues before the source's dated plague list begins.",
+      "themes": ["environment", "social-justice"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-environmental-activist-framing",
+        "label-carbon-pharaohs-as-source-metaphor",
+        "label-ecological-plague-reading-as-interpretive-midrash",
+        "do-not-append-dated-2018-plague-statistics"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow and The Shalom Center on the final sources page."
+    },
+    {
+      "id": "mlk50-karpas-charoset-earth-rest",
+      "title": "Karpas, charoset, and the earth's rest",
+      "sectionIds": ["karpas", "maror", "korech"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-hs5-3d374defb840",
+        "research-mlk-freedom-seder-ie2-c5197807d324"
+      ],
+      "beginnerContext": "Place parsley, salt water, and charoset where everyone can reach them; explain that charoset is a sweet fruit-and-nut mixture and that the source connects it to spring, love poetry, land rest, and debt release.",
+      "rationale": "These passages supply sensory ritual instructions and sustain one environmental theme from spring greens through charoset to the sabbatical release of land and debt.",
+      "themes": ["environment", "mindfulness", "traditional"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "embedded-song-of-songs-and-shefa-gold-chant-review",
+        "identify-biblical-land-and-debt-release-as-source-text",
+        "allergy-safe-charoset-guidance-required"
+      ],
+      "creditNotes": "Credit The Shalom Center and Rabbi Shefa Gold, and identify the Leviticus 25 and Deuteronomy 15 passages on the final sources page."
+    },
+    {
+      "id": "mlk50-dayenu-ten-healings",
+      "title": "Dayenu and ten ecological healings",
+      "sectionIds": ["maggid", "kadesh"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-jei-aecba0d11556",
+        "research-mlk-freedom-seder-jzt-5a8266956972",
+        "research-mlk-freedom-seder-kqr-3b517a1367ec"
+      ],
+      "beginnerContext": "Explain Dayenu as a step-by-step song of gratitude, then label the listed technologies, investment campaigns, and lobbying strategies as examples proposed in 2018 rather than a current action checklist.",
+      "rationale": "The sequence keeps the source's full ten-healings activity together and ends with the cup ritual that interprets environmental action as movement from sweetness through difficulty to deeper sweetness.",
+      "themes": ["environment", "social-justice"],
+      "tones": ["balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "explicit-historical-2018-environmental-action-opt-in",
+        "do-not-present-technology-or-policy-list-as-current-advice",
+        "source-date-visible",
+        "offer-open-ended-current-action-prompt-after-exact-reading"
+      ],
+      "creditNotes": "Credit Rabbi Arthur Waskow, The Shalom Center, and the MLK+50 Freedom Seder on the final sources page."
+    },
+    {
+      "id": "mlk50-elijah-beloved-community",
+      "title": "Elijah and the Beloved Community",
+      "sectionIds": ["hallel", "nirtzah"],
+      "segmentIds": [
+        "research-mlk-freedom-seder-uh6-c51b2ccbeea5",
+        "research-mlk-freedom-seder-vge-cb7b1c06377d",
+        "research-mlk-freedom-seder-web-5fcaaa88d78a",
+        "research-mlk-freedom-seder-wm3-3ea6a9cb1647",
+        "research-mlk-freedom-seder-x85-d2a09901cb66"
+      ],
+      "beginnerContext": "Explain the custom of opening the door for Elijah and define the Beloved Community as Dr. King's vision of a just society; tell guests they will be invited to name one voluntary action before drinking.",
+      "rationale": "The sequence preserves a complete closing arc: open the door, sing against being turned around, imagine a crossing where no one drowns, hear King's call to universal love, share Elijah's cup, and pledge action together.",
+      "themes": ["social-justice", "interfaith", "environment", "feminist", "lgbtq"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "embedded-spiritual-song-rabbi-zevit-and-mlk-rights-review",
+        "preserve-no-one-left-to-drown-peace-framing",
+        "action-pledge-voluntary-and-specific",
+        "do-not-truncate-split-mlk-quotation"
+      ],
+      "creditNotes": "Credit The Shalom Center, Rabbi Shawn Israel Zevit, Dr. Martin Luther King Jr., and the source-presented freedom-song tradition on the final sources page."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-mlk-freedom-seder-5l-d9200bc101a5",
+      "reasons": ["License, donation, contact, and production-credit boilerplate belongs in research and final credits rather than ritual text."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-8zv-d24923dbe621",
+      "reasons": ["The segment begins mid-procession and crosses from Christian scripture into contemporary ecological rhetoric without a clean boundary."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-9m4-5e2cdd38004e",
+      "reasons": ["The source's attack on named categories of corporations and empires is historically important but too polemical and boundary-fragmented for automatic beginner insertion."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-lce-aefef1756a9f",
+      "reasons": ["A 2018 militarization report begins here and requires factual updating before any contemporary use."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-m0u-01a4a4910f12",
+      "reasons": ["Run-together OCR and dated nuclear-warhead statistics make the segment unsuitable for polished runtime output."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-mrh-4c75e8e6aeff",
+      "reasons": ["Dated Doomsday Clock and Afghanistan-war facts require independent current verification."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-ny8-c95213505465",
+      "reasons": ["The segment combines an embedded Dr. King quotation with a transition into dated police-violence statistics."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-owy-18909aaa3083",
+      "reasons": ["Parkland testimony requires trauma-sensitive, event-specific editorial review and is not a default Seder module."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-pkh-83e4fe1494a8",
+      "reasons": ["The passage continues school-shooting testimony and political advocacy from 2018."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-q88-6f9f0daae68d",
+      "reasons": ["The passage contains a direct partisan challenge and transitions into a new action section without a clean boundary."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-rl0-3b8122b5e38a",
+      "reasons": ["The source's domestic-abuse analogy and political application require specialist trauma review before use."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-smj-f73318e000ac",
+      "reasons": ["The passage uses an unnamed modern Pharaoh and 2018 Resistance framing that should not enter nonpartisan default output."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-t6k-5c3f4c4ac8a5",
+      "reasons": ["The segment continues event-specific Women's March testimony and then crosses into Miriam without a clean source boundary."]
+    },
+    {
+      "segmentId": "research-mlk-freedom-seder-y6x-31f0fc6d2393",
+      "reasons": ["The segment is the continuation of a Psalm begun in the prior module and cannot stand alone as a complete closing."
+      ]
+    }
+  ],
+  "notes": [
+    "Theme matching must not strip away the source's date. This is an MLK+50 document written for 2018, not a timeless report of current policy conditions.",
+    "Quoted speeches and songs may remain exact only after the source-presented attribution and item-level rights requirements are satisfied.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "socialist-hagode",
+  "sourceTitle": "Hagode shel Peysekh: in a Socialist Mode",
+  "modules": [
+    {
+      "id": "socialist-maggid-organized-power",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "exactText": "With our own power, organized and united with all the oppressed and exploited, with tireless and well-directed struggle, we will free ourselves and bring the g’uloh [redemption] for suffering, bleeding humanity.",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 11 (printed p. 5), Maggid",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "secular"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 31,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "e9824f805ef7e98248fad05ce84724e4880ea6d6bfca42573e277d49f95f41c2",
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      }
+    },
+    {
+      "id": "socialist-maggid-self-liberation-story",
+      "sourceId": "socialist-hagode",
+      "family": "labor-secular",
+      "exactText": "Day and night we must tell our children and our children's children the great and holy Idea of self-liberation. And whoever speaks of it frequently is praiseworthy.",
+      "locator": {
+        "edition": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourceLocation": "PDF p. 11 (printed p. 5), Maggid",
+        "localExtract": "research/source-extracts/socialist-hagode.txt",
+        "sourceSha256": "95cf5c61bf7ed74104e511cafc75965da77d091c18396e4028d1eed61e79c03d",
+        "extractSha256": "238555ea1ac31de411e70d74c6d2f18e7b383d193a1cb8799e8ca056e84e0fe4"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "secular",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 27,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit original authors and Shlomo Enkin Lewis's translation",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "6441e4ad63bbcf6566d5f3fc0abda9f5bf8e7a7206105ec1d8fee7a5ae799944",
+      "attribution": {
+        "creator": "Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis",
+        "containingSource": "Hagode shel Peysekh: in a Socialist Mode",
+        "sourcePresented": null,
+        "readerCredit": "From Hagode shel Peysekh: in a Socialist Mode by Benjamin Feigenbaum, Leon Zolotkof, and Shlomo Enkin Lewis."
+      }
+    }
+  ]
+}

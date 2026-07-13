@@ -37,6 +37,7 @@ data/*.sqlite-*
 exports/
 research/raw/
 research/source-materials/
+research/source-extracts/
 public/covers/*.png
 
 # vercel

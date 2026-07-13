@@ -1,0 +1,1048 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "rittangel-latin",
+  "title": "Liber Rituum Paschalium",
+  "creator": "Johann Stephan Rittangel; transcription by Aharon N. Varady",
+  "family": "historical-cultural",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "Rittangel’s 1644 Hebrew-Latin Haggadah is a rare early-modern comparative witness. Its Latin translation, historical typography, and uneven OCR make it valuable for specialist sidebars and source comparison, while requiring facsimile verification and a modern English explanation before any guest-facing use.",
+  "sourceAssessment": {
+    "voice": "Antiquarian, bilingual Hebrew-Latin, early-modern, scholarly, highly formal, and mediated by imperfect historical OCR.",
+    "bestUses": [
+      "Historical notes about how the Seder was translated and described in seventeenth-century Latin",
+      "A specialist traditional-theme comparison of ritual order and Dayenu",
+      "Long-form source appendices with facsimile-checked excerpts"
+    ],
+    "beginnerRisks": [
+      "The source is not in contemporary English and cannot function as direct beginner orientation.",
+      "Every OCR-derived passage must be checked against the page image before publication.",
+      "Early-modern Christian framing and Latinized names can distort or exoticize Jewish practice if presented without context."
+    ],
+    "politicalContext": "The work is a seventeenth-century historical document rather than a modern political source. Biblical land and peoplehood language must remain historical-liturgical, and polemical material about religious groups should stay research-only.",
+    "creditContext": "Credit Johann Stephan Rittangel and Aharon N. Varady, identify the public-domain work and CC BY-SA 4.0 transcription, and never silently modernize the Latin, Hebrew, or OCR."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 78,
+    "segmentCount": 133,
+    "exactCharacterCount": 108101,
+    "exactWordCount": 20987,
+    "reconstructionSha256": "8c341e02fe98035ea82d69abc706b33df476e03a0476ab4aeca9154ecbdd61cd",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Liber Rituum Paschalium by Johann Stephan Rittangel; transcription by Aharon N. Varady.",
+    "license": "public-domain + CC-BY-SA-4.0 transcription",
+    "conditions": [
+      "Credit Johann Stephan Rittangel and Aharon N. Varady",
+      "Do not silently modernize OCR or translation"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=19649"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 53,
+      "segmentIds": [
+        "research-rittangel-latin-0-3c86dfd92cc6",
+        "research-rittangel-latin-pq-1f6d81e7caa2",
+        "research-rittangel-latin-1aj-d4b4c8c190f6",
+        "research-rittangel-latin-1ba-5089b748c530",
+        "research-rittangel-latin-1ot-f56f2a1fd130",
+        "research-rittangel-latin-21y-d26b720f7aa6",
+        "research-rittangel-latin-2io-5a075d948c28",
+        "research-rittangel-latin-3ai-601482124df1",
+        "research-rittangel-latin-3ud-8d60158f5c49",
+        "research-rittangel-latin-4gx-2d5ed588571e",
+        "research-rittangel-latin-56s-954df8257811",
+        "research-rittangel-latin-5qc-f0b4ef413860",
+        "research-rittangel-latin-6az-d7651e922344",
+        "research-rittangel-latin-72x-32bc00a85d4a",
+        "research-rittangel-latin-7us-f9b4c72b86a5",
+        "research-rittangel-latin-8km-2524f91c1c74",
+        "research-rittangel-latin-99r-aabd96761e05",
+        "research-rittangel-latin-9sk-03d0e52af030",
+        "research-rittangel-latin-aj7-c1fd6f888108",
+        "research-rittangel-latin-b24-6ef313682102",
+        "research-rittangel-latin-bok-8d1f9c1e4896",
+        "research-rittangel-latin-ccf-4c4038fd2df4",
+        "research-rittangel-latin-cwj-58db9ea74155",
+        "research-rittangel-latin-diw-59dd2fedbd99",
+        "research-rittangel-latin-e78-759e1334092a",
+        "research-rittangel-latin-es7-7fbc1f1d1cb2",
+        "research-rittangel-latin-fd7-cce562b69af9",
+        "research-rittangel-latin-fub-57522a7a4d44",
+        "research-rittangel-latin-gpc-f2981b27211d",
+        "research-rittangel-latin-h7e-961b2a74cc6f",
+        "research-rittangel-latin-hsj-fa1b26e6d9e3",
+        "research-rittangel-latin-ic7-5df6d89be2f7",
+        "research-rittangel-latin-iy0-aaad6bebfbb0",
+        "research-rittangel-latin-jse-9c99375e0c77",
+        "research-rittangel-latin-kco-e6b2e1826329",
+        "research-rittangel-latin-ku4-61e3888ec2e5",
+        "research-rittangel-latin-lem-68fb70bfe159",
+        "research-rittangel-latin-lrl-84e493ccdfbf",
+        "research-rittangel-latin-mc2-ac6d14b2fbf1",
+        "research-rittangel-latin-myq-798e47440f91",
+        "research-rittangel-latin-nnz-8196f09e5cdd",
+        "research-rittangel-latin-obr-2ff437be9ffc",
+        "research-rittangel-latin-ovz-179e7bb02592",
+        "research-rittangel-latin-pot-b79b4725637f",
+        "research-rittangel-latin-q3p-1799c952fa12",
+        "research-rittangel-latin-qer-23ae071a8b0e",
+        "research-rittangel-latin-qqv-6dda93663fe6",
+        "research-rittangel-latin-rfr-6a2662037fd3",
+        "research-rittangel-latin-s4z-bb4d845e1417",
+        "research-rittangel-latin-ss7-5de2fb2f40a6",
+        "research-rittangel-latin-tbl-01a9917b974e",
+        "research-rittangel-latin-u2v-df71c5c02a39",
+        "research-rittangel-latin-ujr-0da97571749d"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-rittangel-latin-2alm-bf2a0f194da8"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "hallel": {
+      "segmentCount": 79,
+      "segmentIds": [
+        "research-rittangel-latin-vdq-8aa4d457f399",
+        "research-rittangel-latin-w0u-a05dbf820d1c",
+        "research-rittangel-latin-wh5-b0d583757f3d",
+        "research-rittangel-latin-wzr-bc09433b2915",
+        "research-rittangel-latin-xuq-74aef03cd21e",
+        "research-rittangel-latin-yg3-4e3aa1e26583",
+        "research-rittangel-latin-z36-1c894e9bc3c4",
+        "research-rittangel-latin-zmm-3ac09d34f304",
+        "research-rittangel-latin-10n8-0fa45fd92082",
+        "research-rittangel-latin-115u-f9208fa69d54",
+        "research-rittangel-latin-120n-2b6b1a120cdd",
+        "research-rittangel-latin-12hk-6ca2db175472",
+        "research-rittangel-latin-136u-c5d720094e74",
+        "research-rittangel-latin-13u9-f31b1a7fce31",
+        "research-rittangel-latin-14ig-979601497f4e",
+        "research-rittangel-latin-152p-f869a32fdafc",
+        "research-rittangel-latin-15ir-e33880f0b95e",
+        "research-rittangel-latin-163k-f3c8fadf66ce",
+        "research-rittangel-latin-16l1-0334c87211dd",
+        "research-rittangel-latin-17hi-1d5cd42bc7bd",
+        "research-rittangel-latin-186c-66f77e74d1d5",
+        "research-rittangel-latin-18v7-057d7a3ff1b8",
+        "research-rittangel-latin-19fw-240fa491bd91",
+        "research-rittangel-latin-1a6g-007c9225207e",
+        "research-rittangel-latin-1ap3-a4638e32d753",
+        "research-rittangel-latin-1bcs-524649e5ae0b",
+        "research-rittangel-latin-1by8-6c0e2c8dfde8",
+        "research-rittangel-latin-1cjj-856dd0b6b8c6",
+        "research-rittangel-latin-1d3u-04494859ca05",
+        "research-rittangel-latin-1dr1-ab198b936fe8",
+        "research-rittangel-latin-1eo5-ee0b062d4f6f",
+        "research-rittangel-latin-1fa8-50bb353b5067",
+        "research-rittangel-latin-1fpw-64d995b4349f",
+        "research-rittangel-latin-1gei-09e4db9a07e5",
+        "research-rittangel-latin-1gsr-9d250ec9f2a7",
+        "research-rittangel-latin-1hep-2bdcd82312d9",
+        "research-rittangel-latin-1hw2-a886421b1ec4",
+        "research-rittangel-latin-1ijb-3e8267ff1580",
+        "research-rittangel-latin-1jbn-96dcc921a08c",
+        "research-rittangel-latin-1jxu-5c1475b1d299",
+        "research-rittangel-latin-1kiw-c72cb11d17f9",
+        "research-rittangel-latin-1kww-f3122ab60e49",
+        "research-rittangel-latin-1lod-782c649ff34c",
+        "research-rittangel-latin-1m9q-37e2c0952fdb",
+        "research-rittangel-latin-1mip-eaf108aa7df5",
+        "research-rittangel-latin-1mv9-4277432c1515",
+        "research-rittangel-latin-1nj5-7f9f6d57bda6",
+        "research-rittangel-latin-1of2-5b0ec4c0c425",
+        "research-rittangel-latin-1oyc-f1ddeb26e3a1",
+        "research-rittangel-latin-1ptz-8aa3b0f1b19a",
+        "research-rittangel-latin-1qxz-654ef15930fc",
+        "research-rittangel-latin-1qzp-e14568e18992",
+        "research-rittangel-latin-1rgo-d9ae88596c3b",
+        "research-rittangel-latin-1s80-1cb7a199b1af",
+        "research-rittangel-latin-1stv-b198c0fae65d",
+        "research-rittangel-latin-1tcy-7cb477cf5ad9",
+        "research-rittangel-latin-1tyd-9305816cef34",
+        "research-rittangel-latin-1umq-ba00b125e1d7",
+        "research-rittangel-latin-1v5m-5bdaa68c8848",
+        "research-rittangel-latin-1vn8-ec1177b4bf5f",
+        "research-rittangel-latin-1w5m-fa27a48aebbf",
+        "research-rittangel-latin-1wnp-9fd0e1c1fb35",
+        "research-rittangel-latin-1xng-fbffd3bc1731",
+        "research-rittangel-latin-1yg7-f73cbe239d10",
+        "research-rittangel-latin-1zbg-f460e1bcdcac",
+        "research-rittangel-latin-2095-aaa73e4caeda",
+        "research-rittangel-latin-20vd-81d72e611133",
+        "research-rittangel-latin-21qx-3e8e89911704",
+        "research-rittangel-latin-22lg-996dcabf9695",
+        "research-rittangel-latin-23hg-d9b4a7f22fe8",
+        "research-rittangel-latin-24dy-ac8066749167",
+        "research-rittangel-latin-24yd-00122b141dba",
+        "research-rittangel-latin-25sa-19f1735b7c66",
+        "research-rittangel-latin-26hk-75e02c6e34bc",
+        "research-rittangel-latin-271y-c56b8cf00263",
+        "research-rittangel-latin-27o2-0adff0b7d3e7",
+        "research-rittangel-latin-286b-7ae27264c23a",
+        "research-rittangel-latin-28y4-2fb5ebbe79f1",
+        "research-rittangel-latin-29qu-3413dafaa9e8"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 14,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 10
+  },
+  "recommendedSequences": [
+    {
+      "id": "rittangel-latin-preparing-the-home",
+      "title": "Preparing for the Seder night",
+      "sectionIds": [
+        "kadesh"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-56s-954df8257811",
+        "research-rittangel-latin-5qc-f0b4ef413860",
+        "research-rittangel-latin-6az-d7651e922344",
+        "research-rittangel-latin-72x-32bc00a85d4a"
+      ],
+      "beginnerContext": "Summarize in modern English that the source begins with removing leaven, evening prayers, returning home, and approaching the prepared table.",
+      "rationale": "These consecutive pages form the work’s complete transition from pre-Passover preparation into the household Seder rather than isolating a single antiquarian instruction.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "facsimile-visual-check-required",
+        "modern-english-summary-required"
+      ],
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the public-domain original and open transcription.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 10, segment 1",
+        "end": "PDF p. 11, segment 2",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-56s-954df8257811",
+            "sourceLocation": "PDF p. 10, segment 1",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 6724,
+              "normalizedEndOffset": 7427
+            }
+          },
+          {
+            "id": "research-rittangel-latin-5qc-f0b4ef413860",
+            "sourceLocation": "PDF p. 10, segment 2",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 7428,
+              "normalizedEndOffset": 8170
+            }
+          },
+          {
+            "id": "research-rittangel-latin-6az-d7651e922344",
+            "sourceLocation": "PDF p. 11, segment 1",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 8171,
+              "normalizedEndOffset": 9176
+            }
+          },
+          {
+            "id": "research-rittangel-latin-72x-32bc00a85d4a",
+            "sourceLocation": "PDF p. 11, segment 2",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 9177,
+              "normalizedEndOffset": 10179
+            }
+          }
+        ]
+      },
+      "totalWords": 576,
+      "exactTextSequenceSha256": "f19632dd5595840c413f415ed85d207fbd5a0bcccedaa09aec582e6e697983b0",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "rittangel-latin-first-cup-to-questions",
+      "title": "First cup through the questions",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-7us-f9b4c72b86a5",
+        "research-rittangel-latin-8km-2524f91c1c74",
+        "research-rittangel-latin-99r-aabd96761e05",
+        "research-rittangel-latin-9sk-03d0e52af030",
+        "research-rittangel-latin-aj7-c1fd6f888108",
+        "research-rittangel-latin-b24-6ef313682102"
+      ],
+      "beginnerContext": "Use the app’s ordinary action cues first, then label this as a seventeenth-century Latin account of Kiddush, washing, breaking matzah, invitation, questions, and the first answer.",
+      "rationale": "Six source-order segments preserve the continuous early ritual sequence and its handoff into the freedom story.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "facsimile-visual-check-required",
+        "do-not-substitute-for-host-instructions",
+        "modern-english-summary-required"
+      ],
+      "creditNotes": "Credit Rittangel and Varady; do not silently correct the historical transcription or OCR.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 12, segment 1",
+        "end": "PDF p. 14, segment 2",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-7us-f9b4c72b86a5",
+            "sourceLocation": "PDF p. 12, segment 1",
+            "locator": {
+              "label": "PDF p. 12",
+              "pageNumber": 12,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 10180,
+              "normalizedEndOffset": 11109
+            }
+          },
+          {
+            "id": "research-rittangel-latin-8km-2524f91c1c74",
+            "sourceLocation": "PDF p. 12, segment 2",
+            "locator": {
+              "label": "PDF p. 12",
+              "pageNumber": 12,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 11110,
+              "normalizedEndOffset": 12014
+            }
+          },
+          {
+            "id": "research-rittangel-latin-99r-aabd96761e05",
+            "sourceLocation": "PDF p. 13, segment 1",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 12015,
+              "normalizedEndOffset": 12691
+            }
+          },
+          {
+            "id": "research-rittangel-latin-9sk-03d0e52af030",
+            "sourceLocation": "PDF p. 13, segment 2",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 12692,
+              "normalizedEndOffset": 13650
+            }
+          },
+          {
+            "id": "research-rittangel-latin-aj7-c1fd6f888108",
+            "sourceLocation": "PDF p. 14, segment 1",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 13651,
+              "normalizedEndOffset": 14331
+            }
+          },
+          {
+            "id": "research-rittangel-latin-b24-6ef313682102",
+            "sourceLocation": "PDF p. 14, segment 2",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 14332,
+              "normalizedEndOffset": 15139
+            }
+          }
+        ]
+      },
+      "totalWords": 871,
+      "exactTextSequenceSha256": "29c8b8a8a9928ee48c43dffd2c40af05fd0d648482656757bf7201c80dc728af",
+      "sourcePresentedAttribution": [
+        "©$ Digitized by Google",
+        "©"
+      ],
+      "runtimeEligible": false
+    },
+    {
+      "id": "rittangel-latin-duty-and-four-children",
+      "title": "The duty to tell and the Four Children",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-bok-8d1f9c1e4896",
+        "research-rittangel-latin-ccf-4c4038fd2df4",
+        "research-rittangel-latin-cwj-58db9ea74155",
+        "research-rittangel-latin-diw-59dd2fedbd99",
+        "research-rittangel-latin-e78-759e1334092a"
+      ],
+      "beginnerContext": "Explain that the text moves from the obligation to retell the Exodus into four different learning postures; use inclusive modern labels outside the exact source excerpt.",
+      "rationale": "These adjacent records contain one coherent pedagogical movement from the sages’ all-night telling through the four archetypal children and the instruction to begin for someone who cannot ask.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "facsimile-visual-check-required",
+        "inclusive-modern-framing-required",
+        "modern-english-summary-required"
+      ],
+      "creditNotes": "Credit Rittangel and Varady and retain both public-domain and transcription-license information.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 15, segment 1",
+        "end": "PDF p. 17, segment 1",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-bok-8d1f9c1e4896",
+            "sourceLocation": "PDF p. 15, segment 1",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 15140,
+              "normalizedEndOffset": 15998
+            }
+          },
+          {
+            "id": "research-rittangel-latin-ccf-4c4038fd2df4",
+            "sourceLocation": "PDF p. 15, segment 2",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 15999,
+              "normalizedEndOffset": 16722
+            }
+          },
+          {
+            "id": "research-rittangel-latin-cwj-58db9ea74155",
+            "sourceLocation": "PDF p. 16, segment 1",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 16723,
+              "normalizedEndOffset": 17527
+            }
+          },
+          {
+            "id": "research-rittangel-latin-diw-59dd2fedbd99",
+            "sourceLocation": "PDF p. 16, segment 2",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 17528,
+              "normalizedEndOffset": 18403
+            }
+          },
+          {
+            "id": "research-rittangel-latin-e78-759e1334092a",
+            "sourceLocation": "PDF p. 17, segment 1",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 18404,
+              "normalizedEndOffset": 19158
+            }
+          }
+        ]
+      },
+      "totalWords": 806,
+      "exactTextSequenceSha256": "bf76a6c85badd24dd03d5b613bcb402bb3b56e653fa158f38cff3ef80b4f5e73",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "rittangel-latin-oppression-and-redemption",
+      "title": "Oppression, cry, and redemption",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-ic7-5df6d89be2f7",
+        "research-rittangel-latin-iy0-aaad6bebfbb0",
+        "research-rittangel-latin-jse-9c99375e0c77",
+        "research-rittangel-latin-kco-e6b2e1826329",
+        "research-rittangel-latin-ku4-61e3888ec2e5",
+        "research-rittangel-latin-lrl-84e493ccdfbf",
+        "research-rittangel-latin-mc2-ac6d14b2fbf1"
+      ],
+      "beginnerContext": "Provide a concise English story first: forced labor intensified, the people cried out, their suffering was seen, and the text turns toward deliverance.",
+      "rationale": "Seven source-order segments maintain the causal story from oppression through the cry and response, ending with the traditional exposition of signs and wonders while omitting one locally quarantined OCR fragment.",
+      "themes": [
+        "traditional",
+        "social-justice",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "facsimile-visual-check-required",
+        "modern-english-summary-required",
+        "nontriumphalist-plague-framing",
+        "disclose-abridgment"
+      ],
+      "creditNotes": "Credit Rittangel and Varady; visually verify every OCR-derived line against the cited pages.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 20, segment 2",
+        "end": "PDF p. 24, segment 2",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-ic7-5df6d89be2f7",
+            "sourceLocation": "PDF p. 20, segment 2",
+            "locator": {
+              "label": "PDF p. 20",
+              "pageNumber": 20,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 23767,
+              "normalizedEndOffset": 24551
+            }
+          },
+          {
+            "id": "research-rittangel-latin-iy0-aaad6bebfbb0",
+            "sourceLocation": "PDF p. 21, segment 1",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 24552,
+              "normalizedEndOffset": 25645
+            }
+          },
+          {
+            "id": "research-rittangel-latin-jse-9c99375e0c77",
+            "sourceLocation": "PDF p. 22, segment 1",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 25646,
+              "normalizedEndOffset": 26375
+            }
+          },
+          {
+            "id": "research-rittangel-latin-kco-e6b2e1826329",
+            "sourceLocation": "PDF p. 22, segment 2",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 26376,
+              "normalizedEndOffset": 27003
+            }
+          },
+          {
+            "id": "research-rittangel-latin-ku4-61e3888ec2e5",
+            "sourceLocation": "PDF p. 23, segment 1",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 27004,
+              "normalizedEndOffset": 27741
+            }
+          },
+          {
+            "id": "research-rittangel-latin-lrl-84e493ccdfbf",
+            "sourceLocation": "PDF p. 24, segment 1",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 28209,
+              "normalizedEndOffset": 28945
+            }
+          },
+          {
+            "id": "research-rittangel-latin-mc2-ac6d14b2fbf1",
+            "sourceLocation": "PDF p. 24, segment 2",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 28946,
+              "normalizedEndOffset": 29761
+            }
+          }
+        ]
+      },
+      "totalWords": 1115,
+      "exactTextSequenceSha256": "c32891411dbd08439fef974b6fdba1ceeb0dd8aa022abf641aca9736e099d189",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "rittangel-latin-three-symbols",
+      "title": "Passover, matzah, maror, and lived memory",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror",
+        "hallel"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-ss7-5de2fb2f40a6",
+        "research-rittangel-latin-tbl-01a9917b974e",
+        "research-rittangel-latin-u2v-df71c5c02a39",
+        "research-rittangel-latin-ujr-0da97571749d",
+        "research-rittangel-latin-vdq-8aa4d457f399"
+      ],
+      "beginnerContext": "Point to each ritual food and explain its meaning in contemporary English before showing the Latin witness; then explain the move from memory into praise.",
+      "rationale": "The source sequence contains the three core symbol explanations, the every-generation teaching, and the transition into Hallel as a single ritual argument.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "facsimile-visual-check-required",
+        "visible-object-cues-required",
+        "modern-english-summary-required"
+      ],
+      "creditNotes": "Credit Rittangel and Varady; retain exact source wording and disclose any separate modern translation.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 30, segment 1",
+        "end": "PDF p. 32, segment 1",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-ss7-5de2fb2f40a6",
+            "sourceLocation": "PDF p. 30, segment 1",
+            "locator": {
+              "label": "PDF p. 30",
+              "pageNumber": 30,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 37303,
+              "normalizedEndOffset": 38000
+            }
+          },
+          {
+            "id": "research-rittangel-latin-tbl-01a9917b974e",
+            "sourceLocation": "PDF p. 30, segment 2",
+            "locator": {
+              "label": "PDF p. 30",
+              "pageNumber": 30,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 38001,
+              "normalizedEndOffset": 38982
+            }
+          },
+          {
+            "id": "research-rittangel-latin-u2v-df71c5c02a39",
+            "sourceLocation": "PDF p. 31, segment 1",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 38983,
+              "normalizedEndOffset": 39590
+            }
+          },
+          {
+            "id": "research-rittangel-latin-ujr-0da97571749d",
+            "sourceLocation": "PDF p. 31, segment 2",
+            "locator": {
+              "label": "PDF p. 31",
+              "pageNumber": 31,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 39591,
+              "normalizedEndOffset": 40669
+            }
+          },
+          {
+            "id": "research-rittangel-latin-vdq-8aa4d457f399",
+            "sourceLocation": "PDF p. 32, segment 1",
+            "locator": {
+              "label": "PDF p. 32",
+              "pageNumber": 32,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 40670,
+              "normalizedEndOffset": 41501
+            }
+          }
+        ]
+      },
+      "totalWords": 817,
+      "exactTextSequenceSha256": "d8f67c4dd2e8f7223fed1ae4138bdfc9599133692938f912b84ddf96217c02ad",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "rittangel-latin-dayenu-transcription",
+      "title": "Hebrew-Latin Dayenu witness",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-rittangel-latin-286b-7ae27264c23a",
+        "research-rittangel-latin-28y4-2fb5ebbe79f1",
+        "research-rittangel-latin-29qu-3413dafaa9e8",
+        "research-rittangel-latin-2alm-bf2a0f194da8"
+      ],
+      "beginnerContext": "Introduce Dayenu as a cumulative gratitude song and make clear that this selection is a historical Hebrew-Latin transcription, not the app’s English sing-along version.",
+      "rationale": "The four official transcription records preserve the complete Dayenu progression in source order and are more reliable than reconstructing it from scattered OCR pages.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "historical-latin-specialist-opt-in",
+        "modern-english-summary-required",
+        "traditional-land-language-context"
+      ],
+      "creditNotes": "Credit Johann Stephan Rittangel and Aharon N. Varady; identify the official open transcription and its CC BY-SA 4.0 conditions.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "official open siddur dayenu transcription, segment 1",
+        "end": "official open siddur dayenu transcription, segment 4",
+        "locators": [
+          {
+            "id": "research-rittangel-latin-286b-7ae27264c23a",
+            "sourceLocation": "official open siddur dayenu transcription, segment 1",
+            "locator": {
+              "label": "official open siddur dayenu transcription",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 103907,
+              "normalizedEndOffset": 104907
+            }
+          },
+          {
+            "id": "research-rittangel-latin-28y4-2fb5ebbe79f1",
+            "sourceLocation": "official open siddur dayenu transcription, segment 2",
+            "locator": {
+              "label": "official open siddur dayenu transcription",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 104908,
+              "normalizedEndOffset": 105941
+            }
+          },
+          {
+            "id": "research-rittangel-latin-29qu-3413dafaa9e8",
+            "sourceLocation": "official open siddur dayenu transcription, segment 3",
+            "locator": {
+              "label": "official open siddur dayenu transcription",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 105942,
+              "normalizedEndOffset": 107049
+            }
+          },
+          {
+            "id": "research-rittangel-latin-2alm-bf2a0f194da8",
+            "sourceLocation": "official open siddur dayenu transcription, segment 4",
+            "locator": {
+              "label": "official open siddur dayenu transcription",
+              "pageNumber": null,
+              "localExtract": "research/source-extracts/rittangel-latin.txt",
+              "sourceSha256": "676057ff5b402267f96c8c91d7972dbcf7196b2b043ad3b1f339ec51794e95c8",
+              "extractSha256": "aea52f3acbbde9a535b9326bc228b1a0e933fa6fda8c79cf00a1df636dd88609",
+              "normalizedStartOffset": 107050,
+              "normalizedEndOffset": 108233
+            }
+          }
+        ]
+      },
+      "totalWords": 596,
+      "exactTextSequenceSha256": "1d22e62c5365b4112823d36fec40f183d8ee5ee9f91afbfd3dc935d74e6b10dd",
+      "sourcePresentedAttribution": [
+        "translation by Johann Stephan Rittangel as found in his translation of the Pesaḥ seder haggadah, Liber Rituum Paschalium (1644)"
+      ],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-rittangel-latin-1aj-d4b4c8c190f6",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "Digitization footer fragment with no coherent ritual or scholarly content."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1ba-5089b748c530",
+      "sourceLocation": "PDF p. 3, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish",
+        "Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-lem-68fb70bfe159",
+      "sourceLocation": "PDF p. 23, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish",
+        "Local quality checks flag the OCR as likely gibberish; it must remain research-only until a new transcription is visually established."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-pot-b79b4725637f",
+      "sourceLocation": "PDF p. 27, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-q3p-1799c952fa12",
+      "sourceLocation": "PDF p. 27, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-qer-23ae071a8b0e",
+      "sourceLocation": "PDF p. 28, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-w0u-a05dbf820d1c",
+      "sourceLocation": "PDF p. 32, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-18v7-057d7a3ff1b8",
+      "sourceLocation": "PDF p. 43, segment 1",
+      "reasons": [
+        "Collective-vengeance prayer is inconsistent with the project’s peace-focused default and remains research-only."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1lod-782c649ff34c",
+      "sourceLocation": "PDF p. 54, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1m9q-37e2c0952fdb",
+      "sourceLocation": "PDF p. 54, segment 2",
+      "reasons": [
+        "canonical-quarantine",
+        "corrupt-glyphs",
+        "likely-ocr-gibberish",
+        "Canonical extraction is quarantined for corrupt glyphs and cannot support exact reading text."
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1of2-5b0ec4c0c425",
+      "sourceLocation": "PDF p. 58, segment 1",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1stv-b198c0fae65d",
+      "sourceLocation": "PDF p. 63, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-1w5m-fa27a48aebbf",
+      "sourceLocation": "PDF p. 66, segment 2",
+      "reasons": [
+        "likely-ocr-gibberish"
+      ]
+    },
+    {
+      "id": "research-rittangel-latin-25sa-19f1735b7c66",
+      "sourceLocation": "PDF p. 77, segment 1",
+      "reasons": [
+        "Early-modern Christian polemic about Jewish observance is unsuitable for guest-facing use and remains research-only."
+      ]
+    }
+  ],
+  "notes": [
+    "The source is included as an opt-in historical witness; Latin and difficult OCR do not justify erasing it from the corpus.",
+    "No OCR-derived passage should be promoted without a visual comparison to the corresponding facsimile page.",
+    "All recommended sequences remain candidate-only pending human editorial and language review."
+  ]
+}

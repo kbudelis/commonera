@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpus": {
+    "sourceCount": 20,
+    "segmentCount": 1999,
+    "approvedPrecomputeCount": 1962,
+    "quarantinedCount": 37,
+    "normalizedContentCharacters": 1847791,
+    "approximateStaticPagesAt2800Characters": 660,
+    "allSourcesCoverageVerified": true
+  },
+  "models": {
+    "classifier": "gpt-5.4-nano",
+    "composer": "gpt-5.4"
+  },
+  "transport": "batch",
+  "classification": {
+    "model": "gpt-5.4-nano",
+    "transport": "batch",
+    "requestCount": 122,
+    "estimatedInputTokens": {
+      "lower": 628886,
+      "likely": 860544,
+      "upper": 1677579
+    },
+    "maximumOutputTokens": 670912,
+    "cost": {
+      "likelyInputUsd": 0.0860544,
+      "maximumInputUsd": 0.16775790000000002,
+      "maximumOutputUsd": 0.41931999999999997,
+      "maximumTotalUsd": 0.5870778999999999
+    },
+    "standardPricingPerMillionTokens": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "batchDiscountApplied": 0.5
+  },
+  "compositionProjection": {
+    "model": "gpt-5.4",
+    "transport": "batch",
+    "requestCount": 150,
+    "estimatedInputTokens": {
+      "lower": 605198,
+      "likely": 828143,
+      "upper": 1577478
+    },
+    "maximumOutputTokens": 390000,
+    "cost": {
+      "likelyInputUsd": 1.03517875,
+      "maximumInputUsd": 1.9718475,
+      "maximumOutputUsd": 2.9250000000000003,
+      "maximumTotalUsd": 4.8968475
+    },
+    "standardPricingPerMillionTokens": {
+      "input": 2.5,
+      "output": 15
+    },
+    "batchDiscountApplied": 0.5
+  },
+  "pricing": {
+    "gpt-5.4-nano": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "gpt-5.4-mini": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gpt-5.4": {
+      "input": 2.5,
+      "output": 15
+    }
+  },
+  "caveats": [
+    "Token counts are conservative character/byte bounds, not tokenizer output.",
+    "Maximum output assumes every request uses its full max_output_tokens allowance.",
+    "Pricing is configuration captured with this estimate and must be rechecked before submission.",
+    "No API request is authorized by generating this estimate."
+  ],
+  "estimateId": "9fd6a33fd8f6433d854155b9a49261c172161cff1c9aed79d2f146887575050b",
+  "executionProjection": {
+    "classification": {
+      "mode": "batch",
+      "completionWindowHours": 24,
+      "note": "OpenAI documents a 24-hour completion window; jobs often finish sooner, but no narrower bound is promised."
+    },
+    "composition": {
+      "mode": "batch",
+      "completionWindowHours": 24,
+      "note": "OpenAI documents a 24-hour completion window; jobs often finish sooner, but no narrower bound is promised."
+    }
+  }
+}

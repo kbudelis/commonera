@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "freedom-seder-earth",
+  "sourceTitle": "The Freedom Seder for the Earth",
+  "modules": [
+    {
+      "id": "freedom-maggid-earth-oppression",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "exactText": "Oppression of human beings and destruction of the earth go hand in hand. Our ancient forebears could see that there was a connection.",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 4, introductory Maggid reflection",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "environment",
+        "social-justice"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 23,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "provenanceHash": "04117ad988fec540be5d21c2ac6dfffbf5eaa56c52f08b64140266b3ad9b05cc",
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      }
+    },
+    {
+      "id": "freedom-yachatz-share-bread",
+      "sourceId": "freedom-seder-earth",
+      "family": "eco-justice",
+      "exactText": "Why do we break this bread in two? Because if we hold on to the whole loaf for ourselves, it remains the bread of oppression. If we break it in order to share it, it becomes the bread of freedom.",
+      "locator": {
+        "edition": "The Freedom Seder for the Earth",
+        "sourceLocation": "PDF p. 8 (printed p. 7), Yachatz",
+        "localExtract": "research/source-extracts/freedom-seder-earth.txt",
+        "sourceSha256": "9280cfdb46f791916bc11cc41f607923ab6944fd792f7c4d1d2f6d7a8d0d5884",
+        "extractSha256": "7bb4c10b6d4e07d9921fb17d6bead31d560c48508d4e1d96b86772f2da34d007"
+      },
+      "sectionIds": [
+        "yachatz"
+      ],
+      "themes": [
+        "social-justice",
+        "environment",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "treatment": "verbatim-normalized",
+      "wordCount": 40,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Attribute Waskow and The Shalom Center",
+          "Preserve source-presented credits and ShareAlike notice"
+        ]
+      },
+      "provenanceHash": "ee989ba205879efaf40588c664ed1502dded10c742bd267ad8071178d732c7c1",
+      "attribution": {
+        "creator": "Rabbi Arthur Waskow and The Shalom Center",
+        "containingSource": "The Freedom Seder for the Earth",
+        "sourcePresented": null,
+        "readerCredit": "From The Freedom Seder for the Earth by Rabbi Arthur Waskow and The Shalom Center."
+      }
+    }
+  ]
+}

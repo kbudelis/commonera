@@ -1,0 +1,788 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "english-jews-seder",
+  "sourceTitle": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+  "reviewStatus": "local-agent-reviewed-candidate",
+  "sourceCredit": {
+    "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady.",
+    "license": "public-domain + CC-BY-SA-4.0 transcription",
+    "conditions": [
+      "Credit Dávid Kaufmann and Aharon N. Varady",
+      "Preserve transcription license and indicate changes"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=4609"
+  },
+  "modules": [
+    {
+      "id": "local-sequence-english-jews-seder-manuscript-orientation",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "A medieval English Seder survives",
+      "exactText": "Jacob b. Jehuda of London, the author of that valuable contribution to the literary side of Anglo-Jewish history, the Talmudical compendium Etz Chaim, so providentially rescued and preserved for us, never dreamt, when he noted down, in the year 1287, the Ritual and Agada of the Seder Nights according to English usage, that he was fixing a permanent picture of what was doomed to destruction, and was recording not a mere portion of the liturgy, but a page of Jewish history. Faithfully copying his great prototype, Maimonides, the English Chazan also embodied in his work the texts of the Recitations on the Seder Nights in the form customary among his countrymen, and appended the correlated rites according to Minhag England. The Hagada has hitherto been considered the piece, par excellence, common to all the liturgies, and bearing the least and fewest marks of national differentiation.\n\nThe examination of our MS. shows, however, that this part of the Service reflects as clearly and unmistakably the characteristic independence of the English liturgy, already noted in a previous article, as the rest of the prayers. Notwithstanding its small bulk, several variations distinguish and mark it off from the French ritual. Thus, for example, the repetition, in the vernacular, of the first two pieces, before and after the second cup—which, we learn from Rashi’s Pardess was the French usage—was not customary in England.[1] Solomon b. Jehuda, the saint of Dreuæ (see Gross, Revue des Études Juives, XIII, 46, No. 3), followed this custom of translating the Hagada into the vernacular, so Samuel of Falaise reports, as quoted by R. Isaac, Or Sarua, 119a והקדוש מדרי׳׳וש היה רגיל לומר בלע׳ז עד כולנו מסובין.\n\nHad it been so, how valuable would the English renderings from the pre-expulsion period have been to us. Or, perhaps, they too would have been in French. The single non-Hebraic term which R. Jacob gives in his Ritual of the Seder, cerfeuil, the name of the vegetable handed round after the first cup, is French, and is met with in authorities of French origin or descriptive of the French ritual, e.g., in the Machzor Vitry (ed. Hurwitz, p. 294: ויקח מן הצרפוייל). In the third part of his Hilchot Pesach, R. Jacob gives detailed instructions for the preparation of charoseth. But we look in vain in his work for a translation of the term, though such is given in Zidkiah b. Abraham’s שבלי הלקט (ed. S. Buber, p. 184).",
+      "segmentIds": [
+        "research-english-jews-seder-0-2b743cb55bac",
+        "research-english-jews-seder-ou-f0749b2b0890",
+        "research-english-jews-seder-1bk-021d4c1b201f"
+      ],
+      "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 3",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 1 through official source snapshot, segment 3",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-0-2b743cb55bac",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 0,
+            "normalizedEndOffset": 893
+          },
+          {
+            "id": "research-english-jews-seder-ou-f0749b2b0890",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 894,
+            "normalizedEndOffset": 1711
+          },
+          {
+            "id": "research-english-jews-seder-1bk-021d4c1b201f",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 1712,
+            "normalizedEndOffset": 2430
+          }
+        ]
+      },
+      "provenanceHash": "78056fdda36a1733fb0dd57267371592c97f03e0cb4317e922127769cdb38a7a",
+      "componentProvenanceHashes": [
+        "2b743cb55bac5c31750307c678f455f89346d2e78f2431d475973c435c4d27fe",
+        "f0749b2b08909d684336dc088d28b80b3970e6cf90d77ef2dd7693bad2443f71",
+        "021d4c1b201f89b2fa4cf188c37bce487b7f3873766e115834a19ea242c1c54f"
+      ],
+      "wordCount": 407,
+      "characterCount": 2432,
+      "sectionIds": [
+        "kadesh"
+      ],
+      "sourceSectionIds": [
+        "kadesh"
+      ],
+      "insertionSectionId": "kadesh",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "interfaith"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "Present this as a short historical note before the ritual begins: a 1287 English Jewish manuscript preserves local Seder customs from before the expulsion.",
+      "rationale": "The article’s opening three segments establish the manuscript, explain why the rite is distinctive, and introduce its linguistic setting as one coherent documentary frame.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; identify the public-domain study and CC BY-SA 4.0 transcription.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "distinguish-commentary-from-liturgy",
+        "historical-sidebar-only",
+        "plain-language-context-required"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-english-jews-seder-haroset-history",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "Medieval haroset ingredients and authority",
+      "exactText": "The directions for the preparation of the mixture are as follows:— חרוסת אינה מדברי סופרים זכר לטיט וככה מעשהו יקח תמרים או גרוגרות או צמוקין ורורסן ונותן בם חומץ ומתבלן בתבלין כס׳ טיט בתבלין ונמצא במדרש לעשותו מכל פירות של שיר השירים[2] Or Sarua, II., 119b. תמרה תאנה רמון אגוז תפוח ויוסיף שקדים ששקד השם על הקץ וחמוץ [.1 וחומץ] קצת זכר לתפוח שעוררנו תחתיו ועב זכר לטיט ובירושל’ איכ׳ מ֗ד֗ צריך לעשותו דק זכר לדם ונר׳ לרם מלונדרש שלפיכך עושהו עב בתחלה ובשעת טבול נותנין בו משקין והוי כמר וכמר. We need but compare this with Zidkiah b. Abraham’s recipe, to notice the difference of national usage, even in this trifling detail. In England, all the fruits named in the Song of Songs—dates, figs, pomegranates, nuts and apples—were crushed with almonds and moistened with vinegar.\n\nIn Italy, spices, vegetables, blossoms, and even a sprinkling of lime formed some of the ingredients of the paste. R. Moses of London, quoted in this connection, appears here as an unquestioned authority for the Seder ritual. For the first time, an English Rabbi, a master in Halacha and an authority in traditions, confronts us as a living personality and not merely a nominis umbra. R. Moses’ decisions were recognised even when opposed to the pronouncements of such great French teachers as the famous R. Isaac b. Abraham=Isaac of Dampierre, brother of R. Simson of Sens, who, by the way, was known in England by the abbreviation ריברא, not ריבא or ריצבא. As in France, they relied for their knowledge of the Seder ceremonies on such revered teachers as R. Solomon b. Isaac of Troyes, R.\n\nJoseph Tob Elem and others, who worked out arrangements of the Seder ritual, in prose and verse; so R. Moses of London stood out as the central authority in tradition for the whole of England. Most probably he also left a compilation of the rules appertaining to this service, which Jacob b. Judah possessed in manuscript, just as he left compilations of other ritual laws, e.g.:— הלכות מליחת בשר וכל הדינים כאשר סדרם רבינו מלונדרושא ת׳נ׳ב׳ה (Bodleian Library, codex 882). But apart from the historical interest of R. Jacob’s Agada, it deserves examination for its deviations from, and additions to, the textus receptus. In the following pages I have carefully copied the rubrics which precede the Agada and are interspersed in it; and also noted all the essential variants of the Agadah as contained in the fourth part of the 26th Book of the Etz Chaim.",
+      "segmentIds": [
+        "research-english-jews-seder-1vj-495e26e447b3",
+        "research-english-jews-seder-2h5-f7db7f5d3e0d",
+        "research-english-jews-seder-334-cc0cb11a571e"
+      ],
+      "sourceLocation": "official source snapshot, segment 4 through official source snapshot, segment 6",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 4 through official source snapshot, segment 6",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-1vj-495e26e447b3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 2431,
+            "normalizedEndOffset": 3208
+          },
+          {
+            "id": "research-english-jews-seder-2h5-f7db7f5d3e0d",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 3209,
+            "normalizedEndOffset": 3999
+          },
+          {
+            "id": "research-english-jews-seder-334-cc0cb11a571e",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 4000,
+            "normalizedEndOffset": 4854
+          }
+        ]
+      },
+      "provenanceHash": "c1637b8d54f5bbcabcc543229eccead09622b223c919d19c0019fa9fc9398ca3",
+      "componentProvenanceHashes": [
+        "495e26e447b343e2e2a2a730c3b43a5206b86806647082f580e13e0f50103401",
+        "f7db7f5d3e0d4c1d8ee3e7c75a71df3cdc77f5dc0a76008c6196e5a8e7fe7a79",
+        "cc0cb11a571e05848c17e3ef08ce9a05dcb6f6bb5e1a27be32ceb6837408bb03"
+      ],
+      "wordCount": 418,
+      "characterCount": 2425,
+      "sectionIds": [
+        "maror",
+        "korech"
+      ],
+      "sourceSectionIds": [
+        "maror",
+        "korech"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "First explain that haroset is the fruit-and-nut mixture used with the bitter herb, then identify these paragraphs as historical evidence about regional recipes rather than the app’s cooking instructions.",
+      "rationale": "The three consecutive passages move from the manuscript’s recipe through comparative regional practice to the English rabbinic authority behind that practice.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and retain the transcription’s ShareAlike conditions.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-sidebar-only",
+        "ingredient-safety-and-modern-recipe-separate",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-english-jews-seder-table-and-questions",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "Medieval table order and questions",
+      "exactText": "Thus an idea may be formed of the text of the Agada which, three years before the expulsion, was already accepted by the English Jews as a heirloom of the past:— פ״ד זה הסדר יעשה בט״ו [.s בליל] ובליל י״ו בגולה נוטל תחלה ידו אחת לכבוד הברכה וילך להסב עם בני ביתו ויקדש הקדוש כמ’ שבארתי בהלכות קדוש וישתה כל אחד מלא לוגמ׳ והוא רוב רביעית [3] מחזור ויטרי, ed. Hurwitz, p. 274, note א. ומברך ברכה מעין שלש [4] Ib., p. 278.\n\nדד׳ כוסות תקינו ולכל חד נעביד מצוה לבד שיני שלא יברך אחריו שברכת המזון פוטרו ואם בדיעב׳ השקה לבניו מכוסו יצא והוא ששתה רוב רביעית ונוטל ידיו ומברך ע֗נ֗י֗ והנטילה שלא יטמאו ידיו שהן שניות המשקין לעשותן תחלה ויקח ירקות ומנהג בצירפוייל ומברך ב״פ האדמה ויטבול במי מלח ולא בחרוסת וכיון שאין מצותו עדטבול שני לא ימלא ממנו כריסו ואם אין לא מי מלח מותר לעשות ואפילו בשבת והמיימו׳ כתב טבול זה בחרוסת ואין צריך כזית מהירקות האלה שאין זה כי אם להיכר ולא יברך אחריו בור׳ נפשות אם לא אכל כזית וימיימוני מצריך כזית לכל אחד מירקות אלה : ואחר כך יביא קערה עם הג׳ מצות וב׳ תבשילין ואו׳ הר֗י֗ב֗ר֗א֗ והמימוני שהם שני מיני בשר אחד זכר לפסח ואחד לחגיגה אבל הרם מלונדרש או׳ כרבע׳ דבתראח הוא דאפי׳ גרמא ובישולי[5] Pesachim, 114b; Machzor Vitry p. 284.\n\nאבל ביצה לא שאין זה כי אט לזכרון והירושלמ׳ דקאמ׳ ובלבד מן שחוטה קאי על מתני׳ דמקום שנהנו לאכול צלי אבל עתה אין אנו אוכלין אותו: חל פסח במוצאי שבת אין צרי׳ כי אם תבשיל אחד דאין חניגה י״ד דוחה שבת ואם נשחט מע׳׳ש הוה ליה נותר ויש בקערה ג׳ מצות ומנהג לעשותן מעשרון אחד סימן ללחמי תודה שמביא היוצא מתפיסה [6] Ibn Jarchi, המנהיג Pesach, § 69. ויוסיף עליהם ואס ירצה ומנהג לסמן [7] Machzor Vitry, p. 272 איזה ראשונה ואיזה שנייה ואיזה שלישית ואין לחוש ונוטל אחד מן הג׳ מצות התיכונה ומחלקה לשנים חציה לאפיקומן וחציה יאחז בידו ויאמ׳ הא לחמא עניא דאכלו: After the formula כהא לחמא, which corresponds completely with the ordinary reading, the direction follows:— ואחר כך מחזיר המצה לקערה ומסלק הקערה במקו׳ עקירת שולחן שבימיהם שולחנם קטנים היו וזה הסיר לבן לישאל ואין צריך לסלק התבשילין מן הקערה שאין נר׳ כמקדיש קדשי׳ בחוץ[8] Ib., p.\n\n271, note א. אם לא יגביה התבשיל ואו׳ פסח זה וימזוג כוס שני ואם ישאלנו בנו או אחד מביתו ידלג ויאמ׳ עבדים היינו כו׳ ואס אין שואל יאמ׳ : מה נשתנה : The form of the questions exhibits no difference whatever, except that אנחנו is used throughout instead of אנו. In the opening of the response עבדים היינו we read:— כלנו זקנים ; ובזרוע נטויה ובאותות ובמופתים ובמורא גדול [9] L. Hoffmann in Berliner’s Magazin13,193, note 1. is wanting; מצוה לספר alone is found. The passage concerning the night spent in Bené Brak, which is only known from the Agada—its original source being still undiscovered—arranges the names in the following order:— מעשה ב֗ר֗ אליעז֗ בן עזריה ור֗ אלע֗ ורבי יהושע ור֗ עקיבא ור֗ טרפון. It only reads כל הלילה. The formula ברוך המקום is peculiar and against Reifmann’s hypothesis, that this piece is of the nature of a responsorial song.\n\nIt begins as follows:— ברוך המקום ברוך הוא ברו׳ שמו ברוך הוא שנתן תורה לעמו ישר׳ כנגד ארבעה…….‏ The wise son says, in contradistinction to his wicked counterpart:— אשר צוה יי’ אלהינו אותנו ואפ, as, indeed the Mechilta and all ancient texts of the Agada read (comp. Hoffmann in Berliner’s Magazin, 13,193). The speech put into the mouth of the רשע has the readings:— שאילו היה שם ,שהוציא עצמו. In the fourth son’s speech לאמר is omitted. The piece יכול contains the reading:— לא אמרתי לך. After ברוך שומר it is said:— ב״ה ב׳׳ש שהק֗ חשב לגלות הקץ כמה שאמ׳.",
+      "segmentIds": [
+        "research-english-jews-seder-3qv-c275ca68efee",
+        "research-english-jews-seder-42i-d84c0c331987",
+        "research-english-jews-seder-4mr-47d913cd5173",
+        "research-english-jews-seder-59j-f26915b2aeb3",
+        "research-english-jews-seder-5x6-8c769899d700"
+      ],
+      "sourceLocation": "official source snapshot, segment 7 through official source snapshot, segment 11",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 7 through official source snapshot, segment 11",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-3qv-c275ca68efee",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 4855,
+            "normalizedEndOffset": 5273
+          },
+          {
+            "id": "research-english-jews-seder-42i-d84c0c331987",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 5274,
+            "normalizedEndOffset": 6002
+          },
+          {
+            "id": "research-english-jews-seder-4mr-47d913cd5173",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 6003,
+            "normalizedEndOffset": 6822
+          },
+          {
+            "id": "research-english-jews-seder-59j-f26915b2aeb3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 6823,
+            "normalizedEndOffset": 7673
+          },
+          {
+            "id": "research-english-jews-seder-5x6-8c769899d700",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 7674,
+            "normalizedEndOffset": 8228
+          }
+        ]
+      },
+      "provenanceHash": "95f4e50c2167d90c2d8dd791996c46a51e0776d6587eff01858912764a62cd2a",
+      "componentProvenanceHashes": [
+        "c275ca68efeeb32034392067fe424d4ec93ed2e2443988718b5e7f99539de661",
+        "d84c0c33198781abb0b7504feac4d5afc83776debe61c0ecba2e643d845f56af",
+        "47d913cd51732ffd94cded316a56a1792a38dca6963fc38eff67ba23378518ac",
+        "f26915b2aeb31686dca8f7219f4ed3c7befd6b555df03ab45b4affba79b514da",
+        "8c769899d7000d8a95e3235b34bec17f10f384e3913c45821b541188881b93a7"
+      ],
+      "wordCount": 621,
+      "characterCount": 3377,
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-explanation",
+      "beginnerContext": "Explain the modern action for each step independently; then use this sequence to show how medieval English Jews ordered the cups, vegetables, matzah, questions, and teaching roles.",
+      "rationale": "The records follow the manuscript’s own early-Seder order into the Four Questions and Four Children, making a coherent comparative sequence despite the scholarly commentary around it.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve article and transcription attribution.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-substitute-for-host-instructions",
+        "historical-sidebar-only",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-english-jews-seder-maggid-variants",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "Distinctive medieval Maggid readings",
+      "exactText": "In צא ולמד the reading is מלמד שלא ירד להשתקע ,לעקור הכל שם אלא לגור שם כי כבד הרעב is wanting,— גדול ועצום שנ׳ וירעו עבודה קשה and וישימו עליו שרי מסים are omitted, פרישות דרך ויוציאנו י״י ,זו הדחק ,אלו הבנים שנ׳ ,וירא אלהים את ישראל ועברתי בארץ מצרים בלילה הזה אני ,משם לא ע״י מלאך.‏ After the words אני הוא ולא אחר, a passage follows which has hitherto been regarded as specially and exclusively interpolated in the Provençal Ritual. Here it boldly appears in the text without the suspicion of a hint that it was condemned by some authorities. Juda Halevi (Kusari, III., 73), who sought it in vain in the Talmud, i.e., the ancient authorities, correctly recognised it as a poetical elaboration of the conception that the Exodus was God’s own direct and immediate work.\n\nThat the piece did not belong to the Spanish Ritual is proved by his remark that it is only found in one ritual—as we now know—the Provençal. If the author of Amfoth (Gross in Berliner’s Magazin X., 64) was correctly informed, this piece and its recitation at this portion of the service were condemned by the Rabbis of Palestine (see Luzzatto in Polak’s הליכות קדם, page 41). Mr. Schechter has already pointed out (Jewish Quarterly Review, IV., p. 255) that R. Judah b. Jakar also failed to discover the source of this Agada. The English reading of the passage is undoubtedly more correct than that given in Machzor Vitry, p. 293:[10] The objection to this deduction in Machzor Vitry, p. 293, is corrupt.\n\nInstead of ואותו כקל וחומר, left by Hurwitz uncorrected, we should read ואותו קל וחומר האמור והלא עבדיו מקיפין אותו כדי שלא ימצא צער ……בגופו ואתה מלך בו, [מופרך הוא] אטו מי ; comp. הליכות קדם, p. 41. — אמרו כשירד רבון העולמים במצרים ירדו עמו תשעים אלפים רבבות של מלאכי חבלה מהם מלאכי אש מהם מלאכי ברד מהם מלאכי זיע מהם מלאכי רתת • וחלחלה אוחזת למי שרואה אותם אמרו לפניו רבונו של עולם והלא מלך בשר ודם כשיורד במלחמ׳ שריו ועבדיו מקיפין אותו כדי שלא ימצא צער בנופו ואתה הוא מלך מלכי המלכים דין הוא שאנחנו עבדיך ובני ישר’ בני בריתך נרד ונעשה נקמה במצרים א׳ להם הניחו לי ואעשה רצון בני שאין דעתי נתקררה עד שארד אני בעצמי ואעשה נקמה במצרים: ביד חזקה זו הדבר…… :‏ In the following passage the reading is:— זו החרב שנ׳, דבר אחר ביד חזקה ובזרוע נטועה שתים ובאתת ,זו נלד שכינה של ,מהו או׳ ,מנין שלקו המצריים ,שתים ובמורא נתל שתים ובמפתים שתים אמור מעתה ,ואל הים מהו או ,אצבע אלהים הוא זה is wanting.\n\nFor הקדוש ברוך הוא, the reading throughout is ‘הק. In כמה מעלות the single variant is לנו ממונם. In עלינו ,אל אחת is wanting after למקום. The reading is:— לחרבה ,ועשה בהם שפמי׳ ובאלהיהם.‏ The piece commencing ר’ גמליאל varies:— שלשה ,ר׳ל או׳ בזמן שבית המקדש קים ,אלו הן ,דברים הללו is wanting. במצרים ,על שום שפסח המקום על בתי בני ישר׳ שנ׳ before בנגפו is wanting. עד שיגלה ,בצקת אבותינו ,ויקח מצה ויאמ׳.‏ את כל עברתם ,המצריים חיי ,ויק֨ח ה֨מרור ו֨יאמ׳ is wanting; לראות עצמו כאלו יצא : ולברך ,חייבין ,ויגבי֨ה כ֨ל אח֨ד כוס֨ו יא֨מ׳ :‏ לפיכך is wanting. ומאפלה לאור גדול ומאבל לי״ט ,שעשה נסים לאבותינו is wanting. Against the tradition in Ibn Jarchi (המנהיג, Pesach, p. 75), the conclusion here reads:— ונאמר לפניו שיר חדש הללויה.",
+      "segmentIds": [
+        "research-english-jews-seder-6cl-01404a9201ff",
+        "research-english-jews-seder-6y1-58aaacd5440a",
+        "research-english-jews-seder-7hn-e58c03423c92",
+        "research-english-jews-seder-86d-9c3afa888029"
+      ],
+      "sourceLocation": "official source snapshot, segment 12 through official source snapshot, segment 15",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 12 through official source snapshot, segment 15",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-6cl-01404a9201ff",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 8229,
+            "normalizedEndOffset": 9000
+          },
+          {
+            "id": "research-english-jews-seder-6y1-58aaacd5440a",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 9001,
+            "normalizedEndOffset": 9706
+          },
+          {
+            "id": "research-english-jews-seder-7hn-e58c03423c92",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 9707,
+            "normalizedEndOffset": 10596
+          },
+          {
+            "id": "research-english-jews-seder-86d-9c3afa888029",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 10597,
+            "normalizedEndOffset": 11324
+          }
+        ]
+      },
+      "provenanceHash": "c999e3ec85858c8b8dfad05cdc8258f1497fd28959c1ad19cfe5ae23855da8d1",
+      "componentProvenanceHashes": [
+        "01404a9201ff845af5b07da74c52be3772a9b673b3e903a4a7a2112455d0b0f8",
+        "58aaacd5440aedb30ef4b75e97551a1cd5311610ca0827d55e7d51184d0dacb8",
+        "e58c03423c92593cee922029591c8c01fc1d5ed74c62eaf84d37378a67041ee5",
+        "9c3afa88802986cf72b7cd1b834e698c7b68bdd91ad8c36cd909a8149e643c83"
+      ],
+      "wordCount": 564,
+      "characterCount": 3098,
+      "sectionIds": [
+        "maggid"
+      ],
+      "sourceSectionIds": [
+        "maggid"
+      ],
+      "insertionSectionId": "maggid",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Label this explicitly as a scholar’s comparison of manuscript readings, and summarize the relevant difference before displaying any Hebrew excerpt.",
+      "rationale": "These consecutive paragraphs document one cluster of Maggid variants, including omissions, additions, and altered formulations, without detaching a single variant from its analysis.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; changes to the transcription must be identified under CC BY-SA 4.0.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "distinguish-commentary-from-liturgy",
+        "specialist-textual-note-only",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    },
+    {
+      "id": "local-sequence-english-jews-seder-later-table-practice",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "Hallel, washing, eating, and afikoman practice",
+      "exactText": "Before the recitation of the Hallel, which, in spite of its being unabbreviated, appears without the customary introductory blessing, the remark is made:— ר֗ב֗ר֗א֗ היה מברך עתה לקרות ההלל ואין נר֗ לר֗ם֗ מלונדרש שהרי אין כאן קריא׳ הללויה: דכיון שמפסיק באמצע הא קיימ׳ לן שאם שהא כדי לגמור כלה חוזר לראש וכן כתו’ בתשובת הגאוני’ ואומ׳ : After למעינו מים, the direction is given ואומ׳ בע֨ל הבי֨ת. In the blessing מן הפסחים ומן הזבחים לכשיגיע ,והגיענו הלילה הזה. Here follow the rules for the blessings to be recited before the meal:— וטבר׳ בור֨א בר֨י הגפ֨ן ושותי’ ואין צריך לשפוך בשאר כוסות כאש’ פי׳ בהלכ׳ ברכות ולא יברך על הגפן כי ברכת המזון פוטרו ונוטל עתה ידיו לצורך הסעודה ומברך על נטילת ידים דבנטילה ראשונה דירקות לא סגי דאגדה והלילא מסח דעתיה.[11] שבלי חלקט, .ed.\n\nBuber, p .ק ונ״ל דגם כל המסובין צריכין ליטול דדווק׳ בימיהם היה אחד או׳ האגדה ופוטר כלם כדאמ׳ מאן א’ אגדת׳ בי רב ששת רב ששת[12] Pesachim, f. 116b. אבל עתה שכולנו או׳ האגדה משו’ היסח הדעת צריכי׳ הכל ליטול ידיהם ולוקח הבעל הבית המצה הבצועה ואחת מהשלימות ומברך על שתיהם המוציא ואחר כך א֗ק֗ב֗ו֗ על אכילת מצה ובוצע משתיהם ואוכל כזית מצה זו היא המצה של חובה כדכת׳ על מצות ומרורים יאכלוהו מצה והדר מרור ויקח מרור ונותן לכל אחד כזית דאכילה כתיבה ביה ויטבול בחרוסת להמית התולע ויברך א֗ק֗ב֗ו֗ על אכילת מרור ויאכל ואין צריך לברך בפ האדמה שהלחם פוטרו וא֗ע֗ג֗ שאינו בא ללפת הפת כיון דלא סגי בלאו הכי כדברים הבאים בתוך הסעודה דמי[13] שבלי הלקט, ib.; המנהיג, Pesach, § 67.\n\nוכי ליבא שאר ירקי מברך בתחלח על המרור בורא פרי האדמה ועל אכילת מרור ואכיל והדר אכיל מרוד בלא ברכה ואין זה חבילות אם (ה)מברך השתי ברכות על המרור דלא מיקרי חבילות אלא דומיא דברכת המזון וקדוש שכל אחד טעון כוס לבדו והשתי ברכות הוו חובה אבל היכא שהברכה האחת הוי משום דאסור ליהנות מן העולט הזה בלא ברכה לא הוי חבילות[14] המנהיג, Pesach, § 82. ואחר כך לוקחט צהה שלישית ויכרוך עמה מרור ויטבול בחרוסת זכר למקדש כהילל וטבול זה שעושה בחרוסת לא משום קפא[15] Ib., §. 79. and Pesachim, f. 116a. דכל דאית בה נה֫מא לית בה ק֬פא אלא כיון שעושין טבול זה זכר כהלל והלל לא היה עושה טבול אחר מסתמא היה עושה בחרוסת ומטעם זה נ֗ל֗ר֗ם֗ מלונדרש שנכון לקחת כזית מרור בכריכה אף כי כבר יצא ידי חובתו דע֗ב֗ היה הלל אוכל באותה כריכה כזית מרוד בכריכח אבל אין מברכין על הכריכה אף כי היה מברך עליו ג’ ברכות דלדידן הוי ברכה לבטלה שהרי כבר יצאנו ומיהו אין חשש אם אין בו טבול או כזית דדי לנו בזכר הכריכה ורבינו מנחם מיוני[16] What is here related in the name of R.\n\nMenachem, the saint of Joigny, Isaac, Or Sarua (II., 119b), tells in the name of R. Jom Tob of Joigny, the martyr of York. See Z. Cahn, Revue des Études Juives, III. 4. היה מברך המוציא ועל אכילת מצה על הפרוסה ובשליטה לא היה נוגע כלל שאינה אלא לחם משנה ויש שעושין המוציא ועל אכילת מצה והכריכה הכל באחת מן המצות והרב מפס לא היה עושה כן כי אם שתי מצות האחת ללחם משנה אבל הנכון לעשות ג׳ מצות בשלשתן באחת המוציא ובאחת על אכילת מצה והכריכה באחרונה והמיימוני עושה הטבול משאר ירקי בחרוסת והפרוסה שבירך על אכילת מצה בחרוסת והמרור בחרוסת והכריכה בחרוס׳ משו׳ דמספק׳ לי׳ אם הלכה כרבנ’ דא׳ זה וזה בפני עצמו או כהלל שהיה כרכו ונר׳ לר״ס מלונדדש שהמיימון היה אוכל השליטה לבדה בלא חרוסת דלא ליתי חרו׳ דרבנ׳ ומבטל מצה דאוריתא אבל המרור צרי׳ לשקועיה משום קפא ואחר יאכל כל סעודתו ויפטיר באפיקומן דבע[י]נן טעם מצה בפיו שהיא אף בזמן הזה דאורית׳ אבל במרור דרבנן לא אכפת לן ואם שכח ולא אכל אפקומן יצא בכזית אחרון ממצה שאכל דכל מצות שלנו עשויות כתקון אותן של מצות ממצור.[17] המנהיג, Pesach.",
+      "segmentIds": [
+        "research-english-jews-seder-8ql-f4b17c832e48",
+        "research-english-jews-seder-9bu-a1c8a9d9b273",
+        "research-english-jews-seder-9u3-ae56dafcf0ab",
+        "research-english-jews-seder-aju-b328ab8b5880"
+      ],
+      "sourceLocation": "official source snapshot, segment 16 through official source snapshot, segment 19",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 16 through official source snapshot, segment 19",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-8ql-f4b17c832e48",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 11325,
+            "normalizedEndOffset": 12089
+          },
+          {
+            "id": "research-english-jews-seder-9bu-a1c8a9d9b273",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 12090,
+            "normalizedEndOffset": 12746
+          },
+          {
+            "id": "research-english-jews-seder-9u3-ae56dafcf0ab",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 12747,
+            "normalizedEndOffset": 13673
+          },
+          {
+            "id": "research-english-jews-seder-aju-b328ab8b5880",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 13674,
+            "normalizedEndOffset": 14639
+          }
+        ]
+      },
+      "provenanceHash": "718ffa62355ccb0ccb78a972153bebae68a771920b60dafad03174766f14f219",
+      "componentProvenanceHashes": [
+        "f4b17c832e4873e01a77dee91f5eb1e7d2162ca4a9899e5d92f1978e9bb02b65",
+        "a1c8a9d9b27365fb16b8c5f4ca24a8d719e8c6b5c71dd288eb0e954f5f65faea",
+        "ae56dafcf0abf27d2b3c690e515678efa0b8c37793c6c4f2c39b6512efd9aa00",
+        "b328ab8b588016a7bd5f0282d700cc935668b5a17e746b6ae1eff6afc60d3a8b"
+      ],
+      "wordCount": 627,
+      "characterCount": 3317,
+      "sectionIds": [
+        "hallel",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun"
+      ],
+      "sourceSectionIds": [
+        "hallel",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "tzafun"
+      ],
+      "insertionSectionId": null,
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "section-opening",
+      "beginnerContext": "Use a modern host cue for every action and identify this source only as evidence of how one medieval community handled Hallel, the second washing, ritual foods, and the afikoman.",
+      "rationale": "The sequence stays with the article’s later-Seder procedural discussion and preserves the relationship among washing, blessings, symbolic eating, and the end of the meal.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady and preserve the transcription license and change notice.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": false,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "candidate-review",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "do-not-substitute-for-host-instructions",
+        "historical-sidebar-only",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": false
+    },
+    {
+      "id": "local-sequence-english-jews-seder-closing-piyyut",
+      "sourceId": "english-jews-seder",
+      "family": "historical-cultural",
+      "title": "A preserved closing poem",
+      "exactText": "Of free poetical additions, which certainly embellished the Seder Evening Service in Anglo-Jewish, as in French and Italian homes, the author of our compendium has preserved only one specimen in his work. Before passing on to the chapter on the Middle Days of the Festivals, he gives the piece כי לו נאה כי לו יאה. Zunz says (Gottesdienstl. Vort., 2nd edition, p. 133) that it, together with the last three passages of the Agada, was added in the 10th century. But, at the close of the 13th century, we see it a firmly established portion of the English Ritual, before the expulsion. The author of the Etz Chaim has even taken care to anticipate all questions as to its antiquity, by adding a stanza in which he introduces his own name, Jacob, acrostically.\n\nThere can be no doubt, therefore, that in his time already this poetical effusion formed an integral portion of the Seder Ritual. Its original form is that given here. In our Ritual and in the Roman it has suffered several modifications. It may fitly form the pendant to this note:— כי לו נאה כי לו יאה אדיר במלוכ׳ • ברוך כהלכה • גדודיו יאמרו לו לך ולך לך כי לך לך אף לך לך יי הממלכה • כי לו נאה כו׳ דגול במלוכה הדור כהלכה • ותיקיו יאמרו לו לך ולך כו׳ כי לו נאה כו׳ : זכאי במלוכה חסין כהלכה • טפסריו יאמרו לו לך ולך כו׳ כי לו נאה כו׳ : יחיד במלוכה מרום כהלכה • נוראיו יאמרו לו לך ולך כו׳ כי לו נאה כו’ : סביב במלוכה עניו כהלכה • פדוייו יאמרו לו לך ולך כו׳ כי לו נאה כו׳ :\n\nצדיק במלוכה קדוש כהלכה • רחומיו יאמרו לו לך ולך כו׳ כי לו נאה כו׳ : שתול במלוכה תקיף כהלכה • י֨קיריו יאמרו לו לך ולך כר כי לו נאה כו׳ : ע֨זוז במלוכה ק֨נוא כהלכה • ב֨ניו יאמרו לו לך ולך לך כי לך לך אף לך לך יי הממלכה : Dávid Kaufmann. “The Ritual of the Seder and the Agada of the English Jews before the Expulsion.” The Jewish Quarterly Review, Vol. 4, No. 4 (Jul., 1892), pp. 550-561. We are grateful to the University of Pennsylvania Press and Center for Advanced Judaic Studies, University of Pennsylvania for making access to this Public Domain work available. Transcription and preparation by Aharon Varady — Shgiyot mi yavin, Ministarot Nakeni שְׁגִיאוֹת מִי־יָבִין; מִנִּסְתָּרוֹת נַקֵּנִי “Who can know all one’s flaws? From hidden errors, correct me” (Psalms 19:13).",
+      "segmentIds": [
+        "research-english-jews-seder-fy8-7adc59fa94c0",
+        "research-english-jews-seder-gja-d5c357ca8b3b",
+        "research-english-jews-seder-h1y-466556acfad3"
+      ],
+      "sourceLocation": "official source snapshot, segment 28 through official source snapshot, segment 30",
+      "locator": {
+        "edition": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourceLocation": "official source snapshot, segment 28 through official source snapshot, segment 30",
+        "localExtract": "research/source-extracts/english-jews-seder.txt",
+        "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+        "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+        "componentLocators": [
+          {
+            "id": "research-english-jews-seder-fy8-7adc59fa94c0",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 20672,
+            "normalizedEndOffset": 21429
+          },
+          {
+            "id": "research-english-jews-seder-gja-d5c357ca8b3b",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 21430,
+            "normalizedEndOffset": 22101
+          },
+          {
+            "id": "research-english-jews-seder-h1y-466556acfad3",
+            "label": "official source snapshot",
+            "pageNumber": null,
+            "localExtract": "research/source-extracts/english-jews-seder.txt",
+            "sourceSha256": "dbc5f72afeeff1d1dfeae81cd60f7c967c289b99b106970588ec5ded068135f3",
+            "extractSha256": "0c1ff6bb60b1419f263e5e2ce765400ff891a0a7ef92ba8f3167625346f019e7",
+            "normalizedStartOffset": 22102,
+            "normalizedEndOffset": 22877
+          }
+        ]
+      },
+      "provenanceHash": "368eb23650f0bc36d906b5c9da07121d4a755e3c3ebc9c831e71595403cb05b8",
+      "componentProvenanceHashes": [
+        "7adc59fa94c0afdf064b646a3c633a0aedc2f6b0d5ba3ff0a341766ae9bd4f58",
+        "d5c357ca8b3b432fb1acb8be60f96e721cd3d2d83ef6755a920cee6ba83a8fdb",
+        "466556acfad335ee6f18667e8aa292fb6699119ace072de5b1a1320a6a9db1bb"
+      ],
+      "wordCount": 415,
+      "characterCount": 2207,
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "sourceSectionIds": [
+        "nirtzah"
+      ],
+      "insertionSectionId": "nirtzah",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "specialist"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "45",
+        "90"
+      ],
+      "seam": "historical-sidebar",
+      "beginnerContext": "Explain that the article preserves a medieval poetic addition sung near the end of the Seder, then provide an editorially checked translation or refrain guide.",
+      "rationale": "The three final article segments introduce the poem, discuss its textual form, and reproduce its conclusion as one self-contained historical unit.",
+      "creditNotes": "Credit Dávid Kaufmann and Aharon N. Varady; preserve public-domain and CC BY-SA 4.0 source information.",
+      "sourcePresentedAttribution": [],
+      "attribution": {
+        "creator": "Dávid Kaufmann; transcription by Aharon N. Varady",
+        "containingSource": "The Ritual of the Seder and the Agada of the English Jews Before the Expulsion",
+        "sourcePresented": null,
+        "readerCredit": "From The Ritual of the Seder and the Agada of the English Jews Before the Expulsion by Dávid Kaufmann; transcription by Aharon N. Varady."
+      },
+      "rights": {
+        "runtimeEligible": true,
+        "license": "public-domain + CC-BY-SA-4.0 transcription",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Dávid Kaufmann and Aharon N. Varady",
+          "Preserve transcription license and indicate changes"
+        ]
+      },
+      "approvalStatus": "approved",
+      "editorialReviewStatus": "local-agent-reviewed-demo",
+      "approvalBasis": "local-source-dossier-review",
+      "beginnerSuitable": true,
+      "requiresExplicitOptIn": true,
+      "politicalRisk": "context-sensitive",
+      "editorialGates": [
+        "historical-song-opt-in",
+        "participation-cue-required",
+        "translate-hebrew-excerpt-before-display"
+      ],
+      "containsThirdPartyAttribution": false,
+      "evaluatorAttributionClear": true,
+      "runtimeEligible": true
+    }
+  ]
+}

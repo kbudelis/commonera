@@ -1,4 +1,5 @@
-import type { CoverOption, QuoteEntry, ThemeId, Tone } from "@/lib/types";
+import type { CoverOption, QuoteEntry, SederLength, ThemeId, Tone } from "@/lib/types";
+import type { SederSectionId } from "./source-spines";
 import { expandedQuoteCatalog } from "./quotes-expanded";
 
 export const themeLabels: Record<ThemeId, string> = {
@@ -124,7 +125,7 @@ export const sectionBlueprints: SectionBlueprint[] = [
   },
   {
     id: "maggid", transliteration: "Maggid", title: "Tell the story", ritual: "Questions, Exodus & Dayenu",
-    short: ["Uncover the matzah and invite the youngest willing guest to ask the Four Questions. Questions begin Maggid, the telling, because the seder is built for newcomers and for people who keep finding new meanings in an old story.", "Here is the story’s path. Pharaoh enslaved the Israelites in Egypt and ordered Hebrew baby boys killed. The midwives Shifra and Puah resisted him; Moses survived, grew up, fled Egypt, and returned to demand freedom. After Pharaoh repeatedly refused, ten plagues struck Egypt. The Israelites left in haste, reached the sea with Pharaoh’s army behind them, crossed through the parted water, and began the difficult journey from slavery toward freedom.", "Spill a drop of wine or juice for each plague to temper celebration with grief for lives harmed. Then sing or read Dayenu, giving thanks for each step toward freedom while remembering that freedom remains unfinished wherever people live without safety or dignity."],
+    short: ["Uncover the matzah and invite the youngest willing guest to ask the Four Questions. Questions begin Maggid, the telling, because the seder is built for newcomers and for people who keep finding new meanings in an old story.", "Pharaoh enslaved the Israelites in Egypt and ordered Hebrew baby boys killed. The midwives Shifra and Puah resisted him; Moses survived, grew up, fled Egypt, and returned to demand freedom. After Pharaoh repeatedly refused, ten plagues struck Egypt. The Israelites left in haste, reached the sea with Pharaoh’s army behind them, crossed through the parted water, and began the difficult journey from slavery toward freedom.", "Spill a drop of wine or juice for each plague to temper celebration with grief for lives harmed. Then sing or read Dayenu, giving thanks for each step toward freedom while remembering that freedom remains unfinished wherever people live without safety or dignity."],
     medium: ["Uncover the matzah and begin with the Four Questions. Their details lead to the evening’s larger question: why do we tell this story every year? The Hebrew name for Egypt, Mitzrayim, is often associated with a narrow place, a fitting image for a society organized around forced labor and fear.", "Pharaoh enslaved the Israelites and ordered Hebrew baby boys killed. Resistance began before Moses confronted the king: the midwives Shifra and Puah defied Pharaoh, and Yocheved, Miriam, and Pharaoh’s daughter saved Moses. As an adult, Moses fled after striking an Egyptian overseer. He later returned to demand that Pharaoh release the enslaved people.", "Pharaoh refused again and again. Ten plagues devastated Egypt; as we name them, we remove drops from our cups because another person’s suffering diminishes our joy. The Israelites left in haste, crossed the sea while Pharaoh’s forces pursued them, and set out through the wilderness. Escape opened the way to freedom, but did not complete the journey.", "Dayenu means ‘it would have been enough.’ The song pauses over each gift along the way. Gratitude helps us recognize how freedom is built, step by step, through courage, help, sustenance, and shared responsibility."],
     full: ["Uncover the matzah and let the Four Questions draw everyone into Maggid. At a seder, a sincere question is a form of participation. We tell the Exodus so that inherited memory can meet the moral choices of the present.", "The Israelites lived in Egypt under a Pharaoh who feared their growing community. He enslaved them, exploited their labor, and ordered Hebrew baby boys killed. Shifra and Puah, two midwives, refused his command. Yocheved hid her infant son Moses; Miriam watched over him; and Pharaoh’s daughter rescued and raised him.", "As an adult, Moses saw an Egyptian overseer beating an enslaved Hebrew and struck the overseer dead. Moses fled. At the burning bush, he received the charge to return, join his brother Aaron, and demand that Pharaoh let the people go. Liberation began through many acts of courage before it became a public confrontation with power.", "Pharaoh repeatedly refused, and ten plagues struck Egypt. The story does not let us treat suffering as spectacle. We remove wine or juice from our cups for every plague, acknowledging Egyptian lives caught in the catastrophe of Pharaoh’s hardened rule.", "The Israelites baked unleavened bread and left quickly. Pharaoh’s forces pursued them to the sea; the waters opened, the Israelites crossed, and the pursuing army drowned. Reaching the far shore ended immediate pursuit, though years of wilderness, uncertainty, conflict, and learning still lay ahead. A people shaped by slavery had begun the long work of living in freedom.", "Dayenu names stages in that journey and answers each with gratitude. We can value every rescue, provision, and moment of courage while continuing to seek freedom grounded in equal dignity, safety, and peace for all peoples."],
     prompt: "Where do you see a ‘narrow place’ today, and what helps people move through it?", sourceIds: ["traditional-core"]
@@ -270,6 +271,132 @@ export const themeInserts = Object.fromEntries(
   }))])
 ) as Record<ThemeId, Array<{ id: string; text: string; theme: ThemeId; approved: true; rights: "original" }>>;
 
+export interface ThemeMoment {
+  id: string;
+  theme: ThemeId;
+  sectionId: SederSectionId;
+  transition: string;
+  adultPrompt: string;
+  kidPrompt: string;
+  approved: true;
+  rights: "original";
+}
+
+const moment = (
+  theme: ThemeId,
+  sectionId: SederSectionId,
+  suffix: string,
+  transition: string,
+  adultPrompt: string,
+  kidPrompt: string,
+): ThemeMoment => ({
+  id: `${theme}-${sectionId}-${suffix}`,
+  theme,
+  sectionId,
+  transition,
+  adultPrompt,
+  kidPrompt,
+  approved: true,
+  rights: "original",
+});
+
+/**
+ * Fully written thematic seams. Runtime chooses whole records rather than
+ * asking a model to improvise a theme connection beside a ritual.
+ */
+export const themeMoments: Record<ThemeId, ThemeMoment[]> = {
+  feminist: [
+    moment("feminist", "urchatz", "miriam", "Miriam’s water recalls leadership that sustains people through danger and is often remembered too late.", "Whose necessary work has been treated as background, and how could we name it as leadership?", "Who helps people every day even when they do not get much attention?"),
+    moment("feminist", "maggid", "midwives", "The Exodus turns because Shifra and Puah refuse Pharaoh before Moses ever confronts him.", "How does the story change when we begin liberation with the midwives’ refusal?", "What brave choice did Shifra and Puah make when Pharaoh gave a cruel order?"),
+    moment("feminist", "nirtzah", "voices", "Carry forward the names and voices of women whose courage kept families and communities alive.", "Whose leadership do you want to recognize more clearly after tonight?", "Whose brave or caring work do you want to remember tomorrow?"),
+  ],
+  lgbtq: [
+    moment("lgbtq", "yachatz", "belonging", "The broken matzah stays essential to the seder; belonging does not require hiding the parts of a life others overlook.", "Where could your community make belonging more ordinary and less conditional?", "What helps you feel that you can be fully yourself with other people?"),
+    moment("lgbtq", "maggid", "names", "Leaving a narrow place can include refusing identities that power has imposed and speaking one’s own name.", "What conditions help people live openly without putting their safety at risk?", "What helps someone feel safe enough to tell the truth about who they are?"),
+    moment("lgbtq", "nirtzah", "chosen-family", "A free table honors chosen family, inherited family, and every household built through care.", "What practice would help more kinds of families feel expected rather than merely accommodated?", "How can we show that every caring family belongs?"),
+  ],
+  "social-justice": [
+    moment("social-justice", "karpas", "labor", "The parsley reaches us through soil, water, transport, and human labor; freedom concerns every link in that chain.", "What would fair treatment look like for the people whose labor brought this food to us?", "How can the people who grow and carry our food be treated fairly?"),
+    moment("social-justice", "maggid", "systems", "Pharaoh’s cruelty becomes a system of forced labor, fear, and laws designed to make resistance harder.", "Where do rules or institutions still turn another group’s hardship into someone else’s comfort?", "What should people do when a rule keeps hurting the same group?"),
+    moment("social-justice", "nirtzah", "commitment", "Memory becomes responsibility when it changes what we are willing to notice, share, and repair.", "What specific act of solidarity can you place on your calendar this month?", "What is one fair or helpful thing you can actually do this week?"),
+  ],
+  environment: [
+    moment("environment", "urchatz", "water", "The water in our hands connects this table with every community that depends on clean, reliable water.", "What responsibility follows from treating water as a shared necessity rather than an unlimited possession?", "What is one way people can keep water clean and available for others?"),
+    moment("environment", "karpas", "spring", "Karpas brings the local season to the table: new growth, fragile weather, and the work of tending life.", "What change in your local environment have you noticed since last spring?", "What plant, animal, or weather change tells you that spring is here?"),
+    moment("environment", "nirtzah", "stewardship", "The closing hope includes a livable future for people, animals, soil, water, and air.", "Which household practice could you change without shifting the burden onto someone with fewer choices?", "What is one earth-caring habit your household could try together?"),
+  ],
+  interfaith: [
+    moment("interfaith", "kadesh", "welcome", "This table can hold devotion, doubt, another faith, and no faith; nobody is asked to represent a whole tradition.", "What helps people explain a cherished practice without demanding that everyone experience it the same way?", "How can we ask about someone’s tradition without making them speak for everyone?"),
+    moment("interfaith", "maggid", "stories", "Guests may hear echoes of other liberation stories while allowing the Exodus to remain a particular Jewish inheritance.", "How can two traditions illuminate each other without being treated as interchangeable?", "What story from your family or tradition helps people practice courage?"),
+    moment("interfaith", "nirtzah", "hospitality", "Hospitality deepens when curiosity and difference can remain at the table together.", "What did you understand differently after hearing someone else’s question tonight?", "What is one new thing you learned from someone at this table?"),
+  ],
+  secular: [
+    moment("secular", "maggid", "human-courage", "The story’s human choices are concrete: midwives disobey, families protect children, and people decide to leave.", "Which human decision in the Exodus carries the most ethical weight for you?", "Which person in the story made a choice you think was brave?"),
+    moment("secular", "barech", "gratitude", "Gratitude can name rain, soil, skill, labor, and care without requiring everyone to share a theology.", "Which part of the meal’s human and ecological chain usually escapes your attention?", "Who or what helped this meal reach our table?"),
+    moment("secular", "nirtzah", "practice", "Ritual can rehearse attention, memory, courage, and responsibility across many kinds of belief.", "Which value did tonight’s physical rituals make easier to remember?", "Which part of tonight helped an important idea stick in your mind?"),
+  ],
+  mindfulness: [
+    moment("mindfulness", "urchatz", "arrival", "Feel the water’s temperature and the movement of your hands; let one unhurried breath mark your arrival.", "What changed when you gave this ordinary action your full attention?", "Was the water warm or cool, and what did you notice when you slowed down?"),
+    moment("mindfulness", "maror", "bitterness", "Notice the scent and first sharp sensation of maror, then notice the body’s impulse to pull away.", "Can you stay present to a difficult feeling long enough to choose a response rather than react automatically?", "What did your face or body do when you tasted or smelled the bitter herb?"),
+    moment("mindfulness", "nirtzah", "intention", "Before the final words, take one quiet breath and choose an intention small enough to practice tomorrow.", "What brief daily cue could bring you back to that intention?", "What small action tomorrow could help you remember what mattered tonight?"),
+  ],
+  traditional: [
+    moment("traditional", "kadesh", "generations", "The first cup begins an inherited order that Jewish households have carried through many places and generations.", "Which familiar ritual makes you feel connected to people who practiced it before you?", "Which part of a holiday helps you remember people from earlier generations?"),
+    moment("traditional", "maggid", "telling", "The Haggadah asks every generation to tell the Exodus as a living memory rather than a distant summary.", "Which ritual detail helps you enter the story rather than merely hear about it?", "Which food, question, or action makes the Exodus story feel close to you?"),
+    moment("traditional", "nirtzah", "continuity", "The seder closes in an old cadence, joining tonight’s new questions to a long chain of practice.", "What part of the inherited order do you hope this table will carry forward?", "Which part of tonight would you want to do again next year?"),
+  ],
+  "family-storytelling": [
+    moment("family-storytelling", "yachatz", "objects", "The hidden matzah can call to mind the objects families carried, saved, lost, or found again.", "What object in your family holds a journey, and who has told you its story?", "Is there an object in your family that has a story about where it came from?"),
+    moment("family-storytelling", "maggid", "journeys", "The communal Exodus can make room for family journeys without forcing anyone to disclose a story that is painful or private.", "Which journey changed your family’s language, food, work, or sense of home? Passing is welcome.", "What trip or move changed something in your family? You can always pass."),
+    moment("family-storytelling", "shulchan-orech", "recipes", "Recipes carry memory through measurements, substitutions, handwriting, and the people who taught us by feel.", "Who taught someone at this table to make a dish, and what changed as the recipe traveled?", "Who taught your family to make one of the foods here?"),
+  ],
+};
+
+export interface MaggidNarrative {
+  length: SederLength;
+  paragraphs: string[];
+  approved: true;
+  rights: "original";
+  provenanceNote: string;
+}
+
+export const maggidNarratives: Record<SederLength, MaggidNarrative> = {
+  20: {
+    length: 20,
+    paragraphs: [
+      "Pharaoh enslaved the Israelites in Egypt and ordered Hebrew baby boys killed. Shifra and Puah disobeyed him. Yocheved, Miriam, and Pharaoh’s daughter saved Moses. As an adult, he killed an Egyptian who was beating an enslaved Hebrew and fled. Called at a burning bush, Moses returned with Aaron to demand freedom. Pharaoh refused; ten plagues devastated Egypt. The Israelites left in haste with unleavened dough. Pharaoh’s army chased them to the sea; the Israelites crossed through parted water, and the pursuers drowned. The wilderness brought hunger, fear, conflict, and the long work of learning to live together as free people.",
+    ],
+    approved: true,
+    rights: "original",
+    provenanceNote: "Original beginner narration based on the Exodus narrative; paired with exact primary-spine readings and traditional liturgy.",
+  },
+  45: {
+    length: 45,
+    paragraphs: [
+      "Generations after Joseph’s family settled in Egypt, a new Pharaoh treated the growing Israelite community as a threat. He forced them into labor, ordered their newborn sons killed, and tried to make fear govern every part of their lives. Resistance began quietly. The midwives Shifra and Puah refused Pharaoh’s command. Yocheved hid her baby Moses; Miriam watched over him; Pharaoh’s daughter drew him from the Nile and raised him in the royal household.",
+      "Moses grew up between the palace and an enslaved people. After seeing an Egyptian beat a Hebrew laborer, he killed the attacker and fled. Years later, at a bush that burned without being consumed, Moses was called to return. He doubted his ability to speak and feared the task, so Aaron joined him. Together they told Pharaoh to let the people go. Pharaoh answered by increasing the labor. Moses and Aaron returned again and again, while Pharaoh repeatedly chose control over human life.",
+      "Ten plagues struck Egypt, harming ordinary people as well as the ruler who refused to yield. The Israelites prepared to leave quickly and baked unleavened bread for the road. Pharaoh released them, then sent his army in pursuit. Trapped at the sea, the Israelites crossed through divided waters; the pursuing army drowned. Miriam and the women sang on the far shore. Escape ended the immediate danger. The wilderness still brought hunger, thirst, argument, uncertainty, and new obligations. The Exodus leads from forced labor into the unfinished practice of freedom.",
+    ],
+    approved: true,
+    rights: "original",
+    provenanceNote: "Original expanded beginner narration based on Exodus 1–16; paired with exact primary-spine readings and traditional liturgy.",
+  },
+  90: {
+    length: 90,
+    paragraphs: [
+      "The Exodus story begins generations after Joseph’s family came to Egypt during a famine. A new Pharaoh no longer remembered the relationship that had once protected them. He saw the growing Israelite community as a danger and turned that fear into policy: forced labor, harsh construction work, and control over family life. When oppression failed to reduce their numbers, Pharaoh ordered the Hebrew midwives Shifra and Puah to kill newborn boys. They refused and kept the children alive.",
+      "A mother named Yocheved hid her infant son as long as she could, then placed him in a basket among the reeds of the Nile. His sister Miriam watched. Pharaoh’s daughter found the child, recognized that he was Hebrew, and chose to save him. Through Miriam’s quick thinking, Yocheved was able to nurse her own son before he entered the royal household. The child was named Moses, a name linked in the story with being drawn from the water.",
+      "As an adult, Moses saw an Egyptian overseer beating an enslaved Hebrew. He killed the overseer and fled to Midian. There he built another life as a shepherd. At a bush that burned without being consumed, Moses encountered a call to return to the place he feared. He argued that he lacked authority and words. The call remained, and his brother Aaron became his partner and speaker.",
+      "Moses and Aaron demanded that Pharaoh let the people go. Pharaoh tightened his grip and increased their work, requiring the same quota of bricks while withholding straw. The people blamed Moses for making their suffering worse. Liberation did not begin with steady progress or universal confidence. The confrontation continued through repeated demands, refusals, warnings, and plagues that devastated Egypt’s water, crops, animals, health, light, and families.",
+      "Before the final plague, the Israelites prepared food for a hurried departure. They left carrying unleavened dough because there was no time for it to rise. Pharaoh soon reversed his decision and sent an army after them. With water ahead and soldiers behind, the people panicked. The sea opened, the Israelites crossed, and the pursuing army drowned. The Haggadah tempers celebration by removing wine from our cups for every plague and by remembering the Egyptian lives lost in the story. On the far shore, Moses, Miriam, and the people sang.",
+      "The sea crossing ended pursuit, while freedom remained difficult. In the wilderness the people faced thirst, hunger, fear, nostalgia for the predictability of Egypt, disputes over leadership, and the challenge of sharing limited resources. They received manna, gathered water, rested, argued, learned, and entered a covenant of responsibilities. The Exodus therefore reaches beyond departure. It asks how people shaped by domination can build a community where power serves life, memory protects the vulnerable, and freedom is practiced together.",
+    ],
+    approved: true,
+    rights: "original",
+    provenanceNote: "Original full beginner narration based on Exodus 1–20; paired with exact primary-spine readings and traditional liturgy.",
+  },
+};
+
 export const toneOpeners: Record<Tone, string[]> = {
   playful: ["Settle in, pour something good, and keep your questions close.", "A seder asks us to tell a sweeping story with ordinary things: parsley, crackers, strong flavors, and a crowded table.", "Some parts we inherit, some we improvise, and all of us get to ask why."],
   balanced: ["We gather around a story of oppression, courage, departure, and the long work of becoming free.", "Tonight’s rituals turn memory into things we can hold, taste, ask about, and share.", "Everyone at this table has a place in the telling."],
@@ -296,6 +423,9 @@ export const quoteCatalog: QuoteEntry[] = [
   { id: "q-dickinson", text: "Hope is the thing with feathers that perches in the soul.", author: "Emily Dickinson", work: "Poem 254", year: "c. 1861", themes: ["mindfulness", "environment"], sectionIds: ["tzafun", "nirtzah"], rights: "public-domain", sourceUrl: "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314", approved: true },
   { id: "q-psalm-tears", text: "Those who sow in tears shall reap in joy.", author: "Psalm 126:5", work: "Hebrew Bible", year: "Public-domain translation adapted", themes: ["family-storytelling", "interfaith", "traditional", "mindfulness"], sectionIds: ["tzafun", "nirtzah"], rights: "original-translation", sourceUrl: "https://www.sefaria.org/Psalms.126.5", approved: true },
   { id: "q-wilde-disobedience", text: "Disobedience, in the eyes of anyone who has read history, is man's original virtue.", author: "Oscar Wilde", work: "The Soul of Man Under Socialism", year: "1891", themes: ["lgbtq", "social-justice", "secular"], sectionIds: ["maggid"], rights: "public-domain", sourceUrl: "https://www.gutenberg.org/ebooks/1017", approved: true },
+  { id: "q-dhammapada-hatred", text: "For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule.", author: "Dhammapada 1.5, translated by F. Max Müller", work: "The Dhammapada", year: "1881 translation", themes: ["mindfulness", "interfaith", "social-justice"], sectionIds: ["nirtzah"], rights: "public-domain", sourceUrl: "https://www.gutenberg.org/cache/epub/2017/pg2017-images.html", approved: true, externalContemplative: true, traditionLabel: "Buddhist", placementNote: "Nirtzah only, alongside universal peace language; never use in Maggid or to prescribe affection from oppressed people toward oppressors." },
+  { id: "q-gita-right-action", text: "Find full reward Of doing right in right! Let right deeds be Thy motive, not the fruit which comes from them.", author: "Bhagavad Gita, translated by Sir Edwin Arnold", work: "The Song Celestial, Book II", year: "1885 translation", themes: ["mindfulness", "interfaith", "social-justice"], sectionIds: ["nirtzah"], rights: "public-domain", sourceUrl: "https://www.gutenberg.org/files/2388/2388-h/2388-h.htm", approved: true, externalContemplative: true, traditionLabel: "Hindu", placementNote: "Nirtzah only, after a concrete closing action; preserve the historical translation exactly and explain its archaic syntax separately." },
+  { id: "q-isha-self", text: "He who sees all beings in the Self and the Self in all beings, he never turns away from It (the Self).", author: "Isha Upanishad VI, translated by Swami Paramananda", work: "The Upanishads", year: "1919 translation", themes: ["mindfulness", "interfaith", "environment"], sectionIds: ["nirtzah"], rights: "public-domain", sourceUrl: "https://www.gutenberg.org/cache/epub/3283/pg3283.html", approved: true, externalContemplative: true, traditionLabel: "Vedantic", placementNote: "Nirtzah only, beside shared-humanity language; label the tradition and never present it as Jewish liturgy." },
   ...expandedQuoteCatalog,
 ];
 

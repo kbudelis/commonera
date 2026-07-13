@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "shir-geulah",
+  "sourceTitle": "Haggadah Shir Ge'ulah / Song of Liberation",
+  "modules": [
+    {
+      "id": "shir-maggid-own-voices-runtime",
+      "sourceId": "shir-geulah",
+      "family": "beginner-accessible",
+      "exactText": "We elaborate upon our story because there is nobody else to do it for us. This is our story to tell; therefore let us raise up our own voices. And when the story is not ours but that of other people, let us remember to lift up their voices so that they may tell their own stories. Let us not silence them, but let us let them speak for themselves.",
+      "locator": {
+        "edition": "Haggadah Shir Ge'ulah / Song of Liberation",
+        "sourceLocation": "PDF p. 18, Maggid commentary",
+        "localExtract": "research/source-extracts/shir-geulah.txt",
+        "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+        "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff"
+      },
+      "sectionIds": [
+        "maggid"
+      ],
+      "themes": [
+        "social-justice",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "story-reflection",
+      "treatment": "verbatim-normalized",
+      "wordCount": 70,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Emily Aviva Kapor-Mater",
+          "Link the license and identify modifications"
+        ]
+      },
+      "provenanceHash": "a4afc1eefcb2670a05d6886e72cf3e82ac7cdc7cf4dc8c6590ac97f7a4965b41",
+      "attribution": {
+        "creator": "Emily Aviva Kapor-Mater",
+        "containingSource": "Haggadah Shir Ge'ulah / Song of Liberation",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah Shir Ge'ulah / Song of Liberation by Emily Aviva Kapor-Mater."
+      }
+    },
+    {
+      "id": "shir-meal-celebration-runtime",
+      "sourceId": "shir-geulah",
+      "family": "beginner-accessible",
+      "exactText": "So far, everything we have eaten in the course of the seder has had some ritual or symbolic significance. But one of the mitzvot of the holiday is to celebrate, and one of the traditional things we do to celebrate is partake of a festive meal. The ritual nature of the food of the meal is simply that it is there to be enjoyed, which itself is a mitzvah.",
+      "locator": {
+        "edition": "Haggadah Shir Ge'ulah / Song of Liberation",
+        "sourceLocation": "PDF p. 36, Shulchan Orech",
+        "localExtract": "research/source-extracts/shir-geulah.txt",
+        "sourceSha256": "74624f8561826eb1e4850c8c625c28a029396ac4f6df7077cf213e8ed9730ed1",
+        "extractSha256": "621bccb4bd086f2e1cbfe49f2c1ca4bb393b8b1c7551bd7cc579b2bc63b708ff"
+      },
+      "sectionIds": [
+        "shulchan-orech"
+      ],
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "audience": [
+        "adults",
+        "children",
+        "mixed-ages"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "lengthTiers": [
+        "20",
+        "45",
+        "90"
+      ],
+      "seam": "meal-transition",
+      "treatment": "verbatim-normalized",
+      "wordCount": 69,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-4.0",
+        "materialKind": "creator-authored",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Emily Aviva Kapor-Mater",
+          "Link the license and identify modifications"
+        ]
+      },
+      "provenanceHash": "15a40da98af65f877942a72e635d7778626f3a8a77c98813963b66060631fc39",
+      "attribution": {
+        "creator": "Emily Aviva Kapor-Mater",
+        "containingSource": "Haggadah Shir Ge'ulah / Song of Liberation",
+        "sourcePresented": null,
+        "readerCredit": "From Haggadah Shir Ge'ulah / Song of Liberation by Emily Aviva Kapor-Mater."
+      }
+    }
+  ]
+}

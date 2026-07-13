@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "other-side-of-sea",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local justice and environment editorial pass",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "A substantial modular social-justice Haggadah whose strongest passages connect familiar ritual actions to worker dignity, survivor leadership, shared responsibility, and the practical work of liberation. Its dated statistics, campaign references, graphic trafficking testimony, and many embedded contributors require selective use rather than wholesale insertion.",
+  "sourceAssessment": {
+    "voice": "Rabbinic, activist, explanatory, and frequently testimonial, moving between traditional ritual interpretation and concrete human-rights organizing.",
+    "bestUses": [
+      "Beginner-friendly explanations of karpas, Maggid, Korekh, Tzafun, and Birkat Hamazon",
+      "Social-justice and labor-rights thematic inserts grounded in a ritual action",
+      "Prompts that center the leadership of people directly affected by injustice",
+      "Longer adult or mixed-age Seders where a facilitator can hold difficult material"
+    ],
+    "beginnerRisks": [
+      "The source assumes familiarity with advocacy organizations, labor policy, immigration law, and trafficking terminology.",
+      "Several testimonies describe sexual exploitation, forced labor, racism, or deportation and need content notes and a genuine option to skip.",
+      "Statistics and named campaigns date from the 2010s and must be labeled historically rather than presented as current facts.",
+      "PDF headers, footnotes, image captions, and contributor transitions sometimes share a canonical segment with the reading itself."
+    ],
+    "politicalContext": "Use as a social-justice source, not as politically neutral ritual prose. Keep its commitments to dignity and worker-led change, identify dated U.S. policy material as historical, and exclude contemporary partisan claims from default generation. Biblical or liturgical references to Israel and Jerusalem are not modern nationalist claims, but no sequence here should introduce exclusive territorial language.",
+    "creditContext": "Credit T'ruah and The Other Side of the River, The Other Side of the Sea on the final sources page. Preserve the printed contributor name for every selected passage and review embedded artwork, testimony, poems, songs, and quotations item by item as required by the source conditions."
+  },
+  "recommendedSequences": [
+    {
+      "id": "other-side-tomato-labor-dignity",
+      "title": "The tomato as labor and liberation",
+      "sectionIds": ["maggid", "maror"],
+      "segmentIds": [
+        "research-other-side-of-sea-b2q-417880c323a7",
+        "research-other-side-of-sea-bob-7a78afc09a02"
+      ],
+      "beginnerContext": "Explain that some contemporary Seders add a tomato to acknowledge the farmworkers who bring food to the table; identify CIW as the Coalition of Immokalee Workers before reading.",
+      "rationale": "These adjacent passages introduce one symbol, explain both its bitterness and its liberatory meaning, and end with a direct ritual invitation rather than a disconnected policy lesson.",
+      "themes": ["social-justice", "environment"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "define-ciw-before-reading",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Rabbi Michael Rothbaum on the final sources page; preserve the Universal Declaration attribution contained in the passage."
+    },
+    {
+      "id": "other-side-korekh-survivor-leadership",
+      "title": "Korekh and survivor-led liberation",
+      "sectionIds": ["korech"],
+      "segmentIds": [
+        "research-other-side-of-sea-136g-d840a011cd0a",
+        "research-other-side-of-sea-13s4-b5ac6912324d",
+        "research-other-side-of-sea-14d8-c10a55a333ce"
+      ],
+      "beginnerContext": "Before making the Hillel sandwich, explain that Korekh combines bitter maror and sweet charoset; offer a content note for trafficking testimony and tell guests they may pass on the reading.",
+      "rationale": "The sequence begins with Korekh's mixed taste, lets survivors speak in their own words, and then explicitly rejects savior-centered storytelling in favor of affected communities' leadership.",
+      "themes": ["social-justice"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "trafficking-content-note-and-pass-option",
+        "embedded-testimony-attribution-review",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, the quoted survivors as presented by the source, and Elena Stein on the final sources page; retain the Life Interrupted locator if this sequence is published."
+    },
+    {
+      "id": "other-side-tzafun-hidden-to-action",
+      "title": "Tzafun: seek what is hidden",
+      "sectionIds": ["tzafun"],
+      "segmentIds": [
+        "research-other-side-of-sea-1fc3-b902b9190187",
+        "research-other-side-of-sea-1fzc-66b06a07b22b",
+        "research-other-side-of-sea-1goa-66568b57941e",
+        "research-other-side-of-sea-1hbg-51e53d0d88b7"
+      ],
+      "beginnerContext": "Explain that Tzafun means hidden and is the moment when the afikoman returns; frame the school and restaurant campaign as dated examples of turning learning into action, not as instructions for a current campaign.",
+      "rationale": "The passages sustain one arc from the hidden matzah to a guiding North Star and then to concrete, age-appropriate student action, making the source useful for participatory family tables.",
+      "themes": ["social-justice", "family-storytelling"],
+      "tones": ["balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "label-2013-campaign-as-historical",
+        "do-not-present-dated-campaign-link-as-current",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, Rabbi Laurie Hahn Tapper, and Rabbi Jesse M. Olitzky on the final sources page."
+    },
+    {
+      "id": "other-side-barech-life-of-dignity",
+      "title": "Birkat Hamazon and a life of dignity",
+      "sectionIds": ["barech"],
+      "segmentIds": [
+        "research-other-side-of-sea-1k09-3ad8c187ae69",
+        "research-other-side-of-sea-1kmp-8ce8ac5d902d"
+      ],
+      "beginnerContext": "Introduce Barech as the blessing after the meal and explain that this reading interprets one traditional plea for sustenance and shelter through the lens of coerced labor.",
+      "rationale": "The second passage completes the first passage's interpretation and turns a difficult subject into a clear universal claim: every person seeks a life of dignity.",
+      "themes": ["social-justice", "traditional"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "coerced-labor-content-note",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Rabbi Raysh Weiss on the final sources page."
+    },
+    {
+      "id": "other-side-four-children-agency",
+      "title": "Four Children: from awareness to agency",
+      "sectionIds": ["maggid"],
+      "segmentIds": [
+        "research-other-side-of-sea-1l7n-7b0df0e11d78",
+        "research-other-side-of-sea-1lrd-81d8bd6f1862"
+      ],
+      "beginnerContext": "First explain that the traditional Haggadah imagines four different kinds of questioners; this adaptation uses them as stages in learning about forced labor and finding a useful response.",
+      "rationale": "The pair moves coherently from not knowing, through overwhelm, toward joy, agency, and responsibility without suggesting that a guest must personally solve a vast injustice.",
+      "themes": ["social-justice"],
+      "tones": ["balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "replace-wicked-child-label-in-beginner-bridge-with-challenging-child",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah and Keeli Sorensen on the final sources page."
+    },
+    {
+      "id": "other-side-maggid-embodied-empathy",
+      "title": "Maggid with heart, body, humility, and song",
+      "sectionIds": ["maggid", "hallel"],
+      "segmentIds": [
+        "research-other-side-of-sea-1x82-cca6482ae15b",
+        "research-other-side-of-sea-1xrr-115313db10dd",
+        "research-other-side-of-sea-1ydd-b2886bc6ec30",
+        "research-other-side-of-sea-1yz4-976e226be114"
+      ],
+      "beginnerContext": "Explain that Maggid is the long storytelling section and that the Haggadah asks each person to imagine having left Egypt, while this reading also cautions against confusing imagination with another person's lived experience.",
+      "rationale": "Four contiguous source records complete the argument about embodied storytelling, empathy, privilege, and responsible participation, then carry the source's transition into song without breaking a contributor quotation or sentence.",
+      "themes": ["social-justice", "mindfulness"],
+      "tones": ["reverent", "balanced"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "social-justice-theme-only",
+        "embedded-artwork-and-song-rights-review",
+        "song-participation-optional",
+        "preserve-contributor-credit"
+      ],
+      "creditNotes": "Credit T'ruah, Rabbi David Spinrad, Claudia Cojocaru, and Rabbi Angela W. Buchdahl; preserve every printed attribution and separately review the artwork and song rights."
+    },
+    {
+      "id": "other-side-karpas-nourish-the-journey",
+      "title": "Karpas and nourishment for a long journey",
+      "sectionIds": ["karpas"],
+      "segmentIds": [
+        "research-other-side-of-sea-21nj-8aff38327a9c",
+        "research-other-side-of-sea-22b2-9bf644f14584"
+      ],
+      "beginnerContext": "Tell guests to take a green vegetable, dip it in salt water, and taste it; then explain that the source connects this first dipping to both tears and the Israelites' search for drinkable water after crossing the sea.",
+      "rationale": "This is a complete ritual explanation with sensory instructions, an Exodus episode, and a practical insight about sustaining oneself during a long struggle.",
+      "themes": ["social-justice", "environment", "mindfulness", "traditional"],
+      "tones": ["balanced", "reverent"],
+      "requiresExplicitOptIn": false,
+      "editorialGates": [
+        "explain-marah-reference-for-beginners",
+        "preserve-source-blessing-wording"
+      ],
+      "creditNotes": "Credit T'ruah on the final sources page and identify the Exodus 15:22-27 reference retained in the reading."
+    }
+  ],
+  "exclusions": [
+    {
+      "segmentId": "research-other-side-of-sea-8mt-77a6c8a1c50c",
+      "reasons": ["Run-together OCR and a fragmentary dated policy discussion make this unsafe for exact runtime reading."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-16ol-c55a443d85dc",
+      "reasons": ["Run-together OCR and compressed political taxonomy require source-page repair before use."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-1bdk-b6169f3c4039",
+      "reasons": ["Run-together OCR and dated visa statistics are unsuitable for a polished, source-faithful reading."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-24wd-107fd81213dc",
+      "reasons": ["The segment crosses from a handwashing reflection into graphic child-sex-trafficking testimony, so it has no safe standalone insertion boundary."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-25l7-f0a717ef9f8b",
+      "reasons": ["Graphic child-sex-trafficking testimony is not appropriate for default beginner or family generation."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-263x-8427b99de998",
+      "reasons": ["The segment continues graphic trafficking material and then crosses into Nirtzah without a clean editorial boundary."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-2904-1ec0b791eb2f",
+      "reasons": ["Run-together OCR combines a bibliography, activity link, and Kadesh opening."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-2d2k-77e9bfe1914d",
+      "reasons": ["Dated U.S. immigration-policy advocacy should remain research-only unless separately updated and contextualized."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-2dpx-e790b8251429",
+      "reasons": ["Terminology debate is valuable research but too specialized and date-sensitive for automatic Haggadah insertion."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-2ekj-6282900be03e",
+      "reasons": ["A contemporary U.S. election reference and campaign argument are excluded from default nonpartisan runtime output."]
+    },
+    {
+      "segmentId": "research-other-side-of-sea-2pkd-83fcc9b7fbdc",
+      "reasons": ["Run-together OCR and dated trafficking statistics span nearly every section tag without a usable reading boundary."]
+    }
+  ],
+  "notes": [
+    "The recommended material is a curated subset of a much larger modular source; adjacent pages often belong to different contributors and should not be concatenated merely because they are adjacent.",
+    "All statistics, organization links, and campaign descriptions must be treated as source-dated historical material unless independently updated outside the quoted passage.",
+    "Local agent review marks these sequences as candidates only; it does not make them runtime eligible or human approved."
+  ]
+}

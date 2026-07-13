@@ -1,0 +1,1015 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "barros-basto",
+  "title": "Hagadah shel Pessah",
+  "creator": "Artur Carlos de Barros Basto",
+  "family": "historical-cultural",
+  "status": "local-agent-reviewed-candidate",
+  "review": {
+    "mode": "local-codex-agent",
+    "externalModelApiUsed": false,
+    "batchModelReviewed": false,
+    "humanReviewed": false,
+    "reviewer": "Codex local specialist-source review",
+    "reviewedAt": "2026-07-13"
+  },
+  "summary": "Barros Basto’s 1928 Portuguese Haggadah offers a nearly continuous traditional Seder, unusually explicit table directions, a full Portuguese Maggid, blessings, and closing songs. It is valuable for Portuguese-reading and historical-cultural editions but needs language review, OCR verification, and English orientation for the current demo.",
+  "sourceAssessment": {
+    "voice": "Traditional, Portuguese, historical, domestic, explanatory, prayerful, and shaped by early-twentieth-century orthography and OCR.",
+    "bestUses": [
+      "Portuguese-language or Lusophone Jewish historical supplements",
+      "Host-guide comparison of table setup and the full ritual order",
+      "Traditional long-form alternatives for Maggid, symbolic foods, blessings, and closing songs"
+    ],
+    "beginnerRisks": [
+      "The app currently promises English, so Portuguese passages cannot appear without an explicit language opt-in and checked English meaning.",
+      "Historical spelling and OCR errors can make even fluent readers stumble.",
+      "The source’s traditional ritual assumptions still need the project’s novice action cues."
+    ],
+    "politicalContext": "This 1928 Portuguese Jewish liturgy uses biblical and traditional land, Israel, temple, and Jerusalem language. It is historical-liturgical rather than modern partisan advocacy; the Jerusalem refrain remains restricted to a traditional selection without a social-justice override.",
+    "creditContext": "The edition is CC0 1.0. Credit Artur Carlos de Barros Basto and the digitization where practical, and visually verify OCR-derived Portuguese before publication."
+  },
+  "corpus": {
+    "acquisitionKind": "pdf",
+    "pageCount": 44,
+    "segmentCount": 69,
+    "exactCharacterCount": 53218,
+    "exactWordCount": 9724,
+    "reconstructionSha256": "b119c4777f2fa2906283797042d091dabb74d4bd6937867acff861253c91dd93",
+    "reconstructionVerified": true
+  },
+  "credit": {
+    "readerCredit": "From Hagadah shel Pessah by Artur Carlos de Barros Basto.",
+    "license": "CC0-1.0",
+    "conditions": [
+      "Credit Barros Basto and the digitization where practical",
+      "Treat OCR-only text as review-required"
+    ],
+    "primaryUrl": "https://opensiddur.org/?p=52004"
+  },
+  "sectionCoverage": {
+    "kadesh": {
+      "segmentCount": 7,
+      "segmentIds": [
+        "research-barros-basto-0-34c588fa2756",
+        "research-barros-basto-82-1fd564451840",
+        "research-barros-basto-90-6f278e1a6618",
+        "research-barros-basto-a8-1fd564451840",
+        "research-barros-basto-b6-a8acadb7622f",
+        "research-barros-basto-jp-1fd564451840",
+        "research-barros-basto-kn-773b92746e9e"
+      ]
+    },
+    "urchatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "karpas": {
+      "segmentCount": 1,
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e"
+      ]
+    },
+    "yachatz": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maggid": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e",
+        "research-barros-basto-1ix-5edc8d027362"
+      ]
+    },
+    "rachtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "motzi-matzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "maror": {
+      "segmentCount": 2,
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e",
+        "research-barros-basto-1ix-5edc8d027362"
+      ]
+    },
+    "korech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "shulchan-orech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "tzafun": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "barech": {
+      "segmentCount": 0,
+      "segmentIds": []
+    },
+    "hallel": {
+      "segmentCount": 63,
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e",
+        "research-barros-basto-1ix-5edc8d027362",
+        "research-barros-basto-2bf-8a997af80918",
+        "research-barros-basto-394-f3c1858d34a8",
+        "research-barros-basto-3t3-50a93a2caa7d",
+        "research-barros-basto-4g9-b79af8b4485e",
+        "research-barros-basto-53f-3eba1113da5d",
+        "research-barros-basto-5ow-707eae83dac0",
+        "research-barros-basto-68p-4270a2b38ed5",
+        "research-barros-basto-73c-b30b2b1a7505",
+        "research-barros-basto-7ok-ba21fdc26b78",
+        "research-barros-basto-8e4-75063be2256f",
+        "research-barros-basto-90m-9321c25f1b03",
+        "research-barros-basto-9sn-d6c64001e5fd",
+        "research-barros-basto-a80-d65546c68d63",
+        "research-barros-basto-b3o-2ebc831f1aba",
+        "research-barros-basto-bs1-f9613740a8be",
+        "research-barros-basto-cg9-4ac8e0bd7462",
+        "research-barros-basto-d28-1107d0fa7f4f",
+        "research-barros-basto-dva-2d6bdde9cc0e",
+        "research-barros-basto-ej6-dab3f6f30fd7",
+        "research-barros-basto-f2v-2210a468d13c",
+        "research-barros-basto-foo-12b729d5c242",
+        "research-barros-basto-g9h-d321aa05724b",
+        "research-barros-basto-gtx-a548575aaad4",
+        "research-barros-basto-hfj-98f2b885bb78",
+        "research-barros-basto-ifd-ca333e8ba96f",
+        "research-barros-basto-jde-1f32a10bbde2",
+        "research-barros-basto-jzv-5fa42130d4e3",
+        "research-barros-basto-kne-c2c618597d9f",
+        "research-barros-basto-lgu-2c1ee4ce0c39",
+        "research-barros-basto-m21-da34ff9fbc90",
+        "research-barros-basto-mw2-f81198d7711d",
+        "research-barros-basto-nvd-6076c672d06e",
+        "research-barros-basto-oeq-e3d835293c4b",
+        "research-barros-basto-p30-1b660210b039",
+        "research-barros-basto-pni-38d5beb3ab25",
+        "research-barros-basto-qdb-218c0884c13b",
+        "research-barros-basto-qxo-41e2b7a2d1a3",
+        "research-barros-basto-rka-9d1ec24b3ff9",
+        "research-barros-basto-s49-e37308b08a8e",
+        "research-barros-basto-sse-b665dbd15ba8",
+        "research-barros-basto-tdo-5371cf4bd0a0",
+        "research-barros-basto-twp-56f972d2d014",
+        "research-barros-basto-uh2-b5c262a67bab",
+        "research-barros-basto-v3a-afe1a3464924",
+        "research-barros-basto-vtm-cfe9313b153a",
+        "research-barros-basto-wn6-d50b2ed8fb09",
+        "research-barros-basto-xcs-38b7fa1e0ebb",
+        "research-barros-basto-xta-086ff6a6345a",
+        "research-barros-basto-yru-77d232461dcb",
+        "research-barros-basto-zef-aaadde42ca2f",
+        "research-barros-basto-101z-6b51ebc7ff0a",
+        "research-barros-basto-10l4-9e75bcece22a",
+        "research-barros-basto-11ab-c8ef5626722d",
+        "research-barros-basto-11ty-72a39ae34285",
+        "research-barros-basto-12d3-372bf55ca7c8",
+        "research-barros-basto-136t-326ccc216bf1",
+        "research-barros-basto-13rt-991d3cf8cef1",
+        "research-barros-basto-14bz-42affd1547ab",
+        "research-barros-basto-14rp-2c4b97ef27f8",
+        "research-barros-basto-152b-1fd564451840",
+        "research-barros-basto-1539-1fd564451840"
+      ]
+    },
+    "nirtzah": {
+      "segmentCount": 0,
+      "segmentIds": []
+    }
+  },
+  "policySummary": {
+    "localQuarantineCount": 8,
+    "hardRiskCount": 0,
+    "explicitPoliticalCount": 0,
+    "jerusalemGateCount": 0,
+    "sourcePresentedAttributionCount": 0
+  },
+  "recommendedSequences": [
+    {
+      "id": "barros-basto-table-and-order",
+      "title": "Table setup and the Seder order",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid",
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech",
+        "hallel",
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-barros-basto-kn-773b92746e9e",
+        "research-barros-basto-1ix-5edc8d027362"
+      ],
+      "beginnerContext": "Explain in English that these pages inventory the table and summarize all ritual steps; use the app’s illustrated plate guide for the actual instructions.",
+      "rationale": "The two consecutive records form a compact, source-authored overview of preparation and the complete Seder sequence.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "do-not-substitute-for-host-instructions"
+      ],
+      "creditNotes": "Credit Artur Carlos de Barros Basto and the digitization where practical; identify the CC0 1.0 edition.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 7, segment 1",
+        "end": "PDF p. 8, segment 1",
+        "locators": [
+          {
+            "id": "research-barros-basto-kn-773b92746e9e",
+            "sourceLocation": "PDF p. 7, segment 1",
+            "locator": {
+              "label": "PDF p. 7",
+              "pageNumber": 7,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 743,
+              "normalizedEndOffset": 1976
+            }
+          },
+          {
+            "id": "research-barros-basto-1ix-5edc8d027362",
+            "sourceLocation": "PDF p. 8, segment 1",
+            "locator": {
+              "label": "PDF p. 8",
+              "pageNumber": 8,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 1977,
+              "normalizedEndOffset": 3002
+            }
+          }
+        ]
+      },
+      "totalWords": 373,
+      "exactTextSequenceSha256": "11f4285a489f9c0e779b431c50e0a042ce8f2bc0da04769eb19bde19d3b86102",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-first-rituals-and-questions",
+      "title": "First cup through the questions",
+      "sectionIds": [
+        "kadesh",
+        "urchatz",
+        "karpas",
+        "yachatz",
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-barros-basto-2bf-8a997af80918",
+        "research-barros-basto-394-f3c1858d34a8",
+        "research-barros-basto-3t3-50a93a2caa7d",
+        "research-barros-basto-4g9-b79af8b4485e"
+      ],
+      "beginnerContext": "Use clear English action cues for the wine or grape juice, parsley, salt water, and matzah, then identify the Portuguese question-and-answer text as an optional historical reading.",
+      "rationale": "Four consecutive source passages carry the ritual from Kiddush through karpas and yachatz into the invitation, Four Questions, and opening answer, ending at a complete sentence boundary.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "historical-liturgical-land-language-context"
+      ],
+      "creditNotes": "Credit Barros Basto and identify the CC0 1.0 Portuguese edition; disclose any abridgment.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 9, segment 1",
+        "end": "PDF p. 11, segment 1",
+        "locators": [
+          {
+            "id": "research-barros-basto-2bf-8a997af80918",
+            "sourceLocation": "PDF p. 9, segment 1",
+            "locator": {
+              "label": "PDF p. 9",
+              "pageNumber": 9,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 3003,
+              "normalizedEndOffset": 4215
+            }
+          },
+          {
+            "id": "research-barros-basto-394-f3c1858d34a8",
+            "sourceLocation": "PDF p. 10, segment 1",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 4216,
+              "normalizedEndOffset": 4934
+            }
+          },
+          {
+            "id": "research-barros-basto-3t3-50a93a2caa7d",
+            "sourceLocation": "PDF p. 10, segment 2",
+            "locator": {
+              "label": "PDF p. 10",
+              "pageNumber": 10,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 4935,
+              "normalizedEndOffset": 5768
+            }
+          },
+          {
+            "id": "research-barros-basto-4g9-b79af8b4485e",
+            "sourceLocation": "PDF p. 11, segment 1",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 5769,
+              "normalizedEndOffset": 6602
+            }
+          }
+        ]
+      },
+      "totalWords": 646,
+      "exactTextSequenceSha256": "5ce116978e949fcd8ad856b5c595edeb8daa00721736d9d9a791be22ff3de906",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-four-children-and-ancestry",
+      "title": "Teaching styles and ancestral memory",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-barros-basto-53f-3eba1113da5d",
+        "research-barros-basto-5ow-707eae83dac0",
+        "research-barros-basto-68p-4270a2b38ed5",
+        "research-barros-basto-73c-b30b2b1a7505",
+        "research-barros-basto-7ok-ba21fdc26b78"
+      ],
+      "beginnerContext": "Explain the Four Children as different ways of engaging, use inclusive modern labels outside the exact source, and then introduce the move backward into ancestral history.",
+      "rationale": "The selected pages finish the obligation-to-retell teaching, complete the Four Children dialogue, and flow directly into the source’s account of the ancestors and the promise preceding enslavement.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "balanced",
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "inclusive-modern-framing-required",
+        "facsimile-visual-check-required"
+      ],
+      "creditNotes": "Credit Barros Basto and the digitization where practical; retain the source title and CC0 1.0 status.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 11, segment 2",
+        "end": "PDF p. 13, segment 2",
+        "locators": [
+          {
+            "id": "research-barros-basto-53f-3eba1113da5d",
+            "sourceLocation": "PDF p. 11, segment 2",
+            "locator": {
+              "label": "PDF p. 11",
+              "pageNumber": 11,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 6603,
+              "normalizedEndOffset": 7375
+            }
+          },
+          {
+            "id": "research-barros-basto-5ow-707eae83dac0",
+            "sourceLocation": "PDF p. 12, segment 1",
+            "locator": {
+              "label": "PDF p. 12",
+              "pageNumber": 12,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 7376,
+              "normalizedEndOffset": 8088
+            }
+          },
+          {
+            "id": "research-barros-basto-68p-4270a2b38ed5",
+            "sourceLocation": "PDF p. 12, segment 2",
+            "locator": {
+              "label": "PDF p. 12",
+              "pageNumber": 12,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 8089,
+              "normalizedEndOffset": 9191
+            }
+          },
+          {
+            "id": "research-barros-basto-73c-b30b2b1a7505",
+            "sourceLocation": "PDF p. 13, segment 1",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 9192,
+              "normalizedEndOffset": 9955
+            }
+          },
+          {
+            "id": "research-barros-basto-7ok-ba21fdc26b78",
+            "sourceLocation": "PDF p. 13, segment 2",
+            "locator": {
+              "label": "PDF p. 13",
+              "pageNumber": 13,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 9956,
+              "normalizedEndOffset": 10875
+            }
+          }
+        ]
+      },
+      "totalWords": 782,
+      "exactTextSequenceSha256": "ff465d455c574eb93898f74ab15431003ecf7e27a47c1e939bbb02f6c096df4f",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-exodus-core",
+      "title": "Migration, oppression, cry, and deliverance",
+      "sectionIds": [
+        "maggid"
+      ],
+      "segmentIds": [
+        "research-barros-basto-8e4-75063be2256f",
+        "research-barros-basto-90m-9321c25f1b03",
+        "research-barros-basto-9sn-d6c64001e5fd",
+        "research-barros-basto-a80-d65546c68d63",
+        "research-barros-basto-b3o-2ebc831f1aba",
+        "research-barros-basto-bs1-f9613740a8be",
+        "research-barros-basto-cg9-4ac8e0bd7462"
+      ],
+      "beginnerContext": "Before reading, give the story in one English sentence: Jacob’s family migrated to Egypt, grew, was enslaved, cried out, was heard, and moved toward freedom through signs and plagues.",
+      "rationale": "Seven consecutive pages provide a complete causal Exodus arc rather than a list of disconnected names or symbols.",
+      "themes": [
+        "traditional",
+        "family-storytelling",
+        "social-justice"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "nontriumphalist-plague-framing"
+      ],
+      "creditNotes": "Credit Artur Carlos de Barros Basto; identify the CC0 1.0 historical edition.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 14, segment 1",
+        "end": "PDF p. 17, segment 1",
+        "locators": [
+          {
+            "id": "research-barros-basto-8e4-75063be2256f",
+            "sourceLocation": "PDF p. 14, segment 1",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 10876,
+              "normalizedEndOffset": 11685
+            }
+          },
+          {
+            "id": "research-barros-basto-90m-9321c25f1b03",
+            "sourceLocation": "PDF p. 14, segment 2",
+            "locator": {
+              "label": "PDF p. 14",
+              "pageNumber": 14,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 11686,
+              "normalizedEndOffset": 12694
+            }
+          },
+          {
+            "id": "research-barros-basto-9sn-d6c64001e5fd",
+            "sourceLocation": "PDF p. 15, segment 1",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 12695,
+              "normalizedEndOffset": 13247
+            }
+          },
+          {
+            "id": "research-barros-basto-a80-d65546c68d63",
+            "sourceLocation": "PDF p. 15, segment 2",
+            "locator": {
+              "label": "PDF p. 15",
+              "pageNumber": 15,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 13248,
+              "normalizedEndOffset": 14387
+            }
+          },
+          {
+            "id": "research-barros-basto-b3o-2ebc831f1aba",
+            "sourceLocation": "PDF p. 16, segment 1",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 14388,
+              "normalizedEndOffset": 15264
+            }
+          },
+          {
+            "id": "research-barros-basto-bs1-f9613740a8be",
+            "sourceLocation": "PDF p. 16, segment 2",
+            "locator": {
+              "label": "PDF p. 16",
+              "pageNumber": 16,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 15265,
+              "normalizedEndOffset": 16136
+            }
+          },
+          {
+            "id": "research-barros-basto-cg9-4ac8e0bd7462",
+            "sourceLocation": "PDF p. 17, segment 1",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 16137,
+              "normalizedEndOffset": 16927
+            }
+          }
+        ]
+      },
+      "totalWords": 1069,
+      "exactTextSequenceSha256": "2fec9d0e605e2b519f0545b3202f45c36e96b132ebd0dae84fae95776b4559d3",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-dayenu-and-symbols",
+      "title": "Dayenu and the three symbols",
+      "sectionIds": [
+        "maggid",
+        "motzi-matzah",
+        "maror"
+      ],
+      "segmentIds": [
+        "research-barros-basto-d28-1107d0fa7f4f",
+        "research-barros-basto-dva-2d6bdde9cc0e",
+        "research-barros-basto-ej6-dab3f6f30fd7",
+        "research-barros-basto-f2v-2210a468d13c",
+        "research-barros-basto-foo-12b729d5c242"
+      ],
+      "beginnerContext": "Explain Dayenu as cumulative gratitude, then point to the shank bone or substitute, matzah, and bitter herb as the source explains each symbol.",
+      "rationale": "The sequence preserves the end of Dayenu, its summation, and the complete turn into the central Passover, matzah, maror, and every-generation teachings.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "visible-object-cues-required",
+        "traditional-land-language-context",
+        "facsimile-visual-check-required"
+      ],
+      "creditNotes": "Credit Barros Basto and identify the CC0 1.0 source; preserve the source order if excerpted.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 17, segment 2",
+        "end": "PDF p. 19, segment 2",
+        "locators": [
+          {
+            "id": "research-barros-basto-d28-1107d0fa7f4f",
+            "sourceLocation": "PDF p. 17, segment 2",
+            "locator": {
+              "label": "PDF p. 17",
+              "pageNumber": 17,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 16928,
+              "normalizedEndOffset": 17973
+            }
+          },
+          {
+            "id": "research-barros-basto-dva-2d6bdde9cc0e",
+            "sourceLocation": "PDF p. 18, segment 1",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 17974,
+              "normalizedEndOffset": 18833
+            }
+          },
+          {
+            "id": "research-barros-basto-ej6-dab3f6f30fd7",
+            "sourceLocation": "PDF p. 18, segment 2",
+            "locator": {
+              "label": "PDF p. 18",
+              "pageNumber": 18,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 18834,
+              "normalizedEndOffset": 19542
+            }
+          },
+          {
+            "id": "research-barros-basto-f2v-2210a468d13c",
+            "sourceLocation": "PDF p. 19, segment 1",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 19543,
+              "normalizedEndOffset": 20327
+            }
+          },
+          {
+            "id": "research-barros-basto-foo-12b729d5c242",
+            "sourceLocation": "PDF p. 19, segment 2",
+            "locator": {
+              "label": "PDF p. 19",
+              "pageNumber": 19,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 20328,
+              "normalizedEndOffset": 21076
+            }
+          }
+        ]
+      },
+      "totalWords": 747,
+      "exactTextSequenceSha256": "e863fe0f01eb2e4f301d8839a4448e45e254529b4f3c081cfaf1637c47fdba8d",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-eating-and-grace",
+      "title": "Second cup, ritual foods, and grace",
+      "sectionIds": [
+        "rachtzah",
+        "motzi-matzah",
+        "maror",
+        "korech",
+        "shulchan-orech",
+        "tzafun",
+        "barech"
+      ],
+      "segmentIds": [
+        "research-barros-basto-hfj-98f2b885bb78",
+        "research-barros-basto-ifd-ca333e8ba96f",
+        "research-barros-basto-jde-1f32a10bbde2",
+        "research-barros-basto-jzv-5fa42130d4e3",
+        "research-barros-basto-kne-c2c618597d9f"
+      ],
+      "beginnerContext": "Give the practical English action first for washing, eating matzah and maror, making the sandwich, dining, and beginning grace; the Portuguese remains an optional liturgical witness.",
+      "rationale": "These source-order pages preserve the table’s full transition from the second cup through symbolic eating and the meal into communal grace.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "do-not-substitute-for-host-instructions"
+      ],
+      "creditNotes": "Credit Artur Carlos de Barros Basto and the digitization; identify the CC0 1.0 source.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 21, segment 1",
+        "end": "PDF p. 24, segment 2",
+        "locators": [
+          {
+            "id": "research-barros-basto-hfj-98f2b885bb78",
+            "sourceLocation": "PDF p. 21, segment 1",
+            "locator": {
+              "label": "PDF p. 21",
+              "pageNumber": 21,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 22591,
+              "normalizedEndOffset": 23880
+            }
+          },
+          {
+            "id": "research-barros-basto-ifd-ca333e8ba96f",
+            "sourceLocation": "PDF p. 22, segment 1",
+            "locator": {
+              "label": "PDF p. 22",
+              "pageNumber": 22,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 23881,
+              "normalizedEndOffset": 25105
+            }
+          },
+          {
+            "id": "research-barros-basto-jde-1f32a10bbde2",
+            "sourceLocation": "PDF p. 23, segment 1",
+            "locator": {
+              "label": "PDF p. 23",
+              "pageNumber": 23,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 25106,
+              "normalizedEndOffset": 25914
+            }
+          },
+          {
+            "id": "research-barros-basto-jzv-5fa42130d4e3",
+            "sourceLocation": "PDF p. 24, segment 1",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 25915,
+              "normalizedEndOffset": 26761
+            }
+          },
+          {
+            "id": "research-barros-basto-kne-c2c618597d9f",
+            "sourceLocation": "PDF p. 24, segment 2",
+            "locator": {
+              "label": "PDF p. 24",
+              "pageNumber": 24,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 26762,
+              "normalizedEndOffset": 27821
+            }
+          }
+        ]
+      },
+      "totalWords": 930,
+      "exactTextSequenceSha256": "5d65a3c50d4b27b5c5e3dd00eb60b668418f485c273d92496c26ef22f9ac7842",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    },
+    {
+      "id": "barros-basto-closing-chain-songs",
+      "title": "Portuguese cumulative closing songs",
+      "sectionIds": [
+        "nirtzah"
+      ],
+      "segmentIds": [
+        "research-barros-basto-136t-326ccc216bf1",
+        "research-barros-basto-13rt-991d3cf8cef1",
+        "research-barros-basto-14bz-42affd1547ab",
+        "research-barros-basto-14rp-2c4b97ef27f8"
+      ],
+      "beginnerContext": "Tell guests that these are cumulative end-of-Seder songs, provide a simple refrain and an English synopsis, and make Portuguese participation optional.",
+      "rationale": "Four consecutive end pages preserve the rising count of Echad Mi Yodea and the complete narrative chain of Chad Gadya.",
+      "themes": [
+        "traditional",
+        "family-storytelling"
+      ],
+      "tones": [
+        "playful",
+        "balanced"
+      ],
+      "requiresExplicitOptIn": true,
+      "editorialGates": [
+        "portuguese-language-opt-in",
+        "checked-english-meaning-required",
+        "facsimile-visual-check-required",
+        "participation-cue-required"
+      ],
+      "creditNotes": "Credit Artur Carlos de Barros Basto and identify the CC0 1.0 historical source.",
+      "status": "local-agent-reviewed-candidate",
+      "sourceSpan": {
+        "start": "PDF p. 40, segment 1",
+        "end": "PDF p. 42, segment 1",
+        "locators": [
+          {
+            "id": "research-barros-basto-136t-326ccc216bf1",
+            "sourceLocation": "PDF p. 40, segment 1",
+            "locator": {
+              "label": "PDF p. 40",
+              "pageNumber": 40,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 50789,
+              "normalizedEndOffset": 51544
+            }
+          },
+          {
+            "id": "research-barros-basto-13rt-991d3cf8cef1",
+            "sourceLocation": "PDF p. 41, segment 1",
+            "locator": {
+              "label": "PDF p. 41",
+              "pageNumber": 41,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 51545,
+              "normalizedEndOffset": 52270
+            }
+          },
+          {
+            "id": "research-barros-basto-14bz-42affd1547ab",
+            "sourceLocation": "PDF p. 41, segment 2",
+            "locator": {
+              "label": "PDF p. 41",
+              "pageNumber": 41,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 52271,
+              "normalizedEndOffset": 52836
+            }
+          },
+          {
+            "id": "research-barros-basto-14rp-2c4b97ef27f8",
+            "sourceLocation": "PDF p. 42, segment 1",
+            "locator": {
+              "label": "PDF p. 42",
+              "pageNumber": 42,
+              "localExtract": "research/source-extracts/barros-basto.txt",
+              "sourceSha256": "36e22208b0427335c30cf732467aae12ac6270ba453468f9bbd4cf81f0974502",
+              "extractSha256": "abcd2285c1e6d9d87dfd577a99180b5c2729d604e6d43a0a67ef3580471801f3",
+              "normalizedStartOffset": 52837,
+              "normalizedEndOffset": 53218
+            }
+          }
+        ]
+      },
+      "totalWords": 496,
+      "exactTextSequenceSha256": "e3cee05d54e2289e13ae0bc33da3a2d62dcecadca4a325ab415df7b9ad6377c4",
+      "sourcePresentedAttribution": [],
+      "runtimeEligible": false
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "research-barros-basto-0-34c588fa2756",
+      "sourceLocation": "PDF p. 1, segment 1",
+      "reasons": [
+        "OCR-damaged title and publishing material belongs in source metadata, not the reading stream."
+      ]
+    },
+    {
+      "id": "research-barros-basto-82-1fd564451840",
+      "sourceLocation": "PDF p. 2, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical page has no searchable text and is quarantined."
+      ]
+    },
+    {
+      "id": "research-barros-basto-90-6f278e1a6618",
+      "sourceLocation": "PDF p. 3, segment 1",
+      "reasons": [
+        "Standalone title fragment belongs in credits rather than the ritual reading stream."
+      ]
+    },
+    {
+      "id": "research-barros-basto-a8-1fd564451840",
+      "sourceLocation": "PDF p. 4, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical page has no searchable text and is quarantined."
+      ]
+    },
+    {
+      "id": "research-barros-basto-b6-a8acadb7622f",
+      "sourceLocation": "PDF p. 5, segment 1",
+      "reasons": [
+        "OCR-damaged repeated title and publishing material belongs in source metadata."
+      ]
+    },
+    {
+      "id": "research-barros-basto-jp-1fd564451840",
+      "sourceLocation": "PDF p. 6, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical page has no searchable text and is quarantined."
+      ]
+    },
+    {
+      "id": "research-barros-basto-152b-1fd564451840",
+      "sourceLocation": "PDF p. 43, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical page has no searchable text and is quarantined."
+      ]
+    },
+    {
+      "id": "research-barros-basto-1539-1fd564451840",
+      "sourceLocation": "PDF p. 44, segment 1",
+      "reasons": [
+        "canonical-quarantine",
+        "extraction-failure",
+        "no-searchable-text",
+        "Canonical page has no searchable text and is quarantined."
+      ]
+    }
+  ],
+  "notes": [
+    "The source is retained as a substantial Portuguese and historical contribution, not excluded because the current app language is English.",
+    "The Jerusalem refrain outside these reviewed sequences may be considered only under the traditional-without-social-justice rule.",
+    "All OCR-derived text requires visual and Portuguese-language review before runtime approval; these sequences remain candidates only."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "tropified-haggadah",
+  "sourceTitle": "The Passover Seder Haggadah, Tropified",
+  "modules": [
+    {
+      "id": "tropified-karpas-chant",
+      "sourceId": "tropified-haggadah",
+      "family": "traditional-liturgical",
+      "exactText": "כַּרְפַּ֣ס טוֹבְלִ֔ין כַּרְפַּ֥ס פָּח֖וֹת מִכְזַ֑יִת בְּמֵ֥י מֶ֖לַח וּמְבָרְכִֽין׃",
+      "locator": {
+        "edition": "The Passover Seder Haggadah, Tropified",
+        "sourceLocation": "Authoritative ODT paragraph 22; corresponds to PDF p. 2",
+        "localExtract": "research/source-extracts/tropified-haggadah.txt",
+        "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+        "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67"
+      },
+      "sectionIds": [
+        "karpas"
+      ],
+      "themes": [
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "ritually-familiar"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 8,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "5aae3bb90e488cda963197e5d0300c9bd8be2b1d3639ad220b3efc89cfc13b25",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "The Passover Seder Haggadah, Tropified",
+        "sourcePresented": null,
+        "readerCredit": "From The Passover Seder Haggadah, Tropified by Isaac Gantwerk Mayer."
+      }
+    },
+    {
+      "id": "tropified-yachatz-chant",
+      "sourceId": "tropified-haggadah",
+      "family": "traditional-liturgical",
+      "exactText": "יַחַ֔ץ בַּ֨עַל הַבַּ֧יִת יִבְצַ֛ע אֶת־הַמַּצָּ֥ה הָאֶמְצָעִ֖ית לִשְׁתַּ֑יִם וּמַצְפִּ֕ין אֶת־הַחֵצִ֥י הַגָּד֖וֹל לַאֲפִיקֽוֹמָן׃",
+      "locator": {
+        "edition": "The Passover Seder Haggadah, Tropified",
+        "sourceLocation": "Authoritative ODT paragraph 24; corresponds to PDF p. 2",
+        "localExtract": "research/source-extracts/tropified-haggadah.txt",
+        "sourceSha256": "11c97fd628ad30de4c6039a3a28413e380bea80d28b101aa6000869429c247fe",
+        "extractSha256": "ccb62666a4aa2356a2d0ce73f893b10667b95e5146b2775893aec29e1303fb67"
+      },
+      "sectionIds": [
+        "yachatz"
+      ],
+      "themes": [
+        "traditional"
+      ],
+      "audience": [
+        "adults",
+        "ritually-familiar"
+      ],
+      "tones": [
+        "reverent"
+      ],
+      "lengthTiers": [
+        "90"
+      ],
+      "seam": "ritual-setup",
+      "treatment": "verbatim-normalized",
+      "wordCount": 11,
+      "approvalStatus": "approved",
+      "rights": {
+        "runtimeEligible": true,
+        "license": "CC-BY-SA-4.0",
+        "materialKind": "traditional-liturgy",
+        "sourcePresentedAttributionRequired": false,
+        "conditions": [
+          "Credit Isaac Gantwerk Mayer",
+          "Indicate changes and preserve ShareAlike terms"
+        ]
+      },
+      "provenanceHash": "ba294ac7d6c5c15d109c287087aff708281e2235ae12fb93f1a2591ceea020fc",
+      "attribution": {
+        "creator": "Isaac Gantwerk Mayer",
+        "containingSource": "The Passover Seder Haggadah, Tropified",
+        "sourcePresented": null,
+        "readerCredit": "From The Passover Seder Haggadah, Tropified by Isaac Gantwerk Mayer."
+      }
+    }
+  ]
+}
