@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "digital-shabbat-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 5173
+    },
+    {
+      "name": "digital-shabbat-dev-b",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5199", "--strictPort"],
+      "port": 5199
+    },
+    {
+      "name": "digital-shabbat-dev-c",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5205", "--strictPort"],
+      "port": 5205
+    },
+    {
+      "name": "digital-shabbat-dev-d",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5212", "--strictPort"],
+      "port": 5212
+    },
+    {
+      "name": "digital-shabbat-dev-e",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5233", "--strictPort"],
+      "port": 5233
+    }
+  ]
+}

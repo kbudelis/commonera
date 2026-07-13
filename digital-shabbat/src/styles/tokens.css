@@ -1,0 +1,128 @@
+/*
+  Design tokens — updated 2026-07-11 design-elevation pass (see CHRONICLE).
+  Dial: 1/10 Jewish · 3/10 meditation app · 5/10 texture + custom type.
+  Fonts are self-hosted: no third-party requests, per "nothing here measures you."
+*/
+
+@font-face {
+  font-family: 'OTR No Cigar';
+  src: url('/fonts/OTRNoCigarRegular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader-latin.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader-italic-400-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --parchment: #F4ECDC;
+  --parchment-deep: #E6D9BF;
+  --ink: #2B2118;
+  --indigo: #141B2E;
+  --night: #0B0F1A;
+  --gold: #E8B84B;
+  --gold-ember: #C98A2B;
+  --lapis: #2B4C8C;
+  --vermilion: #C8502E;
+
+  /* ink washes (contract A1): printed tints by recipe, day register only */
+  --wash-lapis: color-mix(in srgb, var(--lapis) 14%, var(--parchment));
+  --wash-vermilion: color-mix(in srgb, var(--vermilion) 12%, var(--parchment));
+  --wash-gold: color-mix(in srgb, var(--gold-ember) 16%, var(--parchment));
+
+  /* stamp + book: No Cigar (unicase, labels only) carries wayfinding;
+     Newsreader carries every sentence. */
+  --font-display: "Newsreader", "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-ui: "Newsreader", Georgia, serif;
+  --font-label: "OTR No Cigar", "Avenir Next Condensed", sans-serif;
+  --label-tracking: 0.18em;
+  --label-tracking-wide: 0.32em;
+  --type-ratio: 1.25;
+  --ceremony-body-min: 20px;
+  --line-body: 1.6;
+  --line-display: 1.2;
+
+  --content-max: 34rem;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 104px;
+
+  /* the hand-held frame */
+  --frame-radius: 40px;
+  --frame-hairline: color-mix(in srgb, var(--gold) 24%, transparent);
+  --frame-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 4px 18px rgba(0, 0, 0, 0.4);
+  --grain-url: url('/textures/grain-512.png');
+  --halftone-url: url('/textures/halftone-512.png');
+
+  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-intake: 240ms;
+  --motion-ceremony-min: 600ms;
+  --motion-ceremony: 1600ms;
+  --motion-ceremony-slow: 2400ms;
+  --motion-line-pause: 1500ms;
+
+  --gold-glow: 0 0 18px color-mix(in srgb, var(--gold-ember) 42%, transparent);
+  --gold-drop-glow: drop-shadow(0 0 18px color-mix(in srgb, var(--gold-ember) 38%, transparent));
+
+  /* ---- full-bleed system — reference-alignment pass (2026-07-11) ----
+     Kris pivot (Jewish aesthetic → 1/10): no frame, no gold hairline, no black
+     room. A warm-cream day field and a soft deep-indigo night, edge to edge.
+     Gold stops being decoration and returns only at the flame. Micrography is
+     the hero object, never an ornament around a label. Content lives in an
+     immersive phone-width column so the web reads like the reference. */
+  --surface: #F1EADC;
+  --surface-lift: #FAF6EC;
+  --surface-sink: #E7DDC9;
+  --surface-night: #161C2E;
+  --surface-night-lift: #212B45;
+  --ink-quiet: color-mix(in srgb, var(--ink) 60%, var(--surface));
+  --ink-faint: color-mix(in srgb, var(--ink) 32%, var(--surface));
+  --ink-ghost: color-mix(in srgb, var(--ink) 14%, var(--surface));
+  --hairline: color-mix(in srgb, var(--ink) 12%, transparent);
+  --phone-max: 30rem;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --frame-radius: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-intake: 1ms;
+    --motion-ceremony-min: 180ms;
+    --motion-ceremony: 220ms;
+    --motion-ceremony-slow: 260ms;
+    --motion-line-pause: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 180ms !important;
+    transition-property: opacity, background-color, color, border-color, box-shadow, filter !important;
+  }
+}

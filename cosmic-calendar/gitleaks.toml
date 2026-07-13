@@ -1,0 +1,11 @@
+title = "cosmic-calendar-public-guardrails"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Allow only generated GSD manifest checksums for the secrets helper"
+condition = "AND"
+regexTarget = "line"
+paths = ['''(?:^|/)\.(?:claude|codex)/gsd-file-manifest\.json$''']
+regexes = ['''"gsd-core/bin/lib/secrets\.cjs"\s*:\s*"[a-f0-9]{64}"''']

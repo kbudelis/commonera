@@ -6,6 +6,10 @@ export interface Progress {
   paragraphsCompleted: string[];
   quizDone: boolean;
   celebrated: boolean;
+  /** Level ids from the era ladder ('l1-tablet' …). */
+  levelsCompleted: string[];
+  /** Next level index on the timeline (1–7). */
+  currentLevel?: number;
   /** ISO date of the B'Mitzvah, if the kid shared it. */
   bmitzvahDate?: string;
 }
@@ -16,6 +20,7 @@ const empty: Progress = {
   paragraphsCompleted: [],
   quizDone: false,
   celebrated: false,
+  levelsCompleted: [],
 };
 
 export function loadProgress(): Progress {
@@ -24,6 +29,11 @@ export function loadProgress(): Progress {
   } catch {
     return { ...empty };
   }
+}
+
+/** Dev/reset: wipe the save — every level re-locks on next boot. */
+export function clearProgress() {
+  localStorage.removeItem(KEY);
 }
 
 export function saveProgress(p: Progress) {

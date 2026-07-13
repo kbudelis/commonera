@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 2532" role="img" aria-labelledby="shader-flame-title shader-flame-desc">
+  <title id="shader-flame-title">Keep shader flame visual target</title>
+  <desc id="shader-flame-desc">Static target for the code-native two-flame WebGL shader.</desc>
+  <defs>
+    <radialGradient id="night-warmth" cx="50%" cy="76%" r="52%">
+      <stop offset="0" stop-color="#E7BC62" stop-opacity="0.2" />
+      <stop offset="0.38" stop-color="#D7A34A" stop-opacity="0.09" />
+      <stop offset="1" stop-color="#D7A34A" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="flame-core" cx="50%" cy="74%" r="34%">
+      <stop offset="0" stop-color="#F7F1DE" stop-opacity="0.98" />
+      <stop offset="0.58" stop-color="#E7BC62" stop-opacity="0.78" />
+      <stop offset="1" stop-color="#C98A2B" stop-opacity="0" />
+    </radialGradient>
+    <filter id="flame-bloom" x="-90%" y="-80%" width="280%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="26" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.91 0 0 0 0 0.68 0 0 0 0 0.28 0 0 0 0.62 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="flame-softness" x="-60%" y="-40%" width="220%" height="190%">
+      <feGaussianBlur stdDeviation="1.2" />
+    </filter>
+  </defs>
+  <rect width="1170" height="2532" fill="#161C2E" />
+  <image href="keep_plate_night_field_v1.webp" width="1170" height="2532" preserveAspectRatio="xMidYMid slice" opacity="0.72" />
+  <rect width="1170" height="2532" fill="url(#night-warmth)" />
+  <g filter="url(#flame-bloom)" transform="translate(0 28)">
+    <g transform="translate(420 1280)">
+      <path d="M48 398C-20 282 23 114 112 0c82 110 126 248 64 395-24 57-99 58-128 3Z" fill="url(#flame-core)" opacity="0.88" filter="url(#flame-softness)" />
+      <path d="M92 354C54 286 78 178 126 104c42 72 63 163 28 247-14 34-45 38-62 3Z" fill="#F7F1DE" opacity="0.86" />
+    </g>
+    <g transform="translate(622 1308) scale(0.93)">
+      <path d="M48 398C-20 282 23 114 112 0c82 110 126 248 64 395-24 57-99 58-128 3Z" fill="url(#flame-core)" opacity="0.82" filter="url(#flame-softness)" />
+      <path d="M92 354C54 286 78 178 126 104c42 72 63 163 28 247-14 34-45 38-62 3Z" fill="#F7F1DE" opacity="0.78" />
+    </g>
+  </g>
+</svg>

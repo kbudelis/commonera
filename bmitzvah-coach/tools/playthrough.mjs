@@ -13,7 +13,7 @@ const state = async () => await page.evaluate(() => window.__shema?.state()?.nam
 const settle = () => page.waitForFunction(() => window.__shema?.camSettled(), null, { timeout: 15000 });
 const shot = (name) => page.screenshot({ path: `${shots}-${name}.png` });
 
-await page.goto('http://localhost:5199/?forceWebGL=1', { waitUntil: 'networkidle' });
+await page.goto('http://localhost:5199/?forceWebGL=1&level=6', { waitUntil: 'networkidle' });
 await page.waitForTimeout(2500);
 
 // Beat 0: landing → start
@@ -23,14 +23,17 @@ await page.waitForTimeout(1200);
 await settle();
 console.log('after start:', await state());
 
-// Beat 1-2: touch all six words of verse 1 (dwell so scrub+touch registers)
+// Beat 1-2: press-trace all six words of verse 1 (dwell so scrub+touch registers)
 const v4 = ['p1v4w1', 'p1v4w2', 'p1v4w3', 'p1v4w4', 'p1v4w5', 'p1v4w6'];
+await page.mouse.move(640, 400, { steps: 3 });
+await page.mouse.down();
 for (const id of v4) {
   const p = await page.evaluate((i) => window.__shema.wordScreenPos(i), id);
   if (!p) { console.log('no pos for', id); continue; }
   await page.mouse.move(p.x, p.y, { steps: 8 });
   await page.waitForTimeout(320);
 }
+await page.mouse.up();
 await page.waitForTimeout(1400);
 console.log('after verse 1:', await state());
 await shot('card0');
@@ -47,12 +50,14 @@ console.log('after baruch shem:', await state());
 // Beat 3: trace the rest of P1
 const all = await page.evaluate(() => window.__shema.wordIds());
 const trace = async (prefix, skip = []) => {
+  await page.mouse.down(); // words register while pressing
   for (const id of all.filter((i) => i.startsWith(prefix) && !skip.includes(i))) {
     const p = await page.evaluate((i) => window.__shema.wordScreenPos(i), id);
     if (!p) continue;
     await page.mouse.move(p.x, p.y, { steps: 4 });
     await page.waitForTimeout(140);
   }
+  await page.mouse.up();
 };
 await trace('p1v5');
 await trace('p1v6');
@@ -68,16 +73,25 @@ await page.click('#meaning #next');
 await page.waitForTimeout(4000);
 console.log('p2 mode:', await state());
 await shot('follow-p2');
-// grab-the-yad test: touch p2 mid-playback, then leave
+// grab-the-yad test: PRESS p2 mid-playback, then release → autoplay resumes
 await page.waitForTimeout(6000);
 const grab = await page.evaluate(() => window.__shema.wordScreenPos('p2v14w2'));
 if (grab) {
   await page.mouse.move(grab.x, grab.y, { steps: 10 });
+  await page.mouse.down();
   await page.waitForTimeout(1200);
-  await page.mouse.move(40, 400, { steps: 10 }); // off the parchment → resume
+  await page.mouse.up(); // release → resume
+  await page.mouse.move(40, 400, { steps: 10 });
 }
-console.log('waiting for p2 karaoke to finish (~100s)...');
-await page.waitForTimeout(105000);
+// Skip the middle of the 102s recording: seek to the last p2 word (dev hook)
+// — the 'ended' handler marks follow mode complete regardless of skips.
+const lastP2 = all.filter((i) => i.startsWith('p2')).at(-1);
+await page.evaluate(([pid, id]) => window.__shema.karaokeSeek(pid, id), ['p2', lastP2]);
+console.log(`seeked p2 karaoke to ${lastP2}, waiting for the paragraph card...`);
+await page.waitForFunction(() => window.__shema?.state()?.name === 'meaning', null, {
+  timeout: 45000,
+});
+await page.waitForTimeout(800);
 console.log('after p2:', await state());
 await shot('card-p2');
 await page.click('#meaning #next');
@@ -97,6 +111,7 @@ const touched1 = await page.evaluate(() => window.__shema.touched());
 const missing = all.filter((i) => i.startsWith('p3') && !touched1.includes(i));
 if (missing.length) {
   console.log('missed on first pass, retracing:', missing.join(' '));
+  await page.mouse.down();
   for (const id of missing) {
     const p = await page.evaluate((i) => window.__shema.wordScreenPos(i), id);
     if (!p) continue;
@@ -104,6 +119,7 @@ if (missing.length) {
     await page.mouse.move(p.x, p.y, { steps: 5 });
     await page.waitForTimeout(400);
   }
+  await page.mouse.up();
   await page.waitForTimeout(1600);
 }
 console.log('after tracing p3:', await state());
@@ -116,10 +132,12 @@ await settle();
 console.log('quiz state:', await state());
 await shot('quiz1');
 
-// Q1: tap-word — tap the correct word (e-CHAD)
+// Q1: tap-word — click the correct word (e-CHAD)
 const q1 = await page.evaluate(() => window.__shema.wordScreenPos('p1v4w6'));
 await page.mouse.move(q1.x + 40, q1.y - 40, { steps: 3 });
 await page.mouse.move(q1.x, q1.y, { steps: 6 });
+await page.mouse.down();
+await page.mouse.up();
 await page.waitForTimeout(2200);
 console.log('after q1:', await state());
 await shot('quiz2');

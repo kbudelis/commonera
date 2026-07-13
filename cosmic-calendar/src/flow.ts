@@ -17,6 +17,7 @@ export interface FlowState {
 export type FlowAction =
   | { type: "advance" }
   | { type: "skip-to-month" }
+  | { type: "edit-birthday" }
   | { type: "submit-birthday"; value: string };
 
 export function createInitialFlow(): FlowState {
@@ -27,10 +28,48 @@ export function createInitialFlow(): FlowState {
   };
 }
 
+export function formatBirthdayFieldValue(
+  value: string,
+  previousValue = "",
+): string {
+  const digits = value.replace(/\D/g, "").slice(0, 8);
+  const isDeleting = value.length < previousValue.length;
+
+  if (digits.length < 2) {
+    return digits;
+  }
+
+  if (digits.length === 2) {
+    return `${digits}${isDeleting ? "" : "/"}`;
+  }
+
+  if (digits.length < 4) {
+    return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+  }
+
+  if (digits.length === 4) {
+    return `${digits.slice(0, 2)}/${digits.slice(2)}${isDeleting ? "" : "/"}`;
+  }
+
+  return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
+}
+
 export function transitionFlow(
   state: FlowState,
   action: FlowAction,
 ): FlowState {
+  if (action.type === "edit-birthday") {
+    if (state.step !== "personal") {
+      return state;
+    }
+
+    return {
+      ...state,
+      step: "birthday",
+      validationError: null,
+    };
+  }
+
   if (action.type === "skip-to-month") {
     return {
       step: "month",

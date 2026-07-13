@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-07-12T23:40:00Z",
+  "phase": "05",
+  "phase_name": "Zodiac Rotor Integration",
+  "phase_dir": ".planning/phases/05-zodiac-rotor-integration",
+  "plan": 1,
+  "task": 0,
+  "total_tasks": 3,
+  "status": "ready_for_handoff",
+  "completed_tasks": [
+    { "id": "phase-01", "name": "Mobile Flow Skeleton", "status": "done" },
+    { "id": "phase-02", "name": "Content and Static Data", "status": "done" },
+    { "id": "phase-03", "name": "Visual Assets and Typography", "status": "done" },
+    { "id": "phase-03.1", "name": "Client Feedback Copy and Month Gallery", "status": "done" },
+    { "id": "phase-04", "name": "Upcoming and QA", "status": "done" },
+    { "id": "public-hygiene", "name": "Public developer handoff hygiene", "status": "done" }
+  ],
+  "remaining_tasks": [
+    {
+      "id": "phase-05-decision",
+      "name": "Choose selective rotor integration or formal deferral",
+      "status": "not_started"
+    },
+    {
+      "id": "visual-device-review",
+      "name": "Run paused screenshot and physical-device review",
+      "status": "not_started"
+    },
+    {
+      "id": "production-review",
+      "name": "Resolve licensing, provenance, accuracy, and subject-matter gates",
+      "status": "future"
+    }
+  ],
+  "blockers": [
+    {
+      "description": "Rotor integration or deferral requires a product decision.",
+      "type": "decision",
+      "workaround": "Record integrate or defer before changing the app."
+    }
+  ],
+  "async_jobs": [],
+  "human_actions_pending": [
+    {
+      "action": "Approve Phase 5 integration or formal deferral",
+      "blocking": true
+    },
+    {
+      "action": "Review final screenshots and physical-device behavior",
+      "blocking": false
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Keep the isolated rotor out of the accepted app until Phase 5 is decided.",
+      "rationale": "A selective decision is safer than merging a competing prototype wholesale."
+    },
+    {
+      "decision": "Keep generated agent runtimes local and reproducible.",
+      "rationale": "The public handoff needs project documentation, not machine-specific runtime output."
+    },
+    {
+      "decision": "Leave the developer-handoff PR unmerged.",
+      "rationale": "The parent main branch remains the shared deployment boundary."
+    }
+  ],
+  "uncommitted_files": [],
+  "next_action": "Read README.md and the Phase 5 plan, run npm run test:flow and npm run build, then record integrate or defer before changing runtime code.",
+  "context_notes": "The prototype through Phase 4 is working. Public handoff hygiene is complete. Final screenshots, the Phase 5 rotor decision, and production legal/editorial review remain."
+}

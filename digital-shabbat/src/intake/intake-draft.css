@@ -1,0 +1,468 @@
+/*
+  Intake drafts (2026-07-11) — one thing at a time, beautiful, not a form.
+  Wheel → Write → Field. Matches the welcome aesthetic (shared .screen shell,
+  atmosphere, editorial serif, the forward stone). Draft routes: /draft/*.
+*/
+
+.draft {
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.draft__head {
+  padding:
+    calc(env(safe-area-inset-top, 0px) + clamp(30px, 6vh, 52px))
+    clamp(26px, 8cqi, 40px) 0;
+}
+
+.draft__eyebrow {
+  margin: 0 0 14px;
+  color: color-mix(in srgb, var(--ink) 52%, transparent);
+  letter-spacing: var(--label-tracking);
+}
+
+.draft__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8cqi, 2.6rem);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+.draft__title em {
+  font-style: italic;
+}
+
+.draft__hint {
+  margin: 14px 0 0;
+  max-width: 22em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: var(--ink-quiet);
+}
+
+.draft__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding:
+    clamp(16px, 3vh, 28px) clamp(26px, 8cqi, 40px)
+    calc(env(safe-area-inset-bottom, 0px) + clamp(28px, 5vh, 44px));
+}
+
+.draft__back {
+  padding: 6px 2px;
+  border: 0;
+  background: transparent;
+  color: color-mix(in srgb, var(--ink) 60%, transparent);
+  cursor: pointer;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: var(--label-tracking);
+  text-decoration: none;
+}
+
+.draft__foot .stone {
+  margin-left: auto;
+}
+
+/* ============ 1 · the wheel ============ */
+.wheel-stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 0;
+}
+
+.wheel {
+  position: relative;
+  width: min(86cqi, 22rem);
+  aspect-ratio: 1;
+}
+
+/* the soft aurora behind the center — printed washes, not a glow */
+.wheel__aurora {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  filter: blur(28px);
+  opacity: 0.9;
+  background:
+    radial-gradient(closest-side at 62% 40%, var(--wash-vermilion), transparent 70%),
+    radial-gradient(closest-side at 35% 42%, var(--wash-lapis), transparent 72%),
+    radial-gradient(closest-side at 50% 66%, var(--wash-gold), transparent 74%);
+  pointer-events: none;
+}
+
+.wheel__spokes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.wheel__spoke {
+  stroke: color-mix(in srgb, var(--ink) 16%, transparent);
+  stroke-width: 1;
+  transition: stroke 240ms var(--motion-ease);
+}
+
+.wheel__spoke--on {
+  stroke: color-mix(in srgb, var(--ink) 52%, transparent);
+}
+
+.wheel__node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: color-mix(in srgb, var(--ink) 56%, transparent);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: clamp(0.98rem, 3.8cqi, 1.15rem);
+  line-height: 1.1;
+  white-space: nowrap;
+  transition: color 240ms var(--motion-ease);
+}
+
+.wheel__node:hover {
+  color: color-mix(in srgb, var(--ink) 82%, transparent);
+}
+
+.wheel__node--on {
+  color: var(--ink);
+}
+
+.wheel__node--on::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 5px auto 0;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.wheel__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(62px, 20cqi, 76px);
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--surface-lift) 92%, #fff);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(30, 26, 18, 0.12);
+  transition: transform 240ms var(--motion-ease);
+}
+
+.wheel__center:hover {
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+.wheel__center svg {
+  width: 22px;
+  height: 22px;
+}
+
+.wheel__own {
+  position: absolute;
+  left: 50%;
+  bottom: -3.2rem;
+  transform: translateX(-50%);
+  width: min(80cqi, 16rem);
+  padding: 11px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-lift) 70%, transparent);
+  color: var(--ink);
+  font: inherit;
+  text-align: center;
+}
+
+.wheel__own::placeholder {
+  font-style: italic;
+  color: color-mix(in srgb, var(--ink) 40%, transparent);
+}
+
+/* chips for their own additions */
+.wheel__added {
+  position: absolute;
+  left: 50%;
+  bottom: -3.4rem;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  width: min(90cqi, 20rem);
+}
+
+.wheel__added span {
+  padding: 5px 12px 4px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ============ 0 · when (the quick first tap) ============ */
+.when-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 clamp(26px, 8cqi, 40px);
+}
+
+.when-option {
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  width: 100%;
+  padding: 18px 0;
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: color-mix(in srgb, var(--ink) 60%, transparent);
+  font-family: var(--font-display);
+  transition: color 240ms var(--motion-ease);
+}
+
+.when-option:last-of-type {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.when-option:hover {
+  color: color-mix(in srgb, var(--ink) 86%, transparent);
+}
+
+.when-option--on {
+  color: var(--ink);
+}
+
+.when-option__dot {
+  align-self: center;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, currentColor 45%, transparent);
+}
+
+.when-option--on .when-option__dot {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.when-option__label {
+  font-size: clamp(1.3rem, 5cqi, 1.55rem);
+  line-height: 1.25;
+}
+
+.when-option__label em {
+  font-style: normal;
+  color: color-mix(in srgb, currentColor 62%, transparent);
+  font-size: 0.82em;
+}
+
+.when-custom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.when-custom label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: var(--label-tracking);
+  color: color-mix(in srgb, var(--ink) 56%, transparent);
+}
+
+.when-custom input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface-lift) 70%, transparent);
+  color: var(--ink);
+  font: inherit;
+}
+
+/* ============ 2 · write freely ============ */
+.write {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + clamp(30px, 6vh, 52px))
+    clamp(26px, 8cqi, 40px) 0;
+}
+
+.write__progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(26px, 5vh, 44px);
+}
+
+.write__dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.write__dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--ink) 30%, transparent);
+}
+
+.write__dots i.on {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.write__dots hr {
+  width: 16px;
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 24%, transparent);
+}
+
+.write__count {
+  margin-left: auto;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: var(--label-tracking);
+  color: color-mix(in srgb, var(--ink) 56%, transparent);
+}
+
+.write__label {
+  margin: 22px 0 12px;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: var(--label-tracking);
+  color: color-mix(in srgb, var(--ink) 52%, transparent);
+}
+
+.write__field {
+  flex: 1;
+  width: 100%;
+  min-height: 8rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  resize: none;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 6cqi, 1.9rem);
+  line-height: 1.4;
+}
+
+.write__field:focus {
+  outline: none;
+}
+
+.write__field::placeholder {
+  color: color-mix(in srgb, var(--ink) 30%, transparent);
+  font-style: italic;
+}
+
+.write__field {
+  margin-bottom: var(--space-3);
+}
+
+/* ============ 3 · the field / orb ============ */
+.field-stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 0;
+}
+
+.field-spiral {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.field-spiral text {
+  font-family: var(--font-display);
+  font-size: 7px;
+  letter-spacing: 0.14em;
+  fill: color-mix(in srgb, var(--ink) 34%, transparent);
+}
+
+.field-spiral--spin {
+  animation: ringTurnRev 240s linear infinite;
+  transform-origin: center;
+}
+
+.orb {
+  position: relative;
+  width: min(46cqi, 12rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 36% 30%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 42%),
+    radial-gradient(circle at 68% 74%, rgba(210, 176, 190, 0.35), rgba(210, 176, 190, 0) 55%),
+    radial-gradient(circle at 50% 50%, #F7F1E6 0%, #ECE0CC 52%, #CDBBA0 100%);
+  box-shadow:
+    inset -6px -9px 22px rgba(150, 122, 88, 0.4),
+    inset 6px 8px 18px rgba(255, 255, 255, 0.5),
+    0 24px 48px rgba(60, 48, 30, 0.22);
+  animation: orbBreathe 8s var(--motion-ease) infinite alternate;
+}
+
+@keyframes orbBreathe {
+  from { transform: scale(0.98); }
+  to { transform: scale(1.03); }
+}
+
+.field .draft__head {
+  position: relative;
+  z-index: 2;
+}
+
+.field .draft__foot {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+.field .draft__foot .stone {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field-spiral--spin,
+  .orb {
+    animation: none;
+  }
+}

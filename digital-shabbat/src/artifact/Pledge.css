@@ -1,0 +1,282 @@
+/*
+  Pledge — the artifact revealed, full-bleed on a warm day field. The card is a
+  printed keepsake (its own SVG, micrography of the user's own words); the page
+  around it stays quiet so the card is the object.
+*/
+
+.pledgePage {
+  font-family: var(--font-ui);
+  color: var(--ink);
+}
+
+.pledgePageInner {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 2.4vh, 26px);
+  padding:
+    calc(env(safe-area-inset-top, 0px) + clamp(18px, 3.4vh, 40px))
+    clamp(20px, 7cqi, 34px)
+    calc(env(safe-area-inset-bottom, 0px) + clamp(18px, 3vh, 40px));
+}
+
+/* WebKit: hide the scroll track entirely — the card stands on a clean field */
+.pledgePageInner::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.pledgeEmpty {
+  justify-content: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.pledgeEmptyLine {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--ink-quiet);
+}
+
+/* The card owns the leftover space above the actions and contains itself within
+   it, so the whole page fits the viewport with no scroll. The frame takes the
+   free column height; the card scales to fit both that height and its max width,
+   preserving its 3:4 shape (max-width + max-height + auto = contain, no distortion). */
+.pledgeCardFrame {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.pledgeCardSvg {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 21rem);
+  max-height: 100%;
+  aspect-ratio: 1200 / 1600;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 0 0 1px rgba(244, 236, 220, 0.1),
+    0 1px 2px rgba(10, 12, 22, 0.28),
+    0 24px 60px rgba(10, 12, 22, 0.42);
+}
+
+.pledgeActions {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.pledgeNext,
+.pledgeKeepLabel,
+.pledgeKeepHint,
+.pledgeAction--begin,
+.pledgeActions .pledgeLink {
+  grid-column: 1 / -1;
+}
+
+/* what the saved card is for — a lock screen that holds the week */
+.pledgeKeepHint {
+  margin: 8px 0 2px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--ink-quiet);
+}
+
+/* the pledge is a waypoint, not an end — name the next step above the door */
+.pledgeNext {
+  margin: 0 0 2px;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--ink-quiet);
+}
+
+/* demote the keepsake actions so they read as optional, after the door */
+.pledgeKeepLabel {
+  margin: 12px 0 -2px;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  text-align: center;
+  color: color-mix(in srgb, var(--ink) 42%, transparent);
+}
+
+.pledgeAction__arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  margin-top: -1px;
+  flex-shrink: 0;
+}
+
+.pledgeAction__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  margin-top: -2px;
+  flex-shrink: 0;
+}
+
+.pledgeAction,
+.pledgeLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 4px 22px 0;
+  border: 1px solid color-mix(in srgb, var(--ink) 24%, transparent);
+  border-radius: 999px;
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: var(--label-tracking);
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    border-color 240ms var(--motion-ease),
+    background-color 240ms var(--motion-ease);
+}
+
+.pledgeAction:hover:not(:disabled),
+.pledgeLink:hover,
+.pledgeAction:focus-visible,
+.pledgeLink:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+
+.pledgeAction:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+
+/* the doorway into the ceremony — the one filled action on the page */
+.pledgeAction--begin {
+  width: 100%;
+  min-height: 3.4rem;
+  border-color: color-mix(in srgb, var(--ink) 94%, #000);
+  background: color-mix(in srgb, var(--ink) 94%, #000);
+  color: var(--surface);
+}
+
+.pledgeAction--begin:hover,
+.pledgeAction--begin:focus-visible {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.pledgeActions[aria-busy="true"] .pledgeLink {
+  opacity: 0.55;
+}
+
+.pledgeLink {
+  border-color: transparent;
+  color: var(--ink-quiet);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-style: italic;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.pledgeExportError {
+  margin: var(--space-3) 0 0;
+  color: var(--ink-quiet);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .pledgeActions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- night register ----
+   The pledge now stands on the deep-indigo field: the printed card glows on a
+   dark table, and the page copy inverts to parchment so it reads over the dark.
+   The one filled action flips too — light on dark — so it still leads the eye. */
+.pledgePage.screen--night {
+  color: var(--parchment);
+}
+
+.pledgePage.screen--night .pledgeEmptyLine,
+.pledgePage.screen--night .pledgeNext,
+.pledgePage.screen--night .pledgeKeepHint,
+.pledgePage.screen--night .pledgeExportError {
+  color: color-mix(in srgb, var(--parchment) 74%, transparent);
+}
+
+.pledgePage.screen--night .pledgeKeepLabel {
+  color: color-mix(in srgb, var(--parchment) 46%, transparent);
+}
+
+.pledgePage.screen--night .pledgeAction {
+  color: var(--parchment);
+  border-color: color-mix(in srgb, var(--parchment) 28%, transparent);
+}
+
+.pledgePage.screen--night .pledgeAction:hover:not(:disabled),
+.pledgePage.screen--night .pledgeAction:focus-visible,
+.pledgePage.screen--night .pledgeLink:hover,
+.pledgePage.screen--night .pledgeLink:focus-visible {
+  border-color: var(--parchment);
+  background: color-mix(in srgb, var(--parchment) 8%, transparent);
+}
+
+.pledgePage.screen--night .pledgeAction--begin,
+.pledgePage.screen--night .pledgeAction--begin:hover,
+.pledgePage.screen--night .pledgeAction--begin:focus-visible {
+  border-color: var(--parchment);
+  background: var(--parchment);
+  color: var(--surface-night);
+}
+
+.pledgePage.screen--night .pledgeAction--begin:hover,
+.pledgePage.screen--night .pledgeAction--begin:focus-visible {
+  background: color-mix(in srgb, var(--parchment) 90%, #fff);
+}
+
+.pledgePage.screen--night .pledgeLink {
+  color: color-mix(in srgb, var(--parchment) 48%, transparent);
+}
+
+.pledgePage.screen--night .pledgeLink:hover,
+.pledgePage.screen--night .pledgeLink:focus-visible {
+  color: color-mix(in srgb, var(--parchment) 78%, transparent);
+}

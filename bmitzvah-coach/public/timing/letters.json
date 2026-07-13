@@ -1,0 +1,116 @@
+{
+ "audio": "audio/letters.mp3",
+ "version": 1,
+ "words": [
+  {
+   "id": "alef",
+   "start": 0,
+   "end": 0.549
+  },
+  {
+   "id": "bet",
+   "start": 0.799,
+   "end": 1.423
+  },
+  {
+   "id": "gimel",
+   "start": 1.673,
+   "end": 2.365
+  },
+  {
+   "id": "dalet",
+   "start": 2.615,
+   "end": 3.369
+  },
+  {
+   "id": "hei",
+   "start": 3.619,
+   "end": 3.866
+  },
+  {
+   "id": "vav",
+   "start": 4.116,
+   "end": 4.652
+  },
+  {
+   "id": "zayin",
+   "start": 4.902,
+   "end": 5.535
+  },
+  {
+   "id": "chet",
+   "start": 5.785,
+   "end": 6.392
+  },
+  {
+   "id": "tet",
+   "start": 6.642,
+   "end": 7.162
+  },
+  {
+   "id": "yod",
+   "start": 7.412,
+   "end": 7.875
+  },
+  {
+   "id": "kaf",
+   "start": 8.125,
+   "end": 8.639
+  },
+  {
+   "id": "lamed",
+   "start": 8.889,
+   "end": 9.463
+  },
+  {
+   "id": "mem",
+   "start": 9.713,
+   "end": 10.171
+  },
+  {
+   "id": "nun",
+   "start": 10.421,
+   "end": 10.909
+  },
+  {
+   "id": "samech",
+   "start": 11.159,
+   "end": 11.842
+  },
+  {
+   "id": "ayin",
+   "start": 12.092,
+   "end": 12.601
+  },
+  {
+   "id": "pe",
+   "start": 12.851,
+   "end": 13.058
+  },
+  {
+   "id": "tsadi",
+   "start": 13.308,
+   "end": 13.788
+  },
+  {
+   "id": "kuf",
+   "start": 14.038,
+   "end": 14.573
+  },
+  {
+   "id": "resh",
+   "start": 14.823,
+   "end": 15.481
+  },
+  {
+   "id": "shin",
+   "start": 15.731,
+   "end": 16.359
+  },
+  {
+   "id": "tav",
+   "start": 16.609,
+   "end": 17.043
+  }
+ ]
+}

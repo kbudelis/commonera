@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 42" role="img" aria-labelledby="three-stars-title three-stars-desc">
+  <title id="three-stars-title">Keep three-dot motif</title>
+  <desc id="three-stars-desc">Three small points of completion and return. Set color with CSS currentColor.</desc>
+  <defs>
+    <filter id="three-stars-glow" x="-80%" y="-80%" width="260%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2.1" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.88 0 0 0 0 0.65 0 0 0 0 0.28 0 0 0 0.52 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    svg { color: #2B2118; }
+    .dot { fill: currentColor; }
+    .warm { color: #E5BD63; filter: url(#three-stars-glow); }
+  </style>
+  <circle class="dot" cx="30" cy="26" r="3.6" opacity="0.72" />
+  <circle class="dot" cx="60" cy="18" r="4.4" opacity="0.86" />
+  <circle class="dot" cx="90" cy="26" r="3.6" opacity="0.72" />
+</svg>

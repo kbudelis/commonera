@@ -12,6 +12,8 @@ export interface LayoutWord {
   text: string;
   /** Indices into `text` drawn enlarged (scribal tradition). */
   enlarged?: number[];
+  /** Force a new line before this word (phrase chunks, aside separation). */
+  breakBefore?: boolean;
 }
 
 /** A run of consecutive letters sharing one scale factor. */
@@ -52,6 +54,11 @@ export interface LayoutOptions {
   measure: (text: string, scale: number) => number;
   /** Hit-rect padding as a fraction of line height. */
   hitPadFactor?: number;
+  /** Ink extent above the baseline as a fraction of fontPx. */
+  ascentFactor?: number;
+  /** Ink extent below the baseline as a fraction of fontPx — pointed
+      fonts need more room here or niqqud fall outside the rects. */
+  descentFactor?: number;
 }
 
 export interface ColumnLayout {
@@ -83,13 +90,15 @@ export function layoutColumn(words: LayoutWord[], opts: LayoutOptions): ColumnLa
   const {
     canvasWidth, canvasHeight, fontPx, lineHeightFactor, margin,
     enlargedScale, measure, hitPadFactor = 0.15,
+    ascentFactor = 0.75, // STaM sits almost entirely above baseline
+    descentFactor = 0.3,
   } = opts;
   const lineHeight = fontPx * lineHeightFactor;
   const spaceW = measure(' ', 1) || fontPx * 0.28;
   const rightEdge = canvasWidth - margin;
   const leftEdge = margin;
-  const ascent = fontPx * 0.75; // STaM sits almost entirely above baseline; refined per-font if needed
-  const descent = fontPx * 0.3;
+  const ascent = fontPx * ascentFactor;
+  const descent = fontPx * descentFactor;
 
   const boxes: WordBox[] = [];
   let penX = rightEdge;
@@ -100,7 +109,7 @@ export function layoutColumn(words: LayoutWord[], opts: LayoutOptions): ColumnLa
     const widths = runs.map((r) => measure(r.text, r.scale));
     const wordW = widths.reduce((a, b) => a + b, 0);
 
-    if (penX - wordW < leftEdge && penX !== rightEdge) {
+    if ((word.breakBefore || penX - wordW < leftEdge) && penX !== rightEdge) {
       penX = rightEdge;
       line++;
     }
@@ -119,7 +128,9 @@ export function layoutColumn(words: LayoutWord[], opts: LayoutOptions): ColumnLa
     const y = baseline - ascent * maxScale;
     const h = ascent * maxScale + descent;
     const padX = lineHeight * hitPadFactor;
-    const padY = lineHeight * hitPadFactor;
+    // Vertical pad may never reach into the neighboring line — overlapping
+    // line bands break the WordIndex binary search.
+    const padY = Math.max(0, Math.min(padX, (lineHeight - h) / 2));
     boxes.push({
       id: word.id,
       line,

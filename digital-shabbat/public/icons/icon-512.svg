@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Keep">
+  <rect width="512" height="512" rx="112" fill="#141B2E"/>
+  <circle cx="224" cy="198" r="19" fill="#E8B84B"/>
+  <circle cx="304" cy="166" r="14" fill="#E8B84B"/>
+  <circle cx="280" cy="278" r="17" fill="#E8B84B"/>
+  <g filter="url(#glow)">
+    <circle cx="224" cy="198" r="19" fill="#E8B84B"/>
+    <circle cx="304" cy="166" r="14" fill="#E8B84B"/>
+    <circle cx="280" cy="278" r="17" fill="#E8B84B"/>
+  </g>
+  <defs>
+    <filter id="glow" x="124" y="66" width="280" height="312" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+</svg>

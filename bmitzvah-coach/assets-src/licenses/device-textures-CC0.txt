@@ -1,0 +1,9 @@
+Era-device PBR maps (public/textures/{wood,plastic,leather,metal}_*.webp),
+downscaled to 512px webp from the 1K-JPG releases:
+
+ambientCG Wood027    (https://ambientcg.com/view?id=Wood027)    — desk/table wood
+ambientCG Plastic004 (https://ambientcg.com/view?id=Plastic004) — computer shells
+ambientCG Leather037 (https://ambientcg.com/view?id=Leather037) — siddur binding
+ambientCG Metal009   (https://ambientcg.com/view?id=Metal009)   — tablet body
+
+License: CC0 1.0 Universal (https://docs.ambientcg.com/license/)

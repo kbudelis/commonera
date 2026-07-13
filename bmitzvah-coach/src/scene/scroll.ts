@@ -16,7 +16,7 @@ export interface ScrollColumnOptions {
 }
 
 /** Deterministic 2D value noise (two octaves) for parchment waviness. */
-function noise2(x: number, y: number): number {
+export function noise2(x: number, y: number): number {
   const h = (n: number) => {
     const s = Math.sin(n) * 43758.5453123;
     return s - Math.floor(s);

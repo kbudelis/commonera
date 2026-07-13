@@ -14,6 +14,21 @@ export type MonthKey =
   | "shevat"
   | "adar";
 
+export const MONTH_ORDER: readonly MonthKey[] = [
+  "nisan",
+  "iyar",
+  "sivan",
+  "tammuz",
+  "av",
+  "elul",
+  "tishrei",
+  "cheshvan",
+  "kislev",
+  "tevet",
+  "shevat",
+  "adar",
+];
+
 export type MoonPhaseKey =
   | "new"
   | "waxing-crescent"
@@ -61,6 +76,13 @@ export interface MonthEntry {
   reading: MonthReading;
 }
 
+export interface BirthPortrait {
+  narrative: string;
+  light: string;
+  shadowWisdom: string;
+  question: string;
+}
+
 export interface HebrewDateFacts {
   day: number;
   year: number;
@@ -90,6 +112,38 @@ export interface CurrentSeason {
   hebrewDate: HebrewDateFacts;
   moon: MoonFacts;
   entry: MonthEntry;
+}
+
+export type FridayState = "countdown" | "friday" | "shabbat";
+export type MoonWindowKind = "new" | "full";
+
+export interface UpcomingPanelData {
+  current: CurrentSeason;
+  friday: {
+    state: FridayState;
+    civilDateISO: string;
+    dateLabel: string;
+    hebrewLabel: string;
+    daysAway: number;
+    monthKey: MonthKey;
+    title: string;
+    body: string;
+    release: string;
+    carry: string;
+  };
+  moonMoment: {
+    kind: MoonWindowKind;
+    windowStartISO: string;
+    windowEndISO: string;
+    windowLabel: string;
+    hebrewLabel: string;
+    daysAway: number;
+    monthKey: MonthKey;
+    title: string;
+    body: string;
+  } | null;
+  contextLine: string;
+  prompt: string;
 }
 
 const CONTENT_VERSION = "2026.07-prototype" as const;
@@ -292,7 +346,7 @@ export const MONTH_ENTRIES: Record<MonthKey, MonthEntry> = {
     {
       dramaTitle: "The Drama of Discernment",
       archetype: "Devotion in the Dark",
-      reading: "Tevet asks what commitment can hold when inspiration goes quiet. Contraction can become a boundary that protects what matters rather than a wall built from fear.",
+      reading: "In Tevet, endurance can carry us through the dark, but it cannot tell us what is worth carrying. The deeper work is discernment: knowing when discipline protects what matters—and when it hardens into force.",
       ritual: "Choose one small daily practice for this week. Do it without waiting to feel motivated.",
       witnessingQuestion: "What deserves your discipline rather than your force?",
     },
@@ -354,6 +408,7 @@ function normalizeMonthName(monthName: string): MonthKey {
     kislev: "kislev",
     tevet: "tevet",
     shevat: "shevat",
+    shvat: "shevat",
     adar: "adar",
     adari: "adar",
     adarii: "adar",
@@ -417,6 +472,160 @@ export function getCurrentSeason(date: Date = new Date()): CurrentSeason {
   return { ...facts, entry: MONTH_ENTRIES[facts.hebrewDate.monthKey] };
 }
 
+function atLocalNoon(date: Date): Date {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12);
+}
+
+function addCivilDays(date: Date, days: number): Date {
+  const next = atLocalNoon(date);
+  next.setDate(next.getDate() + days);
+  return next;
+}
+
+function civilDateISO(date: Date): string {
+  return [
+    String(date.getFullYear()).padStart(4, "0"),
+    String(date.getMonth() + 1).padStart(2, "0"),
+    String(date.getDate()).padStart(2, "0"),
+  ].join("-");
+}
+
+const shortDateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+});
+
+function shortDate(date: Date): string {
+  return shortDateFormatter.format(date);
+}
+
+function shortDateRange(start: Date, end: Date): string {
+  if (start.getMonth() === end.getMonth()) {
+    return `${shortDate(start)}–${end.getDate()}`;
+  }
+  return `${shortDate(start)}–${shortDate(end)}`;
+}
+
+function releaseCopy(mode: MoonNarrativeMode): string {
+  const copy: Record<MoonNarrativeMode, string> = {
+    gathering: "The pressure to know what comes next.",
+    becoming: "The urge to rush what is still taking shape.",
+    revealing: "The need to act on everything you can now see.",
+    releasing: "The need to carry every answer forward.",
+  };
+  return copy[mode];
+}
+
+function findMoonMoment(today: Date, current: CurrentSeason): UpcomingPanelData["moonMoment"] {
+  let start: Date | null = null;
+  let kind: MoonWindowKind | null = null;
+  let daysAway = 0;
+
+  for (let offset = 0; offset <= 7; offset += 1) {
+    const candidate = addCivilDays(today, offset);
+    const facts = hebrewFacts(candidate);
+    const day = facts.hebrewDate.day;
+
+    if (offset === 0 && (day === 2 || day === 16)) {
+      start = addCivilDays(candidate, -1);
+      kind = day === 2 ? "new" : "full";
+      daysAway = 0;
+      break;
+    }
+    if (day === 1 || day === 15) {
+      start = candidate;
+      kind = day === 1 ? "new" : "full";
+      daysAway = offset;
+      break;
+    }
+  }
+
+  if (!start || !kind) {
+    return null;
+  }
+
+  const end = addCivilDays(start, 1);
+  const eventFacts = hebrewFacts(start);
+  const eventMonth = MONTH_ENTRIES[eventFacts.hebrewDate.monthKey];
+  const eventMonthName = eventMonth.correspondence.names.english;
+  const currentMonthName = current.entry.correspondence.names.english;
+  const windowDays = kind === "new" ? "1–2" : "15–16";
+  const label = kind === "new" ? "New moon" : "Full moon";
+  const timing = daysAway === 0
+    ? "window is open"
+    : daysAway === 1
+      ? "window tomorrow"
+      : `window in ${daysAway} days`;
+  const body = kind === "new"
+    ? currentMonthName === eventMonthName
+      ? `${eventMonthName} is returning to its dark beginning. Make room for what can begin without erasing what this season revealed.`
+      : `${currentMonthName} is thinning toward ${eventMonthName}. Make room for what can begin without erasing what this season revealed.`
+    : `The light is nearing its symbolic height in ${eventMonthName}. Let ${eventMonth.correspondence.faculty.displayLabel.toLowerCase()} become witness rather than verdict.`;
+
+  return {
+    kind,
+    windowStartISO: civilDateISO(start),
+    windowEndISO: civilDateISO(end),
+    windowLabel: shortDateRange(start, end),
+    hebrewLabel: `${windowDays} ${eventMonthName}`,
+    daysAway,
+    monthKey: eventFacts.hebrewDate.monthKey,
+    title: `${label} ${timing}`,
+    body,
+  };
+}
+
+export function getUpcomingPanel(date: Date = new Date()): UpcomingPanelData {
+  const today = atLocalNoon(date);
+  const current = getCurrentSeason(today);
+  const weekday = today.getDay();
+  const fridayState: FridayState = weekday === 5
+    ? "friday"
+    : weekday === 6
+      ? "shabbat"
+      : "countdown";
+  const fridayDaysAway = fridayState === "countdown" ? (5 - weekday + 7) % 7 : 0;
+  const fridayDate = addCivilDays(today, fridayDaysAway);
+  const fridayFacts = hebrewFacts(fridayDate);
+  const fridayMonth = MONTH_ENTRIES[fridayFacts.hebrewDate.monthKey];
+  const monthName = current.entry.correspondence.names.english;
+  const faculty = current.entry.correspondence.faculty.displayLabel.toLowerCase();
+  const fridayTitle = fridayState === "friday"
+    ? "Friday Pulse is open"
+    : fridayState === "shabbat"
+      ? "Shabbat is here"
+      : `${fridayDaysAway} ${fridayDaysAway === 1 ? "day" : "days"} until Friday`;
+  const fridayBody = fridayState === "shabbat"
+    ? `Let the work of ${monthName} stay visible without forcing an answer tonight. Rest can be a form of ${faculty}.`
+    : fridayState === "friday"
+      ? `Let the week come into focus before it goes quiet. ${monthName} asks for ${faculty}.`
+      : `${monthName} keeps asking for ${faculty}. You do not need to resolve it before rest.`;
+  const phaseOfMonth = current.hebrewDate.day >= 24
+    ? "Late"
+    : current.hebrewDate.day <= 7
+      ? "Early"
+      : "Mid";
+
+  return {
+    current,
+    friday: {
+      state: fridayState,
+      civilDateISO: civilDateISO(fridayDate),
+      dateLabel: shortDate(fridayDate),
+      hebrewLabel: `${fridayFacts.hebrewDate.day} ${fridayMonth.correspondence.names.english}`,
+      daysAway: fridayDaysAway,
+      monthKey: fridayFacts.hebrewDate.monthKey,
+      title: fridayTitle,
+      body: fridayBody,
+      release: releaseCopy(current.moon.narrativeMode),
+      carry: `One question: ${current.entry.reading.witnessingQuestion}`,
+    },
+    moonMoment: findMoonMoment(today, current),
+    contextLine: `${phaseOfMonth} ${monthName} · ${current.moon.label.toLowerCase()} · ${faculty} at the threshold`,
+    prompt: `Write one sentence in response to “${current.entry.reading.witnessingQuestion}” Then leave it unfinished until the next threshold.`,
+  };
+}
+
 export function createStoredBirthProfile(
   value: string,
   displayName?: string,
@@ -441,10 +650,137 @@ export function getBirthMonthEntry(profile: StoredBirthProfileV1): MonthEntry {
   return MONTH_ENTRIES[profile.derived.hebrewDate.monthKey];
 }
 
+export const BIRTH_PORTRAITS: Record<MonthKey, BirthPortrait> = {
+  nisan: {
+    narrative:
+      "The season of your birth carries the pulse of a beginning and the urge to give it voice. Expression helps private knowing enter the world and take on a life beyond you. The work is letting truth ripen before you name it, so freedom becomes more than motion—it becomes a direction you can inhabit.",
+    light:
+      "You give fresh energy language, direction, and a grounded beginning.",
+    shadowWisdom:
+      "Quick movement can protect your aliveness, but haste may outrun the truth still forming.",
+    question:
+      "What wants your voice before it asks for your speed?",
+  },
+  iyar: {
+    narrative:
+      "The season of your birth trusts repair more than spectacle. You know how to keep tending what matters after the first spark has passed, allowing healing to gather through repetition. The work is noticing when steadiness supports change—and when familiar routines quietly postpone the next honest step.",
+    light:
+      "You build trust through patience, rhythm, and attentive care.",
+    shadowWisdom:
+      "Routine can shelter your healing, yet overholding can make waiting feel safer than change.",
+    question:
+      "Which small devotion is already remaking the ground beneath you?",
+  },
+  sivan: {
+    narrative:
+      "The season of your birth brings curiosity into motion. You can be changed by what is true without losing your own shape, especially when listening becomes active rather than passive. The work is choosing which openings deserve your movement, so responsiveness does not turn every possibility into an obligation.",
+    light:
+      "You turn openness into insight, connection, and living intelligence.",
+    shadowWisdom:
+      "Many possibilities can call at once; discernment keeps openness from becoming obligation.",
+    question:
+      "What truth can you receive without trying to master it?",
+  },
+  tammuz: {
+    narrative:
+      "The season of your birth holds a tension between presence and retreat. You notice what others miss, especially when the surface story begins to crack. Seeing becomes care when you remain present long enough for what is true to change you, without mistaking constant exposure for honesty.",
+    light:
+      "You turn careful attention into protection, clarity, and care.",
+    shadowWisdom:
+      "Retreat can guard your tenderness, but too much distance can blur what needs witnessing.",
+    question:
+      "What becomes possible when you look again from a place of safety?",
+  },
+  av: {
+    narrative:
+      "The season of your birth knows how to listen beneath loss, where grief becomes a quieter form of truth. You notice what remains when noise falls away, sensing the intact seed inside what seemed finished. Your gift is not rushing the repair, but hearing where rebuilding can honestly begin.",
+    light:
+      "You hear the living thread that survives the breaking.",
+    shadowWisdom:
+      "Guardedness can keep sorrow private, but it should not exile you from tenderness.",
+    question:
+      "What still speaks when the noise of loss grows quiet?",
+  },
+  elul: {
+    narrative:
+      "The season of your birth measures sincerity through movement, not perfection. You feel the distance between what is intended and what is actually lived, and you know that repair begins by closing it. The work is choosing one honest step without turning self-examination into a punishment.",
+    light:
+      "You give conviction a body through honest, repeatable action.",
+    shadowWisdom:
+      "Self-scrutiny can sharpen devotion, but mercy keeps the path open enough to continue.",
+    question:
+      "What small return would make your intention unmistakably real?",
+  },
+  tishrei: {
+    narrative:
+      "The season of your birth is attuned to the place where judgment and tenderness share the same scale. You notice when something is out of measure, but balance is not a flawless center. The work is letting accountability and mercy refine one another without allowing either to disappear.",
+    light:
+      "You can hold truth and tenderness in the same hand.",
+    shadowWisdom:
+      "Perfection can masquerade as balance; living balance keeps adjusting without abandoning its center.",
+    question:
+      "Where would mercy make your standards more truthful?",
+  },
+  cheshvan: {
+    narrative:
+      "The season of your birth is fluent in the quiet that arrives after ceremony has passed. You notice what others miss once the room empties, because subtler forms of knowing need space before they take shape. The work is protecting that stillness without disappearing inside it.",
+    light:
+      "You trust subtle knowing before it hardens into explanation.",
+    shadowWisdom:
+      "Withdrawal can protect intuition, but too much isolation starves it of human proportion.",
+    question:
+      "What are you noticing before language catches up?",
+  },
+  kislev: {
+    narrative:
+      "The season of your birth carries a live ember through long stretches of darkness, protecting possibility before it becomes direction. You sense futures before they are practical and feel most alive when wonder has somewhere grounded to land. The work is giving imagination a steady aim without forcing the flame.",
+    light:
+      "You keep hope precise, warm, and quietly contagious.",
+    shadowWisdom:
+      "When uncertainty deepens, imagination can scatter into escape unless it finds a steady target.",
+    question:
+      "What future is asking for your focus, not your fantasy?",
+  },
+  tevet: {
+    narrative:
+      "The season of your birth knows how to hold a line when conditions become spare, preserving what matters through patience and restraint. Structure can give devotion a dependable shape. The work is discerning what truly deserves your discipline, so protection does not harden into force.",
+    light:
+      "You bring steadiness, backbone, and care to what must endure.",
+    shadowWisdom:
+      "Under pressure, discipline can become armor, making warmth feel risky when it is most needed.",
+    question:
+      "What are you protecting, and what is that protection costing?",
+  },
+  shevat: {
+    narrative:
+      "The season of your birth notices movement before proof arrives, sensing sweetness beneath surfaces that still look bare. You can recognize renewal while it is quiet and give early growth the patience it needs. The work is honoring what is rising without pulling it into view before its time.",
+    light:
+      "You sense renewal early and nourish it with patience.",
+    shadowWisdom:
+      "When growth stays hidden, urgency can bruise it by demanding visible proof too soon.",
+    question:
+      "What is quietly returning, and how can you protect it?",
+  },
+  adar: {
+    narrative:
+      "The season of your birth is fluent in reversals, finding truth through play and the loosening of fixed roles. You notice what becomes visible when certainty relaxes and performance slips. The work is trusting joy as a form of depth without using it to avoid what is real.",
+    light:
+      "You open room for truth, levity, and unexpected release.",
+    shadowWisdom:
+      "Humor can shield vulnerability, especially when seriousness feels like a trap or exposure.",
+    question:
+      "What becomes honest when you stop performing certainty?",
+  },
+};
+
 export function buildPersonalThread(profile: StoredBirthProfileV1): string {
   const entry = getBirthMonthEntry(profile);
   const { correspondence, reading } = entry;
-  return `You arrived through ${correspondence.names.english}, ${reading.dramaTitle.toLowerCase()}. Its faculty of ${correspondence.faculty.displayLabel.toLowerCase()} offers a lens—not a fixed identity—and your symbolic ${profile.derived.moon.label.toLowerCase()} gives this thread a tempo of ${profile.derived.moon.narrativeMode}.`;
+  const monthPrefix = `${correspondence.names.english} `;
+
+  return reading.reading.startsWith(monthPrefix)
+    ? `The season of your birth ${reading.reading.slice(monthPrefix.length)}`
+    : reading.reading;
 }
 
 export function formatBirthdayInput(civilDateISO: string): string {

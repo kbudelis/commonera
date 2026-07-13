@@ -97,6 +97,14 @@ input:focus-visible {
   display: none;
 }
 
+.flow-page--personal {
+  scroll-snap-type: y mandatory;
+}
+
+.flow-page--personal .flow-section {
+  scroll-snap-stop: always;
+}
+
 .flow-section {
   position: relative;
   isolation: isolate;
@@ -137,6 +145,16 @@ input:focus-visible {
   border-radius: 50%;
   background: var(--blue);
   pointer-events: none;
+}
+
+.zodiac-visual--interactive {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .zodiac-visual img {
@@ -431,11 +449,13 @@ h1 {
 }
 
 .profile-facts {
-  display: grid;
-  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
   color: #5f5a4e;
   font-size: 0.82rem !important;
-  line-height: 1.35 !important;
+  line-height: 1.25 !important;
 }
 
 .personal-name {
@@ -444,10 +464,47 @@ h1 {
 }
 
 .return-question {
+  max-width: 32ch !important;
   color: #5f5a4e;
   font-family: "Vollkorn Local", Georgia, "Times New Roman", serif;
   font-size: 0.92rem !important;
   font-style: italic;
+  line-height: 1.35 !important;
+}
+
+.personal-portrait {
+  max-width: 35ch !important;
+  font-size: clamp(0.86rem, 3.7cqw, 0.96rem) !important;
+  line-height: 1.42 !important;
+}
+
+.personal-facets {
+  display: grid;
+  gap: 7px;
+  width: min(100%, 330px);
+  margin: 3px 0 2px;
+}
+
+.personal-facets div {
+  display: grid;
+  gap: 2px;
+}
+
+.personal-facets dt {
+  color: #75684f;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.personal-facets dd {
+  max-width: 34ch;
+  margin: 0 auto;
+  font-size: 0.82rem;
+  line-height: 1.34;
+  text-wrap: pretty;
 }
 
 .zodiac-visual--arc {
@@ -491,65 +548,274 @@ h1 {
   mix-blend-mode: multiply;
 }
 
-.hero-glyph-art + .eyebrow {
+.hero-glyph-art + .personal-name {
   position: relative;
   z-index: 2;
   margin-top: 14px;
 }
 
+@media (max-height: 740px) {
+  .personal-section {
+    align-content: start;
+    padding: 122px 22px 18px;
+  }
+
+  .personal-section .reading-copy {
+    gap: 5px;
+  }
+
+  .personal-section .hero-glyph-art {
+    width: min(31cqw, 116px);
+    height: min(36cqw, 136px);
+    margin-bottom: 10px;
+    transform: translateY(10px);
+  }
+
+  .personal-section .hero-glyph-art + .personal-name {
+    margin-top: 6px;
+  }
+
+  .personal-section .personal-name {
+    font-size: clamp(1.8rem, 8.5cqw, 2.25rem);
+  }
+
+  .personal-portrait {
+    max-width: 38ch !important;
+    font-size: 0.8rem !important;
+    line-height: 1.32 !important;
+  }
+
+  .personal-facets {
+    gap: 4px;
+    margin-block: 2px 1px;
+  }
+
+  .personal-facets dd,
+  .return-question {
+    font-size: 0.76rem !important;
+    line-height: 1.28 !important;
+  }
+}
+
 .constellation-art {
+  position: relative;
   display: grid;
   place-items: center;
   pointer-events: none;
 }
 
+.constellation-art::before {
+  position: absolute;
+  width: 84%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(2, 8, 36, 0.78), rgba(2, 8, 36, 0) 72%);
+  content: "";
+  filter: blur(3px);
+}
+
 .constellation-art img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0.82;
-  mix-blend-mode: multiply;
+  opacity: 1;
+  filter:
+    brightness(0) invert(1)
+    drop-shadow(1px 0 0 rgba(255, 250, 240, 0.82))
+    drop-shadow(-1px 0 0 rgba(255, 250, 240, 0.82))
+    drop-shadow(0 1px 0 rgba(255, 250, 240, 0.82))
+    drop-shadow(0 -1px 0 rgba(255, 250, 240, 0.82))
+    drop-shadow(0 0 8px rgba(255, 250, 240, 0.5));
+  mix-blend-mode: normal;
 }
 
 .constellation-art--month {
-  position: sticky;
-  top: 24px;
-  z-index: 3;
-  width: min(calc(100cqw - 32px), 34dvh, 300px);
+  width: 100%;
   aspect-ratio: 1;
-  margin: -28px auto 16px;
-}
-
-.flow-page--personal .constellation-art--month {
-  animation: constellation-after-birth 3.2s ease-in-out both;
 }
 
 .month-section {
   align-content: start;
   z-index: 2;
-  overflow: visible;
-  padding: 0 28px 56px;
+  gap: 0;
+  overflow: hidden;
+  padding: max(12px, env(safe-area-inset-top)) 0
+    max(22px, env(safe-area-inset-bottom));
+  color: var(--cream);
+  background: var(--blue);
+}
+
+.month-section::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(20, 51, 124, 0.12), rgba(2, 8, 36, 0.82) 92%),
+    linear-gradient(180deg, rgba(2, 8, 36, 0.26), rgba(2, 8, 36, 0.54));
+  content: "";
+  pointer-events: none;
+}
+
+.month-zodiac-backdrop {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.month-zodiac-backdrop img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(178cqw, min(112dvh, 1040px));
+  max-width: none;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: brightness(0.52) saturate(0.88);
+  transform: translate(-50%, -50%) scale(1.03);
+}
+
+.month-curve-gallery {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: clamp(246px, 33dvh, 300px);
+  overflow: hidden;
+  perspective: 900px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.month-curve-gallery--dragging {
+  cursor: grabbing;
+}
+
+.month-curve-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: min(61cqw, 260px);
+  height: clamp(202px, 27dvh, 248px);
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  color: rgba(255, 250, 240, 0.76);
+  background: transparent;
+  cursor: pointer;
+  transform-origin: 50% 52%;
+  transform-style: preserve-3d;
+  transition:
+    transform 520ms cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 420ms ease,
+    color 420ms ease;
+  will-change: transform, opacity;
+}
+
+.month-curve-gallery--dragging .month-curve-item {
+  transition: none;
+}
+
+.month-curve-item--active {
+  color: var(--cream);
+}
+
+.month-curve-item .constellation-art {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.month-curve-hint {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  color: rgba(255, 250, 240, 0.52);
+  font-size: 0.65rem;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  transform: translateX(50%);
+}
+
+.month-curve-return {
+  position: absolute;
+  z-index: 30;
+  right: 50%;
+  bottom: 0;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 250, 240, 0.3);
+  border-radius: 999px;
+  color: var(--cream);
+  background: rgba(2, 8, 36, 0.64);
+  font-size: 0.72rem;
+  cursor: pointer;
+  backdrop-filter: blur(7px);
+  transform: translateX(50%);
 }
 
 .month-section .reading-copy {
-  gap: 10px;
+  z-index: 2;
+  gap: 8px;
+  width: min(100%, 360px);
+  padding: 0 28px;
+  color: var(--cream);
 }
 
 .month-copy h1 {
   font-size: clamp(2rem, 9cqw, 2.8rem);
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.45);
+}
+
+.month-title-glyph {
+  display: grid;
+  place-items: center;
+  width: min(22cqw, 90px);
+  height: min(25cqw, 104px);
+  margin: -5px auto -3px;
+}
+
+.month-title-glyph img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 250, 240, 0.24));
 }
 
 .month-archetype {
+  color: rgba(255, 250, 240, 0.94);
   font-family: "Vollkorn Local", Georgia, "Times New Roman", serif;
   font-size: 1.2rem !important;
   line-height: 1.2 !important;
 }
 
+.month-section .eyebrow {
+  color: rgba(255, 250, 240, 0.7);
+}
+
+.month-section .ritual-card {
+  border-radius: 16px;
+  background: rgba(2, 8, 36, 0.28);
+  backdrop-filter: blur(5px);
+}
+
+.month-section .ritual-card > span {
+  color: rgba(255, 250, 240, 0.64);
+}
+
+.month-section .grounding-note {
+  color: rgba(255, 250, 240, 0.68);
+}
+
 .ritual-card {
   width: 100%;
   padding: 11px 14px;
-  border-top: 1px solid rgba(23, 41, 95, 0.22);
-  border-bottom: 1px solid rgba(23, 41, 95, 0.22);
 }
 
 .ritual-card > span {
@@ -589,21 +855,167 @@ h1 {
 
 .upcoming-section {
   align-content: start;
-  padding-top: clamp(54px, 8dvh, 82px);
+  padding: max(36px, env(safe-area-inset-top)) 22px
+    max(24px, env(safe-area-inset-bottom));
 }
 
-.upcoming-section .reading-copy {
-  gap: clamp(26px, 5dvh, 48px);
+.upcoming-copy {
+  gap: 10px;
+  width: 100%;
 }
 
-.moon-placeholder {
-  width: min(52cqw, 220px);
+.upcoming-copy h1 {
+  font-size: clamp(2.15rem, 10cqw, 3rem);
+}
+
+.upcoming-context {
+  color: #5f5a4e;
+  font-size: 0.78rem !important;
+  line-height: 1.35 !important;
+}
+
+.upcoming-panels {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.upcoming-card {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 10px 32px rgba(23, 41, 95, 0.08);
+  text-align: left;
+}
+
+.upcoming-card h2 {
+  margin: 0;
+  font-family: "Vollkorn Local", Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.upcoming-card p {
+  max-width: none;
+  font-size: 0.78rem;
+  line-height: 1.36;
+  text-align: left;
+}
+
+.upcoming-card-label {
+  color: #75684f;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.upcoming-meta {
+  color: #5f5a4e;
+  font-size: 0.7rem !important;
+  font-weight: 600;
+}
+
+.moon-card {
+  grid-template-columns: 68px minmax(0, 1fr);
+  align-items: center;
+}
+
+.moon-card-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.moon-state {
+  --moon-shadow-shift: 0%;
+  position: relative;
+  width: 64px;
   aspect-ratio: 1;
-  margin: 4px auto;
-  border: 1px solid rgba(23, 41, 95, 0.35);
+  overflow: hidden;
+  border: 1px solid rgba(23, 41, 95, 0.2);
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 34%, #fffdf4, #e8dfcc 72%);
+  background: radial-gradient(circle at 38% 34%, #fffdf4, #e5dcc8 74%);
   box-shadow: 0 12px 38px rgba(23, 41, 95, 0.12);
+}
+
+.moon-state::after {
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: #102766;
+  content: "";
+  transform: translateX(var(--moon-shadow-shift));
+}
+
+.moon-state--waxing-crescent {
+  --moon-shadow-shift: -14%;
+}
+
+.moon-state--waxing-gibbous {
+  --moon-shadow-shift: -72%;
+}
+
+.moon-state--full {
+  --moon-shadow-shift: -112%;
+}
+
+.moon-state--waning-gibbous {
+  --moon-shadow-shift: 72%;
+}
+
+.moon-state--waning-crescent {
+  --moon-shadow-shift: 14%;
+}
+
+.friday-carry {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 3px 0 0;
+}
+
+.friday-carry div {
+  min-width: 0;
+  padding: 8px 9px;
+  border-radius: 12px;
+  background: rgba(23, 41, 95, 0.055);
+}
+
+.friday-carry dt {
+  color: #75684f;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.friday-carry dd {
+  margin: 3px 0 0;
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+.upcoming-prompt {
+  max-width: 34ch !important;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(23, 41, 95, 0.05);
+  font-family: "Vollkorn Local", Georgia, "Times New Roman", serif;
+  font-size: 0.84rem !important;
+  font-style: italic;
+  line-height: 1.35 !important;
+}
+
+.upcoming-basis {
+  color: #75684f;
+  font-size: 0.62rem !important;
+  line-height: 1.3 !important;
 }
 
 @keyframes zodiac-settle {
@@ -666,16 +1078,6 @@ h1 {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes constellation-after-birth {
-  0%,
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
