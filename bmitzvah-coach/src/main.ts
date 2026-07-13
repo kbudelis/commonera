@@ -237,9 +237,14 @@ function startScrollArc(shared: AppShared) {
   scene.add(yad.group);
 
   // --- State.
-  const touched = new Set(progress.touchedWords);
-  const versesDone = new Set(progress.versesCompleted);
-  const paragraphsDone = new Set(progress.paragraphsCompleted);
+  // Session state starts FRESH each visit (deliberately NOT restored from the
+  // save): restoring `touched` deadlocked the tutorial — verse completion
+  // fires on a word's FIRST touch, and a returning player's words were never
+  // "first". The ladder made the arc a replayable level; only `celebrated`
+  // (explore mode) and `levelsCompleted` survive across visits.
+  const touched = new Set<string>();
+  const versesDone = new Set<string>();
+  const paragraphsDone = new Set<string>();
   const shownFacts = new Set<string>();
   const totalVerses = shema.paragraphs.reduce((a, p) => a + p.verses.length, 0);
   let lastTouchAt = performance.now();
